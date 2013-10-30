@@ -3,13 +3,14 @@ DC Code XML
 
 This repository contains the Code of the District of Columbia in XML format.
 
+Besides browsing the raw XML, you can also see a [quick preview in HTML](http://joshdata.github.io/dc-code-prototype/index.xml).
+
 The DC Code in XML makes use of a custom schema that draws on ideas from [Akoma Ntoso](http://www.akomantoso.org/) and [United States Legislative Markup](http://uscodebeta.house.gov/download/download.shtml).
 
 The schema can almost entirely be seen in the following four examples.
 
 (1) Root element. The root element is `<dc-code>` and it contains some metadata.
 
-	<?xml version='1.0' encoding='utf-8'?>
 	<dc-code>
 		<meta>
 			<title>Code of the District of Columbia</title>
@@ -83,7 +84,6 @@ This documentation assumes you are working with the one-big-file format.
 
 In the second format, any `<level>` element above the level of a section may be replaced by an XInclude reference to another file containing the element. In this format the top-level file contains:
 
-	<?xml version='1.0' encoding='utf-8'?>
 	<dc-code>
 	  <meta>
 	    <title>Code of the District of Columbia</title>
