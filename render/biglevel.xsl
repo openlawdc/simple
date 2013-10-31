@@ -4,8 +4,14 @@
 
   <xsl:include href="general.xsl"/>
 
+  <xsl:output method="html" version="4.0" omit-xml-declaration="yes" encoding="utf-8" indent="yes" />
+
   <xsl:template match="/dc-code|/level">
-    <html>
+<html>
+	<head>
+		<title>District of Columbia Code</title>
+		<meta charset="utf-8" />
+	</head>
     <body>
       <h1>District of Columbia Code</h1>
       <p><xsl:value-of select="dc-code/meta/recency"/></p>
@@ -18,7 +24,7 @@
 
 
     </body>
-    </html>
+</html>
   </xsl:template>
 
   <xsl:template match="xi:include">
