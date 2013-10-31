@@ -22,8 +22,10 @@
   </xsl:template>
 
   <xsl:template match="xi:include">
-    <xsl:variable name="d" select="document(@href, .)"/>
-    <p><a href="{@href}" xml:space="preserve">
+  	<!-- because Title 28 contains sections whose numbers contain colons in them (§ 28:2-205),
+  	     we must force the relative URL to not interpret the colon as a part of a scheme. -->
+    <xsl:variable name="d" select="document(concat('http:', @href), .)"/>
+    <p><a href="http:{@href}" xml:space="preserve">
         <xsl:if test="$d/level/type = 'Section'">§</xsl:if>
         <xsl:if test="not($d/level/type = 'Section')"><xsl:value-of select="$d/level/type"/></xsl:if>
         <xsl:value-of select="$d/level/num"/>.
