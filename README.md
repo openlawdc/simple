@@ -82,7 +82,7 @@ We distribute the DC Code XML in two formats.
 
 This documentation assumes you are working with the one-big-file format.
 
-In the second format, any `<level>` element above the level of a section may be replaced by an XInclude reference to another file containing the element. In this format the top-level file contains:
+In the second format, any `<level>` element may be replaced by an XInclude reference to another file containing the element. Except in files for section levels, which never have XIncludes inside them. In this format the top-level file is:
 
 	<dc-code>
 	  <meta>
@@ -99,8 +99,6 @@ In the second format, any `<level>` element above the level of a section may be 
 	  <ns0:include xmlns:ns0="http://www.w3.org/2001/XInclude" href="Division-VIII/index.xml"/>
 	</dc-code>
 
-Sections never contain XInclude includes.
-
 Root Element and Metadata
 -------------------------
 
@@ -114,26 +112,32 @@ The root element contains a `<meta>` element with document metadata. The `<meta>
 	    <title>Code of the District of Columbia</title>
 	    <recency>current through DC Act 19-658; unofficial through D.C. Act 19-682</recency>
 	  </meta>
+
 	  <level>
 	    <type>Division</type>
 	    <num>I</num>
 	    <heading>Government of District</heading>
+
 	    <level>
 	      <type>Title</type>
 	      <num>1</num>
 	      <heading>Government Organization</heading>
+
 	      <level>
 	        <type>Chapter</type>
 	        <num>1</num>
 	        <heading>District of Columbia Government Development</heading>
+
 	        <level>
 	          <type>Subchapter</type>
 	          <num>I</num>
 	          <heading>District of Columbia Establishment</heading>
+
 	          <level>
 	            <type>Section</type>
 	            <num>1-101</num>
 	            <heading>Territorial area.</heading>
+	            
 	            <text>The District of Columbia is that portion of the territory
 	            of the United States ceded by the State of Maryland for the permanent
 	            seat of government of the United States....
@@ -166,7 +170,7 @@ Following these elements, `<text>` elements, other nested `<level>` elements, an
 Text
 ----
 
-Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>` and `<level>` elements and should be rendered in document order. These elements contain HTML, e.g.:
+Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>`, `<level>`, and `<placeholder>` elements and should be rendered in document order. These elements contain HTML, e.g.:
 
 	<text>One <span style="font-style: italic; ">ex officio </span>Commissioner,
 	the Deputy Mayor for Planning and Economic Development;</text>
@@ -176,7 +180,7 @@ An optional `class` attribute can be one of `form`, `formc`, `table`, `tablec`, 
 Inside the `<text>` element is HTML conforming to the following restrictions:
 
 * Only bare text and `<span>` elements may appear.
-* `<span>` elements may have a style attribute containing any of the following CSS:
+* `<span>` elements may have a style attribute containing only the following CSS:
  * `font-weight: bold;`
  * `font-style: italic;`
  * `text-decoration: underline;`
@@ -215,4 +219,4 @@ In place of `<section>`, a placeholder may instead contain:
 * `<section-end>`: The number of the last omitted section in a range of omitted sections.
 * `<section-range-type>`: This element contains the text `range` if all sections between start and end are omitted (usually rendered as "A to B") or `list` if the start and end name two sections but a range is not implied (usually rendered as "A, B").
 
-Like `<level>`s, a `<placeholder>` may also contain `<text>` and nested `<level>`s. Most placeholders do not contain any text or nested levels, however.
+Like `<level>`s, a `<placeholder>` may also contain `<text>` and nested `<level>`s. Most placeholders do not contain any text or nested levels, but some do.
