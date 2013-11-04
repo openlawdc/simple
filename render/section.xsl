@@ -16,4 +16,29 @@
     </html>
   </xsl:template>
 
+  <xsl:template match="/placeholder">
+    <html>
+    <body>
+      <h1>District of Columbia Code</h1>
+
+      <h2 xml:space="preserve">
+          <xsl:if test="section">
+            §<xsl:value-of select="section"/>.
+          </xsl:if>
+          <xsl:if test="section-start">
+            §§<xsl:value-of select="section-start"/>
+            <xsl:if test="section-range-type = 'list'">, </xsl:if>
+            <xsl:if test="section-range-type = 'range'"> to </xsl:if>
+            <xsl:value-of select="section-end"/>.
+          </xsl:if>
+          <xsl:value-of select="heading"/>
+          <xsl:if test="type">[<xsl:value-of select="type"/>]</xsl:if>
+      </h2>
+
+      <xsl:apply-templates select="text|level"/>
+
+    </body>
+    </html>
+  </xsl:template>
+
 </xsl:stylesheet>
