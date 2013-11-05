@@ -151,26 +151,28 @@ A `<level>` contains any of the following subelements:
 
 * `<type>`: The text in this element indicates the type of the level.
  * Possible values for "big" levels include: `Article`, `Chapter`, `Division`, `Part`, `Subchapter`, `Subdivision`, `Subpart`, `Subtitle`, `Title`, and `Unit`.
- * The type can also be `Section` for sections of the code (e.g. § 1-101).
+ * The type can also be `Section` for sections of the code (e.g. § 1-101). Sections are the primary levels where text and annotations occur.
+ * When type is `placeholder`, the level is section-like but it represents Code sections that no longer exist or may exist in the future but do not exist now. Placeholder levels often have text and annotations like sections. They are documented specifically in a section below.
  * The type can also be `annotations` for annotation blocks and `appendices` for a block of appendices to a section (typically but not always within `Section`-levels)
  * When `<type>` is omitted, the level is a numbered paragraph (i.e. `(1) The public policy....`) or an unnumbered block with a heading. Inside annotations, subheadings are represented this way.
 
 * `<num>`: The level's number. 
  * For "big" levels, this usually is a number, letter, or roman numeral.
  * For sections, the number is typically (but not always) in the format `1-101`. It never includes the §-symbol.
+ * Placeholder levels do not have `<num>` elements.
  * For "little" levels, this is the paragraph's numbering including any parenthesis around the numbering. An example would be `(12A-i)`.
  * When `<num>` is omitted, the level is simply unnumbered.
 
 * `<heading>`: The level's name or heading.
- * For "big" levels, sections, and subheadings in annotations, this is the name of the level, such as `Government Organization`.
+ * For "big" levels, sections, placeholders, and subheadings in annotations, this is the name of the level, such as `Government Organization`.
  * A heading can also appear on "little" levels.
 
-Following these elements, `<text>` elements, other nested `<level>` elements, and `<placeholder>` elements can all appear and should be rendered in document order. When rendering "little" levels, nested `<level>` elements should be indented.
+Following these elements, `<text>` elements and other nested `<level>` elements can appear and should be rendered in document order. When rendering "little" levels, nested `<level>` elements should be indented.
 
 Text
 ----
 
-Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>`, `<level>`, and `<placeholder>` elements and should be rendered in document order. These elements contain HTML, e.g.:
+Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>` and `<level>` elements and should be rendered in document order. These elements contain HTML, e.g.:
 
 	<text>One <span style="font-style: italic; ">ex officio </span>Commissioner,
 	the Deputy Mayor for Planning and Economic Development;</text>
@@ -189,29 +191,24 @@ Inside the `<text>` element is HTML conforming to the following restrictions:
 Placeholders
 ------------
 
-`<placeholder>` is similar to `<level>` but represents Code sections that no longer exist or may exist in the future but do not exist now. Here is an example:
+Placeholder levels are similar to levels with `type`=`Section` but represents Code sections that no longer exist or may exist in the future but do not exist now. Here is an example:
 
-    <placeholder>
-      <type>Not funded</type>
-      <section>1-136.01</section>
-      <heading>Establishment of the 51st State Commission.</heading>
+	<level>
+	  <type>placeholder</type>
+	  <reason>Not funded</reason>
+	  <section>1-136.01</section>
+	  <heading>Establishment of the 51st State Commission.</heading>
+	  <text>[Not funded].</text>
+	  <level>
+	    <type>annotations</type>
+	    ...
 
-      <text>[Not funded].</text>
+These levels do not have a `<num>` element. The `<heading>` element typically contains the name of the section that was removed. These levels may also have these other child elements:
 
-      <level>
-        <type>annotations</type>
-        ...
-      </level>
-    </placeholder>
-
-
-A `<placeholder>` contains any of the following subelements:
-
-* `<type>`: The reason for the placeholder.
+* `<reason>`: The reason for the placeholder.
  * When present, one of `Expired`, `Not funded`, `Omitted`, `Repealed`, `Reserved`, and `Transferred`.
  * When not present, the reason for the placeholder is not indicated in the code.
 * `<section>`: The number of the omitted section (e.g. `1-136.01`).
-* `<heading>`: The name of the omitted section.
 
 In place of `<section>`, a placeholder may instead contain:
 
@@ -219,4 +216,3 @@ In place of `<section>`, a placeholder may instead contain:
 * `<section-end>`: The number of the last omitted section in a range of omitted sections.
 * `<section-range-type>`: This element contains the text `range` if all sections between start and end are omitted (usually rendered as "A to B") or `list` if the start and end name two sections but a range is not implied (usually rendered as "A, B").
 
-Like `<level>`s, a `<placeholder>` may also contain `<text>` and nested `<level>`s. Most placeholders do not contain any text or nested levels, but some do.

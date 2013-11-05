@@ -20,7 +20,7 @@
         <h2><xsl:value-of select="type"/> <xsl:value-of select="num"/>. <xsl:value-of select="heading"/></h2>
       </xsl:if>
 
-      <xsl:apply-templates select="text|level|placeholder|xi:include"/>
+      <xsl:apply-templates select="text|level|xi:include"/>
 
 
     </body>
@@ -32,24 +32,24 @@
   	     we must force the relative URL to not interpret the colon as a part of a scheme. -->
     <xsl:variable name="d" select="document(concat('http:', @href), .)"/>
     <p><a href="http:{@href}" xml:space="preserve">
-        <xsl:if test="$d/level">
+        <xsl:if test="not($d/level/type = 'placeholder')">
           <xsl:if test="$d/level/type = 'Section'">§</xsl:if>
           <xsl:if test="not($d/level/type = 'Section')"><xsl:value-of select="$d/level/type"/></xsl:if>
           <xsl:value-of select="$d/level/num"/>.
           <xsl:value-of select="$d/level/heading"/>
         </xsl:if>
-        <xsl:if test="$d/placeholder">
-          <xsl:if test="$d/placeholder/section">
-            §<xsl:value-of select="$d/placeholder/section"/>.
+        <xsl:if test="$d/level/type = 'placeholder'">
+          <xsl:if test="$d/level/section">
+            §<xsl:value-of select="$d/level/section"/>.
           </xsl:if>
-          <xsl:if test="$d/placeholder/section-start">
-            §§<xsl:value-of select="$d/placeholder/section-start"/>
-            <xsl:if test="$d/placeholder/section-range-type = 'list'">, </xsl:if>
-            <xsl:if test="$d/placeholder/section-range-type = 'range'"> to </xsl:if>
-            <xsl:value-of select="$d/placeholder/section-end"/>.
+          <xsl:if test="$d/level/section-start">
+            §§<xsl:value-of select="$d/level/section-start"/>
+            <xsl:if test="$d/level/section-range-type = 'list'">, </xsl:if>
+            <xsl:if test="$d/level/section-range-type = 'range'"> to </xsl:if>
+            <xsl:value-of select="$d/level/section-end"/>.
           </xsl:if>
-          <xsl:value-of select="$d/placeholder/heading"/>
-          <xsl:if test="$d/placeholder/type">[<xsl:value-of select="$d/placeholder/type"/>]</xsl:if>
+          <xsl:value-of select="$d/level/heading"/>
+          <xsl:if test="$d/level/type">[<xsl:value-of select="$d/level/reason"/>]</xsl:if>
         </xsl:if>
     </a></p>
   </xsl:template>
