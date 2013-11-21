@@ -167,12 +167,14 @@ A `<level>` contains any of the following subelements:
  * For "big" levels, sections, placeholders, and subheadings in annotations, this is the name of the level, such as `Government Organization`.
  * A heading can also appear on "little" levels.
 
-Following these elements, `<text>` elements and other nested `<level>` elements can appear and should be rendered in document order. When rendering "little" levels, nested `<level>` elements should be indented.
+* `<text>` and `<level>` content elements.
+ * Zero or more `<text>` and `<level>` elements can appear within a `<level>` and should be rendered in document order.
+ * Multiple `<text>` elements are rendered as separate paragraphs. If a paragraph `<level>` has a `<num>` and/or `<heading>`, it is usually rendered inside and at the start of the first `<text>` paragraph.
 
 Text
 ----
 
-Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>` and `<level>` elements and should be rendered in document order. These elements contain HTML, e.g.:
+Text content is contained within `<text>` elements inside `<level>`s. `<text>` may be interleaved with other `<text>` and `<level>` elements and should be rendered in document order. Each `<text>` element is a separate paragraph. These elements contain HTML, e.g.:
 
 	<text>One <span style="font-style: italic; ">ex officio </span>Commissioner,
 	the Deputy Mayor for Planning and Economic Development;</text>
@@ -191,7 +193,7 @@ Inside the `<text>` element is HTML conforming to the following restrictions:
 Placeholders
 ------------
 
-Placeholder levels are similar to levels with `type`=`Section` but represents Code sections that no longer exist or may exist in the future but do not exist now. Here is an example:
+Placeholder levels are similar to levels with `type`=`Section` but represent Code sections that no longer exist or may exist in the future but do not exist now. Here is an example:
 
 	<level>
 	  <type>placeholder</type>
