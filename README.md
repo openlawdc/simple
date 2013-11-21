@@ -179,7 +179,10 @@ Text content is contained within `<text>` elements inside `<level>`s. `<text>` m
 	<text>One <span style="font-style: italic; ">ex officio </span>Commissioner,
 	the Deputy Mayor for Planning and Economic Development;</text>
 
-An optional `class` attribute can be one of `form`, `formc`, `table`, `tablec`, and `PlainText`. These are often rendered as monospace, pre-formmated plain text.
+An optional `class` attribute can be one of:
+
+* `centered`: The paragraph is rendered with centered text alignment.
+* `form`, `formc`, `table`, `tablec`, or `PlainText`: These are often rendered as monospace, pre-formmated plain text.
 
 Inside the `<text>` element is HTML conforming to the following restrictions:
 

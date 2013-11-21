@@ -2,7 +2,12 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="text">
-    <p><xsl:copy-of select="node()"/></p>
+    <p>
+      <xsl:choose>
+        <xsl:when test="@class='centered'"><xsl:attribute name="style">text-align: center;</xsl:attribute></xsl:when>
+      </xsl:choose>
+      <xsl:copy-of select="node()"/>
+    </p>
   </xsl:template>
 
   <xsl:template match="level[type='annotations']">
