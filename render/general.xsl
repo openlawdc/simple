@@ -10,6 +10,19 @@
     </p>
   </xsl:template>
 
+  <xsl:template match="level[type='form']">
+    <div style="margin: 1em; border: 1px solid #666; padding: 1em; white-space: pre-wrap;">
+      <xsl:for-each select="text">
+        <div>
+          <xsl:choose>
+            <xsl:when test="@class='centered'"><xsl:attribute name="style">text-align: center;</xsl:attribute></xsl:when>
+          </xsl:choose>
+          <xsl:copy-of select="node()"/>
+        </div>
+      </xsl:for-each>
+    </div>
+  </xsl:template>
+
   <xsl:template match="level[type='annotations']">
     <h3>Annotations</h3>
     <xsl:for-each select="level">
@@ -30,7 +43,7 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="level[count(type) &gt; 0 and not(type='annotations')]">
+  <xsl:template match="level[count(type) &gt; 0 and not(type='annotations') and not(type='form')]">
     <p><xsl:value-of select="type"/> <xsl:value-of select="num"/>. <xsl:value-of select="heading"/></p>
     <xsl:apply-templates select="text|level"/>
   </xsl:template>
