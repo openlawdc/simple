@@ -149,11 +149,13 @@ All hierarchy of the Code is represented by `<level>` elements. This includes bo
 
 A `<level>` contains any of the following subelements:
 
-* `<type>`: The text in this element indicates the type of the level.
- * Possible values for "big" levels include: `Article`, `Chapter`, `Division`, `Part`, `Subchapter`, `Subdivision`, `Subpart`, `Subtitle`, `Title`, and `Unit`.
- * The type can also be `Section` for sections of the code (e.g. § 1-101). Sections are the primary levels where text and annotations occur.
- * When type is `placeholder`, the level is section-like but it represents Code sections that no longer exist or may exist in the future but do not exist now. Placeholder levels often have text and annotations like sections. They are documented specifically in a section below.
- * The type can also be `annotations` for annotation blocks, `appendices` for a block of appendices to a section (typically but not always within `Section`-levels), and `form` for blocks that contain quoted language that the Code is directing to be used on government forms (rendered like an HTML `<pre>` tag).
+* `<type>`: The text in this element indicates the type of the level, as follows:
+ * `Article`, `Chapter`, `Division`, `Part`, `Subchapter`, `Subdivision`, `Subpart`, `Subtitle`, `Title`, and `Unit`: These are the "big" levels on the spine above the level of a Section.
+ * `Section`: Sections of the code (e.g. § 1-101), the primary levels where text and annotations occur.
+ * `placeholder`: The level is section-like but it represents Code sections that no longer exist or may exist in the future but do not exist now. Placeholder levels often have text and annotations like sections. They are documented specifically in a section below.
+ * `annotations`: Annotation blocks.
+ * `appendices`: Appendices to a section (typically but not always within `Section`-levels).
+ * `form` and `table`: Blocks that are rendered with internal whitespace preserved. `form` contains quoted language that the Code is directing to be used on government forms. `table` contains pay schedules and other tables that are layed out in a monospace font.
  * When `<type>` is omitted, the level is a numbered paragraph (i.e. `(1) The public policy....`) or an unnumbered block with a heading. Inside annotations, subheadings are represented this way.
 
 * `<num>`: The level's number. 
@@ -182,7 +184,6 @@ Text content is contained within `<text>` elements inside `<level>`s. `<text>` m
 An optional `class` attribute can be one of:
 
 * `centered`: The paragraph is rendered with centered text alignment.
-* `table`, `tablec`, or `PlainText`: These are often rendered as monospace, pre-formmated plain text.
 
 Inside the `<text>` element is HTML conforming to the following restrictions:
 
