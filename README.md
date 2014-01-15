@@ -9,19 +9,21 @@ The DC Code in XML makes use of a custom schema that draws on ideas from [Akoma 
 
 The schema can almost entirely be seen in the following four examples.
 
-(1) Root element. The root element is `<dc-code>` and it contains some metadata.
+(1) Root element. The root element is a `<level>` element. It contains some metadata and nested `<level>` elements for the first level divisions of the code.
 
-	<dc-code>
+	<level>
+		<type>document</type>
+		<heading>Code of the District of Columbia</heading>
+
 		<meta>
-			<title>Code of the District of Columbia</title>
 			<recency>current through DC Act 19-658; unofficial through D.C. Act 19-682</recency>
 		</meta>
 
 		<!-- <level> elements as shown below -->
 
-	</dc-code>
+	</level>
 
-(2) "Big" levels (titles, chapters, and so on)
+(2) "Big" levels. These are divisions, titles, chapters, and so on.
 
     <level>
 		<type>Title</type>
@@ -32,7 +34,7 @@ The schema can almost entirely be seen in the following four examples.
 
     </level>
 
-(3) Sections and annotations
+(3) Sections and annotations.
 
 	<level>
 		<type>Section</type>
@@ -84,9 +86,10 @@ This documentation assumes you are working with the one-big-file format.
 
 In the second format, any `<level>` element may be replaced by an XInclude reference to another file containing the element. Except in files for section levels, which never have XIncludes inside them. In this format the top-level file is:
 
-	<dc-code>
+	<level>
+	  <type>document</type>
+	  <heading>Code of the District of Columbia</heading>
 	  <meta>
-	    <title>Code of the District of Columbia</title>
 	    <recency>current through DC Act 19-658; unofficial through D.C. Act 19-682</recency>
 	  </meta>
 	  <ns0:include xmlns:ns0="http://www.w3.org/2001/XInclude" href="Division-I/index.xml"/>
@@ -97,19 +100,21 @@ In the second format, any `<level>` element may be replaced by an XInclude refer
 	  <ns0:include xmlns:ns0="http://www.w3.org/2001/XInclude" href="Division-VI/index.xml"/>
 	  <ns0:include xmlns:ns0="http://www.w3.org/2001/XInclude" href="Division-VII/index.xml"/>
 	  <ns0:include xmlns:ns0="http://www.w3.org/2001/XInclude" href="Division-VIII/index.xml"/>
-	</dc-code>
+	</level>
 
 Root Element and Metadata
 -------------------------
 
-The root element is `<dc-code>`. We are not using namespaces.
+The root element is a `<level>` like most other nodes in the schema. We are not using namespaces.
 
 The root element contains a `<meta>` element with document metadata. The `<meta>` element is followed by `<level>` elements representing the Divisions of the Code.
 
 	<?xml version='1.0' encoding='utf-8'?>
-	<dc-code>
+	<level>
+	  <type>document</type>
+	  <heading>Code of the District of Columbia</heading>
+
 	  <meta>
-	    <title>Code of the District of Columbia</title>
 	    <recency>current through DC Act 19-658; unofficial through D.C. Act 19-682</recency>
 	  </meta>
 
@@ -150,6 +155,7 @@ All hierarchy of the Code is represented by `<level>` elements. This includes bo
 A `<level>` contains any of the following subelements:
 
 * `<type>`: The text in this element indicates the type of the level, as follows:
+ * `document`: The root of the entire document. There is one such element and it is at the top of the hierarchy.
  * `Article`, `Chapter`, `Division`, `Part`, `Subchapter`, `Subdivision`, `Subpart`, `Subtitle`, `Title`, and `Unit`: These are the "big" levels on the spine above the level of a Section.
  * `Section`: Sections of the code (e.g. § 1-101), the primary levels where text and annotations occur.
  * `placeholder`: The level is section-like but it represents Code sections that no longer exist or may exist in the future but do not exist now. Placeholder levels often have text and annotations like sections. They are documented specifically in a section below.
@@ -161,9 +167,8 @@ A `<level>` contains any of the following subelements:
 * `<num>`: The level's number. 
  * For "big" levels, this usually is a number, letter, or roman numeral.
  * For sections, the number is typically (but not always) in the format `1-101`. It never includes the §-symbol.
- * Placeholder levels do not have `<num>` elements.
  * For "little" levels, this is the paragraph's numbering including any parenthesis around the numbering. An example would be `(12A-i)`.
- * When `<num>` is omitted, the level is simply unnumbered.
+ * `<num>` isn't ever required. When `<num>` is omitted, the level is simply unnumbered. `document` and `placeholder` levels never have `<num>` elements. For placeholders, see below.
 
 * `<heading>`: The level's name or heading.
  * For "big" levels, sections, placeholders, and subheadings in annotations, this is the name of the level, such as `Government Organization`.

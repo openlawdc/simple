@@ -6,17 +6,17 @@
 
   <xsl:output method="html" version="4.0" omit-xml-declaration="yes" encoding="utf-8" indent="yes" />
 
-  <xsl:template match="/dc-code|/level">
+  <xsl:template match="/level">
 <html>
 	<head>
-		<title>District of Columbia Code</title>
+		<title>Code of the District of Columbia</title>
 		<meta charset="utf-8" />
 	</head>
     <body>
-      <h1>District of Columbia Code</h1>
-      <p><xsl:value-of select="dc-code/meta/recency"/></p>
+      <h1>Code of the District of Columbia</h1>
+      <p><xsl:value-of select="meta/recency"/></p>
 
-      <xsl:if test="name() = 'level'" xml:space="preserve">
+      <xsl:if test="not(type = 'document')" xml:space="preserve">
         <h2><xsl:value-of select="type"/> <xsl:value-of select="num"/>. <xsl:value-of select="heading"/></h2>
       </xsl:if>
 
