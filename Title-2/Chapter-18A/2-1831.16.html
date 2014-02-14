@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1831.16. Judicial review and administrative appeals.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-18A/index.html">Chapter 18A. Office of Administrative Hearings</a></li>
+                    
+                    <li>↪ § 2-1831.16. Judicial review and administrative appeals.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-18A/2-1831.15.html">§ 2-1831.15. Conflicts of regulations.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-18A/2-1831.17.html">§ 2-1831.17. Advisory Committee.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1831.16. Judicial review and administrative appeals.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">An order of the Office shall be effective upon its issuance, unless stayed by an Administrative Law Judge </span>
+                
+                    <span class="" style="font-style: italic; ">sua sponte </span>
+                
+                    <span class="" style="">or upon motion of any party. Any party may file a motion for reconsideration of an order or a motion for a new trial within 10 calendar days of service of an order. Unless otherwise ordered by an Administrative Law Judge, the filing of such a motion shall not stay the effectiveness of an order. If such a motion is timely filed, the order shall not be final for purposes of judicial review until the motion is ruled upon by the Administrative Law Judge or is denied by operation of law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any agency, board, commission, or body of an agency identified in subchapter III of this chapter, other than the Board of Appeals and Review, shall retain jurisdiction to entertain and determine appeals from orders of Administrative Law Judges, as granted in that chapter. The Rental Housing Commission shall have jurisdiction to review orders of the Office in all adjudicated cases brought pursuant to Chapter 35 of Title 42 [§ 42-501.01 et seq.]. A board or commission that delegates a matter pursuant to <a href='/dccode/Title-2/Chapter-18A/2-1831.03.html'>§ 2-1831.03(i)</a> shall have jurisdiction of any appeal by any party from an order of an Administrative Law Judge issued in that matter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Except as provided in subsection (b) of this section, any person suffering a legal wrong or adversely affected or aggrieved by any order of the Office in any adjudicated case may obtain judicial review of that order.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Notwithstanding any other provision of law, any agency suffering a legal wrong or adversely affected or aggrieved by any order of the Office in any adjudicated case may obtain judicial review of that order.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Judicial review of all orders of the Office in contested cases shall be in the District of Columbia Court of Appeals in accordance with the procedures and rules of that court.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Judicial review of any order of the Office in a matter that is not a contested case shall be in accordance with other applicable law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">In all proceedings for judicial review authorized by this section, the reviewing court shall apply the standards of review prescribed in <a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-510.html'>§ 2-510</a>. A reviewing court may not modify a monetary sanction imposed by an Administrative Law Judge if that sanction is within the limits established by law or regulation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Notwithstanding any other provision of law, neither the Office nor an Administrative Law Judge shall be a party in any proceeding brought by a party in any court seeking judicial review of any order of the Office, or of any order of an agency head or governing board, commission, or body of an agency that decides any appeal from any order of the Office. Only the parties before the Office or any other party permitted to participate by the reviewing court shall be parties in any such proceeding for judicial review.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 6, 2002, D.C. <a href='http://openlims.org/public/L14-76.pdf'>Law 14-76</a>, § 19, 48 DCR 11442; Dec. 7, 2004, D.C. <a href='http://openlims.org/public/L15-217.pdf'>Law 15-217</a>, § 3(c), 51 DCR 9126; Apr. 4, 2006, D.C. <a href='http://openlims.org/public/L16-83.pdf'>Law 16-83</a>, § 2(e), 53 DCR 1059.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-18/Subchapter-III/2-1803.01.html'>§ 2-1803.01</a>, <a href='/dccode/Title-2/Chapter-18/Subchapter-III/2-1803.02.html'>§ 2-1803.02</a>, <a href='/dccode/Title-2/Chapter-18A/2-1831.03.html'>§ 2-1831.03</a>, <a href='/dccode/Title-47/Chapter-28/Subchapter-IV/Part-C/47-2885.21.html'>§ 47-2885.21</a>, and <a href='/dccode/Title-47/Chapter-43/Subchapter-II/47-4312.html'>§ 47-4312</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-217.pdf'>Law 15-217</a> added the last sentence to subsec. (b).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-83.pdf'>Law 16-83</a>, in subsec. (b), substituted &quot;The Rental Housing Commission shall have jurisdiction to review orders of the Office in all adjudicated cases brought pursuant to Chapter 35 of Title 42.&quot; for &quot;The Rental Housing Commission shall have jurisdiction to review orders of the Office in all adjudicated cases in which the Rent Administrator, or his or her designee, would have had jurisdiction but for the enactment of this chapter.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Office of Administrative Hearings Establishment Emergency Amendment Act of 2004 (D.C. Act 15-513, August 2, 2004, 51 DCR 8976).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Office of Administrative Hearings Establishment Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-553, October 26, 2004, 51 DCR 10359).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Administrative Hearings Rental Housing Emergency Amendment Act of 2005 (D.C. Act 16-181, October 4, 2005, 52 DCR 9085).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(e) of Second Office of Administrative Hearings Rental Housing Emergency Amendment Act of 2005 (D.C. Act 16-246, December 22, 2005, 53 DCR 274).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(e) of Office of Administrative Hearings Rental Housing Congressional Review Emergency Amendment Act of 2006 (D.C. Act 16-333, March 23, 2006, 53 DCR 2596).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-76</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L14-76.pdf'>Law 14-76</a>, see notes following <a href='/dccode/Title-2/Chapter-18A/2-1831.01.html'>§ 2-1831.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-217</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-217.pdf'>Law 15-217</a>, see notes following <a href='/dccode/Title-2/Chapter-18A/2-1831.03.html'>§ 2-1831.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-83</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-83.pdf'>Law 16-83</a>, see notes following <a href='/dccode/Title-2/Chapter-18A/2-1831.03.html'>§ 2-1831.03</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

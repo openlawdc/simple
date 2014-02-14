@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 34-1501. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/index.html">Title 34. Public Utilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-15/index.html">Chapter 15. Retail Electric Competition and Consumer Protection</a></li>
+                    
+                    <li>↪ § 34-1501. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-15/index.html">Chapter 15. Retail Electric Competition and Consumer Protection</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-15/34-1502.html">§ 34-1502. Implementation of customer choice.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 34-1501. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Affiliate&quot; means a person who directly or indirectly, or through one or more intermediaries, controls, is controlled by, or is under common control with, or has directly or indirectly, any economic interest in another person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Aggregator&quot; means a person who acts on behalf of customers to purchase electricity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Aggregation program&quot; means any system developed by an aggregator for organizing customers into a single purchasing unit.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Anticompetitive condition&quot; means a condition which would allow a party to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Exercise vertical or horizontal market power;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Use the ownership or control of a regulated facility to favor an unregulated affiliate or subsidiary or to discriminate against a non-affiliated entity;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Erect a barrier to entry; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Compete unfairly or deny effective competition to consumers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Anticompetitive conduct&quot; means an activity which would:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Violate any applicable antitrust law;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Constitute favorable treatment of an affiliate;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Discriminate against an unrelated entity;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Constitute a barrier to entry; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Confer an unfair competitive advantage upon an entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Bid premium&quot; means a payment by an electricity supplier to the Commission for the right to provide standard offer service in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Broker&quot; means a person who acts as an agent or intermediary in the sale and purchase of electricity but who does not take title to electricity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Competitive billing&quot; means the right of a customer to receive a single bill from the electric company, a single bill from the electricity supplier, or separate bills from the electric company and the electricity supplier.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Commission&quot; means the Public Service Commission of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Competitive Transition Charge&quot; means a rate, charge, credit, or other appropriate mechanism authorized to be imposed for the recovery of transition costs as determined by the Commission under <a href='/dccode/Title-34/Chapter-15/34-1510.html'>§ 34-1510</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Consolidator&quot; means any owner of or property manager for multi-family residential, commercial office, industrial, and retail facilities who combines more than one property for the primary purpose of contracting with an aggregator or electric energy service provider for electric energy services for those properties, and who:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Does not take title to electric energy;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Does not sell electric energy to buildings not owned or managed by such owner or property manager;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Does not offer aggregation of electric energy services to other, unrelated end-users; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Arranges for the purchase of electric energy services only from duly licensed electric energy service providers or aggregators.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Consumer&quot; or &quot;customer&quot; each means a purchaser of electricity for end use in the District of Columbia. The term excludes an occupant of a building where the owner, lessee, or manager manages the internal distribution system serving the building and supplies electricity solely to occupants of the building for use by the occupants.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Customer-based aggregation program&quot; means a program in which customers pool their loads to shop more effectively for electricity supply, electricity supply services, or any service declared to be a potentially competitive service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Customer choice&quot; or &quot;choice of electricity suppliers&quot; each means the right of electricity suppliers and consumers to use and interconnect with the electric distribution system on a nondiscriminatory basis in order to distribute electricity from any electric supplier to any customer. Under this right, consumers shall have the opportunity to purchase electricity supply from their choice of licensed electricity suppliers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Customer-generator&quot; means a residential or commercial customer that owns and operates an electric generating facility that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Has a capacity of not more than 1000 kilowatts;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Uses renewable resources, cogeneration, fuel cells, or microturbines;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is located on the customer&#39;s premises;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Is interconnected with the electric company&#39;s transmission and distribution facilities; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Is intended primarily to offset all or part of the customer&#39;s own electricity requirements.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Effective competition&quot; means, with respect to the markets for electricity supply, billing, and those services declared by the Commission to be potentially competitive services a market structure under which an individual seller is not able to influence significantly the price of the service as a result of the number of sellers of the service, the size of each seller&#39;s share of the market, the ability of the sellers to enter or exit the market, and the price and availability of comparable substitutes for the service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Electricity supplier&quot; means a person, including an aggregator, broker, or marketer, who generates electricity; sells electricity; or purchases, brokers, arranges or, markets electricity for sale to customers. The term excludes the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Building owners, lessees, or managers who manage the internal distribution system serving such building and who supply electricity solely to occupants of the building for use by the occupants;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Any person who purchases electricity for its own use or for the use of its subsidiaries or affiliates; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Any apartment building or office building manager who aggregates electric service requirements for his or her building or buildings, and who does not:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Take title to electricity;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Market electric services to the individually-metered tenants of his or her building; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Engage in the resale of electric services to others;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Property owners who supply small amounts of power, at cost, as an accommodation to lessors or licensees of the property; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">A consolidator.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17A) </span>
+                
+                    <span class="" style="">&quot;Gender identity or expression&quot; shall have the same meaning as provided in <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-I/2-1401.02.html'>§ 2-1401.02(12A)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Initial implementation date&quot; means the first day on which customers in the District of Columbia shall have the ability to choose an electricity supplier. Unless accelerated or delayed by the Commission under <a href='/dccode/Title-34/Chapter-15/34-1502.html'>§ 34-1502(c)</a>, the initial implementation date shall be January 1, 2002.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Marketer&quot; means a person who purchases and takes title to electricity as an intermediary for sale to customers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Market participant&quot; means any electricity supplier (including an affiliate of the electric company) or any person providing billing services or services declared by the Commission to be potentially competitive services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Net energy metering&quot; means measuring the difference between the electricity supplied to an eligible customer-generator from the electric grid and the electricity generated and fed back to the electric grid by the eligible customer-generator.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Pilot program&quot; means a transitional program approved by the Commission prior to the initial implementation date under which customer choice is implemented for a percentage of each customer class.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Potentially competitive service&quot; means a component of electric service (other than electricity supply and billing) determined by the Commission to be suitable for purchase by customers from alternative sellers under <a href='/dccode/Title-34/Chapter-15/34-1504.html'>§ 34-1504(e)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Public purpose program&quot; means a program implemented with the intention of furthering a public purpose.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">&quot;Public purpose program&quot; includes:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A universal service program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A program encouraging renewable energy resources;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A demand-side management or other energy efficiency or conservation program; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">A consumer education program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Schedule&quot; means a list of the dates on which each customer class, or a designated percentage of each customer class, is eligible for customer choice and competitive billing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Standard offer service&quot; means that electric service mandated by <a href='/dccode/Title-34/Chapter-15/34-1509.html'>§ 34-1509</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(28) </span>
+                
+                    <span class="" style="">&quot;Transition costs&quot; means costs, liabilities, and investments (including regulatory assets) allocable to the District of Columbia to the extent the costs, liabilities, and investments:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Traditionally have been or would be recoverable under the existing regulatory structure (with retail rates for the provision of electric service), but will not be recoverable in the restructured electricity supply market; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Arise as a result of electric industry restructuring and are related to the creation of customer choice.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(29) </span>
+                
+                    <span class="" style="">&quot;Wholesale electricity supplier&quot; means the electric company, which, pursuant to <a href='/dccode/Title-34/Chapter-15/34-1509.html'>§ 34-1509</a>, obtains bids from, and contracts for electric service with, third parties and provides standard offer service to retail customers.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(May 9, 2000, D.C. <a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a>, § 101, 47 DCR 1091; Mar. 30, 2004, D.C. <a href='http://openlims.org/public/L15-113.pdf'>Law 15-113</a>, § 2(a), 51 DCR 1349; June 25, 2008, D.C. <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a>, § 18(a), 55 DCR 3696; Oct. 22, 2008, D.C. <a href='http://openlims.org/public/L17-250.pdf'>Law 17-250</a>, § 302, 55 DCR 9225.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-34/Chapter-15A/34-1551.html'>§ 34-1551</a> and <a href='/dccode/Title-34/Chapter-15B/34-1561.html'>§ 34-1561</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-113.pdf'>Law 15-113</a> added par. (29).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a> added par. (17A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-250.pdf'>Law 17-250</a>, in par. (15)(A), substituted &quot;1000 kilowatts&quot; for &quot;100 kilowatts&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Electric Standard Offer Service Emergency Amendment Act of 2003 (D.C. Act 15-276, December 18, 2003, 51 DCR 47).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Electric Standard Offer Service Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-400, March 18, 2004, 51 DCR 3636).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 302 of Clean and Affordable Energy Emergency Act of 2008 (D.C. Act 17-508, September 25, 2008, 55 DCR 10856).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-107</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a>, the &quot;Retail Electric Competition and Consumer Protection Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-284, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on December 7, 1999, and December 21, 1999, respectively. Signed by the Mayor on January 18, 2000, it was assigned Act No. 13-256 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a> became effective on May 9, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-113</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-113.pdf'>Law 15-113</a>, the &quot;Electric Standard Offer Service Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-439, which was referred to the Committee on Public Interest. The Bill was adopted on first and second readings on December 2, 2003, and January 6, 2004, respectively. Signed by the Mayor on January 27, 2004, it was assigned Act No. 15-300 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-113.pdf'>Law 15-113</a> became effective on March 30, 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-177</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a>, the &quot;Prohibition of Discrimination on the Basis of Gender Identity and Expression Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-330, which was referred to the Committee on Workforce Development and Government Operations. The Bill was adopted on first and second readings on February 5, 2008, and March 4, 2008, respectively. Signed by the Mayor on March 19, 2008, it was assigned Act No. 17-329 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a> became effective on June 25, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-250</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-250.pdf'>Law 17-250</a>, see notes following <a href='/dccode/Title-34/Chapter-8/34-804.html'>§ 34-804</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

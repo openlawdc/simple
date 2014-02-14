@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:8-112. Creditor's legal process.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/index.html">Article 8. Investment Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/Part-I/index.html">Part I. Short Title and General Matters</a></li>
+                    
+                    <li>↪ § 28:8-112. Creditor&#39;s legal process.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-111.html">§ 28:8-111. Clearing corporation rules.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-113.html">§ 28:8-113. Statute of frauds inapplicable.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:8-112. Creditor's legal process.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The interest of a debtor in a certificated security may be reached by a creditor only by actual seizure of the security certificate by the officer making the attachment or levy, except as otherwise provided in subsection (d) of this section. However, a certificated security for which the certificate has been surrendered to the issuer may be reached by a creditor by legal process upon the issuer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The interest of a debtor in an uncertificated security may be reached by a creditor only by legal process upon the issuer at its chief executive office in the United States, except as otherwise provided in subsection (d) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The interest of a debtor in a security entitlement may be reached by a creditor only by legal process upon the securities intermediary with whom the debtor&#39;s securities account is maintained, except as otherwise provided in subsection (d) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The interest of a debtor in a certificated security for which the certificate is in the possession of a secured party, or in an uncertificated security registered in the name of a secured party, or a security entitlement maintained in the name of a secured party, may be reached by a creditor by legal process upon the secured party.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">A creditor whose debtor is the owner of a certificated security, uncertificated security, or security entitlement is entitled to aid from a court of competent jurisdiction, by injunction or otherwise, in reaching the certificated security, uncertificated security, or security entitlement or in satisfying the claim by means allowed at law or in equity in regard to property that cannot readily be reached by other legal process.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=740'>77 Stat. 740</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 16, 1993, D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, § 4, 39 DCR 9165; renumbered and amended, Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, § 2, 44 DCR 1087.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:8-112.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:8-317.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. In dealing with certificated securities the instrument itself is the vital thing, and therefore a valid levy cannot be made unless all possibility of the certificate&#39;s wrongfully finding its way into a transferee&#39;s hands has been removed. This can be accomplished only when the certificate is in the possession of a public officer, the issuer, or an independent third party. A debtor who has been enjoined can still transfer the security in contempt of court. See Overlock v. Jerome-Portland Copper Mining Co., 29 Ariz. 560, 243 P. 400 (1926). Therefore, although injunctive relief is provided in subsection (e) so that creditors may use this method to gain control of the certificated security, the security certificate itself must be reached to constitute a proper levy whenever the debtor has possession.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (b) provides that when the security is uncertificated and registered in the debtor&#39;s name, the debtor&#39;s interest can be reached only by legal process upon the issuer. The most logical place to serve the issuer would be the place where the transfer records are maintained, but that location might be difficult to identify, especially when the separate elements of a computer network might be situated in different places. The chief executive office is selected as the appropriate place by analogy to Section 9-103(3)(d). See Comment 5(c) to that section. This section indicates only how attachment is to be made, not when it is legally justified. For that reason there is no conflict between this section and Shaffer v. Heitner, 433 U.S. 186 (1977).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (c) provides that a security entitlement can be reached only by legal process upon the debtor&#39;s security intermediary. Process is effective only if directed to the debtor&#39;s own security intermediary. If Debtor holds securities through Broker, and Broker in turn holds through Clearing Corporation, Debtor&#39;s property interest is a security entitlement against Broker.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Accordingly, Debtor&#39;s creditor cannot reach Debtor&#39;s interest by legal process directed to the Clearing Corporation. See also Section 8-115.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (d) provides that when a certificated security, an uncertificated security, or a security entitlement is controlled by a secured party, the debtor&#39;s interest can be reached by legal process upon the secured party. This section does not attempt to provide for rights as between the creditor and the secured party, as, for example, whether or when the secured party must liquidate the security.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Certificated security&quot;. Section 8-102(a)(4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Issuer&quot;. <a href='/dccode/Title-8/Chapter-2/8-201.html'>Section 8-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Secured party&quot;. Section 9-105(1)(m).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Securities intermediary&quot;. Section 8-102(a)(14).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security certificate&quot;. Section 8-102(a)(16).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security entitlement&quot;. Section 8-102(a)(17).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Uncertificated security&quot;. Section 8-102(a)(18).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

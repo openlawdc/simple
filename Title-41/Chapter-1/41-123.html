@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 41-123. Deposit of funds.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41/index.html">Title 41. Personal Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41/Chapter-1/index.html">Chapter 1. Disposition of Unclaimed Property</a></li>
+                    
+                    <li>↪ § 41-123. Deposit of funds.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-41/Chapter-1/41-122.html">§ 41-122. Sale of abandoned property.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-41/Chapter-1/41-124.html">§ 41-124. Filing of claim with Mayor for abandoned property.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 41-123. Deposit of funds.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">During the first 2 years after the effective date of this chapter, no less than 50% of all property received under this chapter, including the proceeds from the sale of abandoned property under <a href='/dccode/Title-41/Chapter-1/41-122.html'>§ 41-122</a>, shall be deposited by the Mayor in a separate trust fund or kept for safekeeping with a holder which is a bank or trust company in order to make prompt payment of claims duly allowed by the Mayor as provided by this section. The remainder percentage of funds received and any income or increment to the funds deposited in the trust fund accruing during such 2 years may be deposited in the General Fund of the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">All funds received or kept under this chapter after the 2 year period described in subsection (a) of this section, including the proceeds from the sale of abandoned property under <a href='/dccode/Title-41/Chapter-1/41-122.html'>§ 41-122</a>, shall be deposited by the Mayor in the General Fund of the District government, except that the Mayor shall retain in a separate trust fund an amount not less than $100,000 in order to make prompt payment of claims duly allowed by the Mayor as provided by this chapter. Any monies unexpended at the end of a fiscal year shall revert to the unrestricted fund balance of the General Fund of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Before making the deposit the Mayor shall record at least the name and last known address of each person appearing from the holders&#39; reports to be entitled to the abandoned property and of the name and last known address of each insured person or annuitant, and beneficiary and, with respect to each policy or contract listed in the report of a life insurance corporation, the policy or contract number, and the name of the corporation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The record shall be available for public inspection during regular business hours. The Mayor of the District of Columbia is authorized to establish and collect reasonable fees for services rendered by the Department of Finance and Revenue for the searching and reproduction of records and other services as may, in the judgment of the Mayor, be necessary to defray the cost of providing services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Before making any deposit to the credit of the General Fund of the District government, the Mayor may deduct:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any costs in connection with the sale of abandoned property, or with the disposition by other means of abandoned property under <a href='/dccode/Title-41/Chapter-1/41-122.html'>§ 41-122</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any costs of mailing and publication in connection with any abandoned property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Reasonable service charges; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The costs incurred in examining records of holders of abandoned property and collecting such property from such holders.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 5, 1981, D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>, § 123, 27 DCR 5150; Sept. 29, 1992, D.C. <a href='http://openlims.org/public/L9-161.pdf'>Law 9-161</a>, § 2(p), 39 DCR 5696; Sept. 14, 2011, D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, § 9013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 6226</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-41/Chapter-1/41-122.html'>§ 41-122</a> and <a href='/dccode/Title-41/Chapter-1/41-131.html'>§ 41-131</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 42-223.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, in subsec. (b)(1), inserted &quot;Any monies unexpended at the end of a fiscal year shall revert to the unrestricted fund balance of the General Fund of the District of Columbia.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-160</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>, see Historical and Statutory Notes following <a href='/dccode/Title-41/Chapter-1/41-101.html'>§ 41-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-161</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-161.pdf'>Law 9-161</a>, see Historical and Statutory Notes following <a href='/dccode/Title-41/Chapter-1/41-103.html'>§ 41-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, the &quot;Fiscal Year 2012 Budget Support Act of 2011&quot;, was introduced in Council and assigned Bill No. 19-203, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 25, 2011, and June 14, 2011, respectively. Signed by the Mayor on July 22, 2011, it was assigned Act No. 19-98 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a> became effective on September 14, 2011.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The &quot;effective date of this chapter,&quot; referred to near the beginning of the first sentence of subsection (a), is the effective date of D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>, March 5, 1981.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Pursuant to the Office of the Chief Financial Officer&#39;s &quot;Notice of Public Interest&quot; published in the April 18, 1997, issue of the District of Columbia Register (44 DCR 2345) the Office of Tax and Revenue assumed all of the duties and functions previously performed by the Department of Finance and Revenue, as set forth in Commissioner&#39;s Order 69-96, dated March 7, 1969. This action was made effective January 22, 1997, nunc pro tunc.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 23 of the Uniform Unclaimed Property Act (1981 Act).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

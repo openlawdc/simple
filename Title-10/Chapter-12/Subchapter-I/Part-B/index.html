@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Part B. General Provisions</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/index.html">Title 10. Parks, Public Buildings, Grounds, and Space</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-12/index.html">Chapter 12. Washington Convention and Sports Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-12/Subchapter-I/index.html">Subchapter I. General Provisions</a></li>
+                    
+                    <li>↪ Part B. General Provisions</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-10/Chapter-12/Subchapter-I/Part-A/index.html">Part A. Declaration of Policy</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-10/Chapter-12/Subchapter-I/Part-C/index.html">Part C. Land Lease Authority for Hotel</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Part B. General Provisions</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.01.html">§ 10-1202.01. Definitions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.02.html">§ 10-1202.02. Establishment of the Washington Convention and Sports Authority; purpose of the Authority.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.02a.html">§ 10-1202.02a. Transfer of authority of the Armory Board.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.02b.html">§ 10-1202.02b. Transfer of authorities and functions of the District of Columbia Sports and Entertainment Commission; abolishment of the District of Columbia Sports and Entertainment Commission.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.02c.html">§ 10-1202.02c. Transfer of assets, rights, and obligations of the District of Columbia Sports and Entertainment Commission.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.03.html">§ 10-1202.03. General powers of Authority.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.04.html">§ 10-1202.04. Limitations on Authority's powers.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.05.html">§ 10-1202.05. Establishment of Board of Directors.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.06.html">§ 10-1202.06. Duties of the Board.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.07.html">§ 10-1202.07. President and Chief Executive Officer; appointment and duties.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.07a.html">§ 10-1202.07a. References deemed to refer to the President and Chief Executive Officer of the Washington Convention and Sports Authority.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.08.html">§ 10-1202.08. Washington Convention Center Fund; transfer and pledge of revenues.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.08a.html">§ 10-1202.08a. Establishment of the Washington Convention Center Marketing Fund; marketing service contracts.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.08b.html">§ 10-1202.08b. Sports and Entertainment Fund.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.08c.html">§ 10-1202.08c. Sports Facilities Account.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.09.html">§ 10-1202.09. Delegation of Council authority to issue bonds.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.10.html">§ 10-1202.10. Power of the Authority to issue bonds and notes.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.11.html">§ 10-1202.11. Terms for sale of bonds; additional bond and note provisions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.12.html">§ 10-1202.12. District pledges.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.13.html">§ 10-1202.13. Transfer of excess cash.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.14.html">§ 10-1202.14. District of Columbia repayment option.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.15.html">§ 10-1202.15. Location of new convention center.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.15a.html">§ 10-1202.15a. Redevelopment of existing convention center site.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.16.html">§ 10-1202.16. Merit personnel system inapplicable.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.17~P.html">§ 10-1202.17. Transition provisions; establishment of Interim Board of Directors. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="10-1202.18.html">§ 10-1202.18. Establishment of Advisory Committee.</a></span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

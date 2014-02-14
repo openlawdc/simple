@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-671.02. Nature of rights; subordination of interests.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-6C/index.html">Chapter 6C. Uniform Environmental Covenants</a></li>
+                    
+                    <li>↪ § 8-671.02. Nature of rights; subordination of interests.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-6C/8-671.01.html">§ 8-671.01. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-6C/8-671.03.html">§ 8-671.03. Contents of environmental covenant.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-671.02. Nature of rights; subordination of interests.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Any person, including a person that owns an interest in the real property, the environmental agency, or a municipality or any other unit of local government, may be a holder. An environmental covenant may identify more than one holder. The interest of a holder is an interest in real property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A right of an environmental agency under this chapter or under an environmental covenant, other than a right as a holder, is not an interest in real property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">An environmental agency is bound by any obligation it assumes in an environmental covenant, but an environmental agency does not assume obligations merely by signing an environmental covenant. Any other person that signs an environmental covenant is bound by the obligations the person assumes in the covenant, but signing the covenant does not change obligations, rights, or protections granted or imposed under law other than this chapter except as provided in the covenant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The following rules apply to interests in real property in existence at the time an environmental covenant is created or amended:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An interest that has priority under other law is not affected by an environmental covenant unless the person that owns the interest subordinates that interest to the covenant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">This chapter does not require a person that owns a prior interest to subordinate that interest to an environmental covenant or to agree to be bound by the covenant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A subordination agreement may be contained in an environmental covenant covering real property or in a separate record. If the environmental covenant covers commonly owned property in a common-interest community, the record may be signed by any person authorized by the governing board of the owners&#39; association.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">An agreement by a person to subordinate a prior interest to an environmental covenant affects the priority of that person&#39;s interest but does not by itself impose any affirmative obligation on the person with respect to the environmental covenant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Environmental Health Administration, or it successor, shall have regulatory authority over real property transfers from the federal government or a federal agency to a non-federal owner.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(May 12, 2006, D.C. <a href='http://openlims.org/public/L16-95.pdf'>Law 16-95</a>, § 102, 53 DCR 1652.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-8/Chapter-6C/8-671.01.html'>§ 8-671.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-95</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-95.pdf'>Law 16-95</a>, see notes following <a href='/dccode/Title-8/Chapter-6C/8-671.01.html'>§ 8-671.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 2 of the Uniform Environmental Covenants Act.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

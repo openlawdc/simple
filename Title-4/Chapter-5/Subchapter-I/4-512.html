@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-512. Procedures for filing claims.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-5/index.html">Chapter 5. Compensation of Victims of Violent Crime</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-5/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 4-512. Procedures for filing claims.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-5/Subchapter-I/4-511.html">§ 4-511. Confidentiality.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-5/Subchapter-I/4-513.html">§ 4-513. False claims.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-512. Procedures for filing claims.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A claim shall be initiated when the claimant timely submits a completed application to the Court. Claims may be filed in person or by mail. A claim may be filed by a person eligible for compensation as provided in <a href='/dccode/Title-4/Chapter-5/Subchapter-I/4-506.html'>§ 4-506</a>, or if that person is a minor or legally incompetent, by the claimant&#39;s parent, guardian, or personal representative.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Upon receipt of a completed application, the Court shall examine written information submitted by the claimant and other documentary evidence. The Court may require additional information from the claimant and conduct investigations as necessary to determine whether the claimant is eligible for compensation and the amount, if any, of compensation to be awarded. The Court shall send a notice of the determination, and the reasons therefor, to the claimant by first class mail, along with instructions for requesting reconsideration or an appeal before the Board.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The claimant may, within 30 days after receiving the notice of determination, request reconsideration based on new or previously unavailable information. The Court must render a decision based on the additional information within 30 days after receiving the information. The Court may affirm, modify, or reverse its initial decision. The Court shall send a notice of the decision on reconsideration, and the reasons therefor, to the claimant by first class mail, along with instructions for filing an appeal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The claimant may, within 30 days after receipt of the initial determination, or within 30 days after receipt of the decision on reconsideration, appeal the decision to the Board. The Board shall consider the appeal on the record at its next scheduled meeting if the Board has received the appeal and the record at least 5 days before the meeting. Within 20 days after the meeting, the Board shall render its decision in the case or give notice to the claimant that it will hold a hearing. The hearing shall occur within 30 days after the issuance of the notice. The Board shall render its decision in the case within 20 days after the hearing. The Court shall provide the claimant with written notice of the final determination of the claim. If the final determination was made pursuant to a hearing, the notice shall include findings of fact and conclusions of law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The claimant may agree in writing to a final determination at any time.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The Court may reopen a claim at any time if new evidence reveals that the claimant was not eligible, was guilty of contributory misconduct, knowingly provided false information, or suppressed relevant information concerning a claim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The claimant may have an attorney or other representative present at any appeals proceeding. In addition to the amount of compensation awarded to a successful claimant, a reasonable fee may be awarded to the claimant&#39;s attorney for services rendered in connection with an appeals proceeding under this chapter. The fee may not exceed 10% of the claimant&#39;s award or $500, whichever is less. Except for necessary costs, an attorney shall not charge, demand, receive, or collect a fee for services rendered in connection with a claim under this chapter in an amount larger than permitted by this section. The court shall notify the claimant of the availability of pro bono representation by clinical programs at area law schools.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">A final determination by the Board under this chapter may be appealed to the Chief Judge of the Court. Decisions of the Chief Judge shall be final.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-243.pdf'>Law 11-243</a>, § 13, 44 DCR 1142.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 3-432.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-4/Chapter-5/Subchapter-I/4-501.html'>§ 4-501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-243</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-243.pdf'>Law 11-243</a>, see Historical and Statutory Notes following <a href='/dccode/Title-4/Chapter-5/Subchapter-I/4-501.html'>§ 4-501</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

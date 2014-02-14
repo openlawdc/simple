@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 10-1101.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/index.html">Title 10. Parks, Public Buildings, Grounds, and Space</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-11/index.html">Chapter 11. Rental and Utilization of Public Space</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-11/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-11/Subchapter-I/Part-A/index.html">Part A. Definitions; Assessment of Government Rent; Minor Uses</a></li>
+                    
+                    <li>↪ § 10-1101.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-10/Chapter-11/Subchapter-I/Part-A/index.html">Part A. Definitions; Assessment of Government Rent; Minor Uses</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-10/Chapter-11/Subchapter-I/Part-A/10-1101.02.html">§ 10-1101.02. Assessment of rent from United States, District or foreign governments not authorized.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 10-1101.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">As used in this subchapter, unless the context requires otherwise:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Mayor&quot; means the Mayor of the District or his designated agent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;Assessed value&quot; means the estimated market value of the real property attributable to the land for purposes of real property taxation as of January 1 preceding the rent year.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Owner&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Any person, or any one of a number of persons, in whom is vested all or any part of the beneficial ownership, dominion, or title of property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The committee, conservator, or legal guardian of an owner who is non compos mentis, a minor child, or otherwise under a disability; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A trustee elected or appointed, or required by law, to execute a trust, other than a trustee under a deed of trust to secure the repayment of a loan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Parking&quot; means that area of public space which lies between the property line and the edge of the actual or planned sidewalk which is nearer to such property line, as such property line and sidewalk are shown on the records of the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Property line&quot; means the line of demarcation between privately owned property fronting or abutting a street and the publicly owned property in the line of such street.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Public space&quot; means all the publicly owned property between the property lines on a street, as such property lines are shown on the records of the District, and includes any roadway, tree space, sidewalk, or parking between such property lines.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Street&quot; means a public highway as shown on the records of the District, whether designated as a street, alley, avenue, freeway, road, drive, lane, place, boulevard, parkway, circle, or by some other term.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Vault&quot; means a structure or an enclosure of space beneath the surface of the public space, including but not limited to tanks for petroleum products, except that the term &quot;vault&quot; shall not include public utility structures, pipelines, or tunnels constructed under the authority of subsection (d) of <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-A/1-301.01.html'>§ 1-301.01</a>, or structures or facilities of the District of Columbia or any structure or facility included in any lease agreement entered into by the Mayor. If such structure or enclosure of space be divided approximately horizontally into 2 or more levels, the term &quot;vault&quot; as used in this subchapter shall be considered as applying to 1 such level only, and each such level shall be considered a separate vault within the meaning of this subchapter.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 17, 1968, <a href='http://api.fdsys.gov/link?collection=statute&volume=82&page=1156'>82 Stat. 1156</a>, <a href='http://www.govtrack.us/search?q=public%20law%2090-596'>Pub. L. 90-596</a>, title I, § 103; Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-192.pdf'>Law 16-192</a>, § 6013(a), 53 DCR 6899; Dec. 24, 2008, D.C. <a href='http://openlims.org/public/L17-284.pdf'>Law 17-284</a>, § 2(a), 55 DCR 11983.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-3A/Subchapter-I/2-351.05.html'>§ 2-351.05</a>, <a href='/dccode/Title-10/Chapter-11/Subchapter-III/10-1141.02.html'>§ 10-1141.02</a>, <a href='/dccode/Title-10/Chapter-12/Subchapter-I/Part-C/10-1202.24.html'>§ 10-1202.24</a>, and <a href='/dccode/Title-47/Chapter-3/Subchapter-I/47-305.01.html'>§ 47-305.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 7-1001.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 7-902.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-192.pdf'>Law 16-192</a>, in par. (8), substituted &quot;the District of Columbia or&quot; for &quot;the United States or the District of Columbia, or of any governmental entity or foreign government, or&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-284.pdf'>Law 17-284</a> added par. (1A).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 2(a) of D.C. <a href='http://openlims.org/public/L17-263.pdf'>Law 17-263</a> added a new 2nd unnumbered paragraph to read as follows: &quot;&#39;Assessed value&#39; means the estimated market value of the real property attributable to the land for purposes of real property taxation as of January 1 preceding the rent year.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 6(b) of D.C. <a href='http://openlims.org/public/L17-263.pdf'>Law 17-263</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 6013(a) of Fiscal Year 2007 Budget Support Emergency Act of 2006 (D.C. Act 16-477, August 8, 2006, 53 DCR 7068).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 6013(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2006 (D.C. Act 16-499, October 23, 2006, 53 DCR 8845).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 6013(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2007 (D.C. Act 17-1, January 16, 2007, 54 DCR 1165).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment, see § 2(a) of Public Space Rental Fees Emergency Amendment Act of 2008 (D.C. Act 17-460, July 28, 2008, 55 DCR 8729).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-192.pdf'>Law 16-192</a>, the &quot;Fiscal Year Budget Support Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-679, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 9, 2006, and June 6, 2006, respectively. Signed by the Mayor on August 8, 2006, it was assigned Act No. 16-476 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-192.pdf'>Law 16-192</a> became effective on March 2, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-284</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-284.pdf'>Law 17-284</a>, the &quot;Public Space Rental Fees Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-266 which was referred to the Committees on Public Services and Consumer Affairs and Public Works and the Environment. The Bill was adopted on first and second readings on July 15, 2008, and October 7, 2008, respectively. Signed by the Mayor on October 24, 2008, it was assigned Act No. 17-550 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-284.pdf'>Law 17-284</a> became effective on December 24, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Mayor's orders</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment of the Public Space Committee, see Mayor&#39;s Order 2009-114, June 18, 2009 (56 DCR 6862).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Change in Government</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section originated at a time when local government powers were delegated to the District of Columbia Council and to a Commissioner of the District of Columbia. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made in this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-1305.07. Effect of failure to request a criminal records check.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/index.html">Chapter 13. Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I/index.html">Subchapter I. Prevention of Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/index.html">Part E. Criminal Records Check</a></li>
+                    
+                    <li>↪ § 4-1305.07. Effect of failure to request a criminal records check.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.06.html">§ 4-1305.06. Results of the criminal records check.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.08.html">§ 4-1305.08. Confidentiality.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-1305.07. Effect of failure to request a criminal records check.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">If an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(1)</a>, (2), or (3), or any adult residing in the home of an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(1)</a>, (2), or (3), fails to request a criminal records check as required by this part, the Agency may deny approval or licensure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(4)</a>, or any adult residing in the home of an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(4)</a>, fails to request a criminal records check as required by this part, the Family Division of the Superior Court of the District of Columbia may dismiss the petition for adoption.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(5)</a>, or an adult residing in the home of an individual described in <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html'>§ 4-1305.02(5)</a>, fails to request a criminal records check as required by this part, the Family Division of the Superior Court of the District of Columbia may refuse to place the child in the individual&#39;s home, may remove the child from the home, or may take other appropriate action to ensure the health, welfare, and safety of the child.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept 23, 1977, D.C. <a href='http://openlims.org/public/L2-22.pdf'>Law 2-22</a>, title V, § 507, formerly § 327, as added June 27, 2000, D.C. <a href='http://openlims.org/public/L13-136.pdf'>Law 13-136</a>, § 201(f), 47 DCR 2850; Apr. 4, 2001, D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, § 2(w), 48 DCR 2043; renumbered Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, § 22(a)(8), 53 DCR 6794.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, in subsec. (a), substituted &quot;Agency&quot; for &quot;Department&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a> renumbered the section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of section, see notes following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.01.html'>§ 4-1305.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(c) of the Adoption and Safe Families Compliance Congressional Review Emergency Amendment Act of 2000 (D.C. Act 13-451, November 7, 2000, 47 DCR 9399).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Adoption and Safe Families Compliance Emergency Amendment Act of 2001 (D.C. Act 14-65, June 6, 2001, 48 DCR 5721).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-136</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-136.pdf'>Law 13-136</a>, see notes following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.01.html'>§ 4-1305.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-277</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, see notes following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-A/4-1301.02.html'>§ 4-1301.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, see notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-IV/Part-D/4-204.61.html'>§ 4-204.61</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For applicability of D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, see note following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-C/4-1303.01a.html'>§ 4-1303.01a</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

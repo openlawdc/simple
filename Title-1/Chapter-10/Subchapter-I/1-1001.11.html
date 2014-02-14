@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1001.11. Recount; judicial review of election.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10/index.html">Chapter 10. Elections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10/Subchapter-I/index.html">Subchapter I. Regulation of Elections</a></li>
+                    
+                    <li>↪ § 1-1001.11. Recount; judicial review of election.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.10.html">§ 1-1001.10. Dates for holding elections; votes cast for President and Vice President counted as votes for presidential electors; voting hours; tie votes; filling vacancy where elected official dies, resigns, or becomes unable to serve.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.12.html">§ 1-1001.12. Interference with registration and voting.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1001.11. Recount; judicial review of election.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Board shall recount the votes cast in one or more voting precincts, if, within 7 days after the Board certifies the results of an election for an office, a candidate for that office petitions the Board in writing and specifies the precincts in which the recount shall be conducted. Before beginning the recount, the Board shall prepare an estimate of the costs and inform the petitioner of the anticipated number of hours needed to complete the recount and the cost per hour. The costs of the recount shall not include any payments associated for salaried election officials. If the petitioner chooses to proceed with the recount, the petitioner shall deposit the amount of $50 per precinct included in the recount. If the result of the election is changed as a result of the recount, the deposit shall be refunded. If the result is not changed, the Board shall determine the actual cost of the recount. The petitioner shall be liable for the actual cost of the recount and the Board may collect that cost from the deposit made with the petition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If in any election for President and Vice President of the United States, Delegate to the House of Representatives, Mayor, Chairman of the Council, member of the Council, President of the Board of Education, or member of the Board of Education, the results certified by the Board show a margin of victory for a candidate that is less than one percent of the total votes cast for the office, the Board shall conduct a recount. The cost of a recount conducted pursuant to this paragraph shall not be charged to any candidate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">In the case of an initiative or referendum measure placed on the ballot pursuant to <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.16.html'>§ 1-1001.16</a>, or a recall measure placed on the ballot pursuant to <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.17.html'>§ 1-1001.17</a>, the Board shall conduct a recount if the difference between the number of votes for and against the initiative, referendum, or recall measure is less than one percent of the total votes cast.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The Board shall issue regulations prescribing the procedures for the Board to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Provide notice of a recount to candidates for an office subject to a recount;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Conduct a recount and certify the official result of an election, initiative, referendum, or recall measure which is the subject of the recount; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Ensure that each candidate for an office subject to a recount may designate watchers to be present while the recount is conducted, or in the case of an initiative, referendum, or recall measure, ensure that members of the public may be present while the recount is conducted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Within 7 days after the Board certifies the results of an election, any person who voted in the election may petition the District of Columbia Court of Appeals to review the election. The Court&#39;s authority to review the results of an election shall include initiative, referendum, and recall measures as well as elections for a particular office.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In response to such a petition, the Court may set aside the results certified and declare the true results of the election, or void the election in whole or in part. To determine the true results of an election, the Court may order a recount or take other appropriate action, whether or not a recount has been conducted or requested pursuant to subsection (a) of this section. The Court shall void an election only if it:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Determines that the candidate certified as the winner of the election does not meet the qualifications required for office; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Finds that there was any act or omission, including fraud, misconduct, or mistake serious enough to vitiate the election as a fair expression of the will of the registered qualified electors voting in the election.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">If the Court voids an election, it may order a special election, which shall be conducted in such a manner, and at such time, as the Board may prescribe.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The decision of the Court in any case brought pursuant to this subsection shall be final and may not be appealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The Court shall have the authority to require the losing party to reimburse the prevailing party for reasonable attorneys&#39; fees and other costs associated with the case, but shall not exercise this authority if it finds that the reimbursement would impose an undue financial hardship on the losing party.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Aug. 12, 1955, <a href='http://api.fdsys.gov/link?collection=statute&volume=69&page=703'>69 Stat. 703</a>, ch. 862, § 11; Apr. 22, 1968, <a href='http://api.fdsys.gov/link?collection=statute&volume=82&page=106'>82 Stat. 106</a>, <a href='http://www.govtrack.us/search?q=public%20law%2090-292'>Pub. L. 90-292</a>, § 4(8); Dec. 23, 1971, <a href='http://api.fdsys.gov/link?collection=statute&volume=85&page=793'>85 Stat. 793</a>, <a href='http://www.govtrack.us/search?q=public%20law%2092-220'>Pub. L. 92-220</a>, § 1(22); Aug. 14, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=313'>87 Stat. 313</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-92'>Pub. L. 93-92</a>, § 1(20); Aug. 18, 1978, D.C. <a href='http://openlims.org/public/L2-101.pdf'>Law 2-101</a>, § 2, 25 DCR 257; Sept. 13, 1980, D.C. <a href='http://openlims.org/public/L3-93.pdf'>Law 3-93</a>, § 2, 27 DCR 3497; Mar. 16, 1982, D.C. <a href='http://openlims.org/public/L4-88.pdf'>Law 4-88</a>, § 2(q)-(s), 29 DCR 458; June 28, 2002, D.C. <a href='http://openlims.org/public/L14-168.pdf'>Law 14-168</a>, § 2, 49 DCR 4478; Feb. 4, 2010, D.C. <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a>,§ 2(i), 56 DCR 9169.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-1315.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-1111.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-168.pdf'>Law 14-168</a> rewrote the section which had read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(a) If within 7 days after the Board certifies the results of an election, any qualified candidate at such election petitions the Board to have the votes cast at such election recounted in 1 or more voting precincts, the Board shall order such recount. In each such case, the petitioner shall deposit a fee of $50 for each precinct petitioned to be recounted. If the total cost of the recount is less than the amount so deposited, the difference shall be refunded. If the total cost of the recount is greater than the deposit, the petitioner shall remit payment for such additional costs within 15 days of receipt of notification from the Board that additional costs have been incurred. If the result of the election is changed as a result of the recount, the entire amount deposited by the petitioner shall be refunded. In no case, however, shall the petitioner be required to pay the cost of any recount in any such election if the difference in the number of votes received by the petitioner in connection with any office and the number of votes received by the person certified as having been elected to that office, in the case of an election from a ward, is less than 1 per centum or 50 votes, whichever is less, or in the case of an election at large, is less than 1 per centum or 350 votes, whichever is less.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(b) Within 7 days after the Board certifies the results of an election, any person who voted in the election may petition the District of Columbia Court of Appeals to review such election. In response to such a petition, the Court may set aside the results so certified and declare the true results of the election, or void the election in whole or in part. To determine the true results of an election the Court may order a recount or take other appropriate action, whether or not a recount has been conducted or requested pursuant to subsection (a) of this section. The Court shall void an election only for fraud, mistake, the making of expenditures by a candidate, or the willful receipt of contributions in violation of the District of Columbia Campaign Finance Reform and Conflict of Interest Act (<a href='/dccode/Title-1/Chapter-11/Subchapter-I/Part-A/1-1101.01~P.html'>§ 1-1101.01</a> et seq.), or other defect, serious enough to vitiate the election as a fair expression of the will of the registered qualified electors voting therein. If the Court voids an election it may order a special election, which shall be conducted in such manner (comparable to that prescribed for regular elections), and at such time, as the Board shall prescribe. The decision of such Court shall be final and not appealable.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a> rewrote subsec. (a)(1), which had read as follows: &quot;(a)(1) The Board shall recount the votes cast in one or more voting precincts, if within 7 days after the Board certifies the results of an election for an office, a candidate for that office petitions the Board in writing and specifies the precincts in which the recount shall be conducted. The candidate shall deposit a fee of $50 for each precinct included in the recount. If the result of the election is changed as a result of the recount, the fee deposited by the petitioner shall be refunded.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(i) of Omnibus Election Reform Emergency Amendment Act of 2009 (D.C. Act 18-236, November 30, 2009, 56 DCR 9154).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-101</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-101.pdf'>Law 2-101</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html'>§ 1-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-93</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L3-93.pdf'>Law 3-93</a> was introduced in Council and assigned Bill No. 3-300, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on June 3, 1980 and June 17, 1980, respectively. Signed by the Mayor on July 9, 1980, it was assigned Act No. 3-215 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-88</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-88.pdf'>Law 4-88</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html'>§ 1-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-168</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-168.pdf'>Law 14-168</a>, the &quot;Election Recount and Judicial Review Amendment Act of 2002&quot;, was introduced in Council and assigned Bill No. 14-269, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on March 5, 2002, and April 9, 2002, respectively. Signed by the Mayor on April 30, 2002, it was assigned Act No. 14-357 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L14-168.pdf'>Law 14-168</a> became effective on June 28, 2002.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-103</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a>, see notes following <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.02.html'>§ 1-1001.02</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

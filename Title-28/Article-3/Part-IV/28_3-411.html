@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:3-411. Refusal to pay cashier's checks, teller's checks, and certified checks.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/index.html">Article 3. Negotiable Instruments</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/Part-IV/index.html">Part IV. Liability of Parties</a></li>
+                    
+                    <li>↪ § 28:3-411. Refusal to pay cashier&#39;s checks, teller&#39;s checks, and certified checks.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-IV/28_3-410.html">§ 28:3-410. Acceptance varying draft.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-IV/28_3-412.html">§ 28:3-412. Obligation of issuer of note or cashier&#39;s check.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:3-411. Refusal to pay cashier's checks, teller's checks, and certified checks.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In this section, &quot;obligated bank&quot; means the acceptor of a certified check or the issuer of a cashier&#39;s check or teller&#39;s check bought from the issuer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the obligated bank wrongfully (i) refuses to pay a cashier&#39;s check or certified check, (ii) stops payment of a teller&#39;s check, or (iii) refuses to pay a dishonored teller&#39;s check, the person asserting the right to enforce the check is entitled to compensation for expenses and loss of interest resulting from the nonpayment and may recover consequential damages if the obligated bank refuses to pay after receiving notice of particular circumstances giving rise to the damages.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Expenses or consequential damages under subsection (b) of this section are not recoverable if the refusal of the obligated bank to pay occurs because (i) the bank suspends payments, (ii) the obligated bank asserts a claim or defense of the bank that it has reasonable grounds to believe is available against the person entitled to enforce the instrument, (iii) the obligated bank has a reasonable doubt whether the person demanding payment is the person entitled to enforce the instrument, or (iv) payment is prohibited by law.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=684'>77 Stat. 684</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 23, 1995, D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, § 2(d), 42 DCR 467.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:3-411.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:3-411.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-249</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, see Historical and Statutory Notes following § 28:3-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. In some cases a creditor may require that the debt be paid by an obligation of a bank. The debtor may comply by obtaining certification of the debtor&#39;s check, but more frequently the debtor buys from a bank a cashier&#39;s check or teller&#39;s check payable to the creditor. The check is taken by the creditor as a cash equivalent on the assumption that the bank will pay the check. Sometimes, the debtor wants to retract payment by inducing the obligated bank not to pay. The typical case involves a dispute between the parties to the transaction in which the check is given in payment. In the case of a certified check or cashier&#39;s check, the bank can safely pay the holder of the check despite notice that there may be an adverse claim to the check (<a href='/dccode/Title-3/Chapter-6/3-602.html'>Section 3-602</a>). It is also clear that the bank that sells a teller&#39;s check has no duty to order the bank on which it is drawn not to pay it. A debtor using any of these types of checks has no right to stop payment. Nevertheless, some banks will refuse payment as an accommodation to a customer. <a href='/dccode/Title-3/Chapter-4/3-411.html'>Section 3-411</a> is designed to discourage this practice.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. The term &quot;obligated bank&quot; refers to the issuer of the cashier&#39;s check or teller&#39;s check and the acceptor of the certified check. If the obligated bank wrongfully refuses to pay, it is liable to pay for expenses and loss of interest resulting from the refusal to pay. There is no express provision for attorney&#39;s fees, but attorney&#39;s fees are not meant to be necessarily excluded. They could be granted because they fit within the language &quot;expenses * * * resulting from the nonpayment.&quot; In addition the bank may be liable to pay consequential damages if it has notice of the particular circumstances giving rise to the damages.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (c) provides that expenses or consequential damages are not recoverable if the refusal to pay is because of the reasons stated. The purpose is to limit that recovery to cases in which the bank refuses to pay even though its obligation to pay is clear and it is able to pay. Subsection (b) applies only if the refusal to honor the check is wrongful. If the bank is not obliged to pay there is no recovery. The bank may assert any claim or defense that it has, but normally the bank would not have a claim or defense. In the usual case it is a remitter that is asserting a claim to the check on the basis of a rescission of negotiation to the payee under <a href='/dccode/Title-3/Chapter-2/3-202.html'>Section 3-202</a>. See Comment 2 to <a href='/dccode/Title-3/Chapter-2/3-201.html'>Section 3-201</a>. The bank can assert that claim if there is compliance with <a href='/dccode/Title-3/Chapter-3/Subchapter-I/3-305.html'>Section 3-305(c)</a>, but the bank is not protected from damages under subsection (b) if the claim of the remitter is not upheld. In that case, the bank is insulated from damages only if payment is enjoined under <a href='/dccode/Title-3/Chapter-6/3-602.html'>Section 3-602(b)(1)</a>. Subsection (c)(iii) refers to cases in which the bank may have a reasonable doubt about the identity of the person demanding payment. For example, a cashier&#39;s check is payable to &quot;Supplier Co.&quot; The person in possession of the check presents it for payment over the counter and claims to be an officer of Supplier Co. The bank may refuse payment until it has been given adequate proof that the presentment in fact is being made for Supplier Co., the person entitled to enforce the check.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

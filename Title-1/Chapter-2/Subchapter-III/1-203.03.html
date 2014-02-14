@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-203.03. Charter amending procedure.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/index.html">Chapter 2. District of Columbia Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-III/index.html">Subchapter III. District Charter Preamble, Legislative Power, and Charter Amending Procedure</a></li>
+                    
+                    <li>↪ § 1-203.03. Charter amending procedure.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-2/Subchapter-III/1-203.02.html">§ 1-203.02. Legislative power.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-2/Subchapter-IV/index.html">Subchapter IV. The District Charter</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-203.03. Charter amending procedure.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The charter set forth in subchapter IV of this chapter (including any provision of law amended by such subchapter), except §<a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-A/1-204.01.html'>§ 1-204.01(a)</a> and 1-204.21(a), and part C of such subchapter, may be amended by an act passed by the Council and ratified by a majority of the registered qualified electors of the District voting in the referendum held for such ratification. The Chairman of the Council shall submit all such acts to the Speaker of the House of Representatives and the President of the Senate on the day the Board of Elections and Ethics certifies that such act was ratified by a majority of the registered qualified electors voting thereon in such referendum.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">An amendment to the charter ratified by the registered electors shall take effect upon the expiration of the 35-calendar-day period (excluding Saturdays, Sundays, holidays, and days on which either House of Congress is not in session) following the date such amendment was submitted to the Congress, or upon the date prescribed by such amendment, whichever is later, unless during such 35-day period, there has been enacted into law a joint resolution, in accordance with the procedures specified in <a href='/dccode/Title-1/Chapter-2/Subchapter-VI/1-206.04.html'>§ 1-206.04</a>, disapproving such amendment. In any case in which any such joint resolution disapproving such an amendment has, within such 35-day period, passed both Houses of Congress and has been transmitted to the President, such resolution, upon becoming law subsequent to the expiration of such 35-day period, shall be deemed to have repealed such amendment, as of the date such resolution becomes law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Board of Elections and Ethics shall prescribe such rules as are necessary with respect to the distribution and signing of petitions and the holding of elections for ratifying amendments to subchapter IV of this chapter according to the procedures specified in subsection (a) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The amending procedure provided in this section may not be used to enact any law or affect any law with respect to which the Council may not enact any act, resolution, or rule under the limitations specified in §<a href='/dccode/Title-1/Chapter-2/Subchapter-VI/1-206.01.html'>§ 1-206.01</a> to 1-206.03.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=784'>87 Stat. 784</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, title III, § 303; Aug. 14, 1974, <a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=458'>88 Stat. 458</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-376'>Pub. L. 93-376</a>, title III, § 306(a); Oct. 12, 1984, <a href='http://api.fdsys.gov/link?collection=statute&volume=98&page=1974'>98 Stat. 1974</a>, <a href='http://www.govtrack.us/search?q=public%20law%2098-473'>Pub. L. 98-473</a>, § 131(b).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-E/1-1163.36.html'>§ 1-1163.36</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-205.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-125.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of § 202 of D.C. <a href='http://openlims.org/public/L18-160.pdf'>Law 18-160</a>, see § 2 of Elected Attorney General Referendum Emergency Amendment Act of 2011 (D.C. Act 19-51, April 27, 2011, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 3878</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Fiscal year: <a href='http://www.govtrack.us/search?q=public%20law%2098-473'>Section 131(n) of Pub. L. 98-473</a> provided that the provisions of this section shall be effective hereafter without limitation as to fiscal year, notwithstanding any other provision of the joint resolution.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

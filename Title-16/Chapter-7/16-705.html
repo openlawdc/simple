@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 16-705. Jury trial; trial by court.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-16/index.html">Title 16. Particular Actions, Proceedings and Matters</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-16/Chapter-7/index.html">Chapter 7. Criminal Proceedings in the Superior Court</a></li>
+                    
+                    <li>↪ § 16-705. Jury trial; trial by court.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-16/Chapter-7/16-704.html">§ 16-704. Bail; collateral security.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-16/Chapter-7/16-706.html">§ 16-706. Enforcement of judgments; commitment upon non-payment of fine.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 16-705. Jury trial; trial by court.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In a criminal case tried in the Superior Court in which, according to the Constitution of the United States, the defendant is entitled to a jury trial, the trial shall be by jury, unless the defendant in open court expressly waives trial by jury and requests trial by the court, and the court and the prosecuting officer consent thereto. In the case of a trial without a jury, the trial shall be by a single judge, whose verdict shall have the same force and effect as that of a jury.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">In any case where the defendant is not under the Constitution of the United States entitled to a trial by jury, the trial shall be by a single judge without a jury, except that if -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The defendant is charged with an offense which is punishable by a fine or penalty of more than $1,000 or by imprisonment for more than 180 days (or for more than six months in the case of the offense of contempt of court); or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The defendant is charged with 2 or more offenses which are punishable by a cumulative fine or penalty of more than $4,000 or a cumulative term of imprisonment of more than 2 years; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The defendant demands a trial by jury, the trial shall be by jury, unless the defendant in open court expressly waives trial by jury and requests trial by the court, and the court and the prosecuting officer consent thereto. In the case of a trial by the court, the judge&#39;s verdict shall have the same force and effect as that of a jury.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b-1) </span>
+                
+                    <span class="" style="">If a defendant in a criminal case is charged with 2 or more offenses and the offenses include at least one jury demandable offense and one non-jury demandable offense, the trial for all offenses charged against that defendant shall be by jury unless the defendant in open court expressly waives trial by jury and requests trial by the court, and the court and the prosecuting officer consent thereto. In the case of a trial without a jury, the trial shall be by a single judge, whose verdict shall have the same force and effect as that of a jury.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The jury shall consist of twelve persons, unless the parties, with the approval of the court and in the manner provided by rules of the court, agree to a number less than twelve. Even absent such agreement, if, due to extraordinary circumstances, the court finds it necessary to excuse a juror for just cause after the jury has retired to consider its verdict, in the discretion of the court, a valid verdict may be returned by the remaining eleven jurors.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 23, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=558'>77 Stat. 558</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-241'>Pub. L. 88-241</a>, § 1; July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=556'>84 Stat. 556</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title I, § 145(d)(4); May 15, 1993, D.C. <a href='http://openlims.org/public/L9-272.pdf'>Law 9-272</a>,§ 202, 40 DCR 796; Mar. 21, 1995, D.C. <a href='http://openlims.org/public/L10-232.pdf'>Law 10-232</a>, § 2, 42 DCR 18; May 16, 1995, D.C. <a href='http://openlims.org/public/L10-255.pdf'>Law 10-255</a>, § 14(a), 41 DCR 5193; May 21, 2002, D.C. <a href='http://openlims.org/public/L14-135.pdf'>Law 14-135</a>, § 2, 49 DCR 3439.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 16-705.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 16-705.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-135.pdf'>Law 14-135</a>, in subsec. (b)(1), designated subpar. (A) and in that subparagraph, substituted &quot;The defendant is charged with an offense&quot; for &quot;the case involves an offense&quot;, and substituted &quot;court); or&quot; for &quot;court), and&quot;, and added subpar. (B); rewrote subsec. (b)(2); and added subsec. (b-1). Prior to repeal, subsec. (b)(2) had read as follows: &quot;(2) the defendant demands a trial by jury and does not subsequently waive a trial by jury in accordance with subsection (a), the trial shall be by jury.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-272</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-272.pdf'>Law 9-272</a>, the &quot;Criminal and Juvenile Justice Reform Amendment Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-374, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on December 1, 1992, and December 15, 1992, respectively. Signed by the Mayor on January 14, 1993, it was assigned Act No. 9-401 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-272.pdf'>Law 9-272</a> became effective on May 15, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-232</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-232.pdf'>Law 10-232</a>, the &quot;Jury Trial Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-603, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on November 1, 1994, and December 6, 1994, respectively. Signed by the Mayor on December 27, 1994, it was assigned Act No. 10-374 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-232.pdf'>Law 10-232</a> became effective on March 21, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-255.pdf'>Law 10-255</a>, the &quot;Technical Amendments Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-673, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 21, 1994, and July 5, 1994, respectively. Signed by the Mayor on July 25, 1994, it was assigned Act No. 10-302 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-255.pdf'>Law 10-255</a> became effective May 16, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-135</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-135.pdf'>Law 14-135</a>, the &quot;Misdemeanor Jury Trial Act of 2002&quot;, was introduced in Council and assigned Bill No. 14-2, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on February 5, 2002, and March 5, 2002, respectively. Signed by the Mayor on March 25, 2002, it was assigned Act No. 14-311 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L14-135.pdf'>Law 14-135</a> became effective on May 21, 2002.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

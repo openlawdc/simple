@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:7-103. Relation of article to treaty or statute.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-7/index.html">Article 7. Documents of Title</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-7/Part-I/index.html">Part I. General</a></li>
+                    
+                    <li>↪ § 28:7-103. Relation of article to treaty or statute.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-7/Part-I/28_7-102.html">§ 28:7-102. Definitions and index of definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-7/Part-I/28_7-104.html">§ 28:7-104. Negotiable and nonnegotiable document of title.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:7-103. Relation of article to treaty or statute.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">This article is subject to any treaty or statute of the United States or regulatory statute of the District of Columbia to the extent the treaty, statute, or regulatory statute is applicable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">This article does not modify or repeal any law prescribing the form or content of a document of title or the services or facilities to be afforded by a bailee, or otherwise regulating a bailee&#39;s business in respects not specifically treated in this article. However, violation of such a law does not affect the status of a document of title that otherwise is within the definition of a document of title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">This article modifies, limits, and supersedes the Electronic Signatures in Global and National Commerce Act, approved June 30, 2000 (<a href='http://api.fdsys.gov/link?collection=statute&volume=114&page=464'>114 Stat. 464</a>; 15 U.S.C. § 7001, et seq.), but does not modify, limit, or supersede section 101(c) of that act (15 U.S.C. § 7001(c)) or authorize electronic delivery of any of the notices described in section 103(b) of that act (15 U.S.C. § 7003(b)).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">To the extent there is a conflict between Chapter 49 of Subtitle II of this title, the Uniform Electronic Transactions Act, and this article, this article governs.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=719'>77 Stat. 719</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Apr. 27, 2013, D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, § 9, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2634</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:7-103.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:7-103.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-299</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to § 28:7-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The National Conference of Commissioners on Uniform State Laws has noted that in states that have not enacted the Uniform Electronic Transactions Act in some form, states should consider their own state laws to determine whether there is a conflict between the provisions of this article and those laws particularly as those other laws may affect electronic documents of title.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Uniform Statutory Provision:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">None.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Purposes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. To make clear what would of course be true without the Section, that applicable Federal law is paramount.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. To make clear also that regulatory state statutes (such as those fixing or authorizing a commission to fix rates and prescribe services, authorizing different charges for goods of different values, and limiting liability for loss to the declared value on which the charge was based) are not affected by the Article and are controlling on the matters which they cover. Notice that the reference is not only to such statutes, but to tariffs, classifications and regulations filed or issued pursuant to them.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Sections 7-201, 7-202, 7-204, 7-206, 7-309, 7-401, 7-403.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross Reference:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Bill of lading&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Uniform Statutory Provision:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Former Sections 7-103 and 10-104.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Changes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Deletion of references to tariffs and classifications; incorporation of former <a href='/dccode/Title-10/Chapter-1/10-104.html'>Section 10-104</a> into subsection (b), provide for intersection with federal and state law governing electronic transactions.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Purposes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. To make clear what would of course be true without the Section, that applicable Federal law is paramount.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. To make clear also that regulatory state statutes (such as those fixing or authorizing a commission to fix rates and prescribe services, authorizing different charges for goods of different values, and limiting liability for loss to the declared value on which the charge was based) are not affected by the Article and are controlling on the matters which they cover unless preempted by federal law. The reference in former <a href='/dccode/Title-7/Chapter-1/Subchapter-I/7-103.html'>Section 7-103</a> to tariffs, classifications, and regulations filed or issued pursuant to regulatory state statutes has been deleted as inappropriate in the modern era of diminished regulation of carriers and warehouses. If a regulatory scheme requires a carrier or warehouse to issue a tariff or classification, that tariff or classification would be given effect via the state regulatory scheme that this Article recognizes as controlling. Permissive tariffs or classifications would not displace the provisions of this act, pursuant to this section, but may be given effect through the ability of parties to incorporate those terms by reference into their agreement.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. The document of title provisions of this act supplement the federal law and regulatory state law governing bailees. This Article focuses on the commercial importance and usage of documents of title. State ex. rel Public Service Commission v. Gunkelman &amp; Sons, Inc., 219 N.W.2d 853 (N.D. 1974).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (c) is included to make clear the interrelationship between the federal Electronic Signatures in Global and National Commerce Act and this article and the conforming amendments to other articles of the Uniform Commercial Code promulgated as part of the revision of this article. Section 102 of the federal act allows a State statute to modify, limit, or supersede the provisions of Section 101 of the federal act. See the comments to Revised Article 1, <a href='/dccode/Title-1/Chapter-1/Subchapter-I/1-108.html'>Section 1-108</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Subsection (d) makes clear that once this article is in effect, its provisions regarding electronic commerce and regarding electronic documents of title control in the event there is a conflict with the provisions of the Uniform Electronic Transactions Act or other applicable state law governing electronic transactions.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Sections 1-108, 7-201, 7-202, 7-204, 7-206, 7-309, 7-401, 7-403.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross Reference:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Bill of lading&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

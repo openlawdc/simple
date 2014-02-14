@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 5-1104. Police Complaints Board.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/index.html">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-11/index.html">Chapter 11. Review of Citizen Complaints Involving Police</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-11/Subchapter-I/index.html">Subchapter I. Police Complaints Board; Office of Police Complaints</a></li>
+                    
+                    <li>↪ § 5-1104. Police Complaints Board.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-11/Subchapter-I/5-1103.html">§ 5-1103. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-11/Subchapter-I/5-1105.html">§ 5-1105. Office of Police Complaints establishment; appointment of Executive Director.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 5-1104. Police Complaints Board.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established a Police Complaints Board (&quot;Board&quot;). The Board shall be composed of 5 members, one of whom shall be a member of the MPD, and 4 of whom shall have no current affiliation with any law enforcement agency. All members of the Board shall be residents of the District of Columbia. The members of the Board shall be appointed by the Mayor, subject to confirmation by the Council. The Mayor shall submit a nomination to the Council for a 90-day period of review, excluding days of Council recess. If the Council does not approve the nomination by resolution within this 90-day review period, the nomination shall be deemed disapproved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Board members first appointed after March 26, 1999 shall serve as follows: 2 shall serve for a 3-year term; 2 shall serve for a 2-year term; and one shall serve for a 1-year term. Thereafter, Board members shall serve for a term of 3 years from the date of appointment to a full term or until a successor has been appointed. All board members shall serve without compensation. A Board member may be reappointed. The Mayor shall designate the chairperson of the Board, and may remove a member of the Board from office for cause. A person appointed to fill a vacancy on the Board occurring prior to the expiration of a term shall serve for the remainder of the term or until a successor has been appointed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A quorum for the transaction of business shall be 3 members of the Board.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Board shall conduct periodic reviews of the citizen complaint review process, and shall make recommendations, where appropriate, to the Mayor, the Council, and the Chief of the Metropolitan Police Department (&quot;Police Chief&quot;) concerning the status and the improvement of the citizen complaint process. The Board shall, where appropriate, make recommendations to the above-named entities concerning those elements of management of the MPD affecting the incidence of police misconduct, such as the recruitment, training, evaluation, discipline, and supervision of police officers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d-1) </span>
+                
+                    <span class="" style="">The Board may, where appropriate, monitor and evaluate MPD&#39;s handling of, and response to, First Amendment assemblies, as defined in <a href='/dccode/Title-5/Chapter-3A/Subchapter-II/5-333.02.html'>§ 5-333.02</a>, held on District streets, sidewalks, or other public ways, or in District parks.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Within 60 days of the end of each fiscal year, the Board shall transmit to the entities named in subsection (d) of this section an annual report of the operations of the Board and the Office of Police Complaints.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The Board is authorized to apply for and receive grants to fund its program activities in accordance with laws and regulations relating to grant management.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 26, 1999, D.C. <a href='http://openlims.org/public/L12-208.pdf'>Law 12-208</a>, § 5, 45 DCR 8107; June 12, 1999, D.C. <a href='http://openlims.org/public/L12-285.pdf'>Law 12-285</a>, § 4(e), 45 DCR 8107; Sept. 30, 2004, D.C. <a href='http://openlims.org/public/L15-194.pdf'>Law 15-194</a>, § 902(b), 51 DCR 9406; Apr. 13, 2005, D.C. <a href='http://openlims.org/public/L15-352.pdf'>Law 15-352</a>, § 141, 52 DCR 2296.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Mayoral nomination of agency heads, Police Complaints Board, see <a href='/dccode/Title-1/Chapter-5/Subchapter-III/1-523.01.html'>§ 1-523.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-5/Subchapter-III/1-523.01.html'>§ 1-523.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 4-914.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-194.pdf'>Law 15-194</a>, in the section heading and subsec. (a), substituted &quot;Police Complaints Board&quot; for &quot;Citizen Complaint Review Board&quot;; in subsec. (d), deleted &quot;the Financial Responsibility and Management Assistance Authority,&quot; following &quot;the Council&quot;; and in subsec. (e), substituted &quot;Police Complaints&quot; for &quot;Citizen Complaint Review&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-352.pdf'>Law 15-352</a> added subsec. (d-1).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 4(e) of the Confirmation Emergency Amendment Act of 1999 (D.C. Act 13-25, March 15, 1999, 46 DCR 2971).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 4(e) of the Confirmation Act Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-92, June 4, 1999, 46 DCR 5330).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-208</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-208.pdf'>Law 12-208</a>, see Historical and Statutory Notes following <a href='/dccode/Title-5/Chapter-11/Subchapter-I/5-1101.html'>§ 5-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-285</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-285.pdf'>Law 12-285</a>, the &quot;Confirmation Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-261. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Vetoed by the mayor on December 29, 1998, Council overrode the veto on January 5, 1999, and the bill was assigned Act No. 12-622 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-285.pdf'>Law 12-285</a> became effective on June 12, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-194</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-194.pdf'>Law 15-194</a>, see notes following <a href='/dccode/Title-5/Chapter-1/Subchapter-III/5-105.01.html'>§ 5-105.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-352</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-352.pdf'>Law 15-352</a>, see notes following <a href='/dccode/Title-5/Chapter-3A/Subchapter-I/5-331.01.html'>§ 5-331.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

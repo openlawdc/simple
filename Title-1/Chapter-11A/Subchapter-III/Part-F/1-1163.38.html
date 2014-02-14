@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1163.38. Constituent services.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/index.html">Chapter 11A. Government Ethics and Accountability</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/Subchapter-III/index.html">Subchapter III. Campaign Finance</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/Subchapter-III/Part-F/index.html">Part F. Constituent Services</a></li>
+                    
+                    <li>↪ § 1-1163.38. Constituent services.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-11A/Subchapter-III/Part-F/index.html">Part F. Constituent Services</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-11A/Subchapter-IV/index.html">Subchapter IV. Transition Provisions; Applicability</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1163.38. Constituent services.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor, the Chairman of the Council, and each member of the Council may establish constituent-service programs within the District. The Mayor, the Chairman of the Council, and each member of the Council may finance the operation of these programs with contributions from persons; provided, that contributions received by the Mayor, the Chairman of the Council, and each member of the Council do not exceed an aggregate amount of $40,000 in any one calendar year. The Mayor, the Chairman of the Council, and each member of the Council may expend a maximum of $40,000 in any one calendar year for constituent service programs. No person shall make any contribution which, and neither the Mayor, the Chairman of the Council, nor any member of the Council shall receive any contribution from any person which, when aggregated with all other contributions received from such person, exceed $500 per calendar year; provided, that such $500 limitation shall not apply to contributions made by the Mayor, the Chairman of the Council, or any member of the Council for the purpose of funding his or her own constituent-service program. The Mayor, the Chairman of the Council, and each member of the Council shall file a quarterly report of all contributions received and monies expended in accordance with this subsection with the Director of Campaign Finance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Funds raised pursuant to this section shall be expended only for an activity, service, or program which provides emergency, informational, charitable, scientific, educational, medical, or recreational services to the residents of the District of Columbia and which expenditure accrues to the primary benefit of residents of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Allowable expenditures include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Funeral arrangements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Emergency housing and other necessities of life;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Past due utility payments;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Food and refreshments or an in-kind equivalent on infrequent occasions;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Community events sponsored by the constituent-service program or an entity other than the District government; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Community-wide events.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Disallowable expenditures include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Promoting or opposing, as a primary purpose, a political party, committee, candidate, or issue;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Fines and penalties inuring to the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Any expenditure of cash;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Sponsorships for political organizations; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Any mass mailing within the 90-day period immediately preceding a primary, special, or general election by a member of the Council, or the Mayor, who is a candidate for office.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Upon the request of any member of the Council, the Mayor shall provide the member with suitable office space in a publicly owned building for the operation of a constituent-service program office located in the ward represented by the member. Each at-large member of the Council shall be offered constituent-service office space located in a ward of the member&#39;s choice. Members shall be provided with space of approximately equivalent square footage, and in similar proximity to commercial corridors and public transportation, where practicable. The space provided shall also be easily accessible by persons with disabilities or persons who are elderly. Any space provided shall not be counted as an in-kind contribution. Furnishings, equipment, telephone service, and supplies to this office space shall be provided from funds other than appropriated funds of the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Every constituent-service program shall have a chairman and a treasurer. No contribution and no expenditure shall be accepted or made by or on behalf of a constituent-service program at a time when there is a vacancy in the office of its treasurer and no other person has been designated and has agreed to perform the functions of treasurer. No expenditure shall be made for or on behalf of a constituent-service program without the authorization of its chairman or treasurer or their designated agents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Contributions of personal property from persons to the Mayor or to any members of the Council or contributions of the use of personal property shall be valued, for purposes of this section, at the fair market value of the property, not to exceed $1,000 per calendar year at the time of the contribution. Contributions made or received pursuant to this section shall not be applied against the limitation on political contributions established by <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-D/1-1163.33.html'>§ 1-1163.33</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">All contributions and expenditures made by persons to the Mayor, Chairman of the Council, and each member of the Council as provided by subsection (a) of this section, and all expenditures made by the Mayor, Chairman of the Council, and each member of the Council as provided by subsection (a) of this section, shall be reported to the Director of Campaign Finance quarterly on forms that the Director of Campaign Finance shall prescribe. The forms must prescribe itemized reporting of expenditures. All of the record-keeping requirements of this subchapter shall apply to contributions and expenditures made under this section. At the time of termination, any excess funds shall either be used to retire the debts of the program or donated to an nonprofit organization, within the meaning of the Internal Revenue Code, and operating in good standing in the District of Columbia for a minimum of one calendar year prior to the date of donation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Activities authorized by this section may be carried on at any location in the District; provided, that employees do not engage in constituent-service fundraising activities while on duty.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Violations of this part shall be subject to the penalties set forth in <a href='/dccode/Title-1/Chapter-11A/Subchapter-II/Part-B/1-1162.21.html'>§ 1-1162.21</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 27, 2012, D.C. <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, § 338, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 1862</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-11A/Subchapter-I/1-1161.01.html'>§ 1-1161.01</a>, <a href='/dccode/Title-1/Chapter-11A/Subchapter-II/Part-E/1-1162.31.html'>§ 1-1162.31</a>, <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-B/1-1163.23.html'>§ 1-1163.23</a>, <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-B/1-1163.25.html'>§ 1-1163.25</a>, <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-C/1-1163.28.html'>§ 1-1163.28</a>, <a href='/dccode/Title-2/Chapter-7/2-706.html'>§ 2-706</a>, <a href='/dccode/Title-3/Chapter-13/3-1323.html'>§ 3-1323</a>, and <a href='/dccode/Title-47/Chapter-28/Subchapter-I/47-2808.html'>§ 47-2808</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-124</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, see notes under <a href='/dccode/Title-1/Chapter-11A/Subchapter-I/1-1161.01.html'>§ 1-1161.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

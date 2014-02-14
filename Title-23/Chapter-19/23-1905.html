@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 23-1905. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/index.html">Title 23. Criminal Procedure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/Chapter-19/index.html">Chapter 19. Crime Victims&#39; Rights</a></li>
+                    
+                    <li>↪ § 23-1905. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-23/Chapter-19/23-1904.html">§ 23-1904. Crime victims&#39; rights at sentencing.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-23/Chapter-19/23-1906.html">§ 23-1906. Applicability.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 23-1905. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For purposes of this section,</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The term &quot;community&quot; means a formal or informal association or group of people living, working, or attending school in the same place or neighborhood and sharing common interests arising from social, business, religious, governmental, scholastic, or recreational associations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">The term &quot;community impact statement&quot; means a written statement that provides information about the social, financial, emotional, and physical effects of the defendant or crime on the community.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1B) </span>
+                
+                    <span class="" style="">The term &quot;court&quot; means the Superior Court of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The term &quot;victim&quot; or &quot;crime victim&quot; means a person who or entity which has suffered direct physical, emotional, or pecuniary harm:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">As a result of the commission of any felony or misdemeanor in violation of any criminal statute in the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">While assisting lawfully to apprehend a person reasonably suspected of having committed or attempted a crime;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">While assisting a person against whom a crime has been committed or attempted if the assistance was rendered in a reasonable manner; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">While attempting to prevent the commission of a crime.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In the case of a victim or crime victim:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">That is an institutional entity, the term &quot;victim&quot; or &quot;crime victim&quot; includes an authorized representative of the entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Who is under 18 years of age, incompetent, incapacitated, or deceased, the term &quot;victim&quot; or &quot;crime victim&quot; includes a representative appointed by the court to exercise the rights and receive the services set forth in this chapter on behalf of the victim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The term &quot;victim&quot; shall not include any person who committed or aided or abetted in the commission of the crime.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 8, 2001, D.C. <a href='http://openlims.org/public/L13-301.pdf'>Law 13-301</a>, § 302(b), 47 DCR 7039; Nov. 6, 2010, D.C. <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a>, § 2(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 5591</a>; June 19, 2013, D.C. <a href='http://openlims.org/public/L19-320.pdf'>Law 19-320</a>, § 107(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 3390</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a> redesignated existing par. (1) as (1B); and added pars. (1) and (1A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-320.pdf'>Law 19-320</a> deleted &quot;violent&quot; preceding &quot;misdemeanor&quot; in (2)(A)(i).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of (2)(A)(i), see § 107(b) of the Omnibus Criminal Code Amendments Emergency Amendment Act of 2012 (D.C. Act 19-599, January 14, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 1017</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-301</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-301.pdf'>Law 13-301</a>, see notes following <a href='/dccode/Title-23/Chapter-19/23-1901.html'>§ 23-1901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-259</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a>, see notes under <a href='/dccode/Title-23/Chapter-19/23-1904.html'>§ 23-1904</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-320</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-320.pdf'>Law 19-320</a>, the &quot;Omnibus Criminal Code Amendments Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-645. The Bill was adopted on first and second readings on Dec. 4, 2012, and Dec. 18, 2012, respectively. Signed by the Mayor on Feb. 11, 2013, it was assigned Act No. 19-677 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-320.pdf'>Law 19-320</a> became effective on June 19, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

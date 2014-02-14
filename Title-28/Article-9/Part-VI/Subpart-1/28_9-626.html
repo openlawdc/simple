@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:9-626. Action in which deficiency or surplus is in issue.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-VI/index.html">Part VI. Default</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-VI/Subpart-1/index.html">Subpart 1. Default and Enforcement of Security Interest</a></li>
+                    
+                    <li>↪ § 28:9-626. Action in which deficiency or surplus is in issue.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-VI/Subpart-1/28_9-625.html">§ 28:9-625. Remedies for secured party&#39;s failure to comply with article.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-VI/Subpart-1/28_9-627.html">§ 28:9-627. Determination of whether conduct was commercially reasonable.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:9-626. Action in which deficiency or surplus is in issue.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In an action arising from a transaction, other than a consumer transaction, in which the amount of a deficiency or surplus is in issue, the following rules apply:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A secured party need not prove compliance with the provisions of this part relating to collection, enforcement, disposition, or acceptance unless the debtor or a secondary obligor places the secured party&#39;s compliance in issue.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the secured party&#39;s compliance is placed in issue, the secured party has the burden of establishing that the collection, enforcement, disposition, or acceptance was conducted in accordance with this part.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Except as otherwise provided in § 28:9-628, if a secured party fails to prove that the collection, enforcement, disposition, or acceptance was conducted in accordance with the provisions of this part relating to collection, enforcement, disposition, or acceptance, the liability of a debtor or a secondary obligor for a deficiency is limited to an amount by which the sum of the secured obligation, expenses, and attorney&#39;s fees exceeds the greater of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The proceeds of the collection, enforcement, disposition, or acceptance; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The amount of proceeds that would have been realized had the noncomplying secured party proceeded in accordance with the provisions of this part relating to collection, enforcement, disposition, or acceptance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">For purposes of paragraph (3)(B) of this subsection, the amount of proceeds that would have been realized is equal to the sum of the secured obligation, expenses, and attorney&#39;s fees unless the secured party proves that the amount is less than that sum.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">If a deficiency or surplus is calculated under § 28:9-615(f), the debtor or obligor has the burden of establishing that the amount of proceeds of the disposition is significantly below the range of prices that a complying disposition to a person other than the secured party, a person related to the secured party, or a secondary obligor would have brought.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The limitation of the rules in subsection (a) to transactions other than consumer transactions is intended to leave to the court the determination of the proper rules in consumer transactions. The court may not infer from that limitation the nature of the proper rule in consumer transactions and may continue to apply established approaches.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 101, 47 DCR 7576.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:9-602 and § 28:9-625.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:9-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Source. New.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Scope. The basic damage remedy under Section 9-625(b) is subject to the special rules in this section for transactions other than consumer transactions. This section addresses situations in which the amount of a deficiency or surplus is in issue, i.e., situations in which the secured party has collected, enforced, disposed of, or accepted the collateral. It contains special rules applicable to a determination of the amount of a deficiency or surplus. Because this section affects a person&#39;s liability for a deficiency, it is subject to Section 9-628, which should be read in conjunction with <a href='/dccode/Title-9/Chapter-6/9-605.html'>Section 9-605</a>. The rules in this section apply only to noncompliance in connection with the &quot;collection, enforcement, disposition, or acceptance&quot; under Part 6. For other types of noncompliance with Part 6, the general liability rule of Section 9-625(b)-recovery of actual damages-applies. Consider, for example, a repossession that does not comply with Section 9-609 for want of a default. The debtor&#39;s remedy is under Section 9-625(b). In a proper case, the secured party also may be liable for conversion under non-UCC law. If the secured party thereafter disposed of the collateral, however, it would violate Section 9-610 at that time, and this section would apply.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Rebuttable Presumption Rule. Subsection (a) establishes the rebuttable presumption rule for transactions other than consumer transactions. Under paragraph (1), the secured party need not prove compliance with the relevant provisions of this Part as part of its prima facie case. If, however, the debtor or a secondary obligor raises the issue (in accordance with the forum&#39;s rules of pleading and practice), then the secured party bears the burden of proving that the collection, enforcement, disposition, or acceptance complied. In the event the secured party is unable to meet this burden, then paragraph (3) explains how to calculate the deficiency. Under this rebuttable presumption rule, the debtor or obligor is to be credited with the greater of the actual proceeds of the disposition or the proceeds that would have been realized had the secured party complied with the relevant provisions. If a deficiency remains, then the secured party is entitled to recover it. The references to &quot;the secured obligation, expenses, and attorney&#39;s fees&quot; in paragraphs (3) and (4) embrace the application rules in Sections 9-608(a) and 9-615(a).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Unless the secured party proves that compliance with the relevant provisions would have yielded a smaller amount, under paragraph (4) the amount that a complying collection, enforcement, or disposition would have yielded is deemed to be equal to the amount of the secured obligation, together with expenses and attorney&#39;s fees. Thus, the secured party may not recover any deficiency unless it meets this burden.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Consumer Transactions. Although subsection (a) adopts a version of the rebuttable presumption rule for transactions other than consumer transactions, with certain exceptions Part 6 does not specify the effect of a secured party&#39;s noncompliance in consumer transactions. (The exceptions are the provisions for the recovery of damages in Section 9-625.) Subsection (b) provides that the limitation of subsection (a) to transactions other than consumer transactions is intended to leave to the court the determination of the proper rules in consumer transactions. It also instructs the court not to draw any inference from the limitation as to the proper rules for consumer transactions and leaves the court free to continue to apply established approaches to those transactions.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Courts construing former <a href='/dccode/Title-9/Chapter-5/9-507.html'>Section 9-507</a> disagreed about the consequences of a secured party&#39;s failure to comply with the requirements of former Part 5. Three general approaches emerged. Some courts have held that a noncomplying secured party may not recover a deficiency (the &quot;absolute bar&quot; rule). A few courts held that the debtor can offset against a claim to a deficiency all damages recoverable under former <a href='/dccode/Title-9/Chapter-5/9-507.html'>Section 9-507</a> resulting from the secured party&#39;s noncompliance (the &quot;offset&quot; rule). A plurality of courts considering the issue held that the noncomplying secured party is barred from recovering a deficiency unless it overcomes a rebuttable presumption that compliance with former Part 5 would have yielded an amount sufficient to satisfy the secured debt. In addition to the nonuniformity resulting from court decisions, some States enacted special rules governing the availability of deficiencies.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Burden of Proof When Section 9-615(f) Applies. In a non-consumer transaction, subsection (a)(5) imposes upon a debtor or obligor the burden of proving that the proceeds of a disposition are so low that, under Section 9-615(f), the actual proceeds should not serve as the basis upon which a deficiency or surplus is calculated. Were the burden placed on the secured party, then debtors might be encouraged to challenge the price received in every disposition to the secured party, a person related to the secured party, or a secondary obligor.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. Delay in Applying This Section. There is an inevitable delay between the time a secured party engages in a noncomplying collection, enforcement, disposition, or acceptance and the time of a subsequent judicial determination that the secured party did not comply with Part 6. During the interim, the secured party, believing that the secured obligation is larger than it ultimately is determined to be, may continue to enforce its security interest in collateral. If some or all of the secured indebtedness ultimately is discharged under this section, a reasonable application of this section would impose liability on the secured party for the amount of any excess, unwarranted recoveries but would not make the enforcement efforts wrongful.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

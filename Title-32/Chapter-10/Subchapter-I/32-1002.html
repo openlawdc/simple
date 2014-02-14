@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-1002. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/index.html">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-10/index.html">Chapter 10. Minimum Wages</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-10/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 32-1002. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-10/Subchapter-I/32-1001.html">§ 32-1001. Findings and declaration of policy.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-10/Subchapter-I/32-1003.html">§ 32-1003. Requirements.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-1002. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The term &quot;employ&quot; includes to suffer or permit to work.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The term &quot;employee&quot; includes any individual employed by an employer, except that this term shall not include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Any individual who, without payment and without expectation of any gain, directly or indirectly, volunteers to engage in the activities of an educational, charitable, religious, or nonprofit organization;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Any lay member elected or appointed to office within the discipline of any religious organization and engaged in religious functions; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Any individual employed as a casual babysitter, in or about the residence of the employer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The term &quot;employer&quot; includes any individual, partnership, association, corporation, business trust, or any person or group of persons acting directly or indirectly in the interest of an employer in relation to an employee, but shall not include the United States or the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The term &quot;gratuities&quot; means voluntary monetary contributions received by an employee from a guest, patron, or customer for services rendered.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The term &quot;Mayor&quot; means the Mayor of the District of Columbia or the Mayor&#39;s designated agent or representative, including the Department of Employment Services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The term &quot;occupation&quot; means any occupation, service, trade, business, industry, or branch or group of occupations or industries, or employment or class of employment, in which employees are gainfully employed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">The term &quot;office building&quot; means any commercial property where the primary functions are the transaction of administrative, business, civic, or professional services, including properties where handling goods, wares, or merchandise, in limited quantities, is accessory to the primary occupancy or use. The term &quot;office building&quot; does not include libraries, museums, or universities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The term &quot;regular rate&quot; means all remuneration for employment paid to, or on behalf of, the employee, but shall not be considered to include the items set forth in the Fair Labor Standards Act of 1938, as amended, 29 U.S.C. § 207(e)(1), (2), (3), (4), (5), (6), and (7). Extra compensation paid as described in § 207(e)(5), (6), and (7) shall be creditable toward overtime compensation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7A) </span>
+                
+                    <span class="" style="">The term &quot;security officer&quot; shall have the same meaning as provided in section 2100 of Title 17 of the District of Columbia Municipal Regulations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">The term &quot;wage&quot; means compensation due to an employee by reason of the employee&#39;s employment, payable in legal tender of the United States or checks on banks convertible into cash on demand at full face value, including allowances as may be permitted by any regulation issued under §<a href='/dccode/Title-32/Chapter-10/Subchapter-I/32-1003.html'>§ 32-1003</a> and 32-1006.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">The term &quot;Washington metropolitan region&quot; means the area consisting of the District of Columbia, Montgomery, and Prince George&#39;s Counties in Maryland, Arlington and Fairfax Counties and the Cities of Alexandria, Fairfax and Falls Church in Virginia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">The term &quot;working time&quot; means all the time the employee:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is required to be on the employer&#39;s premises, on duty, or at a prescribed place;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is permitted to work;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is required to travel in connection with the business of the employer; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Waits on the employer&#39;s premises for work.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Interpretations of what constitutes working time shall be made in accordance with Title 29 of the Code of Federal Regulations, Part 785, Hours Worked Under the Fair Labor Standards Act of 1938, as amended, except that references to interpretations of the Portal-to-Portal Act shall have no force and effect.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 25, 1993, D.C. <a href='http://openlims.org/public/L9-248.pdf'>Law 9-248</a>, § 3, 40 DCR 761; Mar. 20, 2008, D.C. <a href='http://openlims.org/public/L17-114.pdf'>Law 17-114</a>, § 2(a), 55 DCR 1276.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 36-220.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-114.pdf'>Law 17-114</a> added pars. (6A) and (7A).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-248</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-248.pdf'>Law 9-248</a>, see Historical and Statutory Notes following <a href='/dccode/Title-32/Chapter-10/Subchapter-I/32-1001.html'>§ 32-1001</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-114</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-114.pdf'>Law 17-114</a>, the &quot;Enhanced Professional Security Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-199 which was referred to the Committee on Public Safety and Judiciary. The Bill was adopted on first and second readings on December 11, 2007, and January 8, 2008, respectively. Signed by the Mayor on January 23, 2008, it was assigned Act No. 17-257 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-114.pdf'>Law 17-114</a> became effective on March 20, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The &quot;Portal-to-Portal Act&quot;, referred to in (10), is 29 U.S.C. § 251 et seq.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

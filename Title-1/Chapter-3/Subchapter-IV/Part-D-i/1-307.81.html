@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-307.81. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/index.html">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-IV/index.html">Subchapter IV. Special Programs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/index.html">Part D-i. Medical Liability Captive Insurance Agency</a></li>
+                    
+                    <li>↪ § 1-307.81. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/index.html">Part D-i. Medical Liability Captive Insurance Agency</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/1-307.82.html">§ 1-307.82. Establishment of the District of Columbia Medical Liability Captive Insurance Agency.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-307.81. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Advisory Council&quot; means the advisory council established by <a href='/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/1-307.85.html'>§ 1-307.85</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agency&quot; means the District of Columbia Medical Liability Captive Insurance Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Captive manager&quot; means the person appointed by the Risk Officer pursuant to <a href='/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/1-307.84.html'>§ 1-307.84(b)</a> to run the day-to-day affairs of the Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Fund&quot; or &quot;Medical Liability Captive Trust Fund&quot; means the Medical Liability Captive Trust Fund established under <a href='/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D-i/1-307.91.html'>§ 1-307.91</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Federally qualified health center&quot; shall have the same meaning as provided in section 1861(aa)(4) of the Social Security Act, approved August 14, 1935 (<a href='http://api.fdsys.gov/link?collection=statute&volume=79&page=313'>79 Stat. 313</a>; 42 U.S.C. § 1395x(aa)(4)).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Gap coverage&quot; means coverage for medical malpractice risks of the District&#39;s Federally Qualified Health Centers not covered through the Federal Tort Claims Act, approved August 2, 1946 (60 Stat. 847; 15 U.S.C. § 41 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Health center&quot; means a health center or service that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Has obtained all licenses, permits, and certificates of occupancy or need that are required as a precondition to lawful operation in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is a tax-exempt organization under section 501(c)(3) of the Internal Revenue Code of 1986, approved August 16, 1954 (<a href='http://api.fdsys.gov/link?collection=statute&volume=68A&page=163'>68A Stat. 163</a>; 26 U.S.C. § 501(c)(3));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is certified by the Commissioner to meet the requirements of this part; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Accepts and provides services to individuals regardless of ability to pay; provided, that a health center may accept payment from:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Health insurance providers for services rendered, if a patient has such insurance coverage and consents in writing to the filing of a claim for benefits to which the patient is eligible; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Patients on a sliding fee scale.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Operational&quot; means that the Council has approved insurance policies for the health centers covered under part B of this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Risk Officer&quot; means the Chief Risk Officer, established by Reorganization Plan No. 1 of 2003, effective December 15, 2003 [D.C. Official Code, subchapter XVIII, Chapter 15, Title 1].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Tail coverage&quot; means liability insurance purchased by an insured to extend the insurance coverage beyond the end of the policy period of a liability policy written on a claims-made basis.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Volunteer service provider&quot; means any person licensed to practice in the District who provides health-care, rehabilitative, social, or related administrative services:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">At a health center;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">To or with respect to a patient of the health center; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Without receiving payment from the District government for the performance of those services.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 18, 2008, D.C. <a href='http://openlims.org/public/L17-196.pdf'>Law 17-196</a>, § 2, 55 DCR 6261.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-196.pdf'>Law 17-196</a>, the &quot;District of Columbia Medical Liability Captive Insurance Agency Establishment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-513 which was referred to the Committee on Public Services and Consumer Affairs. The Bill was adopted on first and second readings on April 15, 2008, and May 6, 2008, respectively. Signed by the Mayor on May 21, 2008, it was assigned Act No. 17-390 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-196.pdf'>Law 17-196</a> became effective on July 18, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

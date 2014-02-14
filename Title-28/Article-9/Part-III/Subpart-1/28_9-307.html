@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:9-307. Location of debtor.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-III/index.html">Part III. Perfection and Priority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-III/Subpart-1/index.html">Subpart 1. Law Governing Perfection and Priority</a></li>
+                    
+                    <li>↪ § 28:9-307. Location of debtor.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-III/Subpart-1/28_9-306.html">§ 28:9-306. Law governing perfection and priority of security interests in letter-of-credit rights.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-III/Subpart-2/index.html">Subpart 2. Perfection</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:9-307. Location of debtor.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In this section, &quot;place of business&quot; means a place where a debtor conducts its affairs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Except as otherwise provided in this section, the following rules determine a debtor&#39;s location:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An debtor who is an individual is located at the individual&#39;s principal residence.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A debtor that is an organization and has only one place of business is located at its place of business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A debtor that is an organization and has more than 1 place of business is located at its chief executive office.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Subsection (b) applies only if a debtor&#39;s residence, place of business, or chief executive office, as applicable, is located in a jurisdiction whose law generally requires information concerning the existence of a nonpossessory security interest to be made generally available in a filing, recording, or registration system as a condition or result of the security interest&#39;s obtaining priority over the rights of a lien creditor with respect to the collateral. If subsection (b) does not apply, the debtor is located in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">A person that ceases to exist, have a residence, or have a place of business continues to be located in the jurisdiction specified by subsections (b) and (c).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">A registered organization that is organized under the law of a State is located in that State.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Except as otherwise provided in subsection (i), a registered organization that is organized under the law of the United States and a branch or agency of a bank that is not organized under the law of the United States or a State are located:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">In the State that the law of the United States designates, if the law designates a State of location;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In the State that the registered organization, branch, or agency designates, if the law of the United States authorizes the registered organization, branch, or agency to designate its State of location, including by designating its main office, home office, or other comparable office; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">In the District of Columbia, if neither paragraph (1) nor paragraph (2) of this subsection applies.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">A registered organization continues to be located in the jurisdiction specified by subsection (e) or (f) notwithstanding:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The suspension, revocation, forfeiture, or lapse of the registered organization&#39;s status as such in its jurisdiction of organization; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The dissolution, winding up, or cancellation of the existence of the registered organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">The United States is located in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A branch or agency of a bank that is not organized under the law of the United States or a State is located in the State in which the branch or agency is licensed, if all branches and agencies of the bank are licensed in only one State.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">A foreign air carrier under the Federal Aviation Act of 1958, approved August 23, 1958 (<a href='http://api.fdsys.gov/link?collection=statute&volume=72&page=731'>72 Stat. 731</a>; codified in scattered sections of the U.S. Code), as amended, is located at the designated office of the agent upon which service of process may be made on behalf of the carrier.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">This section applies only for purposes of this part.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 101, 47 DCR 7576; May 1, 2013, D.C. <a href='http://openlims.org/public/L19-302.pdf'>Law 19-302</a>, § 2(d), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2688</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-302.pdf'>Law 19-302</a> added &quot;including by designating its main office, home office, or other comparable office&quot; in (f)(2).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:9-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-302</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to § 28:9-102.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of D.C. <a href='http://openlims.org/public/L19-669.pdf'>Law 19-669</a>: Section 4 of D.C. <a href='http://openlims.org/public/L19-669.pdf'>Law 19-669</a> provided that the act shall apply as of July 1, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Source. Former Section 9-103(3)(d), substantially revised.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. General Rules. As a general matter, the location of the debtor determines the jurisdiction whose law governs perfection of a security interest. See Sections 9-301(1), 9-305(c). It also governs priority of a security interest in certain types of intangible collateral, such as accounts, electronic chattel paper, and general intangibles. This section determines the location of the debtor for choice-of-law purposes, but not for other purposes. See subsection (k).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Subsection (b) states the general rules: An individual debtor is deemed to be located at the individual&#39;s principal residence with respect to both personal and business assets. Any other debtor is deemed to be located at its place of business if it has only one, or at its chief executive office if it has more than one place of business.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">As used in this section, a &quot;place of business&quot; means a place where the debtor conducts its affairs. See subsection (a). Thus, every organization, even eleemosynary institutions and other organizations that do not conduct &quot;for profit&quot; business activities, has a &quot;place of business.&quot; Under subsection (d), a person who ceases to exist, have a residence, or have a place of business continues to be located in the jurisdiction determined by subsection (b).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The term &quot;chief executive office&quot; is not defined in this Section or elsewhere in the Uniform Commercial Code. &quot;Chief executive office&quot; means the place from which the debtor manages the main part of its business operations or other affairs. This is the place where persons dealing with the debtor would normally look for credit information, and is the appropriate place for filing. With respect to most multi-state debtors, it will be simple to determine which of the debtor&#39;s offices is the &quot;chief executive office.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Even when a doubt arises, it would be rare that there could be more than two possibilities. A secured party in such a case may protect itself by perfecting under the law of each possible jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Similarly, the term &quot;principal residence&quot; is not defined. If the security interest in question is a purchase-money security interest in consumer goods which is perfected upon attachment, see <a href='/dccode/Title-9/Chapter-3/9-309.html'>Section 9-309(1)</a>, the choice of law may make no difference. In other cases, when a doubt arises, prudence may dictate perfecting under the law of each jurisdiction that might be the debtor&#39;s &quot;principal residence.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The general rule is subject to several exceptions, each of which is discussed below.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Non-U.S. Debtors. Under the general rules of this section, a non-U.S. debtor normally would be located in a foreign jurisdiction and, as a consequence, foreign law would govern perfection. When foreign law affords no public notice of security interests, the general rule yields unacceptable results.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Accordingly, subsection (c) provides that the normal rules for determining the location of a debtor (i.e., the rules in subsection (b)) apply only if they yield a location that is &quot;a jurisdiction whose law generally requires information concerning the existence of a nonpossessory security interest to be made generally available in a filing, recording, or registration system as a condition or result of the security interest&#39;s obtaining priority over the rights of a lien creditor with respect to the collateral.&quot; The phrase &quot;generally requires&quot; is meant to include legal regimes that generally require notice in a filing or recording system as a condition of perfecting nonpossessory security interests, but which permit perfection by another method (e.g., control, automatic perfection, temporary perfection) in limited circumstances. A jurisdiction that has adopted this Article or an earlier version of this Article is such a jurisdiction. If the rules in subsection (b) yield a jurisdiction whose law does not generally require notice in a filing or registration system, the debtor is located in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 1: Debtor is an English corporation with 7 offices in the United States and its chief executive office in London, England. Debtor creates a security interest in its accounts. Under subsection (b)(3), Debtor would be located in England.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">However, subsection (c) provides that subsection (b) applies only if English law generally conditions perfection on giving public notice in a filing, recording, or registration system. Otherwise, Debtor is located in the District of Columbia. Under <a href='/dccode/Title-9/Chapter-3/9-301.html'>Section 9-301(1)</a>, perfection, the effect of perfection, and priority are governed by the law of the jurisdiction of the debtor&#39;s location-here, England or the District of Columbia (depending on the content of English law).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 2: Debtor is an English corporation with 7 offices in the United States and its chief executive office in London, England. Debtor creates a security interest in equipment located in London. Under subsection (b)(3) Debtor would be located in England. However, subsection (c) provides that subsection (b) applies only if English law generally conditions perfection on giving public notice in a filing, recording, or registration system. Otherwise, Debtor is located in the District of Columbia. Under <a href='/dccode/Title-9/Chapter-3/9-301.html'>Section 9-301(1)</a>, perfection is governed by the law of the jurisdiction of the debtor&#39;s location, whereas, under <a href='/dccode/Title-9/Chapter-3/9-301.html'>Section 9-301(3)</a>, the law of the jurisdiction in which the collateral is located-here, England-governs priority.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The foregoing discussion assumes that each transaction bears an appropriate relation to the forum State. In the absence of an appropriate relation, the forum State&#39;s entire UCC, including the choice-of-law provisions in Article 9 (Sections 9-301 through 9-307), will not apply. See Section 9-109, Comment 9.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Registered Organizations Organized Under Law of a State. Under subsection (e), a registered organization (e.g., a corporation or limited partnership) organized under the law of a &quot;State&quot; (defined in Section 9-102) is located in its State of organization. Subsection (g) makes clear that events affecting the status of a registered organization, such as the dissolution of a corporation or revocation of its charter, do not affect its location for purposes of subsection (e). However, certain of these events may result in, or be accompanied by, a transfer of collateral from the registered organization to another debtor. This section does not determine whether a transfer occurs, nor does it determine the legal consequences of any transfer.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Determining the registered organization-debtor&#39;s location by reference to the jurisdiction of organization could provide some important side benefits for the filing systems. A jurisdiction could structure its filing system so that it would be impossible to make a mistake in a registered organization-debtor&#39;s name on a financing statement. For example, a filer would be informed if a filed record designated an incorrect corporate name for the debtor. Linking filing to the jurisdiction of organization also could reduce pressure on the system imposed by transactions in which registered organizations cease to exist-as a consequence of merger or consolidation, for example. The jurisdiction of organization might prohibit such transactions unless steps were taken to ensure that existing filings were refiled against a successor or terminated by the secured party.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Registered Organizations Organized Under Law of United States; Branches and Agencies of Banks Not Organized Under Law of United States. Subsection (f) specifies the location of a debtor that is a registered organization organized under the law of the United States. It defers to law of the United States, to the extent that that law determines, or authorizes the debtor to determine, the debtor&#39;s location. Thus, if the law of the United States designates a particular State as the debtor&#39;s location, that State is the debtor&#39;s location for purposes of this Article&#39;s choice-of-law rules. Similarly, if the law of the United States authorizes the registered organization to designate its State of location, the State that the registered organization designates is the State in which it is located for purposes of this Article&#39;s choice-of-law rules. In other cases, the debtor is located in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Subsection (f) also determines the location of branches and agencies of banks that are not organized under the law of the United States or a State. However, if all the branches and agencies of the bank are licensed only in one State, then they are located in that State. See subsection (i).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. United States. To the extent that Article 9 governs (see Sections 1-105, 9-109(c)), the United States is located in the District of Columbia for purposes of this Article&#39;s choice-of-law rules. See subsection (h).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">7. Foreign Air Carriers. Subsection (j) follows former Section 9-103(3)(d). To the extent that it is applicable, the Convention on the International Recognition of Rights in Aircraft (Geneva Convention) supersedes state legislation on this subject, as set forth in <a href='/dccode/Title-9/Chapter-3/9-311.html'>Section 9-311(b)</a>, but some nations are not parties to that Convention.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

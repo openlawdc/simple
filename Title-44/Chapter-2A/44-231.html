@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-231. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/index.html">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-2A/index.html">Chapter 2A. Defibrillator Usage</a></li>
+                    
+                    <li>↪ § 44-231. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-2A/index.html">Chapter 2A. Defibrillator Usage</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-2A/44-232.html">§ 44-232. Access by the public to defibrillation.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-231. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Automated external defibrillator&quot; or &quot;AED&quot; or &quot;defibrillator&quot; means a medical device heart monitor and defibrillator that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Has received approval from the United States Food and Drug Administration of its premarket notification filed pursuant to section 510(k) of the Federal Food, Drug, and Cosmetic Act, approved October 10, 1962 (<a href='http://api.fdsys.gov/link?collection=statute&volume=76&page=794'>76 Stat. 794</a>; 21 U.S.C. § 360(k));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is capable of recognizing the presence or absence of ventricular fibrillation or rapid ventricular tachycardia, and determining, without intervention by an operator, whether defibrillation should be performed; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Upon determining that defibrillation should be performed, automatically charges and requests delivery of an electrical impulse to an individual&#39;s heart.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Compensation&quot; shall not include the salary of any person who registers an automated external defibrillator, trains the individuals who operate the registered automated external defibrillators, orders the automated external defibrillators which will subsequently be registered, or operates a registered automated external defibrillator at the scene of an emergency, excluding any professional medical emergency setting.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Recreation facility&quot; means a Department of Parks and Recreation public facility that is regularly staffed by a paid District government employee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Recreation facility certificate&quot; means a certificate issued by the Mayor to authorize the installation and use of an AED at a recreation facility that has complied with the AED program requirements and guidelines established under <a href='/dccode/Title-44/Chapter-2A/44-232.01.html'>§ 44-232.01</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-278.pdf'>Law 13-278</a>, § 2, 48 DCR 1869; Mar. 6, 2007, D.C. <a href='http://openlims.org/public/L16-217.pdf'>Law 16-217</a>, § 2(a), 53 DCR 10207; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-362.pdf'>Law 17-362</a>, § 2(a), 56 DCR 1211.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-217.pdf'>Law 16-217</a> rewrote this section, which formerly read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;For the purposes of this chapter, the term &#39;automated external defibrillator&#39; or &#39;AED&#39; or &#39;defibrillator&#39; means a medical device heart monitor and defibrillator that:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) Has received approval from the United States Food and Drug Administration of its premarket notification filed pursuant to section 510(k) of the Federal Food, Drug, and Cosmetic Act, approved October 10, 1962 (<a href='http://api.fdsys.gov/link?collection=statute&volume=76&page=794'>76 Stat. 794</a>; 21 U.S.C. 360(k));</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Is capable of recognizing the presence or absence of ventricular fibrillation or rapid ventricular tachycardia, and determining, without intervention by an operator, whether defibrillation should be performed; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) Upon determining that defibrillation should be performed, automatically charges and requests delivery of an electrical impulse to an individual&#39;s heart.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-362.pdf'>Law 17-362</a> added pars. (3) and (4).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-278</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-278.pdf'>Law 13-278</a>, the &quot;Public Access to Automated External Defibrillator Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-735, which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on December 5, 2000, and December 19, 2000, respectively. Signed by the Mayor on January 19, 2001, it was assigned Act No. 13-573 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-278.pdf'>Law 13-278</a> became effective on April 27, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-217</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-217.pdf'>Law 16-217</a>, the &quot;Good Samaritan Use of Automated External Defibrillators Clarification Amendment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-43, which was referred to Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on November 14, 2006, and December 5, 2006, respectively. Signed by the Mayor on December 19 2006, it was assigned Act No. 16-546 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-217.pdf'>Law 16-217</a> became effective on March 6, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-362</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-362.pdf'>Law 17-362</a>, the &quot;AED Installation for Safe Recreation and Exercise Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-635 which was referred to the Committee on Public Safety and Judiciary. The Bill was adopted on first and second readings on November 18, 2008, and December 2, 2008, respectively. Approved without the signature of the Mayor on January 23, 2009, it was assigned Act No. 17-698 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-362.pdf'>Law 17-362</a> became effective on March 25, 2009.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

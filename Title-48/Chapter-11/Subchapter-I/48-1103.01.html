@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 48-1103.01. Needle Exchange Program.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/index.html">Title 48. Foods and Drugs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-11/index.html">Chapter 11. Drug Paraphernalia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-11/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 48-1103.01. Needle Exchange Program.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-48/Chapter-11/Subchapter-I/48-1103.html">§ 48-1103. Prohibited acts.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-48/Chapter-11/Subchapter-I/48-1104.html">§ 48-1104. Property subject to forfeiture.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 48-1103.01. Needle Exchange Program.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor is authorized to establish within the Department of Human Services a Needle Exchange Program (&quot;Program&quot;), which may provide clean hypodermic needles and syringes to injecting drug users. Counseling on substance abuse addiction and information on appropriate referrals to drug treatment programs shall be made available to each person to whom a hypodermic needle and syringe is provided. Counseling and information on the Human Immunodeficiency Virus (&quot;HIV&quot;) and appropriate referrals for HIV testing and services shall be made available to each person to whom a hypodermic needle and syringe is provided.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Program authorized by subsection (a) of this section shall be administered by the Commission on Public Health in the Department of Human Services. Only qualified medical officers, registered nurses, counselors, community based organizations, or other qualified individuals specifically designated by the Commissioner of Public Health shall be authorized to exchange hypodermic needles and syringes under the provisions of subsections (c) through (i) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Commissioner of Public Health shall provide all persons participating in the Program authorized by subsection (a) of this section with a written statement of the person&#39;s participation in the Program, signed by the Commissioner of Public Health, or the Commissioner&#39;s designee. No person participating in the Program shall be required to carry such a statement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Notwithstanding the provisions of <a href='/dccode/Title-48/Chapter-11/Subchapter-I/48-1103.html'>§ 48-1103</a> or <a href='/dccode/Title-48/Chapter-9/Unit-A/Subchapter-IV/48-904.10.html'>§ 48-904.10</a>, it shall not be unlawful for any person who is participating in the Program authorized by subsection (a) of this section to possess, or for any person authorized by subsection (b) of this section, to deliver any hypodermic syringe or needle distributed as part of the Program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The District of Columbia, its officers, or employees shall not be liable for any injury or damage resulting from use of, or contact with, any needle exchanged as part of the Program authorized by subsection (a) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e-1) </span>
+                
+                    <span class="" style="">A community based organization or other qualified individuals designated by the Commissioner of Public Health under subsection (b) of this section shall not be liable for any injury or damage resulting from the use of, or contact with, any needle exchanged as part of the Program authorized by subsection (a) of this section, unless such injury or damage is a direct result of the gross negligence or intentional misconduct of such community based organization or other qualified individuals.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">All needles and syringes distributed by the Commission of Public Health as part of the Program shall be made identifiable through the use of permanent markings, or color coding, or any other method determined by the Commissioner to be effective in identifying the needles and syringes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The Mayor shall issue an annual evaluation report on the Program. The report shall address the following components:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Number of Program participants served daily;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Demographics of Program participants, including age, sex, ethnicity, address or neighborhood of residence, education, and occupation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Impact of Program on behaviors which put the individual at risk for HIV transmission;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Number of materials distributed, including needles, bleach kits, alcohol swabs, and educational materials;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Impact of Program on incidence of HIV infection in the District. In determining this, the Mayor shall take into account the following factors:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Annual HIV infection rates among injecting drug users entering drug treatment programs in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Estimates of the HIV infection rate among injecting drug users in the District at the start of the Program year as compared to the rate at the end of the third Program year;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The annual number of HIV-positive mothers giving birth in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Annual estimates of the HIV infection rate among newborns; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Costs of the Program versus direct and indirect costs of HIV infection and Acquired Immunodeficiency Syndrome (&quot;AIDS&quot;) in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Data on Program participants shall be obtained through interviews. The interviews shall be used to obtain the following information:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Reasons for participating in Program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Drug use history, including type of drug used, frequency of use, method of ingestion, length of time drugs used, and frequency of needle sharing;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Sexual behavior and history, including the participant&#39;s self-described sexual identity, number of sexual partners in the past 30 days or 6 months, number of sexual partners who were also intravenous drug users, frequency of condom use, and number of times sex was used in exchange for money or drugs;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Health assessment, including whether the participant has been tested for HIV infection and whether the results where negative or positive; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Impact of Program on the participant&#39;s behavior and attitudes, including any increase or decrease in drug use or needle sharing, changes in high-risk sexual behaviors, or willingness to follow through with drug treatments.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The Mayor shall explore the feasibility of establishing a system to test used needles and syringes received by the Commission of Public Health for HIV antibody contamination. The Mayor shall prepare a feasibility report on needle and syringe testing and shall submit this report to the Council for review no later than 120 days after June 30, 1992. If the report finds that needles and syringe testing would be beneficial and feasible to implement, such a system shall be incorporated into the Program.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 17, 1982, D.C. <a href='http://openlims.org/public/L4-149.pdf'>Law 4-149</a>, § 4a, as added Mar. 25, 1993, D.C. <a href='http://openlims.org/public/L9-252.pdf'>Law 9-252</a>, § 2, 40 DCR 787; Apr. 7, 1995, D.C. <a href='http://openlims.org/public/L11-3.pdf'>Law 11-3</a>, § 2, 42 DCR 1070; Mar. 22, 1996, D.C. <a href='http://openlims.org/public/L11-101.pdf'>Law 11-101</a>, § 2, 43 DCR 399; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 37, 44 DCR 1271.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 33-603.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-164</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-164.pdf'>Law 9-164</a> was introduced in Council and assigned Bill No. 9-541, which was retained by CounciL. The Bill was adopted on first and second readings on June 23, 1992, and July 7, 1992, respectively. Signed by the Mayor on July 21, 1992, it was assigned Act No. 9-259 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-164.pdf'>Law 9-164</a> became effective on September 29, 1992.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-252</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-252.pdf'>Law 9-252</a> was introduced in Council and assigned Bill No. 9-542, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on December 1, 1992, and December 15, 1992, respectively. Signed by the Mayor on January 14, 1993, it was assigned Act No. 9-398 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-252.pdf'>Law 9-252</a> became effective on March 25, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-207</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-207.pdf'>Law 10-207</a>, the &quot;Prevention of the Spread of the Human Immunodeficiency Virus and Acquired Immunodeficiency Syndrome Temporary Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-793. The Bill was adopted on first and second readings on October 4, 1994, and November 1, 1994, respectively. Signed by the Mayor on November 22, 1994, it was assigned Act No. 10-345 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-207.pdf'>Law 10-207</a> became effective on March 14, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-3</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-3.pdf'>Law 11-3</a>, the &quot;Prevention of the Spread of the Human Immunodeficiency Virus and Acquired Immunodeficiency Syndrome Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 11-38, which was retained by council. The Bill was adopted on first and second readings on January 17, 1995, and February 7, 1995, respectively. Signed by the Mayor on February 17, 1995, it was assigned Act No. 11-10 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-3.pdf'>Law 11-3</a> became effective on April 7, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-44</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-44.pdf'>Law 11-44</a>, the &quot;Prevention of Transmission of the Human Immunodeficiency Virus Temporary Amendment Act of 1995,&quot; was introduced in Council and assigned Bill No. 11-311. The Bill was adopted on first and second readings on June 6, 1995, and June 20, 1995, respectively. Signed by the Mayor on June 28, 1995, it was assigned Act No. 11-82 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-44.pdf'>Law 11-44</a> became effective on September 16, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-101</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-101.pdf'>Law 11-101</a>, the &quot;Prevention of Transmission of the Human Immunodeficiency Virus Amendment Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-324, which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on December 5, 1995, and January 4, 1996, respectively. Signed by the Mayor on January 25, 1996, it was assigned Act No. 11-190 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-101.pdf'>Law 11-101</a> became effective on March 22, 1996.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, the &quot;Second Technical Amendments Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-905. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-519 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a> became effective April 9, 1997.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

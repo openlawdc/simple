@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 23-1904. Crime victims' rights at sentencing.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/index.html">Title 23. Criminal Procedure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/Chapter-19/index.html">Chapter 19. Crime Victims&#39; Rights</a></li>
+                    
+                    <li>↪ § 23-1904. Crime victims&#39; rights at sentencing.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-23/Chapter-19/23-1903.html">§ 23-1903. Crime victim privacy and security.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-23/Chapter-19/23-1905.html">§ 23-1905. Definitions.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 23-1904. Crime victims' rights at sentencing.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Crime victims shall have the right to be present at the defendant&#39;s sentencing, release, parole, post-conviction, and record-sealing hearings.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Crime victims shall have the right to submit, prior to the imposition of sentence, a written victim impact statement containing information concerning any emotional, psychological, financial, or physical harm done to or loss suffered by the victim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">In determining the appropriate sentence to be imposed on the defendant, the Court shall consider any victim impact statement submitted in accordance with this chapter and such statement shall be made a part of the pre-sentence report filed by the Court Services and Offender Supervision Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Crime victims shall have the right to offer at the defendant&#39;s release or parole hearing a written statement of the victim&#39;s opinion whether the defendant should be granted release or parole.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Crime victims shall have the right to make a statement at the defendant&#39;s sentencing and record-sealing hearings. The absence of the crime victim shall not preclude the court from holding the sentencing or record-sealing hearings.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">In addition to a crime victim, a representative of a community affected by the crime of which the defendant has been convicted shall have the right to submit, prior to imposition of sentence, a community impact statement and the court shall consider the community impact statement in determining the appropriate sentence to be imposed on the defendant. If more than one community is affected, each may submit a statement pursuant to this paragraph.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Sentencing in a misdemeanor case shall not be continued solely because a community impact statement has not been submitted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The Chief Judge of the Superior Court shall establish reasonable procedures with respect to time and manner in which community impact statements are submitted to the court.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 8, 2001, D.C. <a href='http://openlims.org/public/L13-301.pdf'>Law 13-301</a>, § 302(b), 47 DCR 7039; May 5, 2007, D.C. <a href='http://openlims.org/public/L16-307.pdf'>Law 16-307</a>, § 3(b)(3), 54 DCR 868; Nov. 6, 2010, D.C. <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a>, § 2(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 5591</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-307.pdf'>Law 16-307</a> rewrote subsecs. (a) and (e).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a> added subsec. (f).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-301</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-301.pdf'>Law 13-301</a>, see notes following <a href='/dccode/Title-23/Chapter-19/23-1901.html'>§ 23-1901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-307</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-307.pdf'>Law 16-307</a>, see notes following <a href='/dccode/Title-23/Chapter-19/23-1901.html'>§ 23-1901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-259</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a>, the &quot;Community Impact Statement Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-549, which was referred to the Committee on Public Safety and the Judiciary. The Bill was adopted on first and second readings on May 4, 2010, and June 1, 2010, respectively. Signed by the Mayor on June 28, 2010, it was assigned Act No. 18-446 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-259.pdf'>Law 18-259</a> became effective on November 6, 2010.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

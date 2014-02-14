@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-205.42. Definitions relating to incapacity and disability.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-2/index.html">Chapter 2. Public Assistance</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-2/Subchapter-V/index.html">Subchapter V. Public Assistance Programs</a></li>
+                    
+                    <li>↪ § 4-205.42. Definitions relating to incapacity and disability.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-2/Subchapter-V/4-205.41.html">§ 4-205.41. Emergency applicant may retain automobile.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-2/Subchapter-V/4-205.42a~P.html">§ 4-205.42a. Eligibility for General Public Assistance. [Repealed]</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-205.42. Definitions relating to incapacity and disability.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purpose of determining coverage and conditions of eligibility of applicants and recipients in financial and medical assistance programs of the District, the Mayor shall apply the following definitions relating to incapacity and disability with respect to parents and other adults who are otherwise eligible for assistance under such programs:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-heading" style="">Physical or mental incapacity — </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">For the TANF program, physical or mental incapacity shall be deemed to exist when 1 parent has a physical or mental defect, illness, or impairment. The incapacity shall be supported by competent medical testimony and must be of such a debilitating nature as to reduce substantially or eliminate the parent&#39;s ability to support or care for an otherwise eligible child and be expected to last for a period of at least 30 days.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">In making the determination of ability to support, the Mayor shall take into account the limited employment opportunities of individuals with disabilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">A finding of eligibility for OASDI or SSI benefits, based on disability or blindness, shall be deemed acceptable proof of incapacity for purposes of the TANF program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 6, 1982, D.C. <a href='http://openlims.org/public/L4-101.pdf'>Law 4-101</a>, § 542, 29 DCR 1060; Aug. 17, 1991, D.C. <a href='http://openlims.org/public/L9-27.pdf'>Law 9-27</a>, § 2(e), 38 DCR 4205; Mar. 20, 1998, D.C. <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a>, § 701(l), 44 DCR 7378; Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-241.pdf'>Law 12-241</a>, § 2(jj), 46 DCR 905; Apr. 24, 2007, D.C. <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, § 13(c), 53 DCR 6198.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 3-205.42.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, in par. (1)(C), substituted &quot;individuals with disabilities&quot; for &quot;handicapped individuals&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 101(e) of Omnibus Budget Support Temporary Act of 1991 (D.C. <a href='http://openlims.org/public/L9-19.pdf'>Law 9-19</a>, June 21, 1991, law notification 38 DCR 5786).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(x) of Public Assistance Temporary Amendment Act of 1997 (D.C. <a href='http://openlims.org/public/L12-7.pdf'>Law 12-7</a>, August 1, 1997, law notification 44 DCR 4639).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(l) of General Public Assistance Program Termination Temporary Amendment Act of 1997 (D.C. <a href='http://openlims.org/public/L12-21.pdf'>Law 12-21</a>, September 23, 1997, law notification 44 DCR 5760).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 701(l) of Fiscal Year 1998 Revised Budget Support Temporary Act of 1997 (D.C. <a href='http://openlims.org/public/L12-59.pdf'>Law 12-59</a>, March 20, 1998, law notification 45 DCR 2094).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(x) of Public Assistance Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-130.pdf'>Law 12-130</a>, July 24, 1998, law notification 45 DCR 6501).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(jj) of Self-Sufficiency Promotion Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-230.pdf'>Law 12-230</a>, April 20, 1999, law notification 46 DCR 4143).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 101(e) of the Omnibus Budget Support Emergency Act of 1991 (D.C. Act 9-37, May 17, 1991, 38 DCR 3390).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 101(e) of the Omnibus Budget Support Congressional Recess Emergency Act of 1991 (D.C. Act 9-69, July 24, 1991, 38 DCR 4945).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(x) of the Public Assistance Emergency Amendment Act of 1997 (D.C. Act 12-25, February 27, 1997, 44 DCR 1778), § 2(x) of the Public Assistance Legislative Review Emergency Amendment Act of 1997 (D.C. Act 12-77, May 27, 1997, 44 DCR 3181), and § 2(x) of the Public Assistance Emergency Amendment Act of 1998 (D.C. Act 12-306, March 20, 1998, 45 DCR 1900).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(l) of the General Public Assistance Program Termination Emergency Amendment Act of 1997 (D.C. Act 12-72, May 12, 1997, 44 DCR 2989).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 701(l) of the Fiscal Year 1998 Revised Budget Support Emergency Act of 1997 (D.C. Act 12-152, October 17, 1997, 44 DCR 6196), and see § 701(l) of the Fiscal Year 1998 Revised Budget Support Congressional Review Emergency Act of 1997 (D.C. Act 12-239, January 13, 1998, 45 DCR 508).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(jj) of the Self-Sufficiency Promotion Emergency Amendment Act of 1998 (D.C. Act 12-372, June 9, 1998, 45 DCR 4270), § 2(jj) of the Self-Sufficiency Promotion Legislative Review Emergency Amendment Act of 1998 (D.C. Act 12-425, July 31, 1998, 45 DCR 5682), § 2(jj) of the Self-Sufficiency Promotion Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-552, December 24, 1998, 46 DCR 521), and § 2(jj) of the Self-Sufficiency Promotion Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-19, February 17, 1999, 46 DCR 2492).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-101</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-101.pdf'>Law 4-101</a>, see Historical and Statutory Notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-I/4-201.01.html'>§ 4-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-27</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-27.pdf'>Law 9-27</a>, see Historical and Statutory Notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-V/4-205.05a.html'>§ 4-205.05a</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-60</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a>, see Historical and Statutory Notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-I/4-201.01.html'>§ 4-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-241</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-241.pdf'>Law 12-241</a>, see Historical and Statutory Notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-I/4-201.01.html'>§ 4-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, see notes following <a href='/dccode/Title-4/Chapter-1/4-110.html'>§ 4-110</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Application of <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a>: Section 2002 of D.C. <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a> provided that the act shall apply as of October 1, 1997.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

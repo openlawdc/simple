@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 51-122. All audits by Office of the Inspector General.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-51/index.html">Title 51. Social Security</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-51/Chapter-1/index.html">Chapter 1. Unemployment Compensation</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-51/Chapter-1/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-51/Chapter-1/Subchapter-I/Part-A/index.html">Part A. Administration of the District Unemployment Fund</a></li>
+                    
+                    <li>↪ § 51-122. All audits by Office of the Inspector General.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-51/Chapter-1/Subchapter-I/Part-A/51-121.html">§ 51-121. Representation of Board in court.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-51/Chapter-1/Subchapter-I/Part-A/51-123.html">§ 51-123. Right to amend or repeal reserved.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 51-122. All audits by Office of the Inspector General.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All audits herein prescribed shall be made by the Office of the Inspector General in the same manner as are all other audits of the District.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Aug. 28, 1935, 49 Stat. 956, ch. 794, § 22, as added June 4, 1943, 57 Stat. 125, ch. 117, § 1.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 46-123.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 46-322.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Office of Auditor abolished: The Office of the Auditor of the District of Columbia was abolished and the functions thereof transferred to the Board of Commissioners of the District of Columbia by Reorganization Plan No. 5 of 1952. Reorganization Order No. 3 of the Board of Commissioners, dated August 28, 1952, established under the direction and control of the Board of Commissioners, a Department of General Administration headed by a Director. The Order transferred to the Director all of the functions and positions of the Office of the Auditor. Reorganization Order No. 19 established in the Department of General Administration an Internal Audit Office headed by an Internal Audit Officer. The function of post auditing benefit payments made by the District Unemployment Compensation Board referred to in § 46-109 was transferred from the Auditor to the Internal Audit Officer. The functions of auditing all moneys paid to and collected by the District Unemployment Board as provided in subsection (a) of § 46-105, were transferred from the Auditor to the Internal Audit Officer, Department of General Administration by Reorganization Order No. 19. The function of the Auditor of the District concerning the prior audit of refunds under subsection (i) of <a href='/dccode/Title-51/Chapter-1/Subchapter-I/Part-A/51-104.html'>§ 51-104</a> was transferred from the Auditor to the Accounting Officer, Finance Office, Department of General Administration by Reorganization Order No. 20, dated November 10, 1952. Reorganization Order No. 20 was superseded by Organization Order No. 121, dated December 12, 1957. The executive functions of the Board of Commissioners were transferred to the Commissioner of the District of Columbia by § 401 of Reorganization Plan No. 3 of 1967. Reorganization Order No. 19 and Organization Order No. 121 were revoked and replaced by Organization Order No. 3, dated December 13, 1967. Parts IVB and IVC of the latter Order established within the newly created Department of General Administration, an Internal Audit Office and a Finance Office and prescribed the functions thereof. These functions were subsequently transferred to the Director of the Department of Finance and Revenue by paragraph 4 of Commissioner&#39;s Order No. 69-96, dated March 7, 1969. Functions pertaining to centralized accounting as set forth in Commissioner&#39;s Order No. 69-96 were transferred to the Director of the Office of Budget and Financial Management by Organization Order No. 30, dated April 5, 1972. Part IVB of Organization Order No. 3 and that portion of paragraph 4 of Commissioner&#39;s Order No. 69-96 pertaining to a transfer of audit functions to the Department of Finance and Revenue, were revoked by Organization Order No. 33, dated July 14, 1972. The latter Order established an Office of Municipal Audit and Inspection and prescribed the functions thereof. The Office of Municipal Audit and Inspection was replaced by Mayor&#39;s Order No. 79-7, dated January 2, 1979, which Order established the Office of the Inspector General of the District of Columbia.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

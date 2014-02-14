@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-751.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/index.html">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-7B/index.html">Chapter 7B. Health Professional Recruitment Program</a></li>
+                    
+                    <li>↪ § 7-751.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-7B/index.html">Chapter 7B. Health Professional Recruitment Program</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-7B/7-751.02.html">§ 7-751.02. Establishment of Program.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-751.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Commercial loans&quot; means loans made by banks, credit unions, savings and loan associations, insurance companies, schools, and either financial or credit institutions that are subject to examination and supervision in their capacity as lenders by an agency of the United States or of the State or District in which the lender has its principal place of business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Dentist&quot; means a graduate of a an accredited dental school who has completed post-graduate training in specialties of general or pediatric dentistry.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Director&quot; means Director of the Department of Health or his or her designee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Health Professional Shortage Area&quot; and &quot;HPSA&quot; mean a geographic area, population group, or facility in the District of Columbia designated by the United States Department of Health and Human Services as lacking a sufficient number of primary care, dental, or mental health professionals to provide care for residents of the area or community.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Medically Underserved Area&quot; and &quot;MUA&quot; mean a geographic area in the District of Columbia designated by the United States Department of Health and Human Services as medically underserved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Other health professional&quot; means a person who has graduated from an accredited program for registered nurses, nurse midwives, certified registered nurse practitioners, dental hygienists, clinical social workers, clinical psychologists, professional counselors, or physician assistants and has completed any required post-graduate training.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Physician&quot; means a graduate of an accredited medical school of allopathic or osteopathic medicine who has completed post-graduate training in specialties of family practice medicine, general internal medicine, general pediatrics, obstetrics/gynecology, psychiatry, osteopathic general practice.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Reasonable educational expenses&quot; means the costs of education, exclusive of tuition, which are considered to be required by the school&#39;s degree program or an eligible program of study, such as fees for room, board, transportation and commuting costs, books, supplies, educational equipment and materials, or clinical travel, which were part of the estimated student budget of the school in which the participant was enrolled.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Service obligation site&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A nonprofit entity located in a Health Professional Shortage Area or a Medically Underserved Area within the District of Columbia that provides primary care, mental health, or dental services to District of Columbia residents regardless of their ability to pay;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A Department of Health program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A Department of Mental Health program; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Any other District program designated by the Director as a service obligation site.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 8, 2006, D.C. <a href='http://openlims.org/public/L16-71.pdf'>Law 16-71</a>, § 2, 53 DCR 61; Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, § 103, 53 DCR 6794; Aug. 16, 2008, D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a>, § 5033(a), 55 DCR 7598.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-7/Chapter-7B/7-751.03.html'>§ 7-751.03</a> and <a href='/dccode/Title-7/Chapter-7B/7-751.04.html'>§ 7-751.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, in par. (9), substituted &quot;Shortage&quot; for &quot;Service&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a>, in par. (4), substituted &quot;geographic area, population group, or facility&quot; for &quot;geographic area&quot;; and rewrote pars. (6) and (9).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-71</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-71.pdf'>Law 16-71</a>, the &quot;District of Columbia Health Professional Recruitment Program Act of 2005&quot;, was introduced in Council and assigned Bill No. 16-420 which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on November 1, 2005, and December 6, 2005, respectively. Signed by the Mayor on December 22, 2005, it was assigned Act No. 16-233 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-71.pdf'>Law 16-71</a> became effective on March 8, 2006.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, see notes following <a href='/dccode/Title-7/Chapter-1/Subchapter-I/7-103.html'>§ 7-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-219</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a>, see notes following <a href='/dccode/Title-7/Chapter-6A/7-651.17~P.html'>§ 7-651.17</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 5032 of D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a> provided that subtitle N of title V of the act may be cited as the &quot;Health Professional Recruitment Program Amendment Act of 2008&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

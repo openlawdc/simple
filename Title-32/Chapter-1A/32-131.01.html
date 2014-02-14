@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-131.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/index.html">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-1A/index.html">Chapter 1A. Employee Sick Leave</a></li>
+                    
+                    <li>↪ § 32-131.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-1A/index.html">Chapter 1A. Employee Sick Leave</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-1A/32-131.02.html">§ 32-131.02. Provision of paid leave.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-131.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Domestic violence&quot; means an intrafamily offense as defined in <a href='/dccode/Title-16/Chapter-10/Subchapter-I/16-1001.html'>§ 16-1001(5)</a> [now (8)].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Employee&quot; shall have the same meaning as provided in <a href='/dccode/Title-32/Chapter-5/32-501.html'>§ 32-501(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;employee&quot; shall not include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">An independent contractor;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A student;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Health care workers who choose to participate in a premium pay program; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Restaurant wait staff and bartenders who work for a combination of wages and tips.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Employer&quot; means a legal entity (including a for-profit or nonprofit firm, partnership, proprietorship, sole proprietorship, limited liability company, association, or corporation), or any receiver or trustee of an entity (including the legal representative of a deceased individual or receiver or trustee of an individual), who employs an employee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;employer&quot; shall include the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Family member&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A spouse, including the person identified by an employee as his or her domestic partner, as defined in <a href='/dccode/Title-32/Chapter-7/32-701.html'>§ 32-701(3)</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The parents of a spouse;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Children (including foster children and grandchildren);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">The spouses of children;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Parents;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">Brothers and sisters; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vii) </span>
+                
+                    <span class="" style="">The spouses of brothers and sisters.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A child who lives with an employee and for whom the employee permanently assumes and discharges parental responsibility; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A person with whom the employee shares or has shared, for not less than the preceding 12 months, a mutual residence and with whom the employee maintains a committed relationship, as defined in <a href='/dccode/Title-32/Chapter-7/32-701.html'>§ 32-701(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Paid leave&quot; means accrued increments of compensated leave provided by an employer for use by an employee during an absence from employment for any of the reasons specified in <a href='/dccode/Title-32/Chapter-1A/32-131.02.html'>§ 32-131.02(b)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Premium pay program&quot; means a plan offered by an employer pursuant to which an employee may elect to receive extra pay in lieu of benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Sexual abuse&quot; means any offense described in Chapter 30 of Title 22 [<a href='/dccode/Title-22/Chapter-30/Subchapter-I/22-3001.html'>§ 22-3001</a> et seq.]</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Student&quot; means an employee who:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Is a full-time student, as defined by an accredited institution of higher education;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Is employed by the institution at which the student is enrolled;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Is employed for less than 25 hours per week; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Does not replace an employee subject to this chapter; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is employed as part of the Year Round Program for Youth, as established by the Department of Employment Services.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(May 13, 2008, D.C. <a href='http://openlims.org/public/L17-152.pdf'>Law 17-152</a>, § 2, 55 DCR 3452.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-152</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-152.pdf'>Law 17-152</a>, the &quot;Accrued Sick and Safe Leave Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-197, which was referred to the Committee on Workforce Development and Government Operations. The Bill was adopted on first and second readings on February 5, 2008, and March 4, 2008, respectively. Signed by the Mayor on March 19, 2008, it was assigned Act No. 17-324 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-152.pdf'>Law 17-152</a> became effective on May 13, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 7095 of D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a> repealed section 18 of D.C. <a href='http://openlims.org/public/L17-152.pdf'>Law 17-152</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

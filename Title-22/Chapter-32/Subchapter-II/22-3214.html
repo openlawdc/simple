@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 22-3214. Commercial piracy.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/index.html">Title 22. Criminal Offenses and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-32/index.html">Chapter 32. Theft; Fraud; Stolen Property; Forgery; and Extortion</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-32/Subchapter-II/index.html">Subchapter II. Theft; Related Offenses</a></li>
+                    
+                    <li>↪ § 22-3214. Commercial piracy.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-32/Subchapter-II/22-3213.html">§ 22-3213. Shoplifting.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-32/Subchapter-II/22-3214.01.html">§ 22-3214.01. Deceptive labeling.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 22-3214. Commercial piracy.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">For the purpose of this section, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Owner&quot;, with respect to phonorecords or copies, means the person who owns the original fixation of the property involved or the exclusive licensee in the United States of the rights to reproduce and distribute to the public phonorecords or copies of the original fixation. In the case of a live performance the term &quot;owner&quot; means the performer or performers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Proprietary information&quot; means customer lists, mailing lists, formulas, recipes, computer programs, unfinished designs, unfinished works of art in any medium, process, program, invention, or any other information, the primary commercial value of which may diminish if its availability is not restricted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Phonorecords&quot; means material objects in which sounds, other than those accompanying a motion picture or other audiovisual work, are fixed by any method now known or later developed, and from which the sounds can be perceived, reproduced, or otherwise communicated, either directly or with the aid of a machine or device. The term &quot;phonorecords&quot; includes the material object in which the sounds are first fixed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A person commits the offense of commercial piracy if, with the intent to sell, to derive commercial gain or advantage, or to allow another person to derive commercial gain or advantage, that person reproduces or otherwise copies, possesses, buys, or otherwise obtains phonorecords of a sound recording, live performance, or copies of proprietary information, knowing or having reason to believe that the phonorecord or copies were made without the consent of the owner. A presumption of the requisite intent arises if the accused possesses 5 or more unauthorized phonorecords either of the same sound recording or recording of a live performance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Nothing in this section shall be construed to prohibit:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Copying or other reproduction that is in the manner specifically permitted by Title 17 of the United States Code; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Copying or other reproduction of a sound recording that is made by a licensed radio or television station or a cable broadcaster solely for broadcast or archival use.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Any person convicted of commercial piracy shall be fined not more than the amount set forth in <a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a> or imprisoned for not more than 180 days, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">This section does not apply to any sound recording initially fixed on or after February 15, 1972.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 1, 1982, D.C. <a href='http://openlims.org/public/L4-164.pdf'>Law 4-164</a>, § 114, 29 DCR 3976; Aug. 20, 1994, D.C. <a href='http://openlims.org/public/L10-151.pdf'>Law 10-151</a>, § 113(b), 41 DCR 2608; Oct. 31, 1995, D.C. <a href='http://openlims.org/public/L11-73.pdf'>Law 11-73</a>, § 2(a), 42 DCR 3277; June 11, 2013, D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>, § 205(c), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Consecutive sentences for theft and certain other crimes, availability, see <a href='/dccode/Title-22/Chapter-32/Subchapter-I/22-3203.html'>§ 22-3203</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 22-3814.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> substituted &quot;not more than the amount set forth in <a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a>&quot; for &quot;not more than $1,000&quot; in (d).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 113(b) of the Omnibus Criminal Justice Reform Emergency Amendment Act of 1994 (D.C. Act 10-255, June 22, 1994, 41 DCR 4286).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2 of the Commercial Piracy Protection Emergency Amendment Act of 1994 (D.C. Act 10-363, December 15, 1994, 41 DCR 8059).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-164</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-164.pdf'>Law 4-164</a>, see Historical and Statutory Notes following <a href='/dccode/Title-22/Chapter-32/Subchapter-I/22-3201.html'>§ 22-3201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-151</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-151.pdf'>Law 10-151</a>, see Historical and Statutory Notes following <a href='/dccode/Title-22/Chapter-32/Subchapter-II/22-3212.html'>§ 22-3212</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-252</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-252.pdf'>Law 10-252</a>, the &quot;Commercial Piracy Protection Temporary Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-846. The Bill was adopted on first and second readings on December 6, 1994, and January 3, 1995, respectively. Signed by the Mayor on January 27, 1995, it was assigned Act No. 10-399 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-252.pdf'>Law 10-252</a> became effective on March 23, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-73</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-73.pdf'>Law 11-73</a>, see Historical and Statutory Notes following <a href='/dccode/Title-22/Chapter-32/Subchapter-II/22-3214.01.html'>§ 22-3214.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-22/Chapter-32/Subchapter-II/22-3212.html'>§ 22-3212</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>: Section 401 of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> provided that the act shall apply only to offenses committed on or after June 11, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

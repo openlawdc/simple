@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-325.171. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/index.html">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-XI/index.html">Subchapter XI. Special Funds</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-XI/Part-R/index.html">Part R. H Street Retail Priority Area Fund</a></li>
+                    
+                    <li>↪ § 1-325.171. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XI/Part-R/index.html">Part R. H Street Retail Priority Area Fund</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XI/Part-R/1-325.172.html">§ 1-325.172. Establishment of the H Street Retail Priority Area Grant Fund.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-325.171. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Chief Financial Officer&quot; means the Chief Financial Officer established by § 1-204.24(a).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;DMPED&quot; means the Office of the Deputy Mayor for Planning and Economic Development established by Mayor&#39;s Order 99-62 (April 9, 1999).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Developer Sponsor&quot; shall have the same meaning as provided in <a href='/dccode/Title-47/Chapter-46/47-4634.html'>§ 47-4634(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;H Street Real Property Tax Increment Revenue&quot; means the portion of the real property tax imposed by Chapter 8 of Title 47 of the District of Columbia Official Code on real property in the H Street, N.E., Retail Priority Area in any fiscal year that exceeds the amount of the real property tax imposed on the real property in the H Street, N.E., Retail Priority Area in the fiscal year ended September 30, 2007.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;H Street, N.E., Retail Priority Area&quot; means the H Street, N.E., Retail Priority Area as defined in section 2(2) of the Great Streets Neighborhood Retail Priority Areas Approval Resolution of 2007, effective July 10, 2007 (Res. 17-257; 54 DCR 7194), which includes the parcels, squares, and lots within the area bounded by a line beginning at the intersection of the center lines of Massachusetts Avenue, N.E., Columbus Circle, N.E., and 1st Street, N.E.; continuing northeast along the center line of 1st Street, N.E., to the center line of K Street, N.E.; continuing east along the center line of K Street, N.E., to the center line of Florida Avenue, N.E.; continuing southeast along the center line of Florida Avenue, N.E., to the center line of Staples Street, N.E.; continuing northeast along the center line of Staples Street, N.E., to the center line of Oates Street, N.E.; continuing southeast along the center line of Oates Street, N.E., until the point where Oates Street, N.E., becomes K Street, N.E.; continuing east along the center line of K Street, N.E., to the center line of 17th Street, N.E.; continuing south along the center line of 17th Street, N.E., to the center line of Gales Street, N.E.; continuing northwest along the center line of Gales Street, N.E., to the center line of 15th Street, N.E.; continuing south along the center line of 15th Street, N.E., to the center line of F Street, N.E.; continuing west along F Street, N.E., to the center line of Columbus Circle, N.E.; and continuing south and circumferentially along the center line of Columbus Circle, N.E., to the beginning point.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;H Street Retail Developer&quot; means a person or corporation that proposes to, or provides technical assistance to, engage in the business of sale of personal property or services for use or consumption by the purchasers at locations in the H Street, N.E., Retail Priority Area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;H Street Sales Tax Increment Revenue&quot; means the portion of the sales tax imposed by Chapter 20 of Title 47 on goods and services sold in the H Street, N.E., Retail Priority Area in any fiscal year that exceeds the amount of the sales tax imposed in the H Street, N.E., Retail Priority Area in the fiscal year ended September 30, 2007.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 8, 2011, D.C. <a href='http://openlims.org/public/L18-354.pdf'>Law 18-354</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 754</a>; Sept. 20, 2012, D.C. <a href='http://openlims.org/public/L19-168.pdf'>Law 19-168</a>, § 2162(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 8025</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2012 amendment by D.C. <a href='http://openlims.org/public/L19-168.pdf'>Law 19-168</a> added &quot;or services&quot; in (6).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2162(a) of Fiscal Year 2013 Budget Support Emergency Act of 2012 (D.C. Act 19-383, June 19, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 7764</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2162(a) of Fiscal Year 2013 Budget Support Congressional Review Emergency Act of 2012 (D.C. Act 19-413, July 25, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 9290</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-354.pdf'>Law 18-354</a>, the &quot;H Street, N.E., Retail Priority Area Incentive Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-970, which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings on December 7, 2010, and December 21, 2010, respectively. Signed by the Mayor on January 19, 2011, it was assigned Act No. 18-704 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-354.pdf'>Law 18-354</a> became effective on April 8, 2011.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-168</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-1/Chapter-3/Subchapter-XI/Part-J/1-325.91.html'>§ 1-325.91</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3401. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/index.html">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-34/index.html">Chapter 34. Health Maintenance Organizations</a></li>
+                    
+                    <li>↪ § 31-3401. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-34/index.html">Chapter 34. Health Maintenance Organizations</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-34/31-3402.html">§ 31-3402. Establishment of health maintenance organizations.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3401. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Administrative services provider contract&quot; means a contract entered into between a health maintenance organization and a contracting provider in which the contracting provider accepts payments for certain covered services provided to the enrollees of the health maintenance organization by external providers, and the contracting provider pays the external providers pursuant to a contract between the contracting provider and the health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agent&quot; means a person who solicits, negotiates, effects, procures, delivers, renews, or continues a contract for health maintenance organization membership, other than for himself, or a person who advertises or otherwise holds himself out to the public as such. Health maintenance organization agents shall not include salaried employees and officers of the HMO or its parents, subsidiaries or other corporations under common control with the HMO, whose principal duties do not include the negotiation or solicitation of enrollee contracts.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Basic health care services&quot; means preventive care, emergency care, inpatient and outpatient hospital and physician care, diagnostic laboratory and diagnostic and therapeutic radiological services, and services mandated under Chapter 29 of this title, Chapter 31 of this title, and Chapter 38 of this title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Capitated basis&quot; means fixed per member per month payment or percentage of dues payment wherein the provider or an affiliation of providers assumes the full risk for the cost of contracted services without regard to the type, value, or frequency of services provided. For the purposes of this definition, the term &quot;capitated basis&quot; includes the cost associated with operating staff or group model facilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Carrier&quot; means a health maintenance organization, a licensed insurer, Group Hospitalization and Medical Services, Inc., or other entity responsible for payment of benefits or provision of services under a group or individual contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Contracting provider&quot; means a physician or other health care provider who enters into an administrative service provider contract with a health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Copayment&quot; means either a dollar or percentage amount an enrollee must pay in order to receive a specific covered service which is not fully prepaid.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Covered services&quot; means health care services included in the health maintenance organization&#39;s evidence of coverage in accordance with the terms of the health maintenance organization&#39;s group or individual contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Deductible&quot; means the amount an enrollee is responsible to pay out-of-pocket before the health maintenance organization begins to pay the costs associated with treatment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Director&quot; means the Director of the Department of Health, established by Reorganization Plan No. 4 of 1996.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Enrollee&quot; means an individual who is covered by a health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Enrollment fees&quot; means the payment charged by the health maintenance organization which shall be paid by an enrollee or by a group on behalf of enrollees for coverage in the health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Evidence of coverage&quot; means a statement of the essential features and covered services of the health maintenance organization which is given to the enrollee by the health maintenance organization or by the group contract holder.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Extension of benefits&quot; means the continuation of coverage under a particular benefit provided under a contract following termination with respect to an enrollee who is hospitalized on the date of termination.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;External provider&quot; means a health care provider, including a physician or hospital, that is not a contracting provider, or an employee, shareholder, or partner of a contracting provider.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Group contract&quot; means a contract issued and delivered in the District for health care services which by its terms limits eligibility to members of a specified group. The group contract may include coverage for dependents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Group contract holder&quot; means the person to which the group contract has been issued.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Health maintenance organization&quot; or &quot;HMO&quot; means any person that undertakes to provide or arrange for the delivery of basic health care services to enrollees on a prepaid basis, except for enrollee responsibility for copayments and deductibles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Health maintenance organization producers&quot; means any person who solicits, negotiates, effects, procures, delivers, renews, or continues a policy or contract for HMO membership or who takes or transmits a membership fee or premium for such a policy or contract, other than for himself, or a person who advertises or otherwise holds himself out to the public as such.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Hold harmless&quot; means an expressed or implied arrangement between a provider and a health maintenance organization by which the provider, or any representative of the provider, agrees not to collect or attempt to collect from any enrollee any money owed to the provider by the health maintenance organization or by a contracting provider, except for copayments and deductibles owed by the enrollee, or any payment or charges for health care services not covered under the evidence of coverage.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Individual contract&quot; means a contract delivered in the District for health care services issued to and covering an individual enrollee. The individual contract may include dependents of the enrollee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Insolvent&quot; or &quot;insolvency&quot; means that the organization has been declared bankrupt and placed under an order of liquidation by a court of competent jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Mayor&quot; means the Mayor of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(27) </span>
+                
+                    <span class="" style="">&quot;Net worth&quot; means the excess of total admitted assets over total liabilities, but the liabilities shall not include fully subordinated debt.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(28) </span>
+                
+                    <span class="" style="">&quot;Participating provider&quot; means a provider who, under an express or implied contract with a health maintenance organization or with its contractor or subcontractor, has agreed to provide covered services to enrollees with an expectation of receiving payment, other than copayment or deductible, directly or indirectly from the health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(29) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means any natural or artificial person, including, but not limited to, individuals, partnerships, associations, trusts, or corporations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(30) </span>
+                
+                    <span class="" style="">&quot;Point of service plan&quot; means a delivery system that permits an enrollee of a health maintenance organization to receive services outside the provider panel of the health maintenance organization under the terms and conditions of the enrollee&#39;s contract with the health maintenance organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(31) </span>
+                
+                    <span class="" style="">&quot;Primary care provider&quot; means a participating provider who the enrollee has selected or who has otherwise been assigned responsibility for the coordination of covered services to the enrollee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(32) </span>
+                
+                    <span class="" style="">&quot;Provider&quot; means any hospital or health professional licensed or authorized by reciprocity or endorsement to practice a health occupation by the District pursuant to Chapter 12 of Title 3, or any state.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(33) </span>
+                
+                    <span class="" style="">&quot;Provider panel&quot; means a group of providers that have entered into a written provider service contract with an HMO to provide services under the HMO&#39;s health benefit plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(34) </span>
+                
+                    <span class="" style="">&quot;Replacement coverage&quot; means the benefits provided by a succeeding carrier after termination of a member&#39;s enrollment with the preceding carrier.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(35) </span>
+                
+                    <span class="" style="">&quot;Uncovered expenditures&quot; means the cost to the health maintenance organization for covered services that are the obligation of the health maintenance organization for which an enrollee may also be liable in the event of the health maintenance organization&#39;s insolvency and for which no alternative arrangements have been made that are acceptable to the Commissioner.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-235.pdf'>Law 11-235</a>, § 2, 44 DCR 818; Mar. 24, 1998, D.C. <a href='http://openlims.org/public/L12-81.pdf'>Law 12-81</a>, § 46(a), 45 DCR 745; Apr. 27, 1999, D.C. <a href='http://openlims.org/public/L12-274.pdf'>Law 12-274</a>, § 501(a)(1), 46 DCR 1294; June 11, 2004, D.C. <a href='http://openlims.org/public/L15-166.pdf'>Law 15-166</a>, § 4(t), 51 DCR 2817.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-4501.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-166.pdf'>Law 15-166</a>, in par. (6), substituted &quot;Commissioner of the Department of Insurance, Securities, and Banking&quot; for &quot;Commissioner of Insurance and Securities&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 101 to 106 of D.C. <a href='http://openlims.org/public/L18-271.pdf'>Law 18-271</a> added sections to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 101. Establishment of the DC High Risk Pool Program.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(a) There is established the DC High Risk Pool Program (&#39;Program&#39;), which shall provide affordable health insurance benefits to eligible individuals.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(b) The Program shall be:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) Administered by the Department of Health Care Finance, established by the Department of Health Care Finance Establishment Act of 2007, effective February 27, 2008 (D.C. <a href='http://openlims.org/public/L17-109.pdf'>Law 17-109</a>; D.C. Official Code <a href='/dccode/Title-7/Chapter-7D/7-771.01.html'>§ 7-771.01</a> et seq.);</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Funded through federal funds made available through the temporary high risk pool program, established by the Patient Protection and Affordable Care Act, approved March 23, 2010 (<a href='http://api.fdsys.gov/link?collection=statute&volume=124&page=119'>124 Stat. 119</a>; 42 U.S.C. § 18001) (&#39;federal act&#39;), and administered by the U.S. Department of Health and Human Services;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) Subject to the availability of funding; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(4) Expire on December 31, 2013; provided, that federal requirements or contractual obligations between the District and the U.S. Department of Health and Human Services do not necessitate a different date.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(c) Nothing in this section shall be construed to create or constitute an entitlement to health insurance or to health or medical benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 102. Program eligibility.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;An individual shall be eligible for the Program if the individual:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) Is a District resident;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Is a United States citizen, or lawfully in the country;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) Has not had creditable health coverage for the 6 months prior to applying for the Program;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(4) Has one or more pre-existing conditions that have resulted in the inability to obtain commercial insurance coverage on the individual market; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(5) Is not eligible for public health-insurance benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 103. Program benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;The Program shall provide comprehensive coverage for services that meet the requirements of the temporary high risk pool program, established by the federal act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 104. Affordability of coverage.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Under the Program:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) The premium levels charged to enrollees shall be no greater than 100% of the standard risk rate for each age group, with a variability no greater than 4-to-1 between any 2 age groups;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) The out-of-pocket limit of coverage for cost-sharing for the required benefits shall not be greater than the applicable amount described in section 223(c)(2) of the Internal Revenue Code of 1986, approved December 8, 2003 (<a href='http://api.fdsys.gov/link?collection=statute&volume=117&page=2469'>117 Stat. 2469</a>; 26 U.S.C. § 223(c)(2)), for the year involved; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) There shall not be any annual or lifetime dollar limits on any service, including prescription drugs.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 105. Program implementation.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;To meet the deadline set by the U.S. Department of Health and Human Services, the Mayor is authorized to enter into a contract with a qualified insurer or hospital and medical services corporation licensed in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sec. 106. Rules.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;The Mayor, pursuant to Title I of the District of Columbia Administrative Procedure Act, approved October 21, 1968 (<a href='http://api.fdsys.gov/link?collection=statute&volume=82&page=1204'>82 Stat. 1204</a>; D.C. Official Code <a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-501.html'>§ 2-501</a> et seq.), shall issue rules to implement the provisions of this title.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 302(b) of D.C. <a href='http://openlims.org/public/L18-271.pdf'>Law 18-271</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 4(t) of Consolidation of Financial Services Emergency Amendment Act of 2004 (D.C. Act 15-381, February 27, 2004, 51 DCR 2653).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) additions, see §§ 101 to 106 of DC High Risk Pool Program Establishment Emergency Act of 2010 (D.C. Act 18-522, August 3, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 8001</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-235</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-235.pdf'>Law 11-235</a>, the &quot;Health Maintenance Organization Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-442, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-495 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-235.pdf'>Law 11-235</a> became effective on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-81</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-81.pdf'>Law 12-81</a>, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-408, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 4, 1997, and December 4, 1997, respectively. Signed by the Mayor on December 22, 1997, it was assigned Act No. 12-246 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-81.pdf'>Law 12-81</a> became effective on March 24, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-274</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-274.pdf'>Law 12-274</a>, the &quot;Health Benefits Plan Members Bill of Rights Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-501. The Bill was adopted on first and second reading on December 1, 1998, and December 15, 1998, respectively. Signed by the Mayor on December 29, 1998, it was assigned Act No. 12-607, and transmitted to both Houses of Congress for review. D.C. <a href='http://openlims.org/public/L12-274.pdf'>Law 12-274</a> became effective on April 27, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-166</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-166.pdf'>Law 15-166</a>, see notes following <a href='/dccode/Title-31/Chapter-10/31-1004.html'>§ 31-1004</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Application of D.C. <a href='http://openlims.org/public/L12-274.pdf'>Law 12-274</a>: Section 501(b) of D.C. <a href='http://openlims.org/public/L12-274.pdf'>Law 12-274</a> provided that this section shall apply upon the promulgation of regulations pursuant to § 32-574.1 <a href='/dccode/Title-44/Chapter-3/Subchapter-IV/44-304.01.html'>§ 44-304.01</a>, (2001 Ed.).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

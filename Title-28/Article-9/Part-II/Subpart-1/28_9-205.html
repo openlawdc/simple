@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:9-205. Use or disposition of collateral permissible.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-II/index.html">Part II. Effectiveness of Security Agreement; Attachment of Security Interest; Rights of Parties to Security Agreement</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-II/Subpart-1/index.html">Subpart 1. Effectiveness and Attachment</a></li>
+                    
+                    <li>↪ § 28:9-205. Use or disposition of collateral permissible.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-II/Subpart-1/28_9-204.html">§ 28:9-204. After-acquired property; future advances.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-II/Subpart-1/28_9-206.html">§ 28:9-206. Security interest arising in purchase or delivery of financial asset.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:9-205. Use or disposition of collateral permissible.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A security interest is not invalid or fraudulent against creditors solely because:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The debtor has the right or ability to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Use, commingle, or dispose of all or part of the collateral, including returned or repossessed goods;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Collect, compromise, enforce, or otherwise deal with collateral;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Accept the return of collateral or make repossessions; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Use, commingle, or dispose of proceeds; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The secured party fails to require the debtor to account for proceeds or replace collateral.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">This section does not relax the requirements of possession if attachment, perfection, or enforcement of a security interest depends upon possession of the collateral by the secured party.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 101, 47 DCR 7576.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:9-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Source. Former Section 9-205.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Validity of Unrestricted &quot;Floating Lien.&quot; This Article expressly validates the &quot;floating lien&quot; on shifting collateral. See Sections 9-201, 9-204 and Comment 2. This section provides that a security interest is not invalid or fraudulent by reason of the debtor&#39;s liberty to dispose of the collateral without being required to account to the secured party for proceeds or substitute new collateral. As did former Section 9-205, this section repeals the rule of Benedict v. Ratner, 268 U.S. 353 (1925), and other cases which held such arrangements void as a matter of law because the debtor was given unfettered dominion or control over collateral. The Benedict rule did not effectively discourage or eliminate security transactions in inventory and receivables. Instead, it forced financing arrangements to be self-liquidating. Although this section repeals Benedict, the filing and other perfection requirements (see Part 3, Subpart 2, and Part 5) provide for public notice that overcomes any potential misleading effects of a debtor&#39;s use and control of collateral. Moreover, nothing in this section prevents the debtor and secured party from agreeing to procedures by which the secured party polices or monitors collateral or to restrictions on the debtor&#39;s dominion. However, this Article leaves these matters to agreement based on business considerations, not on legal requirements.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Possessory Security Interests. Subsection (b) makes clear that this section does not relax the requirements for perfection by possession under <a href='/dccode/Title-9/Chapter-3/9-315.html'>Section 9-315</a>. If a secured party allows the debtor access to and control over collateral its security interest may be or become unperfected.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Permissible Freedom for Debtor to Enforce Collateral. Former Section 9-205 referred to a debtor&#39;s &quot;liberty. . to collect or compromise accounts or chattel paper.&quot; This section recognizes the broader rights of a debtor to &quot;enforce,&quot; as well as to &quot;collect&quot; and &quot;compromise&quot; collateral. This section&#39;s reference to collecting, compromising, and enforcing &quot;collateral&quot; instead of &quot;accounts or chattel paper&quot; contemplates the many other types of collateral that a debtor may wish to &quot;collect, compromise, or enforce&quot;: e.g., deposit accounts, documents, general intangibles, instruments, investment property, and letter-of-credit rights.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1004. Proposed federal and District developments and projects.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-10/index.html">Chapter 10. National Capital Planning Commission</a></li>
+                    
+                    <li>↪ § 2-1004. Proposed federal and District developments and projects.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-10/2-1003.html">§ 2-1003. Comprehensive plan.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-10/2-1005.html">§ 2-1005. Program of public works projects; capital improvements plan.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1004. Proposed federal and District developments and projects.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In order to insure the comprehensive planning and orderly development of the National Capital, each federal and District of Columbia agency, prior to the preparation of construction plans originated by such agency for proposed developments and projects or to commitments for the acquisition of land, to be paid for in whole or in part from federal or District funds, shall advise and consult with the Commission in the preparation by the agency of plans and programs in preliminary and successive stages which affect the plan and development of the National Capital: Provided, however, that the Commission shall determine in advance the type or kinds of plans, developments, projects, improvements, or acquisitions which do not need to be submitted for review by the Commission as to conformity with its plans. After receipt of such plans, maps, and data, it shall be the duty of the Commission to make promptly a preliminary report and recommendations to the agency or agencies concerned. If, after having received and considered the report and recommendations of the Commission the agency does not concur, it shall advise the Commission with its reasons therefor, and the Commission shall submit a final report. After such consultation and suitable consideration of the views of the Commission the agency may proceed to take action in accordance with its legal responsibilities and authority.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The procedure prescribed in subsection (a) of this section shall not apply to projects within the Capitol grounds or to structures erected by the Department of Defense during wartime or national emergency within existing military, naval, or air force reservations, except that the appropriate defense agency shall consult with the Commission as to any developments which materially affect traffic or require coordinated planning of the surrounding area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The provisions of <a href='/dccode/Title-6/Chapter-6/Subchapter-IV/6-641.15.html'>§ 6-641.15</a> are extended to include public buildings erected by any agency of the government of the District of Columbia within the boundaries of the central area of the District, as such central area may be defined and from time to time redefined by concurrent action of the Commission and the Council, except that the Commission shall transmit its approval or disapproval respecting any such building within 30 days after the day it was submitted to the Commission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Within the environs, general plans showing the location, character, extent and intensity of use for proposed federal and District developments and projects involving the acquisition of land, shall be submitted to the Commission for report and recommendations before final commitment to said acquisition, unless such matters shall have been specifically approved by an act of Congress. Before acting on any general plan, the Commission shall advise and consult with the National Capital Regional Planning Council and the appropriate planning agency having jurisdiction over the affected part of the environs. When, in the judgment of the Commission, proposed developments or projects submitted to the Commission under subsection (a) of this section involve a major change in the character or intensity of an existing use in the environs, the Commission shall likewise advise and consult with the National Capital Regional Planning Council and the aforesaid planning agency. The report and recommendations required under this subsection shall be submitted within 60 days and shall be accompanied by any reports or recommendations that may have been prepared by the National Capital Regional Planning Council or the aforesaid planning agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">It is the intent of this section to obtain cooperation and correlation of effort between the various agencies of the federal government which are responsible for public developments and projects, including the acquisition of land. These agencies, therefore, shall look to the Commission and utilize it as the central planning agency for the federal activities in the National Capital region. To aid the Commission in carrying out this function, plans, data, and records, or copies thereof, necessary to the Commission shall be furnished upon its request by such federal and District governmental agencies; and the Commission shall likewise furnish related plans, data, and records, or copies thereof, to federal and District of Columbia governmental agencies upon request.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 6, 1924, ch. 270, § 5; July 19, 1952, <a href='http://api.fdsys.gov/link?collection=statute&volume=66&page=787'>66 Stat. 787</a>, ch. 949, § 1; Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=782'>87 Stat. 782</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, title II, § 203(d).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Rental and utilization of public space, rental of airspace, federal and district governments, conditional authorization to construct structures, review by National Capital Planning Commission, see <a href='/dccode/Title-10/Chapter-11/Subchapter-II/10-1121.11.html'>§ 10-1121.11</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Zoning, rules, consistency with comprehensive plan, see <a href='/dccode/Title-6/Chapter-6/Subchapter-IV/6-641.02.html'>§ 6-641.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-10/Chapter-11/Subchapter-II/10-1121.11.html'>§ 10-1121.11</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2004.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-1005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">National Capital Regional Planning Council abolished: The National Capital Regional Planning Council, referred to in subsection (d), was abolished by Reorganization Plan No. 5 of 1966, 31 F.R. 11857.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Metropolitan Washington Airports Authority established: D.C. <a href='http://openlims.org/public/L6-67.pdf'>Law 6-67</a>, effective December 3, 1985, endorsed on behalf of the District government the creation of a regional airport authority to acquire Washington National Airport now Reagan National Airport and Washington Dulles International Airport from the federal government.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Definitions applicable: The definitions contained in <a href='/dccode/Title-1/Chapter-2/Subchapter-I/1-201.03.html'>§ 1-201.03</a> apply to this section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Change in Government</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section originated at a time when local government powers were delegated to a Board of Commissioners of the District of Columbia (see Acts Relating to the Establishment of the District of Columbia and its Various Forms of Governmental Organization in Volume 1). Section 402(29) of Reorganization Plan No. 3 of 1967 (see Reorganization Plans in Volume 1) transferred all of the functions of the Board of Commissioners under this section to the District of Columbia Council, subject to the right of the Commissioner as provided in § 406 of the Plan. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made in this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

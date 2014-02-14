@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Chapter 7. Uniform Support</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-46/index.html">Title 46. Domestic Relations</a></li>
+                    
+                    <li>↪ Chapter 7. Uniform Support</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-46/Chapter-6/index.html">Chapter 6. Property Rights</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/index.html">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Chapter 7. Uniform Support</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-701~P.html">§ 46-701. Purposes; effective date. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-702~P.html">§ 46-702. Definitions. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-703~P.html">§ 46-703. Existing remedies preserved. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-704~P.html">§ 46-704. Extent of duties of support. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-705~P.html">§ 46-705. Remedies of a state furnishing support or institutional care. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-706~P.html">§ 46-706. Commencement of proceedings; jurisdiction of Superior Court. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-707~P.html">§ 46-707. Complaint; verification; contents; attachments. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-708~P.html">§ 46-708. Representation of plaintiff by Corporation Counsel or private counsel. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-709~P.html">§ 46-709. Complaint on behalf of minor dependent. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-710~P.html">§ 46-710. Duty of Court when District is initiating state. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-711~P.html">§ 46-711. Fees and costs to accompany complaint; waiver of payment. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-712~P.html">§ 46-712. Flight of defendant from jurisdiction of responding state. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-713~P.html">§ 46-713. Duties of Director of Department of Human Services. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-714~P.html">§ 46-714. Duty of Court when District is responding state. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-715~P.html">§ 46-715. Orders of Court on finding duty of support. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-716~P.html">§ 46-716. Copies of orders to be transmitted to initiating state. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-717~P.html">§ 46-717. Duties of Court as to receipt and disbursement of payments. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-718~P.html">§ 46-718. Husband and wife as witnesses. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-719~P.html">§ 46-719. Crediting of payments under support orders. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-720~P.html">§ 46-720. Duty to support illegitimate child. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-721~P.html">§ 46-721. Effect of participation in proceedings. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-722~P.html">§ 46-722. Right of appeal. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-723~P.html">§ 46-723. Severability. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-724~P.html">§ 46-724. Appropriations. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-725~P.html">§ 46-725. Registration of foreign support order. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="46-726~P.html">§ 46-726. Effect of foreign support order. [Repealed]</a></span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

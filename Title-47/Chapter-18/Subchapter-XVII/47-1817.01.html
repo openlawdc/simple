@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-1817.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/index.html">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-18/index.html">Chapter 18. Income and Franchise Taxes</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-18/Subchapter-XVII/index.html">Subchapter XVII. Qualified High Technology Companies</a></li>
+                    
+                    <li>↪ § 47-1817.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-18/Subchapter-XVII/index.html">Subchapter XVII. Qualified High Technology Companies</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-18/Subchapter-XVII/47-1817.01a.html">§ 47-1817.01a. Alternative method to determine a Qualified High Technology Company status.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-1817.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Qualified asset&quot; means a:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Qualified stock;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Qualified partnership interest; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Qualified business property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A qualified asset shall include property which was a qualified asset in the hands of a prior holder.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Qualified business property&quot; means tangible property if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The property was acquired by the taxpayer by purchase, as defined in section 179(d)(2) of the Internal Revenue Code of 1986, after December 31, 2000;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The original use of the property commences with the taxpayer; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Substantially all of the use of the property was in a Qualified High Technology Company.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">This paragraph shall apply to real property which is substantially improved by the taxpayer before January 1, 2003, and any land on which the property is located.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">For the purposes of subparagraph (B) of this paragraph, real property shall be substantially improved by the taxpayer if, during any 24-month period beginning after December 31, 2000:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Additions to basis with respect to the property in the hands of the taxpayer exceed the greater of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">An amount equal to the adjusted basis of the property at the beginning of the 24-month period in the hands of the taxpayer; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">$5,000; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">At least 51% of the additions to basis represent improvements which facilitate the conduct of a Qualified High Technology Company on the premises, including improvements to electrical wiring or telecommunications facilities serving the building.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Qualified capital gain&quot; means gain recognized on the sale or exchange of a capital asset or property used in a trade or business, as defined in <a href='/dccode/Title-47/Chapter-18/Subchapter-I/47-1801.04.html'>§ 47-1801.04</a>. The term &quot;qualified capital gain&quot; shall not include gain which is:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Treated as ordinary income under sections 1245 or 1250 of the Internal Revenue Code of 1986 if section 1250 applied to all depreciation rather than additional depreciation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Attributable to real property or an intangible asset which is not an integral part of a Qualified High Technology Company&#39;s business operations in the District; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Attributable, directly or indirectly, in whole or in part, to a transaction with a related person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Qualified employee&quot; means a person who is employed in the District by a Qualified High Technology Company.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Qualified High Technology Company&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">An individual or entity organized for profit and maintaining an office, headquarters, or base of operations in the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Having 2 or more employees in the District; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Deriving at least 51% of its gross revenues earned in the District from:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Internet-related services and sales, including website design, maintenance, hosting, or operation; Internet-related training, consulting, advertising, or promotion services; the development, rental, lease, or sale of Internet-related applications, connectivity, or digital content; or products and services that may be considered e-commerce;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Information and communication technologies, equipment and systems that involve advanced computer software and hardware, data processing, visualization technologies, or human interface technologies, whether deployed on the Internet or other electronic or digital media. Such technologies shall include operating and applications software; Internet-related services, including design, strategic planning, deployment, and management services and artificial intelligence; computer modeling and simulation; high-level software languages; neural networks; processor architecture; animation and full-motion video; graphics hardware and software; speech and optical character recognition; high-volume information storage and retrieval; data compression; and multiplexing, digital signal processing, and spectrum technologies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Advanced materials and processing technologies that involve the development, modification, or improvement of one or more materials or methods to produce devices and structures with improved performance characteristics or special functional attributes, or to activate, speed up, or otherwise alter chemical, biochemical, or medical processes. Such materials and technologies shall include metal alloys; metal matrix and ceramic composites; advanced polymers; thin films; membranes; superconductors; electronic and photonic materials; bioactive materials; bioprocessing; genetic engineering; catalysts; waste emissions reduction; pharmaceuticals; and waste processing technologies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(IV) </span>
+                
+                    <span class="" style="">Engineering, production, biotechnology and defense technologies that involve knowledge-based control systems and architectures; advanced fabrication and design processes, equipment, and tools; or propulsion, navigation, guidance, nautical, aeronautical and astronautical ground and airborne systems, instruments, and equipment. Such technologies shall include: computer-aided design and engineering; computer-integrated manufacturing; robotics and automated equipment; integrated circuit fabrication and test equipment; sensors; biosensors; signal and image processing; medical and scientific instruments; precision machining and forming; biological and genetic research equipment; environmental analysis, remediation, control, and prevention equipment; defense command and control equipment; avionics and controls; guided missile and space vehicle propulsion units; military aircraft; space vehicles; and surveillance, tracking, and defense warning systems; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(V) </span>
+                
+                    <span class="" style="">Electronic and photonic devices and components for use in producing electronic, optoelectronic, mechanical equipment and products of electronic distribution with interactive media content. Such technologies shall include microprocessors; logic chips; memory chips; lasers; printed circuit board technology; electroluminescent, liquid crystal, plasma, and vacuum fluorescent displays; optical fibers; magnetic and optical information storage; optical instruments, lenses, and filters; simplex and duplex data bases; and solar cells.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">&quot;Qualified High Technology Company&quot; shall not include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">An individual or entity that derives 51% or more of its gross revenues from the operation in the District of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">A retail store; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">An electronic equipment facility that is primarily occupied, or intended to be occupied, by electronic and computer equipment that provides electronic data switching, transmission, or telecommunication functions between computers, both inside and outside the facility;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A professional athletic team, as defined in <a href='/dccode/Title-47/Chapter-20/47-2002.05.html'>§ 47-2002.05(a)(3)</a>; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A business entity located in the DC Ballpark TIF Area, as defined in [§ 2-1217.12a(a)].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Qualified partnership interest&quot; means a capital or profits interest in a partnership, formed under the laws of the District of Columbia or any state of the United States of America, which is originally issued after December 31, 2000, if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The interest is acquired by the taxpayer from the partnership solely in exchange for cash;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">On the date of acquisition, the partnership was a Qualified High Technology Company (or, in the case of a new partnership, the partnership was organized for purposes which would qualify it as a Qualified High Technology Company); and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">During substantially all of the taxpayer&#39;s holding period for the interest, the partnership qualified as a Qualified High Technology Company.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Qualified stock&quot; means stock in a corporation, formed under the laws of the District of Columbia or any state of the United States of America, which is originally issued after December 31, 2000, if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The stock is originally issued to the taxpayer, directly or through an underwriter, solely in exchange for cash;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">On the date of issuance, the corporation was a Qualified High Technology Company (or, in the case of a new corporation, the corporation was being organized for purposes which would qualify it as a Qualified High Technology Company); and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">During substantially all of the taxpayer&#39;s holding period for the stock, the corporation qualified as a Qualified High Technology Company.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 3, 2001, D.C. <a href='http://openlims.org/public/L13-256.pdf'>Law 13-256</a>, § 101(a)(2), 48 DCR 730; Apr. 8, 2005, D.C. <a href='http://openlims.org/public/L15-320.pdf'>Law 15-320</a>, § 110(c), 52 DCR 1757; Mar. 5, 2013, D.C. <a href='http://openlims.org/public/L19-211.pdf'>Law 19-211</a>, § 2(c), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 13281</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Assistance for qualified high technology companies, see <a href='/dccode/Title-2/Chapter-12/Subchapter-XI/2-1221.01.html'>§ 2-1221.01</a> et seq.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-12/Subchapter-XI/2-1221.01.html'>§ 2-1221.01</a>, <a href='/dccode/Title-10/Chapter-8/Subchapter-I/10-803.01.html'>§ 10-803.01</a>, <a href='/dccode/Title-47/Chapter-4/Subchapter-VI/47-462.html'>§ 47-462</a>, and <a href='/dccode/Title-47/Chapter-18/Subchapter-XVIII/47-1818.01.html'>§ 47-1818.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-320.pdf'>Law 15-320</a> rewrote par. (5)(B) which had read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(B) &#39;Qualified High Technology Company&#39; shall not include an individual or entity that derives 51% or more of its gross revenues from the operation in the District of:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(i) A retail store; or</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(ii) An electronic equipment facility that is primarily occupied, or intended to be occupied, by electronic and computer equipment that provides electronic data switching, transmission, or telecommunication functions between computers, both inside and outside the facility.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-211.pdf'>Law 19-211</a> substituted &quot;employees in the District&quot; for &quot;employees&quot; in (5)(A)(ii); and substituted &quot;gross revenues earned in the District&quot; for &quot;gross revenues&quot; in (5)(A)(iii).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 201(a) of Ballpark Omnibus Financing and Revenue Tax Provisions Emergency Amendment Act of 2004 (D.C. Act 15-719, January 4, 2005, 52 DCR 1790).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 201(a) of Ballpark Omnibus Financing and Revenue Tax Provisions Congressional Review Emergency Act of 2005 (D.C. Act 16-25, February 17, 2005, 52 DCR 2981).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-256</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-256.pdf'>Law 13-256</a>, the &quot;New E-Conomy Transformation Act of 2000&quot;, was introduced in Council and assigned Bill No. 13-752, which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings on November 8, 2000, and December 5, 2000, respectively. Signed by the Mayor on December 21, 2000, it was assigned Act No. 13-543 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-256.pdf'>Law 13-256</a> became effective on April 3, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-320</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-320.pdf'>Law 15-320</a>, see notes following <a href='/dccode/Title-47/Chapter-3/Subchapter-IV-A/47-368.03.html'>§ 47-368.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-211</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-47/Chapter-18/Subchapter-III/47-1803.02.html'>§ 47-1803.02</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

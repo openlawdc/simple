@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:8-106. Control.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/index.html">Article 8. Investment Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/Part-I/index.html">Part I. Short Title and General Matters</a></li>
+                    
+                    <li>↪ § 28:8-106. Control.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-105.html">§ 28:8-105. Notice of adverse claim.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-107.html">§ 28:8-107. Whether indorsement, instruction, or entitlement order is effective.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:8-106. Control.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A purchaser has &quot;control&quot; of a certificated security in bearer form if the certificated security is delivered to the purchaser.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A purchaser has &quot;control&quot; of a certificated security in registered form if the certificated security is delivered to the purchaser, and:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The certificate is indorsed to the purchaser or in blank by an effective indorsement; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The certificate is registered in the name of the purchaser, upon original issue or registration of transfer by the issuer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A purchaser has &quot;control&quot; of an uncertificated security if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The uncertificated security is delivered to the purchaser; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The issuer has agreed that it will comply with instructions originated by the purchaser without further consent by the registered owner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">A purchaser has &quot;control&quot; of a security entitlement if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The purchaser becomes the entitlement holder;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The securities intermediary has agreed that it will comply with entitlement orders originated by the purchaser without further consent by the entitlement holder; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Another person has control of the security entitlement on behalf of the purchaser or, having previously acquired control of the security entitlement, acknowledges that it has control on behalf of the purchaser.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If an interest in a security entitlement is granted by the entitlement holder to the entitlement holder&#39;s own securities intermediary, the securities intermediary has control.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">A purchaser who has satisfied the requirements of subsection (c) or (d) has control, even if the registered owner in the case of subsection (c) or the entitlement holder in the case of subsection (d) retains the right to make substitutions for the uncertificated security or security entitlement, to originate instructions or entitlement orders to the issuer or securities intermediary, or otherwise to deal with the uncertificated security or security entitlement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">An issuer or a securities intermediary may not enter into an agreement of the kind described in subsection (c)(2) or (d)(2) of this section without the consent of the registered owner or entitlement holder, but an issuer or a securities intermediary is not required to enter into such an agreement even though the registered owner or entitlement holder so directs. An issuer or securities intermediary that has entered into such an agreement is not required to confirm the existence of the agreement to another party unless requested to do so by the registered owner or entitlement holder.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, § 2, 44 DCR 1087; Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 201(i)(2), 47 DCR 7576.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:8-102, § 28:8-107, § 28:8-510, § 28:9-106, § 28:9-208, and § 28:9-328.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:8-106.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:8-106.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, enacting a new Article 9 of the Uniform Commercial Code applicable July 1, 2001, made conforming amendments to this section applicable upon the same date.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:8-103.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. The concept of &quot;control&quot; plays a key role in various provisions dealing with the rights of purchasers, including secured parties. See Sections 8-303 (protected purchasers); 8-503(e) (purchasers from securities intermediaries); 8-510 (purchasers of security entitlements from entitlement holders); 9-314 (perfection of security interests); 9-328 (priorities among conflicting security interests).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Obtaining &quot;control&quot; means that the purchaser has taken whatever steps are necessary, given the manner in which the securities are held, to place itself in a position where it can have the securities sold, without further action by the owner.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (a) provides that a purchaser obtains &quot;control&quot; with respect to a certificated security in bearer form by taking &quot;delivery,&quot; as defined in <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>. Subsection (b) provides that a purchaser obtains &quot;control&quot; with respect to a certificated security in registered form by taking &quot;delivery,&quot; as defined in <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>, provided that the security certificate has been indorsed to the purchaser or in blank. <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a> provides that delivery of a certificated security occurs when the purchaser obtains possession of the security certificate, or when an agent for the purchaser (other than a securities intermediary) either acquires possession or acknowledges that the agent holds for the purchaser.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (c) specifies the means by which a purchaser can obtain control over uncertificated securities which the transferor holds directly. Two mechanisms are possible.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Under subsection (c)(1), securities can be &quot;delivered&quot; to a purchaser. <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301(b)</a> provides that &quot;delivery&quot; of an uncertificated security occurs when the purchaser becomes the registered holder. So far as the issuer is concerned, the purchaser would then be entitled to exercise all rights of ownership. See Section 8-207. As between the parties to a purchase transaction, however, the rights of the purchaser are determined by their contract. Cf. Section 9-202. Arrangements covered by this paragraph are analogous to arrangements in which bearer certificates are delivered to a secured party - so far as the issuer or any other parties are concerned, the secured party appears to be the outright owner, although it is in fact holding as collateral property that belongs to the debtor.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Under subsection (c)(2), a purchaser has control if the issuer has agreed to act on the instructions of the purchaser, even though the owner remains listed as the registered owner. The issuer, of course, would be acting wrongfully against the registered owner if it entered into such an agreement without the consent of the registered owner. Subsection (g) makes this point explicit. The subsection (c)(2) provision makes it possible for issuers to offer a service akin to the registered pledge device of the 1978 version of Article 8, without mandating that all issuers offer that service.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (d) specifies the means by which a purchaser can obtain control of a security entitlement. Three mechanisms are possible, analogous to those provided in subsection (c) for uncertificated securities. Under subsection (d)(1), a purchaser has control if it is the entitlement holder. This subsection would apply whether the purchaser holds through the same intermediary that the debtor used, or has the securities position transferred to its own intermediary. Subsection (d)(2) provides that a purchaser has control if the securities intermediary has agreed to act on entitlement orders originated by the purchaser if no further consent by the entitlement holder is required. Under subsection (d)(2), control may be achieved even though the original entitlement holder remains as the entitlement holder. Finally, a purchaser may obtain control under subsection (d)(3) if another person has control and the person acknowledges that it has control on the purchaser&#39;s behalf. Control under subsection (d)(3) parallels the delivery of certificated securities and uncertificated securities under <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>. Of course, the acknowledging person cannot be the debtor.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section specifies only the minimum requirements that such an arrangement must meet to confer &quot;control&quot;; the details of the arrangement can be specified by agreement. The arrangement might cover all of the positions in a particular account or subaccount, or only specified positions. There is no requirement that the control party&#39;s right to give entitlement orders be exclusive. The arrangement might provide that only the control party can give entitlement orders, or that either the entitlement holder or the control party can give entitlement orders. See subsection (f).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The following examples illustrate the application of subsection (d):</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 1. Debtor grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. Alpha also has an account with Able. Debtor instructs Able to transfer the shares to Alpha, and Able does so by crediting the shares to Alpha&#39;s account. Alpha has control of the 1000 shares under subsection (d)(1). Although Debtor may have become the beneficial owner of the new securities entitlement, as between Debtor and Alpha, Able has agreed to act on Alpha&#39;s entitlement orders because, as between Able and Alpha, Alpha has become the entitlement holder. See <a href='/dccode/Title-8/Chapter-5/8-506.html'>Section 8-506</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 2. Debtor grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. Alpha does not have an account with Able. Alpha uses Beta as its securities custodian. Debtor instructs Able to transfer the shares to Beta, for the account of Alpha, and Able does so. Alpha has control of the 1000 shares under subsection (d)(1). As in Example 1, although Debtor may have become the beneficial owner of the new securities entitlement, as between Debtor and Alpha, Beta has agreed to act on Alpha&#39;s entitlement orders because, as between Beta and Alpha, Alpha has become the entitlement holder.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 3. Debtor grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. Debtor, Able, and Alpha enter into an agreement under which Debtor will continue to receive dividends and distributions, and will continue to have the right to direct dispositions, but Alpha also has the right to direct dispositions. Alpha has control of the 1000 shares under subsection (d)(2).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 4. Able &amp; Co., a securities dealer, grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Able holds through an account with Clearing Corporation. Able causes Clearing Corporation to transfer the shares into Alpha&#39;s account at Clearing Corporation. As in Example 1, Alpha has control of the 1000 shares under subsection (d)(1).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 5. Able &amp; Co., a securities dealer, grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Able holds through an account with Clearing Corporation. Alpha does not have an account with Clearing Corporation. It holds its securities through Beta Bank, which does have an account with Clearing Corporation. Able causes Clearing Corporation to transfer the shares into Beta&#39;s account at Clearing Corporation. Beta credits the position to Alpha&#39;s account with Beta. As in Example 2, Alpha has control of the 1000 shares under subsection (d)(1).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 6. Able &amp; Co., a securities dealer, grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Able holds through an account with Clearing Corporation. Able causes Clearing Corporation to transfer the shares into a pledge account, pursuant to an agreement under which Able will continue to receive dividends, distributions, and the like, but Alpha has the right to direct dispositions. As in Example 3, Alpha has control of the 1000 shares under subsection (d)(2).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 7. Able &amp; Co., a securities dealer, grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Able holds through an account with Clearing Corporation. Able, Alpha, and Clearing Corporation enter into an agreement under which Clearing Corporation will act on instructions from Alpha with respect to the XYZ Co. stock carried in Able&#39;s account, but Able will continue to receive dividends, distributions, and the like, and will also have the right to direct dispositions. As in Example 3, Alpha has control of the 1000 shares under subsection (d)(2).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 8. Able &amp; Co., a securities dealer, holds a wide range of securities through its account at Clearing Corporation. Able enters into an arrangement with Alpha Bank pursuant to which Alpha provides financing to Able secured by securities identified as the collateral on lists provided by Able to Alpha on a daily or other periodic basis. Able, Alpha, and Clearing Corporation enter into an agreement under which Clearing Corporation agrees that if at any time Alpha directs Clearing Corporation to do so, Clearing Corporation will transfer any securities from Able&#39;s account at Alpha&#39;s instructions. Because Clearing Corporation has agreed to act on Alpha&#39;s instructions with respect to any securities carried in Able&#39;s account, at the moment that Alpha&#39;s security interest attaches to securities listed by Able, Alpha obtains control of those securities under subsection (d)(2). There is no requirement that Clearing Corporation be informed of which securities Able has pledged to Alpha.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 9. Debtor grants Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. Beta Bank agrees with Alpha to act as Alpha&#39;s collateral agent with respect to the security entitlement. Debtor, Able, and Beta enter into an agreement under which Debtor will continue to receive dividends and distributions, and will continue to have the right to direct dispositions, but Beta also has the right to direct dispositions. Because Able has agreed that it will comply with entitlement orders originated by Beta without further consent by Debtor, Beta has control of the security entitlement (see Example 3). Because Beta has control on behalf of Alpha, Alpha also has control under subsection (d)(3). It is not necessary for Able to enter into an agreement directly with Alpha or for Able to be aware of Beta&#39;s agency relationship with Alpha.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. For a purchaser to have &quot;control&quot; under subsection (c)(2) or (d)(2), it is essential that the issuer or securities intermediary, as the case may be, actually be a party to the agreement. If a debtor gives a secured party a power of attorney authorizing the secured party to act in the name of the debtor, but the issuer or securities intermediary does not specifically agree to this arrangement, the secured party does not have &quot;control&quot; within the meaning of subsection (c)(2) or (d)(2) because the issuer or securities intermediary is not a party to the agreement. The secured party does not have control under subsection (c)(1) or (d)(1) because, although the power of attorney might give the secured party authority to act on the debtor&#39;s behalf as an agent, the secured party has not actually become the registered owner or entitlement holder.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. Subsection (e) provides that if an interest in a security entitlement is granted by an entitlement holder to the securities intermediary through which the security entitlement is maintained, the securities intermediary has control. A common transaction covered by this provision is a margin loan from a broker to its customer.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">7. The term &quot;control&quot; is used in a particular defined sense. The requirements for obtaining control are set out in this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The concept is not to be interpreted by reference to similar concepts in other bodies of law. In particular, the requirements for &quot;possession&quot; derived from the common law of pledge are not to be used as a basis for interpreting subsection (c)(2) or (d)(2). Those provisions are designed to supplant the concepts of &quot;constructive possession&quot; and the like. A principal purpose of the &quot;control&quot; concept is to eliminate the uncertainty and confusion that results from attempting to apply common law possession concepts to modern securities holding practices.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The key to the control concept is that the purchaser has the ability to have the securities sold or transferred without further action by the transferor. There is no requirement that the powers held by the purchaser be exclusive. For example, in a secured lending arrangement, if the secured party wishes, it can allow the debtor to retain the right to make substitutions, to direct the disposition of the uncertificated security or security entitlement, or otherwise to give instructions or entitlement orders. (As explained in Section 8-102, Comment 8, an entitlement order includes a direction under <a href='/dccode/Title-8/Chapter-5/8-508.html'>Section 8-508</a> to the securities intermediary to transfer a financial asset to the account of the entitlement holder at another financial intermediary or to cause the financial asset to be transferred to the entitlement holder in the direct holding system (e.g., by delivery of a securities certificate registered in the name of the former entitlement holder).) Subsection (f) is included to make clear the general point stated in subsections (c) and (d) that the test of control is whether the purchaser has obtained the requisite power, not whether the debtor has retained other powers. There is no implication that retention by the debtor of powers other than those mentioned in subsection (f) is inconsistent with the purchaser having control. Nor is there a requirement that the purchaser&#39;s powers be unconditional, provided that further consent of the entitlement holder is not a condition.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 10. Debtor grants to Alpha Bank and to Beta Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. By agreement among the parties, Alpha&#39;s security interest is senior and Beta&#39;s is junior. Able agrees to act on the entitlement orders of either Alpha or Beta. Alpha and Beta each has control under subsection (d)(2). Moreover, Beta has control notwithstanding a term of Able&#39;s agreement to the effect that Able&#39;s obligation to act on Beta&#39;s entitlement orders is conditioned on Alpha&#39;s consent. The crucial distinction is that Able&#39;s agreement to act on Beta&#39;s entitlement orders is not conditioned on Debtor&#39;s further consent.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 11. Debtor grants to Alpha Bank a security interest in a security entitlement that includes 1000 shares of XYZ Co. stock that Debtor holds through an account with Able &amp; Co. Able agrees to act on the entitlement orders of Alpha, but Alpha&#39;s right to give entitlement orders to the securities intermediary is conditioned on the Debtor&#39;s default. Alternatively, Alpha&#39;s right to give entitlement orders is conditioned upon Alpha&#39;s statement to Able that Debtor is in default. Because Able&#39;s agreement to act on Alpha&#39;s entitlement orders is not conditioned on Debtor&#39;s further consent, Alpha has control of the securities entitlement under either alternative.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">In many situations, it will be better practice for both the securities intermediary and the purchaser to insist that any conditions relating in any way to the entitlement holder be effective only as between the purchaser and the entitlement holder. That practice would avoid the risk that the securities intermediary could be caught between conflicting assertions of the entitlement holder and the purchaser as to whether the conditions in fact have been met. Nonetheless, the existence of unfulfilled conditions effective against the intermediary would not preclude the purchaser from having control. Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Bearer form&quot;. Section 8-102(a)(2).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Certificated security&quot;. Section 8-102(a)(4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Delivery&quot;. <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Effective&quot;. Section 8-107.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Entitlement holder&quot;. Section 8-102(a)(7).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Entitlement order&quot;. Section 8-102(a)(8).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Indorsement&quot;. Section 8-102(a)(11).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Instruction&quot;. Section 8-102(a)(12).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Purchaser&quot;. Sections 1-201(33) and 8-116.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Registered form&quot;. Section 8-102(a)(13).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Securities intermediary&quot;. Section 8-102(a)(14).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security entitlement&quot;. Section 8-102(a)(17).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Uncertificated security&quot;. Section 8-102(a)(18).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

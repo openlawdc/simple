@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1403. Functions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-14/index.html">Chapter 14. Office of the Chief Technology Officer</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-14/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 1-1403. Functions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-14/Subchapter-I/1-1402.html">§ 1-1402. Purpose.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-14/Subchapter-I/1-1404.html">§ 1-1404. Transfers.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1403. Functions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The functions assigned to the Office shall be to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Issue regulations governing the acquisition, use, and management of information technology and telecommunications systems and resources throughout the District government, including hardware, software, and contract services in the areas of data and word processing, telecommunications, printing and copying;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Review and approve all agency proposals, purchase orders, and contracts for the acquisition of information technology and telecommunications systems, resources, and services, and recommend approval or disapproval to the Chief Procurement Officer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Review and approve the information technology and telecommunications budgets for District government department and agencies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Coordinate the development of information management plans, standards, systems, and procedures throughout the District government, including the development of an information technology strategic plan for the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Assess new or emerging technologies and advise District department and agencies on the potential applications of these technologies to their programs and services;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Implement information technology solutions and systems throughout the District government;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Promote the compatibility of information technology and telecommunications systems throughout the District government;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Serve as a resource and provide advice to District departments and agencies about how to use information technology and telecommunications systems to improve services, including assistance to departments and agencies in developing information technology strategic plans;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Maintain and oversee all District data centers, including, but not limited to, the SHARE, Department of Human Services, Department of Employment Services, University of the District of Columbia, Metropolitan Police Department, Public Benefits Corporation, Saint Elizabeths, Department of Health, and District of Columbia Public Schools data centers; provided, that this paragraph shall not apply to the Department of Motor Vehicles;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Review the use of landlines, wireless phone lines, and data for which the District pays for telecommunication services and decertify and disconnect such services whenever not in active use; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Require District agencies to annually re-certify all inventory in the fixed cost management system of active landlines, wireless phone lines, and data circuits.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The Office may:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Disconnect landlines in favor of wireless devices and vice versa based on usage analysis and in consultation with agency directors; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Review and reject any requests for telecommunication services that do not comply with the technology standards of the Office.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The Office shall not impose any requirement, determination, or decision concerning, or otherwise interfere with, the telecommunications inventory of the Council unless the Council specifically consents;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">Developing and implementing solutions designed to ensure that residents and businesses in all areas of the District have reasonable, affordable access to high-speed Internet services; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">In furtherance of paragraph (10) of this section, obtaining and expending federal grant funds for digital inclusion efforts and awarding sub-grants to nonprofit entities established in the District for the purpose of supporting digital inclusion efforts by such entities, including the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Providing computer literacy training;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Providing free or low-cost computers;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Developing new online content;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Conducting public outreach concerning the use, availability, and benefits of computers and the Internet; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Similar efforts to enhance the accessibility, usability, affordability, and perceived value of computers and the Internet among under-served populations of the District.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 26, 1999, D.C. <a href='http://openlims.org/public/L12-175.pdf'>Law 12-175</a>, § 1814, 45 DCR 7193; Oct. 19, 2000, D.C. <a href='http://openlims.org/public/L13-172.pdf'>Law 13-172</a>, § 2103(a), 47 DCR 6308; Nov. 13, 2003, D.C. <a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a>, § 632, 50 DCR 5668; Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, § 117, 53 DCR 6794; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, § 177, 56 DCR 1117; Mar. 3, 2010, D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a>, § 1031, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>; Sept. 24, 2010, D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, § 1042(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6242</a>; Sept. 14, 2011, D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, § 1012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 6226</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-14/Subchapter-I/1-1406.html'>§ 1-1406</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-1195.3.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-172.pdf'>Law 13-172</a> deleted &quot;and&quot; from the end of par. (7), substituted a semicolon for a period at the end of subsec. (8), and added par. (9).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a>, in par. (9), inserted &quot;; provided, that this paragraph shall not apply to the Department of Motor Vehicles&quot; before the period.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, in par. (8), validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a> validated a previously made technical correction in par. (8).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a> deleted &quot;; and&quot; from the end of par. (8); substituted &quot;; and&quot; for a period at the end of par. (9); and added par. (10).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, in par. (9), deleted &quot;and&quot; from the end; substituted &quot;; and&quot; for a period at the end of par. (10), and added par. (11).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, in par. (10)(C), deleted &quot;and&quot; from the end; in par. (11), substituted &quot;; and&quot; for a period; and added par. (12).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 4 of the Chief Technology Officer Year 2000 Remediation Procurement Authority Temporary Amendment Act of 1999 (D.C. <a href='http://openlims.org/public/L13-17.pdf'>Law 13-17</a>, July 17, 1999, law notification 46 DCR 6314).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary addition of §§ 1-1195.1 to 1-1195.5 1981 Ed., see note to § 1-1401.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 4 of the Chief Technology Officer Year 2000 Remediation Procurement Authority Emergency Amendment Act of 1999 (D.C. Act 13-38, March 22, 1999, 46 DCR 3015).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of Chapter 11B 1981 Ed., see notes following § 1-1401.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 4 of the Chief Technology Officer Year 2000 Remediation Procurement Authority Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-106, July 9, 1999, 46 DCR 6028).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 2103(a) of the Fiscal Year 2001 Budget Support Emergency Act of 2000 (D.C. Act 13-376, July 24, 2000, 47 DCR 6574).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2103(a) of the Fiscal Year 2001 Budget Support Congressional Review Emergency Act of 2000 (D.C. Act 13-438, October 20, 2000, 47 DCR 8740).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 632 of Fiscal Year 2004 Budget Support Emergency Act of 2003 (D.C. Act 15-105, June 20, 2003, 50 DCR 5613).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 632 of Fiscal Year 2004 Budget Support Congressional Review Emergency Act of 2003 (D.C. Act 15-149, September 22, 2003, 50 DCR 8360).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1031 of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1031 of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1042(b) of Fiscal Year 2011 Budget Support Emergency Act of 2010 (D.C. Act 18-463, July 2, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6542</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-175</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-175.pdf'>Law 12-175</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-14/Subchapter-I/1-1401.html'>§ 1-1401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-172</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-172.pdf'>Law 13-172</a>, see notes following <a href='/dccode/Title-2/Chapter-3/Unit-A/Subchapter-I/2-301.04~P.html'>§ 2-301.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-39</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a>, the &quot;Fiscal Year 2004 Budget Support Act of 2003&quot;, was introduced in Council and assigned Bill No. 15-218, which was referred to Committee on Whole. The Bill was adopted on first and second readings on May 6, 2003, and June 3, 2003, respectively. Signed by the Mayor on June 20, 2003, it was assigned Act No. 15-106 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a> became effective on November 13, 2003.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-XI/Part-E/1-325.44.html'>§ 1-325.44</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, see notes following <a href='/dccode/Title-1/Chapter-1/Subchapter-II/Part-A/Subpart-2/1-129.05.html'>§ 1-129.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-K/1-301.181.html'>§ 1-301.181</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-223</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-D/1-301.78.html'>§ 1-301.78</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, see notes under <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-A/1-301.01.html'>§ 1-301.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title of subtitle D of title VI of <a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a>: Section 631 of D.C. <a href='http://openlims.org/public/L15-39.pdf'>Law 15-39</a> provided that subtitle D of title VI of the act may be cited as the Department of Motor Vehicles Destiny Staffing Amendment Act of 2003.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 1030 of D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a> provided that subtitle D of title I of the act may be cited as the &quot;Telecommunication Accountability Amendment Act of 2009&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 1011 of D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a> provided that subtitle B of title I of the act may be cited as &quot;Digital Inclusion Grant-making Amendment Act of 2011&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

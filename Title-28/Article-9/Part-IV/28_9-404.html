@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:9-404. Rights acquired by assignee; claims and defenses against assignee.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-IV/index.html">Part IV. Rights of Third Parties</a></li>
+                    
+                    <li>↪ § 28:9-404. Rights acquired by assignee; claims and defenses against assignee.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-IV/28_9-403.html">§ 28:9-403. Agreement not to assert defenses against assignee.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-IV/28_9-405.html">§ 28:9-405. Modification of assigned contract.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:9-404. Rights acquired by assignee; claims and defenses against assignee.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Unless an account debtor has made an enforceable agreement not to assert defenses or claims, and subject to subsections (b) through (e), the rights of an assignee are subject to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">All terms of the agreement between the account debtor and assignor and any defense or claim in recoupment arising from the transaction that gave rise to the contract; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any other defense or claim of the account debtor against the assignor which accrues before the account debtor receives a notification of the assignment authenticated by the assignor or the assignee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Subject to subsection (c) and except as otherwise provided in subsection (d), the claim of an account debtor against an assignor may be asserted against an assignee under subsection (a) only to reduce the amount the account debtor owes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">This section is subject to law other than this article which establishes a different rule for an account debtor who is an individual and who incurred the obligation primarily for personal, family, or household purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In a consumer transaction, if a record evidences the account debtor&#39;s obligation, law other than this article requires that the record include a statement to the effect that the account debtor&#39;s recovery against an assignee with respect to claims and defenses against the assignor may not exceed amounts paid by the account debtor under the record, and the record does not include such a statement, the extent to which a claim of an account debtor against the assignor may be asserted against an assignee is determined as if the record included such a statement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">This section does not apply to an assignment of a health-care-insurance receivable.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 101, 47 DCR 7576.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:9-109, <a href='/dccode/Title-41/Chapter-2/41-202.html'>§ 41-202</a>, and <a href='/dccode/Title-41/Chapter-2/41-204.html'>§ 41-204</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:9-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Source. Former <a href='/dccode/Title-9/Chapter-3/9-318.html'>Section 9-318(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Purpose; Rights of Assignee in General. Subsection (a), like former <a href='/dccode/Title-9/Chapter-3/9-318.html'>Section 9-318(1)</a>, provides that an assignee generally takes an assignment subject to defenses and claims of an account debtor. Under subsection (a)(1), if the account debtor&#39;s defenses on an assigned claim arise from the transaction that gave rise to the contract with the assignor, it makes no difference whether the defense or claim accrues before or after the account debtor is notified of the assignment. Under subsection (a)(2), the assignee takes subject to other defenses or claims only if they accrue before the account debtor has been notified of the assignment. Of course, an account debtor may waive its right to assert defenses or claims against an assignee under Section 9-403 or other applicable law. Subsection (a) tracks <a href='/dccode/Title-3/Chapter-3/Subchapter-I/3-305.html'>Section 3-305(a)(3)</a> more closely than its predecessor.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Limitation on Affirmative Claims. Subsection (b) is new. It limits the claim that the account debtor may assert against an assignee. Borrowing from <a href='/dccode/Title-3/Chapter-3/Subchapter-I/3-305.html'>Section 3-305(a)(3)</a> and cases construing former <a href='/dccode/Title-9/Chapter-3/9-318.html'>Section 9-318</a>, subsection (b) generally does not afford the account debtor the right to an affirmative recovery from an assignee.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Consumer Account Debtors; Relationship to Federal Trade Commission Rule. Subsections (c) and (d) also are new. Subsection (c) makes clear that the rules of this section are subject to other law establishing special rules for consumer account debtors. An &quot;account debtor who is an individual&quot; as used in subsection (c) includes individuals who are jointly or jointly and severally obligated. Subsection (d) applies to rights evidenced by a record that is required to contain, but does not contain, the notice set forth in Federal Trade Commission Rule 433, 16 C.F.R. Part 433 (the &quot;Holder-in-Due-Course Regulations&quot;). Under subsection (d), a consumer account debtor has the same right to an affirmative recovery from an assignee of such a record as the consumer would have had against the assignee had the record contained the required notice.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Scope; Application to &quot;Account Debtor.&quot; This section deals only with the rights and duties of &quot;account debtors&quot;-and for the most part only with account debtors on accounts, chattel paper, and payment intangibles. Subsection (e) provides that the obligation of an insurer with respect to a health-care-insurance receivable is governed by other law. References in this section to an &quot;account debtor&quot; include account debtors on collateral that is proceeds. Neither this section nor any other provision of this Article, including Sections 9-408 and 9-409, provides analogous regulation of the rights and duties of other obligors on collateral, such as the maker of a negotiable instrument (governed by Article 3), the issuer of or nominated person under a letter of credit (governed by Article 5), or the issuer of a security (governed by Article 8). Article 9 leaves those rights and duties untouched; however, Section 9-409 deals with the special case of letters of credit. When chattel paper is composed in part of a negotiable instrument, the obligor on the instrument is not an &quot;account debtor,&quot; and Article 3 governs the rights of the assignee of the chattel paper with respect to the issues that this section addresses. See, e.g., <a href='/dccode/Title-3/Chapter-6/3-601.html'>Section 3-601</a> (dealing with discharge of an obligation to pay a negotiable instrument).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

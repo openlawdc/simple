@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Title 29. Business Organizations</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                    <li>↪ Title 29. Business Organizations</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-29A/index.html">Title 29A. Corporations. [Repealed]</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Title 29. Business Organizations</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-1/index.html">Chapter 1. General Provisions</a></span>
+                
+                    <br><span class="range">§§ 29-101.01 &ndash; 29-107.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-2/index.html">Chapter 2. Entity Transactions</a></span>
+                
+                    <br><span class="range">§§ 29-201.01 &ndash; 29-205.06</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-3/index.html">Chapter 3. Business Corporations</a></span>
+                
+                    <br><span class="range">§§ 29-301.01 &ndash; 29-314.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-4/index.html">Chapter 4. Nonprofit Corporations</a></span>
+                
+                    <br><span class="range">§§ 29-401.01 &ndash; 29-414.04</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-5/index.html">Chapter 5. Professional Corporations</a></span>
+                
+                    <br><span class="range">§§ 29-501 &ndash; 29-516</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-6/index.html">Chapter 6. General Partnerships</a></span>
+                
+                    <br><span class="range">§§ 29-601.01 &ndash; 29-611.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-7/index.html">Chapter 7. Limited Partnerships</a></span>
+                
+                    <br><span class="range">§§ 29-701.01 &ndash; 29-711.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-8/index.html">Chapter 8. Limited Liability Companies</a></span>
+                
+                    <br><span class="range">§§ 29-801.01 &ndash; 29-810.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-9/index.html">Chapter 9. General Cooperative Associations</a></span>
+                
+                    <br><span class="range">§§ 29-901 &ndash; 29-939</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-10/index.html">Chapter 10. Limited Cooperative Associations</a></span>
+                
+                    <br><span class="range">§§ 29-1001.01 &ndash; 29-1015.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-11/index.html">Chapter 11. Unincorporated Nonprofit Associations</a></span>
+                
+                    <br><span class="range">§§ 29-1101 &ndash; 29-1127</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-12/index.html">Chapter 12. Statutory Trusts</a></span>
+                
+                    <br><span class="range">§§ 29-1201.01 &ndash; 29-1209.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-13/index.html">Chapter 13. Benefit Corporations</a></span>
+                
+                    <br><span class="range">§§ 29-1301.01 &ndash; 29-1304.01</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

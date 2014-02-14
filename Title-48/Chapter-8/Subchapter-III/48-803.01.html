@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 48-803.01. Generically equivalent drug formulary; therapeutic interchange list.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/index.html">Title 48. Foods and Drugs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-8/index.html">Chapter 8. Prescription Drug Price Information</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-8/Subchapter-III/index.html">Subchapter III. Substitution of Therapeutically Equivalent Drugs</a></li>
+                    
+                    <li>↪ § 48-803.01. Generically equivalent drug formulary; therapeutic interchange list.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-48/Chapter-8/Subchapter-III/index.html">Subchapter III. Substitution of Therapeutically Equivalent Drugs</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-48/Chapter-8/Subchapter-III/48-803.02.html">§ 48-803.02. Dispensing of generically equivalent drug products.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 48-803.01. Generically equivalent drug formulary; therapeutic interchange list.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The formulary of generically equivalent drug products for the District of Columbia shall be the chemical and generic drugs contained in the Food and Drug Administration publication, &quot;Approved Drug Products with Therapeutic Equivalence Evaluations,&quot; including all updates issued by the Food and Drug Administration (&quot;Orange Book&quot;).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Boards of Pharmacy and Medicine may jointly establish a therapeutic interchange list.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If a therapeutic interchange list is established pursuant to subsection (b) of this section:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Boards of Pharmacy and Medicine shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Revise or supplement the therapeutic interchange list as necessary;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Establish procedures to allow a prescriber to consent to the substitution of therapeutically equivalent drug products without prior approval based on the therapeutic interchange list; provided, that a prescriber be allowed to limit authorization to specific conditions or patients and that no prescriber be required for any reason to consent to participation in the therapeutic interchange list; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Establish and maintain a database, searchable in real time, of those prescribers who have consented to use of the therapeutic interchange list, including any restrictions based on specific conditions or patients; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Department of Health shall distribute the therapeutic interchange list to all pharmacies licensed in the District and shall publish it regularly in the District of Columbia Register.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 10, 1976, D.C. <a href='http://openlims.org/public/L1-81.pdf'>Law 1-81</a>, title III, § 301, 23 DCR 2460; Apr. 7, 1977, D.C. <a href='http://openlims.org/public/L1-114.pdf'>Law 1-114</a>, § 4(a), 23 DCR 8743; Mar. 11, 2010, D.C. <a href='http://openlims.org/public/L18-118.pdf'>Law 18-118</a>, § 2(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 901</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 33-731.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 33-831.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-118.pdf'>Law 18-118</a> rewrote the section, which had read as follows: &quot;The Department of Human Services shall publish a formulary of drug products, with the chemical or generic name of each, that are determined to be therapeutically equivalent to specified brand name drug products. The Department shall determine the contents of the formulary only after recommendations are made by a committee of 9 members appointed by the Director of that Department. The committee shall consist of one licensed physician and one licensed pharmacist employed by the Department, 2 licensed physicians and 3 licensed pharmacists in private practice in the District, and 2 pharmacologists on the faculty of a university in the District. The recommendations of the committee shall require concurrence of a majority of the members of the committee. The committee&#39;s recommendations shall be published in the District of Columbia Register as proposed regulations of the Department. The Department&#39;s determinations shall be made in accordance with §<a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-503.html'>§ 2-503</a>, 2-504 and 2-505 and published in the District of Columbia Register as final regulations. The committee shall review the published formulary annually, or whenever an amendment to it appears necessary. The committee shall publish its 1st recommendations no later than 8 months after April 7, 1977.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-81</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-81.pdf'>Law 1-81</a>, see Historical and Statutory Notes following <a href='/dccode/Title-48/Chapter-8/Subchapter-IV-A/48-804.51.html'>§ 48-804.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-114</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-114.pdf'>Law 1-114</a>, see Historical and Statutory Notes following <a href='/dccode/Title-48/Chapter-8/Subchapter-IV-A/48-804.51.html'>§ 48-804.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-118</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-118.pdf'>Law 18-118</a>, the &quot;Prescription Drug Dispensing Practices Reform Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-240, which was referred to the Committee on Health. The bill was adopted on first and second readings on November 3, 2009, and December 1, 2009, respectively. Signed by the Mayor on January 11, 2010, it was assigned Act No. 18-266 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-118.pdf'>Law 18-118</a> became effective on March 11, 2010.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

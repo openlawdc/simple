@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-105.13. Annual publication.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1/index.html">Chapter 1. Environmental Controls</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1/Subchapter-III/index.html">Subchapter III. Wastewater Control</a></li>
+                    
+                    <li>↪ § 8-105.13. Annual publication.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1/Subchapter-III/8-105.12.html">§ 8-105.12. Emergency suspension of service.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1/Subchapter-III/8-105.14.html">§ 8-105.14. Penalties.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-105.13. Annual publication.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A list of the Industrial Users in significant noncompliance with the pretreatment standards and requirements in the preceding calendar year shall be published annually by WASA in a newspaper of general circulation that provides meaningful public notice within the jurisdiction served by WASA.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The notification shall summarize the nature of the significant noncompliance and any enforcement action taken against the user during the same 12-month period.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this section, a Significant Industrial User is in significant noncompliance with the pretreatment standards and requirements if its violation meets one or more of the following criteria and any Industrial User is in significant noncompliance if its violation meets the criteria in paragraph (3), (7), or (8) of this subsection:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Chronic violations of wastewater discharge limits, which are violations in which 66% or more of all the measurements taken for the same pollutant parameter during a 6-month period exceed (by any magnitude) a numeric pretreatment standard or requirement, including instantaneous limits, as defined by 40 C.F.R. § 403.3(l);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Technical Review Criteria (&quot;TRC&quot;) violations, which are violations in which 33% or more of all of the measurements taken for the same pollutant parameter during a 6 month period equal or exceed the product of the numeric pretreatment standard or requirement including instantaneous limits, as defined by 40 C.F.R. § 403.3(l) multiplied by the applicable TRC (TRC = 1.4 for Biochemical Oxygen Demand, TSS, fats, oil, and grease, and 1.2 for all other pollutants except pH);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any other violation of a pretreatment standard or requirement as defined by 40 C.F.R. § 403.3(l) (daily maximum, long-term average, instantaneous limit, or narrative standard) that WASA determines has caused, alone or in combination with other discharges, interference or pass through (including endangering the health of WASA or District personnel or the general public);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Any violation of the terms of a wastewater discharge permit which remains uncorrected 45 days after notification of the violation is received by the user, or any failure to meet, within 90 days after the schedule date, a compliance schedule milestone contained in a District or local control mechanism or enforcement order for starting construction, completing construction, or attaining final compliance;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Failure to provide required reports, such as baseline monitoring reports, 90-day compliance reports, periodic self-monitoring reports, and reports on progress with compliance schedules or orders, within 45 days after the due date;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Failure to timely and accurately report an instance of noncompliance with the pretreatment standards and requirements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Any discharge of a pollutant that has caused imminent endangerment to human health, welfare, or to the environment or has resulted in WASA&#39;s exercise of its emergency authority pursuant to 40 C.F.R. § 403.8(f)(1)(vi)(B) and <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.12.html'>§ 8-105.12</a> to halt or prevent such a discharge; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Any other violation or group of violations, which may include a violation of best management practices, which WASA determines will adversely affect the operation or implementation of the local pretreatment program or which WASA otherwise considers significant in light of the circumstances.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 12, 1986, D.C. <a href='http://openlims.org/public/L6-95.pdf'>Law 6-95</a>, § 14, 33 DCR 577; Aug. 10, 1988, D.C. <a href='http://openlims.org/public/L7-138.pdf'>Law 7-138</a>, § 2(e), (f), 35 DCR 4779; May 8, 1998, D.C. <a href='http://openlims.org/public/L12-106.pdf'>Law 12-106</a>, § 2(h), 45 DCR 1731; May 8, 1998, D.C. <a href='http://openlims.org/public/L12-106.pdf'>Law 12-106</a>, § 2(h), 45 DCR 1724; Oct. 26, 2010, D.C. <a href='http://openlims.org/public/L18-256.pdf'>Law 18-256</a>, § 2(k), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 8082</a>; Sept. 26, 2012, D.C. <a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a>, § 57(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 6190</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.02.html'>§ 8-105.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-963.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-256.pdf'>Law 18-256</a>, rewrote the section, which formerly read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(a) A list of the users in significant noncompliance with the Pretreatment Standards and Requirements in the preceding 12 months shall be published annually by WASA in the local daily newspaper with the largest circulation.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(b) The notification shall summarize the nature of the significant noncompliance and any enforcement action taken against the user during the same 12-month period.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(c) For the purposes of this section, a user is in significant noncompliance with the Pretreatment Standards and Requirements if its violation meets one or more of the following criteria:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) Chronic violations of wastewater discharge limits, are violations in which 66% or more of all the measurements taken during a 6-month period exceed (by any magnitude) the daily maximum limit or the average limit for the same pollutant parameter;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Technical Review Criteria (&#39;TRC&#39;) violations, are violations in which 33% or more of all the measurements for each pollutant parameter taken during a 6-month period equal or exceed the product of the daily maximum limit or the average limit multiplied by the applicable TRC (TRC = 1.4 for Biochemical Oxygen Demand, TSS, fats, oil, and grease, and 1.2 for all other pollutants except pH);</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) Any other violation of pretreatment effluent limits (daily maximum or longer term average) that WASA determines has caused, alone or in combination with other discharges, interference or pass through (including endangering the health of WASA or District personnel or the general public);</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(4) Any violation of the terms of a wastewater discharge permit which remains uncorrected 45 days after notification of the violation is received by the user, or any failure to meet a compliance schedule milestone or enforcement order issued by WASA within 90 days after the scheduled date for achievement of the compliance schedule milestone;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(5) Failure to provide required reports, such as baseline monitoring reports, periodic self-monitoring reports, and reports on progress with compliance schedules or orders, within 30 days after the due date;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(6) Failure to timely and accurately report an instance of noncompliance with the Pretreatment Standards and Requirements;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(7) Any violation which results in WASA exercising its emergency authority pursuant to <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.12.html'>§ 8-105.12</a>; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(8) Any violation WASA considers significant in light of the circumstances.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2012 amendment by D.C. <a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a> added &quot;of this subsection&quot; in the introductory language of (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-76</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L6-76.pdf'>Law 6-76</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.01.html'>§ 8-105.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-95</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L6-95.pdf'>Law 6-95</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.01.html'>§ 8-105.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-138</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-138.pdf'>Law 7-138</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.07.html'>§ 8-105.07</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-106</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-106.pdf'>Law 12-106</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.02.html'>§ 8-105.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-256</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L18-256.pdf'>Law 18-256</a>, see notes under <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.02.html'>§ 8-105.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-171</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-8/Chapter-1/Subchapter-III/8-105.02.html'>§ 8-105.02</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

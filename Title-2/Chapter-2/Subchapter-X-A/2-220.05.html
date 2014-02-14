@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-220.05. Exemptions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-2/index.html">Chapter 2. Contracts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-2/Subchapter-X-A/index.html">Subchapter X-A. Living Wage Requirements</a></li>
+                    
+                    <li>↪ § 2-220.05. Exemptions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-2/Subchapter-X-A/2-220.04.html">§ 2-220.04. Contents of contract; notice to subcontractors.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-2/Subchapter-X-A/2-220.06.html">§ 2-220.06. Notice.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-220.05. Exemptions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The following types of contracts, government assistance, and employment shall be exempt from the requirement of this subchapter:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Contracts or other agreements that are subject to higher wage level determinations required by federal law;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Existing and future collective bargaining agreements, provided, that the future collective bargaining agreement results in the employee being paid no less than the established living wage;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Contracts for electricity, telephone, water, sewer or other services delivered by a regulated utility;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Contracts for services needed immediately to prevent or respond to a disaster or eminent [imminent] threat to public health or safety declared by the Mayor;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Contracts or other agreements awarded to recipients that provide trainees with additional services including, but not limited to, case management and job readiness services; provided, that the trainees do not replace employees subject to this subchapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">An employee under 22 years of age employed during a school vacation period, or enrolled as a full-time student, as defined by the respective institution, who is in high school or at an accredited institution of higher education and who works less than 25 hours per week; provided, that he or she does not replace employees subject to this subchapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Tenants or retail establishments that occupy property constructed or improved by receipt of government assistance from the District of Columbia; provided, that the tenant or retail establishment did not receive direct government assistance from the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Employees of nonprofit organizations that employ not more than 50 individuals and qualify for taxation exemption pursuant to section 501(c)(3) of the Internal Revenue Code of 1954, approved August 16, 1954 (<a href='http://api.fdsys.gov/link?collection=statute&volume=68A&page=163'>68A Stat. 163</a>; 26 U.S. C. § 501(c)(3));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Medicaid provider agreements for direct care services to Medicaid recipients; provided, that the direct care service is not provided through a home care agency, a community residence facility, or a group home for persons with intellectual disabilities, as those terms are defined in <a href='/dccode/Title-44/Chapter-5/Subchapter-I/44-501.html'>§ 44-501</a>; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">Contracts or other agreements between managed care organizations and the Health Care Safety Net Administration or the Medicaid Assistance Administration to provide health services.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 8, 2006, D.C. <a href='http://openlims.org/public/L16-118.pdf'>Law 16-118</a>, § 105, 53 DCR 2602; Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, § 111, 53 DCR 6794; Sept. 26, 2012, D.C. <a href='http://openlims.org/public/L19-169.pdf'>Law 19-169</a>, § 5(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 5567</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-2/Subchapter-X-A/2-220.11.html'>§ 2-220.11</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, in par. (1), inserted &quot;higher&quot; preceding &quot;wage level determinations&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2012 amendment by D.C. <a href='http://openlims.org/public/L19-169.pdf'>Law 19-169</a> substituted &quot;persons with intellectual disabilities&quot; for &quot;mentally retarded persons&quot; in (9).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2 of the Living Wage Clarification Temporary Amendment Act of 2006 (D.C. <a href='http://openlims.org/public/L16-184.pdf'>Law 16-184</a>, November 16, 2006, law notification 53 DCR 9651).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Living Wage Clarification Emergency Amendment Act of 2006 (D.C. Act 16-411, July 12, 2006, 53 DCR 5771).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Living Wage Clarification Congressional Review Emergency Amendment Act of 2006 (D.C. Act 16-530, December 4, 2006, 53 DCR 9836).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-118</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-118.pdf'>Law 16-118</a>, see notes following <a href='/dccode/Title-2/Chapter-2/Subchapter-X-A/2-220.01.html'>§ 2-220.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, see notes following <a href='/dccode/Title-2/Chapter-2/Subchapter-IX-A/Part-A/2-218.02.html'>§ 2-218.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-294</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-294.pdf'>Law 16-294</a>, the &quot;Second Technical Amendments Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-996, which was referred to Committee on the Whole. The Bill was adopted on first and second readings on November 14, 2006, and December 5, 2006, respectively. Signed by the Mayor on December 28, 2006, it was assigned Act No. 16-653 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-294.pdf'>Law 16-294</a> became effective on March 14, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-169</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-169.pdf'>Law 19-169</a>, the &quot;People First Respectful Language Modernization Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-189. The Bill was adopted on first and second readings on Mar. 6, 2012, and Apr. 17, 2012, respectively. Signed by the Mayor on May 15, 2012, it was assigned Act No. 19-361 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-169.pdf'>Law 19-169</a> became effective on Sept. 26, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-294.pdf'>Law 16-294</a> purported to make the same amendment previously made by D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 35 of D.C. <a href='http://openlims.org/public/L19-169.pdf'>Law 19-169</a> provided that no provision of the act shall impair any right or obligation existing under law.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

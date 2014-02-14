@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-151.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1A/index.html">Chapter 1A. District Department of the Environment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1A/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 8-151.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1A/Subchapter-I/index.html">Subchapter I. General</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1A/Subchapter-I/8-151.02.html">§ 8-151.02. Purpose.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-151.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;CapStat&quot; means an accountability program that examines performance data to improve government services to make the District of Columbia government run more efficiently, using a methodical process for focusing the attention of government representatives on improving performance in priority issues that cross agency boundaries.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;DDOE&quot; means the District Department of the Environment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Director&quot; means the Director of the District Department of the Environment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Environment&quot; means the physical conditions and natural resources of the District, including the land, air, water, minerals, flora, and fauna in the District, and the waters adjacent to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Environmental Management System&quot; or &quot;EMS&quot; means an interagency data system to inventory, track, and report on progress towards performance standards and activities. The term &quot;EMS&quot; includes an adaptive management approach that incorporates planning, implementing, monitoring, evaluating, and adjusting the interagency data system.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Impervious area stormwater user fee&quot; or &quot;stormwater user fee&quot; means a fee that attributes the cost of conveying stormwater run-off via a sewer from a given property, to the quantity of stormwater run-off generated from that same property, by use of impervious surface as a surrogate metric.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Impervious surface&quot; means a surface area that either prevents or retards the entry of water into the ground as occurring under natural conditions, or that causes water to run off the surface in greater quantities or at an increased rate of flow, relative to the flow present under natural conditions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Low Impact Development&quot; or &quot;LID&quot; means stormwater management practices that mimic site hydrology under natural conditions, by using design techniques in construction and development that store, infiltrate, evaporate, detain, or reuse and recycle runoff.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;MS4&quot; means the Municipal Separate Storm Sewer System serving approximately two-thirds of the District, and comprised of 2 independent piping systems: one system for sewage from homes and businesses, and one system for stormwater.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Natural conditions&quot; means the state of the environment prior to anthropogenic intervention.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Primacy&quot; means the grant or delegation of authority under certain federal environmental laws that allows states and the District to assume primary authority to enforce and implement the environmental laws and promulgate regulations pursuant to those laws.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;SDWA&quot; means the Safe Drinking Water Act, approved December 16, 1974 (<a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=1660'>88 Stat. 1660</a>; 42 U.S.C. § 300f et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Sewer&quot; shall have the same meaning as provided in <a href='/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.01.html'>§ 34-2202.01(9)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Stormwater best management practice&quot; means a structure used to reduce the volume or the pollutant content of a stormwater discharge.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Stormwater Permit&quot; or &quot;MS4 Permit&quot; means NPDES No. DC0000221, issued to the District of Columbia by the Environmental Protection Agency.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Feb. 15, 2006, D.C. <a href='http://openlims.org/public/L16-51.pdf'>Law 16-51</a>, § 101, 52 DCR 10812; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a>, § 2(a), 56 DCR 1353; Sept. 26, 2012, D.C. <a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a>, § 149(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 6190</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a> rewrote the section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2012 amendment by D.C. <a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a> deleted &quot;April 20, 2000&quot; following &quot;No. DC0000221, issued&quot; in (15).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 902 of D.C. <a href='http://openlims.org/public/L18-222.pdf'>Law 18-222</a> rewrote subsec. (e) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(e) Monies shall not be disbursed from the Enterprise Fund for costs associated with:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) Stormwater management activities carried out prior to April 20, 2000, including street sweeping, except to the extent those activities were enhanced, and their costs increased, to comply with the terms of the Stormwater Permit; or</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Stormwater management activities otherwise required by law or regulation, unless specifically permitted by the Director.&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 2002(b) of D.C. <a href='http://openlims.org/public/L18-222.pdf'>Law 18-222</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 902 of Fiscal Year 2010 Balanced Budget Support Emergency Act of 2010 (D.C. Act 18-450, June 28, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 5635</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 902 of Fiscal Year 2010 Balanced Budget Support Congressional Review Emergency Act of 2010 (D.C. Act 18-531, August 6, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 8109</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-51</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-51.pdf'>Law 16-51</a>, the &quot;District Department of the Environment Establishment Act of 2005&quot;, was introduced in Council and assigned Bill No. 16-16 which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on July 6, 2005, and November 15, 2005, respectively. Signed by the Mayor on December 2, 2005, it was assigned Act No. 16-213 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-51.pdf'>Law 16-51</a> became effective on February 15, 2006.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-371</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a>, the &quot;Comprehensive Stormwater Management Enhancement Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-980 which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on December 2, 2008, and December 16, 2008, respectively. Signed by the Mayor on January 23, 2009, it was assigned Act No. 17-706 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a> became effective on March 25, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-171</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a>, the &quot;Technical Amendments Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-397. The Bill was adopted on first and second readings on Mar. 20, 2012, and Apr. 17, 2012, respectively. Signed by the Mayor on May 23, 2012, it was assigned Act No. 19-376 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-171.pdf'>Law 19-171</a> became effective on September 26, 2012.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

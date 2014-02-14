@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-3302. Opportunity for tenants to receive service in own names; payments made by tenants.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/index.html">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-33/index.html">Chapter 33. Master-Metered Apartment Buildings</a></li>
+                    
+                    <li>↪ § 42-3302. Opportunity for tenants to receive service in own names; payments made by tenants.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-33/42-3301.html">§ 42-3301. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-33/42-3303.html">§ 42-3303. Appointment of receiver; termination.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-3302. Opportunity for tenants to receive service in own names; payments made by tenants.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Wherever an owner, agent, lessor or manager of an apartment house is billed directly by a company, electricity supplier, natural gas supplier, or gas company (any of which shall be referred to as &quot;company&quot;) for service furnished to such apartment house not occupied exclusively by such owner, agent, lessor or manager, and such company has actual or constructive knowledge that the tenants of such apartment house are not the persons to whom the company sends its bills, such company shall not terminate such service for nonpayment of a delinquent account owed to such company by such owner, agent, lessor or manager unless such company provides an opportunity, where practicable, for such tenants to receive service in their own names, either individually or collectively, without any liability for the amount due while service was billed directly to the lessor, owner, agent or manager. Security deposits or guarantees of payment may only be required as provided in part V of the Consumer Bill of Rights, Public Service Commission of the District of Columbia Order No. 6084 (15 DCMR 307) and the Public Service Commission of the District of Columbia Formal Case No. 760 (15 DCMR 409); provided, however, if it is not practicable for such tenants to receive service in their own names, the company shall not terminate service to such apartment house but may pursue the remedy provided in <a href='/dccode/Title-42/Chapter-33/42-3303.html'>§ 42-3303</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any payments made by the tenants of any apartment house pursuant to subsection (a) of this section shall be deemed to be in lieu of an equal amount of rent or payment for use and occupancy and each tenant shall be permitted to deduct such amounts from any sum of rent or payment for use and occupancy due and owing or to become due and owing to the owner, agent, lessor or manager.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Nothing in this section shall be construed to prevent the company from pursuing any other action or remedy at law or equity that it may have against the owner, agent, lessor or manager.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 13, 1980, D.C. <a href='http://openlims.org/public/L3-94.pdf'>Law 3-94</a>, § 3, 27 DCR 3500; Feb. 24, 1987, D.C. <a href='http://openlims.org/public/L6-192.pdf'>Law 6-192</a>, § 20, 33 DCR 7836; May 9, 2000, D.C. <a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a>, § 202(a), 47 DCR 1091; Mar. 16, 2005, D.C. <a href='http://openlims.org/public/L15-227.pdf'>Law 15-227</a>, § 20(a), 51 DCR 10549.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 43-542.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a> in subsec. (a) substituted &quot;company, electricity supplier, or gas company (any of which shall be referred to as &#39;company&#39;) for service&quot; for &quot;electric or gas company for utility service&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-227.pdf'>Law 15-227</a>, in subsec. (a), substituted &quot;natural gas supplier, or gas company&quot; for &quot;or gas company&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 8(a) of Prevention of Unauthorized Switching of Customer Natural Gas Accounts Temporary Act of 2001 (D.C. <a href='http://openlims.org/public/L14-13.pdf'>Law 14-13</a>, July 10, 2001, law notification 48 DCR 6589).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-94</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-94.pdf'>Law 3-94</a>, see Historical and Statutory Notes following <a href='/dccode/Title-42/Chapter-33/42-3301.html'>§ 42-3301</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L6-192.pdf'>Law 6-192</a> was introduced in Council and assigned Bill No. 6-544, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 5, 1986 and November 18, 1986, respectively. Signed by the Mayor on December 10, 1986, it was assigned Act No. 6-246 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-107</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a>, the &quot;Retail Electric Competition and Consumer Protection Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-284, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on December 7, 1999, and December 21, 1999, respectively. Signed by the Mayor on January 18, 2000, it was assigned Act No. 13-256 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-107.pdf'>Law 13-107</a> became effective on May 9, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-227</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-227.pdf'>Law 15-227</a>, the &quot;Retail Natural Gas Supplier Licensing and Consumer Protection Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-679, and was retained by Council. The Bill was adopted on first and second readings on July 13, 2004, and October 5, 2004, respectively. Signed by the Mayor on November 1, 2004, it was assigned Act No. 15-567 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-227.pdf'>Law 15-227</a> became effective on March 16, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;The Consumer Bill of Rights,&quot; referred to in the second sentence of subsection (a) of this section, is now included as Chapter V of Title 15, D.C.M.R.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

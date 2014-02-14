@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-1771.03. Standards and implementation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-17M/index.html">Chapter 17M. Energy Efficiency Standards</a></li>
+                    
+                    <li>↪ § 8-1771.03. Standards and implementation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-17M/8-1771.02.html">§ 8-1771.02. Scope.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-17M/8-1771.04.html">§ 8-1771.04. New and revised standards.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-1771.03. Standards and implementation.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">On or after January 1, 2009, a new bottle-type water dispenser, commercial hot food holding cabinet, metal halide lamp fixture, state-regulated incandescent reflector lamp, or walk-in refrigerator or freezer shall not be sold or offered for sale in the District of Columbia unless the efficiency of the new product meets or exceeds the efficiency standards set forth in subsection (b) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">On or after January 1, 2010, a product listed in subsection (a) of this section shall not be installed in the District of Columbia unless the efficiency of the new product meets or exceeds the following efficiency standards:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Bottle-type water dispensers designed for dispensing both hot and cold water shall not have standby energy consumption greater than 1.2 kilowatt-hours per day, as measured in accordance with the test criteria contained in version 1.1 of the Environmental Protection Agency&#39;s &quot;Energy Star Program Requirements for Bottled Water Coolers,&quot; except units with an integral, automatic timer shall not be tested using Section D, &quot;Timer Usage,&quot; of the test criteria.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Commercial hot food holding cabinets shall have a maximum idle energy rate not exceeding 40 watts per cubic foot of interior volume, as determined by the &quot;idle energy rate-dry test&quot; in ASTM F2140-01, &quot;Standard Test Method for Performance of Hot Food Holding Cabinets&quot; published by ASTM International. Interior volume shall be measured in accordance with the method shown in the Environmental Protection Agency&#39;s &quot;Energy Star Program Requirements for Commercial Hot Food Holding Cabinets&quot; as in effect on August 15, 2003.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Metal halide lamp fixtures designed to be operated with lamps rated greater than or equal to 150 watts but less than or equal to 500 watts shall not contain a probe-start metal halide ballast.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">State-regulated incandescent reflector lamps shall meet the minimum average lamp efficacy requirements for federally-regulated incandescent reflector lamps contained in section 325(i)(1)(A) of the Energy Policy and Conservation Act, approved December 22, 1975 (<a href='http://api.fdsys.gov/link?collection=statute&volume=89&page=923'>89 Stat. 923</a>; 42 U. S.C. § 6295(i)(1)(A)).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The following types of incandescent reflector lamps shall be exempt from these requirements:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Lamps rated at 50 watts or less of the following types: BR30, ER30, BR40, and ER40;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Lamps rated at 65 watts of the following types: BR30, BR40, and ER40; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">R20 lamps of 45 watts or less.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Walk-in refrigerators or freezers shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Have automatic door closers that firmly close all reach-in doors and that firmly close all walk-in doors that have been closed to within one inch of full closure; provided, that this requirement shall not apply to walk-in doors wider than 3 feet, 9 inches or higher than 6 feet, 11 inches;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Contain wall, ceiling, and door insulation of at least R-28 for refrigerators and at least R-32 for freezers; provided, that door insulation requirements shall not apply to glazed portions of doors or to structural members;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Contain floor insulation of at least R-28 for freezers;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">For single-phase evaporator fan motors of under one horsepower and less than 460 volts, use electronically commutated motors; provided, that the Mayor may delay implementation of this sub-subparagraph upon a determination that the motors are only available from one manufacturer or in insufficient quantities to serve the needs of the walk-in industry for evaporator-fan applications;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">For condenser fan motors of under one horsepower, use either:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Electronically commutated motors;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Permanent split capacitor-type motors; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Polyphase motors of 1/2 horsepower or more; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">For all interior lights, use light sources with an efficacy of 40 lumens per watt or more, including ballast losses; provided, that light sources with an efficacy of 40 lumens per watt or less, including ballast losses (if any), may be used in conjunction with a timer or device that turns off the lights within 15 minutes after the enclosure ceases to be occupied.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Walk-in refrigerators or freezers with transparent reach-in doors and walk-in door windows shall also meet the following specifications:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Transparent reach-in doors and windows in walk-in doors for walk-in freezers shall be of triple-pane glass with either heat-reflective treated glass or gas fill.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Transparent reach-in doors and windows in walk-in doors for walk-in refrigerators shall be:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Double-pane glass with heat-reflective treated glass and gas fill; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Triple-pane glass with either heat-reflective treated glass or gas fill.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">For appliances with an anti-sweat heater:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">The appliances shall have a total door rail, glass, and frame heater power draw of no more than:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">Seven and 1/10 watts per square foot of door opening for freezers; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">Three watts per square foot of door opening for refrigerators.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">If an appliance with an anti-sweat heater has anti-sweat heat controls, the controls shall reduce the energy use of the anti-sweat heater in an amount corresponding to the relative humidity in the air outside the door or to the condensation on the inner glass pane.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">On or after January 1, 2012, a new single-voltage external AC to DC power supply shall not be sold or offered for sale in the District of Columbia unless the efficiency of the new product meets or exceeds the following efficiency standards:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Single-voltage external AC to DC power supplies shall meet the energy efficiency requirements in the following table:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-weight: bold; ">Nameplate Output Power 	Minimum Efficiency in Active Mode</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="table"> 
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">From 0 to less than 1 watt 		0.49 times the nameplate output</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">From 1 watt to not more than 		The sum of 0.09 times the natural</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">49 watts 				logarithm of the nameplate output</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style=""> 					power (expressed in watts) and 0.49</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Greater than 49 watts 		0.84</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+      </span>
+                
+                    <span class="" style="font-weight: bold; ">Maximum Energy Consumption</span>
+                
+                    <span class="" style="">
+    </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+      </span>
+                
+                    <span class="" style="font-weight: bold; "> 					in No-Load Mode</span>
+                
+                    <span class="" style="">
+    </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">From 0 to less than 10 watts 		0.5 watts</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">From 10 watts to not more</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">than 250 watts 			0.75 watts</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style=""> (2) This standard shall apply to single-voltage AC to DC power supplies that are sold individually and to those that are sold as a component of or in conjunction with another product.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Single-voltage external AC to DC power supplies that require Food and Drug Administration listing and approval as a medical device shall be exempt from the requirements of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Single-voltage external AC to DC power supplies made available by a manufacturer directly to a consumer or to a service or repair facility after and separate from the original sale of the product requiring the power supply as a service part or spare part shall not be required to meet the standards of this section until January 1, 2013.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">For the purposes of this section, the efficiency of single-voltage external AC to DC power supplies shall be measured in accordance with the test methodology specified by the Environmental Protection Agency&#39;s Energy Star Program, &quot;Test Method for Calculating the Energy Efficiency of Single-Voltage External AC-DC and AC-AC Power Supplies (August 11, 2004),&quot; except that tests shall be conducted at 115 volts only.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">One year after the sale or offering for sale of a new product becomes subject to the requirements of subsection (c) of this section, the product shall not be installed in the District of Columbia unless the efficiency of the new product meets or exceeds the efficiency standards set forth herein.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 11, 2007, D.C. <a href='http://openlims.org/public/L17-64.pdf'>Law 17-64</a>, § 4, 54 DCR 10964.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-8/Chapter-17M/8-1771.05.html'>§ 8-1771.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-64</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-64.pdf'>Law 17-64</a>, see notes following <a href='/dccode/Title-8/Chapter-17M/8-1771.01.html'>§ 8-1771.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

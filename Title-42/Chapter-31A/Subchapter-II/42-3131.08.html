@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-3131.08. Notice of denial or revocation of registration.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/index.html">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-31A/index.html">Chapter 31A. Abatement of Nuisance Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-31A/Subchapter-II/index.html">Subchapter II. Registration of Vacant Buildings</a></li>
+                    
+                    <li>↪ § 42-3131.08. Notice of denial or revocation of registration.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.07.html">§ 42-3131.07. Registration and renewal procedure.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.09.html">§ 42-3131.09. Fees.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-3131.08. Notice of denial or revocation of registration.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The owner shall be notified in writing of the denial or revocation of registration of a vacant building and the right to appeal. Upon notice of the denial or revocation, the owner shall not proceed with any operation to which the registration related. If the registration is denied or revoked, no registration fees or parts thereof shall be returned.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 14, 1906, 34 Stat. 115, ch. 1626, § 8, as added Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-281.pdf'>Law 13-281</a>, § 101, 48 DCR 1888; Aug. 15, 2008, D.C. <a href='http://openlims.org/public/L17-216.pdf'>Law 17-216</a>, § 3(d), 55 DCR 7500.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.10.html'>§ 42-3131.10</a>, <a href='/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.11.html'>§ 42-3131.11</a>, and <a href='/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.14.html'>§ 42-3131.14</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-216.pdf'>Law 17-216</a> rewrote the section which had read as follows: &quot;A notice of denial or revocation of registration shall be in writing and shall be served upon the owner, or his or her agent. A notice of denial or revocation of registration shall also be posted on the vacant building. Upon receipt or posting of the notice of denial or revocation of registration, a person shall not proceed with any operation to which such registration related. If an initial or renewal registration is denied, or if a registration is revoked during the registration period, no registration fees, or parts thereof, shall be returned to the owner.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(d) of Nuisance Properties Abatement Reform and Real Property Classification Temporary Amendment Act of 2006 (D.C. <a href='http://openlims.org/public/L16-259.pdf'>Law 16-259</a>, March 8, 2007, law notification 54 DCR 3044).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(d) of Nuisance Properties Abatement Reform and Real Property Classification Temporary Amendment Act of 2007 (D.C. <a href='http://openlims.org/public/L17-102.pdf'>Law 17-102</a>, February 2, 2008, law notification 55 DCR 4254).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3(d) of Nuisance Properties Abatement Reform and Real Property Classification Emergency Amendment Act of 2006 (D.C. Act 16-586, December 28, 2006, 54 DCR 353).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3(d) of Nuisance Properties Abatement Reform and Real Property Classification Emergency Amendment Act of 2007 (D.C. Act 17-173, November 2, 2007, 54 DCR 11204).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3(d) of Nuisance Properties Abatement Reform and Real Property Classification Congressional Review Emergency Act of 2008 (D.C. Act 17-436, July 16, 2008, 55 DCR 8272).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-281</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-281.pdf'>Law 13-281</a>, see notes following <a href='/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.05.html'>§ 42-3131.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-216</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-216.pdf'>Law 17-216</a>, see notes following <a href='/dccode/Title-42/Chapter-31A/Subchapter-II/42-3131.05.html'>§ 42-3131.05</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

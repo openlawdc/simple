@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-712. District of Columbia Police Officers and Fire Fighters' Retirement Fund.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-7/index.html">Chapter 7. District of Columbia Employees Retirement Program Management</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-7/Subchapter-II/index.html">Subchapter II. Establishment of Retirement Board and Retirement Funds</a></li>
+                    
+                    <li>↪ § 1-712. District of Columbia Police Officers and Fire Fighters&#39; Retirement Fund.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-7/Subchapter-II/1-711.html">§ 1-711. District of Columbia Retirement Board.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-7/Subchapter-II/1-713.html">§ 1-713. District of Columbia Teachers&#39; Retirement Fund.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-712. District of Columbia Police Officers and Fire Fighters' Retirement Fund.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established a fund to be known as the District of Columbia Police Officers and Fire Fighters&#39; Retirement Fund into which shall be deposited the following, which shall constitute the assets of the Fund:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any amount paid to the Custodian of Retirement Funds pursuant to the last sentence of <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-706.html'>§ 5-706(a)</a> or to <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-704.html'>§ 5-704(e)(1)</a> or to <a href='/dccode/Title-5/Chapter-7/Subchapter-III/5-741.html'>§ 5-741</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any amount appropriated for such Fund under subchapter III of this chapter; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any return on investment of the assets of such Fund.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">After September 30, 1979, or after the end of the 30-day period beginning on the date on which funds are first appropriated to the District of Columbia Police Officers and Fire Fighters&#39; Retirement Fund, whichever is later, all payments of annuities and other retirement and disability benefits (including refunds and lump-sum payments) under the Policemen and Firemen&#39;s Retirement and Disability Act (<a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-701.html'>§ 5-701</a> et seq.) shall be made from the Fund (except for any such payment which is made to an officer or member of the United States Park Police force, the United States Secret Service Uniformed Division, or the United States Secret Service Division, or to a beneficiary of any such officer or member).</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Nov. 17, 1979, <a href='http://api.fdsys.gov/link?collection=statute&volume=93&page=866'>93 Stat. 866</a>, <a href='http://www.govtrack.us/search?q=public%20law%2096-122'>Pub. L. 96-122</a>, § 122(a).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police and firefighters retirement and disability, reestablishment of annuity, redeposit of previously refunded deductions, computation of interest, see <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-717.html'>§ 5-717</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police Officers and Fire Fighters&#39; Retirement Fund, allowable creditable service, deposits required by fund members to the Custodian of Retirement Funds, see <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-704.html'>§ 5-704</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police Officers and Fire Fighters&#39; Retirement Fund, creditable service, service in military or naval forces, see <a href='/dccode/Title-5/Chapter-7/Subchapter-III/5-742.html'>§ 5-742</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police Officers and Fire Fighters&#39; Retirement Fund, reallocation of funds from the Policemen and Firemen&#39;s Relief Fund, see <a href='/dccode/Title-5/Chapter-7/Subchapter-III/5-741.html'>§ 5-741</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police Officers and Fire Fighters&#39; Retirement Fund, salary deductions and withholdings from fund members, see <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-706.html'>§ 5-706</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Police Officers, Fire Fighters, and Teachers Retirement Benefit Replacement Plan, &quot;Police Officers and Fire Fighters&#39; Retirement Fund&quot; defined, see <a href='/dccode/Title-1/Chapter-9/Subchapter-I/1-901.02.html'>§ 1-901.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-7/Subchapter-I/1-702.html'>§ 1-702</a>, <a href='/dccode/Title-1/Chapter-7/Subchapter-VI/1-752.html'>§ 1-752</a>, <a href='/dccode/Title-1/Chapter-9/Subchapter-I/1-901.02.html'>§ 1-901.02</a>, <a href='/dccode/Title-5/Chapter-5/Subchapter-III/Part-D/5-544.01.html'>§ 5-544.01</a>, <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-704.html'>§ 5-704</a>, <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-706.html'>§ 5-706</a>, <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-717.html'>§ 5-717</a>, <a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-723.04.html'>§ 5-723.04</a>, <a href='/dccode/Title-5/Chapter-7/Subchapter-III/5-741.html'>§ 5-741</a>, and <a href='/dccode/Title-5/Chapter-7/Subchapter-III/5-742.html'>§ 5-742</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-712.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-1812.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 5 of D.C. <a href='http://openlims.org/public/L11-218.pdf'>Law 11-218</a> repealed D.C. Act 11-369.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary repeal of the Police Officers&#39;, Fire Fighters&#39;, and Teachers&#39; Defined Benefit Pension Program Emergency Establishment Act of 1996 (D.C. Act 11-369, August 21, 1996, 41 DCR 4637), see § 5 of the New Hires Police Officers, Fire Fighters, and Teachers Pension Modification Congressional Adjournment Emergency Amendment Act of 1997 (D.C. Act 12-10, March 3, 1997, 44 DCR 1633).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-218</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-218.pdf'>Law 11-218</a>, the &quot;New Hires Police Officers, Fire Fighters and Teachers Pension Modification Amendment Act,&quot; was introduced in Council and assigned Bill No. 11-316, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on July 3, 1996, and October 1, 1996, respectively. Signed by the Mayor on October 18, 1996, it was assigned Act No. 11-432 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-218.pdf'>Law 11-218</a> became effective on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The &quot;Executive Protection Service&quot; was changed to &quot;United States Secret Service Uniformed Division,&quot; referred to in subsection (b), by the Act of November 15, 1977, <a href='http://api.fdsys.gov/link?collection=statute&volume=91&page=1371'>91 Stat. 1371</a>, <a href='http://www.govtrack.us/search?q=public%20law%2095-179'>Pub. L. 95-179</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Lump-sum payments to certain retired employees: H.R. 3067, amended by H.R. 99-419, incorporated in <a href='http://www.govtrack.us/search?q=public%20law%2099-190'>Pub. L. 99-190</a> by § 101(c), the D.C. Appropriation Act, 1986, provided that notwithstanding any other provisions of law, in the case of each employee who retired from the Fire Department of the District of Columbia before February 15, 1980, and who is receiving from the date of enactment of this act an annuity based on service in the Fire Department, the District of Columbia Retirement Board shall cause to be paid not later than September 30, 1985, to each such employee a lump-sum payment equal to 3 percent of his or her annuity.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%2099-591'>Section 101(d) of Pub. L. 99-591</a>, the D.C. Appropriations Act, 1987, provided, that, notwithstanding any other provision of law, in the case of each employee who retired from the Fire Department of the District of Columbia between November 24, 1984, and April 13, 1985 (both dates inclusive), and who on the date of the enactment of this Act are receiving annuities based on service in the Fire Department, the District of Columbia Retirement Board shall cause to be paid not later than October 15, 1986, to each such employee a lump-sum payment equal to 3 percent of his or her annuity.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Federal contribution to retirement funds: <a href='http://www.govtrack.us/search?q=public%20law%20104-194'>Public Law 104-194</a>, <a href='http://api.fdsys.gov/link?collection=statute&volume=110&page=2356'>110 Stat. 2356</a>, the District of Columbia Appropriations Act, 1997, provided for the federal contribution to the Police Officers&#39; and Fire Fighters&#39;, Teachers&#39;, and Judges&#39; Retirement Funds, as authorized by the District of Columbia Retirement Reform Act, approved November 17, 1979 (<a href='http://api.fdsys.gov/link?collection=statute&volume=93&page=866'>93 Stat. 866</a>; <a href='http://www.govtrack.us/search?q=public%20law%2096-122'>Public Law 96-122</a>), $52,070,000.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

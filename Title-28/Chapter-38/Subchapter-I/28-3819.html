@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28-3819. Rental housing locators.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Chapter-38/index.html">Chapter 38. Consumer Protections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Chapter-38/Subchapter-I/index.html">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 28-3819. Rental housing locators.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Chapter-38/Subchapter-I/28-3818.html">§ 28-3818. Layaway plans.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Chapter-38/Subchapter-II/index.html">Subchapter II. Consumer Security Breach Notification</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28-3819. Rental housing locators.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Definitions — </span>
+                
+                    <span class="" style="">As used in this section the term or terms:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Fee&quot; means any fee, commission, charge, deposit, down payment or other valuable consideration, including any fee or charge for a credit check or consultation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Rental housing locator&quot; or &quot;locator&quot; means any person who for a fee identifies or purports to identify or who provides or purports to provide any other information about any rental unit available for rent, other than a rental unit owned or managed by such person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Rental housing locator contract&quot; means a contract between a rental housing locator and another person that obligates the locator for a fee to identify any number of rental units as available for rent or to provide any other information about them.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Rental unit&quot; means any room, suite, apartment, or single family house rented or offered for rent as a residence, including any appurtenant services, facilities, improvements or land.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-heading" style="">Accuracy of information — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Every rental housing locator shall revise and correct all information to be provided pursuant to a rental housing locator contract or otherwise made available to any customer, potential customer, or the general public, every 24 hours for rental units it advertises and every 48 hours for rental units it does not advertise, or else remove such units from its lists and discontinue the advertising of such units.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A rental housing locator shall identify as available for rent or provide other information about a rental unit only if the locator has been given permission to do so by the owner/manager of the unit, or the rental unit has been advertised, posted, or otherwise publicly offered or held out as available for rent, by the owner/manager of the rental unit.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Rental housing locator agencies shall be required to make available, upon request, records of all unadvertised and advertised listings provided to customers and potential customers to the Office of Consumer Protection and the Metropolitan Police Department.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-heading" style="">Contracts — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Contracts between the rental housing locator agency and the customer shall be written, and a copy of the contract shall be supplied to the customer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The contract shall clearly state the duration of the locator service contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Every rental housing locator shall refund, upon request, any fee to any customer within thirty (30) days of said request if any of the rental housing information provided to that customer by the locator fails to comply with the requirements of accuracy as defined by subsection (c) of this section or if the locator fails, upon demand, to provide the correct street address or telephone number of any rental housing unit it advertises or otherwise describes to a customer; or if the locator fails to provide a customer with rental housing listings as called for in the contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The contract shall include in a prominent place and in bold face type the following clauses:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The first clause shall read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">SAVE THIS DOCUMENT AND ANY RENTAL HOUSING LISTINGS PROVIDED TO YOU. WE ARE AN INFORMATION SERVICE ONLY. WE MAKE NO ATTEMPT TO SECURE YOU HOUSING. THE SERVICE OFFERS ONLY COMPILED INFORMATION CONCERNING AVAILABLE RENTAL HOUSING UNITS. NO GUARANTEE IS MADE THAT YOU WILL FIND RENTAL PROPERTY BY USING THIS SERVICE. YOU MAY BE ENTITLED TO A REFUND IF ANY OF THE RENTAL HOUSING INFORMATION PROVIDED TO YOU IS NOT CURRENT, ACCURATE OR OTHERWISE NOT IN COMPLIANCE WITH THE LAW; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The second clause shall state that all inquiries should be made to the District of Columbia Office of Consumer Protection followed by the current address, telephone number, and hours of that office.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 21, 1980, D.C. <a href='http://openlims.org/public/L3-71.pdf'>Law 3-71</a>, § 2, 27 DCR 1891; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 27(t), 44 DCR 1271; Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a>, § 2003(t), 46 DCR 3142.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Consumer protection procedures, restraining prohibited acts, see <a href='/dccode/Title-28/Chapter-39/28-3909.html'>§ 28-3909</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Consumer protection procedures, unlawful trade practices, see <a href='/dccode/Title-28/Chapter-39/28-3904.html'>§ 28-3904</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-28/Chapter-39/28-3904.html'>§ 28-3904</a> and <a href='/dccode/Title-28/Chapter-39/28-3909.html'>§ 28-3909</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28-3819.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-71</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L3-71.pdf'>Law 3-71</a>, the &quot;Rental Housing Locator Consumer Protection Act of 1979,&quot; was introduced in Council and assigned Bill No. 3-124, which was referred to the Committee on Housing and Economic Development. The Bill was adopted on first and second readings on March 18, 1980 and April 1, 1980, respectively. Signed by the Mayor on May 1, 1980, it was assigned Act No. 3-179 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, see Historical and Statutory Notes following <a href='/dccode/Title-28/Chapter-38/Subchapter-I/28-3802.html'>§ 28-3802</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-261</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a>, the &quot;Second Omnibus Regulatory Reform Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-845, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 1, 1998, and December 15, 1998, respectively. Signed by the Mayor on December 31, 1998, it was assigned Act No. 12-615 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

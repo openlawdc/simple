@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 24-211.07. District compliance with federal immigration detainers.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/index.html">Title 24. Prisoners and Their Treatment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-2/index.html">Chapter 2. Prisons and Prisoners</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-2/Subchapter-II/index.html">Subchapter II. Department of Corrections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-2/Subchapter-II/Part-A/index.html">Part A. General</a></li>
+                    
+                    <li>↪ § 24-211.07. District compliance with federal immigration detainers.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-2/Subchapter-II/Part-A/24-211.06.html">§ 24-211.06. Charge against United States for care of convicts.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-2/Subchapter-II/Part-B/index.html">Part B. Department of Corrections Employee Mandatory Drug and Alcohol Testing</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 24-211.07. District compliance with federal immigration detainers.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The District of Columbia is authorized to comply with civil detainer requests from United States Immigration and Customs Enforcement (&quot;ICE&quot;) by holding inmates for an additional 24-hour period, excluding weekends and holidays, after they would otherwise be released, but only in accordance with the requirements set forth in subsection (b) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Upon written request by an ICE agent to detain a District of Columbia inmate for suspected violations of federal civil immigration law, the District shall exercise discretion regarding whether to comply with the request and may comply only if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">There exists a prior written agreement with the federal government by which all costs incurred by the District in complying with the ICE detainer shall be reimbursed; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The individual sought to be detained:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is 18 years of age or older; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Has been convicted of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A dangerous crime as defined in <a href='/dccode/Title-23/Chapter-13/Subchapter-II/23-1331.html'>§ 23-1331(3)</a> or a crime of violence as defined in <a href='/dccode/Title-23/Chapter-13/Subchapter-II/23-1331.html'>§ 23-1331(4)</a>, for which he or she is currently in custody;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A dangerous crime as defined in <a href='/dccode/Title-23/Chapter-13/Subchapter-II/23-1331.html'>§ 23-1331(3)</a> or a crime of violence as defined in <a href='/dccode/Title-23/Chapter-13/Subchapter-II/23-1331.html'>§ 23-1331(4)</a> within 10 years of the detainer request, or was released after having served a sentence for such dangerous crime or crime of violence within 5 years of the request, whichever is later; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A crime in another jurisdiction which if committed in the District of Columbia would qualify as an offense listed in <a href='/dccode/Title-23/Chapter-13/Subchapter-II/23-1331.html'>§ 23-1331(3)</a> or (4); provided, that the conviction occurred within 10 years of the detainer request or the individual was released after having served a sentence for such crime within 5 years of the request, whichever is later.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Notwithstanding subsection (b)(2)(B)(ii) and (iii) of this section, a detainer request for an individual who has been convicted of a homicide crime, pursuant to <a href='/dccode/Title-22/Chapter-21/22-2101.html'>§ 22-2101</a> et seq., or a crime in another jurisdiction which if committed in the District of Columbia would qualify as a homicide crime, may be honored regardless of when the conviction occurred.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The District shall not provide to any ICE agent an office, booth, or any facility or equipment for a generalized search of or inquiry about inmates or permit an ICE agent to conduct an individualized interview of an inmate without giving the inmate an opportunity to have counsel present.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">This subsection shall not be construed to establish a right to counsel that does not otherwise exist in law.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 27, 1946, ch. 507, § 7, as added Dec. 11, 2012, D.C. <a href='http://openlims.org/public/L19-194.pdf'>Law 19-194</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 10153</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2012 amendment by D.C. <a href='http://openlims.org/public/L19-194.pdf'>Law 19-194</a> added this section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary addition of section, see § 2 of the Immigration Detainer Compliance Congressional Review Emergency Amendment Act of 2012 (D.C. Act 19-475, October 9, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 12098</a>), applicable as of September 13, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-194</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-194.pdf'>Law 19-194</a>, the &quot;Immigration Detainer Compliance Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-585. The Bill was adopted on first and second readings on June 5, 2012, and July 10, 2012, respectively. Signed by the Mayor on August 8, 2012, it was assigned Act No. 19-442 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-194.pdf'>Law 19-194</a> became effective on Dec. 11, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Former <a href='/dccode/Title-24/Chapter-2/Subchapter-II/Part-A/24-211.07.html'>§ 24-211.07</a> was omitted from this part.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

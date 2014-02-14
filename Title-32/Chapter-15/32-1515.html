@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-1515. Payment of compensation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/index.html">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-15/index.html">Chapter 15. Workers&#39; Compensation</a></li>
+                    
+                    <li>↪ § 32-1515. Payment of compensation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-15/32-1514.html">§ 32-1514. Time for filing claims.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-15/32-1516.html">§ 32-1516. Invalid agreements.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-1515. Payment of compensation.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Compensation under this chapter shall be paid periodically, promptly, and directly to the person entitled thereto, without an award, except where liability to pay compensation is controverted by the employer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The 1st installment of compensation shall become due on the 14th day after the employer has knowledge of the job-related injury or death, on which date all compensation then due shall be paid. Thereafter compensation shall be paid in installments, biweekly, except where the Mayor determines that payment in installments should be made monthly or at some other period.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Upon making the 1st payment and upon suspension of payment for any cause, the employer shall immediately notify the Mayor in accordance with a form prescribed by the Mayor that payment of compensation has begun or has been suspended, as the case may be.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">If the employer controverts the right to compensation he shall file with the Mayor, on or before the 14th day after he has knowledge of the alleged injury or death and its relationship to the employment, a notice in accordance with a form prescribed by the Mayor stating that the right to compensation is controverted, the name of the claimant, the name of the employer, the date of the alleged injury or death and the grounds upon which the right to compensation is controverted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If any installment of compensation payable without an award is not paid within 14 days after it becomes due, as provided in subsection (b) of this section, there shall be added to such unpaid installment an amount equal to 10% thereof, which shall be paid at the same time as, but in addition to, such installment, unless notice is filed under subsection (d) of this section, or unless such nonpayment is excused by the Mayor after a showing by the employer that owing to conditions over which he had no control such installment could not be paid within the period prescribed for the payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">If any compensation, payable under the terms of an award, is not paid within 10 days after it becomes due, there shall be added to such unpaid compensation an amount equal to 20% thereof, which shall be paid at the same time as, but in addition to, such compensation, unless review of the compensation order making such award is had as provided in <a href='/dccode/Title-32/Chapter-15/32-1522.html'>§ 32-1522</a> and an order staying payments has been issued by the Mayor or court. The Mayor may waive payment of the additional compensation after a showing by the employer that owing to conditions over which he had no control such installment could not be paid within the period prescribed for the payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Within 16 days after final payment of compensation has been made, the employer shall send to the Mayor a notice, in accordance with a form prescribed by the Mayor, stating that such final payment has been made, the total amount of compensation paid, the name of the employee and of any other person to whom compensation has been paid, the date of the injury or death, and the date to which compensation has been paid. If the employer fails to so notify the Mayor within such time the Mayor shall assess against such employer a civil penalty in the amount of $100.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">The Mayor: (1) May upon his own initiative at any time in a case in which payments are being made without an award; and (2) shall in any case where right to compensation is controverted, or where payments of compensation have been stopped or suspended, upon receipt of notice from any person entitled to compensation or from the employer, that the right to compensation is controverted, or where payments of compensation have been stopped or suspended, make such investigations, cause such medical examinations to be made, or hold such hearings, and take such further action as he considers will properly protect the rights of all parties.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Whenever the Mayor deems it advisable he may require any employer to make a deposit with the District of Columbia Treasurer to secure the prompt and convenient payment of such compensation, and payments therefrom upon any awards shall be made upon order of the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">If the employer has made advance payments of compensation, he shall be entitled to be reimbursed out of any unpaid installment or installments of compensation due. All payments prior to an award, to an employee who is injured in the course and scope of his employment, shall be considered advance payments of compensation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">An injured employee, or in case of death his dependents or personal representative, shall give receipts for payment of compensation to the employer paying the same and such employer shall produce the same for inspection by the Mayor, whenever required.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 1, 1980, D.C. <a href='http://openlims.org/public/L3-77.pdf'>Law 3-77</a>, § 16, 27 DCR 2503.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-32/Chapter-15/32-1507.html'>§ 32-1507</a> and <a href='/dccode/Title-32/Chapter-15/32-1528.html'>§ 32-1528</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 36-315.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-77</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-77.pdf'>Law 3-77</a>, see Historical and Statutory Notes following <a href='/dccode/Title-32/Chapter-15/32-1501.html'>§ 32-1501</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

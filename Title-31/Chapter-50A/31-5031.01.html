@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5031.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/index.html">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-50A/index.html">Chapter 50A. Title Insurance Insurers</a></li>
+                    
+                    <li>↪ § 31-5031.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-50A/index.html">Chapter 50A. Title Insurance Insurers</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-50A/31-5031.02.html">§ 31-5031.02. Licensing needed to transact business.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5031.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Abstract of title&quot; or &quot;abstract&quot; means a written history, synopsis, or summary of the recorded instruments affecting the title to real property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Affiliate&quot; means, with respect to a person, another person that directly, or indirectly through one or more intermediaries, controls, is controlled by, or is under common control with the person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Aggrieved party&quot; means a lender, title insurer, consumer, or the District of Columbia, who shall have suffered economic harm as a result of matters insured under any fidelity coverage required under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Attorney&quot; means a person who holds a license to practice law in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking, or the Commissioner&#39;s representatives, or the commissioner, director, or superintendent of insurance in any other state.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Direct operations&quot; means that portion of a title insurer&#39;s operations that is attributable to business written or conducted directly by an employee of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The title insurer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A title insurance producer owned by:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The title insurer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A parent entity owning the title insurer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A holding entity owning the title insurer; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">A subsidiary of a parent or holding entity owning a title insurer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Escrow&quot; means written instruments, money, or other items deposited by one party with a depository, escrow agent, or escrowee for delivery to another party upon the performance of a specified condition or the happening of a certain event.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Escrow Officer&quot; means a person who maintains an escrow or indemnified deposit account.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Escrow, settlement, or closing fee&quot; means the consideration for supervising or handling the actual execution, delivery, or recording of transfer and lien documents and for disbursing funds.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Fire and Casualty Act&quot; means Chapter 25 of this title [<a href='/dccode/Title-31/Chapter-25/Subchapter-I/31-2501.01.html'>§ 31-2501.01</a> et seq.].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Foreign title insurer&quot; means any title insurer incorporated or organized under the laws of any other state of the United States or any other jurisdiction of the United States.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Indemnity&quot; or &quot;indemnity deposit&quot; means funds or other property received by the title insurer as collateral to secure an indemnitor&#39;s obligation under an indemnity agreement pursuant to which the insurer is granted a perfected security interest in the collateral in exchange for agreeing to provide coverage in a title insurance policy for a specific title exception to coverage.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;IRLA&quot; means Chapter 13 of this title [<a href='/dccode/Title-31/Chapter-13/31-1301.html'>§ 31-1301</a> et seq.) ].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Net retained liability&quot; means the total liability retained by a title insurer for a single risk, after taking into account any ceded liability and collateral, acceptable to the Commissioner, maintained by the insurer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Non-U.S. title insurer&quot; means any title insurer incorporated or organized under the laws of any foreign nation or any province or territory.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means an individual, partnership, limited liability company, association, cooperative, corporation, trust, or other legal entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Personal property&quot; means stock ownership in a cooperative housing association.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Qualified financial institution&quot; means an institution that is:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Organized or, in the case of a United States branch or agency office of a foreign banking organization, licensed under the laws of the United States or any state and has been granted authority to operate with fiduciary powers;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Regulated, supervised, and examined by federal or state authorities having regulatory authority over banks and trust companies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Insured by the appropriate federal entity; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Qualified under any additional rules established by the Commissioner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Referral source&quot; means any person, including an officer, director, or owner of more than 5% or more of the equity or capital of any person engaged in the District in the trade, business, occupation, or profession of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Buying or selling interests in real property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Making loans secured by interests in real property; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Acting as broker, agent, representative, or attorney of a person who buys or sells any interest in real property or who lends or borrows money with the interest as security.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Residential property&quot; means real property located in the District of Columbia with one to 4 residential dwelling units in the same or appurtenant structure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Subsidiary&quot; means an affiliate controlled by a person, directly or indirectly, through one or more intermediaries.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Title insurance business&quot; or &quot;business of title insurance&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Issuing as an insurer, or offering to issue as an insurer, a title insurance policy;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Engaging in, or proposing to engage in, any of the following activities when conducted or performed in contemplation of or in conjunction with the issuance of a title insurance policy:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Soliciting or negotiating the issuance of a title insurance policy;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Guaranteeing, warranting, or otherwise insuring the correctness of title searches for all instruments affecting titles to real property, any interest in real property, cooperative units, and proprietary leases, and for all liens or charges affecting the same;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Executing title insurance policies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Effecting contracts of reinsurance; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Abstracting, searching, or examining titles;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Guaranteeing, warranting, or insuring searches or examinations of title to real property or any interest in real property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Guaranteeing or warranting the status of title as to ownership of or liens on real property or personal property by any person other than the principals to the transaction;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Doing, or holding oneself out to do, business substantially equivalent to any of the activities listed in this paragraph in a manner designed to evade the provisions of this chapter; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Matters insuring the correctness or marketability of title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Title insurance commitment&quot; means a preliminary report, commitment, or binder issued prior to the issuance of a title insurance policy containing the terms, conditions, exceptions, and any other matters incorporated by reference under which the title insurer is willing to issue its title insurance policy.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Title insurance policy&quot; or &quot;policy&quot; means a contract insuring or indemnifying owners of, or other persons lawfully interested in, real or personal property or any interest in real or personal property, against loss or damage arising from any or all of the following conditions existing on or before the policy date and not excepted or excluded:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Defects in, or liens or encumbrances on, the insured title;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Unmarketability of the insured title;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Invalidity, lack of priority, or unenforceability of liens or encumbrances on the stated property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Lack of legal right of access to the land;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Unenforceability of rights in title to the land and other matters affecting the title to, or the right to the use and enjoyment of, the property; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Matters insuring the correctness or marketability of title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Title insurance producer&quot; or &quot;producer&quot; means a person who is authorized to perform, on behalf of a title insurer, the following acts in conjunction with the issuance of a title insurance commitment or policy covering residential or personal property situated in the District of Columbia:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Determining insurability and issuing title insurance commitments or policies, or both, based upon the performance or review of a search or abstract of title; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Soliciting or negotiating title insurance business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;title insurance producer&quot; or &quot;producer&quot; shall not include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A financial institution (and its employees) that does not solicit, procure, or negotiate title insurance contracts for compensation or conduct title insurance business;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">An employee of an abstracting company;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A person whose activities in the District are limited to advertising, without the intent to solicit insurance in the District, through communications in printed publications or other forms of electronic mass media; provided, that the person does not sell, solicit, or negotiate insurance that would insure risks of persons residing in or located in, or activities to be performed in, the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">A salaried full-time employee who counsels or advises his or her employer relative to the insurance interests of the employer or of the subsidiaries of the employer; provided, that the employee does not sell, solicit, or negotiate insurance, or receive a commission; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">An employee of a title insurer; provided, that the employee&#39;s activities are not focused on transactions in the District of Columbia, his or her primary responsibilities cover multiple states, and his or her involvement in transactions is to coordinate with title insurance producers licensed in the District of Columbia who conduct title insurance business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Title insurer&quot; or &quot;insurer&quot; means a company organized under laws of the District of Columbia for the purpose of transacting the business of title insurance and any foreign or non-U.S. title insurer licensed in the District of Columbia to transact the business of title insurance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(27) </span>
+                
+                    <span class="" style="">&quot;Title plant&quot; means a set of records consisting of documents, maps, surveys, or entries affecting title to real property or any interest in or encumbrance on the property, which have been filed or recorded in the jurisdiction for which the title plant is established or maintained.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(28) </span>
+                
+                    <span class="" style="">&quot;Underwrite&quot; means to accept or reject, or have the authority to accept or reject, risk on behalf of a title insurer.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 24, 2010, D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, § 2142, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6242</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2142 of Fiscal Year 2011 Budget Support Emergency Act of 2010 (D.C. Act 18-463, July 2, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6542</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-223</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, the &quot;Fiscal Year 2011 Budget Support Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-731, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 26, 2010, and June 15, 2010, respectively. Signed by the Mayor on July 2, 2010, it was assigned Act No. 18-462 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a> became effective on September 24, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 2141 of D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a> provided that subtitle M of title II of the act may be cited as the &quot;Title Insurance Insurer Act of 2010&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

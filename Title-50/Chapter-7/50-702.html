@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 50-702. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/index.html">Title 50. Motor and Non-Motor Vehicles and Traffic</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-7/index.html">Chapter 7. Alternative Fuels Technology</a></li>
+                    
+                    <li>↪ § 50-702. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-7/50-701.html">§ 50-701. Policy.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-7/50-703.html">§ 50-703. Reports; technology assessment, development, and implementation.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 50-702. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purpose of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Alternative fuel&quot; means methanol, ethanol, or other alcohols (including any mixture of gasoline or other fuels containing 85% or more by volume of alcohol), natural gas, liquefied petroleum gas, propane, or electricity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Alternative-fuel vehicle&quot; means a dedicated, flexible-fueled, bi-fueled, or dual-fueled vehicle that operates on an alternative fuel.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Bi-fuel vehicle&quot; means a motor vehicle that is equipped to operate on either a clean-burning alternative fuel or a conventional fuel, including gasoline or diesel fuel.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Capable of being centrally fueled&quot; means a fleet, or that part of a fleet, consisting of vehicles that can be refueled 100% of the time at a location that is owned, operated, or controlled by the covered fleet operator, or is under contract with the covered fleet operator.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Centrally fueled&quot; means a fleet, or that part of a fleet, consisting of vehicles that are fueled 100% of the time at a location that is owned, operated, or controlled by the covered fleet operator or is under contract with the covered fleet operator, including any vehicle that under normal operations is garaged at a personal residence at night, but that is centrally fueled 100% of the time.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Clean Air Act&quot; means the Clean Air Act, approved December 17, 1963 (<a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=392'>77 Stat. 392</a>; 42 U.S.C. § 7401 et seq.), as amended.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Clean fuel&quot; means any fuel, including methanol, ethanol, or other alcohols (including any mixture thereof containing 85% or more by volume of alcohol with gasoline or other fuel), reformulated gasoline, diesel, natural gas, liquefied petroleum gas, hydrogen, or power source (including electricity) used in a clean-fuel vehicle that complies with standards and requirements applicable to such vehicle when using such fuel or power source.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Clean-fuel fleet vehicle&quot; or &quot;CFFV&quot; means a clean-fuel vehicle operated by a covered fleet operator.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Clean-fuel vehicle&quot; means a motor vehicle which has been certified to meet, for any model year, a set of emission standards that classifies it as a clean-fuel vehicle, in accordance with this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Contract fueling&quot; means that a fleet vehicle is required to be refueled at a service station or other facility with which the fleet operator has entered into a contract for such refueling purposes. Commercial fleet service cards which are provided to fleet operators by any leasing or vehicle management company do not constitute contract fueling.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Converted vehicle&quot; means a conventionally fueled vehicle that is converted to operate on a clean fuel in accordance with federal regulations and meets the emission standards set forth for that class of clean-fuel vehicle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Covered area&quot; means any part of the District that is included in an ozone nonattainment area classified under subpart 2 of part D of title I of the Clean Air Act as serious, severe, or extreme based on data for the calendar years 1987, 1988, and 1989.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Covered fleet&quot; means any fleet of 10 or more covered fleet vehicles owned, operated, leased, used, maintained, or otherwise controlled by a person. The term &quot;covered fleet&quot; does not include motor vehicles exempt under <a href='/dccode/Title-50/Chapter-7/50-704.html'>§ 50-704</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Covered fleet operator&quot; means a person who operates a fleet of at least 10 covered fleet vehicles that is operated in the covered area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Covered fleet vehicle&quot; means any motor vehicle which is in a vehicle class for which emission standards are applicable under <a href='/dccode/Title-50/Chapter-7/50-707.html'>§ 50-707</a> and in a covered fleet which is centrally fueled or capable of being centrally fueled. The term &quot;covered fleet vehicle&quot; does not include motor vehicles exempt under <a href='/dccode/Title-50/Chapter-7/50-704.html'>§ 50-704</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Credit&quot; means a credit for the acquisition of a clean-fuel vehicle pursuant to § 246(f) of the Clean Air Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Dedicated vehicle&quot; means a vehicle that operates solely on a clean alternative fuel.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Dual-fuel vehicle&quot; means a motor vehicle that operates on 2 fuel sources.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Emergency vehicle&quot; means any vehicle that is legally authorized by a governmental authority to exceed the speed limit to transport people and equipment to and from situations in which speed is required to save lives or property, including a rescue vehicle, fire truck, or ambulance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Federal fleet&quot; means any fleet owned or operated by the United States government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Flexible-fueled vehicle&quot; means a vehicle that is capable of operating on either or any combination of 2 fuels.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Fuel provider&quot; means any person that provides fuel to a covered fleet.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Garaged under normal operations at a personal residence&quot; means a vehicle that, when it is not in use, is normally parked at the personal residence of the individual who usually operates it, rather than at a central refueling, maintenance, or business location. These vehicles are not considered to be capable of being centrally fueled and are exempt from the program unless they are, in fact, centrally fueled 100% of the time.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Heavy duty vehicle&quot; or &quot;HDV&quot; means a vehicle weighing more than 8,501 pounds GVWR but less than 26,000 pounds GVWR.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;High-Occupancy Vehicle lanes&quot; means transportation control measures which restrict a vehicle&#39;s access to certain roadway lanes based on the number of occupants in the vehicle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Inherently low-emission vehicle&quot; or &quot;ILEV&quot; means any light-duty motor vehicle, light-duty truck, or heavy-duty vehicle that is certified as a low-emission vehicle pursuant to emission standards promulgated by the Environmental Protection Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(27) </span>
+                
+                    <span class="" style="">&quot;Law enforcement vehicle&quot; means any vehicle that is primarily operated by a civilian or military police officer or sheriff, enforcement agency of the federal government, state highway patrols, municipal law enforcement, or other similar law enforcement agency, and that is used for the purpose of law enforcement activities, including chase, apprehension, surveillance, or patrol of people engaged in, or potentially engaged in, unlawful activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(28) </span>
+                
+                    <span class="" style="">&quot;Light duty truck&quot; or &quot;LDT&quot; means a truck weighing 8,500 pounds GVWR or less.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(29) </span>
+                
+                    <span class="" style="">&quot;Light duty vehicle&quot; or &quot;LDV&quot; means a vehicle weighing 8,500 pounds GVWR or less.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(30) </span>
+                
+                    <span class="" style="">&quot;Location&quot; means any building, structure, facility, or installation, that is owned or operated by a person, or is under the control of a person, located on 1 or more contiguous properties, and contains, or could contain, a fueling pump or pumps for the use of the vehicles owned or controlled by that person. The term &quot;location&quot; includes all of the facilities of the fleet operator in a single covered area, in their entirety. The term &quot;location&quot; is not meant to be interpreted narrowly, such as a single refueling pump.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(31) </span>
+                
+                    <span class="" style="">&quot;Low-emission vehicle&quot; or &quot;LEV&quot; means a vehicle that meets the LEV emission standards promulgated under the Clean Air Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(32) </span>
+                
+                    <span class="" style="">&quot;Model Year&quot; means the period between September 1 and August 31 of the preceding calendar year.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(33) </span>
+                
+                    <span class="" style="">&quot;Motor vehicle&quot; means any motor vehicle, as defined in <a href='/dccode/Title-50/Chapter-15/Subchapter-I/50-1501.01.html'>§ 50-1501.01(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(34) </span>
+                
+                    <span class="" style="">&quot;Nonroad vehicle&quot; means a vehicle that is powered by a nonroad engine and that is not a motor vehicle, or a vehicle used solely for competition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(35) </span>
+                
+                    <span class="" style="">&quot;Partially covered fleet&quot; means any fleet that contains 10 or more covered fleet vehicles, but also contains exempt vehicles including law enforcement and emergency vehicles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(36) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means an individual, partnership, corporation, association, or any agency, instrumentality, or department of any government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(37) </span>
+                
+                    <span class="" style="">&quot;Purchase&quot; or &quot;acquisition&quot; includes a lease.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(38) </span>
+                
+                    <span class="" style="">&quot;Qualified second market vehicle&quot; means a vehicle that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Has been in use for at least 18 months, but not more than 36 months;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Has 50% or more of its useful life remaining;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is owned or operated by a private covered fleet operator that operates fleets in the District; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Is a ULEV, ILEV or ZEV.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(39) </span>
+                
+                    <span class="" style="">&quot;Ultra low-emission vehicle&quot; or &quot;ULEV&quot; means a vehicle that is certified as meeting the ULEV emission standards promulgated under the Clean Air Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(40) </span>
+                
+                    <span class="" style="">&quot;Zero-emission vehicle&quot; or &quot;ZEV&quot; means a vehicle that is certified as meeting the ZEV emission standards promulgated under the Clean Air Act.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 8, 1991, D.C. <a href='http://openlims.org/public/L8-243.pdf'>Law 8-243</a>, § 3, 38 DCR 355; Mar. 17, 1994, D.C. <a href='http://openlims.org/public/L10-78.pdf'>Law 10-78</a>, § 2(a), 40 DCR 8464; Mar. 14, 1995, D.C. <a href='http://openlims.org/public/L10-201.pdf'>Law 10-201</a>, § 2(b), 41 DCR 7178.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 40-2002.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(a) of Alternative Fuels of 1990 Temporary Amendment Act of 1992 (D.C. <a href='http://openlims.org/public/L9-232.pdf'>Law 9-232</a>, March 17, 2003, law notification 40 DCR ).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(a) of the Alternative Fuels Technology Emergency Amendment Act of 1993 (D.C. Act 10-135, October 27, 1993, 40 DCR 7607) and § 2(a) of the Alternative Fuels Technology Congressional Recess Emergency Amendment Act of 1994 (D.C. Act 10-175, January 25, 1994, 41 DCR 510).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-243</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-243.pdf'>Law 8-243</a>, see Historical and Statutory Notes following <a href='/dccode/Title-50/Chapter-7/50-701.html'>§ 50-701</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-78</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-78.pdf'>Law 10-78</a>, the &quot;Alternative Fuels Technology Amendment Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-47, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on October 5, 1993, and November 2, 1993, respectively. Signed by the Mayor on November 17, 1993, it was assigned Act No. 10-151 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-78.pdf'>Law 10-78</a> became effective on March 17, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-201.pdf'>Law 10-201</a>, see Historical and Statutory Notes following <a href='/dccode/Title-50/Chapter-7/50-701.html'>§ 50-701</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Section 246(f) of the Clean Air Act,&quot; referred to in (16), is codified as 42 U.S.C. § 7586(f).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

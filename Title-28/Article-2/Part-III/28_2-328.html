@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:2-328. Sale by auction.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-2/index.html">Article 2. Sales</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-2/Part-III/index.html">Part III. General Obligation and Construction of Contract</a></li>
+                    
+                    <li>↪ § 28:2-328. Sale by auction.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-2/Part-III/28_2-327.html">§ 28:2-327. Special incidents of sale on approval and sale or return.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-2/Part-IV/index.html">Part IV. Title, Creditors and Good Faith Purchasers</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:2-328. Sale by auction.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">In a sale by auction if goods are put up in lots each lot is the subject of a separate sale.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A sale by auction is complete when the auctioneer so announces by the fall of the hammer or in other customary manner. Where a bid is made while the hammer is falling in acceptance of a prior bid the auctioneer may in his discretion reopen the bidding or declare the goods sold under the bid on which the hammer was falling.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Such a sale is with reserve unless the goods are in explicit terms put up without reserve. In an auction with reserve the auctioneer may withdraw the goods at any time until he announces completion of the sale. In an auction without reserve, after the auctioneer calls for bids on an article or lot, that article or lot cannot be withdrawn unless no bid is made within a reasonable time. In either case a bidder may retract his bid until the auctioneer&#39;s announcement of completion of the sale, but a bidder&#39;s retraction does not revive any previous bid.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">If the auctioneer knowingly receives a bid on the seller&#39;s behalf or the seller makes or procures such a bid, and notice has not been given that liberty for such bidding is reserved, the buyer may at his option avoid the sale or take the goods at the price of the last good faith bid prior to the completion of the sale. This subsection shall not apply to any bid at a forced sale.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=653'>77 Stat. 653</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 27(ll), 44 DCR 1271.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:2-328.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:2-328.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, the &quot;Second Technical Amendments Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-905, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-519 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a> became effective on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Uniform Statutory Provision:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 21, Uniform Sales Act.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Changes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Completely rewritten.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Purposes of Changes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">To make it clear that:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. The auctioneer may in his discretion either reopen the bidding or close the sale on the bid on which the hammer was falling when a bid is made at that moment. The recognition of a bid of this kind by the auctioneer in his discretion does not mean a closing in favor of such a bidder, but only that the bid has been accepted as a continuation of the bidding. If recognized, such a bid discharges the bid on which the hammer was falling when it was made.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. An auction &quot;with reserve&quot; is the normal procedure. The crucial point, however, for determining the nature of an auction is the &quot;putting up&quot; of the goods. This Article accepts the view that the goods may be withdrawn before they are actually &quot;put up,&quot; regardless of whether the auction is advertised as one without reserve, without liability on the part of the auction announcer to persons who are present. This is subject to any peculiar facts which might bring the case within the &quot;firm offer&quot; principle of this Article, but an offer to persons generally would require unmistakable language in order to fall within that section. The prior announcement of the nature of the auction either as with reserve or without reserve will, however, enter as an &quot;explicit term&quot; in the &quot;putting up&quot; of the goods and conduct thereafter must be governed accordingly. The present section continues the prior rule permitting withdrawal of bids in auctions both with and without reserve; and the rule is made explicit that the retraction of a bid does not revive a prior bid.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross Reference:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Point 2: Section 2-205.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Buyer&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Good faith&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Goods&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-105.html'>Section 2-105</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Lot&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-105.html'>Section 2-105</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Notice&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Sale&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-106.html'>Section 2-106</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Seller&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

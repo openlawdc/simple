@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5316. Benefit contracts.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/index.html">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-53/index.html">Chapter 53. Fraternal Benefit Societies</a></li>
+                    
+                    <li>↪ § 31-5316. Benefit contracts.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-53/31-5315.html">§ 31-5315. Benefits not attachable.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-53/31-5317.html">§ 31-5317. Nonforfeiture benefits, cash surrender values, certificate loans, and other options.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5316. Benefit contracts.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Every society authorized to do business in the District shall issue to each owner of a benefit contract a certificate specifying the amount of benefits provided thereby. The certificate, together with any riders or endorsements attached thereto, the laws of the society, the application for membership, the application for insurance and declaration of insurability, if any, signed by the applicant, and all amendments to each thereof, shall constitute the benefit contract, as of the date of issuance, between the society and the owner, and the certificate shall so state. A copy of the application for insurance and declaration of insurability, if any, shall be endorsed upon or attached to the certificate. All statements on the application shall be representations and not warranties. Any waiver of this provision shall be void.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any changes, additions, or amendments to the laws of the society duly made or enacted subsequent to the issuance of the certificate, shall bind the owner and the beneficiaries, and shall govern and control the benefit contract in all respects the same as though the changes, additions, or amendments had been made prior to, and were in force at the time of, the application for insurance. No change, addition, or amendment shall destroy or diminish benefits which the society contracted to give the owner as of the date of issuance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Any person upon whose life a benefit contract is issued prior to attaining the age of majority shall be bound by the terms of the application and certificate and by all the laws and rules of the society to the same extent as though the age of majority had been attained at the time of application.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">A society shall provide in its laws that if its reserves as to all or any class of certificates become impaired, its board of directors or corresponding body may require the owner to pay to the society the amount of the owner&#39;s equitable proportion of the deficiency as ascertained by its board, and that if the payment is not made either: (i) it shall stand as an indebtedness against the certificate and draw interest not to exceed the rate specified for certificate loans under the certificates; or (ii) in lieu of or in combination with clause (i), the owner may accept a proportionate reduction in benefits under the certificate. The society may specify the manner of the election and which alternative is to be presumed if no election is made.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Copies of any of the documents mentioned in this section, certified by the secretary or corresponding officer of the society, shall be received in evidence of the terms and conditions thereof.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">No certificate shall be delivered or issued for delivery in the District unless a copy of the form has been filed with the Commissioner in the manner provided for like policies issued by life, accident, and health insurers in the District. Any certificate issued prior to one year after April 29, 1998 shall conform to the requirements provided by the laws applicable immediately prior to April 29, 1998. Every life, accident and health or disability insurance certificate and every annuity certificate issued on or after one year from April 29, 1998 shall meet the standard contract provision requirements not inconsistent with this chapter for like policies issued by life, accident, and health insurers in the District, except that a society may provide for a grace period for payment of premiums of one full month in its certificates. The certificate shall also contain a provision stating the amount of premiums which are payable under the certificate and a provision reciting or setting forth the substance of any sections of the society&#39;s laws or rules in force at the time of issuance of the certificate which, if violated, will result in the termination or reduction of benefits payable under the certificate. If the laws of the society provide for expulsion or suspension of a member, the certificate shall also contain a provision that a member so expelled or suspended, except for nonpayment of a premium or within the contestable period for material misrepresentation in the application for membership or insurance, shall have the privilege of maintaining the certificate in force by continuing payment of the required premium.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Benefit contracts issued on the lives of persons below the society&#39;s minimum age for adult membership may provide for transfer of control of ownership to the insured at an age specified in the certificate. A society may require approval of an application for membership in order to effect this transfer, and may provide in all other respects for the regulation, government and control of the certificates and all rights, obligations, and liabilities incident thereto and connected therewith. Ownership rights prior to the transfer shall be specified in the certificate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">A society may specify the terms and conditions on which benefit contracts may be assigned.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 29, 1998, D.C. <a href='http://openlims.org/public/L12-86.pdf'>Law 12-86</a>, § 1217, 45 DCR 1172.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-31/Chapter-53/31-5301.html'>§ 31-5301</a> and <a href='/dccode/Title-31/Chapter-53/31-5319.html'>§ 31-5319</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-1246.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-86</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-86.pdf'>Law 12-86</a>, see Historical and Statutory Notes following <a href='/dccode/Title-31/Chapter-53/31-5301.html'>§ 31-5301</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

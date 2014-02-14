@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28-4505. Civil investigative demand.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Chapter-45/index.html">Chapter 45. Restraints of Trade</a></li>
+                    
+                    <li>↪ § 28-4505. Civil investigative demand.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Chapter-45/28-4504.html">§ 28-4504. Exclusions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Chapter-45/28-4506.html">§ 28-4506. Criminal enforcement by the District of Columbia.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28-4505. Civil investigative demand.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Whenever the Corporation Counsel has reason to believe that any person may be in possession, custody, or control of any documentary material, or may have any information, relevant to a civil antitrust investigation, the Corporation Counsel may, prior to the institution of a proceeding thereon, issue in writing, and cause to be served upon such person, a civil investigative demand requiring such person to produce such documentary material for inspection and copying or reproduction, to answer written interrogatories, to give oral testimony concerning documentary material or information, or to furnish any combination of such material, answers, or testimony.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Each such demand shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">state the nature of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">the conduct under investigation constituting the alleged antitrust violation; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">the activities under investigation which, if consummated, may result in an antitrust violation; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">the applicable provision of law;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">if it is a demand for production of documentary material:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">describe the class or classes of documentary material to be produced with sufficient definiteness as to permit such material to be fairly identified;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">prescribe a return date or dates which will provide a reasonable period of time for the material demanded to be assembled and made available for inspection and copying or reproduction; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">identify the custodian to whom such material shall be made available;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">if it is a demand for answers to written interrogatories:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">propound with definiteness the written interrogatories to be answered;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">prescribe a date or dates at which time answers to written interrogatories shall be submitted; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">identify the custodian to whom such answers shall be submitted; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">if it is a demand for the giving of oral testimony:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">prescribe a date, time, and place at which oral testimony shall be commenced; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">identify an assistant corporation counsel who shall conduct the examination and the custodian to whom the transcript of such examination shall be submitted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">No such demand shall require the production of any documentary material, the submission of any answers to written interrogatories, or the giving of any oral testimony, if such material, answers, or testimony would be protected from disclosure under:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">the standards applicable to subpoenas or subpoenas duces tecum issued by the Superior Court of the District of Columbia in aid of a grand jury investigation; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">the standards applicable to discovery requests under the Superior Court of the District of Columbia Rules of Civil Procedure, to the extent that the application of such standards to any such demand is appropriate and consistent with the provisions and purposes of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Any such demand shall be served in any manner provided for service of process in the Superior Court of the District of Columbia, or if the person to be served has no place of business within the District of Columbia, the demand may be served by depositing a duly executed copy in the United States mails by registered mail, return receipt requested, addressed to such person at that person&#39;s principal office or place of business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The production of documentary material in response to a demand served pursuant to this section shall be made under a sworn certificate, in such form as the demand designates, by the person, if a natural person, to whom the demand is directed or, if not a natural person, by a person or persons having knowledge of the facts and circumstances relating to such production, to the effect that all of the documentary material required by the demand and in the possession, custody, or control of the person to whom the demand is directed has been produced and made available to the custodian.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Each interrogatory in a demand served pursuant to this section shall be answered separately and fully in writing under oath, unless such procedure is objected to, in which event the reasons for the objection shall be stated with specificity in lieu of an answer, and such reasons shall be submitted under a sworn certificate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The examination of any person pursuant to a demand for oral testimony served under this section shall be taken before an officer authorized to administer oaths and affirmations by the laws of the District of Columbia. The officer before whom the testimony is to be taken shall put the witness on oath or affirmation and shall personally, or by someone acting under the officer&#39;s direction and in the officer&#39;s presence, record the testimony of the witness. The testimony shall be recorded and transcribed. When the testimony is fully transcribed, the officer before whom the testimony is taken shall promptly transmit a copy of the transcript of the testimony to the custodian.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The assistant corporation counsel conducting the examination shall exclude from the place where the examination is held all other persons: except, the person being examined, the person&#39;s counsel, the officer before whom the testimony is to be taken, and any stenographer taking such testimony.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The oral testimony of any person taken pursuant to a demand served under this section shall be taken in the District of Columbia, or in such other place as may be agreed upon by the assistant corporation counsel conducting the examination and such person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">When the testimony is fully transcribed, the assistant corporation counsel or the officer shall afford the witness (who may be accompanied by counsel) a reasonable opportunity to examine the transcript; and the transcript shall be read to or by the witness, unless such examination and reading are waived by the witness. Any changes in form or substance which the witness desires to make shall be entered and identified upon the transcript by the officer or the assistant corporation counsel with a statement of the reasons given by the witness for making such changes. The transcript shall then be signed by the witness, unless the witness in writing waives the signing, is ill, cannot be found, or refuses to sign. If the transcript is not signed by the witness within 30 days of the witness being afforded a reasonable opportunity to examine the transcript, the officer or the assistant corporation counsel shall sign the transcript and state on the record the fact of the waiver, illness, absence of the witness, or the refusal to sign, together with the reason, if any, given therefor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The officer shall certify on the transcript that the witness was duly sworn by the officer and that the transcript is a true record of the testimony given by the witness, and the officer or assistant corporation counsel shall promptly deliver or send the transcript by registered mail, return receipt requested, addressed to the custodian.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Upon request, the assistant corporation counsel shall furnish a copy of the transcript at no cost to the witness only: except, that the Corporation Counsel may for good cause limit such witness to inspection of the official transcript of the witness&#39;s testimony.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Any person compelled to appear under a demand for oral testimony pursuant to this section may be accompanied, represented, and advised by counsel. Counsel may advise such person, in confidence, either upon the request of such person or upon counsel&#39;s own initiative, with respect to any question asked of such person. Such person or counsel may object on the record to any question, in whole or in part, and shall briefly state for the record the reason for the objection. An objection may properly be made, received, and entered upon the record when a claim is made that such person is entitled to refuse to answer the question on grounds of any constitutional or other legal right or privilege, including the privilege against self-incrimination. Such person shall not otherwise object to or refuse to answer any question, and shall not by himself or through counsel otherwise interrupt the oral examination. If such person refuses to answer any question, the Corporation Counsel may petition the Superior Court of the District of Columbia pursuant to this section for an order compelling such person to answer such question. If such person refuses to answer any question on the grounds of privilege against self-incrimination, the testimony of such person may be compelled by order of court upon the granting of immunity. No testimony or other disclosure compelled under court order or any information directly or indirectly derived from such ordered testimony or disclosure may be used against the person in any criminal case except a prosecution for perjury or otherwise failing to comply with the order.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Any person appearing for oral examination pursuant to a demand served under this section shall be entitled to the same mileage reimbursements which are paid to witnesses in the Superior Court of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Whenever any person fails to comply with any civil investigative demand duly served upon that person under this section or whenever satisfactory copying or reproduction of any such material cannot be done and such person refuses to surrender such material, the Corporation Counsel may file, in the Superior Court of the District of Columbia and serve upon such person a petition for an order of such court for the enforcement of this chapter. A person who, with the intent to avoid, prevent, or obstruct compliance, in whole or in part, with an investigative demand duly and properly made under this section, withholds, misrepresents, removes from any place, conceals, covers up, destroys, mutilates, alters, or by other means falsifies any documentary material, answers to written interrogatories, or oral testimony which is the subject of such demand, or who attempts to do so or solicits another to do so shall upon conviction thereof be fined not more than not more than the amount set forth in [<a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a>] or imprisoned not more than one (1) year or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Within 20 days after the service of any such civil investigative demand upon any person, or at any time before the return date specified in the demand, whichever period is shorter, or within such period exceeding 20 days after service or in excess of such return date as may be prescribed in writing, subsequent to service, by any antitrust investigator named in the demand, such person may file in the Superior Court of the District of Columbia and serve upon the Corporation Counsel a petition for an order of such court modifying or setting aside such demand. The time allowed for compliance with the demand in whole or in part as deemed proper and ordered by the court shall not run during the pendency of such petition in the court, except that such person shall comply with any portion of the demand not sought to be modified or set aside. Such petition shall specify each ground upon which the petitioner relies in seeking such relief, and may be based upon any failure of such demand to comply with the provisions of this section, or upon any constitutional or other legal right or privilege of such person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">At any time during which any custodian is in custody or control of any documentary material or answers to interrogatories delivered, or transcripts of oral testimony given by any person in compliance with any such demand, such person may file, in the Superior Court of the District of Columbia, and serve upon such custodian a petition for an order of such court requiring the performance by such custodian of any duty imposed upon the custodian by this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">Any procedure, other than an action to enforce a demand pursuant to subsection (h) of this section, or testimony taken or material produced under this section or voluntarily in the course of an investigation shall be exempt from the provisions of the District of Columbia Freedom of Information Act (<a href='/dccode/Title-2/Chapter-5/Subchapter-II/2-531.html'>section 2-531</a> et seq.) and shall be kept confidential by the Corporation Counsel before bringing an action against a person under this chapter for the violation under investigation, unless confidentiality is waived by the person who has testified, answered interrogatories, or produced material: except, that testimony taken or material or information produced under this section may be disclosed by the Corporation Counsel to any officer or employee of any federal or state law enforcement agency upon the prior certification of an officer of any such federal or state law enforcement agency that such testimony, material, or information will be maintained in confidence and will be used only for official law enforcement purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(l) </span>
+                
+                    <span class="" style="">Unless otherwise authorized or required by law, any employee of the District of Columbia who shall intentionally disclose information kept confidential by subsection (k) of this section shall be guilty of a misdemeanor punishable by a fine up to $500.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 5, 1981, D.C. <a href='http://openlims.org/public/L3-169.pdf'>Law 3-169</a>, § 2, 27 DCR 5368; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 27(dd), 44 DCR 1271; June 11, 2013, D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>, § 285(d), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Freedom of information, exemptions from disclosure, redaction, see <a href='/dccode/Title-2/Chapter-5/Subchapter-II/2-534.html'>§ 2-534</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-5/Subchapter-II/2-534.html'>§ 2-534</a> and <a href='/dccode/Title-28/Chapter-45/28-4513.html'>§ 28-4513</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28-4505.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> substituted &quot;not more than the amount set forth in [<a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a>]&quot; for &quot;not more than $5,000&quot; in (h).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-169</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-169.pdf'>Law 3-169</a>, see Historical and Statutory Notes following <a href='/dccode/Title-28/Chapter-45/28-4501.html'>§ 28-4501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, the &quot;Second Technical Amendments Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-905, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-519 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a> became effective on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>, the &quot;Criminal Fine Proportionality Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-214. The Bill was adopted on first and second readings on Oct. 16, 2012, and Nov. 1, 2012, respectively. Signed by the Mayor on Jan. 23, 2013, it was assigned Act No. 19-641 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> became effective on June 11, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>: Section 401 of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> provided that the act shall apply only to offenses committed on or after June 11, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

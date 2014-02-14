@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Subpart 3. Priority</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-III/index.html">Part III. Perfection and Priority</a></li>
+                    
+                    <li>↪ Subpart 3. Priority</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-III/Subpart-2/index.html">Subpart 2. Perfection</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-IV/index.html">Part IV. Rights of Third Parties</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Subpart 3. Priority</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-317.html">§ 28:9-317. Interests that take priority over or take free of unperfected security interest or agricultural lien.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-318.html">§ 28:9-318. No interest retained in right to payment that is sold; rights and title of seller of account or chattel paper with respect to creditors and purchasers.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-319.html">§ 28:9-319. Rights and title of consignee with respect to creditors and purchasers.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-320.html">§ 28:9-320. Buyer of goods.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-321.html">§ 28:9-321. Licensee of general intangible and lessee of goods in ordinary course of business.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-322.html">§ 28:9-322. Priorities among conflicting security interests in and agricultural liens on same collateral.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-323.html">§ 28:9-323. Future advances.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-324.html">§ 28:9-324. Priority of purchase-money security interests.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-325.html">§ 28:9-325. Priority of security interests in transferred collateral.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-326.html">§ 28:9-326. Priority of security interests created by new debtor.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-327.html">§ 28:9-327. Priority of security interests in deposit account.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-328.html">§ 28:9-328. Priority of security interests in investment property.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-329.html">§ 28:9-329. Priority of security interests in letter-of-credit right.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-330.html">§ 28:9-330. Priority of purchaser of chattel paper or instrument.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-331.html">§ 28:9-331. Priority of rights of purchasers of instruments, documents, and securities under other articles; priority of interests in financial assets and security entitlements under Article 8.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-332.html">§ 28:9-332. Transfer of money; transfer of funds from deposit account.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-333.html">§ 28:9-333. Priority of certain liens arising by operation of law.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-334.html">§ 28:9-334. Priority of security interests in fixtures and crops.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-335.html">§ 28:9-335. Accessions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-336.html">§ 28:9-336. Commingled goods.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-337.html">§ 28:9-337. Priority of security interests in goods covered by certificate of title.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-338.html">§ 28:9-338. Priority of security interest or agricultural lien perfected by filed financing statement providing certain incorrect information.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-339.html">§ 28:9-339. Priority subject to subordination.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-340.html">§ 28:9-340. Effectiveness of right of recoupment or set-off against deposit account.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-341.html">§ 28:9-341. Bank's rights and duties with respect to deposit account.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="28_9-342.html">§ 28:9-342. Bank's right to refuse to enter into or disclose existence of control agreement.</a></span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-4211. Imposition of accuracy-related penalty.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/index.html">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-42/index.html">Chapter 42. Interest and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-42/Subchapter-II/index.html">Subchapter II. Penalties</a></li>
+                    
+                    <li>↪ § 47-4211. Imposition of accuracy-related penalty.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-42/Subchapter-II/index.html">Subchapter II. Penalties</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-42/Subchapter-II/47-4212.html">§ 47-4212. Imposition of fraud penalty.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-4211. Imposition of accuracy-related penalty.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">For purposes of this section, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Negligence&quot; means a failure to make a reasonable attempt to comply with the provisions of this title or to exercise ordinary and reasonable care in the preparation of a tax return without the intent to defraud. A position with respect to an item is attributable to negligence if it lacks a reasonable basis. Negligence is indicated where:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The taxpayer fails to include on an income tax return an amount of income shown on an information return;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The taxpayer fails to make a reasonable attempt to ascertain the correctness of a deduction, credit, or exclusion on a return; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The taxpayer fails to keep adequate books and records or to substantiate items properly.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Gross valuation misstatement&quot; means the reporting on any return for a tax imposed by this title of the value of a property or the adjusted basis of a property which is greater than or equal to 400%, or less than or equal to 25%, of the amount determined to be the correct amount of the valuation or adjusted basis.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Substantial understatement of income tax&quot; means, for a taxable year, an understatement made by taxpayer in filing an individual or estate tax return if the amount of the understatement for the taxable year exceeds the greater of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Ten percent of the tax required to be shown on the return for the taxable year; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">$2,000.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In the case of a taxpayer other than an individual or estate, subparagraph (A) of this paragraph shall be applied by substituting &quot;$4,000&quot; for &quot;$2,000&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">For purposes of this section, the term &quot;understatement&quot; means the excess of the amount of tax required to be shown on a return less the tax shown on the return.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The amount of the understatement under sub-subparagraph (i) of this paragraph shall be reduced by the portion of the understatement which is attributable to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">The tax treatment of an item by the taxpayer if there is or was substantial authority for the treatment; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">An item if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">The relevant facts affecting the item&#39;s tax treatment are adequately disclosed in a statement attached to the return; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">There is a reasonable basis for the tax treatment of the item by the taxpayer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Substantial valuation misstatement&quot; means the reporting on any return for a tax imposed by this title of the value of a property or the adjusted basis of a property which is greater than or equal to 200%, or less than or equal to 50%, of the amount determined to be the correct amount of the valuation or adjusted basis.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">There shall be added to a tax imposed by this title an amount equal to 20% of the portion of an underpayment which is attributable to one or more of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Negligence;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A substantial understatement of income tax; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A substantial valuation misstatement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">There shall be added to the tax imposed by this title an amount equal to 40% of the portion of an underpayment which is attributable to a gross valuation misstatement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Subsection (b) of this section shall not apply to the portion of an underpayment on which a penalty is imposed under <a href='/dccode/Title-47/Chapter-42/Subchapter-II/47-4212.html'>§ 47-4212</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">No penalty shall be imposed under subsection (b) of this section by reason of a substantial valuation misstatement or a gross valuation misstatement unless the portion of the underpayment for the taxable year attributable to the substantial valuation misstatement exceeds $5,000 ($10,000 in the case of a corporation).</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 9, 2001, D.C. <a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a>, § 403(b), 48 DCR 334; Apr. 4, 2003, D.C. <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, § 11(xx), 50 DCR 896.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-47/Chapter-27B/47-2763.html'>§ 47-2763</a> and <a href='/dccode/Title-47/Chapter-42/Subchapter-III/47-4221.html'>§ 47-4221</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, in subsec. (a)(2), substituted &quot;greater than or equal to 400%, or less than or equal to 25%, of&quot; for &quot;400% or more greater or less than&quot;; and in subsec. (a)(4), substituted &quot;greater than or equal to 200%, or less than or equal to 50%, of&quot; for &quot;200% or more greater or less than&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 12(ggg) of Tax Clarity and Recorder of Deeds Temporary Act of 2002 (D.C. <a href='http://openlims.org/public/L14-191.pdf'>Law 14-191</a>, October 5, 2002, law notification 49 DCR 9549).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 12(ggg) of Tax Clarity and Related Amendments Temporary Act of 2003 (D.C. <a href='http://openlims.org/public/L14-228.pdf'>Law 14-228</a>, March 23, 2003, law notification 50 DCR 2741).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(fff) of Tax Clarity and Recorder of Deeds Emergency Act of 2002 (D.C. Act 14-381, June 6, 2002, 49 DCR 5674).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(ggg) of Tax Clarity and Related Amendments Emergency Act of 2002 (D.C. Act 14-456, July 23, 2002, 49 DCR 8107).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(ggg) of Tax Clarity and Related Amendments Congressional Review Emergency Act of 2002 (D.C. Act 14-510, October 23, 2002, 49 DCR 10247).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a>, see notes under <a href='/dccode/Title-47/Chapter-42/Subchapter-I/47-4201.html'>§ 47-4201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-282</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, see notes following <a href='/dccode/Title-47/Chapter-9/47-902.html'>§ 47-902</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

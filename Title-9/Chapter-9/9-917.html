@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 9-917. Revenues.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/index.html">Title 9. Transportation Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-9/index.html">Chapter 9. District of Columbia Regional Airports Authority</a></li>
+                    
+                    <li>↪ § 9-917. Revenues.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-9/9-916.html">§ 9-916. Trust agreement.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-9/9-918.html">§ 9-918. Trust funds.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 9-917. Revenues.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Authority may fix, revise, charge, and collect fees or other charges for the use of the airports, contract with any person, partnership, association, or corporation desiring the use of any part of the airports, including the right-of-way adjoining the airports for placing on the airports telephone, telegraph, electric light or power lines, and fix the terms, conditions, rents and fees or other charges for use. Fees or other charges shall be so fixed and adjusted in respect of the aggregate of fees or other charges form the airports as to provide a fund sufficient with other revenues, if any, (1) to pay the cost of maintaining, repairing and operating the airports, (2) to pay the principal of and interest on bonds as they become due and payable, and (3) to create reserves for these purposes. The fees and other charges and all other revenues derived from the airports, except the part as may be necessary to pay the cost of maintenance, repair, and operation and provide reserves as may be provided for in the resolution authorizing the issuance of the bonds or in the trust agreement securing the bonds, shall be set aside at regular intervals as may be provided in the resolution or the trust agreement in a sinking fund, which is pledged to, and charged with, the payment of the principal of the interest on the bonds as they become due, and the redemption price or the purchase price of bonds retired by call or purchase as provided in the bonds. The pledge shall be valid and binding from the time when the pledge is made. The fees, other charges, and other revenues or other monies so pledged and subsequently received by the Authority shall immediately be subject to the lien of the pledge without any physical delivery of the lien or further act, and the lien of the pledge shall be valid and binding as against all parties having claims of any kind of tort, contract or otherwise against the Authority, irrespective of whether the parties have notice of the lien. Neither the resolution nor any trust agreement by which a pledge is created need be filed or recorded except in the records of the Authority. The use and disposition of monies to the credit of the sinking fund shall be subject to the provisions of resolution authorizing the issuance of the bonds or of the trust agreement. Except as may otherwise be provided in the resolution or the trust agreement, the sinking fund shall be a fund for all these bonds without distinction or priority of 1 over another.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 3, 1985, D.C. <a href='http://openlims.org/public/L6-67.pdf'>Law 6-67</a>, § 18, 32 DCR 6093.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 7-1267.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

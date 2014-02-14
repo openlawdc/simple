@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-1905. Provision of protective services.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/index.html">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-19/index.html">Chapter 19. Adult Protective Services</a></li>
+                    
+                    <li>↪ § 7-1905. Provision of protective services.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-19/7-1904.html">§ 7-1904. Investigations.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-19/7-1906.html">§ 7-1906. Provisional protection order.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-1905. Provision of protective services.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Department shall ensure that protective services are promptly provided if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">After an APS worker conducts an investigation under <a href='/dccode/Title-7/Chapter-19/7-1904.html'>§ 7-1904</a>, the Department determines that an adult is in need of protective services due to abuse, neglect, or exploitation by a third party;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The adult in need of protective services, or a person authorized by law or court order to consent to the provision of protective services on behalf of the adult, affirmatively consents to the particular services offered;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Reasonable access is not denied by a 3rd person; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The adult in need of protective services, if not indigent and exigent circumstances do not dictate otherwise, agrees to reimburse the District or make a reasonable contribution pursuant to the rules to be issued under <a href='/dccode/Title-7/Chapter-19/7-1909.html'>§ 7-1909(3)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Department&#39;s legal obligation to ensure the provision of protective services shall, except as provided in <a href='/dccode/Title-7/Chapter-19/7-1912.html'>§ 7-1912(c)(1)</a>, not exceed 90 days of services for each adult found to be in need of protective services. This 90-day limitation shall begin with the 1st day of services, apply to only those days on which services are actually provided, and include any days on which services are provided under a protection order issued pursuant to <a href='/dccode/Title-7/Chapter-19/7-1906.html'>§ 7-1906</a> or <a href='/dccode/Title-7/Chapter-19/7-1907.html'>§ 7-1907</a>. The Department&#39;s decision to limit services in a particular case to fewer than 90 days, its determination as to the type or level of services provided, and allegations of noncompliance with this chapter are judicially reviewable only in accordance with <a href='/dccode/Title-7/Chapter-19/7-1912.html'>§ 7-1912(c)(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a-1) </span>
+                
+                    <span class="" style="">Subject to the availability of resources, the Department may provide protective services if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">After an APS worker conducts an investigation under <a href='/dccode/Title-7/Chapter-19/7-1904.html'>§ 7-1904</a>, the Department determines that an adult is in need of protective services due to self-neglect;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The adult in need of protective services, or a person authorized by law or court order to consent to the provision of protective services on behalf of the adult, affirmatively consents to the particular services offered;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Reasonable access is not denied by a third person; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The adult in need of protective services, if not indigent and exigent circumstances do not dictate otherwise, agrees to reimburse the District or make reasonable contribution pursuant to the rules issued under <a href='/dccode/Title-7/Chapter-19/7-1909.html'>§ 7-1909</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If an adult in need of protective services due to abuse, neglect, self-neglect, or exploitation objects to the provision of particular services and it does not manifestly appear to the APS worker that the adult is incapacitated or that the objection is prompted by fear or intimidation instilled by another, the adult shall be entitled to refuse those services and this right of refusal shall be fully respected.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">In any case under this section involving abuse, neglect, or exploitation by a third party that does not meet the requirements of subsection (a)(1) of this section, the Department or other agency designated by the Mayor may provide protective services only after the Attorney General obtains a protection order pursuant to <a href='/dccode/Title-7/Chapter-19/7-1906.html'>§ 7-1906</a> or <a href='/dccode/Title-7/Chapter-19/7-1907.html'>§ 7-1907</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c-1) </span>
+                
+                    <span class="" style="">In any case under this section involving self-neglect, if an APS worker has good cause to believe that an adult is incapacitated, the APS worker, the Department, or the Attorney General may:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Petition the court for appointment of a guardianship of the adult or a conservatorship of the estate of the adult (or a limited guardianship or conservatorship) under Chapter 20 of Title 21;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Make referrals or provide information about the adult and the investigation to the appropriate public or private agencies, and monitor the results of any such referrals, as appropriate;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Provide protective services to the extent possible under the circumstances; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Provide protective services when and if a person authorized by law or court order to consent to the provision of protective services on behalf of the adult, affirmatively consents to the particular services offered.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In accordance with procedures to be established under <a href='/dccode/Title-7/Chapter-19/7-1909.html'>§ 7-1909(1)</a>, the Mayor shall ensure that, when appropriate, an APS worker is accompanied by a police officer while providing protective services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">When determining the appropriateness of particular services, the Department or other designated agency shall first consider those protective services that encourage maximum self-determination and are least restrictive of personal liberty.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">No provision of subsections (a-1) or (c-1) of this section shall be construed to create an entitlement (either direct or implied) on the part of any individual or family to any services under this chapter for an adult who meets the criteria for self-neglect or who is determined to be at risk due to self-neglect.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 14, 1985, D.C. <a href='http://openlims.org/public/L5-156.pdf'>Law 5-156</a>, § 6, 32 DCR 13; Mar. 8, 2006, D.C. <a href='http://openlims.org/public/L16-67.pdf'>Law 16-67</a>, § 2(e), 53 DCR 40.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-7/Chapter-19/7-1904.html'>§ 7-1904</a>, <a href='/dccode/Title-7/Chapter-19/7-1906.html'>§ 7-1906</a>, <a href='/dccode/Title-7/Chapter-19/7-1909.html'>§ 7-1909</a>, and <a href='/dccode/Title-7/Chapter-19/7-1912.html'>§ 7-1912</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-2505.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-67.pdf'>Law 16-67</a>, in subsec. (a)(1)(A), substituted &quot;services due to abuse, neglect, or exploitation by a third party;&quot; for &quot;services;&quot;; added subsecs. (a-1), (c-1), and (f); and rewrote subsecs. (b) and (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-156</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L5-156.pdf'>Law 5-156</a>, see Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-19/7-1901.html'>§ 7-1901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-67</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-67.pdf'>Law 16-67</a>, see notes following <a href='/dccode/Title-7/Chapter-19/7-1901.html'>§ 7-1901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delayed application of <a href='http://openlims.org/public/L5-156.pdf'>Law 5-156</a>: See Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-19/7-1901.html'>§ 7-1901</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

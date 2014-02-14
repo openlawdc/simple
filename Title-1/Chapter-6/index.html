@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Chapter 6. Merit Personnel System</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                    <li>↪ Chapter 6. Merit Personnel System</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-5/index.html">Chapter 5. Officers and Employees Generally</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-7/index.html">Chapter 7. District of Columbia Employees Retirement Program Management</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Chapter 6. Merit Personnel System</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-I/index.html">Subchapter I. Findings; Purpose</a></span>
+                
+                    <br><span class="range">§§ 1-601.01 &ndash; 1-601.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-II/index.html">Subchapter II. Coverage; Status of Present Employees; Retention of Existing Personnel Rights and Benefits</a></span>
+                
+                    <br><span class="range">§§ 1-602.01 &ndash; 1-602.06</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-III/index.html">Subchapter III. Definitions</a></span>
+                
+                    <br><span class="range">§§ 1-603.01 &ndash; 1-603.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-IV/index.html">Subchapter IV. Organization for Personnel Management</a></span>
+                
+                    <br><span class="range">§§ 1-604.01 &ndash; 1-604.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-V/index.html">Subchapter V. Public Employee Relations Board</a></span>
+                
+                    <br><span class="range">§§ 1-605.01 &ndash; 1-605.04</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VI/index.html">Subchapter VI. Office of Employee Appeals</a></span>
+                
+                    <br><span class="range">§§ 1-606.01 &ndash; 1-606.11</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VII/index.html">Subchapter VII. Equal Employment Opportunity</a></span>
+                
+                    <br><span class="range">§§ 1-607.01 &ndash; 1-607.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VII-A/index.html">Subchapter VII-A. Residency Requirement</a></span>
+                
+                    <br><span class="range">§§ 1-607.51 &ndash; 1-607.51</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VIII/index.html">Subchapter VIII. Career Service</a></span>
+                
+                    <br><span class="range">§§ 1-608.01 &ndash; 1-608.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VIII-A/index.html">Subchapter VIII-A. Educational Service</a></span>
+                
+                    <br><span class="range">§§ 1-608.01a &ndash; 1-608.01a</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-VIII-B/index.html">Subchapter VIII-B. Government Attorneys</a></span>
+                
+                    <br><span class="range">§§ 1-608.51 &ndash; 1-608.81</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-IX/index.html">Subchapter IX. Excepted Service</a></span>
+                
+                    <br><span class="range">§§ 1-609.01 &ndash; 1-609.09</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-IX-A/index.html">Subchapter IX-A. Management Supervisory Service</a></span>
+                
+                    <br><span class="range">§§ 1-609.51 &ndash; 1-609.58</span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-X/index.html">Subchapter X. Executive Service [Repealed]</a></span>
+                
+                    <br><span class="range">§§ 1-610.01 &ndash; 1-610.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-X-A/index.html">Subchapter X-A. Executive Service</a></span>
+                
+                    <br><span class="range">§§ 1-610.51 &ndash; 1-610.64</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-X-B/index.html">Subchapter X-B. Lateral Police Career Appointments</a></span>
+                
+                    <br><span class="range">§§ 1-610.71 &ndash; 1-610.76</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XI/index.html">Subchapter XI. Classification; Compensation</a></span>
+                
+                    <br><span class="range">§§ 1-611.01 &ndash; 1-611.21</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XI-A/index.html">Subchapter XI-A. Mayor and Council Compensation Advisory Commission</a></span>
+                
+                    <br><span class="range">§§ 1-611.51 &ndash; 1-611.57</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XII/index.html">Subchapter XII. Hours of Work; Legal Holidays; Leave</a></span>
+                
+                    <br><span class="range">§§ 1-612.01 &ndash; 1-612.11</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XII-A/index.html">Subchapter XII-A. Voluntary Leave Transfer Program</a></span>
+                
+                    <br><span class="range">§§ 1-612.31 &ndash; 1-612.38</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XIII/index.html">Subchapter XIII. Employee Development</a></span>
+                
+                    <br><span class="range">§§ 1-613.01 &ndash; 1-613.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XIII-A/index.html">Subchapter XIII-A. Performance Management</a></span>
+                
+                    <br><span class="range">§§ 1-613.51 &ndash; 1-613.53</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XIV/index.html">Subchapter XIV. Performance-Rating Plans</a></span>
+                
+                    <br><span class="range">§§ 1-614.01 &ndash; 1-614.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XIV-A/index.html">Subchapter XIV-A. Managers Accountability</a></span>
+                
+                    <br><span class="range">§§ 1-614.11 &ndash; 1-614.14</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XV/index.html">Subchapter XV. Employee Rights and Responsibilities</a></span>
+                
+                    <br><span class="range">§§ 1-615.01 &ndash; 1-615.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XV-A/index.html">Subchapter XV-A. Whistleblower Protection</a></span>
+                
+                    <br><span class="range">§§ 1-615.51 &ndash; 1-615.59</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XVI/index.html">Subchapter XVI. Adverse Actions; Grievances</a></span>
+                
+                    <br><span class="range">§§ 1-616.01 &ndash; 1-616.03</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XVI-A/index.html">Subchapter XVI-A. General Discipline and Grievances</a></span>
+                
+                    <br><span class="range">§§ 1-616.51 &ndash; 1-616.54</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XVII/index.html">Subchapter XVII. Labor-Management Relations</a></span>
+                
+                    <br><span class="range">§§ 1-617.01 &ndash; 1-617.18</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XVIII/index.html">Subchapter XVIII. Employee Conduct</a></span>
+                
+                    <br><span class="range">§§ 1-618.01 &ndash; 1-618.04</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XIX/index.html">Subchapter XIX. Incentive Awards</a></span>
+                
+                    <br><span class="range">§§ 1-619.01 &ndash; 1-619.03</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XX/index.html">Subchapter XX. Safety and Health</a></span>
+                
+                    <br><span class="range">§§ 1-620.01 &ndash; 1-620.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XX-A/index.html">Subchapter XX-A. Testing of Drivers of Commercial Motor Vehicles for the Presence of Alcohol and Controlled Substances</a></span>
+                
+                    <br><span class="range">§§ 1-620.11 &ndash; 1-620.11</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XX-B/index.html">Subchapter XX-B. Mandatory Drug and Alcohol Testing of Certain Employees of the Department of Human Services and the Commission on Mental Health Services</a></span>
+                
+                    <br><span class="range">§§ 1-620.21 &ndash; 1-620.25</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XX-C/index.html">Subchapter XX-C. Mandatory Drug and Alcohol Testing for Certain Employees Who Serve Children</a></span>
+                
+                    <br><span class="range">§§ 1-620.31 &ndash; 1-620.37</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XX-D/index.html">Subchapter XX-D. Criminal History Inquiries</a></span>
+                
+                    <br><span class="range">§§ 1-620.41 &ndash; 1-620.44</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXI/index.html">Subchapter XXI. Health Benefits</a></span>
+                
+                    <br><span class="range">§§ 1-621.01 &ndash; 1-621.17</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXII/index.html">Subchapter XXII. Life Insurance; Benefit Program Study</a></span>
+                
+                    <br><span class="range">§§ 1-622.01 &ndash; 1-622.16</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXIII/index.html">Subchapter XXIII. Public Sector Workers' Compensation</a></span>
+                
+                    <br><span class="range">§§ 1-623.01 &ndash; 1-623.47</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXIV/index.html">Subchapter XXIV. Reductions-In-Force</a></span>
+                
+                    <br><span class="range">§§ 1-624.01 &ndash; 1-624.09</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXIV-A/index.html">Subchapter XXIV-A. Transition Benefits for Displaced Employees</a></span>
+                
+                    <br><span class="range">§§ 1-624.21 &ndash; 1-624.24</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXV/index.html">Subchapter XXV. Political Rights of Employees</a></span>
+                
+                    <br><span class="range">§§ 1-625.01 &ndash; 1-625.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXVI/index.html">Subchapter XXVI. Retirement</a></span>
+                
+                    <br><span class="range">§§ 1-626.01 &ndash; 1-626.14</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXVII/index.html">Subchapter XXVII. Temporary Assignment of District Employees</a></span>
+                
+                    <br><span class="range">§§ 1-627.01 &ndash; 1-627.06</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXVIII/index.html">Subchapter XXVIII. Agreements Authorized</a></span>
+                
+                    <br><span class="range">§§ 1-628.01 &ndash; 1-628.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXIX/index.html">Subchapter XXIX. Employee Debt Set-Offs</a></span>
+                
+                    <br><span class="range">§§ 1-629.01 &ndash; 1-629.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXX/index.html">Subchapter XXX. Elimination of Personal Surety Bonds for District Employees</a></span>
+                
+                    <br><span class="range">§§ 1-630.01 &ndash; 1-630.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXI/index.html">Subchapter XXXI. Records Management and Privacy of Records</a></span>
+                
+                    <br><span class="range">§§ 1-631.01 &ndash; 1-631.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXII/index.html">Subchapter XXXII. Implementation; Conforming Amendments and Repealers; Specific Retention of Laws and Authorities; Rules of Construction</a></span>
+                
+                    <br><span class="range">§§ 1-632.01 &ndash; 1-632.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXIII/index.html">Subchapter XXXIII. Appropriations</a></span>
+                
+                    <br><span class="range">§§ 1-633.01 &ndash; 1-633.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXIV/index.html">Subchapter XXXIV. Annual Report</a></span>
+                
+                    <br><span class="range">§§ 1-634.01 &ndash; 1-634.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXV/index.html">Subchapter XXXV. Separability</a></span>
+                
+                    <br><span class="range">§§ 1-635.01 &ndash; 1-635.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Subchapter-XXXVI/index.html">Subchapter XXXVI. Effective Date Provisions; Implementation Task Force</a></span>
+                
+                    <br><span class="range">§§ 1-636.01 &ndash; 1-636.03</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

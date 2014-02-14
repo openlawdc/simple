@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-1530. Attorney fees.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/index.html">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-15/index.html">Chapter 15. Workers&#39; Compensation</a></li>
+                    
+                    <li>↪ § 32-1530. Attorney fees.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-15/32-1529.html">§ 32-1529. Powers of Mayor.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-15/32-1531.html">§ 32-1531. Employer record of injury or death.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-1530. Attorney fees.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">If the employer or carrier declines to pay any compensation on or before the 30th day after receiving written notice from the Mayor that a claim for compensation has been filed, on the grounds that there is no liability for compensation within the provisions of this chapter, and the person seeking benefits thereafter utilizes the services of an attorney-at-law in the successful prosecution of his claim, there shall be awarded, in addition to the award of compensation, in a compensation order, a reasonable attorney&#39;s fee against the employer or carrier in an amount approved by the Mayor, or court, as the case may be, which shall be paid directly by the employer or carrier to the attorney for the claimant in a lump sum after the compensation order becomes final.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the employer or carrier pays or tenders payment of compensation without an award pursuant to this chapter, and thereafter a controversy develops over the amount of additional compensation, if any, to which the employee may be entitled, the Mayor shall recommend in writing a disposition of the controversy. If the employer or carrier refuse to accept such written recommendation, within 14 days after its receipt by them, they shall pay or tender to the employee in writing the additional compensation, if any, to which they believe the employee is entitled. If the employee refuses to accept such payment or tender of compensation and thereafter utilizes the services of an attorney-at-law, and if the compensation thereafter awarded is greater than the amount paid or tendered by the employer or carrier, a reasonable attorney&#39;s fee based solely upon the difference between the amount awarded and the amount tendered or paid shall be awarded in addition to the amount of compensation. The foregoing sentence shall not apply if the controversy relates to degree or length of disability, and if the employer or carrier offers to submit the case for evaluation by physicians employed or selected by the Mayor, as authorized in <a href='/dccode/Title-32/Chapter-15/32-1507.html'>§ 32-1507(e)</a>, and offers to tender an amount of compensation based upon the degree or length of disability found by the independent medical report at such time as an evaluation of disability can be made. If the claimant is successful in review proceedings before the Mayor or court in any such case, an award may be made in favor of the claimant and against the employer or carrier for a reasonable attorney&#39;s fee for claimant&#39;s counsel in accordance with the above provisions. In all other cases any claim for legal services shall not be assessed against the employer or carrier.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">In all cases, fees for attorneys representing the claimant shall be approved in the manner herein provided. If any proceedings are had before the Mayor or any court for review of any actions, award, order or decision, the Mayor or court may approve an attorney&#39;s fee for the work done before him or it, as the case may be, by the attorney for the claimant. An approved attorney&#39;s fee, in cases in which the obligation to pay the fee is upon the claimant, may be made a lien upon the compensation due under an award, and the Mayor or court shall fix in the award approving the fee such lien and manner of payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In cases where an attorney&#39;s fee is awarded against an employer or carrier there may be further assessed against such employer or carrier as costs, fees and mileage for necessary witnesses attending the hearing at the instance of claimant. Both the necessity for the witness and the reasonableness of the fees of expert witnesses must be approved by the Mayor, or the court, as the case may be. The amounts awarded against the employer or carrier as attorney&#39;s fees, costs, fees and mileage of witnesses shall not in any respect affect or diminish the compensation payable under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Any person who receives any fees, other consideration or any gratuity on account of services rendered as a representative of a claimant, unless such consideration or gratuity is approved by the Mayor or court, or who makes it a business to solicit employment for a lawyer, or for himself in respect of any claim or award for compensation, shall upon conviction thereof for each offense be punished by a fine of not more than $1,000 or by imprisonment for not more than 1 year, or by both such fine and imprisonment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">At no time shall an attorney&#39;s fee be approved in excess of 20% of the actual benefit secured through the efforts of the attorney. This provision applies to all benefits secured through the efforts of an attorney, including settlements provided for under this chapter.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 1, 1980, D.C. <a href='http://openlims.org/public/L3-77.pdf'>Law 3-77</a>, § 31, 27 DCR 2503.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-32/Chapter-15/32-1508.html'>§ 32-1508</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 36-330.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-77</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-77.pdf'>Law 3-77</a>, see Historical and Statutory Notes following <a href='/dccode/Title-32/Chapter-15/32-1501.html'>§ 32-1501</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

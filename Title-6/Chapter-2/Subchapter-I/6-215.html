@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 6-215. Status of Authority employees.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/index.html">Title 6. Housing and Building Restrictions and Regulations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-2/index.html">Chapter 2. District of Columbia Housing Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-2/Subchapter-I/index.html">Subchapter I. District of Columbia Housing Authority, 1999</a></li>
+                    
+                    <li>↪ § 6-215. Status of Authority employees.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-2/Subchapter-I/6-214.html">§ 6-214. Social services teams in public housing.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-2/Subchapter-I/6-216.html">§ 6-216. Authority employees&#39; benefits.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 6-215. Status of Authority employees.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">All employees hired by the Authority after May 9, 2000, shall be employees of the Authority and not of the District. No provision of Chapter 6 of Title 1 shall apply to employees of the Authority except as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Subchapters V and XVII shall apply to the labor-management relationship between the Authority and its employees, except that the Authority shall have sole authority with respect to the development and approval of compensation agreements between the Authority and labor organizations without the approval of the Mayor and Council;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Subchapter XV-A shall apply to Authority employees; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Subchapter XXIII shall continue to apply to Authority employees, except that the Authority may participate in the private sector workers&#39; compensation program, and Authority employees shall be entitled to the coverage and benefits available to employees under Chapter 15 of Title 32, at such time as the Authority deems that such participation is most favorable to the Authority; provided, that with regard to employees subject to collective bargaining agreements, any change from the public to the private sector workers&#39; compensation program shall be made only by agreement between the collective bargaining representative and the Authority.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">All Authority employees continuously employed by the District government since December 31, 1979 shall be guaranteed rights and benefits at least equal to those currently applicable to such persons under provisions of law and regulations in force prior to May 9, 2000.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Every incumbent employee serving the Authority on May 9, 2000, shall be retained in a position with at least equal classification, compensation, and benefits as the position held on the day before May 9, 2000.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Authority shall be bound by all existing collective bargaining agreements with labor organizations until successor agreements have been negotiated. Except as specifically provided in this chapter, the Authority shall be subject to all general laws applicable to public employers in the District of Columbia, including laws concerning human rights, wages and hours, and occupational safety and health.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If the Authority applies to the PERB for review of an arbitration award in accordance with <a href='/dccode/Title-1/Chapter-6/Subchapter-V/1-605.02.html'>§ 1-605.02</a> and the PERB denies review, the PERB shall enter an order requiring the Authority to comply with the award and the Authority shall be liable to the labor organization for its litigation expenses, including attorneys&#39; fees, in connection with the arbitration proceedings and the proceedings before the PERB. If the labor organization prevails in any subsequent litigation brought by the Authority with respect to the same award, the Authority shall be liable to the labor organization for its litigation expenses, including attorneys&#39; fees, in connection with the litigation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Notwithstanding the provisions of Unit A of Chapter 14 of Title 2, each qualified District resident applicant shall receive an additional 10-point preference over a qualified non-District resident applicant for all positions within the Authority unless the applicant declines the preference. This 10-point preference shall be in addition to, and not instead of, qualifications established for the position. All persons hired after February 6, 2008, shall submit proof of residency upon employment in a manner determined by the Board. An applicant claiming the hiring preference under this section shall agree in writing to maintain bona fide District residency for a period of 7 consecutive years from the effective date of hire and shall provide proof of such residency annually to the director of personnel of the Authority for the first 7 years of employment. Failure to maintain District residency for the consecutive 7-year period shall result in forfeiture of employment. The Authority shall submit to the Mayor and the Council annual reports detailing the names of all new employees and their pay schedules, titles, and place of residence.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(May 9, 2000, D.C. <a href='http://openlims.org/public/L13-105.pdf'>Law 13-105</a>, § 16, 47 DCR 1325; Feb. 6, 2008, D.C. <a href='http://openlims.org/public/L17-108.pdf'>Law 17-108</a>, § 208(b), 54 DCR 10993.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-108.pdf'>Law 17-108</a> added subsec. (f).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of section, see notes following <a href='/dccode/Title-6/Chapter-2/Subchapter-I/6-201.html'>§ 6-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-105</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-105.pdf'>Law 13-105</a>, see notes following <a href='/dccode/Title-6/Chapter-2/Subchapter-I/6-201.html'>§ 6-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-108</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-108.pdf'>Law 17-108</a>, see notes following <a href='/dccode/Title-6/Chapter-2/Subchapter-I/6-216.html'>§ 6-216</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

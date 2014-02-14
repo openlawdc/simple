@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 19-602.12. Rights at death.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-19/index.html">Title 19. Descent, Distribution, and Trusts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-19/Chapter-6/index.html">Chapter 6. Nonprobate Transfers on Death; Uniform Law</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-19/Chapter-6/Subchapter-II/index.html">Subchapter II. Multiple-Person Accounts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/index.html">Part B. Ownership as Between Parties and Others</a></li>
+                    
+                    <li>↪ § 19-602.12. Rights at death.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.11.html">§ 19-602.11. Ownership during lifetime.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.13.html">§ 19-602.13. Alteration of rights.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 19-602.12. Rights at death.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except as otherwise provided in this subchapter, on death of a party sums on deposit in a multiple-party account belong to the surviving party or parties. If 2 or more parties survive and one is the surviving spouse or surviving domestic partner of the decedent, the amount to which the decedent, immediately before death, was beneficially entitled under <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.11.html'>section 19-602.11</a> belongs to the surviving spouse or surviving domestic partner. If 2 or more parties survive and none is the surviving spouse or surviving domestic partner of the decedent, the amount to which the decedent, immediately before death, was beneficially entitled under <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.11.html'>section 19-602.11</a> belongs to the surviving parties in equal shares, and augments the proportion to which each survivor, immediately before the decedent&#39;s death, was beneficially entitled under <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.11.html'>section 19-602.11</a>, and the right of survivorship continues between the surviving parties.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">In an account with a POD designation:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">On death of one of 2 or more parties, the rights in sums on deposit are governed by subsection (a) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">On death of the sole party or the last survivor of 2 or more parties, sums on deposit belong to the surviving beneficiary or beneficiaries. If 2 or more beneficiaries survive, sums on deposit belong to them in equal and undivided shares, and there is no right of survivorship in the event of death of a beneficiary thereafter. If no beneficiary survives, sums on deposit belong to the estate of the last surviving party.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Sums on deposit in a single-party account without a POD designation, or in a multiple-party account that, by the terms of the account, is without right of survivorship, are not affected by death of a party, but the amount to which the decedent, immediately before death, was beneficially entitled under <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.11.html'>section 19-602.11</a> is transferred as part of the decedent&#39;s estate. A POD designation in a multiple-party account without right of survivorship is ineffective. For the purposes of this section, designation of an account as a tenancy in common establishes that the account is without right of survivorship.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The ownership right of a surviving party or beneficiary, or of the decedent&#39;s estate, in sums on deposit is subject to requests for payment made by a party before the party&#39;s death, whether paid by the financial institution before or after death, or unpaid. The surviving party or beneficiary, or the decedent&#39;s estate, is liable to the payee of an unpaid request for payment. The liability is limited to a proportionate share of the amount transferred under this section, to the extent necessary to discharge the request for payment.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-292.pdf'>Law 13-292</a>, § 302(b), 48 DCR 2087; Apr. 4, 2006, D.C. <a href='http://openlims.org/public/L16-79.pdf'>Law 16-79</a>, § 5(r), 53 DCR 1035.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-A/19-602.03.html'>§ 19-602.03</a>, <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.13.html'>§ 19-602.13</a>, <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.14.html'>§ 19-602.14</a>, <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-B/19-602.15.html'>§ 19-602.15</a>, and <a href='/dccode/Title-19/Chapter-6/Subchapter-II/Part-C/19-602.22.html'>§ 19-602.22</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-79.pdf'>Law 16-79</a>, in subsec. (a), substituted &quot;surviving spouse or surviving domestic partner&quot; for &quot;surviving spouse&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-292</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-292.pdf'>Law 13-292</a>, see notes following <a href='/dccode/Title-19/Chapter-6/Subchapter-I/19-601.01.html'>§ 19-601.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-79</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-79.pdf'>Law 16-79</a>, see notes following <a href='/dccode/Title-19/Chapter-1/19-101.02.html'>§ 19-101.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 212 of the Uniform Nonprobate Transfers on Death Act (1991 Act).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

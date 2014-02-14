@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 6-1410. Building Rehabilitation Code.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/index.html">Title 6. Housing and Building Restrictions and Regulations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-14/index.html">Chapter 14. Construction Codes</a></li>
+                    
+                    <li>↪ § 6-1410. Building Rehabilitation Code.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-14/6-1409.html">§ 6-1409. Amendments; supplements; editions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-14/6-1411.html">§ 6-1411. Establishment of the District of Columbia Building Rehabilitation Code Advisory Council.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 6-1410. Building Rehabilitation Code.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">For purposes of this section and <a href='/dccode/Title-6/Chapter-14/6-1411.html'>§ 6-1411</a>, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Addition&quot; means an increase in:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Building area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Aggregate floor area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Height; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Number of stories of a building or structure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Alteration&quot; means the:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Reconfiguration of any space;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Addition or elimination of any door or window;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Reconfiguration or extension of any system; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Installation of any additional equipment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Change of occupancy&quot; means a change in the purpose or level of activity within a structure that involves a change in application of the requirements of the BRC.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Construction permit application&quot; means any application made to DCRA for construction in private space.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;BRC&quot; means the Building Rehabilitation Code.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;DCRA&quot; means the Department of Consumer and Regulatory Affairs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;District of Columbia Building Rehabilitation Code Advisory Council&quot; or &quot;Rehabilitation Council&quot; means the 19-member board appointed by the Mayor to advise the Mayor on the development, adoption, and revisions to the BRC, as well as other related matters set forth in <a href='/dccode/Title-6/Chapter-14/6-1411.html'>§ 6-1411</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Existing building&quot; means any building or structure that was erected and occupied or issued a certificate of occupancy at least one year before a construction permit application for that building or structure was made to DCRA.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Reconstruction&quot; means the:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Reconfiguration of a space which affects an exit or element of the egress access shared by more than a single occupant;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Reconfiguration of a space such that the work area is not permitted to be occupied because existing means of egress and fire protection systems, or their equivalent, are not in place or continuously maintained; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Extensive modifications.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Rehabilitation&quot; means any construction work undertaken in an existing building that includes repair, renovation, modification, reconstruction, change of occupancy, or addition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Renovation&quot; means the:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Change, strengthening, or addition of load bearing elements; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Refinishing, replacing, bracing, strengthening, upgrading, or extensive repair of existing materials, elements, components, equipment, or fixtures.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;renovation&quot; shall not include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Reconfiguration of space; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Interior and exterior painting.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Repair&quot; means the patching, restoration, or minor replacement of materials, elements, components, equipment, or fixtures for the purpose of maintaining these materials, elements, components, equipment, or fixtures in good or sound condition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor shall issue rules to adopt the BRC, which shall be modeled on the Nationally Applicable Recommended Rehabilitation Provisions developed by the United States Department of Housing and Urban Development or the International Existing Building Code developed by the International Code Council. The Mayor shall submit the proposed rules to the Council for its review within 360 days of June 25, 2002. The Council shall have 90 days, exclusive of Saturdays, Sundays, holidays, and days of Council recess, in which to review and affirmatively approve the BRC. If the Council does not approve the BRC, it shall be deemed disapproved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The BRC shall, at a minimum:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Maintain a level of safety consistent with existing codes and provide for multiple categories of work with multiple compliance standards;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Be enforceable by the Mayor using existing enforcement procedures;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Apply to repair, renovation, modification, reconstruction, change of occupancy, and addition to an existing building; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Provide for an expedited review process for proposed amendments to the BRC submitted by the Council or another source.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Within 180 days after the adoption of the BRC and any subsequent amendments thereto, the Mayor shall propose amendments to make the Construction Codes consistent with the BRC.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Mayor, in cooperation with the District of Columbia Building Rehabilitation Code Advisory Council, shall review the BRC and propose amendments at least every 3 years.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">To enable the electronic database established under <a href='/dccode/Title-6/Chapter-14/6-1403.01.html'>§ 6-1403.01</a> to remain current, the Rehabilitation Council shall submit an amendment to DCRA at least 15 days before June 25, 2002.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 21, 1987, D.C. <a href='http://openlims.org/public/L6-216.pdf'>Law 6-216</a>, § 10a, as added June 25, 2002, D.C. <a href='http://openlims.org/public/L14-162.pdf'>Law 14-162</a>, § 201(a)(3), 49 DCR 4438.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-6/Chapter-14A/6-1451.01.html'>§ 6-1451.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 3(d) of D.C. <a href='http://openlims.org/public/L19-181.pdf'>Law 19-181</a> repealed this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 8 of D.C. <a href='http://openlims.org/public/L19-181.pdf'>Law 19-181</a> provided that any order, rule, or regulation in effect under a law replaced by this act shall remain in effect until repealed, amended, or superseded.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 9 of D.C. <a href='http://openlims.org/public/L19-181.pdf'>Law 19-181</a> provided that sections 3, 4, 5, 6, and 7 of the act shall apply upon the Mayor&#39;s issuance of a comprehensive final rulemaking governing signs on public space and private property pursuant to section 2 of the act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 11(b) of D.C. <a href='http://openlims.org/public/L19-181.pdf'>Law 19-181</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) repeal of section, see § 3(d) of the Sign Regulation Emergency Amendment Act of 2012 (D.C. Act 19-387, July 11, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 8491</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary repeal of section, see § 3(d) of the Sign Regulation Congressional Review Emergency Amendment Act of 2012 (D.C. Act 19-499, October 26, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 12749</a>), applicable after the Mayor&#39;s issuance of a comprehensive final rulemaking governing signs on public space and private property, and with the condition that any order, rule, or regulation in effect under a law replaced by this act shall remain in effect until repealed, amended, or superseded.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-162</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L14-162.pdf'>Law 14-162</a>, see notes following <a href='/dccode/Title-6/Chapter-14/6-1401.html'>§ 6-1401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 301 of D.C. <a href='http://openlims.org/public/L14-162.pdf'>Law 14-162</a> provided: &quot;Pursuant to Title I of the District of Columbia Administrative Procedure Act, approved October 21, 1968 (<a href='http://api.fdsys.gov/link?collection=statute&volume=82&page=1204'>82 Stat. 1204</a>; D.C. Official Code <a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-501.html'>§ 2-501</a> et seq.), the Mayor may issue rules to implement the provisions of this act.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 3(d) of D.C. <a href='http://openlims.org/public/L19-289.pdf'>Law 19-289</a> would have repealed this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 9 of D.C. <a href='http://openlims.org/public/L19-289.pdf'>Law 19-289</a> provided &quot;Any order, rule, or regulation in effect under a law replaced by this act shall remain in effect until repealed, amended, or superseded.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of D.C. <a href='http://openlims.org/public/L19-289.pdf'>Law 19-289</a>, § 3: Section 10 of D.C. <a href='http://openlims.org/public/L19-289.pdf'>Law 19-289</a> provided that sections 3, 4, 5, 6, 7, and 8 of the act shall not apply until the Mayor&#39;s issuance of a comprehensive final rulemaking governing signs on public space and private property pursuant to section 2 of the act. Section 2 of D.C. <a href='http://openlims.org/public/L19-289.pdf'>Law 19-289</a> rewrote §<a href='/dccode/Title-1/Chapter-3/Subchapter-II/Part-B/1-303.21.html'>§ 1-303.21</a> and 1-303.23, and repealed <a href='/dccode/Title-1/Chapter-3/Subchapter-II/Part-B/1-303.22~P.html'>§ 1-303.22</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

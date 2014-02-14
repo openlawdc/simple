@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-329.01. Acceptance of gifts and donations.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/index.html">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-XIII/index.html">Subchapter XIII. Acceptance of Gifts and Donations</a></li>
+                    
+                    <li>↪ § 1-329.01. Acceptance of gifts and donations.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XIII/index.html">Subchapter XIII. Acceptance of Gifts and Donations</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XIV/index.html">Subchapter XIV. Mayor&#39;s Official Residence</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-329.01. Acceptance of gifts and donations.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An entity of the District of Columbia government may accept and use a gift or donation during fiscal year 2003 and any subsequent fiscal year if -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">the Mayor approves the acceptance and use of the gift or donation (except as provided in paragraph (2) of this subsection); and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">the entity uses the gift or donation to carry out its authorized functions or duties.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Council of the District of Columbia and the District of Columbia courts may accept and use gifts without prior approval by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Each entity of the District of Columbia government shall keep accurate and detailed records of the acceptance and use of any gift or donation under subsection (a) of this section, and shall make such records available for audit and public inspection.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this section, the term &quot;entity of the District of Columbia government&quot; includes an independent agency of the District of Columbia and the District of Columbia Public Libraries.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">This section shall not apply to the District of Columbia Board of Education, which may, pursuant to the laws and regulations of the District of Columbia, accept and use gifts to the public schools without prior approval by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">This section shall not apply to the Board of Library Trustees, which may, pursuant to the laws and regulations of the District of Columbia, accept and use gifts to the District of Columbia Public Library without prior approval by the Mayor.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Feb. 20, 2003, <a href='http://api.fdsys.gov/link?collection=statute&volume=117&page=123'>117 Stat. 123</a>, <a href='http://www.govtrack.us/search?q=public%20law%20108-7'>Pub. L. 108-7</a>, Div. C, title III, § 115; Oct. 16, 2006, <a href='http://api.fdsys.gov/link?collection=statute&volume=120&page=2029'>120 Stat. 2029</a>, <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, § 125; Mar. 14, 2007, D.C. <a href='http://openlims.org/public/L16-268.pdf'>Law 16-268</a>, § 6, 54 DCR 833.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-44/Chapter-9A/44-951.06.html'>§ 44-951.06</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-369.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, in subsec. (c), inserted &quot;and the District of Columbia Public Libraries&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-268.pdf'>Law 16-268</a> added subsec. (e).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 4602 of the Fiscal Year 2001 Budget Support Congressional Review Emergency Act of 2000 (D.C. Act 13-438, October 6, 2000, 47 DCR 8740).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-268</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-268.pdf'>Law 16-268</a>, the &quot;Public Charter School Assets and Facilities Preservation Amendment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-624, which was referred to Committee on Education, Libraries and Recreation. The Bill was adopted on first and second readings on December 6, 2006, and December 19, 2006, respectively. Signed by the Mayor on December 28, 2006, it was assigned Act No. 16-624 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-268.pdf'>Law 16-268</a> became effective on March 14, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegation of Authority Pursuant to D.C. Official Code <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html'>§ 1-204.22</a> (6) (2001) &amp; 1-329.01 (2001) Concerning Gifts and Donations to Support the Citizen Summit II, see Mayor&#39;s Order 2001-137, September 14, 2001 (48 DCR 9001).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegation of Authority to Accept Donations, see Mayor&#39;s Order 2001-141, September 18, 2001 (48 DCR 9008).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegation of Duty to Administer Public Awareness Campaign for Protections from Predatory Lending and Mortgage Foreclosure Improvements Act of 2000, see Mayor&#39;s Order 2001-159, October 12, 2001 (48 DCR 9891).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Resolutions</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Resolution 18-344, the &quot;Secretary to the Council Authorization to Accept and Use Donations on Behalf of the Council Delegation Authorization Resolution of 2009&quot;, was approved effective December 15, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Mayor's orders</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment - Office of Partnership and Grant Services, see Mayor&#39;s Order 2008-33, February 26, 2008 (55 DCR 5291).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment - Office of Partnerships and Grants Services - Revised, see Mayor&#39;s Order 2010-60, April 23, 2010 (<a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 3509</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Donations and Gifts to the District Government, see Mayor&#39;s Order 2010-167, October 22, 2010 (<a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 10006</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment - Office of Partnerships and Grant Services, see Mayor&#39;s Order 2011-170, October 5, 2011 (<a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 8847</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-172.pdf'>Law 13-172</a>, § 4602, Oct. 19, 2000, 47 DCR 6308, provided similar language:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(a) An entity of the District of Columbia government may accept and use a gift or donation during fiscal year 2001, or any subsequent fiscal year, if:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) The Mayor approves the acceptance and use of the gift or donation; provided, that the Council of the District of Columbia may accept and use gifts without prior approval by the Mayor; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) The entity uses the gift or donation to carry out its authorized functions or duties.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(b) Each entity of the District of Columbia government shall keep accurate and detailed records of the acceptance and use of any gift or donation under subsection (a) of this section, and shall make such records available for audit and public inspection.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(c) For the purposes of this section, the term &#39;entity of the District of Columbia government&#39; includes an independent agency of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(d) This section shall not apply to the District of Columbia Board of Education, which may, pursuant to the laws and regulations of the District of Columbia, accept and use gifts to the public schools without prior approval by the Mayor.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

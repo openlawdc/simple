@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:4A-404. Obligation of beneficiary's bank to pay and give notice to beneficiary.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/index.html">Article 4A. Funds Transfers</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/Part-IV/index.html">Part IV. Payment</a></li>
+                    
+                    <li>↪ § 28:4A-404. Obligation of beneficiary&#39;s bank to pay and give notice to beneficiary.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-4A/Part-IV/28_4A-403.html">§ 28:4A-403. Payment by sender to receiving bank.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-4A/Part-IV/28_4A-405.html">§ 28:4A-405. Payment by beneficiary&#39;s bank to beneficiary.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:4A-404. Obligation of beneficiary's bank to pay and give notice to beneficiary.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Subject to §§ 28:4A-211(e), 28:4A-405(d), and 28:4A-405(e), if a beneficiary&#39;s bank accepts a payment order, the bank is obliged to pay the amount of the order to the beneficiary of the order. Payment is due on the payment date of the order, but if acceptance occurs on the payment date after the close of the funds-transfer business day of the bank, payment is due on the next funds-transfer business day. If the bank refuses to pay after demand by the beneficiary and receipt of notice of particular circumstances that will give rise to consequential damages as a result of nonpayment, the beneficiary may recover damages resulting from the refusal to pay to the extent the bank had notice of the damages, unless the bank proves that it did not pay because of a reasonable doubt concerning the right of the beneficiary to payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If a payment order accepted by the beneficiary&#39;s bank instructs payment to an account of the beneficiary, the bank is obliged to notify the beneficiary of receipt of the order before midnight of the next funds-transfer business day following the payment date. If the payment order does not instruct payment to an account of the beneficiary, the bank is required to notify the beneficiary only if notice is required by the order. Notice may be given by first class mail or any other means reasonable in the circumstances. If the bank fails to give the required notice, the bank is obliged to pay interest to the beneficiary on the amount of the payment order from the day notice should have been given until the day the beneficiary learned of receipt of the payment order by the bank. No other damages are recoverable. Reasonable attorney&#39;s fees are also recoverable if demand for interest is made and refused before an action is brought on the claim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The right of a beneficiary to receive payment and damages as stated in subsection (a) of this section may not be varied by agreement or a funds-transfer system rule. The right of a beneficiary to be notified as stated in subsection (b) of this section may be varied by agreement of the beneficiary or by a funds-transfer system rule if the beneficiary is notified of the rules before initiation of the funds transfer.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 30, 1992, D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, § 2(c), 39 DCR 1595.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:4A-405, § 28:4A-406, and § 28:4A-501.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:4A-404.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-95</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, see Historical and Statutory Notes following § 28:4A-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. The first sentence of subsection (a) states the time when the obligation of the beneficiary&#39;s bank arises. The second and third sentences state when the beneficiary&#39;s bank must make funds available to the beneficiary. They also state the measure of damages for failure, after demand, to comply. Since the Expedited Funds Availability Act, 12 U.S.C. 4001 et seq., also governs funds availability in a funds transfer, the second and third sentences of subsection (a) may be subject to preemption by that Act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (a) provides that the beneficiary of an accepted payment order may recover consequential damages if the beneficiary&#39;s bank refuses to pay the order after demand by the beneficiary if the bank at that time had notice of the particular circumstances giving rise to the damages. Such damages are recoverable only to the extent the bank had &quot;notice of the damages.&quot; The quoted phrase requires that the bank have notice of the general type or nature of the damages that will be suffered as a result of the refusal to pay and their general magnitude. There is no requirement that the bank have notice of the exact or even the approximate amount of the damages, but if the amount of damages is extraordinary the bank is entitled to notice of that fact. For example, in Evra Corp. v. Swiss Bank Corp., 673 F.2d 951 (7th Cir.1982), failure to complete a funds transfer of only $27,000 required to retain rights to a very favorable ship charter resulted in a claim for more than $2,000,000 of consequential damages. Since it is not reasonably foreseeable that a failure to make a relatively small payment will result in damages of this magnitude, notice is not sufficient if the beneficiary&#39;s bank has notice only that the $27,000 is necessary to retain rights on a ship charter. The bank is entitled to notice that an exceptional amount of damages will result as well. For example, there would be adequate notice if the bank had been made aware that damages of $1,000,000 or more might result.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Under the last clause of subsection (a) the beneficiary&#39;s bank is not liable for damages if its refusal to pay was &quot;because of a reasonable doubt concerning the right of the beneficiary to payment.&quot; Normally there will not be any question about the right of the beneficiary to receive payment. Normally, the bank should be able to determine whether it has accepted the payment order and, if it has been accepted, the first sentence of subsection (a) states that the bank is obliged to pay. There may be uncommon cases, however, in which there is doubt whether acceptance occurred. For example, if acceptance is based on receipt of payment by the beneficiary&#39;s bank under Section 4A-403 (a)(1) or (2), there may be cases in which the bank is not certain that payment has been received. There may also be cases in which there is doubt about whether the person demanding payment is the person identified in the payment order as beneficiary of the order.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The last clause of subsection (a) does not apply to cases in which a funds transfer is being used to pay an obligation and a dispute arises between the originator and the beneficiary concerning whether the obligation is in fact owed. For example, the originator may try to prevent payment to the beneficiary by the beneficiary&#39;s bank by alleging that the beneficiary is not entitled to payment because of fraud against the originator or a breach of contract relating to the obligation. The fraud or breach of contract claim of the originator may be grounds for recovery by the originator from the beneficiary after the beneficiary is paid, but it does not affect the obligation of the beneficiary&#39;s bank to pay the beneficiary. Unless the payment order has been cancelled pursuant to Section 4A-211(c), there is no excuse for refusing to pay the beneficiary and, in a proper case, the refusal may result in consequential damages. Except in the case of a book transfer, in which the beneficiary&#39;s bank is also the originator&#39;s bank, the originator of a funds transfer cannot cancel a payment order to the beneficiary&#39;s bank, with or without the consent of that bank, because the originator is not the sender of that order. Thus, the beneficiary&#39;s bank may safely ignore any instruction by the originator to withhold payment to the beneficiary.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (b) states the duty of the beneficiary&#39;s bank to notify the beneficiary of receipt of the order. If acceptance occurs under Section 4A-209(b)(1) the beneficiary is normally notified. Thus, subsection (b) applies primarily to cases in which acceptance occurs under Section 4A-209(b)(2) or (3). Notice under subsection (b) is not required if the person entitled to the notice agrees or a funds transfer system rule provides that notice is not required and the beneficiary is given notice of the rule.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">In ACH transactions the normal practice is not to give notice to the beneficiary unless notice is requested by the beneficiary. This practice can be continued by adoption of a funds transfer system rule. Subsection (a) is not subject to variation by agreement or by a funds transfer system rule.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

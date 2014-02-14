@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-109.06. Exemptions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1/index.html">Chapter 1. Environmental Controls</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1/Subchapter-V/index.html">Subchapter V. Environmental Impact Statements</a></li>
+                    
+                    <li>↪ § 8-109.06. Exemptions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1/Subchapter-V/8-109.05.html">§ 8-109.05. Supplemental EIS.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-1/Subchapter-V/8-109.07.html">§ 8-109.07. Lead agencies; files.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-109.06. Exemptions.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">No EIS shall be required by this subchapter with respect to an action:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">For which an EIS has been prepared in accordance with the National Environmental Policy Act of 1969 (42 U.S.C. § 4321 et seq.) (&quot;NEPA&quot;), and its implementing regulations, or a determination has been made under NEPA and its implementing regulations that no impact statement is required due to a finding of no significant impact or a finding that the proposed action is categorically excluded from consideration;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">For which a request has been made for the authorization or allocation of funds for a project that involves only a feasibility or planning study for a possible future action that has not been approved, adopted, or funded. The study, however, shall include consideration of environmental factors;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Whose impact on the environment has been considered in the functional equivalent of an EIS;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">That has reached a critical stage of completion prior to October 18, 1989 and the cost of altering or abandoning the action for environmental reasons outweighs the benefits derived from the action;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Of an environmentally protective regulatory nature;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Exempted by rules approved pursuant to <a href='/dccode/Title-8/Chapter-1/Subchapter-V/8-109.09.html'>§ 8-109.09(a)</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Within the Central Employment Area as defined in the Zoning Regulations of the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">For which a lease, permit, certificate, or any other entitlement or permission to act by a District government agency has been approved before December 31, 1989; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Granting an interim operating permit to an existing solid waste facility pursuant to <a href='/dccode/Title-8/Chapter-10/Subchapter-II/8-1053.html'>§ 8-1053</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor or a board, commission, authority, or person shall prepare a supplemental EIS for any action exempted pursuant to subsection (a)(1) or (a)(3) of this section, if a substantial and relevant question remains with regard to the impact of the action on the environment that would otherwise be addressed in an EIS prepared in accordance with this subchapter.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 18, 1989, D.C. <a href='http://openlims.org/public/L8-36.pdf'>Law 8-36</a>, § 7, 36 DCR 5741; Feb. 27, 1996, D.C. <a href='http://openlims.org/public/L11-94.pdf'>Law 11-94</a>, § 12, 42 DCR 7172; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 13, 44 DCR 1271.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-8/Chapter-1/Subchapter-V/8-109.02.html'>§ 8-109.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-986.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 12 of Solid Waste Facility Permit Temporary Act of 1994 (D.C. <a href='http://openlims.org/public/L10-251.pdf'>Law 10-251</a>, March 23, 1995, law notification 42 DCR 1650).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 12 of Solid Waste Facility Permit Temporary Act of 1995 (D.C. <a href='http://openlims.org/public/L11-80.pdf'>Law 11-80</a>, February 6, 1996, law notification 43 DCR 776).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 12 of the Solid Waste Facility Permit Emergency Act of 1994 (D.C. Act 10-384, December 28, 1994, 42 DCR 45).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-36</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-36.pdf'>Law 8-36</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-V/8-109.01.html'>§ 8-109.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-94</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-94.pdf'>Law 11-94</a>, the &quot;Solid Waste Facility Permit Act of 1995,&quot; was introduced in Council and assigned Bill No. 11-036, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on November 7, 1995, and December 5, 1995, respectively. Signed by the Mayor on December 18, 1995, it was assigned Act No. 11-177 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-94.pdf'>Law 11-94</a> became effective on February 27, 1996.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-1/Subchapter-I/8-101.06.html'>§ 8-101.06</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

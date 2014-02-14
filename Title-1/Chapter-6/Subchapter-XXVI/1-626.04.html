@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-626.04. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/index.html">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-XXVI/index.html">Subchapter XXVI. Retirement</a></li>
+                    
+                    <li>↪ § 1-626.04. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.03.html">§ 1-626.03. District retirement benefits.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.05.html">§ 1-626.05. District retirement benefits program.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-626.04. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purpose of §<a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.05.html'>§ 1-626.05</a> through 1-626.12, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Creditable service&quot; means the period of employment to be recognized for purposes of eligibility for retirement benefits, which shall be set forth in rules promulgated by the Mayor pursuant to <a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.08.html'>§ 1-626.08</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">For purposes of vesting pursuant to <a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.10.html'>§ 1-626.10(b)</a>, creditable service for employees whose participation in the District Defined Contribution Plan ceases as a result of the implementation of the National Capital Revitalization and Self-Government Improvement Act of 1997, approved August 5, 1997 (<a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub.L. No. 105-33</a>), shall also include continuous service performed by nonjudicial employees of the District of Columbia courts after September 30, 1997, or service performed for a successor employer that provides the services previously performed by the District government toward the vesting requirement of the Defined Contribution Plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Detention officer&quot; means an employee who is not covered by the Police and Fire Retirement System, whose duties are primarily the investigation, apprehension, or detention of individuals suspected or convicted of offenses against, or violation of, the laws of the United States or the District and whose duties may require frequent contact, supervision, inspection, training, employment, care, transportation, or rehabilitation of individuals in detention. The term &quot;detention officer&quot; includes:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Employees engaged in the activities listed above who are transferred to a supervisory or administrative position;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Employees of the District of Columbia Department of Corrections, its industries, and utilities who are engaged in the activities listed above;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Employees of the Department of Human Services who are engaged in the activities listed above; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Members of the Board of Parole, parole officers, and probation officers who are engaged in the activities listed above.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Employee&quot; means an individual first employed by the government of the District after September 30, 1987, who would have been covered by the Civil Service Retirement System pursuant to 5 U.S.C. § 8331 had the employee been first employed prior to October 1, 1987.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Internal Revenue Code&quot; means the Internal Revenue Code of 1986, approved October 22, 1986 (<a href='http://api.fdsys.gov/link?collection=statute&volume=100&page=2085'>100 Stat. 2085</a>; 26 U.S.C. 1 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Fiduciary&quot; means, except as otherwise provided in subparagraph (B) of this paragraph, any individual who, with respect to the District retirement benefits program:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Exercises any discretionary authority or discretionary control respecting management of the Section 401(a) Trust established by <a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.11.html'>§ 1-626.11</a> or exercises any discretionary authority or discretionary control respecting management of the Trust&#39;s assets;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Renders investment advice for a fee or other compensation, direct or indirect, with respect to any monies or other property of the Trust, or has any authority or responsibility to do so; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Has any discretionary authority or discretionary responsibility in the administration of the Trust.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">If any money or other property of the Trust is invested in securities issued by an investment company registered under An Act to provide for the registration and regulation of investment companies and investment advisers, and for other purposes (15 U.S.C. § 80a-1 et seq.), that investment shall not by itself cause the investment company or the investment company&#39;s adviser or principal underwriter to be deemed a fiduciary or a party in interest as those terms are defined in this chapter. Nothing contained in this subparagraph shall limit the duties imposed on that investment company, investment adviser, or principal underwriter by any other law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The term &quot;party in interest&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Any person having fiduciary responsibilities to the Trust;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Any person providing services to the Trust;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The government of the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">An employee organization recognized as an exclusive representative of any participants in the Trust for purposes of collective bargaining pursuant to <a href='/dccode/Title-1/Chapter-6/Subchapter-XVII/1-617.10.html'>§ 1-617.10</a>; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">A spouse or domestic partner, ancestor, lineal descendant, or spouse or domestic partner of a lineal descendant of any individual described in subparagraph (A) or (B) of this paragraph.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The term &quot;Trust&quot; shall mean the Section 401(a) Trust established by <a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.11.html'>§ 1-626.11</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, § 2604, as added Oct. 1, 1987, D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, § 2(g), 34 DCR 5079; May 10, 1989, D.C. <a href='http://openlims.org/public/L7-231.pdf'>Law 7-231</a>, § 3(3), 36 DCR 492; Mar. 24, 1990, D.C. <a href='http://openlims.org/public/L8-97.pdf'>Law 8-97</a>, § 3(e), 37 DCR 1046; Feb. 5, 1994, D.C. <a href='http://openlims.org/public/L10-68.pdf'>Law 10-68</a>, § 6, 40 DCR 6311; Apr. 29, 1998, D.C. <a href='http://openlims.org/public/L12-92.pdf'>Law 12-92</a>, § 2, 45 DCR 1314; Sept. 12, 2008, D.C. <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, § 3(k), 55 DCR 6758.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Charter school employees, retirement benefits, determination of period of creditable service, see §<a href='/dccode/Title-38/Chapter-17/Subchapter-II/38-1702.08.html'>§ 38-1702.08</a> and 38-1802.07.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-38/Chapter-18/Subchapter-II/38-1802.07.html'>§ 38-1802.07</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-627.4.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, in par. (6)(E), substituted &quot;spouse or domestic partner&quot; for &quot;spouse&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2 of Defined Contribution Transition Vesting Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-57.pdf'>Law 12-57</a>, March 18, 1998, law notification 45 DCR 1894).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2 of the Defined Contribution Transition Vesting Emergency Amendment Act of 1997 (D.C. Act 12-154, September 29, 1997, 44 DCR 5793), and see § 2 of the Defined Contribution Transition Vesting Clarification Emergency Amendment Act of 1997 (D.C. Act 12-215, December 5, 1997, 44 DCR 7618).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of D.C. <a href='http://openlims.org/public/L12-57.pdf'>Law 12-57</a>, see § 3 of the Defined Contribution Transition Vesting Clarification Emergency Amendment Act of 1997 (D.C. Act 12-215, December 5, 1997, 44 DCR 7618).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-27</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.02.html'>§ 1-621.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-231</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-231.pdf'>Law 7-231</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XI/1-611.11.html'>§ 1-611.11</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-97</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-97.pdf'>Law 8-97</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.13.html'>§ 1-626.13</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-68</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-68.pdf'>Law 10-68</a>, the &quot;Technical Amendments Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-166, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 29, 1993, and July 13, 1993, respectively. Signed by the Mayor on August 23, 1993, it was assigned Act No. 10-107 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-68.pdf'>Law 10-68</a> became effective on February 5, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-92</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-92.pdf'>Law 12-92</a>, the &quot;Defined Contribution Transition Vesting Clarification Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-407, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on December 4, 1997, and January 6, 1998, respectively. Signed by the Mayor on January 26, 1998, it was assigned Act No. 12-265 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-92.pdf'>Law 12-92</a> became effective on April 29, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-231</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-C/1-301.45.html'>§ 1-301.45</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

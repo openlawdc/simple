@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:3-109. Payable to bearer or to order.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/index.html">Article 3. Negotiable Instruments</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/Part-I/index.html">Part I. General Provisions and Definitions</a></li>
+                    
+                    <li>↪ § 28:3-109. Payable to bearer or to order.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-I/28_3-108.html">§ 28:3-108. Payable on demand or at definite time.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-I/28_3-110.html">§ 28:3-110. Identification of person to whom instrument is payable.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:3-109. Payable to bearer or to order.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A promise or order is payable to bearer if it:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">States that it is payable to bearer or to the order of bearer or otherwise indicates that the person in possession of the promise or order is entitled to payment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Does not state a payee; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">States that it is payable to or to the order of cash or otherwise indicates that it is not payable to an identified person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A promise or order that is not payable to bearer is payable to order if it is payable to the order of an identified person or to an identified person or order. A promise or order that is payable to order is payable to the identified person.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">An instrument payable to bearer may become payable to an identified person if it is specially indorsed pursuant to section 28:3-205(a). An instrument payable to an identified person may become payable to bearer if it is indorsed in blank pursuant to section 28:3-205(b).</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=675'>77 Stat. 675</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; 1973, Ed., § 28:3-110; Mar. 23, 1995, D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, § 2(d), 42 DCR 467.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:3-103.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:3-109.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-249</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, see Historical and Statutory Notes following § 28:3-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Under <a href='/dccode/Title-3/Chapter-1/3-104.html'>Section 3-104(a)</a>, a promise or order cannot be an instrument unless the instrument is payable to bearer or to order when it is issued or unless <a href='/dccode/Title-3/Chapter-1/3-104.html'>Section 3-104(c)</a> applies. The terms &quot;payable to bearer&quot; and &quot;payable to order&quot; are defined in Section 3-109. The quoted terms are also relevant in determining how an instrument is negotiated. If the instrument is payable to bearer it can be negotiated by delivery alone. <a href='/dccode/Title-3/Chapter-2/3-201.html'>Section 3-201(b)</a>. An instrument that is payable to an identified person cannot be negotiated without the indorsement of the identified person. <a href='/dccode/Title-3/Chapter-2/3-201.html'>Section 3-201(b)</a>. An instrument payable to order is payable to an identified person. Section 3-109(b). Thus, an instrument payable to order requires the indorsement of the person to whose order the instrument is payable.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (a) states when an instrument is payable to bearer. An instrument is payable to bearer if it states that it is payable to bearer, but some instruments use ambiguous terms. For example, check forms usually have the words &quot;to the order of&quot; printed at the beginning of the line to be filled in for the name of the payee. If the drawer writes in the word &quot;bearer&quot; or &quot;cash,&quot; the check reads &quot;to the order of bearer&quot; or &quot;to the order of cash.&quot; In each case the check is payable to bearer. Sometimes the drawer will write the name of the payee &quot;John Doe&quot; but will add the words &quot;or bearer.&quot; In that case the check is payable to bearer. Subsection (a). Under subsection (b), if an instrument is payable to bearer it can&#39;t be payable to order. This is different from former Section 3-110(3). An instrument that purports to be payable both to order and bearer states contradictory terms. A transferee of the instrument should be able to rely on the bearer term and acquire rights as a holder without obtaining the indorsement of the identified payee. An instrument is also payable to bearer if it does not state a payee.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Instruments that do not state a payee are in most cases incomplete instruments. In some cases the drawer of a check may deliver or mail it to the person to be paid without filling in the line for the name of the payee. Under subsection (a) the check is payable to bearer when it is sent or delivered. It is also an incomplete instrument. This case is discussed in Comment 2 to Section 3-115. Subsection (a)(3) contains the words &quot;otherwise indicates that it is not payable to an identified person.&quot; The quoted words are meant to cover uncommon cases in which an instrument indicates that it is not meant to be payable to a specific person. Such an instrument is treated like a check payable to &quot;cash.&quot; The quoted words are not meant to apply to an instrument stating that it is payable to an identified person such as &quot;ABC Corporation&quot; if ABC Corporation is a nonexistent company. Although the holder of the check cannot be the nonexistent company, the instrument is not payable to bearer. Negotiation of such an instrument is governed by <a href='/dccode/Title-3/Chapter-4/3-404.html'>Section 3-404(b)</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

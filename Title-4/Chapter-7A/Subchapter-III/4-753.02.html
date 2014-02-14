@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-753.02. Eligibility for services within the Continuum of Care.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-7A/index.html">Chapter 7A. Services for Homeless Individuals and Families</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-7A/Subchapter-III/index.html">Subchapter III. Continuum of Care</a></li>
+                    
+                    <li>↪ § 4-753.02. Eligibility for services within the Continuum of Care.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-7A/Subchapter-III/4-753.01a.html">§ 4-753.01a. Housing First Fund.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-7A/Subchapter-III/4-753.03.html">§ 4-753.03. Grace period for establishing residency.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-753.02. Eligibility for services within the Continuum of Care.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">An individual or family is eligible to receive services within the Continuum of Care if the individual or family:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Is homeless or at imminent risk of becoming homeless;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Is a resident of the District, as defined by <a href='/dccode/Title-4/Chapter-7A/Subchapter-I/4-751.01.html'>§ 4-751.01(32)</a>, except that low-barrier shelters and severe weather shelters operating as low-barrier shelters shall not be required to receive demonstration of residency or prioritize District residents, pursuant to subsection (b) of this section; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Meets any additional eligibility requirements that have been established pursuant to <a href='/dccode/Title-4/Chapter-7A/Subchapter-IV/Part-D/4-754.31.html'>§ 4-754.31</a> by the provider from whom services are sought.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a-1) </span>
+                
+                    <span class="" style="">Notwithstanding subsection (a)(2) of this section, the Mayor may exclude certain services within the Continuum of Care from the residency requirement; provided, that the Mayor publishes which services are excluded from the requirement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">No individual or family may be deemed ineligible for services solely because the individual or family cannot establish proof of homelessness or residency at the time of the individual or family&#39;s application for assistance. The District shall give priority, however, to an individual or family who establishes proof of residency and homelessness at the time of application for assistance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Mayor shall operate at least one central intake center for families for the purposes of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Assessing the eligibility of families for services within the Continuum of Care and making appropriate referrals for those services; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Serving as a resource center for families who are seeking information about the availability of services within the Continuum of Care.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">The Mayor shall operate an intake center specializing in crisis intervention services and located in close proximity to the Landlord and Tenant Branch of the Superior Court of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Families who are eligible for services within the Continuum of Care shall receive appropriate referrals to the first available provider based on the chronological order in which they apply for assistance, consistent with any additional eligibility requirements established pursuant to <a href='/dccode/Title-4/Chapter-7A/Subchapter-IV/Part-D/4-754.32.html'>§ 4-754.32</a> by the provider from whom services are sought.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any family who is determined to be eligible for services pursuant to subsection (c)(1)(A) of this section, but who is not immediately served due to lack of capacity, shall be placed on one or more waiting lists for the services sought and shall be served in the order in which appropriate referrals become available.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Notwithstanding paragraph (2) of this subsection, in determining what is an &quot;appropriate referral,&quot; the Mayor shall consider relevant factors, including prior receipt of services, disability, family size, affordability of housing and age, and may use these factors to prioritize a family&#39;s placement in shelter or other service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The Mayor shall not impose or apply eligibility criteria that exclude or tend to exclude an individual with a disability or any class of individuals with disabilities from fully and equally enjoying any services within the Continuum of Care, unless such criteria are shown to be necessary for the provision of the services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Mayor shall operate a computerized information system to collect, maintain, and distribute up-to-date information regarding the number of beds or units available in shelter and supportive housing in the District, the availability of supportive services, and the current usage and unmet demand for such beds, units, and services.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 22, 2005, D.C. <a href='http://openlims.org/public/L16-35.pdf'>Law 16-35</a>, § 8, 52 DCR 8113; Mar. 14, 2007, D.C. <a href='http://openlims.org/public/L16-296.pdf'>Law 16-296</a>, § 2(f), 54 DCR 1097; Apr. 8, 2011, D.C. <a href='http://openlims.org/public/L18-367.pdf'>Law 18-367</a>, § 2(c), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 987</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-4/Chapter-7A/Subchapter-II/4-752.02.html'>§ 4-752.02</a>, <a href='/dccode/Title-4/Chapter-7A/Subchapter-IV/Part-C/4-754.21.html'>§ 4-754.21</a>, and <a href='/dccode/Title-4/Chapter-7A/Subchapter-IV/Part-D/4-754.34.html'>§ 4-754.34</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-296.pdf'>Law 16-296</a>, in subsec. (c), added par. (1A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-367.pdf'>Law 18-367</a>, in subsec. (a)(2), substituted &quot;<a href='/dccode/Title-4/Chapter-7A/Subchapter-I/4-751.01.html'>§ 4-751.01(32)</a>, except that low-barrier shelters and severe weather shelters operating as low-barrier shelters shall not be required to receive demonstration of residency or prioritize District residents, pursuant to subsection (b) of this section; and&quot; for &quot;<a href='/dccode/Title-4/Chapter-2/Subchapter-V/4-205.03.html'>§ 4-205.03</a>&quot;; added subsec. (a-1); and, in subsec. (b), substituted &quot;for assistance. The District shall give priority, however, to an individual or family who establishes proof of residency and homelessness at the time of application for assistance&quot; for &quot;for assistance&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-35</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-35.pdf'>Law 16-35</a>, see notes following <a href='/dccode/Title-4/Chapter-7A/Subchapter-I/4-751.01.html'>§ 4-751.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-296</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-296.pdf'>Law 16-296</a>, see notes following <a href='/dccode/Title-4/Chapter-7A/Subchapter-I/4-751.01.html'>§ 4-751.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-367</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L18-367.pdf'>Law 18-367</a>, see notes under <a href='/dccode/Title-4/Chapter-7A/Subchapter-I/4-751.01.html'>§ 4-751.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

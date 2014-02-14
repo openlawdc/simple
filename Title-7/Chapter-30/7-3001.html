@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-3001. Legislative findings.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/index.html">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-30/index.html">Chapter 30. Choice in Drug Treatment</a></li>
+                    
+                    <li>↪ § 7-3001. Legislative findings.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-30/index.html">Chapter 30. Choice in Drug Treatment</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-30/7-3002.html">§ 7-3002. Definitions.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-3001. Legislative findings.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The current system of treating substance abusers in the District does not serve the needs of the community. There are between 65,000 and 100,000 persons in the District who need treatment for substance abuse. In the first 11 months of FY1999, the Addiction Prevention and Recovery Administration (&quot;APRA&quot;) served only 5,700 clients. No statistics are available regarding whether these individuals were successfully treated. Among other things, too few detoxification services slots create a bottleneck in its treatment programs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The financial costs associated with substance abuse are enormous. According to some estimates, these costs probably exceed $1 billion in the District for health care expenditures, premature death, impaired productivity, motor vehicle crashes, crime, and social welfare cases due to alcohol and drug abuse. For every $1 spent on substance abuse treatment an average of $7 is saved in costs associated with criminal justice, health care and social services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Even more critical are the tragic human costs associated with substance abuse. Substance abuse is a major factor in crime, domestic violence, child abuse, joblessness, emergency room visits, AIDS cases, and public health in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In the District, the human costs are pervasive and devastating. Sixty-seven percent of recent offenders in the District tested positive in at least half of all drug tests. Similarly, 69% of APRA&#39;s clients have an arrest record. Eighty-five percent of child protection cases, 75% of foster care cases, and 35% of AIDS cases are related to drug abuse. Moreover, one in 7 mothers delivering babies test positive for drug use as well; 38% of emergency room visit patients are under the influence of alcohol. Finally, up to 50% of perpetrators of domestic violence have substance abuse problems.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Access to meaningful treatment is clearly a major hurdle to recovery. Seventy-nine percent of APRA&#39;s clients were unemployed and had no insurance. Importantly, while 19.2% of APRA&#39;s clients are eligible for Medicaid, APRA does not access Medicaid dollars for outpatient and residential treatment services. This oversight results is the loss of millions of dollars for such services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The existing programs offered by APRA are insufficient. Sixty percent of substance abusers have psychiatric disorders, but only a fraction of those receive treatment. The Latino community is underserved because of the lack of bilingual residential treatment programs. Additionally, existing services fail to meet the treatment needs of youth, the elderly, pregnant and parenting women, and persons with disabilities.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 18, 2000, D.C. <a href='http://openlims.org/public/L13-146.pdf'>Law 13-146</a>, § 2, 47 DCR 4350; Apr. 24, 2007, D.C. <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, § 29(a), 53 DCR 6198.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, in subsec. (f), substituted &quot;persons with disabilities&quot; for &quot;the disabled&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-146</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-146.pdf'>Law 13-146</a>, the &quot;Choice in Drug Treatment Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-405, which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on March 7, 2000, and April 4, 2000, respectively. Signed by the Mayor on April 20, 2000, it was assigned Act No. 13-329 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-146.pdf'>Law 13-146</a> became effective on July 18, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-305.pdf'>Law 16-305</a>, see notes following <a href='/dccode/Title-7/Chapter-5/Unit-B/7-531.01.html'>§ 7-531.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

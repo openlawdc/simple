@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-15-7. </title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/index.html">Chapter 15. Reorganization of the District Since the Establishment of Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-V/index.html">Subchapter V. 1982</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-V/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1982</a></li>
+                    
+                    <li>↪ § 1-15-7. </a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-V/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1982</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-V/Part-B/index.html">Part B. Reorganization Plan No. 2 of 1982</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-15-7. </h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">(Effective July 3, 1982).
+BUILDING AND ZONING REGULATION ADMINISTRATION</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">I. Purpose</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The purpose of this reorganization plan is to transfer all functions associated with the administration and enforcement of the District of Columbia building and zoning codes from the Department of Housing and Community Development to the Department of Licenses, Investigations and Inspections.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">II. Functions</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The following functions are hereby transferred to the Director of the Department of Licenses, Investigations and Inspections:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">To administer and enforce the statutes, codes and regulations governing the construction, conversion, repair and alteration of buildings in the District of Columbia, including all appurtenances such as walls, fences and signs, and including all equipment installed in or on buildings or structures such as electrical, elevator, plumbing, refrigeration, gas, boiler and pressure vessel equipment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">To administer and enforce the Energy Conservation Code of 1979, D.C. <a href='http://openlims.org/public/L3-39.pdf'>Law 3-39</a>, as it amends the building, plumbing and electrical codes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">To administer and enforce the Architectural Barriers Act of 1980, D.C. <a href='http://openlims.org/public/L3-118.pdf'>Law 3-118</a>, as it amends the building, plumbing, electrical and elevator codes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">To administer and enforce Sections 2, 5, and 6 of D.C. <a href='http://openlims.org/public/L1-64.pdf'>Law 1-64</a>, the D.C. Applications Insurance Implementation Act, relating to permit requirements under the flood insurance program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">To administer and enforce the zoning statutes, codes and regulations governing land use, the height, area and use of buildings, and subdivision of all private land and condominiums;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">To provide technical review and comment on applications filed with the Board of Zoning Adjustment; to maintain a register of approved non-conforming uses;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">To process applications to lease public space under the provisions of the Public Space Utilization Act, <a href='http://www.govtrack.us/search?q=public%20law%2090-598'>Public Law 90-598</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">To inspect buildings and facilities for compliance with building and zoning regulations in response to applications for certificates of occupancy and/or licensing requirements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">To recommend to appropriate officials and agencies any amendments to the zoning regulations which would resolve problems or conflicts in administration;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">To recommend, in consultation with the Building Code Advisory Committee established by Commissioner&#39;s Order 72-173 and with appropriate officials and agencies, amendments to the building codes; to provide staff support to the Building Code Advisory Committee;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">To determine the compliance of new materials, appliances and systems with existing building codes, based on tests by nationally accepted testing laboratories, and issue certificates of approval as appropriate;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(l) </span>
+                
+                    <span class="" style="">To make available to the public information about building and zoning code requirements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(m) </span>
+                
+                    <span class="" style="">To maintain master files and records of approved building plans and permits.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">III. Transfers</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All positions, personnel, property, records, and unexpended balances of appropriations, allocations, and other funds available or to be made available relating to the duties and functions herein are hereby transferred to the Department of Licenses, Investigations and Inspections.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">IV. Organization</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Director of the Department of Licenses, Investigations and Inspections is authorized to organize the personnel and property transferred herein within any organizational unit of the Department as the Director deems appropriate.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">V. Effective Date</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The provisions of this Plan shall become effective pursuant to the requirements of Section 422 (12) of <a href='http://www.govtrack.us/search?q=public%20law%2093-128'>Public Law 93-128</a>, or on a date thereafter to be determined by executive order of the Mayor.</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

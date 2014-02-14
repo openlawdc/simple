@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 50-402. Uniform classification and commercial driver's license requirements.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/index.html">Title 50. Motor and Non-Motor Vehicles and Traffic</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-4/index.html">Chapter 4. Uniform Classification and Commercial Driver&#39;s License</a></li>
+                    
+                    <li>↪ § 50-402. Uniform classification and commercial driver&#39;s license requirements.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-4/50-401.html">§ 50-401. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-4/50-403.html">§ 50-403. Commercial motor vehicle driver responsibility.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 50-402. Uniform classification and commercial driver's license requirements.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Mayor shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Adopt and administer a program to test and ensure the fitness of a person to operate a commercial motor vehicle in accordance with rules issued pursuant to <a href='/dccode/Title-50/Chapter-4/50-409.html'>§ 50-409</a> that comply with the minimum federal standards established under § 12005(a) of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2704(a));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Issue a commercial driver&#39;s license to a person if the person passes a written and driving test for the operation of a commercial vehicle that complies with the minimum standards required by paragraph (1) of this section;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Issue a commercial driver&#39;s license only to a person who operates a commercial motor vehicle and is domiciled in the District of Columbia (&quot;District&quot;);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Authorize a person to operate a commercial motor vehicle only by issuance of a commercial driver&#39;s license that contains the following information:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The name and address of the person to whom the license is issued and a physical description of the person;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A randomly generated number or other information to identify the person. The Mayor shall not print the social security number of the person on the license, unless the person requests that their social security number be used as the identification number of the license. The Mayor shall require an applicant for a commercial driver&#39;s license to provide a social security number on the application, for the purposes of administering and enforcing the laws of the District of Columbia. Notwithstanding any other law, the social security number shall not be a matter of public record. The social security number shall be kept on file with the issuing agency and the applicant shall be so advised.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The class or type of commercial motor vehicle that the person is authorized to operate under the license; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The duration for which the license is valid;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Not issue a commercial driver&#39;s license to a person during a period in which the person is disqualified from the operation of a commercial motor vehicle or the driver&#39;s license of the person is suspended, revoked, or cancelled;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Not issue or renew a commercial driver&#39;s license to a person who has a commercial driver&#39;s license issued by another state unless the person first surrenders the driver&#39;s license issued by the other state;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">Not issue a commercial driver&#39;s license to a person who is less than 21 years of age, except that a commercial driver&#39;s license may be issued to a person who is at least 18 years of age and has at least 2 years driving experience; provided, that a commercial driver&#39;s license issued to a person who is less than 21 years of age shall not be valid for:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Operation of a school bus;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Operation of a vehicle designed to transport 16 or more people, including the driver;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Operation of a vehicle that is more than 26,001 pounds;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The transportation of hazardous material; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Commercial interstate operation in accordance with the minimum federal standards.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Participate in a national commercial driver&#39;s license information system established pursuant to section 12007 of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2706) to enable the District to have access to information regarding any person who:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Applies for or is issued a commercial driver&#39;s license;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is licensed to drive a commercial motor vehicle in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is not qualified to drive a commercial motor vehicle in the District; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Has been convicted in another jurisdiction of a moving traffic violation while driving a commercial motor vehicle; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Comply with any other requirement mandated by section 12009 of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2708).</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 20, 1990, D.C. <a href='http://openlims.org/public/L8-161.pdf'>Law 8-161</a>, § 3, 37 DCR 4665; April 4, 2000, D.C. <a href='http://openlims.org/public/L13-74.pdf'>Law 13-74</a>, § 3, 46 DCR 10423; Sept. 24, 2010, D.C. <a href='http://openlims.org/public/L18-220.pdf'>Law 18-220</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 5588</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-50/Chapter-4/50-408.html'>§ 50-408</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 40-1802.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-74.pdf'>Law 13-74</a> rewrote par. (4)(B) in order to prohibit the Mayor from requiring that the social security number be used as identification number for driver&#39;s licenses.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-220.pdf'>Law 18-220</a> added par. (6A).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-161</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-161.pdf'>Law 8-161</a>, see Historical and Statutory Notes following <a href='/dccode/Title-50/Chapter-4/50-401.html'>§ 50-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-74</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-74.pdf'>Law 13-74</a>, the &quot;Choice of Driver&#39;s License Number Amendment Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-141, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on October 5, 1999, and November 2, 1999, respectively. Signed by the Mayor on November 18, 1999, it was assigned Act No. 13-191 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-74.pdf'>Law 13-74</a> became effective on April 5, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-220</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-220.pdf'>Law 18-220</a>, the &quot;Commercial Driver&#39;s License Minimum Age Requirement Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-325, which was referred to the Committee on Public Works and Transportation. The Bill was adopted on first and second readings on June 1, 2010, and June 15, 2010, respectively. Signed by the Mayor on June 28, 2010, it was assigned Act No. 18-445 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-220.pdf'>Law 18-220</a> became effective on September 24, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Section § 12005(a) of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2704(a))&quot;, referred to in (1), is currently codified as 49 U.S.C. § 31305(a).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Section § 12007 of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2706)&quot;, referred to in the introductory language of (7), is currently codified as 49 U.S.C. § 31309.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Section § 12009 of the Commercial Motor Vehicle Safety Act (49 U.S.C. § 2708)&quot;, referred to in (8), is currently codified as 49 U.S.C. § 31311.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 4 of D.C. <a href='http://openlims.org/public/L18-220.pdf'>Law 18-220</a> provided: &quot;Sec. 4. Applicability. This act shall apply 90 calendar days after the effective date of this act.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Chapter 3. Bridges, Viaducts, and Subways</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/index.html">Title 9. Transportation Systems</a></li>
+                    
+                    <li>↪ Chapter 3. Bridges, Viaducts, and Subways</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-2/index.html">Chapter 2. Street and Alley Closing and Acquisition Procedures</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-4/index.html">Chapter 4. Street Repair and Construction</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Chapter 3. Bridges, Viaducts, and Subways</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-301.html">§ 9-301. Control of bridges; exception.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-302.html">§ 9-302. Construction and repair of bridges over railway and canal rights-of-way.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-303.html">§ 9-303. Bridges across Rock Creek.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-304.html">§ 9-304. Pennsylvania Avenue Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-305.html">§ 9-305. Anacostia Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-306.html">§ 9-306. John Philip Sousa Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-307.html">§ 9-307. Highway Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-308.html">§ 9-308. Rochambeau Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-309.html">§ 9-309. Construction of power boats; exception; "power boats" defined.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-310.html">§ 9-310. Monroe Street Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-311.html">§ 9-311. Francis Scott Key Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-312.html">§ 9-312. South Dakota Avenue Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-313.html">§ 9-313. Connecticut Avenue Bridge over Klingle Valley.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-314.html">§ 9-314. Benning Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-315.html">§ 9-315. Fern and Varnum Streets and Eastern Avenue Viaducts.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-316.html">§ 9-316. Certain grade crossings to be closed after completion of Fern Street Viaduct.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-317.html">§ 9-317. Van Buren Street Subway.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-318.html">§ 9-318. Grade crossing at Lamond closed.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-319.html">§ 9-319. Cedar Street Subway.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-320.html">§ 9-320. Michigan Avenue Viaduct - Construction; cost; highway grade closed.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-321.html">§ 9-321. Michigan Avenue Viaduct - Use by street railway companies.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-322.html">§ 9-322. Highway grade crossing at Michigan Avenue closed.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-323.html">§ 9-323. Subway under Baltimore and Ohio tracks in vicinity of Chestnut Street, Fern Place, and Piney Branch Road.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-324.html">§ 9-324. Calvert Street Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-325.html">§ 9-325. Francis Case Memorial Bridge.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="9-326.html">§ 9-326. Washington Channel Bridge.</a></span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

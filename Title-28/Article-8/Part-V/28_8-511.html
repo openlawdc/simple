@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:8-511. Priority among security interests and entitlement holders.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/index.html">Article 8. Investment Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/Part-V/index.html">Part V. Security Entitlements</a></li>
+                    
+                    <li>↪ § 28:8-511. Priority among security interests and entitlement holders.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-V/28_8-510.html">§ 28:8-510. Rights of purchaser of security entitlement from entitlement holder.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-VI/index.html">Part VI. Transitional Provisions</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:8-511. Priority among security interests and entitlement holders.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except as otherwise provided in subsections (b) and (c) of this section, if a securities intermediary does not have sufficient interests in a particular financial asset to satisfy both its obligations to entitlement holders who have security entitlements to that financial asset and its obligation to a creditor of the securities intermediary who has a security interest in that financial asset, the claims of entitlement holders, other than the creditor, have priority over the claim of the creditor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A claim of a creditor of a securities intermediary who has a security interest in a financial asset held by a securities intermediary has priority over claims of the securities intermediary&#39;s entitlement holders who have security entitlements with respect to that financial asset if the creditor has control over the financial asset.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If a clearing corporation does not have sufficient financial assets to satisfy both its obligations to entitlement holders who have security entitlements with respect to a financial asset and its obligation to a creditor of the clearing corporation who has a security interest in that financial asset, the claim of the creditor has priority over the claims of entitlement holders.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, § 2, 44 DCR 1087.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:8-503.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:8-511.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, see Historical and Statutory Notes following § 28:8-501.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. This section sets out priority rules for circumstances in which a securities intermediary fails leaving an insufficient quantity of securities or other financial assets to satisfy the claims of its entitlement holders and the claims of creditors to whom it has granted security interests in financial assets held by it. Subsection (a) provides that entitlement holders&#39; claims have priority except as otherwise provided in subsection (b), and subsection (b) provides that the secured creditor&#39;s claim has priority if the secured creditor obtains control, as defined in Section 8-106. The following examples illustrate the operation of these rules.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 1. Able &amp; Co., a broker, borrows from Alpha Bank and grants Alpha Bank a security interest pursuant to a written agreement which identifies certain securities that are to be collateral for the loan, either specifically or by category. Able holds these securities in a clearing corporation account. Able becomes insolvent and it is discovered that Able holds insufficient securities to satisfy the claims of customers who have paid for securities that they held in accounts with Able and the collateral claims of Alpha Bank. Alpha Bank&#39;s security interest in the security entitlements that Able holds through the clearing corporation account may be perfected under the automatic perfection rule of Section 9-115(4)(c), but Alpha Bank did not obtain control under Section 8-106. Thus, under Section 8-511(a) the entitlement holders&#39; claims have priority over Alpha Bank&#39;s claim.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Example 2. Able &amp; Co., a broker, borrows from Beta Bank and grants Beta Bank a security interest in securities that Able holds in a clearing corporation account. Pursuant to the security agreement, the securities are debited from Alpha&#39;s account and credited to Beta&#39;s account in the clearing corporation account. Able becomes insolvent and it is discovered that Able holds insufficient securities to satisfy the claims of customers who have paid for securities that they held in accounts with Able and the collateral claims of Alpha Bank. Although the transaction between Able and Beta took the form of an outright transfer on the clearing corporation&#39;s books, as between Able and Beta, Able remains the owner and Beta has a security interest. In that respect the situation is no different than if Able had delivered bearer bonds to Beta in pledge to secure a loan. Beta&#39;s security interest is perfected, and Beta obtained control. See Sections 8-106 and 9-115. Under Section 8-511(b), Beta Bank&#39;s security interest has priority over claims of Able&#39;s customers.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The result in Example 2 is an application to this particular setting of the general principle expressed in <a href='/dccode/Title-8/Chapter-5/8-503.html'>Section 8-503</a>, and explained in the Comments thereto, that the entitlement holders of a securities intermediary cannot assert rights against third parties to whom the intermediary has wrongfully transferred interests, except in extremely unusual circumstances where the third party was itself a participant in the transferor&#39;s wrongdoing. Under subsection (b) the claim of a secured creditor of a securities intermediary has priority over the claims of entitlement holders if the secured creditor has obtained control. If, however, the secured creditor acted in collusion with the intermediary in violating the intermediary&#39;s obligation to its entitlement holders, then under <a href='/dccode/Title-8/Chapter-5/8-503.html'>Section 8-503(e)</a>, the entitlement holders, through their representative in insolvency proceedings, could recover the interest from the secured creditor, that is, set aside the security interest.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. The risk that investors who hold through an intermediary will suffer a loss as a result of a wrongful pledge by the intermediary is no different than the risk that the intermediary might fail and not have the securities that it was supposed to be holding on behalf of its customers, either because the securities were never acquired by the intermediary or because the intermediary wrongfully sold securities that should have been kept to satisfy customers&#39; claims. Investors are protected against that risk by the regulatory regimes under which securities intermediaries operate. Intermediaries are required to maintain custody, through clearing corporation accounts or in other approved locations, of their customers&#39; securities and are prohibited from using customers&#39; securities in their own business activities. Securities firms who are carrying both customer and proprietary positions are not permitted to grant blanket liens to lenders covering all securities which they hold, for their own account or for their customers. Rather, securities firms designate specifically which positions they are pledging. Under SEC Rules 8c-1 and 15c2-1, customers&#39; securities can be pledged only to fund loans to customers, and only with the consent of the customers. Customers&#39; securities cannot be pledged for loans for the firm&#39;s proprietary business; only proprietary positions can be pledged for proprietary loans. SEC Rule 15c3-3 implements these prohibitions in a fashion tailored to modern securities firm accounting systems by requiring brokers to maintain a sufficient inventory of securities, free from any liens, to satisfy the claims of all of their customers for fully paid and excess margin securities. Revised Article 8 mirrors that requirement, specifying in <a href='/dccode/Title-8/Chapter-5/8-504.html'>Section 8-504</a> that a securities intermediary must maintain a sufficient quantity of investment property to satisfy all security entitlements, and may not grant security interests in the positions it is required to hold for customers, except as authorized by the customers.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">If a failed brokerage has violated the customer protection regulations and does not have sufficient securities to satisfy customers&#39; claims, its customers are protected against loss from a shortfall by the Securities Investor Protection Act (&quot;SIPA&quot;). Securities firms required to register as brokers or dealers are also required to become members of the Securities Investor Protection Corporation (&quot;SIPC&quot;), which provides their customers with protection somewhat similar to that provided by FDIC and other deposit insurance programs for bank depositors. When a member firm fails, SIPC is authorized to initiate a liquidation proceeding under the provisions of SIPA. If the assets of the securities firm are insufficient to satisfy all customer claims, SIPA makes contributions to the estate from a fund financed by assessments on its members to protect customers against losses up to $500,000 for cash and securities held at member firms.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Article 8 is premised on the view that the important policy of protecting investors against the risk of wrongful conduct by their intermediaries is sufficiently treated by other law.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (c) sets out a special rule for secured financing provided to enable clearing corporations to complete settlement. The reasons that secured financing arrangements are needed in such circumstances are explained in Comment 7 to Section 9-115. In order to permit clearing corporations to establish liquidity facilities where necessary to ensure completion of settlement, subsection (c) provides a priority for secured lenders to such clearing corporations. Subsection (c) does not turn on control because the clearing corporation may be the top tier securities intermediary for the securities pledged, so that there may be no practicable method for conferring control on the lender.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Clearing corporation&quot;. Section 8-102(a)(5).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Control&quot;. Section 8-106.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Entitlement holder&quot;. Section 8-102(a)(7).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Financial asset&quot;. Section 8-102(a)(9).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Securities intermediary&quot;. Section 8-102(a)(14).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security entitlement&quot;. Section 8-102(a)(17).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security interest&quot;. Section 1-201(37).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Value&quot;. Sections 1-201(44) and 8-116.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

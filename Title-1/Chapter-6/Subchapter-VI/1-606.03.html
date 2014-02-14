@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-606.03. Appeal procedures.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/index.html">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-VI/index.html">Subchapter VI. Office of Employee Appeals</a></li>
+                    
+                    <li>↪ § 1-606.03. Appeal procedures.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-VI/1-606.02.html">§ 1-606.02. Authority; duties of the Office.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-VI/1-606.04.html">§ 1-606.04. Agency hearing procedures.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-606.03. Appeal procedures.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">An employee may appeal a final agency decision affecting a performance rating which results in removal of the employee (pursuant to subchapter XIII-A of this chapter), an adverse action for cause that results in removal, reduction in force (pursuant to subchapter XXIV of this chapter), reduction in grade, placement on enforced leave, or suspension for 10 days or more (pursuant to subchapter XVI-A of this chapter) to the Office upon the record and pursuant to other rules and regulations which the Office may issue. Any appeal shall be filed within 30 days of the effective date of the appealed agency action.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">In any appeal taken pursuant to this section, the Office shall review the record and uphold, reverse, or modify the decision of the agency. The Office may order oral argument, on its own motion or on motion filed by any party within 15 days, and provide such other procedures or rules and regulations as it deems practicable or desirable in any appeal under this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">All decisions of the Office shall include findings of fact and a written decision, as well as the reasons or basis for the decision upon all material issues of fact and law presented on record, and order; provided, however, that the Office may affirm a decision without findings of fact and a written decision. Such decisions shall be published in accordance with the rules and regulations of the Office, and shall be published in the District of Columbia Register. Any decision by a Hearing Examiner shall be made within 120 days, excluding Saturdays, Sundays, and legal holidays, from the date of the appellant&#39;s filing of the appeal with the Office. Within 45 days, excluding Saturdays, Sundays, and legal holidays, after the appeal is filed with the Office, the Office shall determine whether, in accordance with this section and the Office&#39;s own rules, the Office has jurisdiction. Any decision shall include a statement of any further process available to the appellant including, as appropriate, a petition for review or a petition for enforcement and judicial review. Copies of the decision shall be immediately transmitted to the Office and all parties to the appeal, including named parties and intervenors. The initial decision of the Hearing Examiner shall become final 35 days after issuance, unless a party files a petition for review of the initial decision with the Office within the 35-day filing period. In accordance with <a href='/dccode/Title-1/Chapter-6/Subchapter-IV/1-604.04.html'>§ 1-604.04</a>, the Office may promulgate rules to allow a Hearing Examiner a reasonable extension of time if extraordinary circumstances dictate that an appeal cannot be decided within the 120-day period. After issuing the initial decision, the Hearing Examiner shall retain jurisdiction over the case only to the extent necessary to correct the record, rule on a motion for attorney fees, or process any petition for enforcement filed under the authority of the Office. If the Office denies all petitions for review, the initial decision shall become final upon the issuance of the last denial. If the Office grants a petition for review, the subsequent decision of the Office shall be the final decision of the Office unless the decision states otherwise. Administrative remedies are considered exhausted when a decision becomes final in accordance with this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Any employee or agency may appeal the decision of the Office to the Superior Court of the District of Columbia for a review of the record and such Court may affirm, reverse, remove, or modify such decision, or take any other appropriate action the Court may deem necessary.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, § 603, 25 DCR 5740; May 15, 1990, D.C. <a href='http://openlims.org/public/L8-127.pdf'>Law 8-127</a>, § 2(d), 37 DCR 2093; June 10, 1998, D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>, § 101(d)(1), 45 DCR 2464; June 19, 2001, D.C. <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a>, § 2(b), 48 DCR 1873; May 18, 2004, D.C. <a href='http://openlims.org/public/L15-162.pdf'>Law 15-162</a>, § 2(a), 51 DCR 3628; Sept. 30, 2004, D.C. <a href='http://openlims.org/public/L15-189.pdf'>Law 15-189</a>,§ 2(b), 51 DCR 6734.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-6/Subchapter-VI/1-606.11.html'>§ 1-606.11</a> and <a href='/dccode/Title-1/Chapter-6/Subchapter-XVI-A/1-616.52.html'>§ 1-616.52</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-606.3.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-336.3.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a>, in subsec. (a), deleted &quot;or a reduction-in-force (pursuant to subchapter XXIV of this chapter&quot; following &quot;(pursuant to subchapter XVI-A of this chapter),&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-162.pdf'>Law 15-162</a>, in subsec. (a), substituted &quot;reduction in grade, placement on enforced leave,&quot; for &quot;reduction in grade,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-189.pdf'>Law 15-189</a>, in subsec. (a), added &quot;, reduction in force (pursuant to subchapter XXIV of this chapter)&quot; after &quot;that results in removal&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 101(d) of the Omnibus Personnel Reform Amendment Act of 1998 (D.C. Act 12-326, April 1, 1998, 45 DCR 2464).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of § 401 of the Omnibus Personnel Reform Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>), see § 2 of the Personnel Reform Technical Amendment Emergency Act of 1998 (D.C. Act 12-520, December 4, 1998, 45 DCR 9049).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 3 of the Safe Teenage Driving and Merit Personnel Technical Amendment Emergency Amendment Act of 2000 (D.C. Act 13-430, August 14, 2000, 47 DCR 7459).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3 of the Safe Teenage Driving and Merit Personnel Technical Amendment Legislative Review Emergency Amendment Act of 2000 (D.C. Act 13-489, December 18, 2000, 48 DCR 43).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3 of Safe Teenage Driving and Merit Personnel Technical Amendment Congressional Review Emergency Amendment Act of 2001 (D.C. Act 14-30, April 2, 2001, 48 DCR 3336).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Technical Amendments Emergency Act of 2001 (D.C. Act 14-108, August 3, 2001, 48 DCR 7622).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-139</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-I/1-601.01.html'>§ 1-601.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-127</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-127.pdf'>Law 8-127</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-VI/1-606.06.html'>§ 1-606.06</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-124</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-III/1-603.01.html'>§ 1-603.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-313</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-IV/Part-D/1-307.67.html'>§ 1-307.67</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-162</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-162.pdf'>Law 15-162</a>, the &quot;Enforced Leave Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-391, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on February 3, 2004, and March 2, 2004, respectively. Signed by the Mayor on March 18, 2004, it was assigned Act No. 15-397 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-162.pdf'>Law 15-162</a> became effective on May 18, 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-189</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-189.pdf'>Law 15-189</a>, see notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-VI/1-606.01.html'>§ 1-606.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of § 101(d) of D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>: Section 401(a) of D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>, as amended by § 60 of D.C. <a href='http://openlims.org/public/L12-264.pdf'>Law 12-264</a>, provided that § 101(d), (k), (p), (s), and (x) of the act shall apply upon the enactment of legislation by the United States Congress that states the following:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Notwithstanding any other law, section 101(d), (k), (p), (s), and (x) of the Omnibus Personnel Reform Act of 1998, effective June 10, 1998 (D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>; 45 DCR 2464) are enacted into law.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 134 of Title I of Division C of <a href='http://www.govtrack.us/search?q=public%20law%20105-277'>Pub. L. 105-277</a>, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2861'>112 Stat. 2861</a>-596, provided that &quot;Notwithstanding any other law, sections 101(d), (k), (p), (s), and (x) of the Omnibus Personnel Reform Amendment Act of 1998, D.C. <a href='http://openlims.org/public/L12-124.pdf'>Law 12-124</a>, effective June 11, 1998, are enacted into law.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

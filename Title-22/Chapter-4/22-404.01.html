@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 22-404.01. Aggravated assault.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/index.html">Title 22. Criminal Offenses and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-4/index.html">Chapter 4. Assault; Mayhem; Threats</a></li>
+                    
+                    <li>↪ § 22-404.01. Aggravated assault.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-4/22-404.html">§ 22-404. Assault or threatened assault in a menacing manner; stalking.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-4/22-404.02.html">§ 22-404.02. Assault on a public vehicle inspection officer.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 22-404.01. Aggravated assault.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person commits the offense of aggravated assault if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">By any means, that person knowingly or purposely causes serious bodily injury to another person; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Under circumstances manifesting extreme indifference to human life, that person intentionally or knowingly engages in conduct which creates a grave risk of serious bodily injury to another person, and thereby causes serious bodily injury.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any person convicted of aggravated assault shall be fined not more than the amount set forth in <a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a> or be imprisoned for not more than 10 years, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Any person convicted of attempted aggravated assault shall be fined not more than the amount set forth in <a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a> or be imprisoned for not more than 5 years, or both.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1901, 31 Stat. 1322, ch. 854, § 806a, as added Aug. 20, 1994, D.C. <a href='http://openlims.org/public/L10-151.pdf'>Law 10-151</a>, § 202, 41 DCR 2608; June 11, 2013, D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>, § 201(d), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-5/Chapter-1/Subchapter-XVI-B/5-132.21.html'>§ 5-132.21</a> and <a href='/dccode/Title-24/Chapter-1/Subchapter-II/24-112.html'>§ 24-112</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 22-504.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> substituted &quot;not more than the amount set forth in <a href='/dccode/Title-22/Chapter-35B/22-3571.01.html'>§ 22-3571.01</a>&quot; for &quot;not more than $10,000&quot; in (b) and for &quot;not more than $5,000&quot; in (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary addition of section, see § 202 of the Omnibus Criminal Justice Reform Emergency Amendment Act of 1994 (D.C. Act 10-255, June 22, 1994, 41 DCR 4286).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary addition of the Act of Mar. 3, 1901, 31 Stat. 1322, ch. 854, § 806b, concerning assault on a public vehicle inspection officer, see § 401 of the Omnibus Criminal Code Amendments Emergency Amendment Act of 2012 (D.C. Act 19-599, January 14, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 1017</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary addition of the Act of Mar. 3, 1901, 31 Stat. 1322, ch. 854, § 806c, concerning aggravated assault on a public vehicle inspector officer, see § 401 of the Omnibus Criminal Code Amendments Emergency Amendment Act of 2012 (D.C. Act 19-599, January 14, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 1017</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-151</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-151.pdf'>Law 10-151</a>, the &quot;Omnibus Criminal Justice Reform Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-98, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on March 29, 1994, and April 12, 1994, respectively. Signed by the Mayor on May 4, 1994, it was assigned Act No. 10-238 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-151.pdf'>Law 10-151</a> became effective on August 20, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/Title-22/Chapter-4/22-401.html'>§ 22-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a>: Section 401 of D.C. <a href='http://openlims.org/public/L19-317.pdf'>Law 19-317</a> provided that the act shall apply only to offenses committed on or after</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

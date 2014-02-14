@@ -1,0 +1,77 @@
+/* force a vertical scrollbar on all pages so that we don't get horizontal jumps
+   when navigating from a no-scrollbar to a with-scrollbar page and vice versa */
+html{overflow-y:scroll}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgba(67,127,190,1);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgba(42,65,150,1);
+}
+
+header {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 3px solid #75787b;
+}
+
+header .right {
+    float: right;
+}
+
+header #sitename {
+    margin: 0;
+    color: #63666a;
+    font-size: 20px;
+}
+
+header a {
+    color: rgba(67,190,190,1);
+    font-weight: bold;
+}
+
+
+footer {
+    border-top: 1px solid #444;
+    margin-top: 1em;
+    padding: 1em 10px;
+    font-size: 80%;
+    color: #444;
+}
+
+footer p {
+    margin: 0 0 .25em 0;
+}
+
+#sidebar {
+    padding: 0 50px 0 1em;
+    font-size: 13px;
+}
+
+    #sidebar h2 {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+#content {
+    font-size: 16px;
+}
+
+@media (max-width: 780px) {
+    #sidebar {
+        font-size: 11px;
+    }
+    #content {
+        font-size: 14px;
+    }
+}

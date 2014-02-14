@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:4A-507. Choice of law.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/index.html">Article 4A. Funds Transfers</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/Part-V/index.html">Part V. Miscellaneous Provisions</a></li>
+                    
+                    <li>↪ § 28:4A-507. Choice of law.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-4A/Part-V/28_4A-506.html">§ 28:4A-506. Rate of interest.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-5/index.html">Article 5. Letters of Credit</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:4A-507. Choice of law.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The following rules apply unless the affected parties otherwise agree or subsection (c) of this section applies:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The rights and obligations between the sender of a payment order and the receiving bank are governed by the law of the jurisdiction in which the receiving bank is located.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The rights and obligations between the beneficiary&#39;s bank and the beneficiary are governed by the law of the jurisdiction in which the beneficiary&#39;s bank is located.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The issue of when payment is made pursuant to a funds transfer by the originator to the beneficiary is governed by the law of the jurisdiction in which the beneficiary&#39;s bank is located.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the parties described in each paragraph of subsection (a) of this section have made an agreement selecting the law of a particular jurisdiction to govern rights and obligations between each other, the law of that jurisdiction governs those rights and obligations, whether or not the payment order or the funds transfer bears a reasonable relation to that jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A funds-transfer system rule may select the law of a particular jurisdiction to govern (i) rights and obligations between participating banks with respect to payment orders transmitted or processed through the system, or (ii) the rights and obligations of some or all parties to a funds transfer any part of which is carried out by means of the system. A choice of law made pursuant to clause (i) is binding on participating banks. A choice of law made pursuant to clause (ii) is binding on the originator, other sender, or a receiving bank having notice that the funds-transfer system might be used in the funds transfer and of the choice of law by the system when the originator, other sender, or receiving bank issued or accepted a payment order. The beneficiary of a funds transfer is bound by the choice of law if, when the funds transfer is initiated, the beneficiary has notice that the funds-transfer system might be used in the funds transfer and of the choice of law by the system. The law of a jurisdiction selected pursuant to this subsection may govern, whether or not that law bears a reasonable relation to the matter in issue.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In the event of inconsistency between an agreement under subsection (b) of this section and a choice-of-law rule under subsection (c) of this section, the agreement under subsection (b) of this section prevails.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If a funds transfer is made by use of more than one funds-transfer system and there is inconsistency between choice-of-law rules of the systems, the matter in issue is governed by the law of the selected jurisdiction that has the most significant relationship to the matter in issue.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 30, 1992, D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, § 2(c), 39 DCR 1595.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:1-301 and § 28:4A-501.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:4A-507.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-95</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, see Historical and Statutory Notes following § 28:4A-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Funds transfers are typically interstate or international in character. If part of a funds transfer is governed by Article 4A and another part is governed by other law, the rights and obligations of parties to the funds transfer may be unclear because there is no clear consensus in various jurisdictions concerning the juridical nature of the transaction. Unless all of a funds transfer is governed by a single law it may be very difficult to predict the result if something goes wrong in the transfer. Section 4A-507 deals with this problem. Subsection (b) allows parties to a funds transfer to make a choice-of-law agreement. Subsection (c) allows a funds transfer system to select the law of a particular jurisdiction to govern funds transfers carried out by means of the system. Subsection (a) states residual rules if no choice of law has occurred under subsection (b) or subsection (c).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (a) deals with three sets of relationships. Rights and obligations between the sender of a payment order and the receiving bank are governed by the law of the jurisdiction in which the receiving bank is located. If the receiving bank is the beneficiary&#39;s bank the rights and obligations of the beneficiary are also governed by the law of the jurisdiction in which the receiving bank is located. Suppose Originator, located in Canada, sends a payment order to Originator&#39;s Bank located in a state in which Article 4A has been enacted. The order is for payment to an account of Beneficiary in a bank in England. Under subsection (a)(1), the rights and obligations of Originator and Originator&#39;s Bank toward each other are governed by Article 4A if an action is brought in a court in the Article 4A state. If an action is brought in a Canadian court, the conflict of laws issue will be determined by Canadian law which might or might not apply the law of the state in which Originator&#39;s Bank is located. If that law is applied, the execution of Originator&#39;s order will be governed by Article 4A, but with respect to the payment order of Originator&#39;s Bank to the English bank, Article 4A may or may not be applied with respect to the rights and obligations between the two banks. The result may depend upon whether action is brought in a court in the state in which Originator&#39;s Bank is located or in an English court. Article 4A is binding only on a court in a state that enacts it. It can have extraterritorial effect only to the extent courts of another jurisdiction are willing to apply it. Subsection (c) also bears on the issues discussed in this Comment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Under Section 4A-406 payment by the originator to the beneficiary of the funds transfer occurs when the beneficiary&#39;s bank accepts a payment order for the benefit of the beneficiary. A jurisdiction in which Article 4A is not in effect may follow a different rule or it may not have a clear rule. Under Section 4A-507(a)(3) the issue is governed by the law of the jurisdiction in which the beneficiary&#39;s bank is located. Since the payment to the beneficiary is made through the beneficiary&#39;s bank it is reasonable that the issue of when payment occurs be governed by the law of the jurisdiction in which the bank is located. Since it is difficult in many cases to determine where a beneficiary is located, the location of the beneficiary&#39;s bank provides a more certain rule.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (b) deals with choice-of-law agreements and it gives maximum freedom of choice. Since the law of funds transfers is not highly developed in the case law there may be a strong incentive to choose the law of a jurisdiction in which Article 4A is in effect because it provides a greater degree of certainly with respect to the rights of various parties. With respect to commercial transactions, it is often said that &quot;[u]niformity and predictability based upon commercial convenience are the prime considerations in making the choice of governing law ....&quot; R. Leflar, American Conflicts Law,s 185 (1977). Subsection (b) is derived in part from recently enacted choice-of-law rules in the States of New York and California. N.Y. Gen. Obligations <a href='http://openlims.org/public/L5-1401.pdf'>Law 5-1401</a> (McKinney&#39;s 1989 Supp.) and California Civil Code s 1646.5. This broad endorsement of freedom of contract is an enhancement of the approach taken by Restatement (Second) of Conflict of Laws s 187(b) (1971). The Restatement recognizes the basic right of freedom of contract, but the freedom granted the parties may be more limited than the freedom granted here. Under the formulation of the Restatement, if there is no substantial relationship to the jurisdiction whose law is selected and there is no &quot;other&quot; reasonable basis for the parties&#39; choice, then the selection of the parties need not be honored by a court. Further, if the choice is violative of a fundamental policy of a state which has a materially greater interest than the chosen state, the selection could be disregarded by a court. Those limitations are not found in subsection (b).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (c) may be the most important provision in regard to creating uniformity of law in funds transfers. Most rights stated in Article 4A regard parties who are in privity of contract such as originator and beneficiary, sender and receiving bank, and beneficiary&#39;s bank and beneficiary. Since they are in privity they can make a choice of law by agreement. But that is not always the case. For example, an intermediary bank that improperly executes a payment order is not in privity with either the originator or the beneficiary. The ability of a funds transfer system to make a choice of law by rule is a convenient way of dispensing with individual agreements and to cover cases in which agreements are not feasible. It is probable that funds transfer systems will adopt a governing law to increase the certainty of commercial transactions that are effected over such systems. A system rule might adopt the law of an Article 4A state to govern transfers on the system in order to provide a consistent, unitary, law governing all transfers made on the system. To the extent such system rules develop, individual choice-of-law agreements become unnecessary.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Subsection (c) has broad application. A system choice of law applies not only to rights and obligations between banks that use the system, but may also apply to other parties to the funds transfer so long as some part of the transfer was carried out over the system. The originator and any other sender or receiving bank in the funds transfer is bound if at the time it issues or accepts a payment order it had notice that the funds transfer involved use of the system and that the system chose the law of a particular jurisdiction. Under Section 4A-107, the Federal Reserve by regulation could make a similar choice of law to govern funds transfers carried out by use of Federal Reserve Banks. Subsection (d) is a limitation on subsection (c). If parties have made a choice-of-law agreement that conflicts with a choice of law made under subsection (c), the agreement prevails.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Subsection (e) addresses the case in which a funds transfer involves more than one funds transfer system and the systems adopt conflicting choice-of-law rules. The rule that has the most significant relationship to the matter at issue prevails. For example, each system should be able to make a choice of law governing payment orders transmitted over that system without regard to a choice of law made by another system.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

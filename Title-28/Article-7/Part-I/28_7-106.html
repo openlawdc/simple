@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:7-106. Control of electronic document of title.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-7/index.html">Article 7. Documents of Title</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-7/Part-I/index.html">Part I. General</a></li>
+                    
+                    <li>↪ § 28:7-106. Control of electronic document of title.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-7/Part-I/28_7-105.html">§ 28:7-105. Reissuance in alternative medium.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-7/Part-II/index.html">Part II. Warehouse Receipts: Special Provisions</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:7-106. Control of electronic document of title.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person has control of an electronic document of title if a system employed for evidencing the transfer of interests in the electronic document reliably establishes that person as the person to which the electronic document was issued or transferred.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A system satisfies subsection (a) of this section, and a person is deemed to have control of an electronic document of title, if the document is created, stored, and assigned in such a manner that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A single authoritative copy of the document exists which is unique, identifiable, and, except as otherwise provided in paragraphs (4), (5), and (6) of this subsection, unalterable;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The authoritative copy identifies the person asserting control as:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The person to which the document was issued; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">If the authoritative copy indicates that the document has been transferred, the person to which the document was most recently transferred;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The authoritative copy is communicated to and maintained by the person asserting control or its designated custodian;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Copies or amendments that add or change an identified assignee of the authoritative copy can be made only with the consent of the person asserting control;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Each copy of the authoritative copy and any copy of a copy is readily identifiable as a copy that is not the authoritative copy; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Any amendment of the authoritative copy is readily identifiable as authorized or unauthorized.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 27, 2013, D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, § 9, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2634</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:2-103, § 28:4-104, § 28:9-203, § 28:9-207, § 28:9-314, and § 28:9-601.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-299</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See note to § 28:7-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Uniform Statutory Provision:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Uniform Electronic Transactions Act Section 16.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Purpose:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. The section defines &quot;control&quot; for electronic documents of title and derives its rules from the Uniform Electronic Transactions Act § 16 on transferrable records. Unlike UETA § 16, however, a document of title may be reissued in an alternative medium pursuant to <a href='/dccode/Title-7/Chapter-1/Subchapter-I/7-105.html'>Section 7-105</a>. At any point in time in which a document of title is in electronic form, the control concept of this section is relevant. As under UETA § 16, the control concept embodied in this section provides the legal framework for developing systems for electronic documents of title.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Control of an electronic document of title substitutes for the concept of indorsement and possession in the tangible document of title context. See Section 7-501. A person with a tangible document of title delivers the document by voluntarily transferring possession and a person with an electronic document of title delivers the document by voluntarily transferring control. (Delivery is defined in Section 1-201).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (a) sets forth the general rule that the &quot;system employed for evidencing the transfer of interests in the electronic document reliably establishes that person as the person to which the electronic document was issued or transferred.&quot; The key to having a system that satisfies this test is that identity of the person to which the document was issued or transferred must be reliably established. Of great importance to the functioning of the control concept is to be able to demonstrate, at any point in time, </span>
+                
+                    <span class="" style="font-style: italic; ">the person </span>
+                
+                    <span class="" style="">entitled under the electronic document. For example, a carrier may issue an electronic bill of lading by having the required information in a database that is encrypted and accessible by virtue of a password. If the computer system in which the required information is maintained identifies the person as the person to which the electronic bill of lading was issued or transferred, that person has control of the electronic document of title. That identification may be by virtue of passwords or other encryption methods. Registry systems may satisfy this test. For example, see the electronic warehouse receipt system established pursuant to 7 C.F.R. Part 735. This Article leaves to the market place the development of sufficient technologies and business practices that will meet the test.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">An electronic document of title is evidenced by a record consisting of information stored in an electronic medium. Section 1-201. For example, a record in a computer database could be an electronic document of title assuming that it otherwise meets the definition of document of title. To the extent that third parties wish to deal in paper mediums, <a href='/dccode/Title-7/Chapter-1/Subchapter-I/7-105.html'>Section 7-105</a> provides a mechanism for exiting the electronic environment by having the issuer reissue the document of title in a tangible medium. Thus if a person entitled to enforce an electronic document of title causes the information in the record to be printed onto paper without the issuer&#39;s involvement in issuing the document of title pursuant to <a href='/dccode/Title-7/Chapter-1/Subchapter-I/7-105.html'>Section 7-105</a>, that paper is not a document of title.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (a) sets forth the general test for control. Subsection (b) sets forth a safe harbor test that if satisfied, results in control under the general test in subsection (a). The test in subsection (b) is also used in Section 9-105 although Section 9-105 does not include the general test of subsection (a). Under subsection (b), at any point in time, a party should be able to identify the single authoritative copy which is unique and identifiable as the authoritative copy. This does not mean that once created that the authoritative copy need be static and never moved or copied from its original location. To the extent that backup systems exist which result in multiple copies, the key to this idea is that at any point in time, the one authoritative copy needs to be unique and identifiable.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Parties may not by contract provide that control exists. The test for control is a factual test that depends upon whether the general test in subsection (a) or the safe harbor in subsection (b) is satisfied.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Article 7 has historically provided for rights under documents of title and rights of transferees of documents of title as those rights relate to the goods covered by the document. Third parties may possess or have control of documents of title. While misfeasance or negligence in failure to transfer or misdelivery of the document by those third parties may create serious issues, this Article has never dealt with those issues as it relates to tangible documents of title, preferring to leave those issues to the law of contracts, agency and tort law. In the electronic document of title regime, third party registry systems are just beginning to develop. It is very difficult to write rules regulating those third parties without some definitive sense of how the third party registry systems will be structured. Systems that are evolving to date tend to be &quot;closed&quot; systems in which all participants must sign on to the master agreement which provides for rights as against the registry system as well as rights among the members. In those closed systems, the document of title never leaves the system so the parties rely upon the master agreement as to rights against the registry for its failures in dealing with the document. This article contemplates that those &quot;closed&quot; systems will continue to evolve and that the control mechanism in this statute provides a method for the participants in the closed system to achieve the benefits of obtaining control allowed by this article.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This article also contemplates that parties will evolve open systems where parties need not be subject to a master agreement. In an open system a party that is expecting to obtain rights through an electronic document may not be a party to the master agreement. To the extent that open systems evolve by use of the control concept contained in this section, the law of contracts, agency, and torts as it applies to the registry&#39;s misfeasance or negligence concerning the transfer of control of the electronic document will allocate the risks and liabilities of the parties as that other law now does so for third parties who hold tangible documents and fail to deliver the documents.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross Reference:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Sections 7-105 and 7-501.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Definitional Cross-References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Delivery&quot;, 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Document of title&quot;, 1-201.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-403.01. Information to be supplied customers.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-4/index.html">Chapter 4. Pesticides</a></li>
+                    
+                    <li>↪ § 8-403.01. Information to be supplied customers.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-4/8-403.html">§ 8-403. Pesticide applicators.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-4/8-403.02.html">§ 8-403.02. Information to be supplied multi-unit property residents and tenants.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-403.01. Information to be supplied customers.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Before a pesticide is applied, the pesticide operator shall provide the customer with the following written information:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Name of pesticide operator;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Name of pesticide applicator applying pesticides if different from that of the operator;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">District of Columbia pesticide operator license number;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Telephone number of pesticide operator;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">National Capital Poison Control Center hotline number;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Re-entry period specified on the pesticide label, if applicable;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Pest to be controlled;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Common name of pesticide or active ingredient to be applied;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">The following statement: &quot;District of Columbia law requires that you be given the following information:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Notice of Pesticide Application:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">CAUTION - PESTICIDES MAY CONTAIN TOXIC CHEMICALS. Companies that apply pesticides are licensed by the Department of Consumer and Regulatory Affairs and regulated by the District Department of the Environment (&quot;DDOE&quot;). The Environmental Protection Agency and DDOE approve pesticides for use. At your request, the company conducting your pest control will provide you with either or both of the Material Safety Data Sheet(s) or the pesticide label(s), both of which provide further information about the approved uses of and recommended precautions for the pesticide being applied on your property. Neither of these documents is guaranteed to list every danger associated with a pesticide. DDOE maintains a list of pesticides that present a reduced risk to humans and the environment, and encourages the use of such pesticides whenever possible. The pesticide company</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">[] HAS</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">[] HAS NOT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">chosen to apply reduced-risk pesticide(s). The District of Columbia government encourages the use of non-chemical and reduced-risk methods of pest control by residents and commercial pest control companies. Even when using reduced-risk pesticides, residents should familiarize themselves with safety information for pesticide products, and should avoid exposure to pesticides.&quot;; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">At the request of the customer, both or either of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">An original or legible copy of the current pesticide product label; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A Material Safety Data Sheet.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Upon the customer&#39;s request, the pesticide operator shall provide the customer with advance notice of a pesticide application.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">When the pesticide is to be applied on a multi-unit property, the pesticide operator shall provide the information listed in subsection (a) of this section to the customer at least 48 hours before the pesticide is to be applied.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 18, 1978, D.C. <a href='http://openlims.org/public/L2-70.pdf'>Law 2-70</a>, § 4a, as added June 5, 2008, D.C. <a href='http://openlims.org/public/L17-168.pdf'>Law 17-168</a>, § 2, 55 DCR 5180.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-8/Chapter-4/8-403.02.html'>§ 8-403.02</a> and <a href='/dccode/Title-8/Chapter-4/8-403.04.html'>§ 8-403.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-168</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-168.pdf'>Law 17-168</a>, the &quot;Loretta Carter Hanes Pesticide Consumer Notification Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-493 which was referred to the Committee on Public Service and Consumer Affairs. The Bill was adopted on first and second readings on March 4, 2008, and April 1, 2008, respectively. Signed by the Mayor on April 14, 2008, it was assigned Act No. 17-342 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-168.pdf'>Law 17-168</a> became effective on June 5, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

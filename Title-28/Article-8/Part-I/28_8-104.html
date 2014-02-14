@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:8-104. Acquisition of security or financial asset or interest therein.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/index.html">Article 8. Investment Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/Part-I/index.html">Part I. Short Title and General Matters</a></li>
+                    
+                    <li>↪ § 28:8-104. Acquisition of security or financial asset or interest therein.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-103.html">§ 28:8-103. Rules for determining whether certain obligations and interests are securities or financial assets.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-I/28_8-105.html">§ 28:8-105. Notice of adverse claim.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:8-104. Acquisition of security or financial asset or interest therein.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person acquires a security or an interest therein, under this article, if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The person is a purchaser to whom a security is delivered pursuant to § 28:8-301; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The person acquires a security entitlement to the security pursuant to § 28:8-501.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A person acquires a financial asset, other than a security, or an interest therein, under this article, if the person acquires a security entitlement to the financial asset.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A person who acquires a security entitlement to a security or other financial asset has the rights specified in Part 5, but is a purchaser of any security, security entitlement, or other financial asset held by the securities intermediary only to the extent provided in § 28:8-503.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Unless the context shows that a different meaning is intended, a person who is required by other law, regulation, rule, or agreement to transfer, deliver, present, surrender, exchange, or otherwise put in the possession of another person a security or financial asset satisfies that requirement by causing the other person to acquire an interest in the security or financial asset pursuant to subsection (a) or (b) of this section.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, § 2, 44 DCR 1087.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:8-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:8-104.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. This section lists the ways in which interests in securities and other financial assets are acquired under Article 8. In that sense, it describes the scope of Article 8. Subsection (a) describes the two ways that a person may acquire a security or interest therein under this Article: (1) by delivery (<a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>), and (2) by acquiring a security entitlement. Each of these methods is described in detail in the relevant substantive provisions of this Article. Part 3, beginning with the definition of &quot;delivery&quot; in <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>, describes how interests in securities are acquired in the direct holding system. Part 5, beginning with the rules of <a href='/dccode/Title-8/Chapter-5/8-501.html'>Section 8-501</a> on how security entitlements are acquired, describes how interests in securities are acquired in the indirect holding system.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Subsection (b) specifies how a person may acquire an interest under Article 8 in a financial asset other than a security. This Article deals with financial assets other than securities only insofar as they are held in the indirect holding system. For example, a bankers&#39; acceptance falls within the definition of &quot;financial asset,&quot; so if it is held through a securities account the entitlement holder&#39;s right to it is a security entitlement governed by Part 5. The bankers&#39; acceptance itself, however, is a negotiable instrument governed by Article 3, not by Article 8. Thus, the provisions of Parts 2, 3, and 4 of this Article that deal with the rights of direct holders of securities are not applicable. Article 3, not Article 8, specifies how one acquires a direct interest in a bankers&#39; acceptance. If a bankers&#39; acceptance is delivered to a clearing corporation to be held for the account of the clearing corporation&#39;s participants, the clearing corporation becomes the holder of the bankers&#39; acceptance under the Article 3 rules specifying how negotiable instruments are transferred. The rights of the clearing corporation&#39;s participants, however, are governed by Part 5 of this Article.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. The distinction in usage in Article 8 between the term &quot;security&quot; (and its correlatives &quot;security certificate&quot; and &quot;uncertificated security&quot;) on the one hand, and &quot;security entitlement&quot; on the other, corresponds to the distinction between the direct and indirect holding systems. For example, with respect to certificated securities that can be held either directly or through intermediaries, obtaining possession of a security certificate and acquiring a security entitlement are both means of holding the underlying security. For many other purposes, there is no need to draw a distinction between the means of holding. For purposes of commercial law analysis, however, the form of holding may make a difference. Where an item of property can be held in different ways, the rules on how one deals with it, including how one transfers it or how one grants a security interest in it, differ depending on the form of holding.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Although a security entitlement is means of holding the underlying security or other financial asset, a person who has a security entitlement does not have any direct claim to a specific asset in the possession of the securities intermediary. Subsection (c) provides explicitly that a person who acquires a security entitlement is a &quot;purchaser&quot; of any security, security entitlement, or other financial asset held by the securities intermediary only in the sense that under <a href='/dccode/Title-8/Chapter-5/8-503.html'>Section 8-503</a> a security entitlement is treated as a sui generis form of property interest.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (d) is designed to ensure that parties will retain their expected legal rights and duties under Revised Article 8. One of the major changes made by the revision is that the rules for the indirect holding system are stated in terms of the &quot;security entitlements&quot; held by investors, rather than speaking of them as holding direct interests in securities. Subsection (d) is designed as a translation rule to eliminate problems of co-ordination of terminology, and facilitate the continued use of systems for the efficient handling of securities and financial assets through securities intermediaries and clearing corporations. The efficiencies of a securities intermediary or clearing corporation are, in part, dependent on the ability to transfer securities credited to securities accounts in the intermediary or clearing corporation to the account of an issuer, its agent, or other person by book entry in a manner that permits exchanges, redemptions, conversions, and other transactions (which may be governed by pre-existing or new agreements, constitutional documents, or other instruments) to occur and to avoid the need to withdraw from immobilization in an intermediary or clearing corporation physical securities in order to deliver them for such purposes. Existing corporate charters, indentures and like documents may require the &quot;presentation,&quot; &quot;surrender,&quot; &quot;delivery,&quot; or &quot;transfer&quot; of securities or security certificates for purposes of exchange, redemption, conversion or other reason. Likewise, documents may use a wide variety of terminology to describe, in the context for example of a tender or exchange offer, the means of putting the offeror or the issuer or its agent in possession of the security. Subsection (d) takes the place of provisions of prior law which could be used to reach the legal conclusion that book-entry transfers are equivalent to physical delivery to the person to whose account the book entry is credited.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Delivery&quot;. <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Financial asset&quot;. Section 8-102(a)(9).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Person&quot;. Section 1-201(30).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Purchaser&quot;. Sections 1-201(33) and 8-116.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security&quot;. Section 8-102(a)(15).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security entitlement&quot;. Section 8-102(a)(17).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

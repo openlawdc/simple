@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1163.35. Penalties.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/index.html">Chapter 11A. Government Ethics and Accountability</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/Subchapter-III/index.html">Subchapter III. Campaign Finance</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-11A/Subchapter-III/Part-E/index.html">Part E. Prohibited Activities and Enforcement</a></li>
+                    
+                    <li>↪ § 1-1163.35. Penalties.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-11A/Subchapter-III/Part-E/index.html">Part E. Prohibited Activities and Enforcement</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-11A/Subchapter-III/Part-E/1-1163.36.html">§ 1-1163.36. Prohibition on the use of District government resources for campaign-related activities.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1163.35. Penalties.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any person who violates any provision of parts A through E of this subchapter or of subchapter I of Chapter 10 of this title [<a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html'>§ 1-1001.01</a> et seq.], may be assessed a civil penalty by the Elections Board under paragraph (2) of this subsection of not more than $200, or 3 times the amount of an unlawful contribution, expenditure, gift, honorarium, or receipt of outside income, whichever is greater, for each such violation. Each occurrence of a violation of parts A through E of this subchapter and each day of noncompliance with a disclosure requirement of parts A through E of this subchapter or an order of the Elections Board shall constitute a separate offense.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A civil penalty shall be assessed by the Elections Board by order only after the person charged with a violation has been given an opportunity for a hearing, and the Elections Board has determined, by decision incorporating its findings of facts, that a violation did occur, and the amount of the penalty. Any hearing under this section shall be of record and shall be held in accordance with Chapter 5 of Title 2.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Notwithstanding the provisions of paragraph (2) of this subsection, the Elections Board may issue a schedule of fines for violations of Parts A through E of this subchapter, which may be imposed ministerially by the Director of Campaign Finance. A civil penalty imposed under the authority of this paragraph may be reviewed by the Elections Board in accordance with the provisions of paragraph (2) of this subsection. The aggregate set of penalties imposed under the authority of this paragraph may not exceed $2,000.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">If the person against whom a civil penalty is assessed fails to pay the penalty, the Elections Board shall file a petition for enforcement of its order assessing the penalty in the Superior Court of the District of Columbia. The petition shall designate the person against whom the order is sought to be enforced as the respondent. A copy of the petition shall be forthwith sent by registered or certified mail to the respondent and his attorney of record, and if the respondent is a political, exploratory, inaugural, transition, or legal defense committee, to the chairman of the committee, and then the Elections Board shall certify and file in court the record upon which the order sought to be enforced was issued. The court shall have jurisdiction to enter a judgment enforcing, modifying, and enforcing as so modified, or setting aside, in whole or in part, the order and the decision of the Elections Board or it may remand the proceedings to the Elections Board for further action as it may direct. The court may determine de novo all issues of law, but the Election Board&#39;s findings of fact, if supported by substantial evidence, shall be conclusive.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Except as provided in subsection (c) of this section, any person who violates any of the provisions of parts A through E of this subchapter shall be fined not more than $5,000, or shall be imprisoned for not longer than 6 months, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Any person who knowingly files or causes to be filed any false or misleading statement, report, voucher, or other paper, or makes any false or misleading statement to the Elections Board, shall be fined not more than $10,000, or shall be imprisoned for not longer than 5 years, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Prosecutions of violations of parts A through E of this subchapter shall be brought by the United States Attorney for the District of Columbia in the name of the United States.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">All actions of the Elections Board or of the United States Attorney for the District of Columbia to enforce the provisions of parts A, B, D, and E of this subchapter must be initiated within 6 years of the actual occurrence of the alleged violation.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 27, 2012, D.C. <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, § 335, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 1862</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.02.html'>§ 1-1001.02</a> and <a href='/dccode/Title-1/Chapter-11A/Subchapter-III/Part-E/1-1163.37.html'>§ 1-1163.37</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-124</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, see notes under <a href='/dccode/Title-1/Chapter-11A/Subchapter-I/1-1161.01.html'>§ 1-1161.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-1301. Applicability and exceptions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/index.html">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-13/index.html">Chapter 13. Residential Real Property Seller Disclosures</a></li>
+                    
+                    <li>↪ § 42-1301. Applicability and exceptions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-13/index.html">Chapter 13. Residential Real Property Seller Disclosures</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-13/42-1302.html">§ 42-1302. Written statement; written indication of compliance.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-1301. Applicability and exceptions.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The provisions of this chapter shall apply only to the transfer or sale of real estate located in the District of Columbia consisting of not less than one nor more than 4 residential dwelling units, whether by sale, exchange, installment land contract, lease with an option to purchase, or any other option to purchase.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">This chapter shall apply only where the purchaser expresses, in writing, an intent to reside in the property to be transferred.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The provisions of this chapter shall not apply to any of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Transfers pursuant to court order, including, but not limited to, transfers ordered by a probate court in administration of an estate, transfers pursuant to a writ of execution, transfers by any foreclosure sale, transfers by a trustee in bankruptcy, transfers by eminent domain, and transfers resulting from a decree for specific performance;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Transfers to a mortgagee by a mortgagor or successor in interest who is in default, or transfers to a beneficiary of a deed of trust by a trustor or successor in interest who is in default;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Transfers by a sale under a power of sale or any foreclosure sale under a decree of foreclosure after default in an obligation secured by a mortgage or deed of trust or secured by any other instrument containing a power of sale, or transfers by a mortgagee or a beneficiary under a deed of trust who has acquired the real property at a sale conducted pursuant to a power of sale under a mortgage or deed of trust or a sale pursuant to a decree of foreclosure or has acquired the real property by a deed in lieu of foreclosure;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Transfers by a nonoccupant fiduciary in the course of the administration of a decedent&#39;s estate, guardianship, conservatorship, or trust;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Transfers from one cotenant to one or more other co-tenants;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Transfers made to the transferor&#39;s spouse, domestic partner, parent, grandparent, child, grandchild or sibling or any combination of the foregoing;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Transfers between spouses or domestic partners resulting from a judgment of divorce or a judgment of separate maintenance or from a property settlement agreement incidental to such a judgment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Transfers or exchanges to or from any governmental entity; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Transfers made by a person of newly constructed residential property that has not been inhabited.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this section, the term &quot;domestic partner&quot; shall have the same meaning as provided in <a href='/dccode/Title-32/Chapter-7/32-701.html'>§ 32-701(3)</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-263.pdf'>Law 12-263</a>, § 2, 46 DCR 2111; Sept. 12, 2008, D.C. <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, § 35, 55 DCR 6758.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-42/Chapter-13/42-1302.html'>§ 42-1302</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 45-951.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, in subsec. (b)(6), substituted &quot;spouse, domestic partner&quot; for &quot;spouse&quot;; in subsec. (b)(7), substituted &quot;spouses or domestic partners&quot; for &quot;spouses&quot;; and added subsec. (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-263</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-263.pdf'>Law 12-263</a>, the &quot;Residential Real Property Seller Disclosure, Funeral Services Date Change, and Public Service Commission Independent Procurement Authority Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-648, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first, amended first and second readings on October 6 1998, November 10, 1998, and December 1, 1998, respectively. Bill 12-648 was vetoed by the Mayor on December 29, 1998, and the Council overrode the veto on January 5, 1999, whereupon the Bill was assigned Act No. 12-625 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-263.pdf'>Law 12-263</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-231</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-231.pdf'>Law 17-231</a>, see notes following <a href='/dccode/Title-42/Chapter-5/42-516.html'>§ 42-516</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

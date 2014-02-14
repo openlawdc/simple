@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 5-1112. Action by the Metropolitan Police Department.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/index.html">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-11/index.html">Chapter 11. Review of Citizen Complaints Involving Police</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-11/Subchapter-I/index.html">Subchapter I. Police Complaints Board; Office of Police Complaints</a></li>
+                    
+                    <li>↪ § 5-1112. Action by the Metropolitan Police Department.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-11/Subchapter-I/5-1111.html">§ 5-1111. Complaint investigation, findings, and determination.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-11/Subchapter-I/5-1113.html">§ 5-1113. Effect of order dismissing complaint.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 5-1112. Action by the Metropolitan Police Department.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Upon receipt of a complaint file in which one or more allegations in a complaint has been sustained, the Police Chief shall cause the file to be reviewed within 5 working days after receiving the complaint file. This review shall not be conducted by persons from the same organizational unit as the subject police officer or officers. All persons conducting the review shall be senior in grade or rank to the subject police officer or officers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The review of the complaint file shall include a review of the personnel file of the subject officer or officers, including any record of prior misconduct by the subject police officer or officers. Within 15 working days after receiving the complaint file from the Police Chief, the reviewing officers shall make a written recommendation, with supporting reasons, to the Police Chief regarding an appropriate penalty from the Table of Penalties Guide in General Order 1202.1 (Disciplinary Procedures and Processes). This recommendation may include a proposal for any additional action by the Police Chief not inconsistent with the intent and purpose of the citizen complaint review process.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The review may include a proposal that the Police Chief return the merits determination to the Executive Director for review by a final review panel as set forth in subsection (g) of this section, if those charged with the review conclude, with supporting reasons, that, insofar as it sustains one or more allegations in the complaint, the merits determination clearly misapprehends the record before the complaint examiner and is not supported by substantial, reliable, and probative evidence in that record. The staff recommendation may not propose the supplementation of the evidentiary record before the complaint examiner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Within 5 working days after receiving the staff recommendation, the Police Chief shall notify the complainant and the subject police officer or officers in writing of the staff recommendation, and shall afford the complainant and the subject police officer or officers an opportunity to file with the Police Chief, within a reasonable time period set by the Police Chief, a written response to the staff recommendation. The Police Chief shall give full consideration to the written responses received from the complainant and the subject police officer or officers before taking final action with regard to the complaint.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Within 15 working days after receiving the written responses of the complainant and the subject officer or officers, or within 15 working days of the deadline set for receipt of such responses, whichever is earlier, the Police Chief shall issue a decision as to the imposition of discipline upon the subject police officer or officers. The decision of the Police Chief shall be in writing and shall set forth a concise statement of the reasons therefor. The Police Chief may not reject the merits determination, in whole or in part, unless the Police Chief concludes, with supporting reasons, that the merits determination clearly misapprehends the record before the complaint examiner and is not supported by substantial, reliable, and probative evidence in the record before the complaint examiner. The Police Chief may not supplement the evidentiary record.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The Police Chief shall notify the Executive Director, the complainant, and the subject police officer or officers in writing of the action taken by the Police Chief, and shall include in such notice a copy of the decision.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The decision of the Police Chief shall be a final decision with no further right of administrative review, other than as provided in <a href='/dccode/Title-5/Chapter-11/Subchapter-I/5-1114.html'>§ 5-1114(f)</a>, except in the following circumstances:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Police Chief may reopen any closed matter in the interests of fairness and justice; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the Police Chief concludes on the basis of a staff recommendation under subsection (c) of this section, or otherwise, that insofar as it sustains one or more allegations of the complaint, the merits determination clearly misapprehends the record before the complaint examiner, and is not supported by substantial, reliable, and probative evidence in the record, the Police Chief shall return the merits determination to the Executive Director for review by a final review panel comprised of 3 complaint examiners (not including the complaint examiner who prepared the merits determination) selected by the Executive Director. Upon review of the record, and without taking any additional evidence, the final review panel shall issue a written decision, with supporting reasons, regarding the correctness of the merits determination to the extent that the Police Chief has concluded that it erroneously sustained one or more allegations of the complaint. The final review panel shall uphold the merits determination as to any allegation of the complaint that the determination was sustained, unless the panel concludes that the determination regarding the allegation clearly misapprehends the record before the original complaint examiner and is not supported by substantial, reliable, and probative evidence in that record. A copy of the decision of the final review panel shall be transmitted to the Executive Director, the complainant, the subject police officer or officers, and the Police Chief.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">If the final review panel concludes that the merits determination sustaining one or more allegations of the complaint should be reversed in its entirety, the Executive Director shall dismiss the complaint, and notify the parties and the Police Chief in writing of such dismissal. If the final review panel concludes that the merits determination should be upheld as to any allegation of the complaint that the determination has sustained, the Police Chief, within 15 working days of receipt of the panel&#39;s decision, shall issue a supplemental decision as to the imposition of discipline upon the subject officer or officers that is fully consistent with the panel&#39;s decision. The supplemental decision of the Police Chief shall be in writing and shall set forth a concise statement of the reasons therefor. The Police Chief shall notify the Executive Director, the complainant, and the subject police officer or officers in writing of the action taken by the Police Chief, and shall include in such notice a copy of the supplemental decision. The supplemental decision of the Police Chief shall be a final decision with no further right of administrative review, other than as provided in subsection (g) of this section and <a href='/dccode/Title-5/Chapter-11/Subchapter-I/5-1114.html'>§ 5-1114(f)</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar 26, 1999, D.C. <a href='http://openlims.org/public/L12-208.pdf'>Law 12-208</a>, § 13, 45 DCR 8107; Apr. 12, 2000, D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, § 137, 47 DCR 520.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 4-922.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, in the last sentence of subsec. (h), substituted &quot;subsection (g) of this section&quot; for &quot;section 13(g)&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-208</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-208.pdf'>Law 12-208</a>, see Historical and Statutory Notes following <a href='/dccode/Title-5/Chapter-11/Subchapter-I/5-1101.html'>§ 5-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, the &quot;Technical Amendments Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-435, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 2, 1999, and December 7, 1999, respectively. Signed by the Mayor on December 29, 1999, it was assigned Act No. 13-234 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a> became effective on April 12, 2000.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

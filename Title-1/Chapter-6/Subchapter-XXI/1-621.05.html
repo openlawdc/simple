@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-621.05. Health benefit plans.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/index.html">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/index.html">Subchapter XXI. Health Benefits</a></li>
+                    
+                    <li>↪ § 1-621.05. Health benefit plans.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.04.html">§ 1-621.04. Contracting authority.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.06.html">§ 1-621.06. Types of benefits.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-621.05. Health benefit plans.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The District may contract for or approve the following health benefit plans:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An Indemnity Benefit Plan: One District-wide plan offering at least 3 levels of benefits (one of which shall be deemed by the Mayor to be a standard option) under which a carrier agrees to pay certain sums of money, not in excess of the actual expenses incurred, for health benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Health Maintenance Organization Plans including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">One or more group prepayment plans that offer health benefits, in whole or in substantial part on a prepaid basis, with professional services provided by physicians representing at least 3 major medical specialties practicing as a group in a common center or centers who receive all or a substantial part of their professional income from the prepaid funds; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">An individual practice prepayment plan that offers health benefits in whole or substantial part on a prepaid basis, with professional services provided by individual physicians who agree, under rules promulgated by the Mayor, to accept the payments provided by the plan as full payment for covered services that include in-hospital services, general care provided in their offices and in the patients&#39; homes, out-of-hospital diagnostic procedures, and preventive care.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Preferred Provider Organization Plan: An individual practice plan that offers health benefits in whole or substantial part with professional services provided by individual physicians, hospitals, and other health care providers who agree under rules promulgated by the Mayor to accept contractually reduced payments for the covered services they provide.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Combined Benefit Plan: A plan that includes elements of more than 1 of the plans described in paragraphs (1), (2), and (3) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Other Health Benefit Plans: Nothing in this section shall preclude the Mayor from contracting for or approving a type of health benefit plan not specifically listed in this section.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, § 2105, as added Oct. 1, 1987, D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, § 2(d), 34 DCR 5079; Mar. 2, 1991, D.C. <a href='http://openlims.org/public/L8-190.pdf'>Law 8-190</a>, § 2(b), 37 DCR 6721.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Employees Health Benefits Program, self-financed coverage, see <a href='/dccode/Title-32/Chapter-7/32-706.html'>§ 32-706</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-5/Subchapter-VI/1-529.04.html'>§ 1-529.04</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.02.html'>§ 1-621.02</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.03.html'>§ 1-621.03</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.06.html'>§ 1-621.06</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.07.html'>§ 1-621.07</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.12.html'>§ 1-621.12</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.13.html'>§ 1-621.13</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.17.html'>§ 1-621.17</a>, <a href='/dccode/Title-1/Chapter-7/Subchapter-I/1-702.html'>§ 1-702</a>, and <a href='/dccode/Title-32/Chapter-7/32-706.html'>§ 32-706</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-622.5.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-27</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.02.html'>§ 1-621.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-190</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-190.pdf'>Law 8-190</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.14.html'>§ 1-621.14</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Mayor authorized to enter agreements to modify health benefits contracts: See Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XI/1-611.03.html'>§ 1-611.03</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

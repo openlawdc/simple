@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1001.02. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10/index.html">Chapter 10. Elections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10/Subchapter-I/index.html">Subchapter I. Regulation of Elections</a></li>
+                    
+                    <li>↪ § 1-1001.02. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html">§ 1-1001.01. Election of electors.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.03.html">§ 1-1001.03. Board of Elections - Created; composition; term of office; vacancies; reappointment; designation of Chairman.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1001.02. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The term &quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The term &quot;qualified elector&quot; means a person who:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is at least 17 years of age and who will be 18 years of age on or before the next general election;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is a citizen of the United States;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Has maintained a residence in the District for at least 30 days preceding the next election and does not claim voting residence or right to vote in any state or territory;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Is not incarcerated for a crime that is a felony in the District; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Has not been found by a court of law to be legally incompetent to vote.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The term &quot;Board&quot; means the District of Columbia Board of Elections provided for by <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.03.html'>§ 1-1001.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The term &quot;ward&quot; means an election ward established by the Council.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The term &quot;Board of Education&quot; means the Board of Education of the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The term &quot;Delegate&quot; means the Delegate to the House of Representatives from the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The term &quot;felony&quot; includes any crime committed in the District of Columbia referred to in §<a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.14.html'>§ 1-1001.14</a>, 1-1162.32, and 1-1163.35.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">The term &quot;Council&quot; or &quot;Council of the District of Columbia&quot; means the Council of the District of Columbia established pursuant to the District of Columbia Home Rule Act [<a href='/dccode/Title-1/Chapter-2/Subchapter-I/1-201.01.html'>§ 1-201.01</a> et seq.].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">The term &quot;Mayor&quot; means the Office of Mayor of the District of Columbia established pursuant to the District of Columbia Home Rule Act [<a href='/dccode/Title-1/Chapter-2/Subchapter-II/1-202.01.html'>§ 1-202.01</a> et seq.].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9A) </span>
+                
+                    <span class="" style="">The term &quot;Attorney General&quot; or &quot;Attorney General for the District of Columbia&quot; means the Attorney General for the District of Columbia provided for by part D-i of subchapter I of Chapter 3 [<a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-D-i/1-301.81.html'>§ 1-301.81</a> et seq.] and <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-C-i/1-204.35.html'>§ 1-204.35</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">The term &quot;initiative&quot; means the process by which the electors of the District of Columbia may propose laws (except laws appropriating funds) and present such proposed laws directly to the registered qualified electors of the District of Columbia for their approval or disapproval.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">The term &quot;referendum&quot; means the process by which the registered qualified electors of the District of Columbia may suspend acts, or some part or parts of acts, of the Council of the District of Columbia (except emergency acts, acts levying taxes, or acts appropriating funds for the general operating budget) until such acts or part or parts of acts have been presented to the registered qualified electors of the District of Columbia for their approval or rejection.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">The term &quot;recall&quot; means the process by which the registered qualified electors of the District of Columbia may call for the holding of an election to remove or retain an elected official of the District of Columbia (except the Delegate to Congress for the District of Columbia) prior to the expiration of his or her term.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">The term &quot;elected official&quot; means the Mayor, the Chairman and members of the Council, the Attorney General, the President and members of the Board of Education, the Delegate to Congress for the District of Columbia, United States Senator and Representative, and advisory neighborhood commissioners of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">The term &quot;printed&quot; shall include any document produced by letterpress, offset press, photo reproduction, multilith, or other mass reproduction means.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">The term &quot;proposer&quot; means one or more of the registered qualified electors of the District of Columbia, including any entity, the primary purpose of which is the success or defeat of a political party or principle, or any question submitted to vote at a public election by means of an initiative, referendum or recall as authorized in amendments numbered 1 and 2 to Title IV of the Home Rule Act (§<a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-G/Subpart-1/1-204.101.html'>§ 1-204.101</a> to 1-204.115). Such entities shall be treated as a political committee as defined in <a href='/dccode/Title-1/Chapter-11A/Subchapter-I/1-1161.01.html'>§ 1-1161.01(44)</a> for purposes of this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The term &quot;residence,&quot; for purposes of voting, means the principal or primary home or place of abode of a person. Principal or primary home or place of abode is that home or place in which the person&#39;s habitation is fixed and to which a person, whenever he or she is absent, has the present intention of returning after a departure or absence therefrom, regardless of the duration of the absence.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In determining what is a principal or primary place of abode of a person the following circumstances relating to the person may be taken into account:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Business pursuits;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Employment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Income sources;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Residence for income or other tax purposes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Residence of parents, spouse, and children;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">Leaseholds;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vii) </span>
+                
+                    <span class="" style="">Situs of personal and real property; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(viii) </span>
+                
+                    <span class="" style="">Motor vehicle registration.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A qualified elector who has left his or her home and gone into another state or territory for a temporary purpose only shall not be considered to have lost his or her residence in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">If a qualified elector moves to another state or territory with the intention of making it his or her permanent home, he or she shall notify the Board, in writing, and shall be considered to have lost residence in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">No person shall be deemed to have gained or lost a residence by reason of absence while employed in the service of the District or the United States governments, while a student at any institution of learning, while kept at any institution at public expense, or while absent from the District with the intent to have the District remain his or her residence. If a person is absent from the District, but intends to maintain residence in the District for voting purposes, he or she shall not register to vote in any other state or territory during his or her absence.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">The term &quot;voter registration agency&quot; means an office designated under <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.07.html'>§ 1-1001.07(d)(1)</a> and the National Voter Registration Act of 1993 to perform voter registration activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">The term &quot;application distribution agency&quot; means an agency designated under <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.07.html'>§ 1-1001.07(d)(14)</a> in whose office or offices mail voter registration applications are made available for general distribution to the public.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">The term &quot;duly registered voter&quot; means a registered voter who resides at the address listed on the Board&#39;s records.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">The term &quot;registered qualified elector&quot; means a registered voter who resides at the address listed on the Board&#39;s records.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">The term &quot;qualified registered elector&quot; means a registered voter who resides at the address listed on the Board&#39;s records.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">The term &quot;voting system&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The combination of mechanical, electromechanical, or electronic equipment, including the software, firmware, and documentation required to program, control, and support the equipment used to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Define ballots;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Cast and count votes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Report or display elections results; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Maintain and produce a permanent record; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The practices and documentation used to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Identify system components and versions of components;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Test the system during its development and maintenance;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Maintain records of system errors and defects;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Determine necessary system changes after the initial qualification of the system; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Provide voters with notices, instructions, forms, paper ballots, or other materials.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">The term &quot;Help America Vote Act of 2002&quot; means the Help America Vote Act of 2002, approved October 29, 2002 (<a href='http://api.fdsys.gov/link?collection=statute&volume=116&page=1666'>116 Stat. 1666</a>; 42 U.S.C. § 15301 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">The term &quot;gender identity or expression&quot; shall have the same meaning as provided in <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-I/2-1401.02.html'>§ 2-1401.02(12A)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Election observers&quot; means persons who witness the administration of elections, including individuals representing nonpartisan domestic and international organizations, including voting rights organizations, civil rights organizations, and civic organizations.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Aug. 12, 1955, <a href='http://api.fdsys.gov/link?collection=statute&volume=69&page=699'>69 Stat. 699</a>, ch. 862, § 2; Oct. 4, 1961, <a href='http://api.fdsys.gov/link?collection=statute&volume=75&page=820'>75 Stat. 820</a>, <a href='http://www.govtrack.us/search?q=public%20law%2087-389'>Pub. L. 87-389</a>, § 1(26); Apr. 22, 1968, <a href='http://api.fdsys.gov/link?collection=statute&volume=82&page=103'>82 Stat. 103</a>, <a href='http://www.govtrack.us/search?q=public%20law%2090-292'>Pub. L. 90-292</a>, § 4(2); Sept. 22, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=849'>84 Stat. 849</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-405'>Pub. L. 91-405</a>, title II, §§ 203(a), 205(a); Dec. 23, 1971, <a href='http://api.fdsys.gov/link?collection=statute&volume=85&page=788'>85 Stat. 788</a>, <a href='http://www.govtrack.us/search?q=public%20law%2092-220'>Pub. L. 92-220</a>, § 1(2)-(4); Aug. 14, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=311'>87 Stat. 311</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-92'>Pub. L. 93-92</a>, § 1(1); Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=832'>87 Stat. 832</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, title VII, § 751(2); Aug. 14, 1974, <a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=458'>88 Stat. 458</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-376'>Pub. L. 93-376</a>, title III, § 306(a); Sept. 2, 1976, D.C. <a href='http://openlims.org/public/L1-79.pdf'>Law 1-79</a>, title I, § 102(1), title VI, § 602, 23 DCR 2050; Apr. 23, 1977, D.C. <a href='http://openlims.org/public/L1-126.pdf'>Law 1-126</a>, title III, § 301(a), (b), 24 DCR 2372; June 7, 1979, D.C. <a href='http://openlims.org/public/L3-1.pdf'>Law 3-1</a>, § 2(a), 25 DCR 9454; Mar. 16, 1982, D.C. <a href='http://openlims.org/public/L4-88.pdf'>Law 4-88</a>, § 2(b), 29 DCR 458; Aug. 2, 1983, D.C. <a href='http://openlims.org/public/L5-17.pdf'>Law 5-17</a>, § 5(a), 30 DCR 3196; Sept. 22, 1994, D.C. <a href='http://openlims.org/public/L10-173.pdf'>Law 10-173</a>, § 2(a), 41 DCR 5154; July 25, 1995, D.C. <a href='http://openlims.org/public/L11-30.pdf'>Law 11-30</a>, § 2(a), 42 DCR 1547; Apr. 12, 2000, D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, § 123(a), 47 DCR 520; Dec. 7, 2004, D.C. <a href='http://openlims.org/public/L15-218.pdf'>Law 15-218</a>, § 2(a), 51 DCR 9132; June 25, 2008, D.C. <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a>, § 4(a), 55 DCR 3696; Feb. 4, 2010, D.C. <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a>, § 2(a), 56 DCR 9169); May 27, 2010, D.C. <a href='http://openlims.org/public/L18-160.pdf'>Law 18-160</a>,§ 131(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 3012</a>; Apr. 27, 2012, D.C. <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, § 501(g)(1), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 1862</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Advisory Neighborhood Commissions, &quot;registered qualified elector&quot; defined, see <a href='/dccode/Title-1/Chapter-3/Subchapter-V/Part-A/1-309.09.html'>§ 1-309.09</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegate to the House of Representatives, qualifications, see <a href='/dccode/Title-1/Chapter-4/1-401.html'>§ 1-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-D-i/1-301.83.html'>§ 1-301.83</a>, <a href='/dccode/Title-1/Chapter-3/Subchapter-V/Part-A/1-309.09.html'>§ 1-309.09</a>, <a href='/dccode/Title-1/Chapter-4/1-401.html'>§ 1-401</a>, <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.07.html'>§ 1-1001.07</a>, and <a href='/dccode/Title-38/Chapter-26A/38-2651.html'>§ 38-2651</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-1302.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-1102.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, in par. (13), inserted &quot;United States Senator and Representative,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-218.pdf'>Law 15-218</a> added pars. (22) and (23).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a> added par. (24).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a> rewrote pars. (2) and (7); and added par. (25).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-160.pdf'>Law 18-160</a> added par. (9A); and, in par. (13), inserted &quot;the Attorney General,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, in par. (3), substituted &quot;Board of Elections&quot; for &quot;Board of Elections and Ethics&quot;; in par. (7), substituted &quot;<a href='/dccode/Title-1/Chapter-11A/Subchapter-II/Part-E/1-1162.32.html'>§ 1-1162.32</a> and 1-1163.35&quot; for &quot;<a href='/dccode/Title-1/Chapter-11/Subchapter-I/Part-E/1-1105.07~P.html'>§ 1-1105.07</a> or <a href='/dccode/Title-1/Chapter-11/Subchapter-I/Part-G/1-1107.01~P.html'>§ 1-1107.01</a>&quot;; and, in par. (15), substituted &quot;<a href='/dccode/Title-1/Chapter-11A/Subchapter-I/1-1161.01.html'>§ 1-1161.01(44)</a> for purposes of this subchapter&quot; for &quot;<a href='/dccode/Title-1/Chapter-11/Subchapter-I/Part-A/1-1101.01~P.html'>§ 1-1101.01</a> for purposes of this subchapter&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(a) of Help America Vote Temporary Amendment Act of 2004 (D.C. <a href='http://openlims.org/public/L15-120.pdf'>Law 15-120</a>, March 30, 2004, law notification 51 DCR 3807).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Help American Vote Emergency Amendment Act of 2003 (D.C. Act 15-283, December 18, 2003, 51 DCR 197).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Help America Vote Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-405, March 18, 2004, 51 DCR 3650).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Help America Vote Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-658, December 29, 2004, 52 DCR 492).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Omnibus Election Reform Emergency Amendment Act of 2009 (D.C. Act 18-236, November 30, 2009, 56 DCR 9154).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 401(g)(1) of Board of Ethics and Government Accountability Establishment and Comprehensive Ethics Reform Emergency Amendment Act of 2012 (D.C. Act 19-298, January 29, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 683</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-79</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L1-79.pdf'>Law 1-79</a> was introduced in Council and assigned Bill No. 1-120, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on May 3, 1976 and May 18, 1976, respectively. Signed by the Mayor on June 18, 1976, it was assigned Act No. 1-131 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-126</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L1-126.pdf'>Law 1-126</a> was introduced in Council and assigned Bill No. 1-364, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on November 22, 1976 and December 7, 1976, respectively. Enacted without signature by the Mayor on January 25, 1977, it was assigned Act No. 1-225 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-1</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L3-1.pdf'>Law 3-1</a> was introduced in Council and assigned Bill No. 3-2, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on March 13, 1979 and March 27, 1979, respectively. Signed by the Mayor on April 10, 1979, it was assigned Act No. 3-18 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-88</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-88.pdf'>Law 4-88</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html'>§ 1-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-17</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L5-17.pdf'>Law 5-17</a> was introduced in Council and assigned Bill No. 5-11, which was referred to the Committee on Government Operations. The Bill was adopted on first, amended first and second readings on April 26, 1983, May 10, 1983 and May 24, 1983, respectively. Signed by the Mayor on June 9, 1983, it was assigned Act No. 5-34 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-173</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-173.pdf'>Law 10-173</a>, the &quot;National Voter Registration Act Conforming Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-572, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on June 21, 1994, and July 5, 1994, respectively. Signed by the Mayor on 10-293, it was assigned Act No. 10-293 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-173.pdf'>Law 10-173</a> became effective on September 22, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-30</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-30.pdf'>Law 11-30</a>, the &quot;Technical Amendments Act of 1995,&quot; was introduced in Council and assigned Bill No. 11-58, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on February 7, 1995, and March 7, 1995, respectively. Signed by the Mayor on March 22, 1995, it was assigned Act No. 11-32 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-30.pdf'>Law 11-30</a> became effective on July 25, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, the &quot;Technical Amendments Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-435, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 2, 1999, and December 7, 1999, respectively. Signed by the Mayor on December 29, 1999, it was assigned Act No. 13-234 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a> became effective on April 12, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-218</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-218.pdf'>Law 15-218</a>, the &quot;Help America Vote Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-610, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on June 29, 2004, and July 13, 2004, respectively. Signed by the Mayor on August 2, 2004, it was assigned Act No. 15-523 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-218.pdf'>Law 15-218</a> became effective on December 7, 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-177</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-177.pdf'>Law 17-177</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-V/Part-A/1-309.01.html'>§ 1-309.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-103</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a>, the &quot;Omnibus Election Reform Amendment Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-345, which was referred to the Committee on Government Operations and the Environment. The bill was adopted on first and second readings on October 6, 2009, and November 3, 2009, respectively. Signed by the Mayor on November 30, 2009, it was assigned Act No. 18-238 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-103.pdf'>Law 18-103</a> became effective on February 4, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-160</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L18-160.pdf'>Law 18-160</a> and applicability, see notes under <a href='/dccode/Title-1/Chapter-10/Subchapter-I/1-1001.01.html'>§ 1-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-124</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-124.pdf'>Law 19-124</a>, see notes under <a href='/dccode/Title-1/Chapter-1/Subchapter-II/Part-A/Subpart-1/1-122.html'>§ 1-122</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The National Voter Registration Act, referred to in (17), is classified at <a href='http://www.govtrack.us/search?q=public%20law%20103-31'>Pub. L. 103-31</a>, May 20, 1993, <a href='http://api.fdsys.gov/link?collection=statute&volume=107&page=77'>107 Stat. 77</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 11-1561. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-11/index.html">Title 11. Organization and Jurisdiction of the Courts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-11/Chapter-15/index.html">Chapter 15. Judges of the District of Columbia Courts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-11/Chapter-15/Subchapter-III/index.html">Subchapter III. Retirement</a></li>
+                    
+                    <li>↪ § 11-1561. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-11/Chapter-15/Subchapter-III/index.html">Subchapter III. Retirement</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-11/Chapter-15/Subchapter-III/11-1562.html">§ 11-1562. Eligibility for retirement.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 11-1561. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For purposes of this subchapter -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The term &quot;judge&quot; means any judge of the District of Columbia Court of Appeals or the Superior Court or any person with judicial service as described in paragraph (2) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The term &quot;judicial service&quot; means service as a judge in the District of Columbia Court of Appeals, the Superior Court, or the former Juvenile Court of the District of Columbia, District of Columbia Tax Court, police court, municipal court, Municipal Court of Appeals, or District of Columbia Court of General Sessions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The terms &quot;retire&quot; and &quot;retirement&quot; include retirement, resignation, or failure to be recommissioned or reappointed upon the expiration of a commission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The term &quot;fund&quot; means the District of Columbia Judicial Retirement and Survivors Annuity Fund established by <a href='/dccode/Title-11/Chapter-15/Subchapter-III/11-1570.html'>section 11-1570</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The term &quot;widow&quot; means a surviving wife of a judge who either (A) has been married to the judge for at least two years preceding his death or (B) is the mother of issue by the marriage and has not remarried.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The term &quot;widower&quot; means a surviving husband of a judge who either (A) has been married to the judge for at least two years preceding her death or (B) is the father of issue by the marriage and has not remarried.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The term &quot;Commissioner&quot; [&quot;Mayor&quot;] means the Commissioner [Mayor] of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">The term &quot;child&quot; means -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">an unmarried child under eighteen years of age, including (i) an adopted child, and (ii) a stepchild or recognized natural child who lived with the judge in a regular parent-child relationship;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">such unmarried child regardless of age who is incapable of self-support because of mental or physical disability incurred before age eighteen; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">such unmarried child between eighteen and twenty-two years of age who is a student regularly pursuing a full-time course of study or training in residence in a high school, trade school, technical or vocational institute, junior college, college, university or comparable recognized educational institution. For the purpose of this paragraph, a child whose twenty-second birthday occurs before July 1 or after August 31 of a calendar year, and while the child is regularly pursuing such a course of study or training, is deemed to have become twenty-two years of age on the first day of July after that birthday. A child who is a student is deemed not to have ceased to be a student during an interim between school years if the interim is not more than five months and if the child shows to the satisfaction of the Secretary of the Treasury that the child has a bona fide intention of continuing to pursue a course of study or training in the same or different school during the school semester (or other period into which the school year is divided) immediately after the interim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">The term &quot;lump-sum credit for retirement&quot; means the unrefunded amount consisting of -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">retirement deductions made from the basic salary of a judge:[;]</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">amounts deposited covering earlier judicial and nonjudicial service; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">interest on the deductions and deposits at 4 per centum a year to December 31, 1947, and 3 per centum a year thereafter compounded annually to December 31, 1956, or, in the case of a judge separated or transferred to a position not within the purview of this section before the judge has completed five years of service, to the date of the separation or transfer or the end of the 90-day period beginning on the date of the enactment of the District of Columbia Retirement Reform Act (D.C. Official Code, sec. 1-701 et seq.), whichever is earlier; but the term &quot;lump-sum credit for retirement&quot; does not include interest -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">if the service covered thereby aggregates one year or less; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">for the fractional part of a month in the total service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">The term &quot;lump-sum credit for survivor annuity&quot; means the unrefunded amount consisting of -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">survivor annuity deductions made from the salary of a judge;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">amounts deposited for survivor annuity covering earlier judicial and nonjudicial service; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">interest on the deductions and deposits at 4 per centum a year to December 31, 1947, and 3 per centum a year thereafter compounded annually to December 31, 1956, or, in the case of a judge separated or transferred to a position not within the purview of this section before the judge has completed five years of service, to the date of the separation or transfer or the end of the 90-day period beginning on the date of the enactment of the District of Columbia Retirement Reform Act (sec. 1-701 et seq.), whichever is earlier; but the term &quot;lump-sum credit for survivor annuity&quot; does not include interest -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">if the service covered thereby aggregates one year or less; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">for the fractional part of a month in the total service.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=499'>84 Stat. 499</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title I, § 111; Dec. 7, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=1390'>84 Stat. 1390</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-530'>Pub. L. 91-530</a>, § 2(a)(5), (6); Nov. 17, 1979, <a href='http://api.fdsys.gov/link?collection=statute&volume=93&page=866'>93 Stat. 866</a>, <a href='http://www.govtrack.us/search?q=public%20law%2096-122'>Pub. L. 96-122</a>, §§ 124(b)(1), 254(a)(1); June 13, 1994, <a href='http://www.govtrack.us/search?q=public%20law%20103-266'>Pub. L. 103-266</a>, §§ 1(b)(51)-(53), <a href='http://api.fdsys.gov/link?collection=statute&volume=108&page=713'>108 Stat. 713</a>; Aug. 5, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=759'>111 Stat. 759</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, §§ 11253(a)(1), (b); Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2422'>112 Stat. 2422</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Pub. L. 105-274</a>, § 2(e)(4); Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2681'>112 Stat. 2681</a>-537, <a href='http://www.govtrack.us/search?q=public%20law%20105-277'>Pub. L. 105-277</a>, § 804(e)(4); Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-264.pdf'>Law 12-264</a>, § 23, 46 DCR 2118.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Retirement program, defined, see <a href='/dccode/Title-1/Chapter-7/Subchapter-I/1-702.html'>§ 1-702</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.18.html'>§ 1-207.18</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.03.html'>§ 1-621.03</a>, <a href='/dccode/Title-1/Chapter-6/Subchapter-XXII/1-622.04.html'>§ 1-622.04</a>, <a href='/dccode/Title-1/Chapter-7/Subchapter-I/1-702.html'>§ 1-702</a>, <a href='/dccode/Title-1/Chapter-9/Subchapter-I/1-901.02.html'>§ 1-901.02</a>, <a href='/dccode/Title-11/Chapter-15/Subchapter-III/11-1568.html'>§ 11-1568</a>, <a href='/dccode/Title-11/Chapter-15/Subchapter-III/11-1568.01.html'>§ 11-1568.01</a>, and <a href='/dccode/Title-11/Chapter-15/Subchapter-III/11-1569.html'>§ 11-1569</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 11-1561.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 11-1561.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-264.pdf'>Law 12-264</a>, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-804, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Signed by the Mayor on January 7, 1999, it was assigned Act No. 12-626 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-264.pdf'>Law 12-264</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;The date of the enactment of the District of Columbia Retirement Reform Act,&quot; referred to in paragraphs (9)(C) and (10)(C) of this section, is November 17, 1979.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Change in Government</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section originated at a time when local government powers were delegated to the District of Columbia Council and to a Commissioner of the District of Columbia. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made, in brackets, in this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

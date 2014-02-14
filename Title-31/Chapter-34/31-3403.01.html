@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3403.01. Premium tax.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/index.html">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-34/index.html">Chapter 34. Health Maintenance Organizations</a></li>
+                    
+                    <li>↪ § 31-3403.01. Premium tax.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-34/31-3403.html">§ 31-3403. Issuance of certificate of authority.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-34/31-3404.html">§ 31-3404. Powers of health maintenance organizations.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3403.01. Premium tax.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Effective January 1, 2009, all health maintenance organizations shall pay to the District of Columbia, for each calendar year, a sum of money as taxes equal to 2% of their policy and membership fees and net premium receipts or consideration received in such calendar year, excluding those fees, receipts, or consideration received pursuant to any federal employee health-benefit program or Medicare, on all policies or contracts in the District of Columbia. The premium tax shall be in lieu of all other taxes except:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Taxes upon real estate; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Fees and charges provided for pursuant to this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The certificate of authority of any health maintenance organization may be revoked for failure to pay the required premium tax.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">All revenues generated pursuant to this section shall be collected in a manner prescribed by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Any revenues generated from this section arising from contracts for services under the District&#39;s Medicaid program, DC HealthCare Alliance program, or Healthy DC program shall be deposited in the Healthy DC and Health Care Expansion Fund, established by <a href='/dccode/Title-31/Chapter-35/31-3514.02.html'>§ 31-3514.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Of all other revenues generated pursuant to this section, 75% shall be deposited in the Healthy DC and Health Care Expansion Fund and 25% shall be deposited in the General Fund of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">For the purposes of this section, the term, &quot;health maintenance organization&quot; shall include prepaid health plans.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-235.pdf'>Law 11-235</a>, § 4a, as added Aug. 16, 2008, D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a>, § 5054, 55 DCR 7598; Feb. 4, 2010, D.C. <a href='http://openlims.org/public/L18-104.pdf'>Law 18-104</a>, § 4(b), 56 DCR 9182; Sept. 24, 2010, D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, § 5022, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6242</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-31/Chapter-35/31-3514.02.html'>§ 31-3514.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-104.pdf'>Law 18-104</a>, in subsec. (a-1), substituted &quot;District Medicaid program, the Healthy DC Program,&quot; for &quot;District Medicaid program,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, in subsec. (a), deleted &quot;the District Medicaid Program, the Healthy DC Program, the DC HealthCare Alliance,&quot; following &quot;pursuant to&quot;; rewrote subsec. (d); and added subsecs. (e) and (f). Prior to amendment, subsec. (d) read as follows: &quot;(d) Seventy-five percent of the revenue generated pursuant to this section shall be deposited in the Healthy DC Fund, established by <a href='/dccode/Title-31/Chapter-35/31-3514.02.html'>§ 31-3514.02</a>. The remaining 25% shall be deposited in the General Fund of the District of Columbia.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 4(b) of D.C. <a href='http://openlims.org/public/L18-134.pdf'>Law 18-134</a> substituted &quot;District Medicaid program, the Healthy DC Program,&quot; for &quot;District Medicaid program,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 6(b) of D.C. <a href='http://openlims.org/public/L18-134.pdf'>Law 18-134</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 2 of D.C. <a href='http://openlims.org/public/L18-205.pdf'>Law 18-205</a>, in subsec. (a), deleted &quot;the District Medicaid Program, the Healthy DC Program, the DC HealthCare Alliance,&quot;; rewrote subsec. (d) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(d) Any revenues generated from this section arising from contracts for services under the District&#39;s Medicaid program, DC HealthCare Alliance program, or Healthy DC program shall be deposited in the Healthy DC and Health Care Expansion Fund, established by section 15b of the Hospital and Medical Services Corporation Regulatory Act of 1996, effective March 2, 2007 (D.C. <a href='http://openlims.org/public/L16-192.pdf'>Law 16-192</a>; D.C. Official Code <a href='/dccode/Title-31/Chapter-35/31-3514.02.html'>§ 31-3514.02</a>).&quot;; and added subsecs. (e) and (f) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(e) Of all other revenues generated pursuant to this section, 75% shall be deposited in the Healthy DC and Health Care Expansion Fund and 25% shall be deposited in the General Fund of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(f) For the purposes of this section, the term, &#39;health maintenance organization&#39; shall include prepaid health plans.&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 7(b) of D.C. <a href='http://openlims.org/public/L18-205.pdf'>Law 18-205</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 4(b) of Hospital and Medical Services Corporation Regulatory Emergency Amendment Act of 2009 (D.C. Act 18-277, January 11, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 935</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Medicaid Resource Maximization Emergency Amendment Act of 2010 (D.C. Act 18-390, May 7, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 4339</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5022 of Fiscal Year 2011 Budget Support Emergency Act of 2010 (D.C. Act 18-463, July 2, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6542</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-219</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a>, the &quot;Fiscal Year 2009 Budget Support Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-678, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 13, 2008, and June 3, 2008, respectively. Signed by the Mayor on June 26, 2008, it was assigned Act No. 17-419 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a> became effective on August 16, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-104</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-104.pdf'>Law 18-104</a>, see notes following <a href='/dccode/Title-31/Chapter-2/31-205.html'>§ 31-205</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-223</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a>, see notes following <a href='/dccode/Title-31/Chapter-1/Subchapter-I/31-101.html'>§ 31-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 5053 of D.C. <a href='http://openlims.org/public/L17-219.pdf'>Law 17-219</a> provided that subtitle U of title V of the act may be cited as the &quot;Healthy DC Revenue Amendment Act of 2008&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 5021 of D.C. <a href='http://openlims.org/public/L18-223.pdf'>Law 18-223</a> provided that subtitle C of title IV of the act may be cited as the &quot;Medicaid Resource Maximization Amendment Act of 2010&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

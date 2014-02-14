@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-211. Death registration.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/index.html">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-2/index.html">Chapter 2. Vital Records</a></li>
+                    
+                    <li>↪ § 7-211. Death registration.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-2/7-210.html">§ 7-210. New certificates of birth.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-2/7-212.html">§ 7-212. Delayed filing and registration of death.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-211. Death registration.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The funeral director or person acting as such who first takes custody of the dead body shall file a certificate of death. He or she shall obtain the personal data from the next of kin or the best qualified person or source available and obtain the medical certificate required under this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A certificate of death for each death which occurs in the District shall be filed as directed by the Registrar within 5 days after death and before final disposition. The certificate shall be registered if it has been completed and filed according to this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If the place of death is unknown but the dead body is found in the District, the certificate of death shall be completed and filed in the District. The place where the body is found shall be shown as the place of death. If the date of death is unknown, it shall be determined by approximation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">When death occurs on a moving conveyance in the United States and the body is first removed from the conveyance in the District, the death shall be registered in the District and the place where it is first removed shall be considered the place of death. When a death occurs on a moving conveyance while in international waters or air space, or in a foreign country or its air space and the body is first removed from the conveyance in the District, the death shall be registered in the District, but the certificate shall show the actual place of death insofar as can be determined.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Within 48 hours after death, the physician in charge of a patient&#39;s care for the condition which resulted in death shall complete, sign, and return the medical certification portion of the death certificate to the funeral director, except when inquiry is required by the Office of the Chief Medical Examiner. In the absence of such physician or with his or her authorization, the certificate may be completed and signed by his or her associate physician, the chief medical officer of the institution in which death occurred, or the physician who performed an autopsy upon the decedent, if that individual has access to the medical history of the case, views the deceased at or after death, and death is due to natural causes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">When an inquiry is conducted by the Office of the Chief Medical Examiner, the Medical Examiner shall determine the cause of death, and complete, sign, and return the medical certification portion of the death certificate to the funeral director within 48 hours after taking charge of the case.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">If the cause of death cannot be determined within 48 hours after death, the medical certification shall be completed as provided by regulation. The physician completing the medical certification or Medical Examiner shall give the funeral director or person acting as the funeral director, notice of the reason of the delay. Final disposition of the body shall not be made until authorized by the physician completing the medical certification or the Medical Examiner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">When a death is presumed to have occurred within the District, but the body cannot be located, a death certificate shall be prepared by the Registrar upon receipt of an order of the Court pursuant to <a href='/dccode/Title-14/Chapter-7/14-701.html'>§ 14-701</a>. The Court order shall include a finding of facts necessary for completion of the death certificate. The death certificate shall be marked &quot;presumptive&quot;, show on its face the date of registration, identify the Court, and state the date of the decree.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Each death certificate shall contain a pronouncement of death section, a medical certification of cause of death section, and the social security number of the deceased. For the purposes of this subsection, the pronouncement of death section shall include all facts required to be reported in this section, except for those facts relating to the medical cause or causes of death reported pursuant to subsections (e) and (f) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">In the case of an expected death at a decedent&#39;s place of residence at the time of death, attended by a treating physician or a registered nurse working in general collaboration with the treating physician, the attending registered nurse may sign the pronouncement of death section of the death certificate promptly following death.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 8, 1981, D.C. <a href='http://openlims.org/public/L4-34.pdf'>Law 4-34</a>, § 12, 28 DCR 3271; Mar. 13, 1992, D.C. <a href='http://openlims.org/public/L9-180.pdf'>Law 9-180</a>, § 2(b), 39 DCR 8078; Apr. 3, 2001, D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a>, § 104(c), 48 DCR 1270.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-7/Chapter-2/7-212.html'>§ 7-212</a>, <a href='/dccode/Title-7/Chapter-2/7-214.html'>§ 7-214</a>, and <a href='/dccode/Title-7/Chapter-2/7-220.html'>§ 7-220</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-211.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a> rewrote the first sentence of subsec. (i), which previously read &quot;Each death certificate shall contain a pronouncement of death section and a medical certification of cause of death section.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(c) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-103.pdf'>Law 12-103</a>, May 8, 1998, law notification 45 DCR 3254).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(c) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-210.pdf'>Law 12-210</a>, April 13, 1999, law notification 46 DCR 3832).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 103(c) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1999 (D.C. <a href='http://openlims.org/public/L13-57.pdf'>Law 13-57</a>, March 7, 2000, law notification 47 DCR 1979).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 103(c) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 2000 (D.C. <a href='http://openlims.org/public/L13-207.pdf'>Law 13-207</a>, March 31, 2001, law notification 48 DCR 3238).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3(c) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 1997 (D.C. Act 12-222, December 23, 1997, 44 DCR 114).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3(c) of the Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-309, March 20, 1998, 45 DCR 1923), § 3(c) of the Child Support and Welfare Reform Compliance Second Emergency Amendment Act of 1998 (D.C. Act 12-439, August 12, 1998, 45 DCR 6110), § 3(c) of the Child Support and Welfare Reform Compliance Legislative Review Emergency Amendment Act of 1998 (D.C. Act 12-503, October 27, 1998, 45 DCR 8495), and § 3(c) of the Child Support and Welfare Reform Compliance Second Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-600, January 20, 1999, 46 DCR 1239).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary repeal of D.C. <a href='http://openlims.org/public/L12-103.pdf'>Law 12-103</a>, see § 13 of the Child Support and Welfare Reform Compliance Second Emergency Amendment Act of 1998 (D.C. Act 12-439, August 12, 1998, 45 DCR 6110).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(c) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 1999 (D.C. Act 13-126, August 4, 1999, 46 DCR 6606).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(c) of the Child Support and Welfare Reform Compliance Legislative Review Emergency Amendment Act of 1999 (D.C. Act 13-177, November 2, 1999, 46 DCR 9678).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(c) of the Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-241, January 11, 2000, 47 DCR 581).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 103(c) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 2000 (D.C. Act 13-446, November 7, 2000, 47 DCR 9213).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 104(c) of Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 2001 (D.C. Act 14-5, February 13, 2001, 48 DCR 2440).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-34</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-34.pdf'>Law 4-34</a>, see Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-180</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-180.pdf'>Law 9-180</a>, see Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-269</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a>, see notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

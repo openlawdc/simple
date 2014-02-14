@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:1-201. General definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-1/index.html">Article 1. General Provisions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-1/Part-II/index.html">Part II. General Definitions and Principles of Interpretation</a></li>
+                    
+                    <li>↪ § 28:1-201. General definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-1/Part-II/index.html">Part II. General Definitions and Principles of Interpretation</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-1/Part-II/28_1-202.html">§ 28:1-202. Notice; knowledge.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:1-201. General definitions.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Unless the context otherwise requires, words or phrases defined in this section, or in the additional definitions contained in other articles of this subtitle that apply to particular articles or parts thereof, have the meanings stated.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Subject to definitions contained in other articles of this subtitle that apply to particular articles or parts thereof:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Action&quot;, in the sense of a judicial proceeding, includes recoupment, counterclaim, set-off, suit in equity, and any other proceeding in which rights are determined.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Aggrieved party&quot; means a party entitled to pursue a remedy.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Agreement&quot;, as distinguished from &quot;contract&quot;, means the bargain of the parties in fact, as found in their language or inferred from other circumstances, including course of performance, course of dealing, or usage of trade as provided in § 28:1-303.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Bank&quot; means a person engaged in the business of banking and includes a savings bank, savings and loan association, credit union, and trust company.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Bearer&quot; means a person in control of a negotiable electronic document of title or a person in possession of a negotiable instrument, negotiable tangible document of title, or certificated security that is payable to bearer or indorsed in blank.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Bill of lading&quot; means a document of title evidencing the receipt of goods for shipment issued by a person engaged in the business of directly or indirectly transporting or forwarding goods. The term does not include a warehouse receipt.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Branch&quot; includes a separately incorporated foreign branch of a bank.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Burden of establishing&quot; a fact means the burden of persuading the trier of fact that the existence of the fact is more probable than its nonexistence.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Buyer in ordinary course of business&quot; means a person that buys goods in good faith, without knowledge that the sale violates the rights of another person in the goods, and in the ordinary course from a person, other than a pawnbroker, in the business of selling goods of that kind. A person buys goods in the ordinary course if the sale to the person comports with the usual or customary practices in the kind of business in which the seller is engaged or with the seller&#39;s own usual or customary practices. A person that sells oil, gas, or other minerals at the wellhead or minehead is a person in the business of selling goods of that kind. A buyer in ordinary course of business may buy for cash, by exchange of other property, or on secured or unsecured credit, and may acquire goods or documents of title under a preexisting contract for sale. Only a buyer that takes possession of the goods or has a right to recover the goods from the seller under Article 2 may be a buyer in ordinary course of business. Buyer in ordinary course of business does not include a person that acquires goods in a transfer in bulk or as security for or in total or partial satisfaction of a money debt.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Conspicuous&quot;, with reference to a term, means written, displayed, or presented so that a reasonable person against which it is to operate ought to have noticed it. Whether a term is conspicuous or not is a decision for the court. Conspicuous terms include the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A heading in capitals equal to or greater in size than the surrounding text, or in contrasting type, font, or color to the surrounding text of the same or lesser size; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Language in the body of a record or display in larger type than the surrounding text, or in contrasting type, font, or color to the surrounding text of the same size, or set off from surrounding text of the same size by symbols or other marks that call attention to the language.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Consumer&quot; means an individual who enters into a transaction primarily for personal, family, or household purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Contract&quot;, as distinguished from &quot;agreement&quot;, means the total legal obligation that results from the parties&#39; agreement as determined by this subtitle and as supplemented by any other applicable laws.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Creditor&quot; includes a general creditor, a secured creditor, a lien creditor, and any representative of creditors, including an assignee for the benefit of creditors, a trustee in bankruptcy, a receiver in equity, and an executor or administrator of an insolvent debtor&#39;s or assignor&#39;s estate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Defendant&quot; includes a person in the position of defendant in a counterclaim, cross-claim, or third-party claim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Delivery&quot;, with respect to an electronic document of title means voluntary transfer of control and with respect to an instrument, a tangible document of title, or chattel paper, means voluntary transfer of possession.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Document of title&quot; means a record that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">In the regular course of business or financing is treated as adequately evidencing that the person in possession or control of the record is entitled to receive, control, hold, and dispose of the record and the goods the record covers; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Purports to be issued by or addressed to a bailee and to cover goods in the bailee&#39;s possession which are either identified or are fungible portions of an identified mass.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;document of title&quot; includes a bill of lading, transport document, dock warrant, dock receipt, warehouse receipt, and order for delivery of goods. An &quot;electronic document of title&quot; means a document of title evidenced by a record consisting of information stored in an electronic medium. A &quot;tangible document of title&quot; means a document of title evidenced by a record consisting of information that is inscribed on a tangible medium.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Fault&quot; means a default, breach, or wrongful act or omission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Fungible goods&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Goods of which any unit, by nature or usage of trade, is the equivalent of any other like unit; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Goods that by agreement are treated as equivalent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Genuine&quot; means free of forgery or counterfeiting.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Good faith,&quot; except as otherwise provided in Article 5, means honesty in fact and the observance of reasonable commercial standards of fair dealing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Holder&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The person in possession of a negotiable instrument that is payable either to bearer or to an identified person that is the person in possession; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The person in possession of a negotiable tangible document of title if the goods are deliverable either to bearer or to the order of the person in possession; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The person in control of a negotiable electronic document of title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Insolvency proceeding&quot; includes an assignment for the benefit of creditors or other proceeding intended to liquidate or rehabilitate the estate of the person involved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Insolvent&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Having generally ceased to pay debts in the ordinary course of business other than as a result of bona fide dispute;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Being unable to pay debts as they become due; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Being insolvent within the meaning of federal bankruptcy law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Money&quot; means a medium of exchange currently authorized or adopted by a domestic or foreign government. The term &quot;money&quot; includes a monetary unit of account established by an intergovernmental organization or by agreement between 2 or more countries.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Organization&quot; means a person other than an individual.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Party&quot;, as distinguished from &quot;third party&quot;, means a person that has engaged in a transaction or made an agreement subject to this subtitle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(27) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means an individual, corporation, business trust, estate, trust, partnership, limited liability company, association, joint venture, government, governmental subdivision, agency, or instrumentality, public corporation, or any other legal or commercial entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(28) </span>
+                
+                    <span class="" style="">&quot;Present value&quot; means the amount as of a date certain of one or more sums payable in the future, discounted to the date certain by use of either an interest rate specified by the parties if that rate is not manifestly unreasonable at the time the transaction is entered into or, if an interest rate is not so specified, a commercially reasonable rate that takes into account the facts and circumstances at the time the transaction is entered into.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(29) </span>
+                
+                    <span class="" style="">&quot;Purchase&quot; means taking by sale, lease, discount, negotiation, mortgage, pledge, lien, security interest, issue or reissue, gift, or any other voluntary transaction creating an interest in property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(30) </span>
+                
+                    <span class="" style="">&quot;Purchaser&quot; means a person that takes by purchase.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(31) </span>
+                
+                    <span class="" style="">&quot;Record&quot; means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(32) </span>
+                
+                    <span class="" style="">&quot;Remedy&quot; means any remedial right to which an aggrieved party is entitled with or without resort to a tribunal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(33) </span>
+                
+                    <span class="" style="">&quot;Representative&quot; means a person empowered to act for another, including an agent, an officer of a corporation or association, and a trustee, executor, or administrator of an estate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(34) </span>
+                
+                    <span class="" style="">&quot;Right&quot; includes remedy.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(35) </span>
+                
+                    <span class="" style="">&quot;Security interest&quot; means an interest in personal property or fixtures which secures payment or performance of an obligation. The term &quot;security interest&quot; includes any interest of a consignor and a buyer of accounts, chattel paper, a payment intangible, or a promissory note in a transaction that is subject to Article 9. The term &quot;security interest&quot; does not include the special property interest of a buyer of goods on identification of those goods to a contract for sale under § 28:2-401, but a buyer may also acquire a security interest by complying with Article 9. Except as otherwise provided in § 28:2-505, the right of a seller or lessor of goods under Article 2 or 2A to retain or acquire possession of the goods is not a security interest, but a seller or lessor may also acquire a security interest by complying with Article 9. The retention or reservation of title by a seller of goods notwithstanding shipment or delivery to the buyer under § 28:2-401 is limited in effect to a reservation of a security interest. Whether a transaction in the form of a lease creates a security interest is determined pursuant to § 28:1-203.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(36) </span>
+                
+                    <span class="" style="">&quot;Send&quot; in connection with a writing, record, or notice means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">To deposit in the mail or deliver for transmission by any other usual means of communication with postage or cost of transmission provided for and properly addressed and, in the case of an instrument, to an address specified thereon or otherwise agreed, or if there be none, to any address reasonable under the circumstances; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In any other way to cause to be received any record or notice within the time it would have arrived if properly sent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(37) </span>
+                
+                    <span class="" style="">&quot;Signed&quot; includes using any symbol executed or adopted with present intention to adopt or accept a writing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(38) </span>
+                
+                    <span class="" style="">&quot;State&quot; means a state of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands, or any territory or insular possession subject to the jurisdiction of the United States.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(39) </span>
+                
+                    <span class="" style="">&quot;Surety&quot; includes a guarantor or other secondary obligor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(40) </span>
+                
+                    <span class="" style="">&quot;Term&quot; means a portion of an agreement that relates to a particular matter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(41) </span>
+                
+                    <span class="" style="">&quot;Unauthorized signature&quot; means a signature made without actual, implied, or apparent authority. The term &quot;unauthorized signature&quot; includes a forgery.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(42) </span>
+                
+                    <span class="" style="">&quot;Warehouse receipt&quot; means a document of title issued by a person engaged in the business of storing goods for hire.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(43) </span>
+                
+                    <span class="" style="">&quot;Writing&quot; includes printing, typewriting, or any other intentional reduction to tangible form. &quot;Written&quot; has a corresponding meaning.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=632'>77 Stat. 632</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 16, 1982, D.C. <a href='http://openlims.org/public/L4-85.pdf'>Law 4-85</a>, § 3, 29 DCR 309; Mar. 16, 1993, D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, § 2, 39 DCR 9165; Mar. 23, 1995, D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, § 2(b)(1), 42 DCR 467; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, § 27(jj), 44 DCR 1271; Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 201(b)(2), 47 DCR 7576; Apr. 27, 2013, D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2634</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:3-103, § 28:4A-105, § 28:10-104, <a href='/dccode/Title-28/Chapter-49/28-4915.html'>§ 28-4915</a>, <a href='/dccode/Title-40/Chapter-1/40-102.html'>§ 40-102</a>, <a href='/dccode/Title-50/Chapter-6/50-601.html'>§ 50-601</a>, and <a href='/dccode/Title-50/Chapter-12/50-1201.html'>§ 50-1201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:1-201.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, enacting a new Article 9 of the Uniform Commercial Code applicable July 1, 2001, made conforming amendments to this section applicable upon the same date.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-85</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-85.pdf'>Law 4-85</a>, see Historical and Statutory Notes following § 28:1-105.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, the &quot;Uniform Commercial Code Investment Securities Amendment Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-20, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on October 6, 1992, and November 4, 1992, respectively. Signed by the Mayor on November 25, 1992, it was assigned Act No. 9-321 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a> became effective on March 16, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-249</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, the &quot;Uniform Commercial Code - Negotiable Instruments Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-240, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on November 1, 1994, and December 6, 1994, respectively. Signed by the Mayor on January 18, 1995, it was assigned Act No. 10-396 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a> became effective on March 23, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-255</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a>, the &quot;Second Technical Amendments Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-905, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-519 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-255.pdf'>Law 11-255</a> became effective on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:1-105.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-299</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, the &quot;Uniform Commercial Code Revision Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-136. The Bill was adopted on first reading on Dec. 4, 2012. Signed by the Mayor on Feb. 8, 2013, it was assigned Act No. 19-667 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a> became effective on Apr. 27, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Source:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Changes from former law:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">In order to make it clear that all definitions in the Uniform Commercial Code (not just those appearing in Article 1, as stated in former Section 1-201, but also those appearing in other Articles) do not apply if the context otherwise requires, a new subsection (a) to that effect has been added, and the definitions now appear in subsection (b). The reference in subsection (a) to the &quot;context&quot; is intended to refer to the context in which the defined term is used in the Uniform Commercial Code. In other words, the definition applies whenever the defined term is used unless the context in which the defined term is used in the statute indicates that the term was not used in its defined sense. Consider, for example, Sections 3-103(a)(9) (defining &quot;promise,&quot; in relevant part, as &quot;a written undertaking to pay money signed by the person undertaking to pay&quot;) and 3-303(a)(1) (indicating that an instrument is issued or transferred for value if &quot;the instrument is issued or transferred for a promise of performance, to the extent that the promise has been performed.&quot; It is clear from the statutory context of the use of the word &quot;promise&quot; in <a href='/dccode/Title-3/Chapter-3/Subchapter-I/3-303.html'>Section 3-303(a)(1)</a> that the term was not used in the sense of its definition in <a href='/dccode/Title-3/Chapter-1/3-103.html'>Section 3-103(a)(9)</a>. Thus, the <a href='/dccode/Title-3/Chapter-1/3-103.html'>Section 3-103(a)(9)</a> definition should not be used to give meaning to the word &quot;promise&quot; in <a href='/dccode/Title-3/Chapter-3/Subchapter-I/3-303.html'>Section 3-303(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Some definitions in former Section 1-201 have been reformulated as substantive provisions and have been moved to other sections. See Sections 1-202 (explicating concepts of notice and knowledge formerly addressed in Sections 1-201(25)-(27)), 1-204 (determining when a person gives value for rights, replacing the definition of &quot;value&quot; in former Section 1-201(44)), and 1-206 (addressing the meaning of presumptions, replacing the definitions of &quot;presumption&quot; and &quot;presumed&quot; in former Section 1-201(31)). Similarly, the portion of the definition of &quot;security interest&quot; in former Section 1-201(37) which explained the difference between a security interest and a lease has been relocated to Section 1-203.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Two definitions in former Section 1-201 have been deleted. The definition of &quot;honor&quot; in former Section 1-201(21) has been moved to <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103(1)(b)</a>, inasmuch as the definition only applies to the use of the word in Article 2. The definition of &quot;telegram&quot; in former Section 1-201(41) has been deleted because that word no longer appears in the definition of &quot;conspicuous.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Other than minor stylistic changes and renumbering, the remaining definitions in this section are as in former Article 1 except as noted below.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. &quot;Action.&quot; Unchanged from former Section 1-201, which was derived from similar definitions in Section 191, Uniform Negotiable Instruments Law; Section 76, Uniform Sales Act; Section 58, Uniform Warehouse Receipts Act; Section 53, Uniform Bills of Lading Act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. &quot;Aggrieved party.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. &quot;Agreement.&quot; Derived from former Section 1-201. As used in the Uniform Commercial Code the word is intended to include full recognition of usage of trade, course of dealing, course of performance and the surrounding circumstances as effective parts thereof, and of any agreement permitted under the provisions of the Uniform Commercial Code to displace a stated rule of law. Whether an agreement has legal consequences is determined by applicable provisions of the Uniform Commercial Code and, to the extent provided in <a href='/dccode/Title-1/Chapter-1/Subchapter-I/1-103.html'>Section 1-103</a>, by the law of contracts.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. &quot;Bank.&quot; Derived from Section 4A-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. &quot;Bearer.&quot; Unchanged from former Section 1-201, which was derived from Section 191, Uniform Negotiable Instruments Law.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. &quot;Bill of Lading.&quot; Derived from former Section 1-201. The reference to, and definition of, an &quot;airbill&quot; has been deleted as no longer necessary.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">7. &quot;Branch.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">8. &quot;Burden of establishing a fact.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">9. &quot;Buyer in ordinary course of business.&quot; Except for minor stylistic changes, identical to former Section 1-201 (as amended in conjunction with the 1999 revisions to Article 9). The major significance of the phrase lies in <a href='/dccode/Title-2/Chapter-4/Subchapter-I/2-403.html'>Section 2-403</a> and in the Article on Secured Transactions (Article 9).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The first sentence of paragraph (9) makes clear that a buyer from a pawnbroker cannot be a buyer in ordinary course of business. The second sentence explains what it means to buy &quot;in the ordinary course.&quot; The penultimate sentence prevents a buyer that does not have the right to possession as against the seller from being a buyer in ordinary course of business. Concerning when a buyer obtains possessory rights, see Sections 2-502 and 2-716. However, the penultimate sentence is not intended to affect a buyer&#39;s status as a buyer in ordinary course of business in cases (such as a &quot;drop shipment&quot;) involving delivery by the seller to a person buying from the buyer or a donee from the buyer. The requirement relates to whether as against the seller the buyer or one taking through the buyer has possessory rights.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">10. &quot;Conspicuous.&quot; Derived from former Section 1-201(10). This definition states the general standard that to be conspicuous a term ought to be noticed by a reasonable person. Whether a term is conspicuous is an issue for the court. Subparagraphs (A) and (B) set out several methods for making a term conspicuous. Requiring that a term be conspicuous blends a notice function (the term ought to be noticed) and a planning function (giving guidance to the party relying on the term regarding how that result can be achieved). Although these paragraphs indicate some of the methods for making a term attention-calling, the test is whether attention can reasonably be expected to be called to it. The statutory language should not be construed to permit a result that is inconsistent with that test.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">11. &quot;Consumer.&quot; Derived from Section 9-102(a)(25).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">12. &quot;Contract.&quot; Except for minor stylistic changes, identical to former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">13. &quot;Creditor.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">14. &quot;Defendant.&quot; Except for minor stylistic changes, identical to former Section 1-201, which was derived from Section 76, Uniform Sales Act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">15. &quot;Delivery.&quot; Derived from former Section 1-201. The reference to certificated securities has been deleted in light of the more specific treatment of the matter in <a href='/dccode/Title-8/Chapter-3/8-301.html'>Section 8-301</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">16. &quot;Document of title.&quot; Unchanged from former Section 1-201, which was derived from Section 76, Uniform Sales Act. By making it explicit that the obligation or designation of a third party as &quot;bailee&quot; is essential to a document of title, this definition clearly rejects any such result as obtained in </span>
+                
+                    <span class="" style="font-style: italic; ">Hixson v. Ward</span>
+                
+                    <span class="" style="">, 254 Ill.App. 505 (1929), which treated a conditional sales contract as a document of title. Also the definition is left open so that new types of documents may be included. It is unforeseeable what documents may one day serve the essential purpose now filled by warehouse receipts and bills of lading. Truck transport has already opened up problems which do not fit the patterns of practice resting upon the assumption that a draft can move through banking channels faster than the goods themselves can reach their destination. There lie ahead air transport and such probabilities as teletype transmission of what may some day be regarded commercially as &quot;Documents of Title.&quot; The definition is stated in terms of the function of the documents with the intention that any document which gains commercial recognition as accomplishing the desired result shall be included within its scope. Fungible goods are adequately identified within the language of the definition by identification of the mass of which they are a part.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Dock warrants were within the Sales Act definition of document of title apparently for the purpose of recognizing a valid tender by means of such paper. In current commercial practice a dock warrant or receipt is a kind of interim certificate issued by steamship companies upon delivery of the goods at the dock, entitling a designated person to have issued to him at the company&#39;s office a bill of lading. The receipt itself is invariably nonnegotiable in form although it may indicate that a negotiable bill is to be forthcoming. Such a document is not within the general compass of the definition, although trade usage may in some cases entitle such paper to be treated as a document of title. If the dock receipt actually represents a storage obligation undertaken by the shipping company, then it is a warehouse receipt within this section regardless of the name given to the instrument.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The goods must be &quot;described,&quot; but the description may be by marks or labels and may be qualified in such a way as to disclaim personal knowledge of the issuer regarding contents or condition. However, baggage and parcel checks and similar &quot;tokens&quot; of storage which identify stored goods only as those received in exchange for the token are not covered by this Article.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The definition is broad enough to include an airway bill.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">17. &quot;Fault.&quot; Derived from former Section 1-201. &quot;Default&quot; has been added to the list of events constituting fault.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">18. &quot;Fungible goods.&quot; Derived from former Section 1-201. References to securities have been deleted because Article 8 no longer uses the term &quot;fungible&quot; to describe securities. Accordingly, this provision now defines the concept only in the context of goods.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">19. &quot;Genuine.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">20. &quot;Good faith.&quot; Former Section 1-201(19) defined &quot;good faith&quot; simply as honesty in fact; the definition contained no element of commercial reasonableness. Initially, that definition applied throughout the Code with only one exception. Former <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103(1)(b)</a> provided that &quot;</span>
+                
+                    <span class="" style="font-style: italic; ">in this Article... </span>
+                
+                    <span class="" style="">good faith in the case of a merchant means honesty in fact and the observance of reasonable commercial standards of fair dealing in the trade.&quot; This alternative definition was limited in applicability in three ways. First, it applied only to transactions within the scope of Article 2. Second, it applied only to merchants. Third, strictly construed it applied only to uses of the phrase &quot;good faith&quot; </span>
+                
+                    <span class="" style="font-style: italic; ">in Article 2; </span>
+                
+                    <span class="" style="">thus, so construed it would not define &quot;good faith&quot; for its most important use- the obligation of good faith imposed by former Section 1-203.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Over time, however, amendments to the Uniform Commercial Code brought the Article 2 merchant concept of good faith (subjective honesty and objective commercial reasonableness) into other Articles. First, Article 2A explicitly incorporated the Article 2 standard. See Section 2A-103(7). Then, other Articles broadened the applicability of that standard by adopting it for all parties rather than just for merchants. </span>
+                
+                    <span class="" style="font-style: italic; ">See, e.g.</span>
+                
+                    <span class="" style="">, Sections 3-103(a)(4), 4A-105(a)(6), 8-102(a)(10), and 9-102(a)(43). All of these definitions are comprised of two elements- honesty in fact </span>
+                
+                    <span class="" style="font-style: italic; ">and </span>
+                
+                    <span class="" style="">the observance of reasonable commercial standards of fair dealing. Only revised Article 5 defines &quot;good faith&quot; solely in terms of subjective honesty, and only Article 6 and Article 7 are without definitions of good faith. (It should be noted that, while revised Article 6 did not define good faith, Comment 2 to revised Section 6-102 states that &quot;this Article adopts the definition of &#39;good faith&#39; in Article 1 in all cases, even when the buyer is a merchant.&quot;) Given these developments, it is appropriate to move the broader definition of &quot;good faith&quot; to Article 1. Of course, this definition is subject to the applicability of the narrower definition in revised Article 5.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">21. &quot;Holder.&quot; Derived from former Section 1-201. The definition has been reorganized for clarity.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">22. &quot;Insolvency proceedings.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">23. &quot;Insolvent.&quot; Derived from former Section 1-201. The three tests of insolvency- &quot;generally ceased to pay debts in the ordinary course of business other than as a result of a bona fide dispute as to them,&quot; &quot;unable to pay debts as they become due,&quot; and &quot;insolvent within the meaning of the federal bankruptcy law&quot;- are expressly set up as alternative tests and must be approached from a commercial standpoint.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">24. &quot;Money.&quot; Substantively identical to former Section 1-201. The test is that of sanction of government, whether by authorization before issue or adoption afterward, which recognizes the circulating medium as a part of the official currency of that government. The narrow view that money is limited to legal tender is rejected.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">25. &quot;Organization.&quot; The former definition of this word has been replaced with the standard definition used in acts prepared by the National Conference of Commissioners on Uniform State Laws.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">26. &quot;Party.&quot; Substantively identical to former Section 1-201. Mention of a party includes, of course, a person acting through an agent. However, where an agent comes into opposition or contrast to the principal, particular account is taken of that situation.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">27. &quot;Person.&quot; The former definition of this word has been replaced with the standard definition used in acts prepared by the National Conference of Commissioners on Uniform State Laws.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">28. &quot;Present value.&quot; This definition was formerly contained within the definition of &quot;security interest&quot; in former Section 1-201(37).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">29. &quot;Purchase.&quot; Derived from former Section 1-201. The form of definition has been changed from &quot;includes&quot; to &quot;means.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">30. &quot;Purchaser.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">31. &quot;Record.&quot; Derived from Section 9-102(a)(69).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">32. &quot;Remedy.&quot; Unchanged from former Section 1-201. The purpose is to make it clear that both remedy and right (as defined) include those remedial rights of &quot;self help&quot; which are among the most important bodies of rights under the Uniform Commercial Code, remedial rights being those to which an aggrieved party may resort on its own.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">33. &quot;Representative.&quot; Derived from former Section 1-201. Reorganized, and form changed from &quot;includes&quot; to &quot;means.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">34. &quot;Right.&quot; Except for minor stylistic changes, identical to former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">35. &quot;Security Interest.&quot; The definition is the first paragraph of the definition of &quot;security interest&quot; in former Section 1-201, with minor stylistic changes. The remaining portion of that definition has been moved to Section 1-203. Note that, because of the scope of Article 9, the term includes the interest of certain outright buyers of certain kinds of property.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">36. &quot;Send.&quot; Derived from former Section 1-201. Compare &quot;notifies&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">37. &quot;Signed.&quot; Derived from former Section 1-201. Former Section 1-201 referred to &quot;intention to authenticate&quot;; because other articles now use the term &quot;authenticate,&quot; the language has been changed to &quot;intention to adopt or accept.&quot; The latter formulation is derived from the definition of &quot;authenticate&quot; in Section 9-102(a)(7). This provision refers only to writings, because the term &quot;signed,&quot; as used in some articles, refers only to writings. This provision also makes it clear that, as the term &quot;signed&quot; is used in the Uniform Commercial Code, a complete signature is not necessary. The symbol may be printed, stamped or written; it may be by initials or by thumbprint. It may be on any part of the document and in appropriate cases may be found in a billhead or letterhead. No catalog of possible situations can be complete and the court must use common sense and commercial experience in passing upon these matters. The question always is whether the symbol was executed or adopted by the party with present intention to adopt or accept the writing.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">38. &quot;State.&quot; This is the standard definition of the term used in acts prepared by the National Conference of Commissioners on Uniform State Laws.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">39. &quot;Surety.&quot; This definition makes it clear that &quot;surety&quot; includes all secondary obligors, not just those whose obligation refers to the person obligated as a surety. As to the nature of secondary obligations generally, see Restatement (Third), Suretyship and Guaranty Section 1 (1996).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">40. &quot;Term.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">41. &quot;Unauthorized signature.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">42. &quot;Warehouse receipt.&quot; Unchanged from former Section 1-201, which was derived from Section 76(1), Uniform Sales Act; Section 1, Uniform Warehouse Receipts Act. Receipts issued by a field warehouse are included, provided the warehouseman and the depositor of the goods are different persons.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">43. &quot;Written&quot; or &quot;writing.&quot; Unchanged from former Section 1-201.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

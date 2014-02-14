@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-1022. Minimum recycled content surcharge.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/index.html">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10/index.html">Chapter 10. Solid Waste Management and Multi-Material Recycling</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10/Subchapter-I/index.html">Subchapter I. General Provisions</a></li>
+                    
+                    <li>↪ § 8-1022. Minimum recycled content surcharge.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-10/Subchapter-I/8-1021.html">§ 8-1021. Application for exemption and hearing procedure.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-10/Subchapter-I/8-1022.01.html">§ 8-1022.01. Establishment of a Recycled Newspaper Fiber Content Advisory Task Force.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-1022. Minimum recycled content surcharge.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Subject to <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019(g)</a> and subsection (a-1) of this section, beginning in calendar year 1994, and annually thereafter, any person who fails to comply with <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019</a> and who is not exempt under <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1021.html'>§ 8-1021</a> shall be subject to a recycling surcharge. The recycling surcharge shall be paid by the person to the Department of Public Works before February 15, 1995, and annually thereafter, for the preceding calendar year if the aggregate tonnage of a paper or paper product sold or distributed for the reporting period contains less than the percentage of recycled content required under <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019(c)</a>. If the aggregate percentage of recycled content is less than the percentage required in <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019(c)</a>, the amount of the surcharge shall be 15% of the price paid for the paper or paper product sold or distributed during the reporting period that falls below the required percentage of recycled content.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a-1) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">For newsprint, the amount of the recycling surcharge shall be $10 per ton for the amount of newsprint that falls below the required percentage of recycled content.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The recycling surcharge for newsprint shall apply to each person subject to this section only with regard to any year in which the recycled content percentages required by this section shall be measured on a non-aggregate basis in accordance with <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019(g)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Revenue generated from the recycling surcharge shall be used to fund recycling activities in the District in accordance with <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1015.html'>§ 8-1015</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 16, 1989, D.C. <a href='http://openlims.org/public/L7-226.pdf'>Law 7-226</a>, § 25, as added Mar. 6, 1991, D.C. <a href='http://openlims.org/public/L8-208.pdf'>Law 8-208</a>, § 2, 37 DCR 8458; July 22, 1992, D.C. <a href='http://openlims.org/public/L9-130.pdf'>Law 9-130</a>, § 2(b), 39 DCR 4054.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-3422.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-208</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-208.pdf'>Law 8-208</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1019.html'>§ 8-1019</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-130</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-130.pdf'>Law 9-130</a>, see Historical and Statutory Notes following <a href='/dccode/Title-8/Chapter-10/Subchapter-I/8-1022.01.html'>§ 8-1022.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

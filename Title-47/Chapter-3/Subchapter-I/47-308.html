@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-308. Establishment of budget structure.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/index.html">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3/index.html">Chapter 3. Budget and Financial Management; Borrowing; Deposit of Funds</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3/Subchapter-I/index.html">Subchapter I. Budget and Financial Management</a></li>
+                    
+                    <li>↪ § 47-308. Establishment of budget structure.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-3/Subchapter-I/47-307.html">§ 47-307. Submission of control budget.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-3/Subchapter-I/47-308.01.html">§ 47-308.01. Performance-based budget.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-308. Establishment of budget structure.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Within 30 days of the Mayor&#39;s first call with respect to the preparation of the budget for fiscal year 1982, and any subsequent fiscal year, the Mayor shall submit to the Council a resolution to establish the budget structure, including but not limited to designating control centers and responsibility centers, and a designation of all those entities as they are proposed for financial management purposes within the gross planning budget.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Council shall consider such resolution according to its rules. Should no written notice of disapproval of such resolution be filed by any member of the Council with the Secretary to the Council within 14 days of the receipt of such resolution from the Mayor, the resolution shall be deemed to be approved. Should notice of disapproval be filed during such initial 14 day period, the Council shall dispose of such notice of disapproval within 30 days of the initial receipt of the resolution from the Mayor, or the resolution to establish the budget structure shall be deemed to be approved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">No such resolution may be submitted to the Council during such time as the Council is on recess, according to its rules, nor shall any time period provided in this section continue to run during such time as the Council is on recess.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">If the Council disapproves such resolution, the Mayor may, on a clear showing of changed circumstance, new information, or additional administrative hardship, ask for a reconsideration of the previous action of the Council. The Council may in its discretion reconsider its previous action.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 16, 1980, D.C. <a href='http://openlims.org/public/L3-104.pdf'>Law 3-104</a>, § 9, 27 DCR 3748; enacted, Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-254.pdf'>Law 11-254</a>, § 2, 44 DCR 1575; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, § 210, 56 DCR 1117.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-308.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, in subsec. (c), substituted &quot;in recess&quot; for &quot;in process&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-104</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-104.pdf'>Law 3-104</a>, see Historical and Statutory Notes following <a href='/dccode/Title-47/Chapter-3/Subchapter-VI/47-381.html'>§ 47-381</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, the &quot;Technical Amendments Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-994 which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 2, 2008, and December 16, 2008, respectively. Signed by the Mayor on January 15, 2009, it was assigned Act No. 17-687 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a> became effective on March 25, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Annual budget structure approved: Pursuant to Resolution 7-210, the &quot;Budget Structure for the Fiscal Year 1989 Budget Approval Resolution of 1988&quot;, effective February 2, 1988, the Council approved the proposed budget structure for the fiscal year ending September 30, 1989.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

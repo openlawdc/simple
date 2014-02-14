@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Subchapter V. Public Assistance Programs</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-2/index.html">Chapter 2. Public Assistance</a></li>
+                    
+                    <li>↪ Subchapter V. Public Assistance Programs</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-2/Subchapter-IV/index.html">Subchapter IV. Medicaid Program Administration</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-2/Subchapter-VI/index.html">Subchapter VI. Emergency Public Assistance</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Subchapter V. Public Assistance Programs</h1>
+
+
+     
+
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.01.html">§ 4-205.01. Eligibility for public assistance.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.02.html">§ 4-205.02. Residency requirement.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.03.html">§ 4-205.03. Determination of residency.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.04.html">§ 4-205.04. Relocation of recipients to another jurisdiction.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.05.html">§ 4-205.05. Definitions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.05a.html">§ 4-205.05a. General Assistance for Children program.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.06~P.html">§ 4-205.06. Old Age Assistance and Aid to the Permanently and Totally Disabled need determination. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.07~P.html">§ 4-205.07. Aid to the Blind need determination. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.08~P.html">§ 4-205.08. GPA need determination. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.09~P.html">§ 4-205.09. AB and ATD self-supporting plans. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.10.html">§ 4-205.10. TANF income eligibility standards.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.11.html">§ 4-205.11. TANF need determination.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.11a.html">§ 4-205.11a. Time limit for receipt of TANF benefits.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.11b.html">§ 4-205.11b. Reduction of benefits for long-term TANF recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.11c.html">§ 4-205.11c. Human impact statement.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.12~P.html">§ 4-205.12. Food stamp coupon allotment disregarded. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.13~P.html">§ 4-205.13. Enumerated income disregarded. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.13a.html">§ 4-205.13a. Treatment of payment for costs of work participation.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.14~P.html">§ 4-205.14. Determination of GPA need standard. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.15.html">§ 4-205.15. Standards for inclusion in TANF assistance unit.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.16~P.html">§ 4-205.16. Contribution guidelines for nonassistance unit children. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.17~P.html">§ 4-205.17. Definitions. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.18.html">§ 4-205.18. Child's eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19.html">§ 4-205.19. Application; assignment of rights for child support.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19a.html">§ 4-205.19a. Redetermination of eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19b.html">§ 4-205.19b. Job search and job readiness requirements for TANF applicants.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19c.html">§ 4-205.19c. Failure to comply with job search and job readiness requirements for TANF applicants.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19d.html">§ 4-205.19d. Work participation requirements for TANF recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19e.html">§ 4-205.19e. Failure to comply with work requirements for TANF recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19f.html">§ 4-205.19f. Sanctions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19g.html">§ 4-205.19g. Exemptions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19h.html">§ 4-205.19h. Administration of job search, job readiness, work, and self-sufficiency activities.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19i.html">§ 4-205.19i. Nondiscrimination against TANF and POWER applicants and recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19j.html">§ 4-205.19j. Health and safety standards for TANF and POWER recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19k.html">§ 4-205.19k. Workers' compensation for TANF recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19l.html">§ 4-205.19l. Nondisplacement by TANF recipients.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19m.html">§ 4-205.19m. Reporting requirements.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.19n.html">§ 4-205.19n. Family assessment plan.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.20.html">§ 4-205.20. Parental absence by reason of imprisonment.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.21.html">§ 4-205.21. Eligibility standards for children of unemployed parents.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.22.html">§ 4-205.22. Availability of stepparent.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.23.html">§ 4-205.23. Obligations of custodial relatives other than parents.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.24.html">§ 4-205.24. Eligibility requirements for alien children.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.25.html">§ 4-205.25. Eligibility determined prospectively.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.26.html">§ 4-205.26. Procedure for public and medical assistance application.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.27.html">§ 4-205.27. Failure to determine eligibility within time requirement.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.28.html">§ 4-205.28. Income application in determining need for family receiving more than 1 assistance payment.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.29.html">§ 4-205.29. Income status of loans and grants.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.30.html">§ 4-205.30. Definitions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.31.html">§ 4-205.31. Application for benefits required.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.32.html">§ 4-205.32. Establishment of net payment received.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.33.html">§ 4-205.33. Treatment of lump-sum payments and settlements.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.34~P.html">§ 4-205.34. Treatment of accrued statutory benefits. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.35~P.html">§ 4-205.35. Failure of recipients to report promptly. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.36.html">§ 4-205.36. Work incentive allowances disregarded.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.37.html">§ 4-205.37. Standard for income and resource determination.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.38.html">§ 4-205.38. Availability of income and resources.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.39.html">§ 4-205.39. Earned income.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.40.html">§ 4-205.40. Resources in kind.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.41.html">§ 4-205.41. Emergency applicant may retain automobile.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.42.html">§ 4-205.42. Definitions relating to incapacity and disability.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.42a~P.html">§ 4-205.42a. Eligibility for General Public Assistance. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.43.html">§ 4-205.43. Participation in labor dispute; pregnancy.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.44~P.html">§ 4-205.44. Amount. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.45~P.html">§ 4-205.45. Standard for requirements exceptions. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.46~P.html">§ 4-205.46. Meal standard. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.47.html">§ 4-205.47. Nursing care standard.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.48.html">§ 4-205.48. Standards of assistance adopted and applied.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.49.html">§ 4-205.49. Special living arrangements.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.50.html">§ 4-205.50. Costs of training and employment.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.51.html">§ 4-205.51. Denial of monthly benefits.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.51a.html">§ 4-205.51a. TANF Universal Service Delivery Model.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.51b.html">§ 4-205.51b. Annual comparative review.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.52.html">§ 4-205.52. Determination of amount of public assistance payments for assistance unit; standards of assistance enumerated.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.53.html">§ 4-205.53. Reconsideration of grants; modification of amount; duty of recipient to notify Mayor of change of circumstances; grants under General Public Assistance Program for Unemployables.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.54.html">§ 4-205.54. TANF assistance unit monthly report.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.55.html">§ 4-205.55. Timely and adequate notice of action to discontinue, etc., assistance.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.56.html">§ 4-205.56. Information from source other than recipient.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.57.html">§ 4-205.57. Consequences of failure to request hearing or submit additional information to clarify eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.58.html">§ 4-205.58. Consideration of additional information.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.59.html">§ 4-205.59. Effect of pending hearing.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.60~P.html">§ 4-205.60. Benefits pending hearing. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.61.html">§ 4-205.61. Definitions.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link placeholder" style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.62~P.html">§ 4-205.62. Establishment of a Demonstration Project. [Repealed]</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.63.html">§ 4-205.63. Eligibility for public assistance; home living requirement.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.64.html">§ 4-205.64. Failure to meet home living requirement; notice.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.65.html">§ 4-205.65. Eligibility for public assistance; learnfare.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.66.html">§ 4-205.66. Failure to meet school attendance requirements; notice.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.67.html">§ 4-205.67. Expansion of Jobs Opportunities and Basic Skills and Alternative Work Experience Programs.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.68.html">§ 4-205.68. Duties of the Mayor.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.69.html">§ 4-205.69. Denial of assistance for fraudulent misrepresentation of residency.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.70.html">§ 4-205.70. Denial of assistance for fugitive felons and probation and parole violators.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.71.html">§ 4-205.71. Granting TANF benefits to drug felons.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.72.html">§ 4-205.72. POWER - Establishment; eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.72a.html">§ 4-205.72a. POWER - Additional eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.73.html">§ 4-205.73. POWER - Application.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.74.html">§ 4-205.74. POWER - Medical review.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.75.html">§ 4-205.75. POWER - Redetermination of eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.76.html">§ 4-205.76. POWER - Participation in activities to assist in achieving self-sufficiency.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.77.html">§ 4-205.77. POWER - Failure to participate in self-sufficiency activities.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.78.html">§ 4-205.78. POWER - Amount of assistance.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.79.html">§ 4-205.79. POWER - No creation of an entitlement.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.80.html">§ 4-205.80. POWER - Medicaid eligibility.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.81.html">§ 4-205.81. Diversion payments.</a></span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="4-205.82.html">§ 4-205.82. Provision of information concerning the Earned Income Credit.</a></span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

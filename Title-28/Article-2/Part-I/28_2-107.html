@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:2-107. Goods to be severed from realty; recording.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-2/index.html">Article 2. Sales</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-2/Part-I/index.html">Part I. Short Title, General Construction and Subject Matter</a></li>
+                    
+                    <li>↪ § 28:2-107. Goods to be severed from realty; recording.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-2/Part-I/28_2-106.html">§ 28:2-106. Definitions: &quot;contract&quot;; &quot;agreement&quot;; &quot;contract for sale&quot;; &quot;sale&quot;; &quot;present sale&quot;; &quot;conforming&quot; to contract; &quot;termination&quot;; &quot;cancellation&quot;.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-2/Part-II/index.html">Part II. Form, Formation and Readjustment of Contract</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:2-107. Goods to be severed from realty; recording.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A contract for the sale of minerals or the like (including oil and gas) or a structure or its materials to be removed from realty is a contract for the sale of goods within this article if they are to be severed by the seller but until severance a purported present sale thereof which is not effective as a transfer of an interest in land is effective only as a contract to sell.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A contract for the sale apart from the land of growing crops or other things attached to realty and capable of severance without material harm thereto but not described in subsection (1) or of timber to be cut is a contract for the sale of goods within this article whether the subject matter is to be severed by the buyer or by the seller even though it forms part of the realty at the time of contracting, and the parties can by identification effect a present sale before severance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The provisions of this section are subject to any third party rights provided by the law relating to realty records, and the contract for sale may be executed and recorded as a document transferring an interest in land and shall then constitute notice to third parties of the buyer&#39;s rights under the contract for sale.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=641'>77 Stat. 641</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 16, 1982, D.C. <a href='http://openlims.org/public/L4-85.pdf'>Law 4-85</a>, § 4, 29 DCR 309.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:2-105.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:2-107.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:2-107.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-85</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L4-85.pdf'>Law 4-85</a>, the &quot;Uniform Commercial Code Amendment Act of 1981,&quot; was introduced in Council and assigned Bill No. 4-89, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on November 24, 1981, and December 8, 1981, respectively. Signed by the Mayor on January 18, 1982, it was assigned Act No. 4-139 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Uniform Statutory Provision:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">See Section 76, Uniform Sales Act on prior policy; Section 7, Uniform Conditional Sales Act.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Purposes:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Subsection (1). Notice that this subsection applies only if the timber, minerals or structures &quot;are to be severed by the seller&quot;. If the buyer is to sever, such transactions are considered contracts affecting land and all problems of the Statute of Frauds and of the recording of land rights apply to them. Therefore, the Statute of Frauds section of this Article does not apply to such contracts though they must conform to the Statute of Frauds affecting the transfer of interests in land.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (2). &quot;Things attached&quot; to the realty which can be severed without material harm are goods within this Article regardless of who is to effect the severance. The word &quot;fixtures&quot; has been avoided because of the diverse definitions of this term, the test of &quot;severance without material harm&quot; being substituted.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The provision in subsection (3) for recording such contracts in within the purview of this Article since it is a means of preserving the buyer&#39;s rights under the contract of sale.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. The security phases of things attached to or to become attached to realty are dealt with in the Article on Secured Transactions (Article 9) and it is to be noted that the definition of goods in that Article differs from the definition of goods in this Article.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Point 1: Section 2-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Point 2: <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-105.html'>Section 2-105</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Point 3: Articles 9 and 9-105.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Buyer&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Contract&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Contract for sale&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-106.html'>Section 2-106</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Goods&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-105.html'>Section 2-105</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Party&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Present sale&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-106.html'>Section 2-106</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Rights&quot;. Section 1-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Seller&quot;. <a href='/dccode/Title-2/Chapter-1/Subchapter-I/2-103.html'>Section 2-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Reason for 1972 Change [Laws 1977, Ch. 452]</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Several timber-growing states have changed the 1962 Code to make timber to be cut under a contract of severance goods, regardless of the question who is to sever them. The section is revised to adopt this change. Financing of the transaction is facilitated if the timber is treated as goods instead of real estate. A similar change is made in the definition of &quot;goods&quot; in Section 9-105. To protect persons dealing with timberlands, filing on timber to be cut is required in Part 4 of Article 9 to be made in real estate records in a manner comparable to fixture filing.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

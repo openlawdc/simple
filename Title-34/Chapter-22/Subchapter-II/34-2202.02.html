@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 34-2202.02. Establishment of the District of Columbia Water and Sewer Authority; general purpose of the Authority.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/index.html">Title 34. Public Utilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-22/index.html">Chapter 22. Water and Sewer Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-22/Subchapter-II/index.html">Subchapter II. General Provisions</a></li>
+                    
+                    <li>↪ § 34-2202.02. Establishment of the District of Columbia Water and Sewer Authority; general purpose of the Authority.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.01.html">§ 34-2202.01. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.03.html">§ 34-2202.03. General powers of Authority.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 34-2202.02. Establishment of the District of Columbia Water and Sewer Authority; general purpose of the Authority.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established, as an independent authority of the District government, the District of Columbia Water and Sewer Authority. The Authority shall be a corporate body, created to effectuate certain public purposes, that has a separate legal existence within the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Except as provided in §<a href='/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.14.html'>§ 34-2202.14</a> and 34-2202.15, the Authority shall be subject to all laws applicable to offices, agencies, departments, and instrumentalities of the District government, and shall be subject to the provisions of Chapter 2 of Title 1, including provisions granting oversight responsibilities to the Chief Financial Officer as defined in <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.25.html'>§ 1-204.25(b)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Notwithstanding any other provisions of this chapter, the general purpose of the Authority is to plan, design, construct, operate, maintain, regulate, finance, repair, modernize, and improve water distribution and sewage collection, treatment, and disposal systems and services, and to encourage conservation.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 18, 1996, D.C. <a href='http://openlims.org/public/L11-111.pdf'>Law 11-111</a>, § 202, 43 DCR 548; Sept. 18, 2007, D.C. <a href='http://openlims.org/public/L17-20.pdf'>Law 17-20</a>, § 6062(a), 54 DCR 7052.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D/Subpart-1/1-204.53.html'>§ 1-204.53</a>, <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-E/Subpart-5/1-204.90.html'>§ 1-204.90</a>, <a href='/dccode/Title-2/Chapter-2/Subchapter-XII/2-223.01.html'>§ 2-223.01</a>, § 8-105.71, <a href='/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.01.html'>§ 34-2202.01</a>, and <a href='/dccode/Title-42/Chapter-32A/42-3251.html'>§ 42-3251</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 43-1672.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-20.pdf'>Law 17-20</a>, in subsec. (b), inserted &quot;,including provisions granting oversight responsibilities to the Chief Financial Officer as defined in <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.25.html'>§ 1-204.25(b)</a>&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 6062(a) of Fiscal Year 2008 Budget Support Emergency Act of 2007 (D.C. Act 17-74, July 25, 2007, 54 DCR 7549).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-111.pdf'>Law 11-111</a>, see Historical and Statutory Notes following <a href='/dccode/Title-34/Chapter-22/Subchapter-I/34-2201.01.html'>§ 34-2201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-20</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-20.pdf'>Law 17-20</a>, see notes following <a href='/dccode/Title-34/Chapter-15/34-1514~P.html'>§ 34-1514</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 6061 of D.C. <a href='http://openlims.org/public/L17-20.pdf'>Law 17-20</a> provided that subtitle G of title VI of the act may be cited as the &quot;Water and Sewer Authority Clarification of Authorities and Report Requirement Amendment Act of 2007&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Mayor's orders</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment of the Executive Transition Team for the District of Columbia Water and Sewer Authority: See Mayor&#39;s Order 96-43, March 27, 1996 (43 DCR 1807).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

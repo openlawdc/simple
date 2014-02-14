@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 24-251.04. Procedures.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/index.html">Title 24. Prisoners and Their Treatment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-2/index.html">Chapter 2. Prisons and Prisoners</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-2/Subchapter-VI/index.html">Subchapter VI. Resocialization Furlough Program</a></li>
+                    
+                    <li>↪ § 24-251.04. Procedures.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-2/Subchapter-VI/24-251.03.html">§ 24-251.03. Purposes of furloughs; furloughs over 12 hours.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-2/Subchapter-VI/24-251.05.html">§ 24-251.05. Records and reports.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 24-251.04. Procedures.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Each caseworker or counselor on the staff of the Department who is assigned to investigate an application for a furlough shall: (1) verify the reasons given by the applicant for the furlough; (2) determine whether the furlough requested and the applicant meet the requirements of this subchapter; and (3) ascertain whether the furlough will contribute to the attainment of the correctional goals of the applicant. If the caseworker or counselor finds that the request meets these criteria, and the provisions of this subchapter, then he shall prepare a memorandum recommending the granting of the furlough. Such memorandum shall be reviewed by the appropriate supervisory personnel and finally by the Mayor, or his designated agent. Each such memorandum shall contain the name of the resident concerned, his Department number, the crime for which he was sentenced, the reason for the requested furlough, all factual information (including its verification data), and a statement by the caseworker or counselor on how the furlough is expected to contribute to the attainment of the resident concerned correctional goals and the date of the last furlough granted to such resident.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Each resident being released on furlough will be advised in writing of the conditions of his furlough and will be given a thorough explanation of such conditions. In addition, each resident will be advised that the wilful failure to remain within the extended limits of his confinement, or his failure to return to a designated place within the time prescribed may be deemed an escape, punishable by a fine of not more than $5,000 or imprisonment for not longer than 5 years, or both. This furlough release authorization form shall be signed by the resident concerned, indicating his understanding of the conditions of the furlough and his willingness to comply with such conditions. Such form will also be signed by the person authorizing such furlough. The resident concerned will be given a copy of such form and instructed to keep it on his person at all times while on furlough.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If a resident on furlough fails to return to a designated place within the time specified in the furlough authorization form signed by him, or if there is reason to believe that he has violated the conditions of his furlough after release, the Administrator shall immediately attempt to contact the resident in order to have him returned to the institution or facility from which he was released. If a furloughed resident cannot be located within 2 hours after the scheduled time for his return, he shall be deemed to be an escapee, subject to the appropriate actions taken under Departmental Order 5120.1A.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 23, 1977, D.C. <a href='http://openlims.org/public/L1-130.pdf'>Law 1-130</a>, § 5, 23 DCR 9694.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 24-484.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 24-484.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-130</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-130.pdf'>Law 1-130</a>, see Historical and Statutory Notes following <a href='/dccode/Title-24/Chapter-2/Subchapter-VI/24-251.01.html'>§ 24-251.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

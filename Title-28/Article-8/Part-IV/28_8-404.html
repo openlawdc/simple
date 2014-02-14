@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:8-404. Wrongful registration.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/index.html">Article 8. Investment Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-8/Part-IV/index.html">Part IV. Registration</a></li>
+                    
+                    <li>↪ § 28:8-404. Wrongful registration.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-IV/28_8-403.html">§ 28:8-403. Demand that issuer not register transfer.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-8/Part-IV/28_8-405.html">§ 28:8-405. Replacement of lost, destroyed, or wrongfully taken security certificate.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:8-404. Wrongful registration.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except as otherwise provided in § 28:8-406, an issuer is liable for wrongful registration of transfer if the issuer has registered a transfer of a security to a person not entitled to it, and the transfer was registered:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Pursuant to an ineffective indorsement or instruction;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">After a demand that the issuer not register transfer became effective under § 28:8-403(a) and the issuer did not comply with § 28:8-403(b);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">After the issuer had been served with an injunction, restraining order, or other legal process enjoining it from registering the transfer, issued by a court of competent jurisdiction, and the issuer had a reasonable opportunity to act on the injunction, restraining order, or other legal process; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">By an issuer acting in collusion with the wrongdoer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">An issuer that is liable for wrongful registration of transfer under subsection (a) of this section on demand shall provide the person entitled to the security with a like certificated or uncertificated security, and any payments or distributions that the person did not receive as a result of the wrongful registration. If an overissue would result, the issuer&#39;s liability to provide the person with a like security is governed by § 28:8-210.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Except as otherwise provided in subsection (a) of this section or in a law relating to the collection of taxes, an issuer is not liable to an owner or other person suffering loss as a result of the registration of a transfer of a security if registration was made pursuant to an effective indorsement or instruction.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=739'>77 Stat. 739</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 16, 1993, D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, § 4, 39 DCR 9165; renumbered and amended, Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, § 2, 44 DCR 1087.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:8-406.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:8-404.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:8-404.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, see Historical and Statutory Notes following § 28:8-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-240.pdf'>Law 11-240</a>, see Historical and Statutory Notes following § 28:8-401.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Subsection (a)(1) provides that an issuer is liable if it registers transfer pursuant to an indorsement or instruction that was not effective. For example, an issuer that registers transfer on a forged indorsement is liable to the registered owner. The fact that the issuer had no reason to suspect that the indorsement was forged or that the issuer obtained the ordinary assurances under <a href='/dccode/Title-8/Chapter-4/8-402.html'>Section 8-402</a> does not relieve the issuer from liability. The reason that issuers obtain signature guaranties and other assurances is that they are liable for wrongful registration.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Subsection (b) specifies the remedy for wrongful registration. Pre-Code cases established the registered owner&#39;s right to receive a new security where the issuer had wrongfully registered a transfer, but some cases also allowed the registered owner to elect between an equitable action to compel issue of a new security and an action for damages. Cf. Casper v. Kalt-Zimmers Mfg. Co., 159 Wis. 517, 149 N.W. 754 (1914). Article 8 does not allow such election. The true owner of a certificated security is required to take a new security except where an overissue would result and a similar security is not reasonably available for purchase. See Section 8-210. The true owner of an uncertificated security is entitled and required to take restoration of the records to their proper state, with a similar exception for overissue.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Read together, subsections (c) and (a) have the effect of providing that an issuer has no duties to an adverse claimant unless the claimant serves legal process on the issuer to enjoin registration. Issuers, or their transfer agents, perform a record-keeping function for the direct holding system that is analogous to the functions performed by clearing corporations and securities intermediaries in the indirect holding system. This section applies to the record-keepers for the direct holding system the same standard that Section 8-115 applies to the record-keepers for the indirect holding system. Thus, issuers are not liable to adverse claimants merely on the basis of notice. As in the case of the analogous rules for the indirect holding system, the policy of this section is to protect the right of investors to have their securities transfers processed without the disruption or delay that might result if the record-keepers risked liability to third parties. It would be undesirable to apply different standards to the direct and indirect holding systems, since doing so might operate as a disincentive to the development of a book-entry direct holding system.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. This section changes prior law under which an issuer could be held liable, even though it registered transfer on an effective indorsement or instruction, if the issuer had in some fashion been notified that the transfer might be wrongful against a third party, and the issuer did not appropriately discharge its duty to inquire into the adverse claim. See <a href='/dccode/Title-8/Chapter-4/8-403.html'>Section 8-403</a> (1978).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The rule of former <a href='/dccode/Title-8/Chapter-4/8-403.html'>Section 8-403</a> was anomalous inasmuch as Section 8-207 provides that the issuer is entitled to &quot;treat the registered owner as the person exclusively entitled to vote, receive notifications, and otherwise exercise all the rights and powers of an owner.&quot; Under Section 8-207, the fact that a third person notifies the issuer of a claim does not preclude the issuer from treating the registered owner as the person entitled to the security. See Kerrigan v. American Orthodontics Corp., 960 F.2d 43 (7th Cir. 1992). The change made in the present version of <a href='/dccode/Title-8/Chapter-4/8-404.html'>Section 8-404</a> ensures that the rights of registered owners and the duties of issuers with respect to registration of transfer will be protected against third-party interference in the same fashion as other rights of registered ownership.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Definitional Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""></span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Certificated security&quot;. Section 8-102(a)(4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Effective&quot;. Section 8-107.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Indorsement&quot;. Section 8-102(a)(11).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Instruction&quot;. Section 8-102(a)(12).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Issuer&quot;. <a href='/dccode/Title-8/Chapter-2/8-201.html'>Section 8-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Security&quot;. Section 8-102(a)(15).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Uncertificated security&quot;. Section 8-102(a)(18).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

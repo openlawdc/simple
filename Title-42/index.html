@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - Title 42. Real Property</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                    <li>↪ Title 42. Real Property</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-41/index.html">Title 41. Personal Property</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-43/index.html">Title 43. Cemeteries and Crematories</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>Title 42. Real Property</h1>
+
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle I. General</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-1/index.html">Chapter 1. Acknowledgments</a></span>
+                
+                    <br><span class="range">§§ 42-101 &ndash; 42-148</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-2/index.html">Chapter 2. Conservation Easements</a></span>
+                
+                    <br><span class="range">§§ 42-201 &ndash; 42-205</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-3/index.html">Chapter 3. Conveyable Estates and Methods of Conveyance</a></span>
+                
+                    <br><span class="range">§§ 42-301 &ndash; 42-307</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-4/index.html">Chapter 4. Deed Effective and Recordation Dates</a></span>
+                
+                    <br><span class="range">§§ 42-401 &ndash; 42-410</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-5/index.html">Chapter 5. Estates in Land</a></span>
+                
+                    <br><span class="range">§§ 42-501 &ndash; 42-523</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-6/index.html">Chapter 6. Forms; Covenants and Warranties</a></span>
+                
+                    <br><span class="range">§§ 42-601 &ndash; 42-609</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-7/index.html">Chapter 7. Interpretation of Instruments</a></span>
+                
+                    <br><span class="range">§§ 42-701 &ndash; 42-705</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-8/index.html">Chapter 8. Mortgages and Deeds of Trust</a></span>
+                
+                    <br><span class="range">§§ 42-801 &ndash; 42-820</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-8A/index.html">Chapter 8A. Mortgages, Deeds of Trust, and Foreclosure</a></span>
+                
+                    <br><span class="range">§§ 42-831.01 &ndash; 42-846.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-9/index.html">Chapter 9. Ownership of Real Property by Aliens and Nonresidents</a></span>
+                
+                    <br><span class="range">§§ 42-901 &ndash; 42-903</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-10/index.html">Chapter 10. Powers Relating to Realty</a></span>
+                
+                    <br><span class="range">§§ 42-1001 &ndash; 42-1019</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-11/index.html">Chapter 11. Recordation Tax on Deeds</a></span>
+                
+                    <br><span class="range">§§ 42-1101 &ndash; 42-1124</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-12/index.html">Chapter 12. Recorder of Deeds</a></span>
+                
+                    <br><span class="range">§§ 42-1201 &ndash; 42-1218</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-12A/index.html">Chapter 12A. Uniform Real Property Electronic Recording</a></span>
+                
+                    <br><span class="range">§§ 42-1231 &ndash; 42-1235</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-13/index.html">Chapter 13. Residential Real Property Seller Disclosures</a></span>
+                
+                    <br><span class="range">§§ 42-1301 &ndash; 42-1311</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-14/index.html">Chapter 14. Sale of Contingent and Limited Interests</a></span>
+                
+                    <br><span class="range">§§ 42-1401 &ndash; 42-1404</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-15/index.html">Chapter 15. Uses and Trusts</a></span>
+                
+                    <br><span class="range">§§ 42-1501 &ndash; 42-1503</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-16/index.html">Chapter 16. Waste</a></span>
+                
+                    <br><span class="range">§§ 42-1601 &ndash; 42-1604</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle II. Brokers and Realtors</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-17/index.html">Chapter 17. Real Estate Brokers' Duties</a></span>
+                
+                    <br><span class="range">§§ 42-1701 &ndash; 42-1764</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-18/index.html">Chapter 18. Real Estate Sale or Rent Signs</a></span>
+                
+                    <br><span class="range">§§ 42-1801 &ndash; 42-1801</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle III. Condominiums</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-19/index.html">Chapter 19. Condominiums</a></span>
+                
+                    <br><span class="range">§§ 42-1901.01 &ndash; 42-1904.18</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-20/index.html">Chapter 20. Horizontal Property Regimes</a></span>
+                
+                    <br><span class="range">§§ 42-2001 &ndash; 42-2051</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle IV. Housing Enhancement Programs</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-21/index.html">Chapter 21. Homestead Housing Preservation</a></span>
+                
+                    <br><span class="range">§§ 42-2101 &ndash; 42-2111</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-21A/index.html">Chapter 21A. Affordable Housing Clearinghouse Directory</a></span>
+                
+                    <br><span class="range">§§ 42-2131 &ndash; 42-2142</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-22/index.html">Chapter 22. Senior Citizens' Home Repair and Improvement Program Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2201 &ndash; 42-2207</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle V. Housing Finance and Assistance</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-23/index.html">Chapter 23. Credit Line Deeds of Trust</a></span>
+                
+                    <br><span class="range">§§ 42-2301 &ndash; 42-2303</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-24/index.html">Chapter 24. Disbursement of Settlement Proceeds</a></span>
+                
+                    <br><span class="range">§§ 42-2401 &ndash; 42-2407</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-24A/index.html">Chapter 24A. Foreclosure Rescue Prohibited</a></span>
+                
+                    <br><span class="range">§§ 42-2431 &ndash; 42-2435</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-25/index.html">Chapter 25. Government Employer-Assisted Housing Program</a></span>
+                
+                    <br><span class="range">§§ 42-2501 &ndash; 42-2507</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-26/index.html">Chapter 26. Home Purchase Assistance Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2601 &ndash; 42-2626</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-26A/index.html">Chapter 26A. Homeownership Counseling</a></span>
+                
+                    <br><span class="range">§§ 42-2651 &ndash; 42-2651</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-27/index.html">Chapter 27. Housing Finance Agency</a></span>
+                
+                    <br><span class="range">§§ 42-2701.01 &ndash; 42-2706.05</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-28/index.html">Chapter 28. Housing Production Trust Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2801 &ndash; 42-2812.12</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-28A/index.html">Chapter 28A. Low-Income Housing Preservation and Protection</a></span>
+                
+                    <br><span class="range">§§ 42-2851.01 &ndash; 42-2851.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-28B/index.html">Chapter 28B. Low-Income Housing Tax Credit Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2853.01 &ndash; 42-2853.02</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-28C/index.html">Chapter 28C. Comprehensive Housing Task Force Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2855.01 &ndash; 42-2855.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-28D/index.html">Chapter 28D. Department of Housing and Community Development Unified Fund</a></span>
+                
+                    <br><span class="range">§§ 42-2857.01 &ndash; 42-2857.01</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-29/index.html">Chapter 29. Metropolitan Police Housing Assistance and Community Safety Program</a></span>
+                
+                    <br><span class="range">§§ 42-2901 &ndash; 42-2903</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-30/index.html">Chapter 30. Servicemen's Readjustment</a></span>
+                
+                    <br><span class="range">§§ 42-3001 &ndash; 42-3002</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle VI. Nuisance Property</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-31/index.html">Chapter 31. Drug-, Firearm-, or Prostitution-Related Nuisance Abatement</a></span>
+                
+                    <br><span class="range">§§ 42-3101 &ndash; 42-3114</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-31A/index.html">Chapter 31A. Abatement of Nuisance Property</a></span>
+                
+                    <br><span class="range">§§ 42-3131.01 &ndash; 42-3131.17</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-31A1/index.html">Chapter 31A1. Abatement of Graffiti</a></span>
+                
+                    <br><span class="range">§§ 42-3141.01 &ndash; 42-3141.11</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-31B/index.html">Chapter 31B. Quick Acquisition of Abandoned and Nuisance Property</a></span>
+                
+                    <br><span class="range">§§ 42-3151.01. &ndash; 42-3151.13</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-31C/index.html">Chapter 31C. Quick Acquisition of Abandoned and Nuisance Property</a></span>
+                
+                    <br><span class="range">§§ 42-3171.01 &ndash; 42-3173.12</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle VII. Rental Housing</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-32/index.html">Chapter 32. Landlord and Tenant</a></span>
+                
+                    <br><span class="range">§§ 42-3201 &ndash; 42-3232</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-32A/index.html">Chapter 32A. Lead Level Test of Water in Multiple Dwellings</a></span>
+                
+                    <br><span class="range">§§ 42-3251 &ndash; 42-3255</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-33/index.html">Chapter 33. Master-Metered Apartment Buildings</a></span>
+                
+                    <br><span class="range">§§ 42-3301 &ndash; 42-3307</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-34/index.html">Chapter 34. Rental Housing Conversion and Sale</a></span>
+                
+                    <br><span class="range">§§ 42-3401.01 &ndash; 42-3405.13</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-35/index.html">Chapter 35. Rental Housing Generally</a></span>
+                
+                    <br><span class="range">§§ 42-3501.01 &ndash; 42-3509.08</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-35A/index.html">Chapter 35A. Rental Housing: Tenant Advocacy</a></span>
+                
+                    <br><span class="range">§§ 42-3531.01 &ndash; 42-3531.10</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-36/index.html">Chapter 36. Residential Drug-Related Evictions</a></span>
+                
+                    <br><span class="range">§§ 42-3601 &ndash; 42-3640</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-36A/index.html">Chapter 36A. Tenant Receivership</a></span>
+                
+                    <br><span class="range">§§ 42-3651.01 &ndash; 42-3651.08</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle VII-A. Personal Property</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-36B/index.html">Chapter 36B. Lease-Purchase Agreements</a></span>
+                
+                    <br><span class="range">§§ 42-3671.01 &ndash; 42-3671.14</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="subheading " style="padding-left: 0px">
+            
+                
+                    <span class="level-heading" style="">Subtitle VIII. Repealed and Expired Provisions</span>
+                
+            
+        </p>
+    
+
+    
+
+     
+
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-37/index.html">Chapter 37. Delinquent Home Mortgage Payments Fund</a></span>
+                
+                    <br><span class="range">§§ 42-3701 &ndash; 42-3707</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-38/index.html">Chapter 38. Government Employer-Assisted Housing</a></span>
+                
+                    <br><span class="range">§§ 42-3801 &ndash; 42-3806</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-39/index.html">Chapter 39. Real Estate Appraisers</a></span>
+                
+                    <br><span class="range">§§ 42-3901 &ndash; 42-3932</span>
+                
+            
+        </p>
+    
+        <p class="child-link " style="padding-left: 0px">
+            
+                <span class="title"><a href="Chapter-40/index.html">Chapter 40. Rent Control</a></span>
+                
+                    <br><span class="range">§§ 42-4001 &ndash; 42-4097</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

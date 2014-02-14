@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-2701.02. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/index.html">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-27/index.html">Chapter 27. Housing Finance Agency</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-27/Subchapter-I/index.html">Subchapter I. Policy and Definitions</a></li>
+                    
+                    <li>↪ § 42-2701.02. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-27/Subchapter-I/42-2701.01.html">§ 42-2701.01. Declaration of policy.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-27/Subchapter-II/index.html">Subchapter II. Establishment of the Agency</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-2701.02. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The following terms as used in this chapter shall have the following meanings unless a different meaning clearly appears from the context:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Chapter&quot; means this Housing Finance Agency Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agency&quot; means the District of Columbia Housing Finance Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Board&quot; means the Board of Directors of the District of Columbia Housing Finance Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Bonds,&quot; &quot;notes&quot; and &quot;other obligations&quot; refer to any bonds, notes, debentures, interim certificates or other evidences of financial indebtedness of the Agency authorized to be issued under the provisions of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Council&quot; means the Council of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Construction loan&quot; means a short term advance of monies for the purpose of constructing or rehabilitating housing projects.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Eligible persons&quot; means individuals and families who qualify for housing under a given program according to the requirements of the program as established by the Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8A) </span>
+                
+                    <span class="" style="">&quot;Eligible State or Local Government Unit&quot; means any state or political subdivision thereof within the meaning of § 103 of the Internal Revenue Code of 1986 (or successor provisions), including any agency, authority, body, commission or entity that acts on behalf of any such state or political subdivision, which is authorized under applicable law to issue bonds or enter into other obligations for the purpose of providing low and moderate income housing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8B) </span>
+                
+                    <span class="" style="">&quot;State or Local Government Loan&quot; means a loan or other advance of monies by the Agency to an Eligible State or Local Government Unit to be used as permitted by refunding agreements between the Eligible State or Local Government Unit and the Department of Housing and Urban Development.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Forward Commitment Mortgage Purchase Program&quot; means a program pursuant to which the Agency commits to purchase from or originate through mortgage lenders mortgage loans committed to and originated by the mortgage lender or the Agency after the date of the Agency&#39;s commitment where the loans are to low or moderate income persons for financing housing units to be owner-occupied or are loans which meet the requirements of subsection (b) or (c) of <a href='/dccode/Title-42/Chapter-27/Subchapter-III/42-2703.02.html'>§ 42-2703.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Homeownership program&quot; means any type of program through which a person can achieve an ownership position in a residential unit including, but not limited to, cooperatives and condominiums.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Housing project or project&quot; means any undertaking to plan, develop, construct or rehabilitate one or more dwelling units located in the District of Columbia which meets the requirements of this chapter. Such undertaking may include, but is not limited to any building, land, equipment, facilities or other real or personal property which are necessary, convenient or desirable appurtenances, streets, sewers, utilities, parks, site preparation or landscaping; and other non-housing facilities, such as offices, stores, commercial facilities, community, medical, educational, social, health, recreational, and welfare facilities, which are reasonably related to and subordinate to the housing project, consistent with the applicable Internal Revenue Code provisions, as amended, and the regulations thereunder, as determined to be necessary, convenient or desirable by the Agency. Any facility which incorporates the residence and care of persons with special needs, including but not limited to the aged, youth, students, homeless, persons with disabilities, persons requiring health and medical care, shall be deemed an undertaking for purposes of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11A) </span>
+                
+                    <span class="" style="">&quot;Loan&quot; means a secured or unsecured obligation issued for the purposes of financing a housing project or homeownership program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Low income persons&quot; means those persons and families whose annual income as determined by the Agency does not exceed the income requirements for low income persons as established by the Internal Revenue Service or the Department of Housing and Urban Development from time to time as applicable to the particular housing project or homeownership program under the Agency&#39;s plan of financing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Moderate income persons&quot; means those persons and families whose annual income as determined by the Agency does not exceed the income requirements for moderate income persons established by the Internal Revenue Service or the Department of Housing and Urban Development from time to time as applicable to the particular housing project or homeownership program under the Agency&#39;s plan of financing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Mortgage&quot; means a mortgage deed, deed of trust, or other security instrument which shall constitute a lien in the District on improvements and real property in fee simple, on a lease having a remaining term, which at the time such mortgage is acquired does not expire for at least that number of years beyond the maturity date of the obligation secured by such mortgage.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Mortgage lender&quot; means an entity as defined in <a href='/dccode/Title-26/Chapter-11/26-1101.html'>§ 26-1101(11)</a>, that is deemed eligible by the Agency to participate in any of its programs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Mortgage loan&quot; means an obligation secured by a mortgage financing a housing project.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Sponsor&quot; means a sole proprietor, joint venture, partnership, limited partnership, trust, corporation, cooperative, or condominium, whether nonprofit or organized for profit, which owns or sponsors a housing project pursuant to the provisions of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Subsidy&quot; means any resources generated through appropriation by the federal or District government, or donated by a public or private source; the resources must be designated for meeting housing expense and may be payments to the occupant of a housing unit as reimbursement for monies expended, payment made for supplementing housing or rent payments made by an occupant, or payments made to effect a reduction in mortgage interest rates paid by the mortgagor of a housing unit.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Cooperative&quot; means a rental housing unit or project, unless the Agency determines by resolution that a given unit or units in a given project shall be deemed to be a homeownership housing unit or project.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Very-Low Income&quot; means those persons and families whose annual income as determined by the Agency does not exceed the income requirements for very-low income persons as established by the Internal Revenue Service or the Department of Housing and Urban Development from time to time as applicable to the particular housing project or homeownership program under the agency&#39;s plan of financing.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-135.pdf'>Law 2-135</a>, § 102, 25 DCR 5008; Aug. 5, 1981, D.C. <a href='http://openlims.org/public/L4-28.pdf'>Law 4-28</a>, § 2(a)-(f), 28 DCR 2848; Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-247.pdf'>Law 12-247</a>, § 2(b), 46 DCR 1100; Apr. 12, 2000, D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, § 164, 47 DCR 520; Mar. 25, 2003, D.C. <a href='http://openlims.org/public/L14-239.pdf'>Law 14-239</a>, § 2(a), 49 DCR)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 45-2102.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 45-1902.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a> validated a previously made technical amendment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-239.pdf'>Law 14-239</a> rewrote par. (15) which had read as follows: &quot;(15) &#39;Mortgage lender&#39; means any bank, mortgage banking company, trust company, savings bank, savings and loan association, credit union, national banking association, federal savings and loan association or federal credit union maintaining an office in the District, or any insurance company authorized to do business in the District and deemed eligible by the Agency to participate in any of its programs.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-135</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-135.pdf'>Law 2-135</a>, see Historical and Statutory Notes following <a href='/dccode/Title-42/Chapter-27/Subchapter-I/42-2701.01.html'>§ 42-2701.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-28</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L4-28.pdf'>Law 4-28</a>, the &quot;District of Columbia Housing Finance Agency Act Amendments Act of 1981,&quot; was introduced in Council and assigned Bill No. 4-145, which was referred to the Committee on Housing and Economic Development. The Bill was adopted on first and second readings on May 5, 1981, and May 19, 1981, respectively. Signed by the Mayor on June 9, 1981, it was assigned Act No. 4-49 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-247</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-247.pdf'>Law 12-247</a>, see Historical and Statutory Notes following <a href='/dccode/Title-42/Chapter-27/Subchapter-I/42-2701.01.html'>§ 42-2701.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a>, the &quot;Technical Amendments Act of 1999,&quot; was introduced in Council and assigned Bill No. 13-435, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 2, 1999, and December 7, 1999, respectively. Signed by the Mayor on December 29, 1999, it was assigned Act No. 13-234 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-91.pdf'>Law 13-91</a> became effective on April 12, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-239</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-239.pdf'>Law 14-239</a>, the &quot;Housing Finance Agency Amendment Act of 2002&quot;, was introduced in Council and assigned Bill No. 14-345, which was referred to the Committee on Economic Development. The Bill was adopted on first and second readings on October 1, 2002, and November 7, 2002, respectively. Signed by the Mayor on November 26, 2002, it was assigned Act No. 14-520 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L14-239.pdf'>Law 14-239</a> became effective on March 25, 2003.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 103 of the Internal Revenue Code of 1986, referred to in (8A), is codified at 26 U.S.C. § 103.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

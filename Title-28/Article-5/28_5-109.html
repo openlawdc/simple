@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:5-109. Fraud and forgery.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-5/index.html">Article 5. Letters of Credit</a></li>
+                    
+                    <li>↪ § 28:5-109. Fraud and forgery.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-5/28_5-108.html">§ 28:5-108. Issuer&#39;s rights and obligations.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-5/28_5-110.html">§ 28:5-110. Warranties.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:5-109. Fraud and forgery.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">If a presentation is made that appears on its face strictly to comply with the terms and conditions of the letter of credit, but a required document is forged or materially fraudulent, or honor of the presentation would facilitate a material fraud by the beneficiary on the issuer or applicant:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The issuer shall honor the presentation, if honor is demanded by (i) a nominated person who has given value in good faith and without notice of forgery or material fraud, (ii) a confirmer who has honored its confirmation in good faith, (iii) a holder in due course of a draft drawn under the letter of credit which was taken after acceptance by the issuer or nominated person, or (iv) an assignee of the issuer&#39;s or nominated person&#39;s deferred obligation that was taken for value and without notice of forgery or material fraud after the obligation was incurred by the issuer or nominated person; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The issuer, acting in good faith, may honor or dishonor the presentation in any other case.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If an applicant claims that a required document is forged or materially fraudulent or that honor of the presentation would facilitate a material fraud by the beneficiary on the issuer or applicant, a court of competent jurisdiction may temporarily or permanently enjoin the issuer from honoring a presentation or grant similar relief against the issuer or other persons only if the court finds that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The relief is not prohibited under the law applicable to an accepted draft or deferred obligation incurred by the issuer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A beneficiary, issuer, or nominated person who may be adversely affected is adequately protected against loss that it may suffer because the relief is granted;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">All of the conditions to entitle a person to the relief under the law of the District of Columbia have been met; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">On the basis of the information submitted to the court, the applicant is more likely than not to succeed under its claim of forgery or material fraud and the person demanding honor does not qualify for protection under subsection (a)(1) of this section.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-238.pdf'>Law 11-238</a>, § 2, 44 DCR 923.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:2-512, § 28:5-108, § 28:5-110, and § 28:5-113.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:5-109.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:5-109.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-238</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-238.pdf'>Law 11-238</a>, see Historical and Statutory Notes following § 28:5-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. This recodification makes clear that fraud must be found either in the documents or must have been committed by the beneficiary on the issuer or applicant. See Cromwell v. Commerce &amp; Energy Bank, 464 So.2d 721 (La.1985).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Secondly, it makes clear that fraud must be &quot;material.&quot; Necessarily courts must decide the breadth and width of &quot;materiality.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The use of the word requires that the fraudulent aspect of a document be material to a purchaser of that document or that the fraudulent act be significant to the participants in the underlying transaction. Assume, for example, that the beneficiary has a contract to deliver 1,000 barrels of salad oil. Knowing that it has delivered only 998, the beneficiary nevertheless submits an invoice showing 1,000 barrels. If two barrels in a 1,000 barrel shipment would be an insubstantial and immaterial breach of the underlying contract, the beneficiary&#39;s act, though possibly fraudulent, is not materially so and would not justify an injunction. Conversely, the knowing submission of those invoices upon delivery of only five barrels would be materially fraudulent. The courts must examine the underlying transaction when there is an allegation of material fraud, for only by examining that transaction can one determine whether a document is fraudulent or the beneficiary has committed fraud and, if so, whether the fraud was material.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Material fraud by the beneficiary occurs only when the beneficiary has no colorable right to expect honor and where there is no basis in fact to support such a right to honor. The section indorses articulations such as those stated in Intraworld Indus. v. Girard Trust Bank, 336 A.2d 316 (Pa.1975), Roman Ceramics Corp. v. People&#39;s Nat. Bank, 714 F.2d 1207 (3d Cir.1983), and similar decisions and embraces certain decisions under Section 5-114 that relied upon the phrase &quot;fraud in the transaction.&quot; Some of these decisions have been summarized as follows in Ground Air Transfer, Inc. v. Westate&#39;s Airlines, Inc., 899 F.2d 1269, 1272-73 (1st Cir.1990):</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">We have said throughout that courts may not &quot;normally&quot; issue an injunction because of an important exception to the general &quot;no injunction&quot; rule. The exception, as we also explained in Itek, 730 F.2d at 24-25, concerns &quot;fraud&quot; so serious as to make it obviously pointless and unjust to permit the beneficiary to obtain the money. Where the circumstances &quot;plainly&quot; show that the underlying contract forbids the beneficiary to call a letter of credit, Itek, 730 F.2d at 24; where they show that the contract deprives the beneficiary of even a &quot;colorable&quot; right to do so, id., at 25; where the contract and circumstances reveal that the beneficiary&#39;s demand for payment has &quot;absolutely no basis in fact,&quot; id.; see Dynamics Corp. of America, 356 F.Supp. at 999; where the beneficiary&#39;s conduct has &quot;so vitiated the entire transaction that the legitimate purposes of the independence of the issuer&#39;s obligation would no longer be served,&quot; Itek, 730 F.2d at 25 (quoting Roman Ceramics Corp. v. Peoples National Bank, 714 F.2d 1207, 1212 n.12, 1215 (3d Cir.1983) (quoting Intraworld Indus., 336 A.2d at 324-25)); then a court may enjoin payment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsection (a)(2) makes clear that the issuer may honor in the face of the applicant&#39;s claim of fraud. The subsection also makes clear what was not stated in former Section 5-114, that the issuer may dishonor and defend that dishonor by showing fraud or forgery of the kind stated in subsection (a). Because issuers may be liable for wrongful dishonor if they are unable to prove forgery or material fraud, presumably most issuers will choose to honor despite applicant&#39;s claims of fraud or forgery unless the applicant procures an injunction. Merely because the issuer has a right to dishonor and to defend that dishonor by showing forgery or material fraud does not mean it has a duty to the applicant to dishonor. The applicant&#39;s normal recourse is to procure an injunction, if the applicant is unable to procure an injunction, it will have a claim against the issuer only in the rare case in which it can show that the issuer did not honor in good faith.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Whether a beneficiary can commit fraud by presenting a draft under a clean letter of credit (one calling only for a draft and no other documents) has been much debated. Under the current formulation it would be possible but difficult for there to be fraud in such a presentation. If the applicant were able to show that the beneficiary were committing material fraud on the applicant in the underlying transaction, then payment would facilitate a material fraud by the beneficiary on the applicant and honor could be enjoined. The courts should be skeptical of claims of fraud by one who has signed a &quot;suicide&quot; or clean credit and thus granted a beneficiary the right to draw by mere presentation of a draft.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. The standard for injunctive relief is high, and the burden remains on the applicant to show, by evidence and not by mere allegation, that such relief is warranted. Some courts have enjoined payments on letters of credit on insufficient showing by the applicant. For example, in Griffin Cos. v. First Nat. Bank, 374 N.W.2d 768 (Minn.App.1985), the court enjoined payment under a standby letter of credit, basing its decision on plaintiff&#39;s allegation, rather than competent evidence, of fraud.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">There are at least two ways to prohibit injunctions against honor under this section after acceptance of a draft by the issuer. First is to define honor (see Section 5-102(a)(8)) in the particular letter of credit to occur upon acceptance and without regard to later payment of the acceptance. Second is explicitly to agree that the applicant has no right to an injunction after acceptance - whether or not the acceptance constitutes honor.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Although the statute deals principally with injunctions against honor, it also cautions against granting &quot;similar relief&quot; and the same principles apply when the applicant or issuer attempts to achieve the same legal outcome by injunction against presentation (see Ground Air Transfer, Inc. v. Westates Airlines, Inc., 899 F.2d 1269 (1st Cir.1990)), interpleader, declaratory judgment, or attachment. These attempts should face the same obstacles that face efforts to enjoin the issuer from paying. Expanded use of any of these devices could threaten the independence principle just as much as injunctions against honor. For that reason courts should have the same hostility to them and place the same restrictions on their use as would be applied to injunctions against honor. Courts should not allow the &quot;sacred cow of equity to trample the tender vines of letter of credit law.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. Section 5-109(a)(1) also protects specified third parties against the risk of fraud. By issuing a letter of credit that nominates a person to negotiate or pay, the issuer (ultimately the applicant) induces that nominated person to give value and thereby assumes the risk that a draft drawn under the letter of credit will be transferred to one with a status like that of a holder in due course who deserves to be protected against a fraud defense.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">7. The &quot;loss&quot; to be protected against - by bond or otherwise under subsection (b)(2) - includes incidental damages. Among those are legal fees that might be incurred by the beneficiary or issuer in defending against an injunction action.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

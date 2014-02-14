@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 5-132.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/index.html">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-1/index.html">Chapter 1. Metropolitan Police</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-1/Subchapter-XVI-A/index.html">Subchapter XVI-A. Contracting Procedures for Public School Security</a></li>
+                    
+                    <li>↪ § 5-132.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-1/Subchapter-XVI-A/index.html">Subchapter XVI-A. Contracting Procedures for Public School Security</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-1/Subchapter-XVI-A/5-132.02.html">§ 5-132.02. Establishment of the Metropolitan Police Department School Safety Division; functions of the School Safety Division.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 5-132.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Chancellor&quot; means the Chancellor of the District of Columbia Public Schools.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;DCPS&quot; means the District of Columbia Public Schools.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;MPD&quot; means the Metropolitan Police Department.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2A) </span>
+                
+                    <span class="" style="">&quot;Public charter schools&quot; shall have the same meaning as provided in <a href='/dccode/Title-38/Chapter-18/38-1800.02.html'>§ 38-1800.02(29)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;School resource officer&quot; means a sworn MPD officer assigned to DCPS or public charter schools for the purpose of working in collaboration with DCPS, public charter schools, and community-based organizations to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Prevent crime through community-oriented policing strategies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Address crime and disorder, gang, and drug activity problems affecting or occurring in or around the schools to which the school resource officer is assigned; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Ensure that DCPS schools and grounds and public charter schools and their grounds are safe environments for students, teachers, and staff.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;School security guards&quot; means un-armed personnel, trained and hired by the MPD School Safety Division.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;School security personnel&quot; means school resource officers and school security guards.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Superintendent&quot; means the Superintendent of the District of Columbia Public Schools.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 13, 2005, D.C. <a href='http://openlims.org/public/L15-350.pdf'>Law 15-350</a>, § 101, 52 DCR 2005; Mar. 21, 2009, D.C. <a href='http://openlims.org/public/L17-320.pdf'>Law 17-320</a>, § 2(a), 56 DCR 219; Oct. 2, 2010, D.C. <a href='http://openlims.org/public/L18-232.pdf'>Law 18-232</a>, § 201(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 4504</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-320.pdf'>Law 17-320</a> redesignated former par. (1) as par. (1A); and added par. (1).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-232.pdf'>Law 18-232</a> added par. (2A); in the lead-in language of par. (3), inserted &quot;or public charter schools&quot; and &quot;, public charter schools,&quot;; and, in par. (3)(C), substituted &quot;DCPS schools and grounds and public charter schools and their grounds&quot; for &quot;DCPS schools and grounds&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 2 of School Safety and Security Contracting Procedures Temporary Amendment Act of 2004 (D.C. <a href='http://openlims.org/public/L15-318.pdf'>Law 15-318</a>, April 8, 2005, law notification 52 DCR 4707).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2 of Metropolitan Police Department School Safety and Security Emergency Act of 2004 (D.C. Act 15-496, August 2, 2004, 51 DCR 8797).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2 of School Safety and Security Contracting Procedures Emergency Act of 2004 (D.C. Act 15-596, November 30, 2004, 51 DCR 11219).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2 of School Safety and Security Contracting Procedures Congressional Review Emergency Amendment Act of 2005 (D.C. Act 16-3, January 19, 2005, 52 DCR 2675).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-350</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-350.pdf'>Law 15-350</a>, the &quot;School Safety and Security Contracting Procedures Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-725 which was referred to the Committee on Judiciary and the Committee on Education, Libraries and Recreation. The Bill was adopted on first and second readings on July 13, 2004, and December 21, 2004, respectively. Signed by the Mayor on January 19, 2005, it was assigned Act No. 15-745 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-350.pdf'>Law 15-350</a> became effective on April 13, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-320</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-320.pdf'>Law 17-320</a>, the &quot;School Safety and Security Contracting Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-742 which was referred to the Committee on Public Safety and the Judiciary. The Bill was adopted on first and second readings on November 18, 2008, and December 2, 2008, respectively. Signed by the Mayor on December 22, 2008, it was assigned Act No. 17-624 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-320.pdf'>Law 17-320</a> became effective on March 21, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-232</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-232.pdf'>Law 18-232</a>, the &quot;School Safe Passage Emergency Zone Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-555, which was referred to the Committee on Public Safety and the Judiciary. The Bill was adopted on first and second readings on April 20, 2010, and May 4, 2010, respectively. Signed by the Mayor on May 19, 2010, it was assigned Act No. 18-402 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L18-232.pdf'>Law 18-232</a> became effective on October 2, 2010.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

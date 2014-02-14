@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:4A-303. Erroneous execution of payment order.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/index.html">Article 4A. Funds Transfers</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-4A/Part-III/index.html">Part III. Execution of Sender&#39;s Payment Order by Receiving Bank</a></li>
+                    
+                    <li>↪ § 28:4A-303. Erroneous execution of payment order.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-4A/Part-III/28_4A-302.html">§ 28:4A-302. Obligations of receiving bank in execution of payment order.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-4A/Part-III/28_4A-304.html">§ 28:4A-304. Duty of sender to report erroneously executed payment order.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:4A-303. Erroneous execution of payment order.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A receiving bank that (i) executes the payment order of the sender by issuing a payment order in an amount greater than the amount of the sender&#39;s order, or (ii) issues a payment order in execution of the sender&#39;s order and then issues a duplicate order, is entitled to payment of the amount of the sender&#39;s order under § 28:4A-402(c) if that subsection is otherwise satisfied. The bank is entitled to recover from the beneficiary of the erroneous order the excess payment received to the extent allowed by the law governing mistake and restitution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A receiving bank that executes the payment order of the sender by issuing a payment order in an amount less than the amount of the sender&#39;s order is entitled to payment of the amount of the sender&#39;s order under § 28:4A-402(c) if (i) that subsection is otherwise satisfied and (ii) the bank corrects its mistake by issuing an additional payment order for the benefit of the beneficiary of the sender&#39;s order. If the error is not corrected, the issuer of the erroneous order is entitled to receive or retain payment from the sender of the order it accepted only to the extent of the amount of the erroneous order. This subsection does not apply if the receiving bank executes the sender&#39;s payment order by issuing a payment order in an amount less than the amount of the sender&#39;s order for the purpose of obtaining payment of its charges for services and expenses pursuant to instruction of the sender.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If a receiving bank executes the payment order of the sender by issuing a payment order to a beneficiary different from the beneficiary of the sender&#39;s order and the funds transfer is completed on the basis of that error, the sender of the payment order that was erroneously executed and all previous senders in the funds transfer are not obliged to pay the payment orders they issued. The issuer of the erroneous order is entitled to recover from the beneficiary of the order the payment received to the extent allowed by the law governing mistake and restitution.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 30, 1992, D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, § 2(c), 39 DCR 1595.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:4A-304 and § 28:4A-402.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:4A-303.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-95</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-95.pdf'>Law 9-95</a>, see Historical and Statutory Notes following § 28:4A-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Section 4A-303 states the effect of erroneous execution of a payment order by the receiving bank. Under Section 4A-402(c) the sender of a payment order is obliged to pay the amount of the order to the receiving bank if the bank executes the order, but the obligation to pay is excused if the beneficiary&#39;s bank does not accept a payment order instructing payment to the beneficiary of the sender&#39;s order. If erroneous execution of the sender&#39;s order causes the wrong beneficiary to be paid, the sender is not required to pay. If erroneous execution causes the wrong amount to be paid the sender is not obliged to pay the receiving bank an amount in excess of the amount of the sender&#39;s order. Section 4A-303 takes precedence over Section 4A-402(c) and states the liability of the sender and the rights of the receiving bank in various cases of erroneous execution.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Subsections (a) and (b) deal with cases in which the receiving bank executes by issuing a payment order in the wrong amount. If Originator ordered Originator&#39;s Bank to pay $1,000,000 to the account of Beneficiary in Beneficiary&#39;s Bank, but Originator&#39;s Bank erroneously instructed Beneficiary&#39;s Bank to pay $2,000,000 to Beneficiary&#39;s account, subsection (a) applies. If Beneficiary&#39;s bank accepts the order of Originator&#39;s Bank, Beneficiary&#39;s Bank is entitled to receive $2,000,000 from Originator&#39;s Bank, but Originator&#39;s Bank is entitled to receive only $1,000,000 from Originator. Originator&#39;s Bank is entitled to recover the overpayment from Beneficiary to the extent allowed by the law governing mistake and restitution. Originator&#39;s Bank would normally have a right to recover the overpayment from Beneficiary, but in unusual cases the law of restitution might allow Beneficiary to keep all or part of the overpayment. For example, if Originator owed $2,000,000 to Beneficiary and Beneficiary received the extra $1,000,000 in good faith in discharge of the debt, Beneficiary may be allowed to keep it. In this case Originator&#39;s Bank has paid an obligation of Originator and under the law of restitution, which applies through <a href='/dccode/Title-1/Chapter-1/Subchapter-I/1-103.html'>Section 1-103</a>, Originator&#39;s Bank would be subrogated to Beneficiary&#39;s rights against Originator on the obligation paid by Originator&#39;s Bank.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">If Originator&#39;s Bank erroneously executed Originator&#39;s order by instructing Beneficiary&#39;s Bank to pay less than $1,000,000, subsection (b) applies. If Originator&#39;s Bank corrects its error by issuing another payment order to Beneficiary&#39;s Bank that results in payment of $1,000,000 to Beneficiary, Originator&#39;s Bank is entitled to payment of $1,000,000 from Originator. If the mistake is not corrected, Originator&#39;s Bank is entitled to payment from Originator only in the amount of the order issued by Originator&#39;s Bank.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Subsection (a) also applies to duplicate payment orders. Assume Originator&#39;s Bank properly executes Originator&#39;s $1,000,000 payment order and then by mistake issues a second $1,000,000 payment order in execution of Originator&#39;s order. If Beneficiary&#39;s Bank accepts both orders issued by Originator&#39;s Bank, Beneficiary&#39;s Bank is entitled to receive $2,000,000 from Originator&#39;s Bank but Originator&#39;s Bank is entitled to receive only $1,000,000 from Originator. The remedy of Originator&#39;s Bank is the same as that of a receiving bank that executes by issuing an order in an amount greater than the sender&#39;s order. It may recover the overpayment from Beneficiary to the extent allowed by the law governing mistake and restitution and in a proper case as stated in Comment 2 may have subrogation rights if it is not entitled to recover from Beneficiary.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Suppose Originator instructs Originator&#39;s Bank to pay $1,000,000 to Account #12345 in Beneficiary&#39;s Bank. Originator&#39;s Bank erroneously instructs Beneficiary&#39;s Bank to pay $1,000,000 to Account #12346 and Beneficiary&#39;s Bank accepted. Subsection (c) covers this case. Originator is not obliged to pay its payment order, but Originator&#39;s Bank is required to pay $1,000,000 to Beneficiary&#39;s Bank. The remedy of Originator&#39;s Bank is to recover $1,000,000 from the holder of Account #12346 that received payment by mistake. Recovery based on the law of mistake and restitution is described in Comment 2.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

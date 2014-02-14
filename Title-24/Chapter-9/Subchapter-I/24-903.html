@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 24-903. Sentencing alternatives.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/index.html">Title 24. Prisoners and Their Treatment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-9/index.html">Chapter 9. Youth Offender Programs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-9/Subchapter-I/index.html">Subchapter I. Youth Rehabilitation</a></li>
+                    
+                    <li>↪ § 24-903. Sentencing alternatives.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-9/Subchapter-I/24-902.html">§ 24-902. Facilities for treatment and rehabilitation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-9/Subchapter-I/24-904.html">§ 24-904. Conditional release; unconditional discharge.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 24-903. Sentencing alternatives.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">If the court is of the opinion that the youth offender does not need commitment, it may suspend the imposition or execution of sentence and place the youth offender on probation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The court, as part of an order of probation of a youth offender between the ages of 15 and 18 years, shall require the youth offender to perform not less than 90 hours of community service for an agency of the District government or a nonprofit or other community service organization, unless the court determines that the youth offender is physically or mentally impaired and that an order of community service would be unjust or unreasonable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Within 120 days of January 31, 1990, the Mayor shall develop and furnish to the court a youth offender community service plan. The plan shall include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Procedures to certify a nonprofit or community service organization for participation in the program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A list of agencies of the District government or non-profit or community service organizations to which a youth offender may be assigned for community service work;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A description of the community service work to be performed by a youth offender in each of the named agencies or organizations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Procedures to monitor the attendance and performance of a youth offender assigned to community service work;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Procedures to report to the court a youth offender&#39;s absence from a court-ordered community service work assignment; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Procedures to notify the court that a youth offender has completed the community service ordered by the court.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">If the court unconditionally discharges a youth offender from probation pursuant to <a href='/dccode/Title-24/Chapter-9/Subchapter-I/24-906.html'>§ 24-906(b)</a>, the court may discharge the youth offender from any uncompleted community service requirement in excess of 90 hours. The court shall not discharge the youth offender from completion of the minimum of 90 hours of community service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the court shall find that a convicted person is a youth offender, and the offense is punishable by imprisonment under applicable provisions of law other than this subsection, the court may sentence the youth offender for treatment and supervision pursuant to this subchapter up to the maximum penalty of imprisonment otherwise provided by law. The youth offender shall serve the sentence of the court unless sooner released as provided in <a href='/dccode/Title-24/Chapter-9/Subchapter-I/24-904.html'>§ 24-904</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Where the court finds that a person is a youth offender and determines that the youth offender will derive benefit from the provisions of this subchapter, the court shall make a statement on the record of the reasons for its determination. The youth offender shall be entitled to present to the court facts that would affect the decision of the court to sentence the youth offender pursuant to the provisions of this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">If the court shall find that the youth offender will not derive benefit from treatment under subsection (b) of this section, then the court may sentence the youth offender under any other applicable penalty provision.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If the court desires additional information as to whether a youth offender will derive benefit from treatment under subsection (b) of this section, the court may order that the youth offender be committed for observation and study at an appropriate classification center or agency. Within 60 days from the date of the order or an additional period that the court may grant, the court shall receive the report.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Subsections (a) through (e) of this section provide sentencing alternatives in addition to the options already available to the court.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 7, 1985, D.C. <a href='http://openlims.org/public/L6-69.pdf'>Law 6-69</a>, § 4, 32 DCR 4587; Jan. 31, 1990, D.C. <a href='http://openlims.org/public/L8-61.pdf'>Law 8-61</a>, § 2, 36 DCR 5798.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-24/Chapter-4/Subchapter-I/24-403.01.html'>§ 24-403.01</a> and <a href='/dccode/Title-24/Chapter-4/Subchapter-I/24-403.02.html'>§ 24-403.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 24-803.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-69</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L6-69.pdf'>Law 6-69</a>, see Historical and Statutory Notes following <a href='/dccode/Title-24/Chapter-9/Subchapter-I/24-901.html'>§ 24-901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-61</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L8-61.pdf'>Law 8-61</a>, the &quot;Youth Offender Community Service Amendment Act of 1989,&quot; was introduced in Council and assigned Bill No. 8-138, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on June 27, 1989, and July 11, 1989, respectively. Signed by the Mayor on August 1, 1989, it was assigned Act No. 8-84 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegation of authority pursuant to <a href='http://openlims.org/public/L6-69.pdf'>Law 6-69</a>, see Mayor&#39;s Order 87-61, March 10, 1987.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

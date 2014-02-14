@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 50-2303.03. Notice of infraction.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/index.html">Title 50. Motor and Non-Motor Vehicles and Traffic</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-23/index.html">Chapter 23. Traffic Adjudication</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-23/Subchapter-III/index.html">Subchapter III. Parking, Standing, Stopping and Pedestrian Infractions</a></li>
+                    
+                    <li>↪ § 50-2303.03. Notice of infraction.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-23/Subchapter-III/50-2303.02a.html">§ 50-2303.02a. Automated parking enforcement system.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-23/Subchapter-III/50-2303.04.html">§ 50-2303.04. Civil liability.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 50-2303.03. Notice of infraction.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The notice of infraction shall be the summons and complaint for the purposes of this subchapter. The Director shall prescribe the form of the notice of infraction and shall establish procedures for the proper administrative controls over the dispersal thereof. The notice of infraction may be the same as the uniform traffic violation notice.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The notice of infraction shall contain information advising the person to whom it is issued of the manner in which and the time within which he may answer to the infraction alleged in the notice. Such notice shall also contain a warning to advise the person cited that failure to answer in the manner and time provided shall result in additional monetary penalties and that failure to appear at the hearing shall be deemed an admission of liability and that a default judgment may be entered thereon. A duplicate of each notice of infraction shall be served on the person to whom it is issued as provided in subsection (c) of this section. The original or a facsimile thereof shall be filed with the Department and retained by the Department and shall be deemed a record kept in the ordinary course of business and shall be prima facie evidence of the facts contained therein.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Except as provided in subsection (c-1) of this section, a notice of infraction shall be served personally upon the operator of a vehicle who is present at the time of service or by affixing the notice to the vehicle in a conspicuous place and by noting the plate designation and plate type as shown by the registration plates of the vehicle together with the make or model of the vehicle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c-1) </span>
+                
+                    <span class="" style="">When a violation is detected by an automated parking enforcement system, the Mayor shall mail a notice of infraction to the name and address of the registered owner of the vehicle on file with the Department of Motor Vehicles or the appropriate state motor vehicle agency. The notice shall include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The date, time, and location of the violation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The type of violation detected;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The license plate number and state of license plate issuance of the vehicle detected; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">A copy of the photo or digitized image of the violation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c-2) </span>
+                
+                    <span class="" style="">Service of the notice of infraction, or a duplicate, by affixation or by mail shall have the same force and effect and shall be subject to the same penalties for the disregard thereof as though the notice of infraction was personally served on the owner and operator of the vehicle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">For purposes of this section, an operator of a vehicle who is not the owner thereof but who uses or operates such vehicle with the permission of the owner, express or implied, shall be deemed to be the agent of such owner to receive notices of infraction, whether personally served on such operator or served by affixation, and service made in either manner shall also be deemed to be lawful service upon such owner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If a hearing examiner determines that a notice of infraction is defective on its face, for reasons other than compliance with subsection (b) of this section, he shall enter an order dismissing the notice of infraction and promptly notify the person to whom it was issued.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 12, 1978, D.C. <a href='http://openlims.org/public/L2-104.pdf'>Law 2-104</a>, § 303, 25 DCR 1275; Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-289.pdf'>Law 13-289</a>, § 302(g), 48 DCR 2057; Mar. 14, 2007, D.C. <a href='http://openlims.org/public/L16-279.pdf'>Law 16-279</a>, § 301(e), 54 DCR 903; Aug. 15, 2008, D.C. <a href='http://openlims.org/public/L17-217.pdf'>Law 17-217</a>, § 2(b), 55 DCR 7513.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-6/Subchapter-XXIX/1-629.05.html'>§ 1-629.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 40-623.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 40-1117.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-289.pdf'>Law 13-289</a>, in subsec. (e), substituted &quot;on its face, for reasons other than compliance with subsection (b)&quot; for &quot;on its face&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-279.pdf'>Law 16-279</a> rewrote subsec. (c), which formerly read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(c) A notice of infraction shall be served personally upon the operator of a vehicle who is present at the time of service and his name, together with the plate designation and the plate type as shown by the registration plates of said vehicle and the make or model of such vehicle, shall be inserted therein. If the operator is not present, the notice of infraction shall be served upon the owner of the vehicle by affixing such notice to such vehicle in a conspicuous place, by inserting the word &quot;owner&quot; in the space provided for identification of such person and by noting the plate designation and plate type as shown by the registration plates of such vehicle together with the make or model of such vehicle. Service of the notice of infraction or a duplicate thereof by affixation, as herein provided, shall have the same force and effect and shall be subject to the same penalties for the disregard thereof as though the notice of infraction was personally served on the owner and operator of the vehicle.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-217.pdf'>Law 17-217</a> rewrote subsec. (c) and added subsecs. (c-1) and (c-2). Prior to amendment, subsec. (c) read as follows: &quot;(c) A notice of infraction shall be served personally upon the operator of a vehicle who is present at the time of service or by affixing such notice to the vehicle in a conspicuous place and by noting the plate designation and plate type as shown by the registration plates of such vehicle together with the make or model of the vehicle. Service of the notice of infraction or a duplicate thereof by affixation shall have the same force and effect, and the infraction shall be subject to the same penalties for the disregard thereof as though the notice of infraction was personally served on the owner and operator of the vehicle.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(b) of Street Sweeping Improvement Enforcement Temporary Amendment Act of 2008 (D.C. <a href='http://openlims.org/public/L17-218.pdf'>Law 17-218</a>, August 15, 2008, law notification 55 DCR 9902).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Street Sweeping Improvement Enforcement Amendment Emergency Act of 2008 (D.C. Act 17-369, May 20, 2008, 55 DCR 6087).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment, see § 2(b) of Street Sweeping Improvement Enforcement Congressional Review Emergency Amendment Act of 2008 (D.C. Act 17-458, July 28, 2008, 55 DCR 8723).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-104</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-104.pdf'>Law 2-104</a>, see Historical and Statutory Notes following <a href='/dccode/Title-50/Chapter-23/Subchapter-I/50-2301.01.html'>§ 50-2301.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-289</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-289.pdf'>Law 13-289</a>, see notes following <a href='/dccode/Title-50/Chapter-4/50-401.html'>§ 50-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-279</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-279.pdf'>Law 16-279</a>, see notes following <a href='/dccode/Title-50/Chapter-3/Subchapter-I/50-312.html'>§ 50-312</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-217</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-217.pdf'>Law 17-217</a>, see notes following <a href='/dccode/Title-50/Chapter-23/Subchapter-III/50-2303.02a.html'>§ 50-2303.02a</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

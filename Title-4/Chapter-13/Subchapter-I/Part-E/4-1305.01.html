@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-1305.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/index.html">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/index.html">Chapter 13. Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I/index.html">Subchapter I. Prevention of Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/index.html">Part E. Criminal Records Check</a></li>
+                    
+                    <li>↪ § 4-1305.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/index.html">Part E. Criminal Records Check</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-E/4-1305.02.html">§ 4-1305.02. Criminal records check required for certain individuals.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-1305.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this part:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Adult&quot; means an individual who is at least 18 years of age.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;Agency&quot; means the Child and Family Services Agency established by <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-C/4-1303.01a.html'>§ 4-1303.01a</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Applicant&quot; means a person applying for a criminal records check under this part.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Conviction&quot; means a plea or verdict of guilty or a plea of nolo contendere.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Criminal record check&quot; means a search of criminal records to determine whether an individual has a criminal conviction that is performed by the Federal Bureau of Investigation of national records, and by:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Metropolitan Police Department, if the individual as an adult has resided, worked, or attended school in the District at any time in the past 5 years; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The state&#39;s law enforcement agency, if the individual as an adult has resided, worked, or attended school outside of the District at any time in the past 5 years.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Foster family home&quot; means a home described in subchapter XVII of Chapter 2 of this title, or another foster family home in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">&quot;Information form&quot; means a written statement in a form established by the Agency that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is signed by the individual under penalty of perjury;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Identifies each state in which the individual has resided, worked, or attended school at any time in the past 5 years;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Identifies each felony for which the individual has been convicted as an adult, and the date and state of that conviction;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Identifies each state in which the individual is currently on parole or probation; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Includes any other information required by the Agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Licensed child-placing agency&quot; means an individual or entity defined as such in <a href='/dccode/Title-4/Chapter-14/Subchapter-I/4-1402.html'>§ 4-1402</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Police&quot; means the Metropolitan Police Department of the District of Columbia.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 23, 1977, D.C. <a href='http://openlims.org/public/L2-22.pdf'>Law 2-22</a>, title V, § 501, formerly § 321, as added June 27, 2000, D.C. <a href='http://openlims.org/public/L13-136.pdf'>Law 13-136</a>, § 201(f), 47 DCR 2850; Apr. 4, 2001, D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, § 2(r), 48 DCR 2043; Apr. 12, 2005, D.C. <a href='http://openlims.org/public/L15-341.pdf'>Law 15-341</a>, § 2(n), 52 DCR 2315; renumbered Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, § 22(a)(2), 53 DCR 6794; Apr. 24, 2007, D.C. <a href='http://openlims.org/public/L16-306.pdf'>Law 16-306</a>, § 202(a), 53 DCR 8610.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-16/Chapter-3/16-308.html'>§ 16-308</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a> added par. (1A); and repealed par. (5) which had read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(5) &#39;Department&#39; means the District of Columbia Department of Human Services.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-341.pdf'>Law 15-341</a> rewrote par. (4) which had read as follows: &quot;(4) &#39;Criminal records check&#39; means a search of criminal records, in order to determine whether an individual has a criminal conviction, conducted by the following agencies: (A) The Federal Bureau of Inves national searches; (B) The police if the individual resides in the District; and (C) Any state law enforcement agency, if the individual resides outside of the District.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a> renumbered the section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-306.pdf'>Law 16-306</a> rewrote par. (4); and added par. (6A). Prior to amendment, par. (4) read as follows: &quot;(4) &#39;Criminal records check&#39; means a search of criminal records to determine whether an individual has a criminal conviction that is performed by the Federal Bureau of Investigation of national records, and by: (A) The Metropolitan Police Departmen individual resides in the District; or (B) The state&#39;s law enforcement agency, i individual resides outside of the District; and (C) The state law enforcement ag state in which the individual may have resided or worked, or is believed to have had another connection as an adult.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of §§ 6-2109.1 to 6-2109.9 1981 Ed., see § 201(e) of the Adoption and Safe Families Emergency Amendment Act of 1999 (D.C. Act 13-117, July 28, 1999, 46 DCR 6558).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of §§ 6-2109.1 to 6-2109.9 1981 Ed., see § 201(e) of the Adoption and Safe Families Legislative Review Emergency Amendment Act of 1999 (D.C. Act 13-178, November 2, 1999, 46 DCR 9714).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) addition of §§ 6-2109.1 to 6-2109.9 1981 Ed., see § 201(e) of the Adoption and Safe Families Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-240, January 11, 2000, 47 DCR 556).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 202(a) of Omnibus Public Safety Emergency Amendment Act of 2006 (D.C. Act 16-445, July 19, 2006, 53 DCR 6443).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 202(a) of Omnibus Public Safety Congressional Review Emergency Amendment Act of 2006 (D.C. Act 16-490, October 18, 2006, 53 DCR 8686).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 202(a) of Omnibus Public Safety Congressional Review Emergency Act of 2007 (D.C. Act 17-10, January 16, 2007, 54 DCR 1479).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 202(a) of Omnibus Public Safety Second Congressional Review Emergency Amendment Act of 2007 (D.C. Act 17-25, April 19, 2007, 54 DCR 4036).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-136</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-136.pdf'>Law 13-136</a>, the &quot;Adoption and Safe Families Amendment Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-214, which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on February 1, 2000, and March 7, 2000, respectively. Signed by the Mayor on March 31, 2000, it was assigned Act No. 13-315 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-136.pdf'>Law 13-136</a> became effective on June 27, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-277</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, see notes following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-A/4-1301.02.html'>§ 4-1301.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-341</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-341.pdf'>Law 15-341</a>, see notes following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-C-ii/4-1303.51.html'>§ 4-1303.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-191.pdf'>Law 16-191</a>, see notes following <a href='/dccode/Title-4/Chapter-2/Subchapter-IV/Part-D/4-204.61.html'>§ 4-204.61</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-306</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-306.pdf'>Law 16-306</a>, the &quot;Omnibus Public Safety Amendment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-247, which was referred to Committee on the Judiciary. The Bill was adopted on first and second readings on June 6, 2006, and October 3, 2006, respectively. Signed by the Mayor on October 17, 2006, it was assigned Act No. 16-482 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-306.pdf'>Law 16-306</a> became effective on April 24, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For applicability of D.C. <a href='http://openlims.org/public/L13-277.pdf'>Law 13-277</a>, see note following <a href='/dccode/Title-4/Chapter-13/Subchapter-I/Part-C/4-1303.01a.html'>§ 4-1303.01a</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

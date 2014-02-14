@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3171.16. Implementation and reports.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/index.html">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-31D/index.html">Chapter 31D. Health Benefit Exchange</a></li>
+                    
+                    <li>↪ § 31-3171.16. Implementation and reports.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-31D/31-3171.15.html">§ 31-3171.15. Dissolution of the Authority.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-31D/31-3171.17.html">§ 31-3171.17. Rules.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3171.16. Implementation and reports.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The executive board shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Study, in consultation with the advisory boards established under this chapter and with other stakeholders:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The feasibility and desirability of the Authority engaging in:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Selective contracting, either through competitive bidding or a negotiation process similar to that used by large employers, to reduce health care costs and improve quality-of-care by certifying only those health benefit plans that meet certain requirements, such as:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Promoting patient-centered medical homes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Adopting electronic health records;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Meeting minimum outcome standards;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(IV) </span>
+                
+                    <span class="" style="">Implementing payment reforms to reduce medical errors and preventable hospitalizations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(V) </span>
+                
+                    <span class="" style="">Reducing disparities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(VI) </span>
+                
+                    <span class="" style="">Ensuring adequate reimbursements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(VII) </span>
+                
+                    <span class="" style="">Enrolling high-risk members and underserved populations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(VIII) </span>
+                
+                    <span class="" style="">Managing chronic conditions and promoting healthy consumer lifestyles;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(IX) </span>
+                
+                    <span class="" style="">Value-based insurance design;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(X) </span>
+                
+                    <span class="" style="">Adhering to transparency guidelines; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(XI) </span>
+                
+                    <span class="" style="">Uniform price and quality reporting;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Multistate contracting; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Entering into a regional exchange;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The rules under which health benefit plans should be offered inside and outside the exchanges in order to mitigate adverse selection and encourage enrollment in the exchanges, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Whether any benefits should be required of qualified health plans beyond those mandated by the Federal Act, and whether any such additional benefits should be required of health benefit plans offered outside the exchanges;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Whether health carriers offering health benefit plans outside the exchanges should be required to offer either all the same health benefit plans inside the exchanges or, alternatively, at least one health benefit plan inside the exchanges;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Whether managed care organizations with Health Choice contracts should be required to offer products inside the exchanges;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Whether health carriers offering health benefit plans inside the exchanges should be required to also participate in the District medical assistance program; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Which provisions applicable to qualified health plans should be made applicable to qualified dental plans;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The design and operation of the Authority&#39;s Navigator program and any other appropriate consumer-assistance mechanisms, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">How the Navigator program could utilize, interact with, or complement private-sector resources, including insurance producers;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The infrastructure of the existing private sector health insurance distribution system in the District to determine whether private sector resources may be available and suitable for use by the Authority;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">The effect the exchanges may have on private sector employment in the health insurance distribution system in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">What functions, in addition to those required by the Federal Act, should be performed by Navigators;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">What training and expertise should be required of Navigators, and whether different markets and populations require Navigators with different qualifications;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">How Navigators should be retained and compensated, and how disparities between Navigator compensation and the compensation of insurance producers outside the exchanges can be minimized or avoided;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(vii) </span>
+                
+                    <span class="" style="">How to ensure that Navigators provide information in a manner culturally, linguistically, and otherwise appropriate to the needs of the diverse populations served by the Authority, and that Navigators have the capacity to meet these needs; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(viii) </span>
+                
+                    <span class="" style="">What other means of consumer assistance may be appropriate and feasible, and how they should be designed and implemented;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The design and function of the SHOP Exchange beyond the requirements of the Federal Act, to promote quality, affordability, and portability, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Whether it should be a defined contribution/employee choice model or whether employers should choose the qualified health plan to offer their employees;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Whether the current individual and small group markets should be merged; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Whether the SHOP Exchange should be made available to employers with 50 to 100 employees prior to 2016, as authorized by the Federal Act;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">How the Authority will ensure financial integrity in compliance with the Federal Act, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A recommended plan for the budget of the Authority;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The user fees, licensing fees, or other assessments that should be imposed by the Authority to fund its operations, including what type of user fee cap or other methodology would be appropriate to ensure that the income of the Authority comports with the expenditures of the Authority; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A recommended plan for how to prevent fraud, waste, and abuse; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">How the Authority should conduct its public relations and advertising campaign, including what type of solicitation, if any, of individual consumers or employers, would be desirable and appropriate; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Report its findings under paragraph (1) of this subsection to the Mayor, Council, and public within 180 days of March 2, 2012.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The executive board shall prepare a plan that identifies how the Authority will be financially self-sustaining by January 1, 2015.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The plan, which shall be certified by an independent actuary as actuarially sound, shall be submitted to the Mayor and Council not later than December 15, 2013.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 2, 2012, D.C. <a href='http://openlims.org/public/L19-94.pdf'>Law 19-94</a>, § 17, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 213</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-94</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-94.pdf'>Law 19-94</a>, see notes under <a href='/dccode/Title-31/Chapter-31D/31-3171.01.html'>§ 31-3171.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

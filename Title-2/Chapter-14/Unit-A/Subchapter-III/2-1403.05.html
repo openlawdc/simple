@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1403.05. Investigation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-14/index.html">Chapter 14. Human Rights</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-14/Unit-A/index.html">Unit A. Human Rights Law</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/index.html">Subchapter III. Procedures</a></li>
+                    
+                    <li>↪ § 2-1403.05. Investigation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/2-1403.04.html">§ 2-1403.04. Filing of complaints and mediation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/2-1403.06.html">§ 2-1403.06. Conciliation.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1403.05. Investigation.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">With the exception of complaints alleging unlawful discrimination in residential real estate transactions brought pursuant to this chapter or the FHA, the Office shall serve, within 15 days of said filing, a copy thereof upon the respondent, and upon all persons it deems to be necessary parties; and shall make prompt investigation in connection therewith.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Within 120 days, after service of the complaint upon all parties thereto, the Office shall determine whether, in accord with its own rules, it has jurisdiction; and if so, whether there is probable cause to believe that the respondent has engaged or is engaging in an unlawful discriminatory practice.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If the Office finds, with respect to any respondent, that it lacks jurisdiction or that probable cause does not exist the Director forthwith shall issue and cause to be served on the appropriate parties, an order dismissing the allegations of the complaint.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Office shall complete investigations of complaints alleging unlawful discrimination in residential real estate transactions brought pursuant to this chapter or the FHA, within 100 days after filing of the complaint. The Office shall notify the parties in writing of the reasons for not timely completing the investigation, if it is unable to or it becomes impracticable to complete the investigation within 100 days.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Office may join a person not named as an additional or substitute respondent upon written notice for complaints alleging unlawful discrimination in residential real estate transactions brought pursuant to this chapter or the FHA. The Office, in the notice to the respondent shall explain the basis for determining that the person is properly joined as a respondent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The complainant, respondent, or an aggrieved person on whose behalf the complaint was filed, for complaints alleging unlawful discrimination in residential real estate transactions or violations of the FHA, may elect to have the claims asserted in the complaint decided in a civil action.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An election of remedies, pursuant to this subsection, shall be made no later than 20 days after the service of a charge, based on a finding of probable cause pursuant to the investigation of the complaint.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The person making the election of remedies shall give notice by certified mail to the Director and to all parties to the complaint.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">If a timely election is made pursuant to subsection (f) of this section, the Director shall authorize, not later than 30 days after the election is made, and the Corporation Counsel shall file a civil action on behalf of the aggrieved party in the Superior Court of the District of Columbia. Venue for an action pursuant to this section shall be in the District of Columbia. Any aggrieved party may intervene in this court action. The Court may grant relief pursuant to <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/2-1403.16.html'>§ 2-1403.16(b)</a> if the court finds that a discriminatory housing practice has occurred or is occurring.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 13, 1977, D.C. <a href='http://openlims.org/public/L2-38.pdf'>Law 2-38</a>, title III, § 305, 24 DCR 6038; Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-242.pdf'>Law 12-242</a>, § 2(i), 46 DCR 952.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/2-1403.04.html'>§ 2-1403.04</a> and <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-III/2-1403.17.html'>§ 2-1403.17</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2545.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 6-2285.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-38</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-38.pdf'>Law 2-38</a>, see Historical and Statutory Notes following <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-I/2-1401.01.html'>§ 2-1401.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-242</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-242.pdf'>Law 12-242</a>, see Historical and Statutory Notes following <a href='/dccode/Title-2/Chapter-14/Unit-A/Subchapter-I/2-1401.01.html'>§ 2-1401.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

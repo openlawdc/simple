@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-502. License requirements.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/index.html">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-5/index.html">Chapter 5. Health-Care and Community Residence Facility, Hospice and Home Care Licensure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-5/Subchapter-I/index.html">Subchapter I. Licensure</a></li>
+                    
+                    <li>↪ § 44-502. License requirements.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-5/Subchapter-I/44-501.html">§ 44-501. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-5/Subchapter-I/44-503.html">§ 44-503. Authority of Mayor.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-502. License requirements.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except as provided in subsections (b), (c), and (d) of this section, it shall be unlawful to operate a facility or agency in the District of Columbia, whether public or private, for profit or not for profit, without being licensed by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">This subchapter shall not apply to a facility or agency operated by the federal government or, except in the case of community residence facilities, by and for the adherents of a church or religious denomination that, in accordance with established tenets, recognizes spiritual healing as the sole means of treating illness.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Facilities and agencies that, prior to February 24, 1984, were not or would not have been subject to licensure in the District of Columbia may operate without a license until 6 months after the adoption of applicable rules under <a href='/dccode/Title-44/Chapter-5/Subchapter-I/44-504.html'>§ 44-504</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The continued operation of a facility or agency pending action by the Mayor on an application for licensure renewal or initial licensure under subsection (c) of this section shall not be deemed unlawful if a completed application was timely filed but, through no fault of the facility or agency or its governing body, staff, or employees, the Mayor has failed to act on the application before the expiration of the facility&#39;s or agency&#39;s current license or, under subsection (c) of this section, its authorized period of operation. A facility or agency operating under this subsection shall comply with all other provisions of this subchapter and rules adopted pursuant to this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Application forms shall list all certificates of approval, authority, occupancy, or need that are required as a precondition to lawful operation in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">A license shall be valid only for the premises stated on the license.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Any change in the ownership of a facility or agency owned by an individual, partnership, or association, or in the legal or beneficial ownership of 10% or more of the stock of a corporation that owns or operates a facility or agency, shall be subject to written notice of the change being given to the governmental licensing authority at least 30 days prior to the change in ownership. Upon notification, the governmental licensing authority may, at its discretion, require reinspection and relicensure to ensure that the facility or agency will remain in compliance with the provisions of this subchapter, rules adopted pursuant to this subchapter, and all other applicable provisions of law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Unless sooner terminated or renewed, a license required by this subchapter shall expire one year from the date of issue or the last renewal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Each facility licensed under this subchapter shall post its license in a conspicuous place on the premises, and each agency licensed under this subchapter shall have its license readily available for inspection by the public.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">Any license issued pursuant to this section shall be issued as a Public Health: Health Care Facility endorsement or a Public Health: Human Services Facility endorsement to a basic business license under the basic business license system as set forth in subchapter I-A of Chapter 28 of Title 47.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Feb. 24, 1984, D.C. <a href='http://openlims.org/public/L5-48.pdf'>Law 5-48</a>, § 3, 30 DCR 5778; Apr. 20, 1999, D.C. <a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a>, § 2003(aa)(1), 46 DCR 3142; Oct. 28, 2003, D.C. <a href='http://openlims.org/public/L15-38.pdf'>Law 15-38</a>, § 3(ee)(1), 50 DCR 6913; Apr. 13, 2005, D.C. <a href='http://openlims.org/public/L15-354.pdf'>Law 15-354</a>, § 83(c)(1), 52 DCR 2638.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-44/Chapter-5/Subchapter-I/44-504.html'>§ 44-504</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 32-1302.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-38.pdf'>Law 15-38</a>, in subsec. (j), substituted &quot;Public Health: Health Care Facility endorsement or Public Health: Human Services facility endorsement to a basic business license under the basic&quot; for &quot;Class A Public Health: Health Care Facility endorsement or Class A Public Health: Human Services facility endorsement to a master business license under the master&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-354.pdf'>Law 15-354</a>, in subsec. (j), validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3(ee)(1) of Streamlining Regulation Emergency Act of 2003 (D.C. Act 15-145, August 11, 2003, 50 DCR 6896).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-48</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L5-48.pdf'>Law 5-48</a>, see Historical and Statutory Notes following <a href='/dccode/Title-44/Chapter-5/Subchapter-I/44-501.html'>§ 44-501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-261</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a>, the &quot;Second Omnibus Regulatory Reform Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-615, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 1, 1998, and December 15, 1998, respectively. Signed by the Mayor on December 31, 1998, it was assigned Act No. 12-615 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-261.pdf'>Law 12-261</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-38</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-38.pdf'>Law 15-38</a>, see notes following <a href='/dccode/Title-44/Chapter-2/44-202.html'>§ 44-202</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-354.pdf'>Law 15-354</a>, see notes following <a href='/dccode/Title-44/Chapter-2/44-212.html'>§ 44-212</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Because of the enactment of subchapter II of this chapter by D.C. <a href='http://openlims.org/public/L12-238.pdf'>Law 12-238</a> and the designation of the preexisting text as subchapter I, &quot;subchapter&quot; has been substituted for &quot;chapter&quot; near the beginning of (b), twice in the last sentence of (d) and (g), and in (h).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

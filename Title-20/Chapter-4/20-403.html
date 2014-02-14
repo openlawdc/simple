@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 20-403. Supervised administration; changes and effect.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-20/index.html">Title 20. Probate and Administration of Decedents&#39; Estates</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-20/Chapter-4/index.html">Chapter 4. Supervised and Unsupervised Administration</a></li>
+                    
+                    <li>↪ § 20-403. Supervised administration; changes and effect.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-20/Chapter-4/20-402.html">§ 20-402. Supervised administration; procedure.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-20/Chapter-4/20-404.html">§ 20-404. Supervised administration; powers of personal representative.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 20-403. Supervised administration; changes and effect.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The filing of signed waivers by all interested persons in accordance with <a href='/dccode/Title-20/Chapter-7/Subchapter-IV/20-731.html'>section 20-731</a> shall be treated for all purposes as a change to unsupervised administration, but the filing of a subsequent demand for the filing of inventories and accounts by any such interested person shall be treated as a change back to supervised administration.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A petition for supervised administration may be filed by any interested person or by a personal representative at any time before the termination of a probate proceeding; similarly, the Court may initiate such a proceeding upon good cause shown. In either event, after notice to interested persons and a hearing (unless the hearing is waived by both the petitioner and the personal representative, or by the interested persons if petitioner is the personal representative), the Court may order supervised administration, applying the same standards as under <a href='/dccode/Title-20/Chapter-4/20-402.html'>section 20-402</a>. In no event, however, shall any Court Order be deemed to convert the proceeding to a supervised administration unless the Order expressly so provides. The filing of such petition does not affect any powers and duties of the personal representative unless they are expressly restricted by the Court pending the hearing or final Order.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">In the event of a change from one form of administration to another pursuant to this title, such change shall be prospective only. Except in the case of fraud, no action of the personal representative shall be set aside by the Court solely by reason of a change from one form of administration to another.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 21, 1995, D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, § 3(t), 42 DCR 63; Apr. 18, 1996, D.C. <a href='http://openlims.org/public/L11-110.pdf'>Law 11-110</a>, § 25(b), 43 DCR 530.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 20-403.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-241</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, see Historical and Statutory Notes following <a href='/dccode/Title-20/Chapter-4/20-401.html'>§ 20-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-110</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L11-110.pdf'>Law 11-110</a>, the &quot;Technical Amendments Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-485, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 5, 1995, and January 4, 1996, respectively. Signed by the Mayor on January 26, 1996, it was assigned Act No. 11-199 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L11-110.pdf'>Law 11-110</a> became effective on April 18, 1996.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Application of <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>: See Application of <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a> and Emergency act amendment notes to <a href='/dccode/Title-20/Chapter-4/20-401.html'>§ 20-401</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

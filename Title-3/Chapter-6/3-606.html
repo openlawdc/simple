@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 3-606. Powers.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/index.html">Title 3. District of Columbia Boards and Commissions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/Chapter-6/index.html">Chapter 6. Boxing and Wrestling Commission</a></li>
+                    
+                    <li>↪ § 3-606. Powers.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-3/Chapter-6/3-605.html">§ 3-605. Jurisdiction.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-3/Chapter-6/3-607.html">§ 3-607. Administration.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 3-606. Powers.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Commission shall have the power to make, amend, carry out, and enforce such rules as it deems necessary for and likely to be effective in governing the events and procedures within its jurisdiction as well as all participants in such events and procedures. The Commission shall conduct its rulemaking and enforcement and other functions under the provisions of Chapter 5 of Title 2 where appropriate, and shall promulgate rules within 60 days of its establishment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Commission shall have the power to issue permits and licenses to all participants, and for all events covered by this chapter. If the Commission, by rule, regulation, or order requires a license for a person or event covered by this chapter, no person shall hold, conduct, or be a participant in any such boxing, wrestling, or martial arts contest, match, or exhibition without a permit or license from the Commission. The Commission is authorized, in its sole judgment and discretion, to assign to those with proper permits, dates on which boxing, wrestling, and martial arts contests, matches, and exhibitions may be held, and no person shall hold any boxing, wrestling, or martial arts contest, match, or exhibition on any dates unless specifically authorized to do so by the Commission. No permit as described in this section shall be issued to any person unless such person agrees to accord to the Commission the right to examine the books of account and other records of such person relative to the boxing, wrestling, or martial arts contest, match, or exhibition for which such permit is issued, and such permit shall so state on its face. Licenses and permits may be revoked or suspended by the Commission for violation of any rule, regulation, or order of the Commission or for violation of any rule, regulation, or order of the District of Columbia or for other cause. The contested case provisions of §<a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-509.html'>§ 2-509</a> and 2-510 shall be followed in revocation and suspension proceedings.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Commission shall have the power to collect fees for permits and licensure in an amount and in a manner that is reasonable in light of costs of administration and like charges imposed by other jurisdictions for similar licenses and that it shall determine with the approval of the Mayor. Any monies received but not expended at the end of a fiscal year shall lapse into the unrestricted fund balance of the General Fund of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Commission shall have the power to require all licensees and permittees to execute and file with the Commission a bond in an amount to be determined by the Commission before such license or permit may be granted. Said bond shall be approved as to form and sufficiency of sureties by the Mayor, or by such official as he may designate. In case of default in such performance, recovery may be had on such bond in the same manner as other penalties are recovered by law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Commission shall have the power to establish standards for, and the permitted circumstances of, rental or ownership of the premises where events within the jurisdiction of the Commission will or may occur. The Commission may also establish standards for all equipment of the Commission. The Commission may also provide for the inspection of such premises and equipment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The Commission shall have the power to assess nonlicense fees and fines payable to the Commission under this chapter or the Commission rules, and to require reports and manifests to be furnished the Commission relating to nonlicense fees.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The Commission shall have the power to employ such personnel as is necessary to carry out this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Each member of the Commission shall have the power to administer oaths and affirmations and examine witnesses concerning any matters within the jurisdiction of the Commission. The Commission shall be vested with power to issue subpoenas as to matters within its jurisdiction and enforce the same in the Superior Court of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The Commission shall have the power to investigate all operations, occurrences, events, and persons within its jurisdiction, and any suspected violation of its orders or rules, or of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">The Commission shall have the power to issue such orders (including suspensions of licenses and permits) to persons within its jurisdiction, which reasonably will:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Assure compliance with this chapter, or the Commission&#39;s rules or orders;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Prevent influence of organized crime in boxing and wrestling in the District of Columbia; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Encourage boxing and wrestling in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">The Commission shall have the power, subject to the approval of the Mayor, to make or engage in contracts, agreements, or cooperative work with other District of Columbia agencies, or commissions or agencies of other states or cities governing boxing or wrestling, or private persons, when such contracts, agreements, or cooperative work will reasonably and lawfully carry out the purposes of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(l) </span>
+                
+                    <span class="" style="">The Commission shall have the power to establish other rules and regulations concerning events and persons within its jurisdiction as it deems appropriate to encourage boxing and wrestling in the District of Columbia and for other purposes consistent with this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(m) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Commission shall, pursuant to subchapter I of Chapter 5 of Title 2, issue rules to establish standards for the operation of gymnasiums and other facilities used in the training of boxers, wrestlers, kickboxers, and practitioners of martial arts, shall implement these rules, and shall license all facilities as well as inspect all facilities and equipment subject to this subsection.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The proposed rules shall be submitted to the Council for a 45-day period of review, excluding Saturdays, Sundays, legal holidays, and days of Council recess. If the Council does not approve or disapprove the proposed rules, in whole or in part, by resolution within this 45-day review period, the proposed rules shall be deemed approved. Nothing in this section shall affect any requirements imposed upon the Mayor by subchapter I of Chapter 5 of Title 2.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 8, 1975, D.C. <a href='http://openlims.org/public/L1-20.pdf'>Law 1-20</a>, § 7, 23 DCR 1810; Feb. 26, 1976, D.C. <a href='http://openlims.org/public/L1-50.pdf'>Law 1-50</a>, § 3, 22 DCR 5127; Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, § 3205(ll), (mm), 25 DCR 5740; Sept. 29, 1988, D.C. <a href='http://openlims.org/public/L7-169.pdf'>Law 7-169</a>, § 2(c), 35 DCR 5749; Sept. 14, 2011, D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, § 9035, 58 DCR)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Effective date provisions, see <a href='/dccode/Title-1/Chapter-6/Subchapter-XXXVI/1-636.02.html'>§ 1-636.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Regulated non-health related occupations and professions, see <a href='/dccode/Title-47/Chapter-28/Subchapter-I-B/47-2853.04.html'>§ 47-2853.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-6/Subchapter-XXXVI/1-636.02.html'>§ 1-636.02</a>, <a href='/dccode/Title-3/Chapter-6/3-608.html'>§ 3-608</a>, and <a href='/dccode/Title-47/Chapter-28/Subchapter-I-B/47-2853.04.html'>§ 47-2853.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 2-606.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 2-1236.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, in subsec. (c), added the second sentence.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-20</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-20.pdf'>Law 1-20</a>, see Historical and Statutory Notes following <a href='/dccode/Title-3/Chapter-6/3-601.html'>§ 3-601</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-50</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-50.pdf'>Law 1-50</a>, see Historical and Statutory Notes following <a href='/dccode/Title-3/Chapter-6/3-601.html'>§ 3-601</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-139</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, see Historical and Statutory Notes following <a href='/dccode/Title-3/Chapter-6/3-604.html'>§ 3-604</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-169</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-169.pdf'>Law 7-169</a>, see Historical and Statutory Notes following <a href='/dccode/Title-3/Chapter-6/3-601.html'>§ 3-601</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L19-21.pdf'>Law 19-21</a>, see notes under <a href='/dccode/Title-3/Chapter-1/3-101.01.html'>§ 3-101.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

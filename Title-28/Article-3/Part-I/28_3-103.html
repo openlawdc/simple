@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:3-103. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/index.html">Article 3. Negotiable Instruments</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-3/Part-I/index.html">Part I. General Provisions and Definitions</a></li>
+                    
+                    <li>↪ § 28:3-103. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-I/28_3-102.html">§ 28:3-102. Subject matter.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-3/Part-I/28_3-104.html">§ 28:3-104. Negotiable instrument.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:3-103. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In this article, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Acceptor&quot; means a drawee who has accepted a draft.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Consumer account&quot; means an account established by an individual primarily for personal, family, or household purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Consumer transaction&quot; means a transaction in which an individual incurs an obligation primarily for personal, family, or household purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Drawee&quot; means a person ordered in a draft to make payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Drawer&quot; means a person who signs or is identified in a draft as a person ordering payment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Maker&quot; means a person who signs or is identified in a note as a person undertaking to pay.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Order&quot; means a written instruction to pay money signed by the person giving the instruction. The instruction may be addressed to any person, including the person giving the instruction, or to one or more persons jointly or in the alternative but not in succession. An authorization to pay is not an order unless the person authorized to pay is also instructed to pay.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Ordinary care&quot; in the case of a person engaged in business means observance of reasonable commercial standards, prevailing in the area in which the person is located, with respect to the business in which the person is engaged. In the case of a bank that takes an instrument for processing for collection or payment by automated means, reasonable commercial standards do not require the bank to examine the instrument if the failure to examine does not violate the bank&#39;s prescribed procedures and the bank&#39;s procedures do not vary unreasonably from general banking usage not disapproved by this article or Article 4.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Party&quot; means a party to an instrument.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Principal obligor&quot;, with respect to an instrument, means the accommodated party or any other party to the instrument against whom a secondary obligor has recourse under this article.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Promise&quot; means a written undertaking to pay money signed by the person undertaking to pay. An acknowledgment of an obligation by the obligor is not a promise unless the obligor also undertakes to pay the obligation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Prove&quot; with respect to a fact means to meet the burden of establishing the fact under § 28:1-201(b)(8).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Remitter&quot; means a person who purchases an instrument from its issuer if the instrument is payable to an identified person other than the purchaser.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Remotely created consumer item&quot; means an item drawn on a consumer account, which is not created by the payor bank and does not bear a handwritten signature purporting to be the signature of the drawer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Secondary obligor&quot;, with respect to an instrument, means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">An indorser or an accommodation party;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A drawer having the obligation described in § 28:3-414(d); or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Any other party to the instrument that has recourse against another party to the instrument pursuant to § 28:3-116(b).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Other definitions applying to this article and the sections in which they appear are:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Acceptance&quot;. 	 Section 28:3-409.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Accommodated party&quot;. 	 Section 28:3-419.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Accommodation party&quot;. 	 Section 28:3-419.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Account&quot;. 	Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Alteration&quot;. 	 Section 28:3-407.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Anomalous indorsement&quot;. 	Section 28:3-205.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Blank indorsement&quot;. 	 Section 28:3-205.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Cashier&#39;s check&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Certificate of deposit&quot;. 	Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Certified check&quot;. 	 Section 28:3-409.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Check&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Consideration&quot;. 	 Section 28:3-303.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Draft&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Holder in due course&quot;. 	 Section 28:3-302.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Incomplete instrument&quot;. 	 Section 28:3-115.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Indorsement&quot;. 	 Section 28:3-204.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Indorser&quot;. 	 Section 28:3-204.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Instrument&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Issue&quot;. 	 Section 28:3-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Issuer&quot;. 	 Section 28:3-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Negotiable instrument&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Negotiation&quot;. 	 Section 28:3-201.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Note&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payable at a definite time&quot;. 	Section 28:3-108.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payable on demand&quot;. 	 Section 28:3-108.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payable to bearer&quot;. 	 Section 28:3-109.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payable to order&quot;. 	 Section 28:3-109.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payment&quot;. 	 Section 28:3-602.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Person entitled to enforce&quot;. 	 Section 28:3-301.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Presentment&quot;. 	 Section 28:3-501.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Reacquisition&quot;. 	 Section 28:3-207.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Special indorsement&quot;. 	 Section 28:3-205.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Teller&#39;s check&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Transfer of instrument&quot;. 	Section 28:3-203.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Traveler&#39;s check&quot;. 	 Section 28:3-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Value&quot;. 	 Section 28:3-303.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The following definitions in other articles apply to this article:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Banking day&quot;. 	 Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Clearing house&quot;. 	 Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Collecting bank&quot;. 	 Section 28:4-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Depositary bank&quot;. 	 Section 28:4-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Documentary draft&quot;. 	 Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Intermediary bank&quot;. 	 Section 28:4-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Item&quot;. 	 Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Payor bank&quot;. 	 Section 28:4-105.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">&quot;Suspends payments&quot;. 	 Section 28:4-104.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In addition, Article 1 contains general definitions and principles of construction and interpretation applicable throughout this article.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=672'>77 Stat. 672</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 23, 1995, D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, § 2(d), 42 DCR 467; Apr. 27, 2013, D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, § 5(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2634</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:4-104 and § 28:9-102.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:3-103.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:3-102.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a> rewrote (a); added the definition of &quot;Account&quot; in (b); and deleted the definition of &quot;Bank&quot; in (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-249</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L10-249.pdf'>Law 10-249</a>, see Historical and Statutory Notes following § 28:3-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-299</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a>, the &quot;Uniform Commercial Code Revision Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-136. The Bill was adopted on first reading on Dec. 4, 2012. Signed by the Mayor on Feb. 8, 2013, it was assigned Act No. 19-667 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-299.pdf'>Law 19-299</a> became effective on Apr. 27, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Subsection (a) defines some common terms used throughout the Article that were not defined by former Article 3 and adds the definitions of &quot;order&quot; and &quot;promise&quot; found in former <a href='/dccode/Title-3/Chapter-1/3-102.html'>Section 3-102(1)(b)</a> and (c).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. The definition of &quot;order&quot; includes an instruction given by the signer to itself. The most common example of this kind of order is a cashier&#39;s check: a draft with respect to which the drawer and drawee are the same bank or branches of the same bank. Former Section 3-118(a) treated a cashier&#39;s check as a note. It stated &quot;a draft drawn on the drawer is effective as a note.&quot; Although it is technically more correct to treat a cashier&#39;s check as a promise by the issuing bank to pay rather than an order to pay, a cashier&#39;s check is in the form of a check and it is normally referred to as a check. Thus, revised Article 3 follows banking practice in referring to a cashier&#39;s check as both a draft and a check rather than a note. Some insurance companies also follow the practice of issuing drafts in which the drawer draws on itself and makes the draft payable at or through a bank. These instruments are also treated as drafts. The obligation of the drawer of a cashier&#39;s check or other draft drawn on the drawer is stated in <a href='/dccode/Title-3/Chapter-4/3-412.html'>Section 3-412</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">An order may be addressed to more than one person as drawee either jointly or in the alternative. The authorization of alternative drawees follows former <a href='/dccode/Title-3/Chapter-1/3-102.html'>Section 3-102(1)(b)</a> and recognizes the practice of drawers, such as corporations issuing dividend checks, who for commercial convenience name a number of drawees, usually in different parts of the country. <a href='/dccode/Title-3/Chapter-5/Subchapter-I/3-501.html'>Section 3-501(b)(1)</a> provides that presentment may be made to any one of multiple drawees. Drawees in succession are not permitted because the holder should not be required to make more than one presentment. Dishonor by any drawee named in the draft entitles the holder to rights of recourse against the drawer or indorsers.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. The last sentence of subsection (a)(9) is intended to make it clear that an I.O.U. or other written acknowledgement of indebtedness is not a note unless there is also an undertaking to pay the obligation.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">4. Subsection (a)(4) introduces a definition of good faith to apply to Articles 3 and 4. Former Articles 3 and 4 used the definition in Section 1-201(19). The definition in subsection (a)(4) is consistent with the definitions of good faith applicable to Articles 2, 2A, 4, and 4A. The definition requires not only honesty in fact but also &quot;observance of reasonable commercial standards of fair dealing.&quot; Although fair dealing is a broad term that must be defined in context, it is clear that it is concerned with the fairness of conduct rather than the care with which an act is performed. Failure to exercise ordinary care in conducting a transaction is an entirely different concept than failure to deal fairly in conducting the transaction. Both fair dealing and ordinary care, which is defined in <a href='/dccode/Title-3/Chapter-1/3-103.html'>Section 3-103(a)(7)</a>, are to be judged in the light of reasonable commercial standards, but those standards in each case are directed to different aspects of commercial conduct.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">5. Subsection (a)(7) is a definition of ordinary care which is applicable not only to Article 3 but to Article 4 as well. See <a href='/dccode/Title-4/Chapter-1/4-104~P.html'>Section 4-104(c)</a>. The general rule is stated in the first sentence of subsection (a)(7) and it applies both to banks and to persons engaged in businesses other than banking. Ordinary care means observance of reasonable commercial standards of the relevant business prevailing in the area in which the person is located. The second sentence of subsection (a)(7) is a particular rule limited to the duty of a bank to examine an instrument taken by a bank for processing for collection or payment by automated means. This particular rule applies primarily to <a href='/dccode/Title-4/Chapter-4/4-406.html'>Section 4-406</a> and it is discussed in Comment 4 to that section. Nothing in <a href='/dccode/Title-3/Chapter-1/3-103.html'>Section 3-103(a)(7)</a> is intended to prevent a customer from proving that the procedures followed by a bank are unreasonable, arbitrary, or unfair.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">6. In subsection (c) reference is made to a new definition of &quot;bank&quot; in amended Article 4.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

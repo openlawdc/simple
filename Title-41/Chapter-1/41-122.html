@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 41-122. Sale of abandoned property.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41/index.html">Title 41. Personal Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41/Chapter-1/index.html">Chapter 1. Disposition of Unclaimed Property</a></li>
+                    
+                    <li>↪ § 41-122. Sale of abandoned property.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-41/Chapter-1/41-121.html">§ 41-121. Crediting of dividends, interest, or increments to owner&#39;s account.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-41/Chapter-1/41-123.html">§ 41-123. Deposit of funds.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 41-122. Sale of abandoned property.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">All abandoned property other than money delivered to the Mayor under this chapter which remains unclaimed 1 year after the delivery to the Mayor may be sold to the highest bidder at public sale. The Mayor may decline the highest bid and re-offer the property for sale if the Mayor considers the price bid insufficient. The Mayor need not offer any property for sale if, in the Mayor&#39;s opinion, the probable cost of sale exceeds the value of the property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any sale held under subsection (a) of this section shall be preceded by at least a single publication of notice thereof, at least 3 weeks in advance of sale, in a newspaper of general circulation in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The purchaser at any sale conducted by the Mayor pursuant to this chapter shall receive title to the property purchased, free from all claims of the owner or prior holder and of all persons claiming through or under the owner or prior holder. The Mayor shall execute all documents necessary to complete the transfer of title.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Unless the Mayor considers it to be in the best interest of the District to do otherwise, all securities abandoned under <a href='/dccode/Title-41/Chapter-1/41-109.html'>§ 41-109</a> must be held for at least 3 years before the Mayor may sell them. If the Mayor sells any securities delivered pursuant to <a href='/dccode/Title-41/Chapter-1/41-109.html'>§ 41-109</a> before the expiration of the 3-year period, any person making a claim pursuant to this chapter before the end of 3 years is entitled to either the proceeds of the sale of the securities or the market value of the securities at the time the claim is made, whichever is greater, less any deduction for fees pursuant to <a href='/dccode/Title-41/Chapter-1/41-123.html'>§ 41-123(c)</a>. A person making a claim under this chapter after the expiration of this period is entitled to receive either the securities delivered to the Mayor by the holder, if they still remain in the hands of the Mayor, or the proceeds received from the sale, less any amounts deducted pursuant to <a href='/dccode/Title-41/Chapter-1/41-123.html'>§ 41-123(c)</a>; but no person has any claim under this chapter against the District, the holder, any transfer agent, registrar, or other person acting for or on behalf of a holder for any appreciation in the value of the property occurring after delivery by the holder to the Mayor.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 5, 1981, D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>, § 122, 27 DCR 5150; Mar. 20, 1998, D.C. <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a>, § 1701(o), 44 DCR 7378.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-41/Chapter-1/41-123.html'>§ 41-123</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 42-222.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 1701(o) of D.C. <a href='http://openlims.org/public/L12-59.pdf'>Law 12-59</a> in (a), inserted &quot;which remains unclaimed 1 year after the delivery to the Mayor&quot; in the first sentence; and added (d).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 2001(b) of D.C. <a href='http://openlims.org/public/L12-59.pdf'>Law 12-59</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 1701(o) of the Fiscal Year 1998 Revised Budget Support Emergency Act of 1997 (D.C. Act 12-152, October 17, 1997, 44 DCR 6196), and see § 1701(o) of the Fiscal Year 1998 Revised Budget Support Congressional Review Emergency Act of 1997 (D.C. Act 12-239, January 13, 1998, 45 DCR 508).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-160</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>, see Historical and Statutory Notes following <a href='/dccode/Title-41/Chapter-1/41-101.html'>§ 41-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-59</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-59.pdf'>Law 12-59</a>, see Historical and Statutory Notes following <a href='/dccode/Title-41/Chapter-1/41-102.html'>§ 41-102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-60</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-60.pdf'>Law 12-60</a>, see Historical and Statutory Notes following <a href='/dccode/Title-41/Chapter-1/41-102.html'>§ 41-102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 22 of the Uniform Unclaimed Property Act (1981 Act).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

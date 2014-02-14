@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 20-1102. Distribution in kind; valuation; method.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-20/index.html">Title 20. Probate and Administration of Decedents&#39; Estates</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-20/Chapter-11/index.html">Chapter 11. Special Provisions Relating to Distribution</a></li>
+                    
+                    <li>↪ § 20-1102. Distribution in kind; valuation; method.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-20/Chapter-11/20-1101~P.html">§ 20-1101. Renunciation; legatee or heir. [Repealed]</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-20/Chapter-11/20-1103.html">§ 20-1103. Distribution in kind; assignment, transfer and release of property.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 20-1102. Distribution in kind; valuation; method.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Subject to the terms of any will and the needs of administration, the personal representative shall distribute the assets of a decedent&#39;s estate in kind to the extent possible through application of the following provisions:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A specific legatee shall receive distribution of the legacy given to such legatee;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any family allowance, or legacy payable in money may be satisfied by value in kind provided:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">the person entitled to the payment has not demanded payment in cash;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">the property distributed in kind is valued at fair market value as of the date of its distribution; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">no residuary legatee has requested that the asset in question remain a part of the residue of the estate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The residuary estate shall be distributed in kind when there is no objection to the proposed distribution and it is practicable to distribute undivided interests. In other cases, residuary property may be converted into cash for distribution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c-1) </span>
+                
+                    <span class="" style="">For the purpose of valuation under subsection (b)(2) of this section, securities regularly traded on recognized exchanges, if distributed in kind, are valued at the price for the last sale of like securities traded on the business day prior to distribution, or if there was no sale on that day, at the median between amounts bid and offered at the close of that day. Assets consisting of sums owed the decedent or the estate by solvent debtors as to which there is no known dispute or defense are valued at the sum due with accrued interest or discounted to the date of distribution. For assets which do not have readily ascertainable values, a valuation as of a date not more than 30 days prior to the date of distribution, if otherwise reasonable, controls. For purposes of facilitating distribution, the personal representative may ascertain the value of the assets as of the time of the proposed distribution in any reasonable way, including the employment of qualified appraisers, even if the assets may have been previously appraised.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">After the probable claims against the estate are known, the personal representative may mail or deliver a proposal for distribution to all persons who have a right to object to the proposed distribution. The right of any such person to object to the proposed distribution terminates if such person fails to object in writing received by the personal representative within 30 days after mailing or delivery of the proposal.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 24, 1980, D.C. <a href='http://openlims.org/public/L3-72.pdf'>Law 3-72</a>, § 101, 27 DCR 2155; Mar. 21, 1995, D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, § 3(mmm), 42 DCR 63.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 20-1102.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of § 4 of D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, see § 2 of the Probate Reform Act of 1994 Emergency Amendment Act of 1995 (D.C. Act 11-79, June 28, 1995, 42 DCR 3452).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-72</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L3-72.pdf'>Law 3-72</a>, the &quot;District of Columbia Probate Reform Act of 1980,&quot; was introduced in Council and assigned Bill No. 3-91, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on April 1, 1980, and April 22, 1980, respectively. Signed by the Mayor on May 7, 1980, it was assigned Act No. 3-181 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-241</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, the &quot;Probate Reform Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-649, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on November 1, 1994, and December 6, 1994, respectively. Signed by the Mayor on December 28, 1994, it was assigned Act No. 10-386 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a> became effective on March 21, 1995.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Application of <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>: Section 4 of D.C. <a href='http://openlims.org/public/L10-241.pdf'>Law 10-241</a>, as amended by § 2 of D.C. <a href='http://openlims.org/public/L11-54.pdf'>Law 11-54</a>, provided that the act shall be applicable to estates of decedents who died on or after July 1, 1995.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

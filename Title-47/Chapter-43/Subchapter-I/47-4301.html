@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-4301. Periods of limitation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/index.html">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-43/index.html">Chapter 43. Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-43/Subchapter-I/index.html">Subchapter I. Limitations</a></li>
+                    
+                    <li>↪ § 47-4301. Periods of limitation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-43/Subchapter-I/index.html">Subchapter I. Limitations</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-43/Subchapter-I/47-4302.html">§ 47-4302. Limitation on collection.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-4301. Periods of limitation.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Unless otherwise provided in subsection (d) of this section, the amount of a tax imposed under this title shall be assessed within 3 years after the return was filed (whether or not the return was filed after the date due) or, if the tax is payable by stamp, at any time after the tax became due and before the expiration of 3 years after the date on which a part of the tax was paid. A proceeding in court without assessment for the collection of the tax shall not commence after the expiration of such period. For purposes of this chapter, the term &quot;return&quot; means the return of tax required to be filed by the taxpayer (and does not include a return of tax of a person from whom the taxpayer has received an item of income, gain, loss, deduction, or credit).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">For purposes of this section, a return filed before the last day prescribed by this title, or by regulations promulgated under this title for filing, shall be considered as filed on the last day.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The execution of a return by the Mayor shall not start the running of the period of limitations on assessment and collection.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">In the case of a (A) false or fraudulent return with the intent to evade tax, (B) willful attempt in any manner to defeat or evade tax imposed by this title, (C) failure to file a return, or (D) filing a real property tax exemption application, the tax may be assessed, or a proceeding in court for the collection of the tax may begin without assessment, at any time.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In the case of a tax imposed by Chapter 18 of this title, if the taxpayer omits an amount properly includible in gross income which is in excess of 25% of the amount of gross income stated in the return, the tax may be assessed, or a proceeding in court for the collection of the tax may be begun without assessment, at any time within 6 years after the return was filed. In the case of a trade or business, the term &quot;gross income&quot; means the amount received or accrued from the sale of goods or services (if the amounts are required to be shown on the return) before diminution by the cost of the sales or services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">In the case of a return not under Chapter 18 of this title, if the taxpayer omits from the return an amount of tax properly includible on the return which exceeds 25% of the amount of the tax reported on the return, the tax may be assessed, or a proceeding in court for the collection of the tax may be begun without assessment, at any time within 6 years after the return is filed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">If, before the expiration of the time prescribed in this section for the assessment of a tax imposed by this title, both the Mayor and the taxpayer have consented in writing to its assessment after such time, the tax may be assessed at any time before the expiration of the extended period. The period may be extended further by subsequent agreement in writing made before the expiration of an extended period.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">If the amount of taxable income for a taxable year (or portion of a taxable year) of a taxpayer as reported by the taxpayer, or his duly authorized agent, to the United States Department of Treasury for federal income tax purposes is changed or corrected by the Commissioner of Internal Revenue, by a court of the United States, or by a court of the District of Columbia, or if the amount of taxable income for a taxable year (or portion of a taxable year) of a taxpayer as reported by the taxpayer or his duly authorized agent, to the District of Columbia for District of Columbia income or franchise tax purposes is changed or corrected by a court of the United States or the District of Columbia, the taxpayer, or his duly authorized agent, shall, within 90 days after the change or correction is finally determined, report in writing the changed or corrected taxable income to the District of Columbia. The Mayor may, within 180 days from the date of the receipt of written notice from the taxpayer of the changed or corrected taxable income as finally determined, assess or reassess the amount of a tax imposed by this title; provided, that if the date of receipt by the District of Columbia of a notice from the taxpayer is more than 180 days before the expiration of the applicable period of limitation, the Mayor shall have until the expiration of the applicable period of limitation to assess or reassess the amount of the tax. Failure to report the changed or corrected taxable income as finally determined within the 90-day period shall suspend the running of the period of limitation for a period of 180 days after the date that the report from the taxpayer, or his duly authorized agent, is received by the District of Columbia.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(June 9, 2001, D.C. <a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a>, § 404(b), 48 DCR 334; Apr. 4, 2003, D.C. <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, § 11(bbb), 50 DCR 896.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-47/Chapter-24/47-2408.html'>§ 47-2408</a>, <a href='/dccode/Title-47/Chapter-27A/47-2753.html'>§ 47-2753</a>, and <a href='/dccode/Title-47/Chapter-43/Subchapter-I/47-4303.html'>§ 47-4303</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, in subsec. (d)(1), substituted &quot;(C) failure to file a return; or (D) filing a real property tax exemption application&quot; for &quot;or (C) failure to file a return&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see 12(kkk) of Tax Clarity and Recorder of Deeds Temporary Act of 2002 (D.C. <a href='http://openlims.org/public/L14-191.pdf'>Law 14-191</a>, October 5, 2002, law notification 49 DCR 9549).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see 12(kkk) of Tax Clarity and Related Amendments Temporary Act of 2003 (D.C. <a href='http://openlims.org/public/L14-228.pdf'>Law 14-228</a>, March 23, 2003, law notification 50 DCR 2741).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(jjj) of Tax Clarity and Recorder of Deeds Emergency Act of 2002 (D.C. Act 14-381, June 6, 2002, 49 DCR 5674).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(kkk) of Tax Clarity and Related Amendments Emergency Act of 2002 (D.C. Act 14-456, July 23, 2002, 49 DCR 8107).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 12(kkk) of Tax Clarity and Related Amendments Congressional Review Emergency Act of 2002 (D.C. Act 14-510, October 23, 2002, 49 DCR 10247).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a>, the &quot;Tax Clarity Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-586, which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings on October 2, 2000, and November 8, 2000, respectively. Signed by the Mayor on December 13, 2000, it was assigned Act No. 13-501 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a> became effective on June 9, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-282</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L14-282.pdf'>Law 14-282</a>, see notes following <a href='/dccode/Title-47/Chapter-9/47-902.html'>§ 47-902</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 410(b) of D.C. <a href='http://openlims.org/public/L13-305.pdf'>Law 13-305</a>, as amended by section 36(b) of D.C. <a href='http://openlims.org/public/L14-213.pdf'>Law 14-213</a>, provided: &quot;Except as otherwise provided therein, sections 403 and 404 shall apply to taxes other than the real property tax imposed under Chapter 8 of Title 47, for all tax years or taxable periods beginning after December 31, 2000.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

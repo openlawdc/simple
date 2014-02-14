@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:9-104. Control of deposit account.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/index.html">Article 9. Secured Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-I/index.html">Part I. General Provisions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-9/Part-I/Subpart-1/index.html">Subpart 1. Short Title, Definitions, and General Concepts</a></li>
+                    
+                    <li>↪ § 28:9-104. Control of deposit account.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-I/Subpart-1/28_9-103.html">§ 28:9-103. Purchase-money security interest; application of payments; burden of establishing.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-9/Part-I/Subpart-1/28_9-105.html">§ 28:9-105. Control of electronic chattel paper.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:9-104. Control of deposit account.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A secured party has control of a deposit account if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The secured party is the bank with which the deposit account is maintained;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The debtor, secured party, and bank have agreed in an authenticated record that the bank will comply with instructions originated by the secured party directing disposition of the funds in the account without further consent by the debtor; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The secured party becomes the bank&#39;s customer with respect to the deposit account.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A secured party that has satisfied subsection (a) has control, even if the debtor retains the right to direct the disposition of funds from the deposit account.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, D.C. <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, § 101, 47 DCR 7576.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:9-203, § 28:9-207, § 28:9-208, § 28:9-314, § 28:9-327, § 28:9-340, § 28:9-342, § 28:9-601, and § 28:9-607.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L13-201.pdf'>Law 13-201</a>, see notes following § 28:9-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. Source. New; derived from Section 8-106.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. Why &quot;Control&quot; Matters. This section explains the concept of &quot;control&quot; of a deposit account. &quot;Control&quot; under this section may serve two functions. First, &quot;control ... pursuant to the debtor&#39;s agreement&quot; may substitute for an authenticated security agreement as an element of attachment. See Section 9-203(b)(3)(D). Second, when a deposit account is taken as original collateral, the only method of perfection is obtaining control under this section. See <a href='/dccode/Title-9/Chapter-3/9-312.html'>Section 9-312(b)(1)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">3. Requirements for &quot;Control.&quot; This section derives from Section 8-106 of Revised Article 8, which defines &quot;control&quot; of securities and certain other investment property. Under subsection (a)(1), the bank with which the deposit account is maintained has control. The effect of this provision is to afford the bank automatic perfection. No other form of public notice is necessary; all actual and potential creditors of the debtor are always on notice that the bank with which the debtor&#39;s deposit account is maintained may assert a claim against the deposit account.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Under subsection (a)(2), a secured party may obtain control by obtaining the bank&#39;s authenticated agreement that it will comply with the secured party&#39;s instructions without further consent by the debtor. The analogous provision in Section 8-106 does not require that the agreement be authenticated. An agreement to comply with the secured party&#39;s instructions suffices for &quot;control&quot; of a deposit account under this section even if the bank&#39;s agreement is subject to specified conditions, e.g., that the secured party&#39;s instructions are accompanied by a certification that the debtor is in default. (Of course, if the condition is the debtor&#39;s further consent, the statute explicitly provides that the agreement would not confer control.) See revised Section 8-106, Comment 7.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Under subsection (a)(3), a secured party may obtain control by becoming the bank&#39;s &quot;customer,&quot; as defined in <a href='/dccode/Title-4/Chapter-1/4-104~P.html'>Section 4-104</a>. As the customer, the secured party would enjoy the right (but not necessarily the exclusive right) to withdraw funds from, or close, the deposit account. See Sections 4-401(a), 4-403(a).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Although the arrangements giving rise to control may themselves prevent, or may enable the secured party at its discretion to prevent, the debtor from reaching the funds on deposit, subsection (b) makes clear that the debtor&#39;s ability to reach the funds is not inconsistent with &quot;control.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Perfection by control is not available for bank accounts evidenced by an instrument (e.g., certain certificates of deposit), which by definition are &quot;instruments&quot; and not &quot;deposit accounts.&quot; See Section 9-102 (defining &quot;deposit account&quot; and &quot;instrument&quot;).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-536. Information which must be made public.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-5/index.html">Chapter 5. Administrative Procedure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-5/Subchapter-II/index.html">Subchapter II. Freedom of Information</a></li>
+                    
+                    <li>↪ § 2-536. Information which must be made public.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-5/Subchapter-II/2-535.html">§ 2-535. Recording of final votes.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-5/Subchapter-II/2-537.html">§ 2-537. Administrative appeals.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-536. Information which must be made public.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Without limiting the meaning of other sections of this subchapter, the following categories of information are specifically made public information, and do not require a written request for information:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The names, salaries, title, and dates of employment of all employees and officers of a public body;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Administrative staff manuals and instructions to staff that affect a member of the public;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Final opinions, including concurring and dissenting opinions, as well as orders, made in the adjudication of cases;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Those statements of policy and interpretations of policy, acts, and rules which have been adopted by a public body;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Correspondence and materials referred to therein, by and with a public body, relating to any regulatory, supervisory, or enforcement responsibilities of the public body, whereby the public body determines, or states an opinion upon, or is asked to determine or state an opinion upon, the rights of the District, the public, or any private party;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Information in or taken from any account, voucher, or contract dealing with the receipt or expenditure of public or other funds by public bodies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">Budget requests, submissions, and reports available electronically that agencies, boards, and commissions transmit to the Office of the Budget and Planning during the budget development process, as well as reports on budget implementation and execution prepared by the Office of the Chief Financial Officer, including baseline budget submissions and appeals, financial status reports, and strategic plans and performance-based budget submissions;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The minutes of all proceedings of all public bodies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">All names and mailing addresses of absentee real property owners and their agents;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(8A) </span>
+                
+                    <span class="" style="">All pending applications for building permits and authorized building permits, including the permit file;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Copies of all records, regardless of form or format, which have been released to any person under this chapter and which, because of the nature of their subject matter, the public body determines have become or are likely to become the subject of subsequent requests for substantially the same records; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">A general index of the records referred to in this subsection, unless the materials are promptly published and copies offered for sale.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">For records created on or after November 1, 2001, each public body shall make records available on the Internet or, if a website has not been established by the public body, by other electronic means. This subsection is intended to apply only to information that must be made public pursuant to this subsection.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this section &quot;absentee real property owners&quot; means owners of real property located in the District that do not reside at the real property.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 21, 1968, <a href='http://www.govtrack.us/search?q=public%20law%2090-614'>Pub. L. 90-614</a>, title II, § 206, as added Mar. 25, 1977, D.C. <a href='http://openlims.org/public/L1-96.pdf'>Law 1-96</a>, § 2, 23 DCR 9532b; Mar. 17, 1993, D.C. <a href='http://openlims.org/public/L9-241.pdf'>Law 9-241</a>, § 9, 40 DCR 629; Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-283.pdf'>Law 13-283</a>, § 3(e), 48 DCR 1917; Dec. 7, 2004, D.C. <a href='http://openlims.org/public/L15-205.pdf'>Law 15-205</a>, § 1222, 51 DCR 8441; Apr. 13, 2005, D.C. <a href='http://openlims.org/public/L15-354.pdf'>Law 15-354</a>, § 7, 52 DCR 2638; Apr. 7, 2006, D.C. <a href='http://openlims.org/public/L16-91.pdf'>Law 16-91</a>, § 133, 52 DCR 10637.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-6/Subchapter-X-A/1-610.64.html'>§ 1-610.64</a> and <a href='/dccode/Title-8/Chapter-1A/Subchapter-I/8-151.08.html'>§ 8-151.08</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-1526.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-1526.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-283.pdf'>Law 13-283</a> rewrote the section which prior thereto read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;Without limiting the meaning of other sections of this subchapter, the following categories of information are specifically made public information:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(1) The names, salaries, title, and dates of employment of all employees and officers of the Mayor and an agency;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(2) Administrative staff manuals and instructions to staff that affect a member of the public;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(3) Final opinions, including concurring and dissenting opinions, as well as orders, made in the adjudication of cases;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(4) Those statements of policy and interpretations of policy, acts, and rules which have been adopted by the Mayor or an agency;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(5) Correspondence and materials referred to therein, by and with the Mayor or an agency, relating to any regulatory, supervisory, or enforcement responsibilities of the agency, whereby the agency determines, or states an opinion upon, or is asked to determine or state an opinion upon, the rights of the District, the public, or any private party;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(6) Information in or taken from any account, voucher, or contract dealing with the receipt or expenditure of public or other funds by public bodies;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(7) The minutes of all proceedings of all agencies; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(8) All names and mailing addresses of absentee real property owners and their agents. &#39;Absentee real property owners&#39; means owners of real property located in the District that do not reside at the real property.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-205.pdf'>Law 15-205</a> added pars. (6A) and (8A) to subsec. (a).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-534.pdf'>Law 15-534</a>, in subsec. (a), validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-91.pdf'>Law 16-91</a>, in par. (6A) of subsec. (a), validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1222 of Fiscal Year 2005 Budget Support Emergency Act of 2004 (D.C. Act 15-486, August 2, 2004, 51 DCR 8236).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1222 of Fiscal Year 2005 Budget Support Congressional Review Emergency Act of 2004 (D.C. Act 15-594, October 26, 2004, 51 DCR 11725).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-96</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L1-96.pdf'>Law 1-96</a>, see Historical and Statutory Notes following <a href='/dccode/Title-2/Chapter-5/Subchapter-II/2-531.html'>§ 2-531</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-241</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-241.pdf'>Law 9-241</a>, the &quot;Real Property Tax Assessment Appeal Process Revision Amendment Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-199, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 1, 1992, and December 15, 1992, respectively. Signed by the Mayor on January 5, 1993, it was assigned Act No. 9-375 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-241.pdf'>Law 9-241</a> became effective on March 17, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-283</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-283.pdf'>Law 13-283</a>, see notes following <a href='/dccode/Title-2/Chapter-5/Subchapter-I/2-502.html'>§ 2-502</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-105</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-105.pdf'>Law 15-105</a>, see notes following <a href='/dccode/Title-2/Chapter-3/Unit-A/Subchapter-I/2-301.07~P.html'>§ 2-301.07</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-205</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-205.pdf'>Law 15-205</a>, see notes following <a href='/dccode/Title-2/Chapter-3/Unit-A/Subchapter-I/2-301.05b~P.html'>§ 2-301.05b</a></span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L15-354.pdf'>Law 15-354</a>, see notes following <a href='/dccode/Title-2/Chapter-5/Subchapter-II/2-534.html'>§ 2-534</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-91.pdf'>Law 16-91</a>, see notes following <a href='/dccode/Title-2/Chapter-2/Subchapter-IX-A/Part-D/Subpart-2/2-218.54.html'>§ 2-218.54</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title of subtitle U of title I of <a href='http://openlims.org/public/L15-205.pdf'>Law 15-205</a>: Section 1221 of D.C. <a href='http://openlims.org/public/L15-205.pdf'>Law 15-205</a> provided that subtitle U of title I of the act may be cited as Freedom of Information Amendment Act of 2004.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

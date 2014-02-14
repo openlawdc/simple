@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-505. Employment and benefits protection.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/index.html">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-5/index.html">Chapter 5. Family and Medical Leave</a></li>
+                    
+                    <li>↪ § 32-505. Employment and benefits protection.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-5/32-504.html">§ 32-504. Certification.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-32/Chapter-5/32-506.html">§ 32-506. School employees.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-505. Employment and benefits protection.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Any employee who takes family or medical leave under this chapter shall not lose any employment benefit or seniority accrued before the date on which the family or medical leave commenced.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">During any period in which an employee takes family or medical leave under <a href='/dccode/Title-32/Chapter-5/32-502.html'>§ 32-502</a> or <a href='/dccode/Title-32/Chapter-5/32-503.html'>§ 32-503</a>, the employer shall maintain coverage under any group health plan, as defined in section 5000(b) of the Internal Revenue Code of 1986, approved October 21, 1986 (<a href='http://api.fdsys.gov/link?collection=statute&volume=100&page=2012'>100 Stat. 2012</a>; 26 U.S.C. 5000(b)), except that for the purposes of this chapter, the term &quot;group health plan&quot; shall include a group health plan provided by the District of Columbia government. The employer shall maintain coverage for the duration of the family or medical leave at the same level and under the same conditions that coverage would have been provided if the employee had continued in employment from the date the employee commenced the family or medical leave until the date the employee was restored to employment pursuant to subsection (d) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">An employer may require the employee to continue to make any contribution to a group health plan that the employee would have made if the employee had not taken family or medical leave. If an employee is unable or refuses to make the contribution to the group health plan, the employee shall forfeit the health plan benefit until the employee is restored to employment pursuant to subsection (d) of this section and resumes payment to the plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Nothing in this chapter shall prohibit an employer and an employee with a serious health condition from agreeing mutually to alternative employment for the employee throughout the duration of the serious health condition of the employee. Any period of alternative employment shall not cause a reduction in the amount of family or medical leave to which the employee is entitled under <a href='/dccode/Title-32/Chapter-5/32-502.html'>§ 32-502</a> or <a href='/dccode/Title-32/Chapter-5/32-503.html'>§ 32-503</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">When the employee who agreed to alternative employment is able to perform the functions of the employee&#39;s original position, the employee shall be restored to the original position pursuant to subsection (d) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Except as provided in subsection (f) of this section, upon return from family or medical leave taken pursuant to <a href='/dccode/Title-32/Chapter-5/32-502.html'>§ 32-502</a> or <a href='/dccode/Title-32/Chapter-5/32-503.html'>§ 32-503</a>, the employee shall be:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Restored by the employer to the position of employment held by the employee when the family or medical leave commenced; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Restored to a position of employment equivalent to the position held by the employee when the family or medical leave commenced that includes equivalent employment benefits, pay, seniority, and other terms and conditions of employment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Except as provided in subsection (b) of this section, nothing in this section shall entitle an employee restored by an employer to a position of employment to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The accrual of any seniority or employment benefit during any period of family or medical leave; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any right, employment benefit, or position of employment other than any right, employment benefit, or position of employment to which the employee would have been entitled had the employee not taken the family or medical leave.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Except as provided in paragraph (2) of this subsection, an employer in the District may deny restoration of employment to a salaried employee if the employee is among the 5 highest paid employees of an employer of fewer than 50 persons or among the highest paid 10% of employees of an employer of 50 or more persons and the following conditions are met:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The employer demonstrates that denial of restoration of employment is necessary to prevent substantial economic injury to the employer&#39;s operations and the injury is not directly related to the leave that the employee took pursuant to this chapter; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The employer notifies the employee of the intent to deny restoration of employment and the basis for the decision at the time the employer determines denial of restoration of employment is necessary.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The condition in paragraph (1)(A) of this subsection shall not apply if the following conditions have been met:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The employer is under a contract to provide work or services and the absence of the employee prohibits the employer from completing the contract in accordance with the terms of the contract;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Failure to complete the contract will cause substantial economic injury to the employer; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">After the employer made reasonable attempts, the employer failed to find a temporary replacement for the employee.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 3, 1990, D.C. <a href='http://openlims.org/public/L8-181.pdf'>Law 8-181</a>, § 6, 37 DCR 5043.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-32/Chapter-5/32-504.html'>§ 32-504</a> and <a href='/dccode/Title-32/Chapter-5/32-506.html'>§ 32-506</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 36-1305.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-181</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L8-181.pdf'>Law 8-181</a>, see Historical and Statutory Notes following <a href='/dccode/Title-32/Chapter-5/32-501.html'>§ 32-501</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

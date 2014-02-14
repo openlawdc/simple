@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 34-2202.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/index.html">Title 34. Public Utilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-22/index.html">Chapter 22. Water and Sewer Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-22/Subchapter-II/index.html">Subchapter II. General Provisions</a></li>
+                    
+                    <li>↪ § 34-2202.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-22/Subchapter-II/index.html">Subchapter II. General Provisions</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.02.html">§ 34-2202.02. Establishment of the District of Columbia Water and Sewer Authority; general purpose of the Authority.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 34-2202.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Authority&quot; means the District of Columbia Water and Sewer Authority established pursuant to <a href='/dccode/Title-34/Chapter-22/Subchapter-II/34-2202.02.html'>§ 34-2202.02(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;Contaminant&quot; means a physical, chemical, biological, or radiological substance or matter in water.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Cost&quot; means any and all reasonable expenses related to the purposes or activities of the Authority including expenses for operation and maintenance activities; expenses for preconstruction and construction, acquisition, alteration, improvement, enlargement of furnishing, fixturing and equipping, reconstruction and rehabilitation of the water distribution and sewage collection, treatment, and disposal systems of the District, including without limitation, the purchase or lease expense for all lands, structures, real or personal property, rights, rights-of-way, roads, franchises, easements, and interest acquired or used for, or in connection with the Authority; the expenses of demolishing or removing buildings or structures on land acquired by the Authority, including the expenses incurred for acquiring any lands to which the buildings may be moved or located; the expenses incurred for all utility lines, structures or equipment charges, and interest on financial obligations incurred for a period as the Authority may reasonably determine to be necessary for the effective functioning of the water distribution and sewage collection, treatment, and disposal systems; provisions for reserves for principal and interest for extensions, operating and contingency reserves, enlargements, additions, and improvements; expenses incurred for architectural engineering, energy efficiency technology, design and consulting, financial and legal services, letters of credit, bond insurance, debt service or debt service reserve insurance, surety bonds or similar credit enhancement instruments, plans, specification studies, surveys, and estimates of expenses and of revenues; expenses necessary or incident to determining the feasibility of improvements to the water distribution and sewage collection, treatment, and disposal systems, the financing of such improvements, including a proper allowance for contingencies, and the provision of reasonable initial working capital for operating the improved systems and expenses for obtaining potable water for distribution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Dedicated revenues&quot; means revenues collected pursuant to water and sewer rates, fees, and charges imposed by the Authority.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3A) </span>
+                
+                    <span class="" style="">&quot;Endocrine disruptor compounds&quot; means chemicals that can affect the hormones in the endocrine system of humans or wildlife and cause adverse physiologic effects, such as changes to the reproductive system or to the growth and development of the biological system.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Joint-use sewerage facilities&quot; means the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Little Falls Trunk Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Upper Potomac Interceptor Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Upper Potomac Interceptor Relief Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Rock Creek Main Interceptor Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Rock Creek Main Interceptor Relief Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Potomac River Interceptor Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">Potomac River Sewage Pumping Station;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(H) </span>
+                
+                    <span class="" style="">Potomac River Force Mains;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Watts Branch Trunk Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(J) </span>
+                
+                    <span class="" style="">Anacostia Force Main (Project 89 Sewer);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(K) </span>
+                
+                    <span class="" style="">Anacostia Force Main &amp; Gravity Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(L) </span>
+                
+                    <span class="" style="">Outfall Sewers (Renamed Potomac River Trunk Sewers);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(M) </span>
+                
+                    <span class="" style="">Outfall Relief Sewers (Renamed Potomac River Trunk Relief Sewers);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(N) </span>
+                
+                    <span class="" style="">Upper Oxon Run Trunk Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(O) </span>
+                
+                    <span class="" style="">Upper Oxon Run Trunk Relief Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(P) </span>
+                
+                    <span class="" style="">Lower Oxon Run Trunk Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(Q) </span>
+                
+                    <span class="" style="">Lower Oxon Run Trunk Relief Sewer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(R) </span>
+                
+                    <span class="" style="">Blue Plains Wastewater Treatment Plant (Blue Plains); and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(S) </span>
+                
+                    <span class="" style="">Potomac Interceptor Sewer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Other participating jurisdictions&quot; means Montgomery County, Maryland, Prince George&#39;s County, Maryland, and Fairfax County, Virginia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Revenue bond&quot; means any revenue bond, note, or other obligation (including refunding bonds, notes, or other obligations) used to borrow money to finance, assist in financing, or to refinance undertakings authorized by <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-E/Subpart-5/1-204.90.html'>§ 1-204.90</a>, and this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Service sewer&quot; means a sewer with which connection may be directly made for the purpose of providing sewage facilities to abutting property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Sewage collection, treatment, and disposal systems&quot; means all the facilities used, or to be used, for the collection, transmission, treatment, and disposal of sanitary sewage and stormwater flow, including the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Sewers carrying the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Sewage mixed with storm and surface water;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Sewage discharged from sanitary conveniences;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Commercial or industrial wastes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Water distributed after use;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Stormwater run-off; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">Both sanitary sewage run-off and stormwater run-off;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Sanitary, stormwater, and combined pumping stations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Wastewater treatment plants, including the Blue Plains Wastewater Treatment Plant; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Facilities for the processing, management, and disposal of biosolids.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Sewer&quot; means a pipe or conduit carrying sewage or stormwater flow.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9A) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9B) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9C) </span>
+                
+                    <span class="" style="">&quot;Unregulated contaminant&quot; means the contaminants regulated by the United States Environmental Protection Agency pursuant to the Revisions to the Unregulated Contaminant Monitoring Regulation for Public Water Systems set forth in 40 C.F.R. § 141.40.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Water and sewer rates&quot; means the fees imposed by the Authority on its retail customers for water, sewer, and stormwater services pursuant to this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Water distribution system&quot; means all the facilities used, or to be used, for the distribution of potable water situated within the public space of the District.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 18, 1996, D.C. <a href='http://openlims.org/public/L11-111.pdf'>Law 11-111</a>, § 201, 43 DCR 548; Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-184.pdf'>Law 11-184</a>, § 202(b), 43 DCR 4265; June 9, 2001, D.C. <a href='http://openlims.org/public/L13-311.pdf'>Law 13-311</a>, § 2(a), 48 DCR 3512; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a>, § 3(a), 56 DCR 1353; Mar. 19, 2013, D.C. <a href='http://openlims.org/public/L19-240.pdf'>Law 19-240</a>, § 2(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 14790</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 8-105.71 and <a href='/dccode/Title-8/Chapter-1A/Subchapter-I/8-151.01.html'>§ 8-151.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 43-1671.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-311.pdf'>Law 13-311</a> added pars. (9A) and (9B).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a> repealed pars. (9A) and (9B).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The 2013 amendment by D.C. <a href='http://openlims.org/public/L19-240.pdf'>Law 19-240</a> added (1A), (3A), and (9C).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(b) of the District of Columbia Water and Sewer Authority Emergency Amendment Act of 1996 (D.C. Act 11-293, July 9, 1996, 43 DCR 4160).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(b) of the Water and Sewer Authority Congressional Review Emergency Amendment Act of 1996 (D.C. Act 11-397, October 9, 1996, 43 DCR 5686), § 2(b) of the Water and Sewer Authority Second Congressional Review Emergency Amendment Act of 1996 (D.C. Act 11-466, December 30, 1996, 44 DCR 165), and § 2(b) of the Water and Sewer Authority Congressional Review Emergency Amendment Act of 1997 (D.C. Act 12-48, March 31, 1997, 44 DCR 2105).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-111.pdf'>Law 11-111</a>, see Historical and Statutory Notes following <a href='/dccode/Title-34/Chapter-22/Subchapter-I/34-2201.01.html'>§ 34-2201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-184</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-184.pdf'>Law 11-184</a>, see Historical and Statutory Notes following <a href='/dccode/Title-34/Chapter-22/Subchapter-I/34-2201.01.html'>§ 34-2201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-311</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-311.pdf'>Law 13-311</a>, the &quot;Storm Water Permit Compliance Amendment Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-813, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on December 5, 2000, and December 19, 2000, respectively. Signed by the Mayor on January 22, 2001, it was assigned Act No. 13-311 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-580.pdf'>Law 13-580</a> became effective on June 13, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-371</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a>, the &quot;Comprehensive Stormwater Management Enhancement Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-980 which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on December 2, 2008, and December 16, 2008, respectively. Signed by the Mayor on January 23, 2009, it was assigned Act No. 17-706 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-371.pdf'>Law 17-371</a> became effective on March 25, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-240</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-240.pdf'>Law 19-240</a>, the &quot;Water Quality Assurance Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-769. The Bill was adopted on first and second readings on Nov. 1, 2012 and Nov. 15, 2012, respectively. Signed by the Mayor on Dec. 4, 2012, it was assigned Act No. 19-560 and transmitted to Congress for its review. D.C. <a href='http://openlims.org/public/L19-240.pdf'>Law 19-240</a> became effective on Mar. 19, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

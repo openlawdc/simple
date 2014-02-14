@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-2812.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/index.html">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-28/index.html">Chapter 28. Housing Production Trust Fund</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-28/Subchapter-II/index.html">Subchapter II. Bond Authorization</a></li>
+                    
+                    <li>↪ § 42-2812.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-28/Subchapter-II/index.html">Subchapter II. Bond Authorization</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-42/Chapter-28/Subchapter-II/42-2812.02.html">§ 42-2812.02. Findings.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-2812.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purpose of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Allocated Fund&quot; means the portion of the Fund established pursuant to <a href='/dccode/Title-42/Chapter-28/Subchapter-I/42-2802.html'>§ 42-2802</a> that equals the amount that is deposited in the Fund from the real property transfer tax imposed by <a href='/dccode/Title-47/Chapter-9/47-903.html'>§ 47-903</a> and the deed recordation tax imposed by <a href='/dccode/Title-42/Chapter-11/42-1103.html'>§ 42-1103</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Authorized Delegate&quot; means the City Administrator, the Chief Financial Officer, the Treasurer, or any officer or employee of the executive office of the Mayor to whom the Mayor has delegated any of the Mayor&#39;s functions under this chapter pursuant to <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html'>§ 1-204.22(6)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Bond Counsel&quot; means a firm or firms of attorneys designated as bond counsel from time to time by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Bonds&quot; means the District of Columbia revenue bonds, notes, or other obligations (including refunding bonds, notes, and other obligations), in one or more series, authorized to be issued pursuant to this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Chairman&quot; means the Chairman of the Council of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Chief Financial Officer&quot; means the Chief Financial Officer established pursuant to <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.24a.html'>§ 1-204.24a(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;City Administrator&quot; means the City Administrator established pursuant to <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html'>§ 1-204.22(7)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Closing Documents&quot; means all documents and agreements other than Financing Documents that may be necessary and appropriate to issue, sell, and deliver the bonds contemplated thereby, and includes agreements, certificates, letters, opinions, forms, receipts, and other similar instruments.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Department&quot; means the Department of Housing and Community Development.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Financing Documents&quot; means the documents other than Closing Documents that relate to the financing or refinancing of transactions to be effected through the issuance, sale, and delivery of the bonds, including any offering document, and any required supplements to any such documents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Home Rule Act&quot; means Chapter 2 of Title 1.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;New Communities Initiative&quot; shall have the same meaning as in <a href='/dccode/Title-42/Chapter-28/Subchapter-I/42-2802.html'>section 42-2802(b)(11)(B)</a>.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 16, 1989, D.C. <a href='http://openlims.org/public/L7-202.pdf'>Law 7-202</a>, § 201, as added Oct. 20, 2005, D.C. <a href='http://openlims.org/public/L16-33.pdf'>Law 16-33</a>, § 2172(c), 52 DCR 7503.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2172(c) of Fiscal Year 2006 Budget Support Emergency Act of 2005 (D.C. Act 16-168, July 26, 2005, 52 DCR 7667).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-33</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-33.pdf'>Law 16-33</a>, the &quot;Fiscal Year 2006 Budget Support Act of 2005&quot;, was introduced in Council and assigned Bill No. 16-200 which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 10, 2005, and June 21, 2005, respectively. Signed by the Mayor on July 26, 2005, it was assigned Act No. 16-166 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-33.pdf'>Law 16-33</a> became effective on October 20, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title of subtitle J of title II of <a href='http://openlims.org/public/L16-33.pdf'>Law 16-33</a>: Section 2171 of D.C. <a href='http://openlims.org/public/L16-33.pdf'>Law 16-33</a> provided that subtitle J of title II of the act may be cited as the Housing Production Trust Fund and New Communities Financing Amendment Act of 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Delegation of Authority to the Deputy Mayor for Planning and Economic Development - Implementation of the New Communities Initiative, see Mayor&#39;s Order 2008-165, December 31, 2008 (56 DCR 334).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

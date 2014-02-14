@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-621.03. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/index.html">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/index.html">Subchapter XXI. Health Benefits</a></li>
+                    
+                    <li>↪ § 1-621.03. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.02.html">§ 1-621.02. District health benefits.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.04.html">§ 1-621.04. Contracting authority.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-621.03. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of §<a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.04.html'>§ 1-621.04</a> through 1-621.13, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Annuitant&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">An employee first employed by the District after September 30, 1987, who has subsequently retired pursuant to any of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Teachers&#39; Retirement System (§<a href='/dccode/Title-38/Chapter-20/Subchapter-I/38-2001.01.html'>§ 38-2001.01</a> to 38-2023.16);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Police and Fire Retirement System §<a href='/dccode/Title-5/Chapter-7/Subchapter-I/5-707.html'>§ 5-707</a> to 5-730;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Judges&#39; Retirement System (§<a href='/dccode/Title-11/Chapter-15/Subchapter-III/11-1561.html'>§ 11-1561</a> to 11-1571); or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Teachers&#39; Insurance and Annuity Association programs; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">An employee first employed by the District after September 30, 1987, who has subsequently separated pursuant to the District Retirement Benefit Program (§<a href='/dccode/Title-1/Chapter-6/Subchapter-XXVI/1-626.03.html'>§ 1-626.03</a> to 1-626.14) after any of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Reaching 57 years of age and having completed 25 years of creditable District service in a correctional officer position;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Reaching 62 years of age and having completed 10 years of District government service in a position other than correctional officer; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Becoming entitled to disability benefits under the Social Security Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Carrier&quot; means a voluntary association, corporation, partnership, or other nongovernmental organization that is lawfully engaged in providing, paying for, or reimbursing the cost of health services under group insurance policies or contracts, medical or hospital service agreements, membership or subscription contracts, or similar group arrangements, in consideration of premiums or other periodic charges payable to the organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2A) </span>
+                
+                    <span class="" style="">&quot;Creditable District service&quot; means all service in the employment of the District government that is creditable for purposes of the employee&#39;s retirement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Dependent child&quot; includes:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">An adopted child; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A stepchild, foster child, or natural child of an employee or annuitant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Employee&quot; means an individual first employed by the District after September 30, 1987.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Health benefit plan&quot; means a group insurance policy or contract, medical or hospital service agreement, membership or subscription contract, or similar group arrangement provided by a carrier for the purpose of providing, paying for, or reimbursing expenses for health services under <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.05.html'>§ 1-621.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Member of family&quot; or &quot;Family member&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The spouse of an employee or annuitant;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">An unmarried dependent child under 22 years of age;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">An unmarried dependent child under 25 years of age who is a full-time student; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">An unmarried child regardless of age who is incapable of self-support because of mental or physical disability that existed before age 22.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-139.pdf'>Law 2-139</a>, § 2103, as added Oct. 1, 1987, D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, § 2(d), 34 DCR 5079; Mar. 20, 1998, D.C. <a href='http://openlims.org/public/L12-66.pdf'>Law 12-66</a>, § 2(a), 45 DCR 343; Mar. 3, 2010, D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a>, § 1201(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-622.3.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a> rewrote pars. (1)(B)(i) to (iii); added par. (2A); and, in par. (6), substituted &quot;&#39;Member of family&#39; or &#39;Family member&#39;&quot; for &#39;Member of family&#39;. Prior to amendment, pars. (1)(B)(i) to (iii) read as follows: &quot;(i) Reaching 57 years of age and having completed 25 years of creditable District service in a law enforcement position; (ii) Becoming entitled to retirement benefits under the Social Security Act; or (iii) Becoming entitled to disability benefits under the Social Security Act.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(a) of the Comprehensive Merit Personnel Act Health and Life Insurance Clarification Temporary Amendment Act of 1996 (D.C. <a href='http://openlims.org/public/L11-183.pdf'>Law 11-183</a>, April 9, 1997, law notification 44 DCR 2378).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(a) of the Comprehensive Merit Personnel Act Health Benefits and Life Insurance Clarification Congressional Review Emergency Amendment Act of 1997 (D.C. Act 12-27, March 11, 1997, 44 DCR 1892), and § 2(a) of the Comprehensive Merit Personnel Act Health and Life Insurance Clarification Legislative Review Emergency Amendment Act of 1997 (D.C. Act 12-213, December 5, 1997, 44 DCR 7615).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1201(a) of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1201(a) of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-27</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L7-27.pdf'>Law 7-27</a>, see Historical and Statutory Notes following <a href='/dccode/Title-1/Chapter-6/Subchapter-XXI/1-621.02.html'>§ 1-621.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-66</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-66.pdf'>Law 12-66</a>, the &quot;Comprehensive Merit Personnel Act Health and Life Insurance Clarification Amendment Act of 1997,&quot; was introduced in Council and assigned Bill No. 12-229, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on October 7, 1997, and November 4, 1997, respectively. Signed by the Mayor on November 21, 1997, it was assigned Act No. 12-205 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-66.pdf'>Law 12-66</a> became effective on March 20, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a>, see notes following <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-K/1-301.181.html'>§ 1-301.181</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Short title: Section 1200 of D.C. <a href='http://openlims.org/public/L18-111.pdf'>Law 18-111</a> provided that subtitle U of title I of the act may be cited as the &quot;District Retirement Program Post-Employment Health and Life Insurance Benefits Amendment Act of 2009&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

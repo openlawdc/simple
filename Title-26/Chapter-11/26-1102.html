@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 26-1102. Exemptions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-26/index.html">Title 26. Banks and Other Financial Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-26/Chapter-11/index.html">Chapter 11. Mortgage Lenders and Brokers</a></li>
+                    
+                    <li>↪ § 26-1102. Exemptions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-26/Chapter-11/26-1101.html">§ 26-1101. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-26/Chapter-11/26-1103.html">§ 26-1103. License requirements.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 26-1102. Exemptions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The provisions of this chapter shall not apply to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any bank, trust company, savings bank, savings and loan association, or credit union incorporated or chartered under the laws of the United States, any state or territory of the United States, or the District, and any other financial institution incorporated or chartered under the laws of the District or of the United States, that accepts deposits and is regulated under Title 26 of the District of Columbia Official Code.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any insurance company authorized to do business in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any corporate instrumentality of the United States government including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Federal Home Loan Mortgage Corporation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The Federal National Mortgage Association; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The Government National Mortgage Association;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Any person who takes back a deferred purchase money mortgage in connection with the sale of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Residential real property owned by, and titled in the name of, that person; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A new residential dwelling that the person built.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">A person making a mortgage loan to a borrower who is the person&#39;s spouse, child, child&#39;s spouse, parent, sibling, grandparent, grandchild, or grandchild&#39;s spouse;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Nonprofit corporations making mortgage loans to promote home ownership or improvements for very low, lower, and moderate income households as defined in Chapter 25 of Title 14 of the District of Columbia Municipal Regulations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">Agencies of the federal government, the District, or any state or municipal government, or any quasi-governmental agency making mortgage loans under the specific authority of the laws or regulations of any state, the District, or the United States, including, without limitation, the Housing Finance Agency of the District of Columbia with respect to its activities in offering, accepting, completing, and processing mortgage loan applications under its programs;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">Persons acting as fiduciaries with respect to any employee pension benefit plan qualified under the Internal Revenue Code who make mortgage loans solely to plan participants from plan assets;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">Persons licensed by the District of Columbia as attorneys, real estate brokers, or real estate salespersons, not actively and principally engaged in negotiating, placing, or finding mortgage loans, when rendering services as an attorney, real estate broker, or real estate salesperson; however, a real estate broker or a real estate salesperson who receives any fee, commission, kickback, rebate, or other payment for directly or indirectly negotiating, placing, or finding a mortgage loan for others shall not be exempt from the provisions of this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">Persons acting in a fiduciary capacity conferred by authority of any court; and.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">Persons acting as registered mortgage loan originators.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 9, 1996, D.C. <a href='http://openlims.org/public/L11-155.pdf'>Law 11-155</a>, § 3, 43 DCR 4213; June 6, 1998, D.C. <a href='http://openlims.org/public/L12-116.pdf'>Law 12-116</a>, § 2(b), 45 DCR 1959; May 7, 2002, D.C. <a href='http://openlims.org/public/L14-132.pdf'>Law 14-132</a>, § 601(a)(1), 49 DCR 2551; July 18, 2009, D.C. <a href='http://openlims.org/public/L18-38.pdf'>Law 18-38</a>, § 2(b), 56 DCR 4290.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-26/Chapter-9/26-910.html'>§ 26-910</a> and <a href='/dccode/Title-26/Chapter-11/26-1114.html'>§ 26-1114</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 26-1002.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L14-132.pdf'>Law 14-132</a> repealed par. (4) which had read as follows: &quot;(4) Any person who makes or brokers 3 or fewer mortgage loans per calendar year;&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L18-38.pdf'>Law 18-38</a>, rewrote par. (1); in par. (10), deleted &quot;and&quot; from the end; in par. (11), substituted &quot;; and&quot; for a period at the end; and added par. (12). Prior to amendment, par. (1) read as follows: &quot;(1) Any bank, trust company, savings bank, savings and loan association, or credit union incorporated or chartered under the laws of the United States, any state or territory of the United States, or the District, and any other financial institution incorporated or chartered under the laws of the District or of the United States, that accepts deposits and is regulated under this title, and subsidiaries and affiliates of such entities which maintain their principal office or a branch office in the District of Columbia and in which the lender, subsidiary, or affiliate is subject to the general supervision or regulation of, or subject to audit or examination by, a regulatory body or agency of the United States, any state or territory of the United States, or the District;&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 2(b) of D.C. <a href='http://openlims.org/public/L17-350.pdf'>Law 17-350</a>, in par. (10), substituted a semicolon for &quot;; and&quot;; in par. (11), substituted &quot;; and&quot; for a period; and added par. (12) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">&quot;(12) Persons acting as registered mortgage loan originators, when acting for a federal banking agency.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 5(b) of D.C. <a href='http://openlims.org/public/L17-350.pdf'>Law 17-350</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 601(a)(1) of Home Loan Protection Emergency Act of 2002 (D.C. Act 14-295, March 1, 2002, 49 DCR 2534).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Mortgage Lender and Broker Emergency Amendment Act of 2008 (D.C. Act 17-617, December 22, 2008, 56 DCR 189).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Mortgage Lender and Broker Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-31, March 16, 2009, 56 DCR 2327).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-155</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-155.pdf'>Law 11-155</a>, see Historical and Statutory Notes following <a href='/dccode/Title-26/Chapter-11/26-1101.html'>§ 26-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-116</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L12-116.pdf'>Law 12-116</a>, see Historical and Statutory Notes following <a href='/dccode/Title-26/Chapter-11/26-1101.html'>§ 26-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-132</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L14-132.pdf'>Law 14-132</a>, see notes following <a href='/dccode/Title-26/Chapter-6/26-603~P.html'>§ 26-603</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-38</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L18-38.pdf'>Law 18-38</a>, see notes following <a href='/dccode/Title-26/Chapter-11/26-1101.html'>§ 26-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">The Internal Revenue Code, referred to in (9), is codified as Title 26 of the U.S. Code.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-220. Copies or data from records.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/index.html">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-2/index.html">Chapter 2. Vital Records</a></li>
+                    
+                    <li>↪ § 7-220. Copies or data from records.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-2/7-219.html">§ 7-219. Confidentiality.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-2/7-221.html">§ 7-221. Fees for vital records and searches.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-220. Copies or data from records.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Upon receipt of a written application the Registrar shall issue a certified copy of all or part of a vital record in his or her custody to any applicant having a direct and tangible interest in the vital record. Each copy issued shall show the date of registration. A copy issued from records marked &quot;delayed&quot; or &quot;amended&quot; shall show the date of registration and the effective date. The documentary evidence used to establish a delayed certificate shall be shown on each copy issued. For purposes of this subsection the following rules apply:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The registrant, a member of his or her immediate family, his or her guardian, or their respective legal representatives shall be considered to have a direct and tangible interest. Others may demonstrate a direct and tangible interest when information is needed for determination or protection of a personal or property right;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The term &quot;legal representative&quot; shall include an attorney, physician, funeral director, or other authorized agent acting in behalf of the registrant or his or her family;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The natural parents of adopted children, when neither has custody, and commercial firms or agencies requesting listings of names and addresses shall not be considered to have a direct and tangible interest;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">A certified copy provided under this subsection shall be restricted to the information contained in the pronouncement of death section and shall not include the facts of the medical cause or causes of death reported under <a href='/dccode/Title-7/Chapter-2/7-211.html'>§ 7-211(e)</a> and (f) unless a qualified applicant having a direct and tangible interest in the death certificate makes a specific request for a certified copy of the medical certification of cause of death section, in which case the Registrar shall provide a separate certified copy of the medical certification of the cause of death section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A certified copy of all or part of a vital record, issued in accordance with subsection (a) of this section, shall be considered for all purposes the same as the original and shall be prima facie evidence of the facts stated in the record. The evidentiary value of a certificate or record filed more than 1 year after the event or a record which has been amended shall be determined by the judicial or administrative body or official before whom the certificate is offered as evidence.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Registrar may supply copies or data from the system of vital records to the federal agency responsible for national vital statistics, as that agency may require for national statistics purposes, if the federal agency shares in the cost of collecting, processing, and transmitting such data. The data shall not be used for other than statistical purposes by the federal agency without authorization from the Registrar.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Federal, state, District, and other public or private agencies may upon request be furnished copies or data from the system of vital records for statistical or administrative purposes upon such terms or conditions as may be prescribed by regulation. The copies or data shall not be used for purposes other than those for which they were requested.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Registrar may, by agreement, transmit copies of records and other reports required by this chapter to offices of vital records outside the District, when such records or other reports relate to residents of those jurisdictions or persons born in those jurisdictions. The agreement shall require that the copies be used for statistical and administrative purposes only and provide for the retention and disposition of such copies. Copies received by the Registrar from offices of vital records in the states shall be handled in the same manner as prescribed in this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">No person shall prepare or issue any certificate which purports to be an original, certified copy, or copy of a vital record except as authorized in this chapter or regulations issued under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Nothing in this chapter shall be construed to prevent the Registrar from providing:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Information or data from the pronouncement of death and the medical certification of cause of death sections of the death certificate in accordance with §<a href='/dccode/Title-7/Chapter-2/7-219.html'>§ 7-219(b)</a> and 7-220(c), (d), and (e); or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A certified copy of the complete death certificate, including the pronouncement of death and the medical certification of cause of death sections, to an insurer, who has a direct and tangible interest in the death certificate, and who has issued a policy to or on behalf of the deceased which provides financial or monetary benefits payable upon the death of the deceased.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">The Registrar shall disclose information contained in vital records, or copies of vital records, to the IV-D agency upon request, for purposes directly related to paternity establishment or the establishment, modification, or enforcement of a support order.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Oct. 8, 1981, D.C. <a href='http://openlims.org/public/L4-34.pdf'>Law 4-34</a>, § 21, 28 DCR 3271; Mar. 13, 1992, D.C. <a href='http://openlims.org/public/L9-180.pdf'>Law 9-180</a>, § 2(d), (e), 39 DCR 8078; Apr. 3, 2001, D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a>, § 104(e), 48 DCR 1270.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-220.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a> added subsec. (h).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(e) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-103.pdf'>Law 12-103</a>, May 8, 1998, law notification 45 DCR 3254).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 3(e) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1998 (D.C. <a href='http://openlims.org/public/L12-210.pdf'>Law 12-210</a>, April 13, 1999, law notification 46 DCR 3832).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 103(e) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 1999 (D.C. <a href='http://openlims.org/public/L13-57.pdf'>Law 13-57</a>, March 7, 2000, law notification 47 DCR 1979).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 103(e) of Child Support and Welfare Reform Compliance Temporary Amendment Act of 2000 (D.C. <a href='http://openlims.org/public/L13-207.pdf'>Law 13-207</a>, March 31, 2001, law notification 48 DCR 3238).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3(e) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 1997 (D.C. Act 12-222, December 23, 1997, 44 DCR 114).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3(e) of the Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-309, March 20, 1998, 45 DCR 1923), § 3(e) of the Child Support and Welfare Reform Compliance Second Emergency Amendment Act of 1998 (D.C. Act 12-439, August 12, 1998, 45 DCR 6110), § 3(e) of the Child Support and Welfare Reform Compliance Legislative Review Emergency Amendment Act of 1998 (D.C. Act 12-503, October 27, 1998, 45 DCR 8495), and § 3(e) of the Child Support and Welfare Reform Compliance Second Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-600, January 20, 1999, 46 DCR 1239).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary repeal of D.C. <a href='http://openlims.org/public/L12-103.pdf'>Law 12-103</a>, see § 13 of the Child Support and Welfare Reform Compliance Second Emergency Amendment Act of 1998 (D.C. Act 12-439, August 12, 1998, 45 DCR 6110).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(e) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 1999 (D.C. Act 13-126, August 4, 1999, 46 DCR 6606).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(e) of the Child Support and Welfare Reform Compliance Legislative Review Emergency Amendment Act of 1999 (D.C. Act 13-177, November 2, 1999, 46 DCR 9678).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 103(e) of the Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-241, January 11, 2000, 47 DCR 581).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 103(e) of the Child Support and Welfare Reform Compliance Emergency Amendment Act of 2000 (D.C. Act 13-446, November 7, 2000, 47 DCR 9213).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 104(e) of Child Support and Welfare Reform Compliance Congressional Review Emergency Amendment Act of 2001 (D.C. Act 14-5, February 13, 2001, 48 DCR 2440).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-34</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-34.pdf'>Law 4-34</a>, see Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-180</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-180.pdf'>Law 9-180</a>, see Historical and Statutory Notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-269</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-269.pdf'>Law 13-269</a>, see notes following <a href='/dccode/Title-7/Chapter-2/7-201.html'>§ 7-201</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 6-1102. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/index.html">Title 6. Housing and Building Restrictions and Regulations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-11/index.html">Chapter 11. Historic Landmark and Historic District Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-11/Subchapter-I/index.html">Subchapter I. General Provisions</a></li>
+                    
+                    <li>↪ § 6-1102. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-11/Subchapter-I/6-1101.html">§ 6-1101. Declaration and purposes.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-6/Chapter-11/Subchapter-I/6-1103.html">§ 6-1103. Historic Preservation Review Board.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 6-1102. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Alter&quot; or &quot;alteration&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A change in the exterior appearance of a building or structure or its site, not covered by the definition of demolition, for which a permit is required;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A change in any interior space that has been specifically designated as an historic landmark;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The painting of unpainted masonry on a historic landmark or on a facade restored as a condition of a permit approved pursuant to this subchapter; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Excavation or action disturbing the ground at an archaeological site listed in the District of Columbia Inventory of Historic Sites or an archaeological site identified as a contributing feature in the designation of a historic landmark or historic district.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Area median income&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">For a household of 4 persons, the area median income for a household of 4 persons in the Washington Metropolitan Statistical Area as set forth in the periodic calculation provided by the United States Department of Housing and Urban Development;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">For a household of 3 persons, 90% of the area median income for a household of 4 persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">For a household of 2 persons, 80% of the area median income for a household of 4 persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">For a household of one person, 70% of the area median income for a household of 4 persons; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">For a household of more than 4 persons, the area median income for a household of 4 persons, increased by 10% of the area median income for a family of 4 persons for each household member exceeding 4 persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Any percentage referenced in subparagraph (A) of this paragraph shall be determined through a direct mathematical calculation not taking into account any adjustments made by the U.S. Department of Housing and Urban Development for the purposes of the programs it administers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Commission of Fine Arts&quot; means the United States Commission of Fine Arts established pursuant to the Act of May 17, 1910 (40 U.S.C. § 104).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Demolish&quot; or &quot;demolition&quot; means the razing or destruction, entirely or in significant part, of a building or structure and includes the removal or destruction of any facade of a building or structure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3A) </span>
+                
+                    <span class="" style="">&quot;Demolition by neglect&quot; means neglect in maintaining, repairing, or securing an historic landmark or a building or structure in an historic district that results in substantial deterioration of an exterior feature of the building or structure or the loss of the structural integrity of the building or structure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Design&quot; means exterior architectural features including height, appearance, texture, color, and nature of materials.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4A) </span>
+                
+                    <span class="" style="">&quot;District of Columbia undertaking&quot; means a project of the District of Columbia government that involves or contemplates demolition, alteration, subdivision, or new construction affecting a property owned by or under the jurisdiction of a District of Columbia agency, including an independent agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Historic district&quot; means an historic district:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Listed in the National Register of Historic Places as of the effective date of this subchapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Nominated to the National Register by the State Historic Preservation Officer for the District of Columbia; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Which the State Historic Preservation Officer for the District of Columbia has issued a written determination to nominate to the National Register after a public hearing before the Historic Preservation Review Board.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Historic landmark&quot; means a building, structure, object, or feature, and its site, or a site:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Listed in the National Register of Historic Places as of the effective date of this subchapter; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Listed in the District of Columbia&#39;s inventory of historic sites, or for which application for such listing is pending with the Historic Preservation Review Board, provided that, the Review Board shall schedule a hearing on the application within 90 days of one having been filed, and will determine within 90 days of receipt of an application pursuant to §<a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1104.html'>§ 6-1104</a> to 6-1108 whether to list such property as a historic landmark.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">&quot;Historic Preservation Office&quot; or &quot;HPO&quot; means the administrative office that serves as the staff to the Historic Preservation Review Board, State Historic Preservation Officer, and Mayor in performing functions pursuant to this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Historic Preservation Review Board&quot; or &quot;Review Board&quot; means the Board designated pursuant to <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1103.html'>§ 6-1103</a> and pursuant to regulations promulgated by the United States Secretary of the Interior under the Historic Preservation Act of 1966 (16 U.S.C. § 470 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Mayor&quot; means the Mayor of the District of Columbia, or his designated agent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;National Register of Historic Places&quot; or &quot;National Register&quot; means that national record of districts, sites, buildings, structures, and objects significant in American history, architecture, archaeology, and culture established pursuant to the Historic Preservation Act of 1966 (16 U.S.C. § 470a).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Necessary in the public interest&quot; means consistent with the purposes of this subchapter as set forth in <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1101.html'>§ 6-1101(b)</a> or necessary to allow the construction of a project of special merit.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10A) </span>
+                
+                    <span class="" style="">&quot;Public safety facility&quot; means a fire station, police station, or any other building or structure owned by the District of Columbia used for public safety operations, but excludes facilities used primarily for administrative functions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Special merit&quot; means a plan or building having significant benefits to the District of Columbia or to the community by virtue of exemplary architecture, specific features of land planning, or social or other benefits having a high priority for community services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;State Historic Preservation Officer&quot; or &quot;SHPO&quot; means the person designated by the Mayor to administer the National Register Program within the District of Columbia established pursuant to the Historic Preservation Act of 1966 (16 U.S.C. § 470 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Subdivide&quot; or &quot;subdivision&quot; means the division or assembly of land into 1 or more lots of record, including the division of any lot of record into 2 or more theoretical building sites as provided by the Zoning Regulations of the District of Columbia (11 DCMR 2516 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Unreasonable economic hardship&quot; means that failure to issue a permit would amount to a taking of the owner&#39;s property without just compensation or, in the case of a low-income owner(s) as determined by the Mayor, failure to issue a permit would place an onerous and excessive financial burden upon such owner(s).</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, D.C. <a href='http://openlims.org/public/L2-144.pdf'>Law 2-144</a>, § 3, 25 DCR 6939; Mar. 8, 1991, D.C. <a href='http://openlims.org/public/L8-232.pdf'>Law 8-232</a>, § 2, 38 DCR 259; Apr. 29, 1998, D.C. <a href='http://openlims.org/public/L12-86.pdf'>Law 12-86</a>, § 503(a), 45 DCR 1172; Apr. 27, 2001, D.C. <a href='http://openlims.org/public/L13-281.pdf'>Law 13-281</a>, § 104(a), 48 DCR 1888; June 19, 2001, D.C. <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a>, § 9, 48 DCR 1873; Mar. 16, 2005, D.C. <a href='http://openlims.org/public/L15-228.pdf'>Law 15-228</a>, § 2(a), 51 DCR 10562; Nov. 16, 2006, D.C. <a href='http://openlims.org/public/L16-185.pdf'>Law 16-185</a>, § 2(b), 53 DCR 6712; Mar. 2, 2007, D.C. <a href='http://openlims.org/public/L16-189.pdf'>Law 16-189</a>, § 2(a), 53 DCR 6786; Mar. 25, 2009, D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, § 126, 56 DCR 1117.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-6/Chapter-8/6-801.html'>§ 6-801</a>, <a href='/dccode/Title-6/Chapter-8/6-802.html'>§ 6-802</a>, <a href='/dccode/Title-6/Chapter-8/6-803.html'>§ 6-803</a>, <a href='/dccode/Title-6/Chapter-9/6-901.html'>§ 6-901</a>, and <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1108.01.html'>§ 6-1108.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 5-1002.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 5-822.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-281.pdf'>Law 13-281</a> added subsec. (3A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a> validated a previously made technical amendment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L15-228.pdf'>Law 15-228</a> added par. (10A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-185.pdf'>Law 16-185</a> rewrote par. (1); in par. (3A), inserted &quot;substantial&quot; preceding &quot;deterioration&quot;; added pars. (4A) and (6A); in par. (6)(B), deleted &quot;pursuant to the procedures contained in <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1103.html'>§ 6-1103(c)(5)</a>&quot; following &quot;landmark&quot;; and, in par. (12), inserted &quot;or &#39;SHPO&#39; &quot;. Prior to amendment, par. (1) read as follows: &quot;(1) &#39;Alter&#39; or &#39;alteration&#39; means a change in the exterior appearance of a building or structure or its site, not covered by the definition of demolition, for which a permit is required; except, that &quot;alter&quot; or &quot;alteration&quot; also means a change in any interior space which has been specifically designated as an historic landmark.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L16-189.pdf'>Law 16-189</a> added par. (1A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a> made technical corrections in the designation of paragraphs and subparagraphs.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Historic Preservation Process for Public Safety Facilities Emergency Amendment Act of 2004 (D.C. Act 15-502, August 2, 2004, 51 DCR 8817).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Historic Preservation Process for Public Safety Facilities Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-595, November 30, 2004, 51 DCR 11215).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Historic Preservation Process for Public Safety Facilities Congressional Review Emergency Amendment Act of 2005 (D.C. Act 16-24, February 17, 2005, 52 DCR 2978).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see §§ 2(a), 4 of Targeted Historic Preservation Assistance Emergency Amendment Act of 2006 (D.C. Act 16-472, July 31, 2006, 53 DCR 6781).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Targeted Historic Preservation Assistance Congressional Review Emergency Act of 2006 (D.C. Act 16-500, October 23, 2006, 53 DCR 9046).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-144</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-144.pdf'>Law 2-144</a>, see Historical and Statutory Notes following <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1101.html'>§ 6-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-232</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L8-232.pdf'>Law 8-232</a>, the &quot;Historic Landmark and Historic District Protection Amendment Act of 1990,&quot; was introduced in Council and assigned Bill No. 8-274, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on December 4, 1990, and December 18, 1990, respectively. Signed by the Mayor on December 27, 1990, it was assigned Act No. 8-315 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-86</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L12-86.pdf'>Law 12-86</a>, the &quot;Omnibus Regulatory Reform Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-458, which was referred to the Committee on Public Works and the Environment and the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on December 19, 1997, and January 6, 1998, respectively. Signed by the Mayor on January 21, 1998, it was assigned Act No. 12-256 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L12-86.pdf'>Law 12-86</a> became effective on April 29, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-281</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For D.C. <a href='http://openlims.org/public/L13-281.pdf'>Law 13-281</a>, see notes following <a href='/dccode/Title-6/Chapter-8/6-801.html'>§ 6-801</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-313</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a>, the &quot;Technical Amendments Act of 2000&quot;, was introduced in Council and assigned Bill No. 13-879, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 5, 2000, and December 19, 2000, respectively. Signed by the Mayor on January 19, 2001, it was assigned Act No. 13-574 and transmitted to Both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L13-313.pdf'>Law 13-313</a> became effective on June 19, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-228</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-228.pdf'>Law 15-228</a>, the &quot;Historic Preservation Process for Public Safety Facilities Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-784, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on July 13, 2004, and October 5, 2004, respectively. Signed by the Mayor on October 26, 2004, it was assigned Act No. 15-568 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L15-228.pdf'>Law 15-228</a> became effective on March 16, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-185</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L16-185.pdf'>Law 16-185</a>, see notes following <a href='/dccode/Title-6/Chapter-11/Subchapter-I/6-1101.html'>§ 6-1101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-189</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-189.pdf'>Law 16-189</a>, the &quot;Targeted Historic Preservation Assistance Amendment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-300, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 2, 2006, and June 6, 2006, respectively. Signed by the Mayor on July 31, 2006, it was assigned Act No. 16-473 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L16-189.pdf'>Law 16-189</a> became effective on March 2, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-353.pdf'>Law 17-353</a>, see notes following <a href='/dccode/Title-6/Chapter-2/Subchapter-I/6-201.html'>§ 6-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Because of the codification of D.C. <a href='http://openlims.org/public/L5-69.pdf'>Law 5-69</a> as subchapter II of this chapter, and the designation of the preexisting text of Chapter 11 as subchapter I, &quot;subchapter&quot; has been substituted for &quot;chapter,&quot; where applicable, in this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Applicability: Section 4 of D.C. <a href='http://openlims.org/public/L16-189.pdf'>Law 16-189</a> provided: &quot;The implementation of the provisions of this act is subject to appropriations and nothing in this act shall be construed to create an entitlement.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

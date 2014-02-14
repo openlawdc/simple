@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1603. Board of Trustees.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-16/index.html">Chapter 16. Public Defender Service</a></li>
+                    
+                    <li>↪ § 2-1603. Board of Trustees.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-16/2-1602.html">§ 2-1602. Persons who may be represented; appointment of private attorneys; determination of financial eligibility.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-16/2-1604.html">§ 2-1604. Director and Deputy Director; appointment; duties; membership in bar required.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1603. Board of Trustees.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The powers of the Service shall be vested in a Board of Trustees composed of 11 members. The Board of Trustees shall establish general policy for the Service but shall not direct the conduct of particular cases.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Members of the Board of Trustees shall be appointed by a panel consisting of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Chief Judge of the United States District Court for the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The Chief Judge of the District of Columbia Court of Appeals;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The Chief Judge of the Superior Court of the District of Columbia; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The Mayor of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The panel shall be presided over by the Chief Judge of the District of Columbia Court of Appeals (or in his absence, the designee of such Judge). A quorum of the panel shall be 4 members.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Four of the 11 members of the Board of Trustees shall be non-attorneys and shall be residents of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Judges of the United States courts in the District of Columbia and of District of Columbia courts may not be appointed to serve as members of the Board of Trustees.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The term of office of a member of the Board of Trustees shall be 3 years. No person shall serve more than 2 consecutive terms as a member of the Board of Trustees. A vacancy in the Board of Trustees shall be filled in the same manner as the original appointment. Any member appointed to fill a vacancy occurring prior to the expiration of the term for which his predecessor was appointed shall be appointed only for the remainder of such term.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The trustees of the Legal Aid Agency for the District of Columbia in office on the date of enactment of this chapter shall serve the unexpired portions of their terms as trustees of the Service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">For the purposes of any action brought against the trustees of the Service, they shall be deemed to be employees of the District of Columbia.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=655'>84 Stat. 655</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title III, § 303; Mar. 6, 1979, D.C. <a href='http://openlims.org/public/L2-155.pdf'>Law 2-155</a>, § 2, 25 DCR 6986; Oct. 28, 1986, <a href='http://api.fdsys.gov/link?collection=statute&volume=100&page=3228'>100 Stat. 3228</a>, <a href='http://www.govtrack.us/search?q=public%20law%2099-573'>Pub. L. 99-573</a>, § 17; Aug. 5, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=762'>111 Stat. 762</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, § 11272(a); Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2427'>112 Stat. 2427</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Pub. L. 105-274</a>, § 7(d).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2703.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 2-2223.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-155</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L2-155.pdf'>Law 2-155</a> was introduced in Council and assigned Bill No. 2-241, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on November 28, 1978 and December 12, 1978, respectively. Signed by the Mayor on December 28, 1978, it was assigned Act. No. 2-322 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Section 11272 of Pub. L. 105-33</a>: <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Section 7(d) of Pub. L. 105-274</a> provided that § 11272 of <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, which rewrote (a), is repealed, effective October 21, 1998. Subsection (a) is set out above as it appeared prior to the enactment of § 11272.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Change in Government</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section originated at a time when local government powers were delegated to the District of Columbia Council and to a Commissioner of the District of Columbia. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/dccode/Title-1/Chapter-2/Subchapter-VII/Part-B/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made in this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

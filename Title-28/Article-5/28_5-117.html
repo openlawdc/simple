@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28:5-117. Subrogation of issuer, applicant, and nominated person.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/index.html">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Article-5/index.html">Article 5. Letters of Credit</a></li>
+                    
+                    <li>↪ § 28:5-117. Subrogation of issuer, applicant, and nominated person.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-28/Article-5/28_5-116.html">§ 28:5-116. Choice of law and forum.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-28/Article-5/28_5-118.html">§ 28:5-118. Applicability.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28:5-117. Subrogation of issuer, applicant, and nominated person.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">An issuer that honors a beneficiary&#39;s presentation is subrogated to the rights of the beneficiary to the same extent as if the issuer were a secondary obligor of the underlying obligation owed to the beneficiary and of the applicant to the same extent as if the issuer were the secondary obligor of the underlying obligation owed to the applicant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">An applicant that reimburses an issuer is subrogated to the rights of the issuer against any beneficiary, presenter, or nominated person to the same extent as if the applicant were the secondary obligor of the obligations owed to the issuer and has the rights of subrogation of the issuer to the rights of the beneficiary stated in subsection (a) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A nominated person who pays or gives value against a draft or demand presented under a letter of credit is subrogated to the rights of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The issuer against the applicant to the same extent as if the nominated person were a secondary obligor of the obligation owed to the issuer by the applicant;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The beneficiary to the same extent as if the nominated person were a secondary obligor of the underlying obligation owed to the beneficiary; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The applicant to same extent as if the nominated person were a secondary obligor of the underlying obligation owed to the applicant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Notwithstanding any agreement or term to the contrary, the rights of subrogation stated in subsections (a) and (b) of this section do not arise until the issuer honors the letter of credit or otherwise pays and the rights in subsection (c) of this section do not arise until the nominated person pays or otherwise gives value. Until then, the issuer, nominated person, and the applicant do not derive under this section present or prospective rights forming the basis of a claim, defense, or excuse.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 30, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=712'>77 Stat. 712</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-243'>Pub. L. 88-243</a>, § 1; Mar. 16, 1993, D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, § 3, 39 DCR 9165, renumbered and amended Apr. 9, 1997, D.C. <a href='http://openlims.org/public/L11-238.pdf'>Law 11-238</a>, § 2, 44 DCR 923.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in § 28:5-103 and § 28:5-108.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 28:5-117.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 28:5-117.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-196</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a>, the &quot;Uniform Commercial Code Investment Securities Amendment Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-20, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on October 6, 1992, and November 4, 1992, respectively. Signed by the Mayor on November 25, 1992, it was assigned Act No. 9-321 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L9-196.pdf'>Law 9-196</a> became effective on March 16, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-238</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L11-238.pdf'>Law 11-238</a>, see Historical and Statutory Notes following § 28:5-101.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">UNIFORM COMMERCIAL CODE COMMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1. By itself this section does not grant any right of subrogation. It grants only the right that would exist if the person seeking subrogation &quot;were a secondary obligor.&quot; (The term &quot;secondary obligor&quot; refers to a surety, guarantor, or other person against whom or whose property an obligee has recourse with respect to the obligation of a third party. See Restatement of the Law Third, Suretyship and Guaranty s 1 (1996).) If the secondary obligor would not have a right to subrogation in the circumstances in which one is claimed under this section, none is granted by this section. In effect, the section does no more than to remove an impediment that some courts have found to subrogation because they conclude that the issuer&#39;s or other claimant&#39;s rights are &quot;independent&quot; of the underlying obligation. If, for example, a secondary obligor would not have a subrogation right because its payment did not fully satisfy the underlying obligation, none would be available under this section. The section indorses the position of Judge Becker in Tudor Development Group, Inc. v. United States Fidelity and Guaranty, 968 F.2d 357 (3rd Cir.1991).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">2. To preserve the independence of the letter of credit obligation and to insure that subrogation not be used as an offensive weapon by an issuer or others, the admonition in subsection (d) must be carefully observed. Only one who has completed its performance in a letter of credit transaction can have a right to subrogation. For example, an issuer may not dishonor and then defend its dishonor or assert a setoff on the ground that it is subrogated to another person&#39;s rights. Nor may the issuer complain after honor that its subrogation rights have been impaired by any good faith dealings between the beneficiary and the applicant or any other person. Assume, for example, that the beneficiary under a standby letter of credit is a mortgagee. If the mortgagee were obliged to issue a release of the mortgage upon payment of the underlying debt (by the issuer under the letter of credit), that release might impair the issuer&#39;s rights of subrogation, but the beneficiary would have no liability to the issuer for having granted that release.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

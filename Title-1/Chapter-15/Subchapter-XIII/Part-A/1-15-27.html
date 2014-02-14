@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-15-27. </title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/index.html">Chapter 15. Reorganization of the District Since the Establishment of Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-XIII/index.html">Subchapter XIII. 1995</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-XIII/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1995 Reorganization Plan No. 5 of 1996</a></li>
+                    
+                    <li>↪ § 1-15-27. </a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-XIII/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1995 Reorganization Plan No. 5 of 1996</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-XIII/Part-B/index.html">Part B. Reorganization Plan No. 2 of 1995</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-15-27. </h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">[Effective April 9, 1997; projected to expire November 20, 1997].
+STATEMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Reorganization Plan No. 1 of 1995 would consolidate all psychiatric services provided to inmates at the Central Detention Facility (&quot;D.C. Jail&quot;) and the Lorton Correctional Facility within the Department of Corrections (&quot;DOC&quot;) to improve the medical and psychiatric services provided to inmates at these locations.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The genesis of this proposed Reorganization Plan is Campbell v. McGruder, C.A. No. 1462-71 (D.D.C. 1971) and Inmates of D.C. Jail v. Jackson, C.A. No. 75-1668 (D.D.C. 1975), cases active in U.S. District Court. On January 27, 1995, the Court ordered the District of Columbia government (&quot;District&quot;) to implement the Special Officer&#39;s Initial Remedial Plan for Mental Health Care, Medical Care and Compliance Monitoring at the District of Columbia Jail (&quot;Initial Remedial Plan&quot;), which requires DOC to assume full responsibility for all medical and psychiatric services provided to inmates at the Central Detention Facility and at the Lorton Correctional Facility. The Initial Remedial Plan further requires staff who provide psychiatric services to be hired under the exclusive budget authority and auspices of DOC, and that all staff currently detailed to provide mental health services at the D.C. Jail shall become employees of DOC if they meet the standards for employment. The Initial Remedial Plan establishes staffing requirements and deadlines for hiring appropriate staff. Fines are not assessed for failure to terminate the details to the Department of Human Services (&quot;DHS&quot;) staff. However, the District has been fined for failure to hire staff within the time set forth in the Initial Remedial Plan.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Under the current organizational structure, DOC is responsible for providing housing, security, general medical care, and other services to inmates, but not mental health services. DHS, through an informal arrangement that began in the 1960s, has provided consultative mental health services to DOC, and in 1980, pursuant to the decree in Campbell v. McGruder, administered and funded an intermediate care program for 160 residents in 2 mental health units. This consultative arrangement was formalized with Reorganization Plan No. 1 of 1986, also known as the Final Mental Health System Implementation Plan. Under this consultative arrangement, DHS recommended treatment, but DOC retained responsibility for providing such treatment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">Unfortunately, this bifurcated arrangement did not provide maximum clinical services in an efficient and economical manner. The sharing of information was hampered by the strict confidentiality requirements of the District of Columbia Mental Health Information Act of 1978, effective March 3, 1979 (D.C. <a href='http://openlims.org/public/L2-136.pdf'>Law 2-136</a>; D.C. Code § 6-2001 et seq. [7-1201.01]). Further, the bifurcation of responsibility, whereby DOC physicians treat mental problems and DHS physicians treat mental illness, at times impedes the efficient delivery of services, results in redundant services, and makes tracking of inmates difficult.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">With the Reorganization Plan, DOC will assume responsibility for meeting all of the medical needs of the inmate population, including mental health, which should improve services to inmates by streamlining the administration and provision of services. To carry out its new functions, DOC will augment its Psychiatric Services Program, established in 1992, by the transfer of all vacant and funded positions and the corresponding appropriated budget from the Bureau of Correctional Services, Forensic Services Administration, Commission on Mental Health Services (&quot;CMHS&quot;) to DOC.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Reorganization will not affect court-ordered criminal pretrial and post trial examinations requested by District or United States courts, as these examinations will continue to be the responsibility of the CMHS. Commitments under applicable law following an acquittal by reason of insanity or transfers of inmates to CMHS in accordance with section 928 of An Act To establish a code of law for the District of Columbia, approved March 3, 1901 (31 Stat. 1340; D.C. Code <a href='/dccode/Title-24/Chapter-3/24-302~P.html'>§ 24-302</a> [<a href='/dccode/Title-24/Chapter-5/24-502.html'>§ 24-502</a>]), or Superior Court Mental Health Rule 9 also are unaffected.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">I. PURPOSE</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The purpose of this reorganization is to consolidate the provision of medical and mental health services provided to inmates at the Central Detention Facility and the Lorton Correctional Facility within the Department of Corrections, to improve the coordination of mental health and medical services, and to eliminate barriers to the exchange of mental health information created by the District of Columbia Mental Health Information Act of 1978, effective March 3, 1979 (D.C. <a href='http://openlims.org/public/L2-136.pdf'>Law 2-136</a>; D.C. Code § 6-2001 et seq. [<a href='/dccode/Title-7/Chapter-12/Subchapter-I/7-1201.01.html'>§ 7-1201.01</a>]).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">II. TRANSFER OF FUNCTIONS</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The function of providing mental health services to inmates in Department of Corrections facilities provided by the Bureau of Correctional Services, Commission on Mental Health Services, is hereby transferred to the Department of Corrections.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">III. OTHER TRANSFERS</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All vacant and filled positions, personnel, property and unexpended balances of appropriations, allocations, and other funds available or to be made available to perform the functions set forth under Section II above are hereby transferred to the Department of Corrections.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All records relating to the duties and functions transferred in Section II are hereby transferred to the Department of Corrections, except that mental health records shall be transferred only in accordance with the District of Columbia Mental Health Information Act of 1978, effective March 3, 1979 (D.C. <a href='http://openlims.org/public/L2-136.pdf'>Law 2-136</a>; D.C. Code § 6-2001 et seq. [<a href='/dccode/Title-7/Chapter-12/Subchapter-I/7-1201.01.html'>§ 7-1201.01</a>]).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">IV. REORGANIZATION</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Director of the Department of Corrections is authorized to organize the personnel and property transferred herein into such organizational components as the Director deems appropriate, and is authorized to develop any reports and evaluation systems necessary to assess the effectiveness of the Reorganization Plan.</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

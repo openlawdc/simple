@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-335.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/index.html">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-XVI/index.html">Subchapter XVI. Divestment, Prohibition on Investment of Certain Public Funds</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-XVI/Part-A/index.html">Part A. Sudan</a></li>
+                    
+                    <li>↪ § 1-335.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XVI/Part-A/index.html">Part A. Sudan</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-XVI/Part-A/1-335.02.html">§ 1-335.02. Identification of companies.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-335.01. Definitions.</h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Active Business Operations&quot; means all Business Operations that are not Inactive Business Operations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Business Operations&quot; means engaging in commerce in any form in Sudan, including by acquiring, developing, maintaining, owning, selling, possessing, leasing, or operating equipment, facilities, personnel, products, services, personal property, real property, or any other apparatus of business or commerce.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Company&quot; means any sole proprietorship, for-profit or nonprofit organization, association, corporation, partnership, joint venture, limited partnership, limited liability partnership, limited liability company, or other entity or business association, including all wholly-owned subsidiaries, majority-owned subsidiaries, parent companies, or affiliates of such entities or business associations, that exists for for-profit or nonprofit purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Complicit&quot; means taking actions during any preceding 20-month period which have directly supported or promoted the genocidal campaign in Darfur, including preventing Darfur&#39;s victimized population from communicating with each other, encouraging Sudanese citizens to speak out against an internationally approved security force for Darfur, or actively working to deny, cover up, or alter the record on human rights abuses in Darfur.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Direct Holdings&quot; in a company means all securities of that company held directly by the Public Fund or in an account or fund in which the Public Fund owns all shares or interests.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Government of Sudan&quot; means the government in Khartoum, Sudan, which is led by the National Congress Party (formerly known as the National Islamic Front) or any successor government formed on or after October 13, 2006 (including the coalition National Unity Government agreed upon in the Comprehensive Peace Agreement for Sudan. The term &quot;Government of Sudan&quot; shall not include the regional government of southern Sudan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Inactive Business Operations&quot; means the mere continued holding or renewal of rights to property previously operated for the purpose of generating revenues but not presently deployed for such purpose.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Indirect Holdings&quot; in a company means all securities of that company held in an account or fund, such as a mutual fund, managed by one or more persons not employed by the Public Fund, in which the Public Fund owns shares or interests together with other investors not subject to the provisions of this part.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Marginalized Populations Of Sudan&quot; include the portion of the population in the Darfur region that has been genocidally victimized; the portion of the population of southern Sudan victimized by Sudan&#39;s North-South civil war; the Beja, Rashidiya, and other similarly underserved groups of eastern Sudan; the Nubian and other similarly underserved groups in Sudan&#39;s Abyei, Southern Blue Nile, and Nuba Mountain regions; and the Amri, Hamadab, Manasir, and other similarly underserved groups of northern Sudan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Military Equipment&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Weapons, arms, military supplies, and equipment that readily may be used for military purposes, including radar systems or military-grade transport vehicles; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Supplies or services sold or provided directly or indirectly to any force actively participating in armed conflict in Sudan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Mineral Extraction Activities&quot; include exploring, extracting, processing, transporting, or wholesale selling or trading of elemental minerals or associated metal alloys or oxides (ore), including gold, copper, chromium, chromite, diamonds, iron, iron ore, silver, tungsten, uranium, and zinc, and facilitating such activities, including by providing supplies or services in support of such activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Oil-Related Activities&quot; include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Owning rights to oil blocks;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Exporting, extracting, producing, refining, processing, exploring for, transporting, selling, or trading of oil;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Constructing, maintaining, or operating a pipeline, refinery, or other oil-field infrastructure; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Facilitating such activities, including by providing supplies or services in support of such activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The mere retail sale of gasoline and related consumer products shall not be considered Oil-Related Activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Power Production Activities&quot; means any Business Operations that involve a project commissioned by the National Electricity Corporation of Sudan or other similar Government of Sudan entity whose purpose is to facilitate power generation and delivery, including establishing power-generating plants or hydroelectric dams, selling or installing components for the project, providing service contracts related to the installation or maintenance of the project, and facilitating such activities, including by providing supplies or services in support of such activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Public Fund&quot; means the assets of the District of Columbia Retirement Board, the Board of Trustees in charge of the District of Columbia Retirement Board.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Scrutinized Company&quot; means a company, other than a Social Development Company which is not complicit in the Darfur genocide, that meets the criteria set forth in any of the following subparagraphs:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The company has Business Operations that involve contracts with, or provision of supplies or services; to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">The Government of Sudan;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Companies in which the Government of Sudan has any direct or indirect equity share;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Government of Sudan-commissioned consortiums or projects; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 60px">
+            
+                
+                    <span class="level-num" style="">(IV) </span>
+                
+                    <span class="" style="">Companies involved in Government of Sudan-commissioned consortiums or projects; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 90px">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">More than 10% of the company&#39;s revenues or assets linked to Sudan involve Oil-Related Activities or Mineral Extraction Activities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">Less than 75% of the company&#39;s revenues or assets linked to Sudan involve contracts with, or provision of Oil-Related or Mineral Extracting products or services to, the regional government of southern Sudan or a project or consortium created exclusively by that regional government; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 120px">
+            
+                
+                    <span class="level-num" style="">(cc) </span>
+                
+                    <span class="" style="">The company has failed to take Substantial Action; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">More than 10% of the company&#39;s revenues or assets linked to Sudan involve Power Production Activities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">Less than 75% of the company&#39;s Power Production Activities include projects whose intent is to provide power or electricity to the Marginalized Populations Of Sudan; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 150px">
+            
+                
+                    <span class="level-num" style="">(cc) </span>
+                
+                    <span class="" style="">The company has failed to take Substantial Action;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The company is complicit in the Darfur genocide;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The company supplies Military Equipment within Sudan, unless it clearly shows that the Military Equipment cannot be used to facilitate offensive military actions in Sudan or the company implements rigorous and verifiable safeguards to prevent use of that equipment by forces actively participating in armed conflict, including, through post-sale tracking of the equipment by the company, certification from a reputable and objective third party that the equipment is not being used by a party participating in armed conflict in Sudan, or sale of the equipment solely to the regional government of southern Sudan or any internationally recognized peacekeeping force or humanitarian organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Scrutinized Companies List&quot; means a list of Scrutinized Companies compiled in accordance with <a href='/dccode/Title-1/Chapter-3/Subchapter-XVI/Part-A/1-335.02.html'>§ 1-335.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Social Development Company&quot; means a company whose primary purpose in Sudan is to provide humanitarian goods or services, including medicine or medical equipment, agricultural supplies or infrastructure, educational opportunities, journalism-related activities, information or information materials, spiritual-related activities, services of a purely clerical or reporting nature, food, clothing, or general consumer goods that are unrelated to Oil-Related Activities, Mineral Extraction Activities, or Power Production Activities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Substantial Action&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Adopting, publicizing, and implementing a formal plan to cease Business Operations within one year and to refrain from any new Business Operations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Undertaking significant humanitarian efforts on behalf of one or more Marginalized Populations Of Sudan; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Through engagement with the Government of Sudan, materially improving conditions for the genocidally victimized population in Darfur.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Feb. 2, 2008, D.C. <a href='http://openlims.org/public/L17-106.pdf'>Law 17-106</a>, § 2, 54 DCR 12223.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-106</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-106.pdf'>Law 17-106</a>, the &quot;Prohibition of the Investment of Public Funds in Certain Companies Doing Business with the Government of Sudan Act of 2007&quot;, was introduced in Council and assigned Bill No. 17-134 which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings on October 2, 2007, and November 6, 2007, respectively. Signed by the Mayor on November 29, 2007, it was assigned Act No. 17-225 and transmitted to both Houses of Congress for its review. D.C. <a href='http://openlims.org/public/L17-106.pdf'>Law 17-106</a> became effective on February 2, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

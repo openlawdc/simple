@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-204.23. Municipal planning.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/index.html">Chapter 2. District of Columbia Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/index.html">Subchapter IV. The District Charter</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/index.html">Part B. The Mayor</a></li>
+                    
+                    <li>↪ § 1-204.23. Municipal planning.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html">§ 1-204.22. Powers and duties.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.24a.html">§ 1-204.24a. In general.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-204.23. Municipal planning.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor shall be the central planning agency for the District. He shall be responsible for the coordination of planning activities of the municipal government and the preparation and implementation of the District&#39;s elements of the comprehensive plan for the National Capital which may include land use elements, urban renewal and redevelopment elements, a multi-year program of municipal public works for the District, and physical, social, economic, transportation, and population elements. The Mayor&#39;s planning responsibility shall not extend to federal and international projects and developments in the District, as determined by the National Capital Planning Commission, or to the United States Capitol buildings and grounds as defined in §<a href='/dccode/Title-10/Chapter-5/Subchapter-II/Part-B/10-503.11.html'>§ 10-503.11</a> and 10-503.26, or to any extension thereof or addition thereto, or to buildings and grounds under the care of the Architect of the Capitol. In carrying out his responsibilities under this section, the Mayor shall establish procedures for citizen involvement in the planning process and for appropriate meaningful consultation with any state or local government or planning agency in the National Capital region affected by any aspect of a proposed District element of the comprehensive plan (including amendments thereto) affecting or relating to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor shall submit the District&#39;s elements and amendments thereto to the Council for revision or modification, and adoption by act, following public hearings. Following adoption and prior to implementation, the Council shall submit such elements and amendments thereto to the National Capital Planning Commission for review and comment with regard to the impact of such elements or amendments on the interests and functions of the federal establishment, as determined by the Commission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Such elements and amendments thereto shall be subject to and limited by determinations with respect to the interests and functions of the federal establishment as determined in the manner provided by act of Congress.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=792'>87 Stat. 792</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, title IV, § 423.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Budget and financial management, multiyear capital improvements plan, see <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D/Subpart-1/1-204.44.html'>§ 1-204.44</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">National capital revitalization corporation, revitalization plan, see <a href='/dccode/Title-2/Chapter-12/Subchapter-X/Part-A/2-1219.12~P.html'>§ 2-1219.12</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D/Subpart-1/1-204.44.html'>§ 1-204.44</a>, <a href='/dccode/Title-1/Chapter-3/Subchapter-III-A/Part-A/1-306.01.html'>§ 1-306.01</a>, and <a href='/dccode/Title-1/Chapter-3/Subchapter-XII-A/1-328.02.html'>§ 1-328.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-244.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-163.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Mayor's orders</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Establishment of District of Columbia Advisory Council on Memorials: See Mayor&#39;s Order 89-201, September 8, 1989.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Comprehensive plan goals and policies: Act of March 3, 1979, D.C. <a href='http://openlims.org/public/L2-134.pdf'>Law 2-134</a>, established the goals and policies of the District of Columbia as the first District element of the comprehensive plan for the National Capital.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Section 4 of the District of Columbia Comprehensive Plan Act of 1984 (D.C. <a href='http://openlims.org/public/L5-76.pdf'>Law 5-76</a>) repealed the District of Columbia Comprehensive Plan Goals and Policies Act of 1978 (D.C. <a href='http://openlims.org/public/L2-134.pdf'>Law 2-134</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">District of Columbia Comprehensive Plan of 1984: Section 2 of D.C. <a href='http://openlims.org/public/L8-129.pdf'>Law 8-129</a>, as amended by § 201 of D.C. <a href='http://openlims.org/public/L8-132.pdf'>Law 8-132</a>, amended Titles I through VIII, X and XI, and added Title XII to the District of Columbia Comprehensive Plan of 1984, adopted by D.C. <a href='http://openlims.org/public/L5-76.pdf'>Law 5-76</a>. D.C. <a href='http://openlims.org/public/L8-129.pdf'>Law 8-129</a> was reprinted in its entirety in 37 DCR 55. Amended Titles I through VII, X, XI, and new Title XII will be codified at Title 10 of the District of Columbia Municipal Regulations. D.C. <a href='http://openlims.org/public/L8-132.pdf'>Law 8-132</a> is found at 37 DCR 2213.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Review of District elements by National Capital Planning Commission: Section 6(b) of D.C. <a href='http://openlims.org/public/L5-187.pdf'>Law 5-187</a>, and § 4(b) of D.C. <a href='http://openlims.org/public/L8-129.pdf'>Law 8-129</a>, provided that no District element of the Comprehensive Plan for the National Capital shall take effect until it has been reviewed by the National Capital Planning Commission as provided in subsection (a) of <a href='/dccode/Title-2/Chapter-10/2-1002.html'>§ 2-1002</a> and this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

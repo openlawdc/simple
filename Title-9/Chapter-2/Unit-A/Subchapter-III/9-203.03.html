@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 9-203.03. Council acceptance of land dedication.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/index.html">Title 9. Transportation Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2/index.html">Chapter 2. Street and Alley Closing and Acquisition Procedures</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2/Unit-A/index.html">Unit A. Street and Alley Closings</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III/index.html">Subchapter III. New Streets or Alleys</a></li>
+                    
+                    <li>↪ § 9-203.03. Council acceptance of land dedication.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III/9-203.02.html">§ 9-203.02. Methods of acquisition.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III/9-203.04.html">§ 9-203.04. Minor streets.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 9-203.03. Council acceptance of land dedication.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Where the highway plan shows: (1) a street as 90 feet wide, the Council may accept a dedication of land no less than 60 feet wide; (2) a street as 120 feet or more wide, the Council may accept a dedication of land no less than 90 feet wide; provided, that in both clauses (1) and (2) of this section the persons dedicating the land agree to establish building restriction lines to correspond with the width of the street as shown on the highway plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">An application to dedicate land to establish a minor street that would not meet the requirements of <a href='/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III/9-203.04.html'>§ 9-203.04</a> shall be accompanied by a document signed by the Mayor, stating that the Mayor has authorized the nonconforming street width or building-line setback.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">When the Council makes street construction a condition for the dedication of land for street purposes, the Surveyor shall not record a dedication plat until DDOT has issued a written statement (&quot;DDOT Statement&quot;) that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The owner of the property to be dedicated has constructed the street improvements in accordance with the Council&#39;s conditions, DDOT&#39;s standard and specifications, and any plans required and approved by DDOT; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The owner of the property being dedicated has signed a document, which shall be attached to the DDOT Statement, that indemnifies and holds harmless the District and all of its officers, agents, and servants against any and all claims or liability arising from or based on, or as a consequence or result of, any latent defects, act, omission, or default of the owner of the property, his employees, agents, servants, contractors, or subcontractors, in the performance of, or in connection with, any work required, contemplated, or performed in connection with the construction of the street.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Mar. 10, 1983, D.C. <a href='http://openlims.org/public/L4-201.pdf'>Law 4-201</a>, § 303, 30 DCR 148; Oct. 22, 2008, D.C. <a href='http://openlims.org/public/L17-246.pdf'>Law 17-246</a>, § 2(b), 55 DCR 9010.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">Public ways, streets and alleys on recorded plats, see <a href='/dccode/Title-1/Chapter-13/1-1314.html'>§ 1-1314</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III/9-203.04.html'>§ 9-203.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 7-443.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">D.C. <a href='http://openlims.org/public/L17-246.pdf'>Law 17-246</a> designated subsec. (a); and added subsecs. (b) and (c).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L4-201.pdf'>Law 4-201</a>, see Historical and Statutory Notes following <a href='/dccode/Title-9/Chapter-2/Unit-A/Subchapter-I/9-201.01.html'>§ 9-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-246</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For <a href='http://openlims.org/public/L17-246.pdf'>Law 17-246</a>, see notes following <a href='/dccode/Title-9/Chapter-2/Unit-A/Subchapter-I/9-201.01.html'>§ 9-201.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

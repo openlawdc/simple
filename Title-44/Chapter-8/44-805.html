@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-805. Use of peer review reports, records, or statements in judicial and administrative proceedings.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/index.html">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-8/index.html">Chapter 8. Medical Records</a></li>
+                    
+                    <li>↪ § 44-805. Use of peer review reports, records, or statements in judicial and administrative proceedings.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-8/44-804.html">§ 44-804. Confidentiality of identity in publications.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-9/index.html">Chapter 9. Mental Health Services</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-805. Use of peer review reports, records, or statements in judicial and administrative proceedings.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except as otherwise provided by this section:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The files, records, findings, opinions, recommendations, evaluations, and reports of a peer review body, information provided to or obtained by a peer review body, the identity of persons providing information to a peer review body, and reports or information provided pursuant to <a href='/dccode/Title-44/Chapter-8/44-802.html'>§ 44-802</a> or federal or other District of Columbia law shall be confidential and shall be neither discoverable nor admissible into evidence in any civil, criminal, legislative, or administrative proceeding. Nothing in this paragraph shall preclude use of reports or information provided under <a href='/dccode/Title-44/Chapter-8/44-802.html'>§ 44-802</a> or federal or other District of Columbia law by a board regulating a health profession or the Mayor in proceedings by the board or the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">No person who participated in the proceedings of or provided information to a peer review body shall be compelled to testify or give discovery in any civil, criminal, legislative, or administrative proceeding relating to any matter presented or discussed at those proceedings, or any information provided to or obtained by any reports, records, opinion, evaluation, finding, or recommendation of the body or its members.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Notwithstanding paragraphs (1) and (2) of this subsection, a court may order a peer review body to provide information in a criminal proceeding in which a health professional is accused of a felony, if the court determines that disclosure is essential to protect the public interest and that the information being sought can be obtained from no other source. In determining whether disclosure is essential to protect the public interest, the court shall consider the seriousness of the offense with which the health professional is charged, the need for disclosure of the party seeking it, and the probative value of the information. If the court orders disclosure, the identity of any patient shall not be disclosed without the consent of the patient or his legal representative, and the information disclosed shall not be used except in the criminal proceeding.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Notwithstanding subsection (a) of this section, primary health records and other information, documents, or records available from original sources shall not be deemed nondiscoverable or inadmissible merely because they are a part of the files, records, or reports of a peer review body.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">This section shall not affect the right of any health professional to discover or to have admitted into evidence the minutes and reports of a peer review body concerning the health professional for the limited purpose of adjudicating the appropriateness of an adverse action affecting the employment, membership, privileges, or association of the health professional by the peer review body.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Sept. 29, 1978, D.C. <a href='http://openlims.org/public/L2-112.pdf'>Law 2-112</a>, § 6, 25 DCR 1471; Mar. 17, 1993, D.C. <a href='http://openlims.org/public/L9-234.pdf'>Law 9-234</a>, § 2(d), 40 DCR 605.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1981 Ed., § 32-505.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">1973 Ed., § 32-365.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-112</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L2-112.pdf'>Law 2-112</a>, see Historical and Statutory Notes following <a href='/dccode/Title-44/Chapter-8/44-801.html'>§ 44-801</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-234</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For legislative history of D.C. <a href='http://openlims.org/public/L9-234.pdf'>Law 9-234</a>, see Historical and Statutory Notes following <a href='/dccode/Title-44/Chapter-8/44-801.html'>§ 44-801</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

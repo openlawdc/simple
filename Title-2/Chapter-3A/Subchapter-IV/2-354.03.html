@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-354.03. Competitive sealed proposals.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/index.html">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-3A/index.html">Chapter 3A. Government Procurement</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-3A/Subchapter-IV/index.html">Subchapter IV. Source Selection and Contract Formation</a></li>
+                    
+                    <li>↪ § 2-354.03. Competitive sealed proposals.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-3A/Subchapter-IV/2-354.02.html">§ 2-354.02. Competitive sealed bids.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-3A/Subchapter-IV/2-354.04.html">§ 2-354.04. Sole source procurements.</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-354.03. Competitive sealed proposals.</h1>
+
+
+     
+
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A contract may be entered into by competitive sealed proposal when the use of competitive sealed bidding is not practicable or not advantageous to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Proposals shall be solicited from the maximum number of qualified sources and in a manner consistent with the nature of, and the need for, the goods, services, or construction being acquired.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Proposals shall be solicited through a request for proposals. The CPO shall provide public notice of the RFP of not less than 21 days, unless the CPO issues a determination and findings that it is appropriate to shorten the notice period to a period of not less than 14 days. In making the determination and findings, the CPO shall consider factors including the complexity of the procurement, the type of goods or services being purchased, and the impact of a shortened notice period on competition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">An RFP shall set forth each evaluation factor and indicate the relative importance of each evaluation factor. Price shall be included as an evaluation factor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Each RFP shall include a statement of work or other description of the District&#39;s specific needs, which shall be used as a basis for the evaluation of proposals.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The contract shall be awarded by written notice to the responsive and responsible bidder whose bid will be most advantageous to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The contracting officer may issue an RFQ before an RFP if the CPO makes a determination and findings that proceeding with an RFQ process would be advantageous to the District and that establishes a reasonable price range for the procurement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The RFQ shall include a description of the statement of work to be solicited by the RFP, the deadline for submission of information, and how prospective offerors may apply for consideration. The RFQ shall require information only on the prospective contractor&#39;s qualifications, experience, and ability to perform the requirements of the contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">After receiving the responses to the RFQ from prospective contractors, the contracting officer shall determine in writing the ranking of the prospective contractors from the most qualified to the least qualified on the basis of the information provided. The contracting officer shall then issue an RFP to at least the 3 highest-ranked prospective contractors. The determination regarding how many proposals to solicit shall not be subject to review.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Upon receiving the responses to an RFP, the contracting officer shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Evaluate the proposals received using only the criteria stated in the RFP and in accordance with weightings that have been provided in the RFP; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Rank the prospective contractors from most advantageous to least advantageous to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0px">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">After ranking the prospective contractors, the contracting officer may elect to proceed with negotiations in accordance with paragraph (2) of this subsection. The contracting officer&#39;s decision shall not be subject to review.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the contracting officer elects to proceed with negotiations, the contracting officer shall negotiate with the highest-ranked prospective contractor on price or matters affecting the scope of the contract, so long as the terms of the final contract are within the scope of the request for proposals. If a satisfactory contract cannot be negotiated with the highest-ranked prospective contractor, the contracting officer may negotiate the terms of the contract with the 2nd most qualified prospective contractor or lower-ranked prospective contractors in order of ranking until a satisfactory contract can be awarded.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The contracting officer may reopen negotiations with any prospective contractor with whom negotiations were terminated.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 30px">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The contracting officer may make changes within the general scope of the RFP but shall then provide all offerors an opportunity to submit their best and final offers.</span>
+                
+            
+        </p>
+    
+
+    
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">(Apr. 8, 2011, D.C. <a href='http://openlims.org/public/L18-371.pdf'>Law 18-371</a>, § 403, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 1185</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/Title-1/Chapter-3/Subchapter-I/Part-E/1-301.91.html'>§ 1-301.91</a>, <a href='/dccode/Title-2/Chapter-3A/Subchapter-I/2-351.04.html'>§ 2-351.04</a>, <a href='/dccode/Title-2/Chapter-3A/Subchapter-IV/2-354.01.html'>§ 2-354.01</a>, <a href='/dccode/Title-2/Chapter-3A/Subchapter-V/2-355.02.html'>§ 2-355.02</a>, and <a href='/dccode/Title-2/Chapter-3A/Subchapter-VI/2-356.02.html'>§ 2-356.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 30px">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-371</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 30px">
+            
+                
+                    <span class="" style="">For history of <a href='http://openlims.org/public/L18-371.pdf'>Law 18-371</a>, see notes under <a href='/dccode/Title-2/Chapter-3A/Subchapter-I/2-351.01.html'>§ 2-351.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

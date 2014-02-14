@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-15-21. </title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode/index.html">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/index.html">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/index.html">Chapter 15. Reorganization of the District Since the Establishment of Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-XI/index.html">Subchapter XI. 1992</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-XI/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1992</a></li>
+                    
+                    <li>↪ § 1-15-21. </a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-XI/Part-A/index.html">Part A. Reorganization Plan No. 1 of 1992</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-XI/Part-B/index.html">Part B. Reorganization Plan No. 2 of 1992</a>
+                
+
+                <h2>Status of This Page</h2>
+                <p class="recency">current through DC Act 19-658; unofficial through D.C. Act 19-682</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-15-21. </h1>
+
+
+     
+
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">(Approved July 2, 1992).
+Prepared by the Mayor and transmitted to the Council of the District of Columbia on July 2, 1992, pursuant to the provisions of Section 422(12) of the District Charter, District of Columbia Self-Government and Governmental Reorganization Act, approved December 24, 1973 (<a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=813'>87 Stat. 813</a>; D.C. Code, sec. 1-242(12) [<a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html'>§ 1-204.22</a>]).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">I. Establishment</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">An Unclaimed Property Unit is hereby established in the Executive Branch of the Government of the District of Columbia, under the supervision and control of the District of Columbia Controller within the Office of the District of Columbia Controller of the Office of Financial Management. The Unclaimed Property Unit hereby established, and the functions and personnel assigned thereto, shall constitute an organizational unit of the Office of the District of Columbia Controller.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">II. Purpose</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Unclaimed Property Unit is established in the Office of the District of Columbia Controller, under the supervision and control of the District of Columbia Controller, for the purpose of more efficiently operating the Government of the District of Columbia. To effect the enhancement of the District government&#39;s efficiency, the Unclaimed Property Unit will be aligned with the Office of the District of Columbia Controller, the office that is responsible for the District&#39;s financial management and control and that maintains the District&#39;s official accounts.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">III. Functions</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All of the duties and functions of the Unclaimed Property Unit in the Department of Finance and Revenue established under The District of Columbia Uniform Disposition of Unclaimed Property Act, as amended, effective March 5, 1981 (D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>; D.C. Code, sec. 42-201 [<a href='/dccode/Title-41/Chapter-1/41-101.html'>§ 41-101</a>] et seq.) (&quot;the Act&quot;), the rules issued pursuant thereto and Mayor&#39;s Order 81-82, dated March 27, 1981, 28 DCR 1740 (April 17, 1981) which delegated to the Department of Finance and Revenue, the Mayor&#39;s authority to administer the Act and to issue rules are hereby transferred to the Office of the District of Columbia Controller within the Office of Financial Management.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">IV. Transfers</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All positions, property, records and funds relating to the duties and functions transferred in this plan are hereby transferred to the Office of the District of Columbia Controller.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">V. Organization</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The District of Columbia Controller of the Office of the District of Columbia Controller is authorized to organize the personnel and property transferred herein within any organizational unit as he or she deems appropriate to fulfill the functions transferred by this plan.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">VI. Abolishment</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The existing Unclaimed Property Unit within the Department of Finance and Revenue is hereby abolished.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">VII. Rescission</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">All orders and parts of orders in conflict with any of the provisions of this plan are, to the extent of such conflict, hereby repealed, except that any rules or regulations adopted or promulgated by virtue of the authority granted by such orders, shall remain in force until properly revised, amended or rescinded.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">VIII. Effective Date</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">This Reorganization Plan No. 1 of 1992 shall become effective on a date to be specified by an executive order of the Mayor issued no later than 30 calendar days after this plan has been approved in accordance with the requirements of section 422(12) of the District of Columbia Self-Government and Governmental Reorganization Act, approved December 24, 1973 (<a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=813'>87 Stat. 813</a>; D.C. Code, sec. 1-242(12) [<a href='/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B/1-204.22.html'>§ 1-204.22</a>]), and section 5(c) of the Governmental Reorganization Procedures Act of 1981, effective October 17, 1981 (D.C. <a href='http://openlims.org/public/L4-42.pdf'>Law 4-42</a>; D.C. Code, sec. 1-299.4(c) [<a href='/dccode/Title-1/Chapter-3/Subchapter-VI/1-315.04.html'>§ 1-315.04</a>]).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">MAYOR&#39;S STATEMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Unclaimed Property Unit of the Audit, Compliance and Investigation Administration of the Department of Finance and Revenue is responsible for the collection and maintenance of all abandoned tangible and intangible personal property reported and delivered to the Mayor for safekeeping and fiscal growth of the District of Columbia pursuant to the Uniform Disposition of Unclaimed Property Act of 1980, as amended, effective March 5, 1981 (D.C. <a href='http://openlims.org/public/L3-160.pdf'>Law 3-160</a>; D.C. Code, sec. 42-201 [<a href='/dccode/Title-41/Chapter-1/41-101.html'>§ 41-101</a>] et seq.). In addition, the Unclaimed Property Unit is required to attempt to locate and return the unclaimed property to the rightful owner.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">To date, the Unclaimed Property Unit has collected approximately $47 million and has returned approximately $4 million to the rightful owners. As a result, over $42 million have been contributed to the fiscal development of the District of Columbia since the creation of the program.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">I am committed to the most efficient operation of the District government. To this end, I submit herewith, Reorganization Plan No. 1 of 1992 that would transfer the functions of administering the District of Columbia&#39;s unclaimed property program from the Department of Finance and Revenue to the Office of the District of Columbia Controller within the Office of Financial Management. The Reorganization Plan would transfer the entire Unclaimed Property Unit, including its staff of seven persons, its property, records and funding to the Office of the District of Columbia Controller.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">To enhance the efficiency of the District government&#39;s operation, the reorganization would align the Unclaimed Property Unit with the Office of the District of Columbia Controller, the office within the District government that is responsible for the financial management of the District and that maintains the official accounts of the District.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">The Unit&#39;s current alignment within the Department of Finance and Revenue does not conform to the Department&#39;s general mission: tax administration. Although the unclaimed property program produces revenue for the District, it is not a tax program. Instead, it is more appropriately characterized first, as a financial management and fiduciary service which the District renders to persons who have abandoned their property within our jurisdiction and then second, as a program that generates revenue for the District. Consequently, it is more efficient to place the program in the office that is charged with the management and control of the District&#39;s financial affairs.</span>
+                
+                    <span class="" style="font-style: italic; ">1</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0px">
+            
+                
+                    <span class="" style="">1 Only 12 other states in the country have their unclaimed property programs within their Departments of Finance and Revenue or Departments of Revenue, while 25 states administer their programs through their Treasury Departments or Controller&#39;s Offices.</span>
+                
+            
+        </p>
+    
+
+    
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>
