@@ -43,9 +43,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/" + title_shard["sec"][sec].replace(".xml", ".html");
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
                 };
-                oReq.open("get", "/by_title/" + title + ".json", true);
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
