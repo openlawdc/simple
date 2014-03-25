@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-15-19. </title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15">Chapter 15. Reorganization of the District Since the Establishment of Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-IX">Subchapter IX. 1988</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-15/Subchapter-IX/Part-B">Part B. Reorganization Plan No. 4 of 1988</a></li>
+                    
+                    <li>↪ § 1-15-19. </a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-IX/Part-B">Part B. Reorganization Plan No. 4 of 1988</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-15/Subchapter-X">Subchapter X. 1989</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-15-19. </h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">(Effective December 15, 1988).
+</span>
+                
+                    <span class="" style="font-style: italic; ">I. Purpose</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The purpose of this reorganization is to consolidate, within the Metropolitan Police Department, certain licensing and regulatory functions related to security officers, Regulation 74-31, enacted December 1, 1974, as amended by the Security Officer Licensing Facilitation Act of 1977, <a href='http://openlims.org/public/L2-29.pdf'>D.C. Law 2-29</a>, effective October 26, 1977, the Uniform Requirements for Security Officers Amendment Act of 1984, <a href='http://openlims.org/public/L5-180.pdf'>D.C. Law 5-180</a>, effective March 16, 1985, the End of Session Technical Amendments Act of 1984, <a href='http://openlims.org/public/L5-159.pdf'>D.C. Law 5-159</a>, effective March 14, 1985 and functions related to private detectives pursuant to the Licensing and Bonding of Private Detectives, Regulation 70-30, enacted July 9, 1970, as amended by the Regulation Concerning Uniforms to be Worn by Specialmen and by Unarmed Uniformed Guards and Security Officers, Regulation 71-20, enacted June 6, 1971, the Regulation Establishing Standards for Certification and Employment of Security Officers, Regulation 74-31, enacted December 1, 1974 and the Security Officer Licensing Facilitation Act of 1977, <a href='http://openlims.org/public/L2-29.pdf'>D.C. Law 2-29</a>, effective October 26, 1977.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">II. Functions</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">With Regard To Security Officers</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The functions of administering applications, charging the license and examination fees, and the investigation, certification, and examination of applicants as well as issuing, denying, suspending, or revoking licenses, which were vested in the Department of Consumer and Regulatory Affairs pursuant to Reorganization Plan No. 1 of 1983, effective March 31, 1983, are hereby transferred to the Metropolitan Police Department.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">With Regard To Private Detectives</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The functions of administering applications, charging the license fee, issuing the license, and investigating and issuing identification cards as well as denying, suspending, or revoking the license, which were vested in the Department of Consumer and Regulatory Affairs pursuant to Reorganization Plan No. 1 of 1983, effective March 31, 1983, are hereby transferred to the Metropolitan Police Department.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">III. Transfers</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">All records relating to the duties and functions transferred in part II are hereby transferred to the Metropolitan Police Department.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">IV. Organization</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The Chief of Police, Metropolitan Police Department, in the performance of the duties and functions assigned by this plan, is authorized to establish such organizational components with specified functions as the Chief of Police deems appropriate. The Director of the Planning and Development Division, Metropolitan Police Department, shall develop any reports and evaluation systems as necessary to assess the effect of the reorganization plan.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">
+    </span>
+                
+                    <span class="" style="font-style: italic; ">V. Effective Date</span>
+                
+                    <span class="" style="">
+  </span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The provisions of this plan shall become effective on a date to be specified by an Executive Order of the Mayor no later than 30 days after this plan becomes effective in accordance with section 422(12) of the District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://www.govtrack.us/search?q=public%20law%2092-198'>P.L. 92-198</a>, effective December 24, 1973, D.C. Code sec. 1-242(12) [<a href='/dccode/sections/1-204.22.html'>§ 1-204.22</a>].</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">MAYOR&#39;S STATEMENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Reorganization Plan No. 4 of 1988, which would consolidate within the Metropolitan Police Department (MPD) functions related to licensing and regulating security officers and private detectives, is the result of several years of planning between the Department of Consumer and Regulatory Affairs (DCRA) and the Metropolitan Police Department. The need for this reorganization grew out of the original rationale for establishing DCRA. This rationale was to create a central location in the District of Columbia to register and license businesses, individuals and activities.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">In DCRA&#39;s &quot;One-Stop&quot; center for business licensing, the objective or centralizing the licensure functions could not be achieved for security officers and private detectives because of the various approvals needed from MPD. These approvals and fingerprinting were performed at three separate locations outside of DCRA&#39;s offices.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Now MPD&#39;s Security Officers Management Branch is located at the Reeves Center on 14th and U Streets, N.W. Thus, with this reorganization all the licensing functions will be in one location for security officers and private detectives. The reorganization will effectively eliminate the current division of regulatory functions by consolidating these functions within MPD. The result of this consolidation will be to streamline the administration and enforcement of these two business activities. In order to sufficiently carry out these consolidated functions, MPD will augment it&#39;s staff by four (4) new clerk positions.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Finally, this reorganization will affect only those licensing and regulatory functions which are now being performed by DCRA. Functions related to the licensing and regulation of security officers and private detectives now being performed by other Departments will remain in those Departments.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">I stand ready to move forward with this reorganization.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

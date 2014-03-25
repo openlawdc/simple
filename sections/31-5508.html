@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5508. Effect of paid claims.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-55">Chapter 55. Property and Liability Insurance Guaranty Association</a></li>
+                    
+                    <li>↪ § 31-5508. Effect of paid claims.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/31-5507.html">§ 31-5507. Powers and duties of the Mayor.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-5509.html">§ 31-5509. Nonduplication of recovery.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5508. Effect of paid claims.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Any person recovering under this chapter shall be deemed to have assigned his or her rights under the policy to the Association to the extent of his or her recovery from the Association. Every insured or claimant seeking the protection of this chapter shall cooperate with the Association to the same extent as that person would have been required to cooperate with the insolvent insurer. The Association shall have no cause of action against the insured of the insolvent insurer for any sums it has paid out except those causes of action as the insolvent insurer would have had if such sums had been paid by the insolvent insurer and except as provided in subsection (b) of this section. In the case of an insolvent insurer operating on a plan with assessment liability, payments of claims of the Association shall not operate to reduce the liability of the insureds to the receiver, liquidator, or statutory successor for unpaid assessments.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Association shall have the right to recover from the following persons the amount of any covered claim paid on behalf of such a person pursuant to the chapter:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any insured whose net worth on December 31st of the year next preceding the date the insurer becomes an insolvent insurer exceeds $50 million and whose liability obligations to other persons are satisfied in whole or in part by payments made under this chapter; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any person who is an affiliate of the insolvent insurer and whose liability obligations to other persons are satisfied in whole or in part by payments made under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The receiver, liquidator, or statutory successor of an insolvent insurer shall be bound by settlements of covered claims by the Association or a similar organization in another jurisdiction. The court having jurisdiction shall grant these claims priority equal to that which the claimant would have been entitled in the absence of this chapter against the assets of the insolvent insurer. The expenses of the Association or similar organization in handling claims shall be accorded the same priority as the liquidator&#39;s expenses.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Association shall periodically file, with the receiver or liquidator of the insolvent insurer, statements of the covered claims paid by the Association and estimates of anticipated claims on the Association which shall preserve the rights of the Association against the assets of the insolvent insurer.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 21, 1993, <a href='http://openlims.org/public/L10-51.pdf'>D.C. Law 10-51</a>, § 9, 40 DCR 6120.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-3908.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-51</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-51.pdf'>D.C. Law 10-51</a>, see Historical and Statutory Notes following <a href='/dccode/sections/31-5501.html'>§ 31-5501</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

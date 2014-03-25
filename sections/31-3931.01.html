@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3931.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-39A">Chapter 39A. Captive Insurance Companies (2004)</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-39A/Subchapter-I">Subchapter I. General</a></li>
+                    
+                    <li>↪ § 31-3931.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-39A/Subchapter-I">Subchapter I. General</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-3931.02.html">§ 31-3931.02. Authority to do business; prohibited activities.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3931.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Affiliated company&quot; means a company in the same corporate system as its parent or a member organization by virtue of common ownership, control, operation, or management.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agency captive insurer&quot; means a captive insurer that is owned by an insurance agency or brokerage and that only insures risks of policies that are placed by or through the agency or brokerage.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Alien captive insurer&quot; means any non-U.S. insurance company formed to write insurance business for its parents and affiliates and licensed pursuant to the laws of a foreign country that imposes statutory or regulatory standards in a form acceptable to the Commissioner on companies transacting the business of insurance in the jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Association&quot; means a legal entity consisting of 2 or more individuals, corporations, partnerships, associations, or other forms of business organization.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Association captive insurer&quot; means a captive insurer that only insures risks of the member organizations of an association and the affiliated companies of those members, including groups formed pursuant to the Product Liability Risk Retention Act of 1981, approved September 25, 1981 (<a href='http://api.fdsys.gov/link?collection=statute&volume=95&page=949'>95 Stat. 949</a>; 15 U.S.C. § 3901 et seq.), and the employee benefit plans or trusts of such organizations or companies.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Branch business&quot; means any insurance business transacted by a branch captive insurance company in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Branch captive insurer&quot; means any alien captive insurer licensed by the Commissioner to transact the business of insurance in the District through a business unit with a principal place of business in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Branch operations&quot; means any business operations of a branch captive insurer in the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Captive insurer&quot; means any insurer that insures the risks of its parent or affiliated companies of its parent, any member organizations of an association and the affiliated companies of the member organizations, or any other policyholders or participants that have entered into a contractual relationship with the insurer for the purchase of insurance, including any pure captive insurer, association captive insurer, agency captive insurer, segregated account captive insurer, and rental captive insurer licensed pursuant to this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Common ownership and control&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">In the case of a stock insurer, the direct or indirect ownership of 51% or more of the voting stock of 2 or more corporations by the same member or members; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In the case of a mutual insurer, the direct or indirect ownership of 51% or more of the surplus and the voting power of 2 or more corporations by the same member or members.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Department&quot; means the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Excess workers&#39; compensation insurance&quot; means insurance in excess of the specified per-incident or aggregate limit, if any, established by:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Commissioner, if the insurance is being transacted in the District; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The chief regulatory officer for insurance in the jurisdiction in which the insurance is being transacted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Member organization&quot; means any individual, corporation, partnership, association, or other form of business organization that belongs to an association.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Mutual insurer&quot; means an incorporated insurer without any issued and outstanding stock whose capital and surplus are owned by its policyholders.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Net direct premiums&quot; means the direct premiums collected or contracted for on policies or contracts of insurance written by a captive insurer during the preceding calendar year, less the amounts paid to policyholders as return premiums, including dividends on unabsorbed premiums or premium deposits returned or credited to policyholders.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Parent&quot; means a corporation, partnership, association, or other form of business organization that directly or indirectly owns, controls, or holds power to vote more than 51% or more of the outstanding voting securities of a pure captive insurer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Participant&quot; means any individual or organization, and any affiliates thereof, that are insured by a segregated account captive insurer if the losses of the person are limited through a participant contract to the assets of a segregated account.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Participant contract&quot; means a contract by which a segregated account captive insurer insures the risks of a participant and limits the losses of the participant to the assets of the segregated account.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means any individual, corporation, partnership, limited liability company, limited liability partnership, joint venture, an association, joint stock company, trust, unincorporated organization, similar entity, or any combination of the foregoing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Provisional certificate of authority&quot; means a certificate of authority issued to a captive insurer that authorizes the captive insurer to engage in limited activities authorized by the Commissioner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Pure captive insurer&quot; means a captive insurer that only insures or reinsures risks of its parent and affiliated companies or controlled unaffiliated business. The parent of a pure captive insurer includes an employee benefit plan or trust.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Reciprocal insurer&quot; includes an interinsurance exchange or a risk retention group as defined in <a href='/dccode/sections/31-4101.html'>§ 31-4101(12)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Redomestication&quot; means the transfer to the District of the insurance domicile of an authorized foreign or alien insurance company.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Rental captive insurer&quot; means a captive insurer formed to enter into contractual agreements with policyholders or associations to offer some or all of the benefits of a program of captive insurance and that only insures risks of the policyholders or associations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Segregated account&quot; means a separate account established and maintained by any captive insurer:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">In which the minimum capital and surplus required by applicable law is provided by one or more persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">That is formed or licensed under the provisions of this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">That insures risks of separate participants through contract;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">That is comprised of one or more participants who are authorized to act on matters relating to the segregated account; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">That segregates each participant&#39;s liability through one or more segregate accounts.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(27) </span>
+                
+                    <span class="" style="">&quot;Stock insurer&quot; means an incorporated insurer with issued and outstanding stock whose capital and surplus is owned by its stockholders.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 17, 2005, <a href='http://openlims.org/public/L15-262.pdf'>D.C. Law 15-262</a>, § 2, 52 DCR 1205.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Dissolution of the District of Columbia Free Clinic Captive Insurance Company, see <a href='/dccode/sections/1-307.94.html'>§ 1-307.94</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/31-3931.22.html'>§ 31-3931.22</a>, <a href='/dccode/sections/31-3932.02.html'>§ 31-3932.02</a>, and <a href='/dccode/sections/31-4102.html'>§ 31-4102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of section, see § 2 of Captive Insurance Company Emergency Act of 2004 (D.C. Act 15-640, November 30, 2004, 52 DCR 1238).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) additions, see §§ 2 to 17 of District of Columbia Free Clinic Captive Insurance Company Establishment Emergency Act of 2007 (D.C. Act 17-113, October 3, 2007, 54 DCR 9977).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-262</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-262, the &quot;Captive Insurance Company Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-834, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on October 5, 2004, and November 9, 2004, respectively. Signed by the Mayor on November 30, 2004, it was assigned Act No. 15-638 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-262.pdf'>D.C. Law 15-262</a> became effective on March 17, 2005.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

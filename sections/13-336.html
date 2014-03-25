@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 13-336. Service by publication on nonresidents, absent defendants, and unknown heirs or devisees.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-13">Title 13. Procedure Generally</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-13/Chapter-3">Chapter 3. Process and Parties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-13/Chapter-3/Subchapter-II">Subchapter II. Service of Process; Legal Representatives</a></li>
+                    
+                    <li>↪ § 13-336. Service by publication on nonresidents, absent defendants, and unknown heirs or devisees.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/13-335.html">§ 13-335. Service by publication on domestic or foreign corporations.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/13-337.html">§ 13-337. Personal service outside District in lieu of publication.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 13-336. Service by publication on nonresidents, absent defendants, and unknown heirs or devisees.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In actions specified by subsection (b) of this section, publication may be substituted for personal service of process upon a defendant who can not be found and who is shown by affidavit to be a nonresident, or to have been absent from the District for at least six months, or against the unknown heirs or devisees of deceased persons.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">This section applies only to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">actions for partition;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">actions for divorce or annulment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">actions for child custody under D.C. Official Code, Title 16, Chapter 45 [repealed];</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">actions by attachment;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">actions for foreclosure of mortgages and deeds of trust;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">actions for the establishment of title to real estate by possession;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">actions for the enforcement of mechanics&#39; liens, and other liens against real or personal property within the District; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">actions that have for their immediate object the enforcement or establishment of any lawful right, claim, or demand to or against any real or personal property within the jurisdiction of the court.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 23, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=514'>77 Stat. 514</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-241'>Pub. L. 88-241</a>, § 1; Mar. 10, 1983, <a href='http://openlims.org/public/L4-200.pdf'>D.C. Law 4-200</a>, § 3, 30 DCR 125.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/13-335.html'>§ 13-335</a>, <a href='/dccode/sections/13-337.html'>§ 13-337</a>, and <a href='/dccode/sections/16-4808.html'>§ 16-4808</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 13-336.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 13-336.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-200</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 4-200, the &quot;District of Columbia Adoption of the Uniform Child Custody Jurisdiction and Marital or Parent and Child Long-Arm Jurisdiction Amendments Act of 1982,&quot; was introduced in Council and assigned Bill No. 4-237, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on November 16, 1982, and December 14, 1982, respectively. Signed by the Mayor on December 28, 1982, it was assigned Act No. 4-284 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

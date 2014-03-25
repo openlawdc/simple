@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-309.01. Purpose; definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-V">Subchapter V. Advisory Neighborhood Commissions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-V/Part-A">Part A. General</a></li>
+                    
+                    <li>↪ § 1-309.01. Purpose; definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-V/Part-A">Part A. General</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-309.02.html">§ 1-309.02. Advisory Neighborhood Commission areas.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-309.01. Purpose; definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style=""><a href='/dccode/sections/1-207.38.html'>Section 1-207.38</a> provides that the Council shall, by act, divide the District of Columbia into neighborhood commission areas and establish, for each such area, an Advisory Neighborhood Commission. Such <a href='/dccode/sections/1-207.38.html'>§ 1-207.38</a> was to be effective only if a majority of the qualified electors voting in the charter referendum voted for the establishment of the Advisory Neighborhood Commissions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In the charter referendum a majority of the qualified electors did vote to establish such Commissions, and it is the purpose of this part to implement the provisions of <a href='/dccode/sections/1-207.38.html'>§ 1-207.38</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Board&quot; means the District of Columbia Board of Elections and Ethics.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Commission&quot; means Advisory Neighborhood Commission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Emergency&quot; means an action taken to immediately preserve the public peace, health, safety, welfare, or morals pursuant to <a href='/dccode/sections/2-505.html'>§ 2-505(c)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Gender identity or expression&quot; shall have the same meaning as provided in § 1-1401.02(12A).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 10, 1975, <a href='http://openlims.org/public/L1-21.pdf'>D.C. Law 1-21</a>, § 2, 22 DCR 2065; Oct. 30, 1975, <a href='http://openlims.org/public/L1-27.pdf'>D.C. Law 1-27</a>, § 4, 22 DCR 2472; Sept. 20, 1977, <a href='http://openlims.org/public/L2-16.pdf'>D.C. Law 2-16</a>, § 2(a), 24 DCR 3336; Sept. 26, 1984, <a href='http://openlims.org/public/L5-111.pdf'>D.C. Law 5-111</a>, § 2(a), 31 DCR 3952; Mar. 6, 1991, <a href='http://openlims.org/public/L8-203.pdf'>D.C. Law 8-203</a>, § 3(a), 37 DCR 8420; Jun. 27, 2000, <a href='http://openlims.org/public/L13-135.pdf'>D.C. Law 13-135</a>, § 2(a), 47 DCR 2741; June 25, 2008, <a href='http://openlims.org/public/L17-177.pdf'>D.C. Law 17-177</a>, § 2(a), 55 DCR 3696.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Criminal justice supervisory board, authority to promulgate rules of procedure, see <a href='/dccode/sections/3-904~P.html'>§ 3-904</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-252.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 1-171a.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-135.pdf'>D.C. Law 13-135</a> added subsec. (c).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-177.pdf'>D.C. Law 17-177</a>, in subsec. (c), added par. (4).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 1-21 was introduced in Council and assigned Bill No. 1-87, which was referred to the Committee on Advisory Neighborhood Councils. The Bill was adopted on first and second readings on June 10, 1975 and June 24, 1975, respectively. Signed by the Mayor on July 22, 1975, it was assigned Act No. 1-33 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-27</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L1-27.pdf'>D.C. Law 1-27</a>, see Historical and Statutory Notes following <a href='/dccode/sections/1-207.38.html'>§ 1-207.38</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-16</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 2-16 was introduced in Council and assigned Bill No. 2-77, which was referred to the Committee on Advisory Neighborhood Commissions. The Bill was adopted on first and second readings on May 17, 1977 and May 31, 1977, respectively. Enacted without signature by the Mayor on June 22, 1977, it was assigned Act No. 2-49 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 5-111 was introduced in Council and assigned Bill No. 5-333, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on June 26, 1984 and July 10, 1984, respectively. Signed by the Mayor on July 13, 1984, it was assigned Act No. 5-161 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-203</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L8-203.pdf'>D.C. Law 8-203</a>, see Historical and Statutory Notes following <a href='/dccode/sections/1-309.14.html'>§ 1-309.14</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-135</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 13-135, the &quot;Comprehensive Advisory Neighborhood Commissions Reform Amendment Act of 2000,&quot; was introduced in Council and assigned Bill No. 13-468, which was referred to the Committee on Local and Regional Affairs. The Bill was adopted on first and second readings on February 1, 2000, and March 7, 2000, respectively. Signed by the Mayor on March 28, 2000, it was assigned Act No. 13-313 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L13-135.pdf'>D.C. Law 13-135</a> became effective on June 27, 2000.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-177</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 17-177, the &quot;Prohibition of Discrimination on the Basis of Gender Identity and Expression Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-330, which was referred to the Committee on Workforce Development and Government Operations. The Bill was adopted on first and second readings on February 5, 2008, and March 4, 2008, respectively. Signed by the Mayor on March 19, 2008, it was assigned Act No. 17-329 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L17-177.pdf'>D.C. Law 17-177</a> became effective on June 25, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

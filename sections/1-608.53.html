@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-608.53. Creation of the Senior Executive Attorney Service.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-VIII-B">Subchapter VIII-B. Government Attorneys</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-VIII-B/Part-A">Part A. General</a></li>
+                    
+                    <li>↪ § 1-608.53. Creation of the Senior Executive Attorney Service.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/1-608.52.html">§ 1-608.52. Creation of the Legal Service.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-608.54.html">§ 1-608.54. Appointment of attorneys.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-608.53. Creation of the Senior Executive Attorney Service.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A Senior Executive Attorney Service is established as part of the Legal Service. The Senior Executive Attorney Service shall be administered to assure that Senior Executive Attorneys are accountable and responsible for the effectiveness and productivity of employees under their supervision.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Notwithstanding subchapter XVI-A, an appointment to the Senior Executive Attorney Service shall be at will employment, or as provided by statute for a term of years, subject to removal for cause as may be provided in the appointing statute.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A Senior Executive Attorney who is to be removed or whose grade is to be reduced may be appointed, at the discretion of the Attorney General, to a position in the Legal Service which is available and for which the attorney is qualified, if the removal or reduction in grade is not for delinquency or misconduct.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">A Senior Executive Attorney employed by the Office of the Attorney General shall serve at the pleasure of the Attorney General.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">A Senior Executive Attorney employed by the Office of the Attorney General who performs work primarily for any other subordinate agency, whether located at that agency or not, shall serve at the pleasure of the Attorney General, and the Attorney General shall consult with the agency head before making any decision concerning the termination of a Senior Executive Attorney who performs work primarily for the other subordinate agency. The Senior Executive Attorney shall serve at the pleasure of the agency head where the Attorney General has delegated direction and control over the attorney to the agency head pursuant to <a href='/dccode/sections/1-608.55.html'>§ 1-608.55</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">A Senior Executive Attorney employed by an independent agency shall serve at the pleasure of the agency head, or as provided by statute for a term of years, subject to removal for cause as may be provided in the appointing statute.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">Persons currently holding an appointment in the Excepted Service which meet the definition of a Senior Executive Attorney Service position as defined in <a href='/dccode/sections/1-608.51.html'>§ 1-608.51(3)</a> shall be appointed to the Senior Executive Attorney Service unless the employee declines the appointment. A person who declines this appointment shall be appointed within 3 months to another position in the Legal Service if a vacant position for which the employee qualifies is available and is acceptable to the employee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">An individual appointed to the Senior Executive Attorney Service shall be paid separation pay of up to 12 weeks of his or her basic pay upon separation for non-disciplinary reasons.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, <a href='http://openlims.org/public/L2-139.pdf'>D.C. Law 2-139</a>, § 853, as added Apr. 20, 1999, <a href='http://openlims.org/public/L12-260.pdf'>D.C. Law 12-260</a>, § 2(j), 46 DCR 1318; Apr. 12, 2000. <a href='http://openlims.org/public/L13-91.pdf'>D.C. Law 13-91</a>, § 110(b), 47 DCR 520; Oct. 20, 2005, <a href='http://openlims.org/public/L16-33.pdf'>D.C. Law 16-33</a>, § 3012(c), 52 DCR 7503; Apr. 7, 2006, <a href='http://openlims.org/public/L16-91.pdf'>D.C. Law 16-91</a>, § 121, 52 DCR 10637; Mar. 2, 2007, <a href='http://openlims.org/public/L16-191.pdf'>D.C. Law 16-191</a>, § 5(p)(2), 53 DCR 6794.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/1-608.59.html'>§ 1-608.59</a>, <a href='/dccode/sections/2-1831.08.html'>§ 2-1831.08</a>, and <a href='/dccode/sections/34-804.html'>§ 34-804</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-609.53.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-91.pdf'>D.C. Law 13-91</a> rewrote subsec. (b), which previously read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;An appointment to the Senior Executive Attorney Service shall be at-will employment.&quot;; and in subsec. (f), added &quot;, or as provided by statute for a term of years, subject to removal for cause as may be provided in the appointing statute&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-33.pdf'>D.C. Law 16-33</a>, in subsecs. (a) through (d), substituted &quot;Attorney General&quot; for &quot;Corporation Counsel&quot;; and rewrote subsec. (e).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-91.pdf'>D.C. Law 16-91</a>, in subsecs. (a) through (d), validated previously made technical corrections.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-191.pdf'>D.C. Law 16-191</a>, in subsecs. (a) to (d), validated previously made technical corrections.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter, see note to <a href='/dccode/sections/1-608.51.html'>§ 1-608.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 3(a) of the Legal Services Clarification and Technical Emergency Amendment Act of 1999 (D.C. Act 13-203, December 8, 1999, 46 DCR 10456).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 3(a) of the Legal Services Clarification and Technical Congressional Review Emergency Amendment Act of 2000 (D.C. Act 13-293, March 7, 2000, 47 DCR 2063).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3012(c) of Fiscal Year 2006 Budget Support Emergency Act of 2005 (D.C. Act 16-168, July 26, 2005, 52 DCR 7667).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-260</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-260.pdf'>D.C. Law 12-260</a>, see Historical and Statutory Notes following <a href='/dccode/sections/1-604.04.html'>§ 1-604.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 13-91, see notes following <a href='/dccode/sections/1-602.03.html'>§ 1-602.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-33</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-33, see notes following <a href='/dccode/sections/1-617.17.html'>§ 1-617.17</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-91</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-91, see notes following <a href='/dccode/sections/1-301.45.html'>§ 1-301.45</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-191, see notes following <a href='/dccode/sections/1-325.44.html'>§ 1-325.44</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

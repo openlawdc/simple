@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 29-306.70. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-29">Title 29. Business Organizations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-29/Chapter-3">Chapter 3. Business Corporations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-29/Chapter-3/Subchapter-VI">Subchapter VI. Directors and Officers</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-29/Chapter-3/Subchapter-VI/Part-F">Part F. Directors&#39; Conflicting Interest Transactions</a></li>
+                    
+                    <li>↪ § 29-306.70. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-29/Chapter-3/Subchapter-VI/Part-F">Part F. Directors&#39; Conflicting Interest Transactions</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/29-306.71.html">§ 29-306.71. Judicial action.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 29-306.70. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Control&quot;, including the term &quot;controlled by&quot;, means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Having the power, directly or indirectly, to elect or remove a majority of the members of the board of directors or other governing body of an entity, whether through the ownership of voting shares or interests, by contract, or otherwise; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Being subject to a majority of the risk of loss from the entity&#39;s activities or entitled to receive a majority of the entity&#39;s residual returns.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Director&#39;s conflicting interest transaction&quot; means a transaction effected or proposed to be effected by the corporation, or by an entity controlled by the corporation:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">To which, at the relevant time, the director is a party;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Respecting which, at the relevant time, the director had knowledge and a material financial interest known to the director; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Respecting which, at the relevant time, the director knew that a related person was a party or had a material financial interest.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Fair to the corporation&quot; means, for the purposes of <a href='/dccode/sections/29-306.71.html'>§ 29-306.71(b)(3)</a>, that the transaction as a whole was beneficial to the corporation, taking into appropriate account whether it was:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Fair in terms of the director&#39;s dealings with the corporation; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Comparable to what might have been obtainable in an arm&#39;s length transaction, given the consideration paid or received by the corporation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Material financial interest&quot; means a financial interest in a transaction that would reasonably be expected to impair the objectivity of the director&#39;s judgment when participating in action on the authorization of the transaction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Related person&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The director&#39;s spouse;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A child, stepchild, grandchild, parent, step parent, grandparent, sibling, step sibling, half sibling, aunt, uncle, niece or nephew, or spouse of any thereof, of the director or of the director&#39;s spouse;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">An individual living in the same home as the director;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">An entity, other than the corporation or an entity controlled by the corporation, controlled by the director or any person specified above in this paragraph;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">A domestic or foreign:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Business or nonprofit corporation, other than the corporation or an entity controlled by the corporation, of which the director is a governor;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Unincorporated entity of which the director is a governor or a member of the governing body; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Individual, trust, or estate for whom or of which the director is a trustee, guardian, personal representative, or like fiduciary; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">A person that is, or an entity that is controlled by, an employer of the director.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Relevant time&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The time at which directors&#39; action respecting the transaction is taken in compliance with <a href='/dccode/sections/29-306.72.html'>§ 29-306.72</a>; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">If the transaction is not brought before the board of directors of the corporation, or its committee, for action under <a href='/dccode/sections/29-306.72.html'>§ 29-306.72</a>, at the time the corporation, or an entity controlled by the corporation, becomes legally obligated to consummate the transaction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Required disclosure&quot; means disclosure of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The existence and nature of the director&#39;s conflicting interest; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">All facts known to the director respecting the subject matter of the transaction that a director free of such conflicting interest would reasonably believe to be material in deciding whether to proceed with the transaction.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 2, 2011, <a href='http://openlims.org/public/L18-378.pdf'>D.C. Law 18-378</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 1720</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/29-306.72.html'>§ 29-306.72</a>, <a href='/dccode/sections/29-306.73.html'>§ 29-306.73</a>, and <a href='/dccode/sections/29-306.80.html'>§ 29-306.80</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-378</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For history of Law 18-378, see notes under <a href='/dccode/sections/29-101.01.html'>§ 29-101.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

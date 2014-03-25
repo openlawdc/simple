@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-151.14. Civil liability.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-1A">Chapter 1A. Continuing Care Retirement Communities</a></li>
+                    
+                    <li>↪ § 44-151.14. Civil liability.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/44-151.13.html">§ 44-151.13. Examinations; financial statements.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/44-151.15.html">§ 44-151.15. Criminal penalties.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-151.14. Civil liability.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Any provider, facility, or person who enters into a contract for continuing care at a facility without having first delivered a disclosure statement meeting the requirements of this chapter to the person contracting for continuing care, or enters into a contract for continuing care at a facility with a person who has relied on a disclosure statement that omits to state, or misstates, a material fact required to be stated therein or necessary in order to make the statements made therein, in light of the circumstances under which they are made, not misleading, shall be liable to the person contracting for continuing care for actual damages and repayment of all fees paid to the provider, facility, or person violating this chapter, less the reasonable value of care and lodging provided to the resident by or on whose behalf the contract for continuing care was entered into prior to discovery of the violation, misstatement, or omission or the time the violation, misstatement, or omission should reasonably have been discovered, together with interest thereon at the legal rate for judgments, court costs, and reasonable attorneys&#39; fees. The interest shall accrue on the date of entering into a contract or when the resident or their representative knew or should have known of the violation, omission, or misstatement, whichever is later.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Liability under this section shall exist regardless of whether the provider or person liable had actual knowledge of the misstatement or omission.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A person shall not file or maintain an action under this section if the person, before filing the action, received a written offer of a refund of all amounts paid the provider, facility, or person violating this chapter, together with interest at the legal rate for judgments, less the current contractual value of care and lodging provided prior to receipt of the offer, and if the offer recited the provisions of this section and the recipient of the offer failed to accept it within 30 days of actual receipt. The interest shall begin to accrue on the date of entering into a contract or when the resident or their representative knew or should have known of the violation, omission, or misstatement, whichever is later. Nothing in this subsection shall prohibit the Mayor from bringing an action for a violation of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">An action shall not be maintained to enforce a liability created under this chapter unless brought before the expiration of 3 years after the execution of the contract for continuing care that gave rise to the violation or the date when the resident or his or her representative knew or should have known of the violation, omission, or misstatement, whichever is earlier.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Mayor may impose civil penalties or take other action appropriate to correct violations of this chapter. The Mayor may bring an action to enforce this chapter.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 5, 2005, <a href='http://openlims.org/public/L15-270.pdf'>D.C. Law 15-270</a>, § 114, 52 DCR 799.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-270</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-270, see notes following <a href='/dccode/sections/44-151.01.html'>§ 44-151.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

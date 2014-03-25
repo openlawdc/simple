@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 37-105. Market manager.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-37">Title 37. Weights, Measures, and Markets</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-37/Chapter-1">Chapter 1. Eastern Market Management and Regulation</a></li>
+                    
+                    <li>↪ § 37-105. Market manager.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/37-104.html">§ 37-104. Market operation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/37-106.html">§ 37-106. Eastern Market building and tenants.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 37-105. Market manager.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The CPMO shall consult with the EMCAC in preparing each request for proposals (&quot;RFP&quot;) which shall be issued by the District government for the selection of a market manager. The CPMO shall submit to the EMCAC each response to the market manager RFP for its review and recommendations. The CPMO shall consider the EMCAC&#39;s recommendations in selecting a market manager.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The CPMO shall contract, in accordance with the provisions of this chapter and Unit A of Chapter 3 of Title 2, with one not-for-profit association or corporation having experience operating an historic urban fresh food or farmers&#39; market, or experience relevant to the management of the activities described in subsection (c) of this section, and having access to sufficient working capital to manage and operate the Eastern Market Square on a self-sustaining basis as the market manager.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The CPMO shall lease the Eastern Market Square, including the Eastern Market building and its public land and public space to the market manager who then may sublease by written contracts all or part of the building and public land and public space to one or more persons for use in accordance with this chapter. Existing leases, contracts, agreements, and legally binding understandings shall remain valid until the date of expiration or termination in accordance with the terms of the document, unless both parties agree otherwise. Pursuant to <a href='/dccode/sections/37-107.html'>§ 37-107</a>, the sub-lease may be renewed under substantially similar terms, subject to the requirements set out in <a href='/dccode/sections/37-107.html'>§ 37-107</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The market manager shall act as the lessor&#39;s agent on any existing lease, contract, agreement, or legally binding understanding with respect to any occupant or occupants of the Eastern Market building.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Any entity having an ownership, management or fiduciary interest in any activity subject to the management of the market manager shall be ineligible to be selected as the market manager. Any entity selected as the market manager may not engage in retail or wholesale sales on the Eastern Market Square.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Subject to review and advice by the EMCAC, the market manager shall manage and operate the Eastern Market Square to accomplish the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Retain its historic character as a food market and farmers&#39; sidewalk market while continuing the sale of arts, crafts, antiques, and other items that complement a farmers&#39; sidewalk market;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Maintain the Eastern Market Square and building;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Protect the environment including the trees and tree boxes; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Ensure public health and safety.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The market manager shall attend all public meetings of the EMCAC and shall consider the EMCAC&#39;s recommendations concerning the management of Eastern Market.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The market manager shall prepare, prior to the start of each District government fiscal year budget preparation cycle, a budget for the annual operating expenses and any capital improvements that may be required, together with any necessary cost/benefit analyses, and shall submit this budget to the EMCAC for its review and recommendations at a public meeting. The market manager shall then submit this budget, along with the EMCAC&#39;s recommendations, to the CPMO, the Mayor and the Council for inclusion in the District of Columbia budget.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The market manager shall keep copies or electronic backup, stored off-site, by hard copy or tape, of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">All applications for sub-leases;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">All space sub-leases issued; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">All receipts collected for space charges for 10 years from their issuance, and for any other revenue received from any lease or agreement to occupy or use any portion of the Eastern Market Square.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">The market manager shall make these copies available for public inspection in hard copy or disk format.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Within 30 days of each September 30, and April 30, after April 16, 1999, the market manager shall prepare a written report of operations for the previous 6 months including a summary of revenues by source and of expenditures by kind and shall submit a copy of this report to the CPMO and the EMCAC.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">The market manager, in consultation with the Tenants Council and the EMCAC, shall determine days of operation and hours for buying and selling for the following: (1) the Eastern Market building; and (2) the sidewalk market.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">Buying and selling shall not be permitted on the sidewalk market, except with the prior written approval of the market manager.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(l) </span>
+                
+                    <span class="" style="">The market manager shall regulate the goods sold by the various tenants with the objective of maintaining a diverse fresh food market with specialty stands for meat, poultry and eggs, fish and seafood, dairy products, fruits and vegetables, baked goods, dry groceries, herbs and spices, delicatessen items, and cut flowers and potted plants.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(m) </span>
+                
+                    <span class="" style="">The market manager may enter into a written contract with a tenant or tenants to occupy the Center Hall for purposes that are consistent with and supportive of other activities at Eastern Market and on the Eastern Market Square.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(n) </span>
+                
+                    <span class="" style="">The market manager shall direct that sidewalk market stalls be located on the North Carolina Avenue, 7th Street and C Streets sides of the Eastern Market building in a manner as to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Maintain ingress to, and egress from, the Eastern Market Building;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Maintain access for fire fighters and to any fire hydrants;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Maintain passageways of at least 5 feet in width for use by the public;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Not obstruct the crosswalks on adjacent streets;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Not encroach on trees or tree boxes; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Not impede use of the private right-of-way, which is adjacent to the Capitol Hill Natatorium at 639 North Carolina Avenue, S.E.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(o) </span>
+                
+                    <span class="" style="">The market manager shall assign sidewalk market stalls by giving priority to the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Throughout the week, to farmers and other market vendors of agricultural products, the sidewalk market stalls along the Farmers&#39; Line. Farmers shall receive first priority and food merchants and wholesalers of agricultural products shall have second priority, except that market vendors of agricultural products granted a right of first refusal pursuant to <a href='/dccode/sections/37-108.html'>§ 37-108</a> shall have priority to a space of the same or comparable size, frequency, and location over farmers granted a right of first refusal; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">On Saturday and Sunday, (A) to artists, crafters, and other market vendors of hand-crafted goods; imported goods that are ethno-specific and are designed, produced and representative of the country of origin; and works of art, during the Saturday arts-and-crafts festival, and (B) to market vendors of antiques or vintage goods or collectibles; hand-crafted goods; imported goods that are ethno-specific and are designed, produced and representative of the country of origin; and works of art, during the Sunday Flea Market, priority to the sidewalk market stalls on the North Plaza, except that market vendors granted a right of first refusal pursuant to <a href='/dccode/sections/37-108.html'>§ 37-108</a> shall have priority to a space of the same or comparable size, frequency, and location over market vendors not granted a right of first refusal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(p) </span>
+                
+                    <span class="" style="">Before a stall assignment shall be issued, the applicant shall have obtained any required business license and sales and use tax number, except that no vendor&#39;s license shall be required, and shall have paid the market manager a uniform processing fee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(q) </span>
+                
+                    <span class="" style="">Each day no fewer than 5 sidewalk market stalls shall be available for use or sales by one or more community groups who have first obtained a stall assignment from the market manager to occupy the stall or stalls.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(r) </span>
+                
+                    <span class="" style="">The market manager may reassign a sidewalk market stall that is unoccupied as of a time determined by the market manager to a market vendor awaiting a space assignment or, if there are none, to a market vendor already occupying another space.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(s) </span>
+                
+                    <span class="" style="">The market manager, in consultation first with the Tenants Council and then with the EMCAC, shall set a schedule of daily space charges for sidewalk market stalls. A new space charge shall not take effect without 30-days written notice prominently posted in the North and South Halls. The schedule of daily space charges may provide a reduced daily space charge for occupying space Monday through Friday for market vendors paying a space charge on the preceding Saturday or Sunday.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 16, 1999, <a href='http://openlims.org/public/L12-228.pdf'>D.C. Law 12-228</a>, § 6, 46 DCR 1066; Apr. 20, 1999, <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, § 22(c), 46 DCR 1066.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 10-305.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Eastern Market Emergency Amendment Act of 2008 (D.C. Act 17-570, November 7, 2008, 55 DCR 12114).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, see Historical and Statutory Notes following <a href='/dccode/sections/37-101.html'>§ 37-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-228</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-228.pdf'>D.C. Law 12-228</a>, see Historical and Statutory Notes following <a href='/dccode/sections/37-101.html'>§ 37-101</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

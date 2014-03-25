@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 6-227. Project-based and sponsor-based voucher assistance.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6">Title 6. Housing and Building Restrictions and Regulations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-2">Chapter 2. District of Columbia Housing Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-6/Chapter-2/Subchapter-I">Subchapter I. District of Columbia Housing Authority, 1999</a></li>
+                    
+                    <li>↪ § 6-227. Project-based and sponsor-based voucher assistance.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/6-226.html">§ 6-226. Rent Supplement Program: establishment of program and distribution of funds.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/6-228.html">§ 6-228. Tenant-based assistance.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 6-227. Project-based and sponsor-based voucher assistance.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The funds allocated under the program for project-based and sponsor-based voucher assistance shall be awarded by the Authority pursuant to its Partnership Program For Affordable Housing, except as otherwise provided herein.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Authority shall promulgate rules to govern the awarding of rent supplement funds through Partnership Program grants, as described in this section, to providers of sponsor-based housing. The Authority shall designate a portion of these funds to be awarded on a priority basis to sponsors of supportive housing for individuals with special needs. The rules may address eligibility, admission, and occupancy criteria, which serve the supportive housing goals of the housing development.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Authority shall apply its existing Partnership Program rules to govern the awarding of Partnership Program grants for project-based voucher assistance and the continuing eligibility for such grants under this section, except where such rules are inconsistent with this legislation. The Authority shall also apply its existing Partnership Program and Housing Choice Voucher Program rules to govern eligibility, admission, and continuing occupancy by tenants in units receiving assistance under this section, <a href='/dccode/sections/6-226.html'>§ 6-226</a>, and <a href='/dccode/sections/6-228.html'>§ 6-228</a>, except if the rules are inconsistent with this section, <a href='/dccode/sections/6-226.html'>§ 6-226</a>, and <a href='/dccode/sections/6-228.html'>§ 6-228</a>. The Authority shall promulgate such additional rules as are necessary to ensure that eligibility for tenancy in the units supported by grants under this section is limited to households with gross income at or below 30% of the area median income.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">To maintain consistency for households receiving rental housing support, the Authority shall, to the extent possible, given funding resources available in the Rent Supplement Program, continue to fund project-based and sponsor-based grantees at the same level, adjusted for inflation, on an annual basis, unless the Authority determines that a grantee is not meeting the criteria set forth in the rules governing the Partnership Program or is not adhering to other standards set forth by rule by the Authority.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Beginning in fiscal year 2014, and for each fiscal year thereafter, the Authority subsidy shall include at least $2,000,000 for project-based and sponsor-based voucher assistance. This funding shall be in addition to any amount allocated for project-based and sponsor-based voucher assistance as of October 1, 2012.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In fiscal year 2013, the Authority shall issue a Request for Proposals for the awarding of the additional funds for project-based and sponsor-based voucher assistance referenced in paragraph (1) of this subsection.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 9, 2000, <a href='http://openlims.org/public/L13-105.pdf'>D.C. Law 13-105</a>, § 26b, as added Mar. 2, 2007, <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a>, § 2142(b), 53 DCR 6899; Sept. 20, 2012, <a href='http://openlims.org/public/L19-168.pdf'>D.C. Law 19-168</a>, § 2192, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 8025</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/4-756.01.html'>§ 4-756.01</a>, <a href='/dccode/sections/6-226.html'>§ 6-226</a>, <a href='/dccode/sections/6-229.html'>§ 6-229</a>, and <a href='/dccode/sections/42-2802.html'>§ 42-2802</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2012 amendment by <a href='http://openlims.org/public/L19-168.pdf'>D.C. Law 19-168</a> added (e).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2(b) of <a href='http://openlims.org/public/L17-382.pdf'>D.C. Law 17-382</a> amended subsec. (c) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(c)(1) The Authority shall apply its existing Partnership Program rules to govern the awarding of Partnership Program grants for project-based voucher assistance and the continuing eligibility for those grants under this section, except where the rules are inconsistent with this act.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(2)(A) For project-based assistance and sponsor-based assistance, except for rules promulgated by the Authority regarding eligibility, admission, and determination of the amount of rental assistance payments pursuant to subparagraph (B) of this paragraph, the Authority shall also apply its existing Partnership Program and Housing Choice Voucher Program rules to govern eligibility, admission, and continuing occupancy by tenants in units receiving assistance under this section, section 26a, and section 26c, except if the rules are inconsistent with this section, section 26a, or section 26c.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(B) For sponsor-based assistance, the Authority shall promulgate rules to govern eligibility, admission, and determination of the amount of rental assistance payments for units receiving sponsor-based assistance under this section, which eligibility and admission rules will set forth requirements regarding criminal background, citizenship, and residency of tenants.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(3) The Authority shall promulgate rules as are necessary to ensure that eligibility for tenancy is limited to households with gross income at or below 30% of the area median income in units supported by grants under this section, section 26a, and 26c and to households that have resided in the District for the previous 6 months in units supported by grants under this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(4) Any rules proposed pursuant to this subsection shall be submitted to the Council for a 30-day period of review. If the Council does not approve or disapprove the proposed rules, in whole or in part, by resolution within the 30-day review period, the proposed rules shall be deemed approved.&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 4(b) of <a href='http://openlims.org/public/L17-382.pdf'>D.C. Law 17-382</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2142(b) of Fiscal Year 2007 Budget Support Emergency Act of 2006 (D.C. Act 16-477, August 8, 2006, 53 DCR 7068).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2142(b) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2006 (D.C. Act 16-499, October 23, 2006, 53 DCR 8845).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2142(b) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2007 (D.C. Act 17-1, January 16, 2007, 54 DCR 1165).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Local Rent Supplement Program Second Emergency Amendment Act of 2008 (D.C. Act 17-684, January 12, 2009, 56 DCR 1111).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-192, see notes following <a href='/dccode/sections/6-201.html'>§ 6-201</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-168</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-168, the &quot;Fiscal Year 2013 Budget Support Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-743. The Bill was adopted on first and second readings on May 15, 2012, and June 5, 2012, respectively. Signed by the Mayor on June 22, 2012, it was assigned Act No. 19-385 and transmitted to Congress for its review. <a href='http://openlims.org/public/L19-168.pdf'>D.C. Law 19-168</a> became effective on September 20, 2012.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

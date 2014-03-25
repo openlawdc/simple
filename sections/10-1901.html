@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 10-1901. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10">Title 10. Parks, Public Buildings, Grounds, and Space</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-19">Chapter 19. Walter Reed Army Medical Center</a></li>
+                    
+                    <li>↪ § 10-1901. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-10/Chapter-19">Chapter 19. Walter Reed Army Medical Center</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/10-1902.html">§ 10-1902. Findings and purpose.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 10-1901. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Base Closure Act&quot; means the Defense Base Closure and Realignment Act of 1990, approved November 5, 1990 (<a href='http://api.fdsys.gov/link?collection=statute&volume=104&page=1485'>104 Stat. 1485</a>; 10 U.S.C. § 2687, note).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Homeless Submission&quot; means the Walter Reed Army Medical Center Base Realignment and Closure Homeless Assistance Submission to be submitted to the U.S. Department of Housing and Urban Development that shall be developed and implemented pursuant to section 2905 of the Base Closure Act and includes the Walter Reed Reuse Plan and Legally Binding Agreements, in substantially the same form as submitted by the Mayor to the Council.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Legally Binding Agreement&quot; means an agreement between the District, as the Walter Reed LRA, and a homeless-assistance provider recommended for approval by the Walter Reed LRA Committee, that commits the District and the homeless-assistance provider to implement and operate certain homeless assistance-services on the Walter Reed Army Medical Center Site and may require the transfer of real property on the Walter Reed Army Medical Center Site by the District to the homeless-assistance provider, in substantially the same form as submitted by the Mayor to the Council, subject to amendments requested by the U.S. Department of Housing and Urban Development.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;LRA&quot; means local redevelopment authority.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Memorandum of Agreement&quot; means an agreement between the District, as the Walter Reed LRA, and a public-benefit provider recommended for approval by the Walter Reed LRA Committee, of educational, safety, and public health uses on the Walter Reed Army Medical Center Site for the potential transfer of real property on the Walter Reed Army Medical Center Site by the District to the public benefit provider, in substantially the same form as submitted by the Mayor to the Council.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Walter Reed LRA&quot; means the District of Columbia, which is the local redevelopment authority recognized by the Office of Economic Adjustment on behalf of the Secretary of Defense as the entity responsible for developing a reuse plan, pursuant to the Base Closure Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Walter Reed LRA Committee&quot; means the committee established by Mayor&#39;s Order No. 2006-21 to develop final recommendations for the Walter Reed Reuse Plan to the Mayor and Council, which is comprised of representatives from the Mayor&#39;s Office and the Council, and 5 voting and 5 alternate citizen members, all of whom live in the community surrounding the Walter Reed Army Medical Center site.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Walter Reed Army Medical Center Site&quot; means 67.5 acres located on a portion of the area bounded by Fern Street, N.W., and Alaska Avenue, N.W., to the north, 16th Street, N.W., to the west, Aspen Street, N.W., to the south, and Georgia Avenue, N.W., to the east, as further identified in the Walter Reed Reuse Plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Walter Reed Reuse Plan&quot; means the Walter Reed Local Redevelopment Authority Reuse Plan for the Walter Reed Army Medical Center Site, which was developed in conjunction with the Walter Reed LRA Committee for final recommendation to the Mayor and the Council for adoption and approval by enactment of this chapter, in substantially the same form as submitted by the Mayor to the Council.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 16, 2012, <a href='http://openlims.org/public/L19-175.pdf'>D.C. Law 19-175</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 9106</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of chapter, see §§ 2 to 6 of the Walter Reed Army Medical Center Base Realignment and Closure Homeless Assistance Submission Congressional Review Emergency Approval Act of 2012 (D.C. Act 19-528, November 2, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 13325</a>), applicable as of October 16, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-175</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-175, the &quot;Walter Reed Army Medical Center Base Realignment and Closure Homeless Assistance Submission Approval Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-729. The Bill was adopted on first and second readings on June 26, 2012, and July 10, 2012, respectively. Signed by the Mayor on July 24, 2012, it was assigned Act No. 19-399 and transmitted to Congress for its review. <a href='http://openlims.org/public/L19-175.pdf'>D.C. Law 19-175</a> became effective on Oct. 16, 2012.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

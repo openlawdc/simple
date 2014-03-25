@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 48-831.02. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48">Title 48. Foods and Drugs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-8A">Chapter 8A. Affordability of Prescription Drugs - Accessrx Program</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-8A/Subchapter-I">Subchapter I. Accessrx</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-48/Chapter-8A/Subchapter-I/Part-A">Part A. General</a></li>
+                    
+                    <li>↪ § 48-831.02. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/48-831.01.html">§ 48-831.01. Findings and declaration of intent.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/48-831.03.html">§ 48-831.03. Establishment of AccessRx.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 48-831.02. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;AccessRx&quot; means the District of Columbia AccessRx program established by <a href='/dccode/sections/48-831.03.html'>§ 48-831.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Average wholesale price&quot; means the wholesale price charged for a specific commodity that is assigned by the drug wholesaler and is listed in a nationally recognized drug pricing registry that is updated daily and charged to the retail pharmacy.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Basic component of AccessRx&quot; includes the provision of drugs and medications for cardiac conditions and high blood pressure, diabetes, arthritis, anticoagulation, hyperlipidemia, osteoporosis, chronic obstructive pulmonary disease and asthma, incontinence, thyroid diseases, glaucoma, Parkinson&#39;s disease, multiple sclerosis, amyotrophic lateral sclerosis, and other conditions approved by the Department. The term &quot;basic component of AccessRx&quot; shall also include the provision of over-the-counter medications that are prescribed by a health care provider and approved as cost-effective by the Department.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Covered entity&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Any hospital or medical service organization, insurer, health coverage plan, or health maintenance organization licensed in the District that contracts with another entity to provide prescription drug benefits for its customers or clients;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Any health program administered by the Department or the District in its capacity as provider of health coverage; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Any employer, labor union, or other group of persons organized in the District that contracts with another entity to provide prescription drug benefits for its employees or members who are employed or reside in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The term &quot;covered entity&quot; does not include a health plan that provides coverage only for accidental injury, specified disease, hospital indemnity, Medicare supplement, disability income, long-term care, or other limited benefit health insurance policies and contracts.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Covered individual&quot; means a member, participant, enrollee, contract holder, policy holder, or beneficiary of a covered entity who is provided a prescription drug benefit by the covered entity. The term &quot;covered individual&quot; includes a dependent or other person provided a prescription drug benefit through a policy, contract, or plan for a covered individual.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Department&quot; means the Department of Health.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Director&quot; means the Director of the Department of Health.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Generic drug&quot; means a chemically equivalent copy of a brand-name drug with an expired patent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Initial discounted price&quot; for a drug means the price the Department pays D.C. Medicaid participating retail pharmacies for that drug for District of Columbia Medicaid recipients.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Labeler&quot; means an entity or person that receives prescription drugs from a manufacturer or wholesaler and repackages those drugs for later retail sale and that has a labeler code from the federal Food and Drug Administration under 21 C.F.R. § 207.20.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Manufacturer&quot; means a manufacturer of prescription drugs and includes a subsidiary or affiliate of a manufacturer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Marketing&quot; means advertising and promotional activities, including, but not limited to, the activities described in <a href='/dccode/sections/48-833.03.html'>§ 48-833.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;National Drug Code registration number&quot; means the number registered for a drug pursuant to the listing system established by the United States Food and Drug Administration under section 510 of the Federal Food, Drug, and Cosmetic Act, approved October 10, 1962 (<a href='http://api.fdsys.gov/link?collection=statute&volume=76&page=794'>76 Stat. 794</a>; 21 U.S.C. § 360).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Participating retail pharmacy&quot; or &quot;retail pharmacy&quot; means a retail pharmacy located in the District, or another business licensed to dispense prescription drugs in the District, that participates in the program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Pharmacy benefits management&quot; means a service provided to covered entities to facilitate the provision of prescription drug benefits to covered individuals for dispensation within the District of Columbia, including negotiating pricing and other terms with drug manufacturers and retails pharmacies. &quot;Pharmacy benefits management&quot; may include any or all of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Claims processing, retail network management, and payment of claims to pharmacies for prescription drugs dispensed to covered individuals for dispensation within the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Clinical formulary development and management services;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Rebate contracting and administration;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Certain patient compliance, therapeutic intervention, and generic substitution programs; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Disease management programs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Pharmacy benefits manager&quot; means an entity that performs pharmacy benefits management. The term &quot;pharmacy benefits manager&quot; includes a person or entity acting for a pharmacy benefits manager in a contractual or employment relationship in the performance of pharmacy benefits management for a covered entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Qualified resident&quot; means a resident of the District who is eligible for the AccessRx program pursuant to this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Secondary discounted price&quot; means the initial discounted price minus any further discounts paid for out of the AccessRx Fund.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Supplemental component of AccessRx&quot; includes all prescription drugs and medications provided under the D.C. Medicaid program excluding those provided pursuant to the basic component of AccessRx.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 18, 2004, <a href='http://openlims.org/public/L15-164.pdf'>D.C. Law 15-164</a>, § 102, 51 DCR 3688; Mar. 2, 2007, <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a>, § 5062(a), 53 DCR 6899.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a>, in par. (4)(A)(iii), substituted &quot;for its employees or members who are employed or reside in the District of Columbia&quot; for &quot;for its employees or members&quot;; and, in par. (16), substituted &quot;to covered individuals for dispensation within the District of Columbia&quot; for &quot;to covered individuals&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(a) of AccessRx Act Clarification Temporary Amendment of Act of 2006 (<a href='http://openlims.org/public/L16-154.pdf'>D.C. Law 16-154</a>, September 19, 2006, law notification 53 DCR 7926).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of AccessRX Act Clarification Emergency Amendment Act of 2006 (D.C. Act 16-370, May 5, 2006, 53 DCR 4059).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5062(a) of Fiscal Year 2007 Budget Support Emergency Act of 2006 (D.C. Act 16-477, August 8, 2006, 53 DCR 7068).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5062(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2006 (D.C. Act 16-499, October 23, 2006, 53 DCR 8845).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5062(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2007 (D.C. Act 17-1, January 16, 2007, 54 DCR 1165).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-164</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-164, see notes following <a href='/dccode/sections/48-831.01.html'>§ 48-831.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 16-192, the &quot;Fiscal Year Budget Support Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-679, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 9, 2006, and June 6, 2006, respectively. Signed by the Mayor on August 8, 2006, it was assigned Act No. 16-476 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> became effective on March 2, 2007.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 5061 of <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> provided that subtitle F of title V of the act may be cited as the &quot;AccessRx Clarification Amendment Act of 2006&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

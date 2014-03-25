@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 24-101a. District of Columbia Corrections Information Council.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24">Title 24. Prisoners and Their Treatment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-1">Chapter 1. Transfer of Prison System to Federal Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-1/Subchapter-I">Subchapter I. Corrections</a></li>
+                    
+                    <li>↪ § 24-101a. District of Columbia Corrections Information Council.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/24-101.html">§ 24-101. Bureau of Prisons.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/24-102.html">§ 24-102. Corrections Trustee.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 24-101a. District of Columbia Corrections Information Council.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established a District of Columbia Corrections Information Council (&quot;CIC &quot;). The CIC shall be responsible for the inspection of all facilities housing District of Columbia inmates who are under the jurisdiction of either the Bureau of Prisons or the Department of Corrections, and for the monitoring of the conditions and treatment of District of Columbia inmates incarcerated in those facilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The CIC shall consist of a Corrections Information Council Governing Board (&quot;Board &quot;) as well as an Executive Director and subordinate personnel.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Board shall be composed of 3 members, 2 of whom shall be appointed by the Mayor with the advice and consent of the Council, and one of whom shall be appointed by the Council.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Of the members first appointed, the Mayor shall appoint one member for a one-year term. The other mayoral appointee and the Council appointee shall serve 2-year terms. Thereafter, members shall be appointed for terms of 2 years. A Board member may be reappointed. A person appointed to fill a vacancy on the Board occurring prior to the expiration of a term shall serve for the remainder of the term or until a successor has been appointed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The Mayor shall designate the chairperson of the Board.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">All members shall be residents of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">All Board members shall serve without compensation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The Executive Director shall be the head of the office of the CIC, and shall report to the Board. The Executive Director shall have at least 3 years relevant experience in criminal justice to include matters affecting prisoner conditions of confinement. The Mayor shall appoint the Executive Director to serve for a term of 3 years. An Executive Director may be reappointed. The Board may remove the Executive Director from office for cause.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Board shall meet as necessary to conduct official business. The presence of 2 members shall constitute a quorum necessary for the CIC to take official action. The CIC may act by an affirmative vote of at least 2 members. The duties of the Board shall include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Reporting to the Director of the Bureau of Prisons and the Director of the Department of Corrections with advice and information regarding matters affecting District of Columbia inmates in the custody of the Bureau of Prisons or the Department of Corrections;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Advising the Executive Director in performing his or her duties;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Reviewing the findings of the Executive Director concerning the conditions of confinement of District of Columbia inmates in both the Bureau of Prisons and the Department of Corrections custody and make recommendations where appropriate;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Transmitting the findings of the CIC as required under subsection (e) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Conducting comprehensive inspections of District of Columbia corrections facilities housing inmates, including halfway houses, the Correctional Treatment Facility, and the Central Detention Facility pursuant to <a href='/dccode/sections/24-211.02.html'>§ 24-211.02(b)(1)</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Negotiating with the Director of the Bureau of Prisons to provide access to each facility housing District of Columbia sentenced felons for the purposes of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Conducting inspections, unannounced, if possible, of all areas accessible to inmates;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Conducting unmonitored interviews of inmates in areas open to inspection; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Interviewing selected staff at each facility;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Conducting, on an annual basis, comprehensive inspections of at least 3 separate Bureau of Prisons facilities housing District of Columbia sentenced felons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Reviewing documents related to the conditions of confinement at each facility housing District of Columbia sentenced felons, including inmate files and records, inmate grievances, incident reports, disciplinary reports, use of force reports, medical and psychological records, administrative and policy directives of the facility, and logs, records, and other data maintained by the facility;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Reporting his or her findings related to the duties of this subsection to the Board; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Producing reports as required under subsection (f) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Executive Director shall employ qualified persons or utilize the services of qualified volunteers, as necessary, to perform the work of the CIC. Subject to appropriations, the Executive Director may employ persons on a full-time or part-time basis, or retain the services of contractors for the purpose of inspecting facilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Executive Director shall supervise all employees and volunteers of the CIC, and shall ensure that all rules, regulations, and orders are carried out properly, and that all records of the CIC are maintained properly.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Subject to approval of the Board, the Executive Director shall establish a pool of qualified persons who shall be assigned by the Executive Director to carry out the functions set forth in this section. In selecting a person to be a member of this pool, the Executive Director shall take into consideration each person&#39;s education, work experience in the correctional facility area, and general reputation for competence, impartiality, and integrity in the discharge of his responsibilities. No member of the pool shall be a current employee of the Department of Corrections or the Bureau of Prisons. For their services, the members of this pool shall be entitled to such compensation as the Executive Director, with the approval of the Board, shall determine; provided, that the compensation shall be on a per-case, not a per-hour, basis.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Within 60 days of the end of each fiscal year, the CIC shall transmit to the Director of the Bureau of Prisons, the Mayor, the Council, and the Director of the Department of Corrections the following reports:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A report on the conditions of confinement of District of Columbia inmates in the Department of Corrections custody; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A report on each inspection of a facility housing District of Columbia sentenced felons as required in subsection (d)(3) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The reports shall have been prepared by the Executive Director and approved by the Board, and shall be made available to the public.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The CIC is authorized to apply for and receive grants to fund its program activities in accordance with the laws and regulations relating to grant management.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Chief Financial Officer shall provide financial support services and oversight for the CIC using personnel assigned to provide financial support services and oversight for the Department of Corrections.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The Chief Procurement Officer shall provide contracting and procurement support services and oversight for the CIC using personnel assigned to provide contracting and procurement support services and oversight for the Department of Corrections.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 11.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The CIC is authorized to contract with qualified private organizations or individuals for services in accordance with Chapter 3A of Title 2 [<a href='/dccode/sections/2-351.01.html'>§ 2-351.01</a> et seq.].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The CIC is authorized to appoint one employee to the Excepted Service established by <a href='/dccode/sections/1-609.01.html'>§ 1-609.01</a> et seq.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The Mayor shall provide the CIC with adequate office space that is separate and independent from the Department of Corrections.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Aug. 5, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=734'>111 Stat. 734</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, § 11201, as added Oct. 2, 2010, <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a>, § 2(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 4514</a>; Sept. 26, 2012, <a href='http://openlims.org/public/L19-171.pdf'>D.C. Law 19-171</a>, § 221, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 6190</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2012 amendment by <a href='http://openlims.org/public/L19-171.pdf'>D.C. Law 19-171</a> substituted &quot;Chapter 3 of Title 2&quot; for &quot;Chapter 3A of Title 2&quot; in (h)(2)(B).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) repeal of section 3 of <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a>, see § 7011 of Fiscal Year 2013 Budget Support Emergency Act of 2012 (D.C. Act 19-383, June 19, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 7764</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) repeal of section 3 of <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a>, see § 7011 of Fiscal Year 2013 Budget Support Congressional Review Emergency Act of 2012 (D.C. Act 19-413, July 25, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 9290</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-233</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For history of Law 18-233, see notes under <a href='/dccode/sections/24-101.html'>§ 24-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-171</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-171, the &quot;Technical Amendments Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-397. The Bill was adopted on first and second readings on Mar. 20, 2012, and Apr. 17, 2012, respectively. Signed by the Mayor on May 23, 2012, it was assigned Act No. 19-376 and transmitted to Congress for its review. <a href='http://openlims.org/public/L19-171.pdf'>D.C. Law 19-171</a> became effective on September 26, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3 of <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a> provided that the act shall apply upon the inclusion of its fiscal effect in an approved budget and financial plan, but no earlier than June 1, 2011. According to the Office of the Budget Director, as of Feb. 15, 2012, <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a> had not been funded. <a href='http://openlims.org/public/L18-233.pdf'>D.C. Law 18-233</a>, § 3, was repealed by <a href='http://openlims.org/public/L19-168.pdf'>D.C. Law 19-168</a>, § 7011.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

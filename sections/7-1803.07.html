@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-1803.07. Miscellaneous provisions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-18">Chapter 18. Tobacco Master Settlement Agreement</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-18/Subchapter-I">Subchapter I. Establishment of Reserve Fund by Tobacco Product Manufacturers Not Participating in the Master Settlement Agreement</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-18/Subchapter-I/Part-B">Part B. Manufacturer&#39;S Reserve Funds Procedure</a></li>
+                    
+                    <li>↪ § 7-1803.07. Miscellaneous provisions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/7-1803.06.html">§ 7-1803.06. Penalties and other remedies.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-18/Subchapter-II">Subchapter II. Tobacco Settlement Trust Fund</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-1803.07. Miscellaneous provisions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A determination of the Mayor to not include or to remove from the Directory a Brand Family or Tobacco Product Manufacturer shall be subject to review in the manner prescribed by subchapter I of Chapter 5 of Title 2.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">No person shall be issued a license or granted a renewal of a license to act as a Wholesaler unless that person has certified in writing, under penalty of perjury, that he or she will comply fully with this part.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The first report of Wholesalers required by <a href='/dccode/sections/7-1803.05.html'>§ 7-1803.05(a)</a> shall be due 45 calendar days after April 22, 2004; the certifications by a Tobacco Product Manufacturer described in <a href='/dccode/sections/7-1803.03.html'>§ 7-1803.03(a)</a> shall be due 45 calendar days after April 22, 2004; and the Directory described in <a href='/dccode/sections/7-1803.03.html'>§ 7-1803.03(b)</a> shall be published or made available within 150 calendar days after April 22, 2004.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Mayor may promulgate regulations necessary to effect the purposes of this part.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">In any action brought by the District to enforce this part, the District shall be entitled to recover the costs of investigation, expert witness fees, costs of the action, and reasonable attorney fees.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">If a court determines that a person has violated this part, the court shall order any profits, gain, gross receipts, or other benefit derived from the violation to be disgorged and paid to the District. Unless otherwise expressly provided, the remedies or penalties provided by this part are cumulative to each other and to the remedies or penalties available under all other laws of the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">If a court of competent jurisdiction finds that the provisions of this part and of part A of this subchapter conflict and cannot be harmonized, then the provisions of part A of this subchapter shall control.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">If any section, subsection, subdivision, paragraph, sentence, clause, or phrase of this part causes part A of this subchapter to no longer constitute a Qualifying or Model Statute, as those terms are defined in the Master Settlement Agreement, then that portion of this part shall not be valid.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">If any section, subsection, subdivision, paragraph, sentence, clause, or phrase of this part is for any reason held to be invalid, unlawful, or unconstitutional, that holding shall not affect the validity of the remaining portions of this part or any part of this part.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 22, 2004, <a href='http://openlims.org/public/L15-150.pdf'>D.C. Law 15-150</a>, § 8, 51 DCR 2809; Apr. 13, 2005, <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a>, § 16, 52 DCR 2638.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-534.pdf'>D.C. Law 15-534</a>, in subsec. (g)(2)(A), validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-150</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-150, see notes following <a href='/dccode/sections/7-1803.01.html'>§ 7-1803.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-354, the &quot;Technical Amendments Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-1130 which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 7, 2004, and December 21, 2004, respectively. Signed by the Mayor on February 9, 2005, it was assigned Act No. 15-770 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a> became effective on April 13, 2005.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

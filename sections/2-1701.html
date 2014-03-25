@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1701. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-17">Chapter 17. Public Records Management</a></li>
+                    
+                    <li>↪ § 2-1701. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-17">Chapter 17. Public Records Management</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/2-1702.html">§ 2-1702. Establishment of District of Columbia Office of Public Records Management, Archival Administration, and Library of Governmental Information.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1701. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Administrator&quot; means the Public Records Administrator of the District of Columbia, established by <a href='/dccode/sections/2-1702.html'>§ 2-1702(b)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agency&quot; means any board, commission, department, division, institution, authority, independent authority, or part thereof, of the District, except the entities listed in <a href='/dccode/sections/2-1714.html'>§ 2-1714(b)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Archival quality&quot; means a quality of photographic reproduction consistent with standards specified by the American National Standards Institute.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Archival record&quot; means any non-current record of an organization or institution that is preserved permanently because of its continuing and enduring administrative, legal, fiscal, or historical value. For the purposes of this definition, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Administrative value&quot; means the usefulness of a record to the agency in which the record originated or to the succeeding agency for conducting current business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">&quot;Fiscal value&quot; means any record necessary or useful to document and verify financial authorizations, obligations, or transactions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">&quot;Historical value&quot; means a record that merits long-term preservation because the record contains significant information about the organization and function of government agencies, or unique information about persons, places, and subjects with which public agencies deal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">&quot;Legal value&quot; means any record that documents the legal or civil rights of individuals or government agencies.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Committee&quot; means the Records Disposition Committee established by <a href='/dccode/sections/2-1705.html'>§ 2-1705</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Custodian&quot; means the public official in charge of an office having public records.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">&quot;Digital&quot; means in a format that is computer readable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Executive Office&quot; means the Executive Office of the Mayor of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Inactive public record&quot; means a public record which the agency which created or received the record no longer needs to retain in its custody for the transaction of public business.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Microreproduction equipment&quot; means photographic equipment designed to produce microimages of documents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Nonrecord&quot; means any library or other reference materials or records maintained solely for convenience or reference.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Office&quot; means the District of Columbia Office of Public Records Management, Archival Administration, and Library of Governmental Information established by <a href='/dccode/sections/2-1702.html'>§ 2-1702(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Public record&quot; means any document, book, photographic image, electronic data recording, electronic mail, paper, video recording, sound recording, microfilm, computer disk, or other material, regardless of physical form or characteristic, that documents a transaction or activity made, received, or retained pursuant to law or in connection with the transaction of public business by or with any officer or employee of the District. The medium upon which such information is recorded shall have no bearing on the determination of whether the record is a public record.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Records disposition&quot; means the removal by a District agency or other governmental unit of a record no longer necessary for the conduct of public business in accordance with records control schedules and removal methods and procedures approved by the Office.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14A) </span>
+                
+                    <span class="" style="">&quot;Records management officer&quot; means any person whose responsibilities, according to <a href='/dccode/sections/2-1706.html'>§ 2-1706</a>, include the development and oversight of an agency&#39;s records management program.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Records retention schedule&quot; means a document listing all records series of a given class, or originating in a particular agency, specifying records to be retained permanently and authorizing on a continuing basis the destruction of other series of records after a specified time period has elapsed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Retention period&quot; means the period of time for which a record must be retained.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Secretary&quot; means the Secretary of the District of Columbia.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 5, 1985, <a href='http://openlims.org/public/L6-19.pdf'>D.C. Law 6-19</a>, § 2, 32 DCR 3590; Mar. 8, 1991, <a href='http://openlims.org/public/L8-235.pdf'>D.C. Law 8-235</a>, § 2(a), 38 DCR 302; Oct. 17, 2002, <a href='http://openlims.org/public/L14-195.pdf'>D.C. Law 14-195</a>, § 2(a), 49 DCR 7638; June 13, 2008, <a href='http://openlims.org/public/L17-175.pdf'>D.C. Law 17-175</a>, § 2(a), 55 DCR 5387.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Acts, resolutions, rules, and orders, codification and publication, see <a href='/dccode/sections/2-601.html'>§ 2-601</a> et seq.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Administrative procedure, legal publication, see <a href='/dccode/sections/2-551.html'>§ 2-551</a> et seq.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Administrator of District of Columbia Office of Documents, codification and publication of duties, see <a href='/dccode/sections/2-612.html'>§ 2-612</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Council acts and resolutions, enrollment and filing with Archives, see <a href='/dccode/sections/2-604.html'>§ 2-604</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/16-4019.html'>§ 16-4019</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2901.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-195.pdf'>D.C. Law 14-195</a> rewrote par. (2) which had read as follows: &quot;(2) &#39;Agency&#39; means any board, commission, department, division, institution, authority, or part thereof, of the District, except the entities listed in <a href='/dccode/sections/2-1714.html'>§ 2-1714(b)</a>.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-175.pdf'>D.C. Law 17-175</a> rewrote par. (13), which had read as follows: &quot;(13) &#39;Public record&#39; means any document, book, photographic image, electronic data recording, paper, sound recording, or other material, regardless of physical form or characteristic, made or received pursuant to law or in connection with the transaction of public business by any officer or employee of the District.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-19</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 6-19, the &quot;District of Columbia Public Records Management Act of 1985,&quot; was introduced in Council and assigned Bill No. 6-139, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on May 14, 1985 and May 28, 1985, respectively. Signed by the Mayor on June 10, 1985, it was assigned Act No. 6-34 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-235</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 8-235 was introduced in Council and assigned Bill No. 8-559, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on December 4, 1990, and December 18, 1990, respectively. Signed by the Mayor on December 27, 1990, it was assigned Act No. 8-318 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-195</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 14-195, the &quot;Government Reports Electronic Publication Requirement Amendment Act of 2002&quot;, was introduced in Council and assigned Bill No. 14-28, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on June 18, 2002, and July 2, 2002, respectively. Signed by the Mayor on July 17, 2002, it was assigned Act No. 14-428 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L14-195.pdf'>D.C. Law 14-195</a> became effective on October 17, 2002.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-175</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 17-175, the &quot;Electronic Mail Public Record Clarification Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-490 which was referred to the Committee on Workforce Development and Government Operations. The Bill was adopted on first and second readings on March 4, 2008, and April 1, 2008, respectively. Signed by the Mayor on April 22, 2008, it was assigned Act No. 17-359 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L17-175.pdf'>D.C. Law 17-175</a> became effective on June 13, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Mayor's orders</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">District of Columbia Records Disposition Committee established: See Mayor&#39;s Order 85-173, October 21, 1985.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3 of <a href='http://openlims.org/public/L14-195.pdf'>D.C. Law 14-195</a> provided that this act shall apply as of October 1, 2002.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

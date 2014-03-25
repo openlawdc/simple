@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 15-901. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-15">Title 15. Judgments and Executions; Fees and Costs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-15/Chapter-9">Chapter 9. Uniform Foreign-Money Claims</a></li>
+                    
+                    <li>↪ § 15-901. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-15/Chapter-9">Chapter 9. Uniform Foreign-Money Claims</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/15-902.html">§ 15-902. Variation by agreement.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 15-901. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Action&quot; means a judicial proceeding or arbitration in which a payment in money may be awarded or enforced with respect to a foreign-money claim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Bank-offered spot rate&quot; means the spot rate of exchange at which a bank will sell foreign money at a spot rate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Conversion date&quot; means the banking day next preceding the date on which money, in accordance with this chapter, is:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Paid to a claimant in an action or distribution proceeding;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Paid to the official designated by law to enforce a judgment or award on behalf of a claimant; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Used to recoup, set off, or counterclaim in different moneys in an action or distribution proceeding.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Distribution proceeding&quot; means a judicial or nonjudicial proceeding for the distribution of a fund in which one or more foreign-money claims is asserted and includes an accounting, an assignment for the benefit of creditors, a foreclosure, the liquidation or rehabilitation of a corporation or other entity, and the distribution of an estate, trust, or other fund.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Foreign money&quot; means money other than money of the United States of America.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Foreign-money claim&quot; means a claim upon an obligation to pay, or a claim for recovery of a loss, expressed in, or measured by, a foreign money.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Money&quot; means a medium of exchange for the payment of obligations or a store of value authorized or adopted by a government or by an intergovernmental agreement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Money of the claim&quot; means the money determined as proper pursuant to <a href='/dccode/sections/15-904.html'>section 15-904</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means an individual, corporation, government or governmental subdivision or agency, business trust, estate, trust, joint venture, partnership, association, 2 or more persons having a joint or common trust, or any other legal or commercial entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Rate of exchange&quot; means the rate at which money of one country may be converted into money of another country in a free financial market convenient to, or reasonably usable by, a person obligated to pay or to state a rate of conversion. If separate rates of exchange apply to different kinds of transactions, the term means the rate applicable to the particular transactions giving rise to the foreign-money claim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Spot rate&quot; means the rate of exchange at which foreign money is sold by a bank or other dealer in foreign exchange for immediate or next day availability or for settlement by immediate payment in cash or equivalent, by charge to an account, or by an agreed delayed settlement not exceeding 2 days.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;State&quot; means a state of the United States, the District of Columbia, the Commonwealth of Puerto Rico, or a territory or insular possession subject to the jurisdiction of the United States.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Feb. 10, 1996, <a href='http://openlims.org/public/L11-85.pdf'>D.C. Law 11-85</a>, § 2, 42 DCR 6791; Mar. 13, 2004, <a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a>, § 101, 51 DCR 881; Apr. 13, 2005, <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a>, § 85(e), 52 DCR 2638.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 15-901.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a>, in the introductory language, substituted &quot;this chapter&quot; for &quot;this act&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a>, in the introductory language, substituted &quot;this chapter&quot; for &quot;this subchapter&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-85</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 11-85, the &quot;Uniform Foreign Money Claims Act of 1995,&quot; was introduced in Council and assigned Bill No. 11-230, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on October 10, 1995, and November 7, 1995, respectively. Signed by the Mayor on November 28, 1995, it was assigned Act No. 11-164 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L11-85.pdf'>D.C. Law 11-85</a> became effective on February 10, 1996.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-105</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-105, the &quot;Technical Amendments Act of 2003&quot;, was introduced in Council and assigned Bill No. 15-437, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 4, 2003, and December 2, 2003, respectively. Signed by the Mayor on January 6, 2004, it was assigned Act No. 15-291 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a> became effective on March 13, 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-354, the &quot;Technical Amendments Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-1130 which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 7, 2004, and December 21, 2004, respectively. Signed by the Mayor on February 9, 2005, it was assigned Act No. 15-770 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a> became effective on April 13, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 1 of the Uniform Foreign-Money Claims Act.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

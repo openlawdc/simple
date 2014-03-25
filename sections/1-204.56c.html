@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-204.56c. Financial plan and report.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2">Chapter 2. District of Columbia Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV">Subchapter IV. The District Charter</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D">Part D. District Budget and Financial Management</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D/Subpart-2">Subpart 2. Audits and Accountability Requirements</a></li>
+                    
+                    <li>↪ § 1-204.56c. Financial plan and report.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/1-204.56b.html">§ 1-204.56b. Performance accountability report.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-204.56d.html">§ 1-204.56d. Quarterly financial reports.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-204.56c. Financial plan and report.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Development and submission — </span>
+                
+                    <span class="" style="">Not later than March 1 of each year (beginning with 1997), the Chief Financial Officer shall develop and submit to the Committee on Government Reform and Oversight of the House of Representatives, the Committee on Governmental Affairs of the Senate, the Committees on Appropriations of the House of Representatives and the Senate, and the Comptroller General a 5-year financial plan for the government of the District of Columbia that contains a description of the steps the government will take to eliminate any differences between expenditures from, and revenues attributable to, each fund of the District of Columbia during the first 5 fiscal years beginning after the submission of the plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-heading" style="">Report on compliance — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-heading" style="">Submission of report — </span>
+                
+                    <span class="" style="">Not later than March 1 of every year (beginning with 1999), the Chief Financial Officer shall submit a report to the Committee on Government Reform and Oversight of the House of Representatives, the Committee on Governmental Affairs of the Senate, the Committees on Appropriations of the House of Representatives and the Senate, the Comptroller General, and the Director of the Congressional Budget Office on the extent to which the government of the District of Columbia was in compliance during the preceding fiscal year with the applicable requirements of the financial accountability plan submitted for such fiscal year under this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-heading" style="">Evaluation of report — </span>
+                
+                    <span class="" style="">The Comptroller General, in consultation with the Director of the Congressional Budget Office, shall review and evaluate the financial accountability compliance report submitted under paragraph (1) of this subsection and not later than April 15 of each year shall submit comments on such report to the Committee on Government Reform and Oversight of the House of Representatives, the Committee on Governmental Affairs of the Senate, and the Committees on Appropriations of the House of Representatives and the Senate.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=774'>87 Stat. 774</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, § 456(c), as added Oct. 19, 1994, <a href='http://api.fdsys.gov/link?collection=statute&volume=108&page=3488'>108 Stat. 3488</a>, <a href='http://www.govtrack.us/search?q=public%20law%20103-373'>Pub. L. 103-373</a>, § 3(a)(2); Nov. 19, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=2174'>111 Stat. 2174</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-100'>Pub. L. 105-100</a>, § 130.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-233.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

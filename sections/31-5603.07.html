@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5603.07. Denial, suspension, and revocation of registration.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-56">Chapter 56. Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-56/Subchapter-III">Subchapter III. Registration of Securities</a></li>
+                    
+                    <li>↪ § 31-5603.07. Denial, suspension, and revocation of registration.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/31-5603.06.html">§ 31-5603.06. Provisions applicable to registration generally.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-5603.08.html">§ 31-5603.08. Federal covered securities.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5603.07. Denial, suspension, and revocation of registration.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Commissioner may issue a stop order denying effectiveness to, or suspending or revoking the effectiveness of, a registration statement if the Commissioner finds the order is in the public interest, and:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The registration statement as of its effective date (or any earlier date in the case of an order denying effectiveness), any amendment under <a href='/dccode/sections/31-5603.05.html'>§ 31-5603.05(k)</a> as of its effective date, or any report under <a href='/dccode/sections/31-5603.05.html'>§ 31-5603.05(j)</a> is incomplete in any material respect or contains any statement which was, in the light of the circumstances under which it was made, false or misleading with respect to any material fact;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">This chapter or any rule, order, or condition lawfully imposed under this chapter has been willfully violated in connection with the offering by:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The person filing the registration statement;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The issuer, any partner, officer, or director of the issuer, any person occupying a similar status or performing similar functions, or any person directly or indirectly controlling or controlled by the issuer, but only if the person filing the registration statement is directly or indirectly controlled by or acting for the issuer; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">An underwriter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The security registered, or sought to be registered, is the subject of an administrative stop order or similar order or a permanent or temporary injunction of a court of competent jurisdiction entered under a federal or state act applicable to the offering; provided, that the Commissioner shall not:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Institute a proceeding against an effective registration statement under this subsection more than one year from the date of the order or injunction relied on; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Enter an order under this subsection on the basis of an order or injunction entered under the law of a state unless the order or injunction was based on facts which would constitute a basis for a stop order under this subsection;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The issuer&#39;s enterprise or method of business includes, or would include, activities which are illegal where performed;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The offering has worked, or tended to work, a fraud upon purchasers or would so operate;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The offering has been, or would be made, with an unreasonable amount of underwriters&#39; and sellers&#39; discounts, commissions, or other compensation, or promoters&#39; profits or participation, or unreasonable amount or kind of options;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">If a security is sought to be registered by notification, it is not eligible for such registration; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">If a security is sought to be registered by coordination, there has been a failure to comply with the undertaking required by <a href='/dccode/sections/31-5603.03.html'>§ 31-5603.03(b)(4)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If an applicant or registrant has failed to pay the proper filing fee and the Commissioner finds that it is in the public interest, the Commissioner may enter a denial order for a registration statement and shall vacate the order when the deficiency has been corrected.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Commissioner shall not institute a stop order proceeding against an effective registration statement on the basis of a fact or transaction known to the Commissioner when the registration statement became effective unless the proceeding is instituted within 30 days after the registration statement became effective.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Commissioner may, by order, summarily postpone or suspend the effectiveness of the registration statement pending the final determination of a proceeding under this section. Upon the entry of the order, the Commissioner shall promptly notify each person specified in subsection (e) of this section that it has been entered, of the reasons therefor, and that, within 30 days after the receipt of a written request, the matter will be scheduled for hearing. If no hearing is requested and none is ordered by the Commissioner, the order will remain in effect until it is modified or vacated by the Commissioner. If a hearing is requested or ordered, the Commissioner, after notice of an opportunity for hearing to each person specified in subsection (e) of this section, may modify or vacate the order or extend it until final determination.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">No stop order may be entered under this section, except the first sentence of subsection (d) of this section, without:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Appropriate prior notice to the applicant or registrant, the issuer, and the person on whose behalf the securities are to be, or have been, offered;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Opportunity for a hearing; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Written findings of fact and conclusions of law.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The Commissioner may vacate or modify a stop order if he or she finds that the conditions which prompted its entry have changed or it is otherwise in the public interest to do so.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, <a href='http://openlims.org/public/L13-203.pdf'>D.C. Law 13-203</a>, § 307, 47 DCR 7837.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/31-5603.06.html'>§ 31-5603.06</a>, <a href='/dccode/sections/31-5604.01.html'>§ 31-5604.01</a>, <a href='/dccode/sections/31-5604.02.html'>§ 31-5604.02</a>, <a href='/dccode/sections/31-5604.03.html'>§ 31-5604.03</a>, and <a href='/dccode/sections/31-5604.04.html'>§ 31-5604.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-203</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 13-203, see notes following <a href='/dccode/sections/31-5601.01.html'>§ 31-5601.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

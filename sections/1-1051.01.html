@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-1051.01. Enactment.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10">Chapter 10. Elections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-10/Subchapter-VI">Subchapter VI. National Popular Vote Interstate Agreement</a></li>
+                    
+                    <li>↪ § 1-1051.01. Enactment.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-VI">Subchapter VI. National Popular Vote Interstate Agreement</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-10/Subchapter-VII">Subchapter VII. Uniform Military and Overseas Voters Act</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-1051.01. Enactment.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Agreement Among The States To Elect The President By National Popular Vote.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">ARTICLE I MEMBERSHIP</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Any State of the United States and the District of Columbia may become a member of this agreement by enacting this agreement.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">ARTICLE II RIGHT OF THE PEOPLE IN MEMBER STATES TO VOTE FOR PRESIDENT AND VICE PRESIDENT</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Each member state shall conduct a statewide popular election for President and Vice President of the United States.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">ARTICLE III MANNER OF APPOINTING PRESIDENTIAL ELECTORS IN MEMBER STATES</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Prior to the time set by law for the meeting and voting by the presidential electors, the chief election official of each member state shall determine the number of votes for each presidential slate in each State of the United States and in the District of Columbia in which votes have been cast in a statewide popular election and shall add such votes together to produce a &quot;national popular vote total&quot; for each presidential slate.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The chief election official of each member state shall designate the presidential slate with the largest national popular vote total as the &quot;national popular vote winner.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The presidential elector certifying official of each member state shall certify the appointment in that official&#39;s own state of the elector slate nominated in that state in association with the national popular vote winner.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">At least 6 days before the day fixed by law for the meeting and voting by the presidential electors, each member state shall make a final determination of the number of popular votes cast in the state for each presidential slate and shall communicate an official statement of such determination within 24 hours to the chief election official of each other member state.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The chief election official of each member state shall treat as conclusive an official statement containing the number of popular votes in a state for each presidential slate made by the day established by federal law for making a state&#39;s final determination conclusive as to the counting of electoral votes by Congress.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">In event of a tie for the national popular vote winner, the presidential elector certifying official of each member state shall certify the appointment of the elector slate nominated in association with the presidential slate receiving the largest number of popular votes within that official&#39;s own state.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">If, for any reason, the number of presidential electors nominated in a member state in association with the national popular vote winner is less than or greater than that state&#39;s number of electoral votes, the presidential candidate on the presidential slate that has been designated as the national popular vote winner shall have the power to nominate the presidential electors for that state and that state&#39;s presidential elector certifying official shall certify the appointment of such nominees.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The chief election official of each member state shall immediately release to the public all vote counts or statements of votes as they are determined or obtained.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">This article shall govern the appointment of presidential electors in each member state in any year in which this agreement is, on July 20, in effect in states cumulatively possessing a majority of the electoral votes.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">ARTICLE IV OTHER PROVISIONS</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">This agreement shall take effect when states cumulatively possessing a majority of the electoral votes have enacted this agreement in substantially the same form and the enactments by such states have taken effect in each state.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Any member state may withdraw from this agreement, except that a withdrawal occurring 6 months or less before the end of a President&#39;s term shall not become effective until a President or Vice President shall have been qualified to serve the next term.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The chief executive of each member state shall promptly notify the chief executive of all other states of when this agreement has been enacted and has taken effect in that official&#39;s state, when the state has withdrawn from this agreement, and when this agreement takes effect generally.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">This agreement shall terminate if the Electoral College is abolished.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">If any provision of this agreement is held invalid, the remaining provisions shall not be affected.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">ARTICLE V DEFINITIONS</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this agreement, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Chief election official&quot; shall mean the state official or body that is authorized to certify the total number of popular votes for each presidential slate;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Chief executive&quot; shall mean the Governor of a State of the United States or the Mayor of the District of Columbia;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Elector slate&quot; shall mean a slate of candidates who have been nominated in a state for the position of presidential elector in association with a presidential slate;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Presidential elector&quot; shall mean an elector for President and Vice President of the United States;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Presidential elector certifying official&quot; shall mean the state official or body that is authorized to certify the appointment of the state&#39;s presidential electors;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Presidential slate&quot; shall mean a slate of 2 persons, the first of whom has been nominated as a candidate for President of the United States and the second of whom has been nominated as a candidate for Vice President of the United States, or any legal successors to such persons, regardless of whether both names appear on the ballot presented to the voter in a particular state;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;State&quot; shall mean a State of the United States and the District of Columbia; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Statewide popular election&quot; shall mean a general election in which votes are cast for presidential slates by individual voters and counted on a statewide basis.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 7, 2010, <a href='http://openlims.org/public/L18-274.pdf'>D.C. Law 18-274</a>, § 2, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 9869</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-274</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-274, the &quot;National Popular Vote Interstate Agreement Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-558, which was referred to the Committee on Government Operations and the Environment. The Bill was adopted on first and second readings on July 13, 2010, and September 21, 2010, respectively. Signed by the Mayor on October 12, 2010, it was assigned Act No. 18-558 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-274.pdf'>D.C. Law 18-274</a> became effective on December 7, 2010.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

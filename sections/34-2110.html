@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 34-2110. Additional charge for overdue bills; enforcement of lien.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34">Title 34. Public Utilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-21">Chapter 21. Sanitary Sewage Works</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-34/Chapter-21/Subchapter-I">Subchapter I. District Sanitary Sewage Works</a></li>
+                    
+                    <li>↪ § 34-2110. Additional charge for overdue bills; enforcement of lien.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/34-2109.html">§ 34-2109. Meters and measuring devices; maintenance and repairs.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/34-2111.html">§ 34-2111. Sanitary sewer service charges for churches and institutions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 34-2110. Additional charge for overdue bills; enforcement of lien.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Council of the District of Columbia is hereby authorized, in order to encourage the prompt payment of the sanitary sewer service charge imposed by this subchapter, to impose an additional charge of 10% for any sanitary sewer service charge remaining unpaid for more than 30 days, impose a penalty at the rate of 1% per month compounded monthly for any sanitary sewer service charge that remains unpaid for more than 60 days, and the Mayor of the District of Columbia is authorized to shut off the water of premises for which such charge is not paid within 30 days, and to have and enforce a continuing lien for such charge upon the land and any improvements thereon furnished such sanitary sewer service, in the same manner and to the same extent as if §<a href='/dccode/sections/34-2407.01.html'>§ 34-2407.01</a>, 34-2407.02, 34-2407.03, and 34-2413.10 [repealed] were set forth in this subchapter, and such sections shall be deemed to be applicable in every particular to the sanitary sewer service charge imposed by this subchapter; provided, that whenever said lien is enforced by the sale of property against which it has been assessed, so much of the proceeds of such sale as represents said unpaid sanitary sewer service charges shall be credited to the General Fund of the District of Columbia as established by the Revenue Funds Availability Act of 1975.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor may defer or forgive, in whole or in part, any sanitary sewer service charges due the District of Columbia with respect to any qualified real property approved pursuant to <a href='/dccode/sections/6-1503.html'>§ 6-1503</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 18, 1954, <a href='http://api.fdsys.gov/link?collection=statute&volume=68&page=107'>68 Stat. 107</a>, ch. 218, title II, § 210; Jan. 22, 1976, <a href='http://openlims.org/public/L1-42.pdf'>D.C. Law 1-42</a>, § 3(f)(5), 22 DCR 6315; Oct. 20, 1988, <a href='http://openlims.org/public/L7-177.pdf'>D.C. Law 7-177</a>, § 9(b), 35 DCR 6158; June 13, 1990, <a href='http://openlims.org/public/L8-136.pdf'>D.C. Law 8-136</a>, § 2(f), 37 DCR 2620; Nov. 25, 1993, <a href='http://openlims.org/public/L10-65.pdf'>D.C. Law 10-65</a>, § 501(b), 40 DCR 7351.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/6-1503.html'>§ 6-1503</a>, <a href='/dccode/sections/34-2202.19.html'>§ 34-2202.19</a>, <a href='/dccode/sections/47-1052.html'>§ 47-1052</a>, <a href='/dccode/sections/47-1303.html'>§ 47-1303</a>, <a href='/dccode/sections/47-1304.html'>§ 47-1304</a>, <a href='/dccode/sections/47-1306.html'>§ 47-1306</a>, <a href='/dccode/sections/47-1307.html'>§ 47-1307</a>, and <a href='/dccode/sections/47-1312.html'>§ 47-1312</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 43-1610.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 43-1609.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(a) of D.C. Water and Sewer Operations Temporary Amendment Act of 1993(<a href='http://openlims.org/public/L10-3.pdf'>D.C. Law 10-3</a>, May 18, 1993, law notification 42 DCR 3404).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-42</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L1-42.pdf'>D.C. Law 1-42</a>, see Historical and Statutory Notes following <a href='/dccode/sections/34-2401.13~P.html'>§ 34-2401.13</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-177</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L7-177.pdf'>D.C. Law 7-177</a>, see Historical and Statutory Notes following <a href='/dccode/sections/34-2407.02.html'>§ 34-2407.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-136</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L8-136.pdf'>D.C. Law 8-136</a>, see Historical and Statutory Notes following <a href='/dccode/sections/34-2301.html'>§ 34-2301</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-65</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-65, the &quot;Omnibus Spending Reduction Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-323, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on July 21, 1993, and September 21, 1993, respectively. Signed by the Mayor on October 6, 1993, it was assigned Act No. 10-120 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-65.pdf'>D.C. Law 10-65</a> became effective on November 25, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The Revenue Funds Availability Act of 1975, referred to in subsection (a) of this section, is the Act of January 22, 1976, <a href='http://openlims.org/public/L1-42.pdf'>D.C. Law 1-42</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Mayor authorized to issue rules: Section 13 of <a href='http://openlims.org/public/L7-177.pdf'>D.C. Law 7-177</a> provided that the Mayor shall issue rules to implement the provisions of the act.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

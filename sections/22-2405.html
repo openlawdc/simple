@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 22-2405. False statements.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22">Title 22. Criminal Offenses and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-24">Chapter 24. Perjury; Related Offenses</a></li>
+                    
+                    <li>↪ § 22-2405. False statements.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/22-2404.html">§ 22-2404. False swearing.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-25">Chapter 25. Possession of Implements of Crime</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 22-2405. False statements.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person commits the offense of making false statements if that person wilfully makes a false statement that is in fact material, in writing, directly or indirectly, to any instrumentality of the District of Columbia government, under circumstances in which the statement could reasonably be expected to be relied upon as true; provided, that the writing indicates that the making of a false statement is punishable by criminal penalties or if that person makes an affirmation by signing an entity filing or other document under Title 29 of the District of Columbia Official Code, knowing that the facts stated in the filing are not true in any material respect or if that person makes an affirmation by signing a declaration under <a href='/dccode/sections/1-1061.13.html'>§ 1-1061.13</a>, knowing that the facts stated in the filing are not true in any material respect;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any person convicted of making false statements shall be fined not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a> or imprisoned for not more than 180 days, or both. A violation of this section shall be prosecuted by the Attorney General for the District of Columbia or one of the Attorney General&#39;s assistants.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 1, 1982, <a href='http://openlims.org/public/L4-164.pdf'>D.C. Law 4-164</a>, § 404, 29 DCR 3976; Aug. 20, 1994, <a href='http://openlims.org/public/L10-151.pdf'>D.C. Law 10-151</a>, § 113(e), 41 DCR 2608; July 2, 2011, <a href='http://openlims.org/public/L18-378.pdf'>D.C. Law 18-378</a>, § 3(e), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 1720</a>; June 5, 2012, <a href='http://openlims.org/public/L19-137.pdf'>D.C. Law 19-137</a>, § 121(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 2542</a>; June 11, 2013, <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>, § 205(aa), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Adult protective services, penalties and enforcement, see <a href='/dccode/sections/7-1912.html'>§ 7-1912</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Beneficial owners, directors, or officers of domestic stock insurance companies; statements required by, see <a href='/dccode/sections/31-603.html'>§ 31-603</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Class 1 or class 2 property certification, false statements, see <a href='/dccode/sections/42-1102.html'>§ 42-1102</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Compulsory school attendance, penalty for failure to provide correct information, see § 361-206.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Financing statement or other filing, false statement, see <a href='/dccode/sections/41-204.html'>§ 41-204</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Firearms control, false information violating law, see <a href='/dccode/sections/7-2507.04.html'>§ 7-2507.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Lower income homeownership tax abatement and incentives, false statements, see §<a href='/dccode/sections/47-3504.html'>§ 47-3504</a>, 47-3506.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Medicaid Provider Fraud Prevention Act, civil penalties for violating, see <a href='/dccode/sections/4-803.html'>§ 4-803</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Medicaid Provider Fraud Prevention Act, penalties for violation, see <a href='/dccode/sections/4-802.html'>§ 4-802</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Motor vehicle liens, false statements as to liens on motor vehicles, see <a href='/dccode/sections/50-1215.html'>§ 50-1215</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Motor vehicle registration, unlawful acts concerning, see <a href='/dccode/sections/50-1501.04.html'>§ 50-1501.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">No fault motor vehicle insurance, false statements relating to, see <a href='/dccode/sections/31-2413.html'>§ 31-2413</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Partnership certificate execution, false statement, see <a href='/dccode/sections/33-202.04~P.html'>§ 33-202.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Probate and Administration of Decedent&#39;s Estates, verification of writings required by Title 20, see <a href='/dccode/sections/20-102.html'>§ 20-102</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Professional engineers, unlawful acts, see <a href='/dccode/sections/47-2886.14.html'>§ 47-2886.14</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Qualified lower income homeownership households, administration and enforcement of provisions, see <a href='/dccode/sections/47-3504.html'>§ 47-3504</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Qualifying nonprofit housing organizations, administration and enforcement of provisions, see <a href='/dccode/sections/47-3506.html'>§ 47-3506</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Real property assessment and tax, deductions from estimated market values of properties owned by single families or cooperative housing associations, false statements, see <a href='/dccode/sections/47-850.html'>§ 47-850</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Tax deed recordation, penalty for certain acts in relation to compromises and agreements concerning recordation tax on deeds, see <a href='/dccode/sections/42-1110~P.html'>§ 42-1110</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Tuition required of nonresident attending public school in district, false statements, see <a href='/dccode/sections/38-303.html'>§ 38-303</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Unemployment compensation, penalty for false statements or representations, see <a href='/dccode/sections/51-119.html'>§ 51-119</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Veterinary medicine, prohibited acts concerning practice, see <a href='/dccode/sections/3-514.html'>§ 3-514</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Vital statistics, false reports, see <a href='/dccode/sections/7-225.html'>§ 7-225</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Wastewater control, falsifying information, see <a href='/dccode/sections/8-105.04.html'>§ 8-105.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Water pipes or sewers, false claims for compensation for repair, see <a href='/dccode/sections/8-205.html'>§ 8-205</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Workers&#39; compensation benefits or payment, penalty for false statement to obtain, see <a href='/dccode/sections/32-1533.html'>§ 32-1533</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/4-251.03.html'>§ 4-251.03</a>, <a href='/dccode/sections/4-1501.09.html'>§ 4-1501.09</a>, <a href='/dccode/sections/42-1102.html'>§ 42-1102</a>, <a href='/dccode/sections/47-3504.html'>§ 47-3504</a>, and <a href='/dccode/sections/47-3506.html'>§ 47-3506</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 22-2514.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-378.pdf'>D.C. Law 18-378</a>, in subsec. (a), inserted &quot;or if that person makes an affirmation by signing an entity filing or other document under Title 29 of the District of Columbia Official Code, knowing that the facts stated in the filing are not true in any material respect &quot;; and, in subsec. (b), added the second sentence.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-137.pdf'>D.C. Law 19-137</a>, in subsec. (a), substituted &quot;or if that person makes an affirmation by signing a declaration under <a href='/dccode/sections/1-1061.13.html'>§ 1-1061.13</a>, knowing that the facts stated in the filing are not true in any material respect&quot; for &quot;respect&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2013 amendment by <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> substituted &quot;not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a>&quot; for &quot;not more than $1,000&quot; in (b).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 121(b) of <a href='http://openlims.org/public/L19-88.pdf'>D.C. Law 19-88</a>, in subsec. (a), substituted &quot;or if that person makes an affirmation by signing a declaration under section 113 of the Uniform Military and Overseas Voters Temporary Act of 2011, passed on 2nd reading on December 6, 2011 (Enrolled version of Bill 19-547), knowing that the facts stated in the filing are not true in any material respect.&quot; for a period.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 302(b) of <a href='http://openlims.org/public/L19-88.pdf'>D.C. Law 19-88</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 113(e) of the Omnibus Criminal Justice Reform Emergency Amendment Act of 1994 (D.C. Act 10-255, June 22, 1994, 41 DCR 4286).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 121(b) of Comprehensive Military and Overseas Voters Accommodation Emergency Act of 2011 (D.C. Act 19-230, November 16, 2011, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 9942</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 121(b) of Comprehensive Military and Overseas Voters Accommodation Congressional Review Emergency Amendment Act of 2012 (D.C. Act 19-310, February 22, 2012, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 1688</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 days) amendment of this section, see § 205(aa) of the Criminal Fine Proportionality Emergency Act of 2013 (D.C. Act 20-45, April 1, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 5400</a>, 20 DCSTAT 1300).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-164</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L4-164.pdf'>D.C. Law 4-164</a>, see Historical and Statutory Notes following <a href='/dccode/sections/22-2401~P.html'>§ 22-2401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-151</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-151, the &quot;Omnibus Criminal Justice Reform Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-98, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on March 29, 1994, and April 12, 1994, respectively. Signed by the Mayor on May 4, 1994, it was assigned Act No. 10-238 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-151.pdf'>D.C. Law 10-151</a> became effective on August 20, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-378</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-378, the &quot;District of Columbia Official Code Title 29 (Business Organizations) Enactment Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-500, which was referred to the Committee on Public Services and Consumer Affairs. The Bill was adopted on first and second readings on December 7, 2010, and December 21, 2010, respectively. Signed by the Mayor on February 27, 2011, it was assigned Act No. 18-724 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-378.pdf'>D.C. Law 18-378</a> became effective on July 2, 2011.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-137</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-137, the &quot;Comprehensive Military and Overseas Voters Accommodation Amendment Act of 2012&quot;, was introduced in Council and assigned Bill No. 19-356, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on February 7, 2012, and March 6, 2012, respectively. Signed by the Mayor on March 27, 2012, it was assigned Act No. 19-334 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L19-137.pdf'>D.C. Law 19-137</a> became effective on June 5, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/sections/22-2402.html'>§ 22-2402</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Applicability of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>: Section 401 of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> provided that the act shall apply only to offenses committed on or after June 11, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

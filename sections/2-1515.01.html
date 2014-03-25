@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1515.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-15">Chapter 15. Youth Affairs</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-15/Subchapter-I-A">Subchapter I-A. Department of Youth Rehabilitation Services</a></li>
+                    
+                    <li>↪ § 2-1515.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-15/Subchapter-I-A">Subchapter I-A. Department of Youth Rehabilitation Services</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/2-1515.02.html">§ 2-1515.02. Rules.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1515.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Aftercare services&quot; means programs and services designed to provide care, supervision, and control over children released from facilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;Behavioral health&quot; means a person&#39;s overall social, emotional, and psychological well-being and development.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1B) </span>
+                
+                    <span class="" style="">&quot;Behavioral health assessment&quot; means a more thorough and comprehensive examination by a mental health professional of all behavioral health issues and needs identified during an initial behavioral health screening by which the mental health professional shall identify the type and extent of the behavioral health problem and make recommendations for treatment interventions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1C) </span>
+                
+                    <span class="" style="">&quot;Behavioral health screening&quot; means a brief process designed to identify youth who are at risk of having behavioral health disorders that warrant immediate attention, or intervention, or to identify the need for further assessment with a comprehensive examination.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Committed&quot; means the removal of a youth from his or her home as a result of an order of adjudication or an order of disposition and placement in the care and custody of the Department of Youth Rehabilitation Services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Contracted provider&quot; means any agency, organization, corporation, association, partnership, or individual, either for profit or not for profit, who agrees in writing to provide specific services or organizational supports to youth in the Department&#39;s care and custody.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Conviction&quot; means a judicial finding, jury verdict, or final administrative order, including a finding of guilt, a plea of nolo contendere, or a plea of guilty to a criminal charge enumerated in <a href='/dccode/sections/2-1515.05.html'>§ 2-1515.05(g)</a>, or a finding that a child who is the subject of a report of child abuse has been abused by the employee or prospective employee.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Custody&quot; means the legal status created by a Family Court order which vests in the Department the responsibility for the custody of a minor, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Physical custody and the determination of where and with whom the minor shall live;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The right and duty to protect, train, and discipline the minor; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">The responsibility to provide the minor with food, shelter, education, and ordinary medical care.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A Family Court order of &quot;legal custody&quot; is subordinate to the rights and responsibilities of the guardian of the person of the minor and any residual parental rights and responsibilities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Department&quot; means the Department of Youth Rehabilitation Services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Detained&quot; means the temporary, secure custody of a child in facilities designated by the Family Court and placed in the care of the Department, pending a final disposition of a petition and following a hearing in accordance with <a href='/dccode/sections/16-2312.html'>§ 16-2312</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Facilities&quot; means any youth residential facility, group home, foster home, shelter, secure residential or institutional placement owned, operated, or under contract with the Department, excluding residential treatment facilities and accredited hospitals.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Family Court&quot; means the Family Court of the Superior Court of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Person in Need of Supervision&quot; or &quot;PINS&quot; means a &quot;child in need of supervision&quot; as that term is defined by <a href='/dccode/sections/16-2301.html'>§ 16-2301(8)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Rehabilitative services&quot; means services designed to assist youth in acquiring, retaining, and improving their socialization, behavioral, and generic competency skills necessary to reintegrate into their home and community-based settings.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Youth&quot; means a &quot;child&quot; as that term is defined by <a href='/dccode/sections/16-2301.html'>§ 16-2301(3)</a>. The terms &quot;juvenile,&quot; &quot;child,&quot; and &quot;resident&quot; appearing in this subchapter are used interchangeably.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Youth residential facility&quot; means a residential placement providing adult supervision and care for one or more children who are not related by blood, marriage, guardianship, or adoption (including both final and non-final adoptive placements) to any of the facility&#39;s adult caregivers and who were found to be in need of a specialized living arrangement as the result of a detention or shelter care hearing held pursuant to <a href='/dccode/sections/16-2312.html'>§ 16-2312</a> or a dispositional hearing held pursuant to <a href='/dccode/sections/16-2317.html'>§ 16-2317</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 12, 2005, <a href='http://openlims.org/public/L15-335.pdf'>D.C. Law 15-335</a>, § 101, 52 DCR 2025; June 7, 2012, <a href='http://openlims.org/public/L19-141.pdf'>D.C. Law 19-141</a>, § 504(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 3083</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-141.pdf'>D.C. Law 19-141</a> added pars. (1A), (1B), and (1C).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 101 of Department of Youth Rehabilitation Services Establishment Emergency Act of 2004 (D.C. Act 15-657, December 29, 2004, 52 DCR 481).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 101 of Department of Youth Rehabilitation Services Establishment Congressional Review Emergency Amendment Act of 2005 (D.C. Act 16-58, March 17, 2005, 52 DCR 3182).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-335</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-335, the &quot;Department of Youth Rehabilitation Services Establishment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-749 which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on December 7, 2004, and December 21, 2004, respectively. Signed by the Mayor on January 21, 2005, it was assigned Act No. 15-749 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-335.pdf'>D.C. Law 15-335</a> became effective on April 12, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-141</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-141, the &quot;South Capitol Street Memorial Amendment Act of 2012&quot;, was introduced in Council and assigned Bill No. 19-211, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on March 6, 2012, and March 20, 2012, respectively. Signed by the Mayor on April 10, 2012, it was assigned Act No. 19-344 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L19-141.pdf'>D.C. Law 19-141</a> became effective on June 7, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 601 of <a href='http://openlims.org/public/L19-141.pdf'>D.C. Law 19-141</a> originally provided that the act shall apply upon the inclusion of its fiscal effect in an approved budget and financial plan. Section 601 of <a href='http://openlims.org/public/L19-141.pdf'>D.C. Law 19-141</a>, as amended by <a href='http://openlims.org/public/L19-168.pdf'>D.C. Law 19-168</a>, § 7004, provided that the applicability of only §§ 302(b)(1), 304, and 502(a) are contingent upon the inclusion of their fiscal effect in an approved budget and financial plan.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 36-302.01. Registration of intent to sell.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36">Title 36. Trade Practices</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36/Chapter-3">Chapter 3. Retail Service Stations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36/Chapter-3/Subchapter-II">Subchapter II. Operation of Retail Service Stations</a></li>
+                    
+                    <li>↪ § 36-302.01. Registration of intent to sell.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-36/Chapter-3/Subchapter-II">Subchapter II. Operation of Retail Service Stations</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/36-302.02.html">§ 36-302.02. Restrictions on operation.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 36-302.01. Registration of intent to sell.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Notwithstanding anything contained in <a href='/dccode/sections/47-2814.html'>§ 47-2814</a>, all refiners, producers, manufacturers, marketers, wholesalers, distributors, suppliers, jobbers, resellers, retailers, retail dealers, or sellers of motor fuels, including any operator of a retail service station, shall, before selling, supplying, or distributing any motor fuels which may ultimately be used for the purpose of propelling or running any motor vehicle and annually thereafter by May 1, file with the Mayor a written declaration that they desire or intend to sell, supply, or distribute motor fuels in the District of Columbia. The declaration shall be filed on such form or forms and in such manner as may be prescribed by the Mayor and shall include, in addition to such other information as the Mayor shall require, a listing of the types and grades of the motor fuels and petroleum products that such person wishes or intends to sell, supply, or distribute; any trademark or trademarks associated therewith; a listing of the names and addresses of the suppliers thereof; a listing of the names and addresses of the persons to whom such motor fuels or petroleum products are or will be sold, supplied, or distributed; and a description, including the location, of any proposed or existing facilities and equipment such person will utilize in his business for all drive-in retail service stations, excluding car agencies, parking garages, and operations. This would include gas only self-service islands, gas only mixed service islands, gas only full service islands and gas with automotive repair services. It shall be a violation of this subchapter for any person to sell, supply, or distribute any motor fuel to any person in the District of Columbia, by himself or by his employee, servant, or agent, or as the employee, servant, or agent of any other person, or to have any motor fuel in his custody or possession with intent to sell, supply, or distribute such motor fuel, without having first filed a current valid declaration with the Mayor, provided that any person who is engaged in the business of selling, supplying, or distributing motor fuel in the District of Columbia on April 19, 1977, may continue such business for not more than 30 days after April 19, 1977, without filing a declaration.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Whenever a person intends to discontinue the business of selling, supplying, or distributing motor fuel in the District of Columbia, whether through a sale or transfer of the business or otherwise, such person shall notify the Mayor in writing of such discontinuance at least 10 days prior to the date that such discontinuance will take effect. Such notice shall give the date of the discontinuance, the reason for such discontinuance, and, in the event of a sale or transfer of the business, the effective date thereof and the name and address of the purchaser or transferee thereof.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 19, 1977, <a href='http://openlims.org/public/L1-123.pdf'>D.C. Law 1-123</a>, <a href='/dccode/sections/3-101.html'>§ 3-101</a>, 24 DCR 2371; Dec. 29, 1979, <a href='http://openlims.org/public/L3-44.pdf'>D.C. Law 3-44</a>, § 2(b), 26 DCR 2093.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/36-302.04.html'>§ 36-302.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 10-211.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 10-211.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-123</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L1-123.pdf'>D.C. Law 1-123</a>, see Historical and Statutory Notes following <a href='/dccode/sections/36-301.01.html'>§ 36-301.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-44</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 3-44, the &quot;Moratorium on Retail Service Station Conversion Act of 1979,&quot; was introduced in Council and assigned Bill No. 3-152, which was referred to the Committee on Transportation and Environmental Affairs. The Bill was adopted on first and second readings on September 25, 1979 and October 9, 1979, respectively. Signed by the Mayor on November 2, 1979, it was assigned Act No. 3-118 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

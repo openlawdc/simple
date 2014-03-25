@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 32-1540. Special fund.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32">Title 32. Labor</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-32/Chapter-15">Chapter 15. Workers&#39; Compensation</a></li>
+                    
+                    <li>↪ § 32-1540. Special fund.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/32-1539.html">§ 32-1539. Failure to secure payment of compensation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/32-1541.html">§ 32-1541. Administration fund.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 32-1540. Special fund.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established in the Treasury of the District of Columbia a special fund for the purpose of making payments in accordance with the provisions of §<a href='/dccode/sections/32-1507.html'>§ 32-1507(c)</a>, 32-1507(e), 32-1508(6), and 32-1519(b). Such fund shall be administered by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor shall be the custodian of the special fund, and all moneys and securities in such fund shall be held in trust by the Mayor and shall not be used for purposes other than those provided by this chapter. The Mayor may invest any portion of the fund which, in the opinion of the Mayor, is not needed for current requirements in bonds or notes of the United States or any federal land bank; provided, that such investments are made pursuant to the Financial Institutions Deposit and Investment Act of 1997.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Neither the District of Columbia nor the Mayor shall be liable in respect of payments authorized under §<a href='/dccode/sections/32-1507.html'>§ 32-1507(c)</a>, 32-1507(e), 32-1508(6) and 32-1519(b) in any amount greater than the money or property deposited in or belonging to such fund.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Payments into such fund shall be made as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Each employer shall pay $5,000 as compensation for the death of an employee of such employer resulting from injury where the Mayor determines that there is no person entitled under this chapter to compensation for such death;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">All amounts collected as fines and penalties under the provisions of this chapter shall be paid into such fund; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The total assessment amount shall be allocated between self-insured employers and insured employers based on paid losses for the fiscal year preceding the year in which the assessment is based. The method of assessing self-insured employers shall be based upon paid losses. The method of assessing insured employers shall be a surcharge based on premium as set forth in this subsection. The portion of the total aggregate assessment to be collected from self-insured employers shall be equal to that proportion of the total paid losses during the preceding fiscal year, which the total paid losses of all self-insured employers bore to the total paid losses made by all self-insured employers and insurers on behalf of all insured employers during the preceding fiscal year. The portion of the total aggregate assessment that shall be collected from insured employers shall be equal to that proportion of total paid losses during the preceding fiscal year, which the total paid losses made on behalf of all insured employers bore to the total paid losses made by all self-insured employers and insurers on behalf of all insured employers during the preceding fiscal year.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Any employer which becomes self-insured shall be assessed as if it were insured for 24 months after conversion. The new self-insured employer shall be assessed on the basis of premium. The premium basis shall be equal to its premium for the policy period immediately preceding conversion to be self-insured, multiplied by the percentage change in the self-insured&#39;s payroll. The payroll measurement period shall be the fiscal year immediately preceding conversion and the subsequent 2 fiscal years.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">On or after September 1, 1999, and annually thereafter, the Mayor shall notify insurers of the premium surcharge rate to be effective for policies written or renewed on and after October 1, 1999, and annually thereafter. The Mayor shall notify self-insured employers, at the same time, of the amount to be assessed against self-insured employers for the following fiscal year. The assessment against self-insurers and the surcharge rate applicable to policies of insured employers, together with amounts generated by paragraphs (1) and (2) of this subsection, shall be sufficient to generate revenue needed to satisfy obligations to the Special Fund. Should the Mayor subsequently determine that the assessments are insufficient to meet the Special Fund&#39;s obligations during a fiscal year, the Mayor may assess self-insurers and insured employers to cover any anticipated deficiency, based upon the allocation method set forth in this subsection. Self-insured employers and insurers, on behalf of their policyholders, shall remit any emergency assessment within 30 calendar days of receipt of notice from the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Every workers&#39; compensation insurer shall collect, from each of its policyholders, an amount equal to the insured employers&#39; assessment through a surcharge based on premium. These assessments shall include any amounts paid by insurers on behalf of their policyholders to cover an emergency assessment by the Mayor during the previous fiscal year. Assessments when collected shall not constitute an element of loss for the purpose of establishing rates for workers&#39; compensation insurance but, for the purpose of collection, shall be treated as separate costs imposed upon insured employers. The total of the assessment imposed by this subsection shall be stated as a separate cost on an insured employer&#39;s policy, or on a separate document submitted to the insured employer, and shall be identified as the &quot;Workers&#39; Compensation Policyholder Surcharge.&quot; Each assessment shall be shown as a percentage of the total workers&#39; compensation policyholder premium. The premium surcharge shall be excluded from the definition of premiums for all purposes, including computation of agents&#39; commissions or premium taxes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Insurers and self-insurers shall forward to the Special Fund all amounts collected pursuant to this section. These collections shall be for the administration of the Special Fund and shall not be part of the General Fund of the District of Columbia. Any balance remaining at the end of any fiscal year shall not revert to the General Fund and shall be used exclusively to offset any Special Fund assessment required in the next immediate fiscal year.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The special fund shall be audited annually by the Department of Employment Services. The Director of the Department of Employment Services shall file an audited financial report with the Council by March 1st detailing the financial status of the fund as of the end of the preceding fiscal year, including the fund&#39;s operation, cash flow, and changes in capital and surplus, using standard accounting principles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">All civil penalties provided for in this chapter shall be collected by civil suit brought by the Mayor.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 1, 1980, <a href='http://openlims.org/public/L3-77.pdf'>D.C. Law 3-77</a>, § 41, 27 DCR 2503; Mar. 18, 1998, <a href='http://openlims.org/public/L12-56.pdf'>D.C. Law 12-56</a>, § 3, 44 DCR 6933; Apr. 16, 1999, <a href='http://openlims.org/public/L12-229.pdf'>D.C. Law 12-229</a>, § 2(j), 46 DCR 891; Dec. 7, 2004, <a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a>, § 1102(c), 51 DCR 8441.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/32-1519.html'>§ 32-1519</a>, <a href='/dccode/sections/32-1535.html'>§ 32-1535</a>, <a href='/dccode/sections/32-1541.html'>§ 32-1541</a>, and <a href='/dccode/sections/32-1542.html'>§ 32-1542</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 36-340.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a> rewrote subsec. (e) to read as follows: &quot;(e) The accounts of the special fund shall be audited in the same manner as similar accounts of the District of Columbia.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3 of the Financial Institutions Deposit and Investment Emergency Amendment Act of 1997 (D.C. Act 12-175, October 30, 1997, 44 DCR 6918).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3 of the Financial Institutions Deposit and Investment Congressional Recess Emergency Amendment Act of 1998 (D.C. Act 12-281, February 25, 1998, 45 DCR 1707).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1102(c) of Fiscal Year 2005 Budget Support Emergency Act of 2004 (D.C. Act 15-486, August 2, 2004, 51 DCR 8236).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) worker&#39;s compensation third-party administrator study provisions, see § 1112 of Fiscal Year 2005 Budget Support Emergency Act of 2004 (D.C. Act 15-486, August 2, 2004, 51 DCR 8236).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1102(c) of Fiscal Year 2005 Budget Support Congressional Review Emergency Act of 2004 (D.C. Act 15-594, October 26, 2004, 51 DCR 11725).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) worker&#39;s compensation third-party administrator study provisions, see § 1112 of Fiscal Year 2005 Budget Support Congressional Review Emergency Act of 2004 (D.C. Act 15-594, October 26, 2004, 51 DCR 11725).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-77</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L3-77.pdf'>D.C. Law 3-77</a>, see Historical and Statutory Notes following <a href='/dccode/sections/32-1501.html'>§ 32-1501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-56</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-56, the &quot;Financial Institutions Deposit and Investment Amendment Act of 1997,&quot; was introduced in Council and assigned Bill No. 12-264, which was referred to the Committee on Economic Development. The Bill was adopted on first and second readings on September 22, 1997, and October 7, 1997, respectively. Signed by the Mayor on October 17, 1997, it was assigned Act No. 12-177 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-56.pdf'>D.C. Law 12-56</a> became effective on March 18, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-229</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-229.pdf'>D.C. Law 12-229</a>, see Historical and Statutory Notes following <a href='/dccode/sections/32-1501.html'>§ 32-1501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-205</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-205, see notes following <a href='/dccode/sections/32-1521.01.html'>§ 32-1521.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title of subtitle K of title I of Law 15-205: Section 1111 of <a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a> provided that subtitle K of title I of the act may be cited as the Workers&#39; Compensation Third-Party Administrator Study Amendment Act of 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The &quot;Financial Institutions Deposit and Investment Act of 1997,&quot; referred to in (b), is <a href='http://openlims.org/public/L12-56.pdf'>D.C. Law 12-56</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 1112 of <a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a> provided: &quot;By January 1, 2005, the Mayor shall provide the Council with an analysis of anticipated financial costs and savings if a third-party administrator would administer the special fund established by section 41 of the District of Columbia Workers&#39; Compensation Act of 1979, effective July 1, 1980 (<a href='http://openlims.org/public/L3-77.pdf'>D.C. Law 3-77</a>; D.C. Official Code <a href='/dccode/sections/32-1540.html'>§ 32-1540</a>).&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

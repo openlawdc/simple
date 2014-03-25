@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 24-131. Parole.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24">Title 24. Prisoners and Their Treatment</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-1">Chapter 1. Transfer of Prison System to Federal Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-24/Chapter-1/Subchapter-III">Subchapter III. Offender Supervision and Parole</a></li>
+                    
+                    <li>↪ § 24-131. Parole.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-24/Chapter-1/Subchapter-III">Subchapter III. Offender Supervision and Parole</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/24-132.html">§ 24-132. Pretrial services, parole, adult probation and offender supervision trustee.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 24-131. Parole.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Paroling jurisdiction — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-heading" style="">Jurisdiction of Parole Commission to grant or deny parole and to impose conditions — </span>
+                
+                    <span class="" style="">Not later than one year after August 5, 1997, the United States Parole Commission shall assume the jurisdiction and authority of the Board of Parole of the District of Columbia to grant and deny parole, and to impose conditions upon an order of parole, in the case of any imprisoned felon who is eligible for parole or reparole under the District of Columbia Code. The Parole Commission shall have exclusive authority to amend or supplement any regulation interpreting or implementing the parole laws of the District of Columbia with respect to felons, provided that the Commission adheres to the rulemaking procedures set forth in § 4218 [repealed] of title 18, United States Code.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-heading" style="">Jurisdiction of Parole Commission to revoke parole or modify conditions — </span>
+                
+                    <span class="" style="">On the date in which the Court Services and Offender Supervision Agency for the District of Columbia is established under <a href='/dccode/sections/24-133.html'>§ 24-133</a>, the United States Parole Commission shall assume any remaining powers, duties, and jurisdiction of the Board of Parole of the District of Columbia, including jurisdiction to revoke parole and to modify the conditions of parole, with respect to felons.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-heading" style="">Jurisdiction of Superior Court — </span>
+                
+                    <span class="" style="">On the date on which the Court Services and Offender Supervision Agency for the District of Columbia is established under <a href='/dccode/sections/24-133.html'>§ 24-133</a>, the Superior Court of the District of Columbia shall assume the jurisdiction and authority of the Board of Parole of the District of Columbia to grant, deny, and revoke parole, and to impose and modify conditions of parole, with respect to misdemeanants.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-heading" style="">Abolition of the Board of Parole — </span>
+                
+                    <span class="" style="">On the date on which the Court Services and Offender Supervision Agency for the District of Columbia is established under <a href='/dccode/sections/24-133.html'>§ 24-133</a>, the Board of Parole established in the District of Columbia Board of Parole Amendment Act of 1987 shall be abolished.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-heading" style="">Rulemaking and legislative responsibility for parole matter — </span>
+                
+                    <span class="" style="">The Parole Commission shall exercise the authority vested in it by this section pursuant to the parole laws and regulations of the District of Columbia, except that the Council of the District of Columbia and the Board of Parole of the District of Columbia may not revise any such laws or regulations (as in effect on August 5, 1997) without the concurrence of the Attorney General.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Aug. 5, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=745'>111 Stat. 745</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, § 11231; Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2426'>112 Stat. 2426</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Pub. L. 105-274</a>, § 7(c)(2)(A).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 24-1231.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The &quot;District of Columbia Board of Parole Amendment Act of 1987,&quot; referred to in (b), is <a href='http://openlims.org/public/L7-103.pdf'>D.C. Law 7-103</a>, 34 DCR 8279, effective April 8, 1988.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 36-302.05. Violations; notice, order, injunction, and penalties.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36">Title 36. Trade Practices</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36/Chapter-3">Chapter 3. Retail Service Stations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-36/Chapter-3/Subchapter-II">Subchapter II. Operation of Retail Service Stations</a></li>
+                    
+                    <li>↪ § 36-302.05. Violations; notice, order, injunction, and penalties.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/36-302.04.html">§ 36-302.04. Exemption from enforcement of § 36-302.02; regulations; reports.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-36/Chapter-3/Subchapter-II-A">Subchapter II-A. Security at Retail Service Stations. [Transferred]</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 36-302.05. Violations; notice, order, injunction, and penalties.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Whenever the Mayor has reason to believe that any person has violated or is violating any provision of subchapter II or IV of this chapter or the rules and regulations promulgated pursuant thereto, he shall cause written notice to be served upon such person in the manner provided by law. Such notice shall specify the provision or provisions that the Mayor has reason to believe that the person has violated or is violating and the ultimate facts or actions upon which the Mayor bases his belief. The Mayor shall also cause a written order to be served upon such person directing such person to immediately cease and desist from continuing such violation. If the person so ordered refuses or fails to comply with such order, the Mayor shall be authorized to apply to any court of competent jurisdiction for a temporary restraining order, preliminary injunction, or permanent injunction restraining such person from continuing such violation. The court shall have jurisdiction to grant such temporary restraining order, preliminary injunction, permanent injunction, or other relief as may be appropriate under the circumstances.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any violation of any provision of subchapter II or IV of this chapter or the rules and regulations promulgated pursuant thereto, shall constitute a misdemeanor and shall, upon conviction thereof, be punishable by a fine of not more than $1,000 or by imprisonment for not more than 90 days or both. In the event of any violation of any provision of subchapter II or IV of this chapter or the rules and regulations promulgated pursuant thereto, each and every day of such violation shall constitute a separate offense and the penalties provided for herein shall be applicable to each such separate offense.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Civil fines, penalties, and fees may be imposed as alternative sanctions for any infraction of the provisions of this subchapter or <a href='/dccode/sections/36-304.01.html'>§ 36-304.01</a>, or any rules or regulations issued under the authority of those sections, pursuant to Chapter 18 of Title 2. Adjudication of any infraction shall be pursuant to Chapter 18 of Title 2.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 19, 1977, <a href='http://openlims.org/public/L1-123.pdf'>D.C. Law 1-123</a>, <a href='/dccode/sections/3-105.html'>§ 3-105</a>, 24 DCR 2371; Oct. 5, 1985, <a href='http://openlims.org/public/L6-42.pdf'>D.C. Law 6-42</a>, § 419, 32 DCR 4450; Apr. 8, 2005, <a href='http://openlims.org/public/L15-297.pdf'>D.C. Law 15-297</a>, § 2(c), 52 DCR 1485.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 10-215.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 10-215.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-297.pdf'>D.C. Law 15-297</a>, in subsec. (b), substituted &quot;$1,000&quot; for &quot;$300&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-123</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L1-123.pdf'>D.C. Law 1-123</a>, see Historical and Statutory Notes following <a href='/dccode/sections/36-301.01.html'>§ 36-301.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-42</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 6-42, the &quot;Department of Consumer and Regulatory Affairs, Consumer and Regulatory Affairs Civil Infractions Act of 1985,&quot; was introduced in Council and assigned Bill No. 6-187, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on June 25, 1985, and July 9, 1985, respectively. Signed by the Mayor on July 16, 1985, it was assigned Act No. 6-60 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-297</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-297, see notes following <a href='/dccode/sections/36-301.01.html'>§ 36-301.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

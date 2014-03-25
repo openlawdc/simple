@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-608.62. Applicability.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6">Chapter 6. Merit Personnel System</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-VIII-B">Subchapter VIII-B. Government Attorneys</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-6/Subchapter-VIII-B/Part-A">Part A. General</a></li>
+                    
+                    <li>↪ § 1-608.62. Applicability.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/1-608.61.html">§ 1-608.61. Rulemaking.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-608.63.html">§ 1-608.63. Payment of compensation to former subordinate agency attorneys.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-608.62. Applicability.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The provisions of this subchapter shall apply on April 20, 1999, except as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style=""><a href='/dccode/sections/1-608.52.html'>Section 1-608.52</a> shall include attorneys employed by the District of Columbia Board of Education as part of the new Legal Service only as long as there is no Congressional statutory requirement that attorneys employed by the District of Columbia public schools be classified as Educational Service employees.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Within 90 days after April 20, 1999, the Mayor shall appoint to the new Legal Service any attorney who has been appointed to a position in the Office of the Corporation Counsel as of the effective date of this subchapter. Effective October 1, 1999, the appropriate personnel authority shall appoint to the new Legal Service any attorney who has been appointed to a position in any other subordinate agency or in any independent agency as of that date.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The provisions of <a href='/dccode/sections/1-608.56.html'>§ 1-608.56</a> shall apply to individuals hired on or before December 31, 1979 as attorneys by the Mayor, an agency under the personnel authority of the Mayor, or any independent agency upon enactment of legislation by Congress that states the following:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">&quot;Notwithstanding any other law, the provisions contained in Title VIII-B of the District of Columbia Government Comprehensive Merit Personnel Act of 1978, passed on second reading on December 15, 1998 (Enrolled version of Bill 12-660) shall apply to all covered attorneys first hired on or before December 31, 1979.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Effective October 1, 2005, any attorney who was employed by any subordinate agency other than the Office of the Attorney General as of October 20, 2005 shall become an attorney employed by the Office of the Attorney General for the District of Columbia. By December 31, 2005, the Mayor shall complete the personnel paperwork necessary to reflect these appointments.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, <a href='http://openlims.org/public/L2-139.pdf'>D.C. Law 2-139</a>, § 862, as added Apr. 20, 1999, <a href='http://openlims.org/public/L12-260.pdf'>D.C. Law 12-260</a>, § 2(j), 46 DCR 1318; Oct. 26, 2001, <a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a>, § 2(b), 48 DCR 7612; Oct. 20, 2005, <a href='http://openlims.org/public/L16-33.pdf'>D.C. Law 16-33</a>, § 3012(i), 52 DCR 7503; Oct. 16, 2006, <a href='http://api.fdsys.gov/link?collection=statute&volume=120&page=2037'>120 Stat. 2037</a>, <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, § 202(b).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-609.62.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a> validated a previously made technical change in par. (4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-33.pdf'>D.C. Law 16-33</a> added par. (5).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a> repealed par. (2) which had read as follows: &quot;(2) The provisions of this subchapter shall apply to attorneys employed by the Office of the Chief Financial Officer when the District of Columbia is no longer in a control period, as defined in <a href='/dccode/sections/47-393.html'>§ 47-393(4)</a>.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter, see note to <a href='/dccode/sections/1-608.51.html'>§ 1-608.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 3(e) of the Legal Services Clarification and Technical Emergency Amendment Act of 1999 (D.C. Act 13-203, December 8, 1999, 46 DCR 10456).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 3(e) of the Legal Services Clarification and Technical Congressional Review Emergency Amendment Act of 2000 (D.C. Act 13-293, March 7, 2000, 47 DCR 2063).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Technical Amendments Emergency Act of 2001 (D.C. Act 14-108, August 3, 2001, 48 DCR 7622).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3012(i) of Fiscal Year 2006 Budget Support Emergency Act of 2005 (D.C. Act 16-168, July 26, 2005, 52 DCR 7667).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-260</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-260.pdf'>D.C. Law 12-260</a>, see Historical and Statutory Notes following <a href='/dccode/sections/1-604.04.html'>§ 1-604.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-42</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-42, see notes following <a href='/dccode/sections/1-307.67.html'>§ 1-307.67</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-33</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-33, see notes following <a href='/dccode/sections/1-617.17.html'>§ 1-617.17</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

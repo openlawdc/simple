@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1217.74. Rules of operation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-12">Chapter 12. Business and Economic Development</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-12/Subchapter-IX-A">Subchapter IX-A. Tax Increment Financing for Retail Development</a></li>
+                    
+                    <li>↪ § 2-1217.74. Rules of operation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/2-1217.73a.html">§ 2-1217.73a. Downtown retail priority area-demonstration project.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/2-1217.75.html">§ 2-1217.75. Use of Bond proceeds; funding agreement.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1217.74. Rules of operation.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Upon approval by resolution pursuant to <a href='/dccode/sections/2-1217.73.html'>§ 2-1217.73(a)</a> with respect to any Retail Priority Area, or upon September 8, 2004, in the case of the Downtown Retail Priority Area, the Mayor shall establish Rules of Operation with respect to each Retail Priority Area as the Mayor considers necessary or appropriate for:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The approval and certification by the Mayor of Retail Development Projects within the Retail Priority Area as TIF Areas;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The issuance of Bonds secured by the Tax Increment Revenues or any other security authorized by this subchapter which is generated by or relates to the Retail Development Projects;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The allocation of the proceeds of the Bonds to fund Retail Development Costs of the Retail Development Projects; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Such other matters as the Mayor considers necessary or appropriate to achieve the goals and objectives for the Retail Priority Area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Rules of Operation for the Downtown Retail Priority Area shall include the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A rating system designed to rank Retail Development Projects based on the following objective criteria:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The likelihood of Bond repayment based on projected Tax Increment Revenues or any other security authorized by this subchapter from or relating to the Retail Development Project;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The uniqueness of the retailer or unique entertainment attraction;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The likelihood that the retailer or unique entertainment attraction will attract other retailers to locate nearby;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The position of the retailer or unique entertainment attraction in its market and whether the retailer or unique entertainment attraction is the first in its market to locate in the Downtown Retail Priority Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">The extent to which the retailer or unique entertainment attraction promotes the Downtown Retail Priority Area in its advertising;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">The vertical integration of the retailer or unique entertainment attraction;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">The intention of the retailer or unique entertainment attraction to locate on more than one level of the building in which it is located;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(H) </span>
+                
+                    <span class="" style="">Whether the retailer or unique entertainment attraction builds an expressive storefront;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Whether the retailer or unique entertainment attraction is owned by a District resident or is based in the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(J) </span>
+                
+                    <span class="" style="">The amount of space occupied by the retailer or unique entertainment attraction; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(K) </span>
+                
+                    <span class="" style="">Whether the retailer or unique entertainment attraction is one of multiple retailers or unique entertainment attractions that co-locate in the Downtown Retail Priority Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A numeric formula based upon the foregoing rating system that, for any proposed Retail Development Project, will produce a dollar amount of proceeds of Bonds that shall be allocated to the Retail Development Project if it is approved as a TIF Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The establishment of a committee comprised of the Mayor, retail brokers and property owners in the Downtown Retail Priority Area, and such other persons as the Mayor shall designate, which committee shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Apply the rating system to proposed Retail Development Projects and review and revise the rating system from time to time as necessary to respond to market conditions;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Adjust the formula for the allocation of Bond proceeds as may be necessary or appropriate to maximize the use of Bond proceeds to achieve the purposes of this subchapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Recommend Retail Development Projects for designation as TIF Areas to the Mayor; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Take such other actions as the Mayor may consider necessary or appropriate to facilitate the selection and funding of TIF Areas in the Downtown Retail Priority Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A procedure pursuant to which the Mayor shall certify:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The rating of Retail Development Project, based upon the rating system;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">The amount of Bond proceeds that, based upon the allocation formula, may be allocated to Retail Development Projects; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Retail Development Projects as TIF Areas; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The procedure shall permit the Mayor to suspend and re-institute from time to time the designation of TIF Areas pursuant to this subchapter in response to market conditions;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">A requirement that the owner of any building or tenant applying for the TIF in which a TIF Area is located enter into a development agreement, satisfactory to the Mayor, that sets forth:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The goals and objectives for achieving the revitalization of retail development in the Downtown Retail Priority Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Requirements for the leasing of retail space in the building in a manner that will advance the goals and objectives;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The terms and conditions pursuant to which Bond proceeds will be advanced to pay Retail Development Costs incurred in connection with the TIF Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The owner&#39;s agreement or tenant&#39;s agreement to sign an LSDBE certified business enterprise agreement that establishes a goal of hiring LSDBEs to perform construction or operations work, the costs of which equals 35% of the Bond proceeds.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">The owner&#39;s agreement or tenant&#39;s agreement to require the retailer of the Retail Development Project to execute a first source agreement with the Department of Employment Services that establishes a goal of hiring District residents for at least 51% of the new jobs created by the Retail Development Project;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Such matters as may be required in connection with the issuance of the Bonds; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">Such other matters as the Mayor determines to be necessary or appropriate in connection with such TIF Area;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Requirements that the proceeds of the Bonds issued with respect to any TIF Area shall not be advanced to pay Retail Development Costs until the TIF Area is open for business to the general public; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Procedures and timetables for the approval of Retail Development Projects as TIF Areas that are designed to facilitate, and not impede, negotiations between building owners and retailers in the Downtown Retail Priority Area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Rules of Operation shall be uniformly applied within any given Retail Priority Area, but may vary across different Retail Priority Areas to address the specific needs of each Retail Priority Area.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 8, 2004, <a href='http://openlims.org/public/L15-185.pdf'>D.C. Law 15-185</a>, § 5, 51 DCR 5941; Mar. 20, 2008, <a href='http://openlims.org/public/L17-129.pdf'>D.C. Law 17-129</a>, § 2(b), 55 DCR 1532; Nov. 19, 2008, <a href='http://openlims.org/public/L17-262.pdf'>D.C. Law 17-262</a>, § 2(b), 55 DCR 10887; Mar. 25, 2009, <a href='http://openlims.org/public/L17-353.pdf'>D.C. Law 17-353</a>, § 227, 56 DCR 1117.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/2-1217.71.html'>§ 2-1217.71</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-129.pdf'>D.C. Law 17-129</a> rewrote subsecs. (b)(1) and (5); and, in subsec. (c), deleted &quot;Notwithstanding anything to the contrary herein, the Rules of Operation shall provide that a Retail Development Project that, either directly or as part of a larger development project, has already received proceeds of Bonds through another TIF program shall not be designated a TIF Area under this subchapter.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-262.pdf'>D.C. Law 17-262</a>, in subsec. (b)(6), substituted &quot;that the proceeds of the Bonds issued with respect to any TIF Area&quot; for &quot;that Bonds shall not be issued with respect to any TIF Area and the proceeds of the Bonds&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-353.pdf'>D.C. Law 17-353</a>, in subsec. (b)(1)(K), substituted &quot;retailers or unique entertainment attractions that co-locate&quot; for &quot;retailers that co-locate&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(b) of Downtown Retail TIF Congressional Review Emergency Amendment Act of 2008 (D.C. Act 17-302, February 22, 2008, 55 DCR 2510).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-185</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-185, see notes following <a href='/dccode/sections/2-1217.71.html'>§ 2-1217.71</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-129</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-129, see notes following <a href='/dccode/sections/2-1217.71.html'>§ 2-1217.71</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-262</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-262, see notes following <a href='/dccode/sections/2-1217.71.html'>§ 2-1217.71</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-353, see notes following <a href='/dccode/sections/2-218.42.html'>§ 2-218.42</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

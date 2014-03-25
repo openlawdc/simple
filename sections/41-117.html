@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 41-117. Report of property presumed abandoned.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41">Title 41. Personal Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-41/Chapter-1">Chapter 1. Disposition of Unclaimed Property</a></li>
+                    
+                    <li>↪ § 41-117. Report of property presumed abandoned.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/41-116.html">§ 41-116. Unpaid wages or other compensation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/41-118.html">§ 41-118. Notice of abandoned property.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 41-117. Report of property presumed abandoned.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Every person holding funds or other property, tangible or intangible, presumed abandoned under this chapter shall report to the Mayor with respect to the property as provided in this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The report must be verified and shall include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">In case of unclaimed funds of life insurance corporations, the full name of the insured or annuitant and the beneficiary and his or her last known address according to the life insurance corporation&#39;s records;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In the case of the contents of a safe deposit box or other safekeeping repository or in the case of other tangible property, a description of the property and the place where it is held and may be inspected by the Mayor, in which case the report must set forth any amounts owing to the holder as shown by <a href='/dccode/sections/41-118.html'>§ 41-118</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The nature and identifying number, if any, or description of the property and the amount appearing from the records to be due, except that items of value under $50 shall be reported in the aggregate upon the aggregation exceeding $50;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The date when the property became payable, demandable, or returnable, and the date of the last transaction with the owner with respect to the property;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Other information which the Mayor prescribes by rule as necessary for the administration of this chapter; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Except with respect to traveler&#39;s checks and money orders, the name, if known, and last known address, if any and if known, of each person appearing from the records of the holder to be the owner of any property of the value of $50 or more presumed abandoned under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If the person holding property presumed abandoned is a successor to other persons who previously held the property for the owner, or the present holder has changed his or her name while holding the property, the present holder shall file with his or her report all known names and addresses of each previous holder of the property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The report as of the prior June 30th must be filed before November 1st of each year, but a report with respect to a life insurance company made pursuant to <a href='/dccode/sections/41-107.html'>§ 41-107</a> and a report of unclaimed insurance company demutualization proceeds made pursuant to <a href='/dccode/sections/41-107.01.html'>§ 41-107.01</a> shall be filed before May 1st of each year as of the prior December 31; provided, that the initial report for insurance company demutualization proceeds made pursuant to <a href='/dccode/sections/41-107.01.html'>§ 41-107.01</a> shall be filed not later than October 1 as of the prior December 31. The Mayor may postpone the reporting date upon written request by any person required to file a report. The holder, upon receipt of the extension, may make an interim payment on the amount the holder estimates will ultimately be due, which terminated the accrual or additional interest on the amount paid.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The holder of property presumed abandoned shall send written notice to the owner, not more than 120 days or less than 60 days before filing the report, stating that the holder is in possession of property subject to this chapter, if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The holder has in its records an address for the apparent owner which the holder&#39;s records do not disclose to be inaccurate; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The value of the property is $50 or more.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">In calendar year 1998, a report concerning all property presumed to be abandoned as of October 21, 1997, must be filed no later than January 2, 1998.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Verification, if made by a partnership, must be executed by a partner; if made by an unincorporated association or private corporation, by an officer; and if made by a public corporation, by its chief fiscal officer.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 5, 1981, <a href='http://openlims.org/public/L3-160.pdf'>D.C. Law 3-160</a>, § 117, 27 DCR 5150; June 11, 1981, <a href='http://openlims.org/public/L4-10.pdf'>D.C. Law 4-10</a>, § 2(a), 28 DCR 1889; Sept. 29, 1992, <a href='http://openlims.org/public/L9-161.pdf'>D.C. Law 9-161</a>, § 2(m), 39 DCR 5696; Mar. 20, 1998, <a href='http://openlims.org/public/L12-60.pdf'>D.C. Law 12-60</a>, § 1701(l), 44 DCR 7378; Dec. 7, 2004, <a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a>, § 1052(b), 51 DCR 8441; Apr. 13, 2005, <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a>, § 58, 52 DCR 2638.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/41-118.html'>§ 41-118</a>, <a href='/dccode/sections/41-119.html'>§ 41-119</a>, <a href='/dccode/sections/41-128.html'>§ 41-128</a>, <a href='/dccode/sections/41-132.html'>§ 41-132</a>, <a href='/dccode/sections/41-135.html'>§ 41-135</a>, and <a href='/dccode/sections/41-137.html'>§ 41-137</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 42-217.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-205.pdf'>D.C. Law 15-205</a> rewrote subsec (d) which had read as follows: &quot;(d) The report as of the prior June 30th must be filed before November 1st of each year, but a report with respect to a life insurance company must be filed before May 1st of each year as of December 31 next preceding. The Mayor may postpone the reporting date upon written request by any person required to file a report. The holder, upon receipt of the extension, may make an interim payment on the amount the holder estimates will ultimately be due, which terminated the accrual or additional interest on the amount paid.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a>, in subsec. (d), substituted &quot;shall be filed not later than October 1&quot; for &quot;shall be filed later than October 1&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 1701(l) of <a href='http://openlims.org/public/L12-59.pdf'>D.C. Law 12-59</a> rewrote (d) and (e).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2001(b) of <a href='http://openlims.org/public/L12-59.pdf'>D.C. Law 12-59</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2 of <a href='http://openlims.org/public/L15-233.pdf'>D.C. Law 15-233</a>, in subsec. (d), substituted &quot;filed no later than October 1&quot; for &quot;filed later than October 1&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 5(b) of <a href='http://openlims.org/public/L15-233.pdf'>D.C. Law 15-233</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 7 of <a href='http://openlims.org/public/L16-102.pdf'>D.C. Law 16-102</a>, in par. (d), substituted &quot;filed no later than October 1&quot; for &quot;filed later than October 1&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 11(b) of <a href='http://openlims.org/public/L16-102.pdf'>D.C. Law 16-102</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 1701(l) of the Fiscal Year 1998 Revised Budget Support Emergency Act of 1997 (D.C. Act 12-152, October 17, 1997, 44 DCR 6196), and see § 1701(l) of the Fiscal Year 1998 Revised Budget Support Congressional Review Emergency Act of 1997 (D.C. Act 12-239, January 13, 1998, 45 DCR 508).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1052(b) of Fiscal Year 2005 Budget Support Emergency Act of 2004 (D.C. Act 15-486, August 2, 2004, 51 DCR 8236).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Unclaimed Property Demutualization Proceeds Technical Correction Emergency Amendment Act of 2004 (D.C. Act 15-534, October 4, 2004, 51 DCR 9632).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 1052(b) of Fiscal Year 2005 Budget Support Congressional Review Emergency Act of 2004 (D.C. Act 15-594, October 26, 2004, 51 DCR 11725).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Unclaimed Property Demutualization Proceeds Technical Correction Congressional Review Emergency Amendment Act of 2005 (D.C. Act 16-11, January 19, 2005, 52 DCR 2943).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 7 of Finance and Revenue Technical Amendments Emergency Amendment Act of 2006 (D.C. Act 16-260, January 26, 2006, 53 DCR 780).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 7 of Finance and Revenue Technical Amendments Congressional Review Emergency Amendment Act of 2006 (D.C. Act 16-361, April 26, 2006, 53 DCR 3619).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-160</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L3-160.pdf'>D.C. Law 3-160</a>, see Historical and Statutory Notes following <a href='/dccode/sections/41-101.html'>§ 41-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-10</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 4-10 was introduced in Council and assigned Bill No. 4-144, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on March 24, 1981, and April 7, 1981, respectively. Signed by the Mayor on April 20, 1981, it was assigned Act No. 4-22 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-64</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L9-64.pdf'>D.C. Law 9-64</a>, see Historical and Statutory Notes following <a href='/dccode/sections/41-103.html'>§ 41-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-161</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L9-161.pdf'>D.C. Law 9-161</a>, see Historical and Statutory Notes following <a href='/dccode/sections/41-103.html'>§ 41-103</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-59</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-59.pdf'>D.C. Law 12-59</a>, see Historical and Statutory Notes following <a href='/dccode/sections/41-102.html'>§ 41-102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-60</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-60.pdf'>D.C. Law 12-60</a>, see Historical and Statutory Notes following <a href='/dccode/sections/41-102.html'>§ 41-102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-205</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-205, see notes following <a href='/dccode/sections/41-107.01.html'>§ 41-107.01</a></span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-233</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-233, the &quot;Unclaimed Property Demutualization Proceeds Technical Correction Amendment Temporary Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-996, and was retained by the Council. The Bill was adopted on first and second readings on September 21, 2004, and October 5, 2004, respectively. Signed by the Mayor on November 1, 2004, it was assigned Act No. 15-573 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-233.pdf'>D.C. Law 15-233</a> became effective on March 16, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-354</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-354, the &quot;Technical Amendments Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-1130 which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on December 7, 2004, and December 21, 2004, respectively. Signed by the Mayor on February 9, 2005, it was assigned Act No. 15-770 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-354.pdf'>D.C. Law 15-354</a> became effective on April 13, 2005.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Uniform Law: This section is based upon § 11 of the Uniform Disposition of Unclaimed Property Act (1966 Act).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is also based upon § 17 of the Uniform Unclaimed Property Act (1981 Act).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

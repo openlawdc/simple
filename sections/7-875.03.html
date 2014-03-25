@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-875.03. Establishment of uniform health screening requirements and health assessment enrollment forms.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-8E">Chapter 8E. Uniform Child Health Screening Requirements</a></li>
+                    
+                    <li>↪ § 7-875.03. Establishment of uniform health screening requirements and health assessment enrollment forms.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/7-875.02.html">§ 7-875.02. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/7-875.04.html">§ 7-875.04. Payment for health screenings.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-875.03. Establishment of uniform health screening requirements and health assessment enrollment forms.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor shall establish uniform, age-appropriate health screening requirements consistent with the standards and schedules of the American Academy of Pediatrics for all children, from birth to 21 years of age, in the District of Columbia, regardless of insurance status who are:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Residents of the District;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Wards of the District; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Children with special needs who reside in or who are receiving services in another state.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor shall develop a uniform health assessment form for enrollment of children in child-related health, human or social services, and educational programs. Use of the form is not intended to supersede the enrollment requirements of child-related health, educational, and human or social services programs. The form may be supplemented by additional forms used for enrollment that are not related to health assessment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Uniform health screenings shall not be required under this chapter, if a minor&#39;s parent or guardian or an adult youth submits in good faith a written notarized statement to the appropriate official affirming that the screening in question would violate the established tenets and practices of the parent&#39;s or guardian&#39;s church or religious denomination, or in the case of an adult youth, the adult youth&#39;s church or religious denomination.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 13, 2005, <a href='http://openlims.org/public/L15-353.pdf'>D.C. Law 15-353</a>, § 304, 52 DCR 2331.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 304 of the Child and Youth, Safety and Health Omnibus Temporary Amendment Act of 2002 (<a href='http://openlims.org/public/L14-164.pdf'>D.C. Law 14-164</a>, June 25, 2002, law notification 49 DCR 6500).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 304 of the Child and Youth, Safety and Health Omnibus Temporary Amendment Act of 2003 (<a href='http://openlims.org/public/L15-2.pdf'>D.C. Law 15-2</a>, May 3, 2003, law notification 50 DCR 3782).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 304 of the Child and Youth, Safety and Health Omnibus Temporary Amendment Act of 2004 (<a href='http://openlims.org/public/L15-117.pdf'>D.C. Law 15-117</a>, March 30, 2004, law notification 51 DCR 3804).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 304 of the Child and Youth, Safety and Health Omnibus Second Temporary Amendment Act of 2004 (<a href='http://openlims.org/public/L15-319.pdf'>D.C. Law 15-319</a>, April 8, 2005, law notification 52 DCR 4708).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Emergency Amendment Act of 2002 (D.C. Act 14-310, March 26, 2002, 49 DCR 3420).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Emergency Amendment Act of 2003 (D.C. Act 15-3, January 22, 2003, 50 DCR 1426).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Congressional Review Emergency Amendment Act of 2003 (D.C. Act 15-71, April 16, 2003, 50 DCR 3593).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Second Emergency Amendment Act of 2003 (D.C. Act 15-279, December 18, 2003, 51 DCR 60).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-407, March 18, 2004, 51 DCR 3659).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Emergency Amendment Act of 2004 (D.C. Act 15-630, November 30, 2004, 52 DCR 1143).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 304 of Child and Youth, Safety and Health Omnibus Congressional Review Emergency Amendment Act of 2005 (D.C. Act 16-30, February 17, 2005, 52 DCR 2993).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-353, see notes following <a href='/dccode/sections/7-875.01.html'>§ 7-875.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

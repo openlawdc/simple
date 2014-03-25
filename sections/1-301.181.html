@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-301.181. Establishment of a compliance unit.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3">Chapter 3. Specified Governmental Authority</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-I">Subchapter I. Additional Governmental Powers and Responsibilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-3/Subchapter-I/Part-K">Part K. District of Columbia Auditor Compliance Unit</a></li>
+                    
+                    <li>↪ § 1-301.181. Establishment of a compliance unit.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-3/Subchapter-I/Part-K">Part K. District of Columbia Auditor Compliance Unit</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-301.182.html">§ 1-301.182. Powers of the Unit.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-301.181. Establishment of a compliance unit.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is established a compliance unit (&quot;Unit&quot;) within the Office of the District of Columbia Auditor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Unit shall:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Conduct an audit and report on compliance related to real estate development transactions, agreements, or parcels (&quot;projects&quot;) receiving government assistance, which were previously managed by the dissolved National Capital Revitalization Corporation and Anacostia Waterfront Corporation and placed under the management of the Office of the Deputy Mayor for Planning and Economic Development, pursuant to the National Capital Revitalization Corporation and Anacostia Waterfront Corporation Reorganization Act;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Monitor agency contracting and procurement activities to the extent those activities are related to the achievement of the goals set forth in <a href='/dccode/sections/2-218.41.html'>§ 2-218.41</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Review quarterly and annual reports required by §<a href='/dccode/sections/2-218.50.html'>§ 2-218.50</a> and 2-218.53 of each agency;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Monitor third-party contracting and procurement activities to the extent those activities are related to contracting with, and procuring from, certified business enterprises; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Review any reports as may be required of third parties.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this part, the term &quot;government assistance&quot; means a grant, loan, tax increment financing, or other financial assistance that results in a financial benefit from an agency, commission, instrumentality, or other entity of the District government. The term &quot;government assistance&quot; may also include PILOT financing, a Tax Abatement, a Tax Incentive, or a discounted lease or sale price for District-owned land.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Unit&#39;s audit shall focus on the following compliance requirements:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Requirements related to developer selection and performance guidelines, as defined in the Mayor&#39;s source-selection process;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Requirements related to selection of goods and services, as defined in Unit A of Chapter 3 of Title 2 [<a href='/dccode/sections/2-301.01~P.html'>§ 2-301.01</a> et seq.];</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Requirements related to living-wage laws pursuant to subchapter X-A of Chapter 2 of Title 2 [<a href='/dccode/sections/2-220.01.html'>§ 2-220.01</a> et seq.];</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Requirements related to contracting with, and procuring goods and services from, Certified Business Enterprises (&quot;CBEs&quot;) pursuant to subchapter IX-A of Chapter 2 of Title 2 [<a href='/dccode/sections/2-218.01.html'>§ 2-218.01</a> et seq.] (&quot;SLDBE Assistance Act&quot;);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Requirements related to equity and development participation by CBEs pursuant to the SLDBE Assistance Act;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">Requirements related to environmental standards, including Chapter 14A of [<a href='/dccode/sections/6-1451.01.html'>§ 6-1451.01</a> et seq.], Title 6, part B of subchapter XIV of Chapter 12 of Title 2 [<a href='/dccode/sections/2-1226.31.html'>§ 2-1226.31</a> et seq.]; and where applicable, the Leadership in Energy and Environmental Design (&quot;LEED&quot;) Green Building Rating System; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Requirements related to affordable housing mandates, including subchapter II-A of Chapter 10 of Title 6 [<a href='/dccode/sections/6-1041.01.html'>§ 6-1041.01</a> et seq.], the Community Development Block Grant, the Housing Production Trust Fund, the Home Investment Partnerships Program, and the Low-Income Housing Tax Credit program, as applicable.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(June 13, 2008, <a href='http://openlims.org/public/L17-176.pdf'>D.C. Law 17-176</a>, § 2, 55 DCR 5390; Mar. 3, 2010, <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, § 2221(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/1-301.183.html'>§ 1-301.183</a> and <a href='/dccode/sections/2-218.54.html'>§ 2-218.54</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> rewrote subsec. (b), which had read as follows: &quot;(b) The Unit shall conduct an audit and report on compliance related to real estate development transactions, agreements, or parcels (&#39;projects&#39;) receiving government assistance, which were previously managed by the dissolved National Capital Revitalization Corporation and Anacostia Waterfront Corporation and placed under the management of the Office of the Deputy Mayor for Planning and Economic Development, pursuant to the National Capital Revitalization Corporation and Anacostia Waterfront Corporation Reorganization Act of 2008, effective March 26, 2008 (<a href='http://openlims.org/public/L17-138.pdf'>D.C. Law 17-138</a>; 55 DCR 1689).&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2221(a) of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2221(a) of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-176</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 17-176, the &quot;Compliance Unit Establishment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-503 which was referred to the Committee on Economic Development. The Bill was adopted on first and second readings on March 4, 2008, and April 1, 2008, respectively. Signed by the Mayor on April 22, 2008, it was assigned Act No. 17-360 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L17-176.pdf'>D.C. Law 17-176</a> became effective on June 13, 2008.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-111, the &quot;Fiscal Year 2010 Budget Support Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-203, which was referred to the Committee on the Whole. The bill was adopted on first and second readings on May 12, 2009, and September 22, 2009, respectively. Signed by the Mayor on December 18, 2009, it was assigned Act No. 18-255 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> became effective on March 3, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 2220 of <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> provided that subtitle W of title II of the act may be cited as the &quot;Department of Small and Local Business Development Amendment Act of 2009&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 7100 of <a href='http://openlims.org/public/L17-219.pdf'>D.C. Law 17-219</a> repealed section 6 of <a href='http://openlims.org/public/L17-176.pdf'>D.C. Law 17-176</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-1051. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10">Chapter 10. Solid Waste Management and Multi-Material Recycling</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10/Subchapter-II">Subchapter II. Solid Waste Facility Permits</a></li>
+                    
+                    <li>↪ § 8-1051. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-8/Chapter-10/Subchapter-II">Subchapter II. Solid Waste Facility Permits</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/8-1052.html">§ 8-1052. Open solid waste facilities prohibited.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-1051. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purpose of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Composting facility&quot; means any location or structure which uses a microbial process to convert organic material, including wood, paper, mulch, or yard or food waste into a soil amendment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Construction and demolition wastes&quot; means the waste building materials and rubble resulting from construction, remodeling, repair, and demolition operation on houses, commercial buildings, pavements, and other structures.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Existing solid waste facility&quot; means a solid waste facility in construction, including site preparation, or operating on March 23, 1995.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Final disposal&quot; means depositing or placing solid waste for its final location.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Intermediate materials recycling facility&quot; means a fully enclosed structure used for the receipt, separation, storage, conversion, baling, briquetting, crushing, compacting, grinding, shredding, or processing of paper, metal, glass, plastics, tires, bulk waste, or other nonbiodegradable recyclable materials for the purpose of reutilization of such materials. The term &quot;intermediate materials recycling facility&quot; shall not include a facility used for the storage or processing of biodegradable materials, construction and demolition wastes, white goods, and hazardous substances, as defined in <a href='/dccode/sections/8-109.02.html'>§ 8-109.02(4)</a>, and the rules and regulations pursuant thereto.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Open solid waste facility&quot; means any privately owned or operated solid waste disposal or solid waste handling facility where solid waste is stored or processed outside of a fully enclosed building or structure.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Person&quot; means any individual, partnership, corporation, trust, association, firm, joint stock company, organization, commission, or any other private entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Recyclable material&quot; means material which would otherwise become solid waste, and that may be collected, separated, or processed and returned to the economic mainstream as a raw material or product.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Residue&quot; means the solid waste, as measured by weight, requiring disposal after recyclable material is removed during or after processing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Solid waste&quot; means garbage, refuse, construction and demolition waste or any other waste product, including solid, liquid, semisolid, or contained gaseous material, resulting from commercial, industrial, or government operation, or residential or community activity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Solid waste disposal facility&quot; means any facility where solid waste is discharged, deposited, tipped, dumped, or placed for final disposal, including an incinerator, waste-to-energy facility, rubble fill, or landfill.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Solid waste facility&quot; means any privately owned or operated solid waste disposal facility or solid waste handling facility, which accepts solid waste that is not the incidental by-product of the facility&#39;s manufacturing or operational processes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Solid waste handling facility&quot; means any facility where solid waste temporarily is deposited, or placed for processing, at any time prior to its final disposal at a solid waste disposal facility.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Source separated&quot; means the end result when recyclable material is separated from solid waste at its point of origin for separate collection and processing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Substantially alter&quot; means to make any physical modification to a solid waste facility which increases or decreases the solid waste facility&#39;s maximum annual capacity, by more than 10% per year, as indicated in the solid waste facility&#39;s solid waste facility permit, or in any way alters or modifies the method by which the waste is processed or disposed, or which increases the amount of any air pollutant not previously emitted.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Abate&quot; means to control disease vectors including rats and other vermin.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Arterial road&quot; means a traffic route of 4 or more lanes with traffic controlled by traffic signal lights.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Best Available Control Technology&quot; or &quot;BACT&quot; means measures, processes, methods, systems, or techniques to contain the emission of odors and air and liquid pollutants through procedures including enclosing processes or systems to eliminate emissions, and by collecting, capturing or treating pollutants before release from a process, stack, storage or fugitive emissions point.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Facility&quot; means any building, structure, or portion of a site where solid waste is handled or stored.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Hazardous waste&quot; means any waste defined as hazardous in <a href='/dccode/sections/8-1302.html'>§ 8-1302(2)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Infectious waste&quot; shall include, but is not limited to, the following types of solid waste:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Cultures and stocks of infectious agents and associated biologicals, including cultures from medical and pathological laboratories, cultures and stocks of infectious agents from research and industrial laboratories, wastes from the production of biologicals, discarded live and attenuated vaccines, and culture dishes and devices used to transfer, inoculate, and mix cultures;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Pathological wastes, including tissues, organs, and body parts that are removed during surgery or autopsy;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Waste human blood and products of blood, including serum, plasma, and other blood components;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Sharps that have been used in patient care or in medical, research, or industrial laboratories, including hypodermic needles, syringes, pasteur pipettes, broken glass, and scalpel blades;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Contaminated animal carcasses, body parts, and bedding of animals that were exposed to infectious agents during research, production of biologicals, or testing of pharmaceuticals;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Wastes from surgery or autopsy that were in contact with infectious agents, including soiled dressings, sponges, drapes, lavage tubes, drainage sets, underpads, and surgical gloves;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">Laboratory wastes from medical, pathological, pharmaceutical, or other research, commercial, or industrial laboratories that were in contact with infectious agents, including slides and cover slips, disposable gloves, laboratory coats and aprons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(H) </span>
+                
+                    <span class="" style="">Dialysis wastes that were in contact with the blood of patients undergoing hemodialysis, including contaminated disposable equipment and supplies such as tubing, filters, disposable sheets, towels, gloves, aprons, and laboratory coats;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Discarded medical equipment and parts that were in contact with infectious agents;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(J) </span>
+                
+                    <span class="" style="">Biological waste and discarded materials contaminated with blood, excretion, exudates or secretion from human beings or animals who are isolated to protect others from communicable diseases; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(K) </span>
+                
+                    <span class="" style="">Any other waste material that results from the administration of medical care to a patient by a health care provider and is found by the Department of Health to pose a threat to human health or the environment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Operations area&quot; means any area where solid waste handling or related activities including storage, heavy equipment operations, truck idling, covering, uncovering, cleaning, queuing or parking occurs.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Radioactive hazardous waste&quot; means any waste which contains or is contaminated with low level radioactive waste material emitting primarily gamma or beta radiation registering above normal background levels.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Residential street&quot; means any street on which 50% or more of the street frontage is used for residential purposes, for residential and non-business property, or is zoned as residential property. The designation of a street as a residential street shall be determined block-by-block.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(25) </span>
+                
+                    <span class="" style="">&quot;Site&quot; means the total area of any lot or lots that are partially or completely occupied by a solid waste handling facility or its operations area or any lot or lots owned or leased by the owner or operator of a solid waste handling facility that are adjacent to a lot or lots that are partially or completely devoted to solid waste handling operations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(26) </span>
+                
+                    <span class="" style="">&quot;Tracking&quot; means the deposit of a trail of liquid, liquid waste, muck, dust or of any garbage on public space by vehicles entering and exiting solid waste facilities.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Feb. 27, 1996, <a href='http://openlims.org/public/L11-94.pdf'>D.C. Law 11-94</a>, § 2, 42 DCR 7172; June 11, 1999, <a href='http://openlims.org/public/L12-286.pdf'>D.C. Law 12-286</a>, § 2(a), 46 DCR 3435.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/8-105.02.html'>§ 8-105.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-3451.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2 of Solid Waste Facility Permit Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-120.pdf'>D.C. Law 12-120</a>, June 11, 1998, law notification 45 DCR 4037).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of subchapter, see §§ 2 to 11 of Solid Waste Facility Permit Temporary Act of 1994 (<a href='http://openlims.org/public/L10-251.pdf'>D.C. Law 10-251</a>, March 23, 1995, law notification 42 DCR 1650).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of subchapter, see §§ 2 to 11 of Solid Waste Facility Permit Temporary Act of 1995 (<a href='http://openlims.org/public/L11-80.pdf'>D.C. Law 11-80</a>, February 6, 1996, law notification 43 DCR 776).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter, see §§ 2-11 of the Solid Waste Facility Permit Emergency Act of 1994 (D.C. Act 10-384, December 28, 1994, 42 DCR 45).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter, see §§ 2 through 11 of the Solid Waste Facility Permit Emergency Act of 1995 (D.C. Act 11-144, October 23, 1995, 42 DCR 6038).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(a) and (b) of the Solid Waste Facility Permit Emergency Amendment Act of 1998 (D.C. Act 12-296, March 4, 1998, 45 DCR 1769), and § 2(a) of the Solid Waste Facility Permit Second Emergency Amendment Act of 1998 (D.C. Act 12-623, February 1, 1999, 45 DCR 1364).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-94</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 11-94, the &quot;Solid Waste Facility Permit Act of 1995,&quot; was introduced in Council and assigned Bill No. 11-036, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on November 7, 1995, and December 5, 1995, respectively. Signed by the Mayor on December 18, 1995, it was assigned Act No. 11-177 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L11-94.pdf'>D.C. Law 11-94</a> became effective on February 27, 1996.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-286</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-286, the &quot;Solid Waste Facility Permit Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-582, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Vetoed by the Mayor on December 24, 1998, the Council overrode the veto on Jan. 5, 1999; it was assigned Act No. 12-624 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-286.pdf'>D.C. Law 12-286</a> became effective on June 11, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Delegation of authority pursuant to <a href='http://openlims.org/public/L10-251.pdf'>D.C. Law 10-251</a>, the &quot;Solid Waste Facility Permit Temporary Act of 1994&quot;, see Mayor&#39;s Order 95-754, May 19, 1995.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Delegation of authority pursuant to <a href='http://openlims.org/public/L11-94.pdf'>D.C. Law 11-94</a>, the &quot;District of Columbia Solid Waste Facility Permit Act of 1995&quot;, see Mayor&#39;s Order 98-53, April 15, 1998 (45 DCR 2700).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

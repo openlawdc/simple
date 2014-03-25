@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-1607. Appropriation; public grants and private contributions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-16">Chapter 16. Public Defender Service</a></li>
+                    
+                    <li>↪ § 2-1607. Appropriation; public grants and private contributions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/2-1606.html">§ 2-1606. Annual report and audit.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/2-1608.html">§ 2-1608. Transition provisions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-1607. Appropriation; public grants and private contributions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There are authorized to be appropriated to the Service in each fiscal years such funds as may be necessary to carry out this chapter. The Service may arrange by contract or otherwise for the disbursement of appropriated funds, procurement, and the provision of other administrative support functions by the General Services Administration or by other agencies or entities, not subject to the provisions of the District of Columbia Code or any law or regulation adopted by the District of Columbia Government concerning disbursement of funds, procurement, or other administrative support functions. The Service shall submit an annual appropriations request to the Office of Management and Budget.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Upon approval of the Board of Trustees, the Service may accept public grants and private contributions made to assist it in carrying out the provisions of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Service shall not be subject to any general personnel or budget limitations which otherwise apply to the District of Columbia government or its agencies in any appropriations act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">During fiscal years 2006 through 2008, the Service may charge fees to cover the costs of materials distributed to attendees of educational events, including conferences, sponsored by the Service. Notwithstanding section 3302 of title 31, United States Code [31 U.S.C. § 3302], any amounts received as fees under this subsection shall be credited to the Service and available for use without further appropriation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Service shall, to the extent the Director considers appropriate, provide representation for and hold harmless, or provide liability insurance for, any person who is an employee, member of the Board of Trustees, or officer of the Service for money damages arising out of any claim, proceeding, or case at law relating to the furnishing of representational services or management services or related services under this chapter while acting within the scope of that person&#39;s office or employment, including but not limited to such claims, proceedings, or cases at law involving employment actions, injury, loss of liberty, property damage, loss of property, or personal injury, or death arising from malpractice or negligence of any such officer or employee.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=657'>84 Stat. 657</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title III, § 307; Aug. 5, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=762'>111 Stat. 762</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, § 11272(d); Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2428'>112 Stat. 2428</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Pub. L. 105-274</a>, § 7(d), (e)(2)(B), (f); Oct. 16, 2006, <a href='http://api.fdsys.gov/link?collection=statute&volume=120&page=2039'>120 Stat. 2039</a>, <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, § 301(b); Dec. 26, 2007, <a href='http://api.fdsys.gov/link?collection=statute&volume=121&page=2042'>121 Stat. 2042</a>, <a href='http://www.govtrack.us/search?q=public%20law%20110-161'>Pub. L. 110-161</a>, § 825(a); Dec. 12, 2012, <a href='http://api.fdsys.gov/link?collection=statute&volume=126&page=1611'>126 Stat. 1611</a>, <a href='http://www.govtrack.us/search?q=public%20law%20112-229'>Pub. L. 112-229</a>, § 3.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2707.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 2-2227.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20110-161'>Pub. L. 110-161</a>, in subsec. (a), inserted the first sentence and deleted the former first two sentences which had read as follows: &quot;There are authorized to be appropriated through the Court Services and Offender Supervision Agency for the District of Columbia (or, until such Agency assumes its duties pursuant to <a href='/dccode/sections/24-133.html'>§ 24-133(a)</a>, through the Trustee appointed pursuant to <a href='/dccode/sections/24-132.html'>§ 24-132</a>) in each fiscal year such sums as may be necessary to carry out this chapter. Funds appropriated pursuant to this subsection shall be transmitted by the Agency (or, if applicable, by the Trustee) to the Service.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2012 amendment by <a href='http://www.govtrack.us/search?q=public%20law%20112-229'>Pub. L. 112-229</a> added (e).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effective Dates</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20110-161'>Section 825(c) of Pub. L. 110-161</a> provided that amendments made by this section shall apply with respect to fiscal year 2008 and each succeeding fiscal year.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Section 11272 of Pub. L. 105-33</a>: <a href='http://www.govtrack.us/search?q=public%20law%20105-274'>Section 7(d) of Pub. L. 105-274</a> provided that § 11272 of <a href='http://www.govtrack.us/search?q=public%20law%20105-33'>Pub. L. 105-33</a>, which rewrote the section, is repealed October 21, 1998. This section is set out above as it would have appeared absent the enactment of § 11272.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Permitting general services administration to obtain space and services on behalf of District of Columbia public defender service: <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Section 103 of Pub. L. 109-356</a> provided:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(a) Authority to obtain space and services. - At the request of the Director of the District of Columbia Public Defender Service, the Administrator of General Services may furnish space and services on behalf of the Service (either directly by providing space and services in buildings owned or occupied by the Federal Government or indirectly by entering into leases with non-Federal entities) in the same manner, and under the same terms and conditions, as the Administrator may furnish space and services on behalf of an agency of the Federal Government.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(b) Effective Date. - This section shall apply with respect to fiscal year 2006 and each succeeding fiscal year.&quot; Federal Payment to the District of Columbia Public Defender Service: <a href='http://www.govtrack.us/search?q=public%20law%20111-8'>Pub. L. 111-8</a>, Div. D, Title IV, <a href='http://api.fdsys.gov/link?collection=statute&volume=123&page=652'>123 Stat. 652</a>, March 11, 2009, provided, in part: &quot;For salaries and expenses, including the transfer and hire of motor vehicles, of the District of Columbia Public Defender Service, as authorized by the National Capital Revitalization and Self-Government Improvement Act of 1997, $35,659,000, of which $700,000 is to remain available until September 30, 2010: Provided, That notwithstanding any other provision of law, all amounts under this heading shall be apportioned quarterly by the Office of Management and Budget and obligated and expended in the same manner as funds appropriated for salaries and expenses of Federal agencies. Provided further, That for fiscal year 2009 and thereafter, the Public Defender Service is authorized to charge fees to cover costs of materials distributed and training provided to attendees of educational events, including conferences, sponsored by the Public Defender Service, and notwithstanding 31 U.S.C. 3302, such fees shall be credited to this account, to be available until expended without further appropriation.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

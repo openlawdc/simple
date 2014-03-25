@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-2402. Imposition; payment.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-24">Chapter 24. Cigarette Tax</a></li>
+                    
+                    <li>↪ § 47-2402. Imposition; payment.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/47-2401.html">§ 47-2401. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/47-2402.01.html">§ 47-2402.01. Weight-based excise tax.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-2402. Imposition; payment.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Except as otherwise provided in <a href='/dccode/sections/47-2403.html'>§ 47-2403</a>, a tax is levied and imposed on the sale or possession on all cigarettes in the District of Columbia at the rate of $0.125 for each cigarette.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Subject to paragraph (3) of this subsection and in lieu of the tax otherwise imposed by <a href='/dccode/sections/47-2002.html'>§ 47-2002</a>, a surtax is levied and imposed on the sale or possession of all cigarettes in the District at the rate of $0.36 per package of 20 or fewer cigarettes. If there are more than 20 cigarettes in the package, the surtax per pack will be incrementally increased by $.018 per each cigarette above 20.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Beginning as of March 31, 2012, and on March 31st of each year thereafter, the Mayor shall calculate the average retail price of a package of cigarettes from the best information available and shall recompute the surtax on the basis of the then applicable sales and use tax rate that otherwise would be applicable to the sale of cigarettes under <a href='/dccode/sections/47-2002.html'>§ 47-2002</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">In calculating the average retail price for purposes of this paragraph, the Mayor shall exclude the current surtax imposed by this section and the portion of the presumptive wholesale and retail markup imposed by Chapter 45A of Title 28 of the District of Columbia Official Code on the current surtax. The Mayor shall provide notice of any change in the amount of the surtax on or before September 1st of that year, and the change shall be effective as of the following October 1st.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Cigarettes on which the taxes levied and imposed by this section have been paid shall not be subject to additional taxation under this section; provided, that the burden of proof that the taxes levied and imposed by this section have been paid shall be upon the person who sells or possesses cigarettes in the District, against whom a tax assessment has been made, who has submitted an application for a refund, or whose cigarettes have been seized. For the purposes of this section, the term &quot;person&quot; includes any officer or employee of a corporation responsible for payment of the tax, or any member of a partnership or association responsible for the payment of the tax.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The tax levied and imposed by this section shall be paid by the affixture of stamps, purchased from the Mayor, evidencing the payment of the amount of tax imposed by this section. Such stamps shall be affixed to the original packages of cigarettes included in the directory of Tobacco Product Manufacturers maintained pursuant to <a href='/dccode/sections/7-1803.03.html'>§ 7-1803.03(b)</a> and shall be cancelled in the manner prescribed by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Except as otherwise provided in this subsection and subsection (f) of this section, each licensed wholesaler shall affix a stamp or stamps, evidencing the payment of the amount of tax imposed by this section, to each original package of cigarettes to be kept for sale, offered for sale, displayed for sale, or sold within the District. Such stamps shall be affixed to each original package of such cigarettes within 72 hours after the receipt of such cigarettes and prior to the sale of such cigarettes unless such cigarettes are exempt from taxation under the provisions of this chapter. Whenever any cigarettes are found in the place of business of a licensed wholesaler without the stamps affixed as herein provided, or not segregated or marked as having been received within the preceding 72 hours, or not segregated or marked as being held for sale outside of the limits of the District, or not segregated or marked as being held for sale to the United States or the District government, or any instrumentalities thereof, or not segregated or marked for other exempt purposes under this chapter, a prima facie presumption shall arise that such cigarettes are subject to the tax levied and imposed by this section and are possessed in violation of the provisions of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Licensed retailers and vending machine operators shall not accept deliveries of unstamped or improperly stamped cigarettes. Such licensees shall examine all packages of cigarettes immediately upon their receipt and shall immediately return any and all unstamped or improperly stamped cigarettes to the licensed wholesaler. Unless substantial evidence to the contrary is shown, the possession of any unstamped or improperly stamped cigarettes by such licensees shall be prima facie evidence that such cigarettes are possessed in violation of the provisions of this chapter. The Mayor may, however, authorize licensed retailers and vending machine operators to acquire and have in their possession cigarettes bearing cigarette tax stamps issued by any other state or jurisdiction; provided, that such cigarettes are intended for sale in such other state or jurisdiction. Licensed retailers and vending machine operators shall not purchase, acquire, or have in their possession District tax stamps. Notwithstanding the provisions of this subsection, licensed retailers or vending machine operators, other than licensed retailers or vending machine operators who are also licensed wholesalers, who either have in their possession unused cigarette tax stamps or unstamped cigarettes on the effective date of this chapter shall not be deemed in violation of this subsection; provided, that such licensed retailers and vending machine operators affix or redeem such unused cigarette tax stamps and pay the tax levied and imposed by this section on such unstamped cigarettes in the manner and within the time specified by the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">On sales of cigarettes to other licensed wholesalers, a licensed wholesaler may deliver such cigarettes without affixing stamps thereon, and such other licensed wholesalers shall be liable for the tax imposed by this section on such cigarettes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">All packages of cigarettes placed in cigarette vending machines shall be placed in such manner that the District cigarette tax stamps are visible whenever the packages are within that area of the vending machine which permits visibility of the packages.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">Except as authorized by this section or <a href='/dccode/sections/47-2403.html'>§ 47-2403</a>, no person shall willfully or knowingly sell, transfer, buy, receive, have in his possession, or offer to sell, transfer, buy, or receive any unstamped or improperly stamped cigarettes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">No person shall sell, transfer, or offer to sell or transfer any cigarette tax stamps to any person other than the Mayor; nor shall any person buy, receive or offer to buy or receive any cigarette tax stamps from any person other than the Mayor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">The Mayor may by regulation provide for the purchase of stamps at a discount not exceeding 10% of the face value of such stamps.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">The taxes imposed under this section shall be deemed to be a part of the selling price of cigarettes and shall be in addition to, and not in lieu of, any taxes imposed by any other law.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 27, 1949, 63 Stat. 137, ch. 146, title VI, § 603; May 18, 1954, <a href='http://api.fdsys.gov/link?collection=statute&volume=68&page=115'>68 Stat. 115</a>, ch. 218, title IX, § 901; Sept. 30, 1966, <a href='http://api.fdsys.gov/link?collection=statute&volume=80&page=856'>80 Stat. 856</a>, <a href='http://www.govtrack.us/search?q=public%20law%2089-610'>Pub. L. 89-610</a>, title IV, § 401; Oct. 31, 1969, <a href='http://api.fdsys.gov/link?collection=statute&volume=83&page=173'>83 Stat. 173</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-106'>Pub. L. 91-106</a>, title III, § 301; Oct. 21, 1972, <a href='http://api.fdsys.gov/link?collection=statute&volume=86&page=1015'>86 Stat. 1015</a>, <a href='http://www.govtrack.us/search?q=public%20law%2092-518'>Pub. L. 92-518</a>, title III, § 302(a); Oct. 21, 1975, <a href='http://openlims.org/public/L1-23.pdf'>D.C. Law 1-23</a>, title IV, § 401(a), 22 DCR 2103; June 15, 1976, <a href='http://openlims.org/public/L1-70.pdf'>D.C. Law 1-70</a>, title V, § 501, 23 DCR 546; Mar. 10, 1982, <a href='http://openlims.org/public/L4-71.pdf'>D.C. Law 4-71</a>, § 2, 28 DCR 5243; Sept. 10, 1985, <a href='http://openlims.org/public/L6-33.pdf'>D.C. Law 6-33</a>, § 2(a), 32 DCR 3774; Feb. 28, 1987, <a href='http://openlims.org/public/L6-198.pdf'>D.C. Law 6-198</a>, § 2(a), 34 DCR 515; Aug. 17, 1991, <a href='http://openlims.org/public/L9-31.pdf'>D.C. Law 9-31</a>, § 2(a), 38 DCR 4218; Sept. 10, 1992, <a href='http://openlims.org/public/L9-145.pdf'>D.C. Law 9-145</a>, § 109(a), 39 DCR 4895; Sept. 30, 1993, <a href='http://openlims.org/public/L10-25.pdf'>D.C. Law 10-25</a>, § 113(a), 40 DCR 5489; enacted, Apr. 9, 1997, <a href='http://openlims.org/public/L11-254.pdf'>D.C. Law 11-254</a>, § 2, 44 DCR 1575; June 5, 2003, <a href='http://openlims.org/public/L14-307.pdf'>D.C. Law 14-307</a>, § 902(c), 49 DCR 11664; Aug. 16, 2008, <a href='http://openlims.org/public/L17-219.pdf'>D.C. Law 17-219</a>, §§ 5055(a), 7010, 55 DCR 7598; Mar. 3, 2010, <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, § 7241(i)(3), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>; Sept. 14, 2011, <a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a>, § 8052(b), 58 DCR)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Tax rates, records and surplus funds, authority of Council to change certain tax rates, see <a href='/dccode/sections/47-504.html'>§ 47-504</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/28-4521.html'>§ 28-4521</a>, <a href='/dccode/sections/47-2403.html'>§ 47-2403</a>, <a href='/dccode/sections/47-2405.html'>§ 47-2405</a>, and <a href='/dccode/sections/47-2409.html'>§ 47-2409</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-2402.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 47-2802.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-307.pdf'>D.C. Law 14-307</a>, in subsec. (a), substituted &quot;$.05&quot; for &quot;3.25 cents&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-219.pdf'>D.C. Law 17-219</a>, in subsec. (a), substituted &quot;$.10 for each cigarette&quot; for &quot;$.05 for each cigarette&quot;; and, in subsec. (c), rewrote the second sentence, which had read as follows: &quot;Such stamps shall be affixed to the original packages of cigarettes and shall be cancelled, in the manner prescribed by the Mayor.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, in subsec. (a), substituted &quot;$.125&quot; for &quot;$.10&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a> rewrote subsec. (a), which had read as follows: &quot;(a) Except as otherwise provided in <a href='/dccode/sections/47-2403.html'>§ 47-2403</a>, a tax is levied and imposed on the sale or possession of all cigarettes in the District of Columbia at the rate of $.125 for each cigarette.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 114(a) of Omnibus Budget Support Temporary Act of 1991 (<a href='http://openlims.org/public/L9-19.pdf'>D.C. Law 9-19</a>, August 17, 1991, law notification 38 DCR 5786).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 109(a) of Omnibus Budget Support Temporary Act of 1992 (<a href='http://openlims.org/public/L9-134.pdf'>D.C. Law 9-134</a>, July 23, 1992, law notification 39 DCR 5815).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 113(a) of Omnibus Budget Support Temporary Act of 1993 (<a href='http://openlims.org/public/L10-11.pdf'>D.C. Law 10-11</a>, August 6, 1993, law notification 40 DCR 6213).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2 of <a href='http://openlims.org/public/L17-18.pdf'>D.C. Law 17-18</a> amended the second sentence of subsec. (c) to read as follows: &quot;Such stamps shall be affixed to the original packages of cigarettes included in the directory of Tobacco Product Manufacturers maintained pursuant to <a href='/dccode/sections/7-1803.03.html'>§ 7-1803.03(b)</a> and shall be cancelled in the manner prescribed by the Mayor.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 4(b) of <a href='http://openlims.org/public/L17-18.pdf'>D.C. Law 17-18</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2 of <a href='http://openlims.org/public/L17-192.pdf'>D.C. Law 17-192</a>, in subsec. (c), amended the second sentence to read as follows: &quot;Such stamps shall be affixed to the original packages of cigarettes included in the directory of Tobacco Product Manufacturers maintained pursuant to <a href='/dccode/sections/7-1803.03.html'>§ 7-1803.03(b)</a> and shall be cancelled in the manner prescribed by the Mayor.&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 4(b) of <a href='http://openlims.org/public/L17-192.pdf'>D.C. Law 17-192</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 902(c) and 903 of Fiscal Year 2003 Budget Support Amendment Emergency Act of 2002 (D.C. Act 14-544, December 4, 2002, 49 DCR 11700).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see §§ 902(c) and 903 of the Fiscal Year 2003 Budget Support Amendment Congressional Review Emergency Act of 2003 (D.C. Act 15-27, February 24, 2003, 50 DCR 2151).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see §§ 902(c) and 903 of Fiscal Year 2003 Budget Support Amendment Second Congressional Review Emergency Act of 2003 (D.C. Act 15-103, June 20, 2003, 50 DCR 5499).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of the Cigarette Stamp Clarification Emergency Amendment Act of 2007 (D.C. Act 17-47, May 15, 2007, 54 DCR 5356).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Cigarette Stamp Clarification Emergency Amendment Act of 2008 (D.C. Act 17-366, May 5, 2008, 55 DCR 5689).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 7111(h) of Fiscal Year 2010 Budget Support Emergency Act of 2009 (D.C. Act 18-187, August 26, 2009, 56 DCR 7374).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) additions, see § 7121(b) of Fiscal Year 2010 Budget Support Emergency Act of 2009 (D.C. Act 18-187, August 26, 2009, 56 DCR 7374).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 7241(i)(3) of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a), (b)(3) of Tobacco Excise Tax Emergency Amendment Act of 2009 (D.C. Act 18-214, October 21, 2009, 56 DCR 8496).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 2(b)(4) of Tobacco Excise Tax Emergency Amendment Act of 2009 (D.C. Act 18-214, October 21, 2009, 56 DCR 8496).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 7241(i)(3) of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 1-70</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 1-70, the &quot;Revenue Act of 1976,&quot; was introduced in Council and assigned Bill No. 1-229, which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings and reconsiderations of final reading on February 20, 1976, March 11, 1976 and April 6, 1976, respectively. Signed by the Mayor on April 20, 1976, it was assigned Act No. 1-106 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-71</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L4-71.pdf'>D.C. Law 4-71</a>, see Historical and Statutory Notes following <a href='/dccode/sections/47-2401.html'>§ 47-2401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-33</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 6-33, the &quot;Cigarette Tax Amendment Act of 1985,&quot; was introduced in Council and assigned Bill No. 6-188, which was referred to the Committee on Finance and Revenue. The Bill was adopted on first and second readings on May 28, 1985 and June 11, 1985, respectively. Signed by the Mayor on June 14, 1985, it was assigned Act No. 6-48 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-198</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-198.pdf'>D.C. Law 6-198</a>, see Historical and Statutory Notes following <a href='/dccode/sections/47-2418.html'>§ 47-2418</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-31</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 9-31, the &quot;Cigarette Tax Amendment Act of 1991,&quot; was introduced in Council and assigned Bill No. 9-164, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 4, 1991, and June 18, 1991, respectively. Signed by the Mayor on July 2, 1991, it was assigned Act No. 9-58 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-134</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 9-134, the &quot;Omnibus Budget Support Temporary Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-485. The Bill was adopted on first and second readings on April 7, 1992, and May 6, 1992, respectively. Approved without the signature of the Mayor on May 29, 1992, it was assigned Act No. 9-219 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L9-134.pdf'>D.C. Law 9-134</a> became effective on July 23, 1992.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-145</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 9-145, the &quot;Omnibus Budget Support Act of 1992,&quot; was introduced in Council and assigned Bill No. 9-222, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 12, 1992, and June 2, 1992, respectively. Approved without the signature of the Mayor on June 22, 1992, it was assigned Act No. 9-225 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L9-145.pdf'>D.C. Law 9-145</a> became effective on September 10, 1992.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-25</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-25, the &quot;Omnibus Budget Support Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-165, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 1, 1993, and June 29, 1993, respectively. Signed by the Mayor on July 16, 1993, it was assigned Act No. 10-57 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-25.pdf'>D.C. Law 10-25</a> became effective on September 30, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-307</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-307, see notes following <a href='/dccode/sections/47-903.html'>§ 47-903</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-219</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-219, see notes following <a href='/dccode/sections/47-318.05a.html'>§ 47-318.05a</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 18-111, see notes following <a href='/dccode/sections/47-305.02~P.html'>§ 47-305.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For history of Law 19-21, see notes under <a href='/dccode/sections/47-305.02~P.html'>§ 47-305.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 7009 of <a href='http://openlims.org/public/L17-219.pdf'>D.C. Law 17-219</a> provided that subtitle E of title VII of the act may be cited as the &quot;Cigarette Stamp Clarification Act of 2008&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effective Dates</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3(b) of <a href='http://openlims.org/public/L6-33.pdf'>D.C. Law 6-33</a> provided that the provisions of the act shall not operate before the 1st day of the 1st month which begins more than 30 days after September 10, 1985.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Mayor to report fiscal impact of Law 10-25: Section 113(c) of <a href='http://openlims.org/public/L10-25.pdf'>D.C. Law 10-25</a> provided that the Mayor shall report to the Council within 6 months of implementation on the fiscal impact of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 903 of <a href='http://openlims.org/public/L14-307.pdf'>D.C. Law 14-307</a> provided: &quot;Sec. 903. Applicability. Section 902 shall apply as of January 1, 2003.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 5005(a)(2) of <a href='http://openlims.org/public/L17-219.pdf'>D.C. Law 17-219</a> provided that this subsection shall apply as of October 1, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

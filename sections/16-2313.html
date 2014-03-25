@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 16-2313. Place of detention or shelter.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-16">Title 16. Particular Actions, Proceedings and Matters</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-16/Chapter-23">Chapter 23. Family Division [Family Court] Proceedings</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-16/Chapter-23/Subchapter-I">Subchapter I. Proceedings Regarding Delinquency, Neglect, or Need of Supervision</a></li>
+                    
+                    <li>↪ § 16-2313. Place of detention or shelter.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/16-2312a.html">§ 16-2312a. Evaluation of family team meetings and 72-hour time period for commencement of shelter care hearing.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/16-2314.html">§ 16-2314. Consent decree.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 16-2313. Place of detention or shelter.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A child who is alleged to be neglected and who is in custody may be placed at any time prior to disposition, only in -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">a foster home;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">a group home, youth shelter, or other appropriate home for nondelinquent children; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">another facility for shelter care designated by the Division, including an appropriate facility operated by the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">No child alleged to be neglected may be placed in a facility described in paragraph (3) of subsection (b) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A child who is alleged to be in need of supervision or (except as provided in subsection (d) or (e)) is alleged to be delinquent and who is in custody may be detained at any time prior to disposition only in -</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">a foster home;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">a group home, youth shelter, or other appropriate home for allegedly delinquent children; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">a detention home for allegedly delinquent children or children alleged to be in need of supervision, designated by the Division, including an appropriate facility operated by the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Unless the Division shall by order so authorize, no child may be detained in a facility described in paragraph (3) if it would result in his commingling with children who have been adjudicated delinquent and committed by order of the Division.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">A child in detention or shelter care may be temporarily transferred to a medical facility for physical care and may, on order of the Division, be temporarily transferred to a facility for mental examination or treatment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Except as provided in subsection (e), no child under eighteen years of age may be detained in a jail or other facility for the detention of adults, unless transferred as provided in <a href='/dccode/sections/16-2307.html'>section 16-2307</a>. The appropriate official of a jail or other facility for the detention of adults shall inform the Superior Court immediately when a child under the age of eighteen years is received there (other than by transfer) and shall (1) deliver him to the Director of Social Services upon request, or (2) transfer him to a detention facility described in subsection (b)(3).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">A child sixteen years of age or older who is alleged to be delinquent and who is in detention, whose conduct constitutes a menace to other children, and who cannot be controlled, may on order of the Division be transferred to a place of detention for adults, but shall be kept separate from adults.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">The department or agency having custody, pursuant to a shelter care order, of a child alleged to be a neglected child shall give notice, which may be oral, of any change in the placement of the child to the child&#39;s parent, the child&#39;s guardian ad litem and the child&#39;s foster parent, if any, at least forty-eight (48) hours prior to the change in placement, except that in the case of an emergency, notice shall be given no later than twenty-four (24) hours (excluding Saturdays, Sundays and legal holidays) after the change. Notice need not be given to the parent where the Division has found that visitation would be detrimental to the child or the Division has determined that the parent should not be apprised of the child&#39;s location. Upon the request of any person entitled to notice under this subsection, the department or agency having legal custody of the child shall afford an opportunity for an administrative hearing to review the proposed change in the placement of the child, except that the department or agency need not conduct such a hearing if the requestor does not qualify as a party pursuant to D.C. Official Code, <a href='/dccode/sections/16-2304.html'>section 16-2304</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 23, 1963, <a href='http://api.fdsys.gov/link?collection=statute&volume=77&page=590'>77 Stat. 590</a>, <a href='http://www.govtrack.us/search?q=public%20law%2088-241'>Pub. L. 88-241</a>, § 1; July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=531'>84 Stat. 531</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title I, § 121(a); Sept. 23, 1977, <a href='http://openlims.org/public/L2-22.pdf'>D.C. Law 2-22</a>, title IV, § 404, 24 DCR 3341.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Agency authorization of medical treatment, physical custody of child, see <a href='/dccode/sections/4-1303.05.html'>§ 4-1303.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/4-1303.05.html'>§ 4-1303.05</a>, <a href='/dccode/sections/16-2328.html'>§ 16-2328</a>, and <a href='/dccode/sections/16-2331.html'>§ 16-2331</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 16-2313.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 16-2313.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 2-22</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L2-22.pdf'>D.C. Law 2-22</a>, see Historical and Statutory Notes following <a href='/dccode/sections/16-2301.html'>§ 16-2301</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

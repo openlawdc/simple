@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 11-2605. Services other than counsel.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-11">Title 11. Organization and Jurisdiction of the Courts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-11/Chapter-26">Chapter 26. Representation of Indigents in Criminal Cases</a></li>
+                    
+                    <li>↪ § 11-2605. Services other than counsel.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/11-2604.html">§ 11-2604. Payment for representation.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/11-2606.html">§ 11-2606. Receipt of other payments.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 11-2605. Services other than counsel.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Counsel for a person who is financially unable to obtain investigative, expert, or other services necessary for an adequate defense may request them in an ex parte application. Upon finding, after appropriate inquiry in an ex parte proceeding, that the services are necessary and that the person is financially unable to obtain them, the court shall authorize counsel to obtain the services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Counsel appointed under this section may obtain, subject to later review, investigative, expert, or other services, excluding the preparation of reporter&#39;s transcript, without prior authorization if necessary for an adequate defense. The total cost of services obtained without prior authorization may not exceed $375 or the rate provided by § 3006A(e)(2) of title 18, United States Code, (or, in the case of investigative services, a fixed rate of $25 per hour) whichever is higher, and expenses reasonably incurred.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Compensation to be paid to a person for services rendered by such person to a person under this subsection shall not exceed $750, or the rate provided by § 3006A(e)(3) of title 18, United States Code, (or, in the case of investigative services, a fixed rate of $25 per hour) whichever is higher, exclusive of reimbursement for expenses reasonably incurred, unless payment in excess of that limit is certified by the court, as necessary to provide fair compensation for services of an unusual character or duration, and the amount of the excess payment is approved by the presiding judge in the case.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 3, 1974, <a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=1092'>88 Stat. 1092</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-412'>Pub. L. 93-412</a>, § 2; Jan. 31, 1984, <a href='http://openlims.org/public/L5-44.pdf'>D.C. Law 5-44</a>, § 3, 30 DCR 5411; June 13, 1994, <a href='http://www.govtrack.us/search?q=public%20law%20103-266'>Pub. L. 103-266</a>, § 1(b)(122), <a href='http://api.fdsys.gov/link?collection=statute&volume=108&page=713'>108 Stat. 713</a>; Dec. 21, 2001, <a href='http://api.fdsys.gov/link?collection=statute&volume=115&page=929'>115 Stat. 929</a>, <a href='http://www.govtrack.us/search?q=public%20law%20107-96'>Pub. L. 107-96</a>; Oct. 16, 2006, <a href='http://api.fdsys.gov/link?collection=statute&volume=120&page=2024'>120 Stat. 2024</a>, <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, § 113(a).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Neglect and termination of parental rights proceedings, compensation of attorneys, see <a href='/dccode/sections/16-2326.01.html'>§ 16-2326.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/7-1906.html'>§ 7-1906</a>, <a href='/dccode/sections/11-2606.html'>§ 11-2606</a>, <a href='/dccode/sections/16-2326.01.html'>§ 16-2326.01</a>, and <a href='/dccode/sections/22-4133.html'>§ 22-4133</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 11-2605.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 11-2605.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20107-96'>Pub. L. 107-96</a> inserted a new subsec. (b) providing a fixed rate of compensation; and redesignated former subsecs. (b) and (c) as subsecs. (c) and (d).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a> repealed former subsec. (b); redesignated former subsecs. (c) and (d) as subsecs. (b) and (c); and, in subsecs. (b) and (c), inserted &quot;(or, in the case of investigative services, a fixed rate of $25 per hour)&quot;. Prior to amendment, subsec. (b) read as follows: &quot;(b) Subject to the applicable limits described in subsections (c) and (d), an individual providing services under this section shall be compensated at a fixed rate of $25 per hour, and shall be reimbursed for expenses reasonably incurred.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-44</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L5-44.pdf'>D.C. Law 5-44</a>, see Historical and Statutory Notes following <a href='/dccode/sections/11-2604.html'>§ 11-2604</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effective Dates</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20107-96'>Pub. L. 107-96</a>, <a href='http://api.fdsys.gov/link?collection=statute&volume=115&page=923'>115 Stat. 923</a>, the District of Columbia Appropriations Act, 2002, provided in part:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;The amendments made by this provision shall apply with respect to cases and proceedings initiated on or after March 1, 2002.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Section 113(b) of Pub. L. 109-356</a> provided that the amendment made by subsection (a) shall apply with respect to pay periods beginning on or after the date of the enactment of this Act [October 16, 2006].</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Prompt Payment of Appointed Counsel. <a href='http://www.govtrack.us/search?q=public%20law%20107-96'>Section 129 of Pub. L. 107-96</a>, Dec. 21, 2001, <a href='http://api.fdsys.gov/link?collection=statute&volume=115&page=929'>115 Stat. 929</a>, provided:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(a) ASSESSMENT OF INTEREST FOR DELAYED PAYMENTS - If the Superior Court of the District of Columbia or the District of Columbia Court of Appeals does not make a payment described in subsection (b) prior to the expiration of the 45-day period which begins on the date the Court receives a completed voucher for a claim for the payment, interest shall be assessed against the amount of the payment which would otherwise be made to take into account the period which begins on the day after the expiration of such 45-day period and which ends on the day the Court makes the payment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(b) PAYMENTS DESCRIBED. - A payment described in this subsection is -</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(1) a payment authorized under <a href='/dccode/sections/11-2604.html'>section 11-2604</a> and <a href='/dccode/sections/11-2605.html'>section 11-2605</a>, D.C. Code (relating to representation provided under the District of Columbia Criminal Justice Act);</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(2) a payment for counsel appointed in proceedings in the Family Division of the Superior Court of the District of Columbia under chapter 23 of title 16, D.C. Code; or</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(3) a payment for counsel authorized under <a href='/dccode/sections/21-2060.html'>section 21-2060</a>, D.C. Code (relating to representation provided under the District of Columbia Guardianship, Protective Proceedings, and Durable Power of Attorney Act of 1986).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(c) STANDARDS FOR SUBMISSION OF COMPLETED VOUCHERS. - The chief judges of the Superior Court of the District of Columbia and the District of Columbia Court of Appeals shall establish standards and criteria for determining whether vouchers submitted for claims for payments described in subsection (b) are complete, and shall publish and make such standards and criteria available to attorneys who practice before such Courts.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(d) RULE OF CONSTRUCTION. - Nothing in this section shall be construed to require the assessment of interest against any claim (or portion of any claim) which is denied by the Court involved.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(e) Effective Date. - This section shall apply with respect to claims received by the Superior Court of the District of Columbia or the District of Columbia Court of Appeals during fiscal year 2002, and claims received previously that remain unpaid at the end of fiscal year 2001, and would have qualified for interest payment under this section.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Prompt Payment of Appointed Counsel. <a href='http://www.govtrack.us/search?q=public%20law%20108-7'>Section 128 of Pub. L. 108-7</a>, Feb. 24, 2003, <a href='http://api.fdsys.gov/link?collection=statute&volume=117&page=11'>117 Stat. 11</a>, provided:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(a) If the Superior Court of the District of Columbia or the District of Columbia Court of Appeals does not make a payment described in subsection (b) prior to the expiration of the 45-day period which begins on the date the Court receives a completed voucher for a claim for the payment, interest shall be assessed against the amount of the payment which would otherwise be made to take into account the period which begins on the day after the expiration of such 45-day period and which ends on the day the Court makes the payment.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(b) A payment described in this subsection is -</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(1) a payment authorized under <a href='/dccode/sections/11-2604.html'>section 11-2604</a> and <a href='/dccode/sections/11-2605.html'>section 11-2605</a>, D.C. Official Code (relating to representation provided under the District of Columbia Criminal Justice Act);</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(2) a payment for counsel appointed in proceedings in the Family Court of the Superior Court of the District of Columbia under chapter 23 of title 16, D.C. Official Code; or</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(3) a payment for counsel authorized under <a href='/dccode/sections/21-2060.html'>section 21-2060</a>, D.C. Official Code (relating to representation provided under the District of Columbia Guardianship, Protective Proceedings, and Durable Power of Attorney Act of 1986).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(c) The chief judges of the Superior Court of the District of Columbia and the District of Columbia Court of Appeals shall establish standards and criteria for determining whether vouchers submitted for claims for payments described in subsection (b) are complete, and shall publish and make such standards and criteria available to attorneys who practice before such Courts.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(d) Nothing in this section shall be construed to require the assessment of interest against any claim (or portion of any claim) which is denied by the Court involved.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(e) This section shall apply with respect to claims received by the Superior Court of the District of Columbia or the District of Columbia Court of Appeals during fiscal year 2003 and any subsequent fiscal year.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

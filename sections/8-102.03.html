@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-102.03. Establishment of fee.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1">Chapter 1. Environmental Controls</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-1/Subchapter-I-A">Subchapter I-A. Anacostia River Clean Up and Protection</a></li>
+                    
+                    <li>↪ § 8-102.03. Establishment of fee.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/8-102.02.html">§ 8-102.02. Requirements for disposable carryout bags made available to customers by retail establishments.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/8-102.04.html">§ 8-102.04. Rules; enforcement and penalties for violation.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-102.03. Establishment of fee.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A consumer making a purchase from a retail establishment shall pay at the time of purchase a fee of $.05 for each disposable carryout bag.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A retail establishment shall not advertise or hold out or state to the public or to a customer directly or indirectly that the reimbursement of the fee or any part thereof to be collected by the retail establishment will be assumed or absorbed by the retail establishment or otherwise refunded to the customer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">All retail establishments shall indicate on the consumer transaction receipt the number of disposable carryout bags provided and the total amount of fee charged.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Each retail establishment shall retain $.01 of each $.05 fee collected; provided, that an establishment that chooses to offer a carryout bag credit program to its customers, as set forth in subparagraph (B) of this paragraph, shall retain an additional $.01 from each fee collected, for a total of $.02 for each $.05 fee collected.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A retail establishment shall retain an additional $.01 of each $.05 fee for a carryout program which:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Credits the consumer no less than $.05 for each carryout bag provided by the consumer for packaging their purchases, regardless of whether that bag is paper, plastic, or reusable;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Is prominently advertised at each checkout register; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Reflects the total credit amount on the consumer transaction receipt.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The fees retained by the retail establishment under this paragraph shall not be classified as revenue and shall be tax-exempt for the purposes of Chapters 18, 20, and 27B of Title 47.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">The fees retained by the retail establishment shall be excluded from the definition of retail sale under <a href='/dccode/sections/47-2001.html'>§ 47-2001(n)(2)</a> and from the definition of gross receipts under <a href='/dccode/sections/47-2761.html'>§ 47-2761(5)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">The fees to be remitted to the District under subsection (b)(2) of this section shall be added to other tax payments in determining whether the electronic payment requirement under <a href='/dccode/sections/47-4402.html'>§ 47-4402(c)</a> applies.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The remaining amount of each fee collected shall be paid to the Office of Tax and Revenue and shall be deposited in the Anacostia River Cleanup and Protection Fund established by <a href='/dccode/sections/8-102.05.html'>§ 8-102.05(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Office of Tax and Revenue shall develop rules for frequency and method for reporting and transmitting the fees, as set forth in subsection (a) of this section, to the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Except to the extent of any inconsistency with this subchapter, the same provisions to Title 47 that are applicable to the gross sales tax shall govern the administration, collection, and enforcement of the fee set forth in subsection (a) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Notwithstanding any other law, the Office of Tax and Revenue shall furnish to the District Department of the Environment, upon request, the names, addresses, and whether any fees were collected pursuant to subsection (a) of this section of retail establishments subject to the provisions of this subchapter.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 23, 2009, <a href='http://openlims.org/public/L18-55.pdf'>D.C. Law 18-55</a>, § 4, 56 DCR 5703; Sept. 14, 2011, <a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a>, § 6032(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 6226</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/8-102.04.html'>§ 8-102.04</a>, <a href='/dccode/sections/8-102.05.html'>§ 8-102.05</a>, <a href='/dccode/sections/47-1803.02.html'>§ 47-1803.02</a>, <a href='/dccode/sections/47-2001.html'>§ 47-2001</a>, <a href='/dccode/sections/47-2005.html'>§ 47-2005</a>, and <a href='/dccode/sections/47-2761.html'>§ 47-2761</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a> added subsec. (e).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-55</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 18-55, see notes following <a href='/dccode/sections/8-102.01.html'>§ 8-102.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-21</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-21, the &quot;Fiscal Year 2012 Budget Support Act of 2011&quot;, was introduced in Council and assigned Bill No. 19-203, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on May 25, 2011, and June 14, 2011, respectively. Signed by the Mayor on July 22, 2011, it was assigned Act No. 19-98 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a> became effective on September 14, 2011.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 6031 of <a href='http://openlims.org/public/L19-21.pdf'>D.C. Law 19-21</a> provided that subtitle D of title VI of the act may be cited as &quot;Bag Fee Compliance Amendment Act of 2011&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

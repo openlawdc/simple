@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 40-303.02. Conditions and limitations.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-40">Title 40. Liens</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-40/Chapter-3">Chapter 3. Mechanics, Materialmen, and Contractors</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-40/Chapter-3/Subchapter-II">Subchapter II. Subcontractor&#39;s Lien</a></li>
+                    
+                    <li>↪ § 40-303.02. Conditions and limitations.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/40-303.01.html">§ 40-303.01. Subcontractor&#39;s lien - generally.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/40-303.03.html">§ 40-303.03. Notice to owner.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 40-303.02. Conditions and limitations.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A lien in favor of parties so employed by the original contractor shall be subject to the terms and conditions of the contract, if any, between the owner and the original contractor except any terms and conditions therein that relate to the original contractor&#39;s right to waive liens on behalf of the parties employed. The lien of the parties shall be limited to the amount due, or to become due, but unpaid to the original contractor and shall be satisfied, in whole or in part, out of that amount only. If the original contractor, by reason of any breach by the original contractor of his, her, or its agreement with the owner, shall be entitled to recover less than the amount agreed upon between them, the liens of the parties employed by the original contractor shall be enforceable only to the extent of the reduced amount.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the owner, in good faith, has paid the original contractor in full for the project of the original contract (and the amount of the payment is not disputed by the original contractor), the parties employed by the original contractor shall not be entitled to a lien on the owner&#39;s real property to recover any amounts due and owing for their work or materials provided for the erection, construction, improvement, repair of, or addition to the real property; provided, that if a subcontractor, materialman, or supplier notifies the owner in writing of amounts due to the subcontractor, materialman, or supplier (&quot;notice amount&quot;) while the owner has a balance due and owing or to become due and owing to the original contractor that is not less than the notice amount, the notice of the notice amount shall be prima facie evidence that any payment thereafter by the owner to the original contractor was not made in good faith. Any provision in a contract, purchase order, or similar document that prohibits a subcontractor, materialman, or supplier from contacting or communicating with an owner shall be void to the extent it prevents compliance with the notice requirements of this subsection.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 3, 1901, 31 Stat. 1384, ch. 854, § 1240; Oct. 20, 2005, <a href='http://openlims.org/public/L16-31.pdf'>D.C. Law 16-31</a>, § 2(e), 52 DCR 7195.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 38-104.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 38-104.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-31.pdf'>D.C. Law 16-31</a> rewrote section, which had read as follows: &quot;All such liens in favor of parties so employed by the contractor shall be subject to the terms and conditions of the original contract except such as shall relate to the waiver of liens and shall be limited to the amount to become due to the original contractor and be satisfied, in whole or in part, out of said amount only; and if said original contractor, by reason of any breach of the contract on his part, shall be entitled to recover less than the amount agreed upon in his contract, the liens of said parties so employed by him shall be enforceable only for said reduced amount, and if said original contractor shall be entitled to recover nothing said liens shall not be enforceable at all.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-31</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-31, see notes following <a href='/dccode/sections/40-301.03.html'>§ 40-301.03</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

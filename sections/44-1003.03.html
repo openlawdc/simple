@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-1003.03. Hearing.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-10">Chapter 10. Nursing Homes and Community Residence Facilities Protections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-10/Subchapter-III">Subchapter III. Discharge, Transfer, and Relocation of Residents</a></li>
+                    
+                    <li>↪ § 44-1003.03. Hearing.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/44-1003.02.html">§ 44-1003.02. Notice to resident and resident&#39;s representative.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/44-1003.04.html">§ 44-1003.04. Discussion and counseling.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-1003.03. Hearing.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Whenever a facility decides to involuntarily discharge, transfer, or relocate a resident, that resident, his or her representative, or the Long-Term Care Ombudsman may contest the decision by mailing a written hearing request to the Mayor and notifying the administrator or facility staff of the request:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Within 7 calendar days after receiving notice of a proposed discharge or transfer to another facility; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Within 5 calendar days after receiving notice of a proposed relocation within the facility.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the resident or resident&#39;s representative mails the hearing request from the facility, the day he or she places it in the facility&#39;s outgoing mail or gives it to a member of the facility staff for mailing shall be considered the date of mailing for purposes of the 7-day and 5-day time limits. In all other cases, the postmark date shall be considered the date of mailing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A timely hearing request shall stay the discharge, transfer, or relocation unless a condition set forth in <a href='/dccode/sections/44-1003.02.html'>§ 44-1003.02(b)(1)</a> and (2) develops in the interim.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Mayor shall hold a hearing at the resident&#39;s facility within 5 calendar days, and shall render a decision within 7 calendar days, after a timely hearing request is received. The facility shall have the burden of proof unless the ground for the proposed discharge, transfer, or relocation is a prescribed change in the resident&#39;s level of care, in which case the person(s) responsible for prescribing that change shall have the burden of proof and the resident shall have the right to challenge the level of care determination at the hearing. A hearing held under this section may not be used by the resident to litigate or relitigate Medicaid eligibility.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If the Mayor finds that the existence of a ground listed in <a href='/dccode/sections/44-1003.01.html'>§ 44-1003.01(a)</a> has been proven by clear and convincing evidence, the resident shall not be:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Discharged or transferred from the facility before the 22nd calendar day following his or her receipt of the notice required by <a href='/dccode/sections/44-1003.02.html'>§ 44-1003.02(a)</a> or the 5th calendar day following his or her notification of the hearing decision, whichever is later, unless a condition set forth in <a href='/dccode/sections/44-1003.02.html'>§ 44-1003.02(b)(1)</a> and (2) develops in the interim; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Relocated within the facility before the 8th calendar day following his or her receipt of the notice required by <a href='/dccode/sections/44-1003.02.html'>§ 44-1003.02(a)</a> or the 3rd calendar day following his or her notification of the hearing decision, whichever is later, unless a condition set forth in <a href='/dccode/sections/44-1003.02.html'>§ 44-1003.02(b)(1)</a> and (2) develops in the interim.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 18, 1986, <a href='http://openlims.org/public/L6-108.pdf'>D.C. Law 6-108</a>, § 303, 33 DCR 1510; Mar. 16, 1989, <a href='http://openlims.org/public/L7-218.pdf'>D.C. Law 7-218</a>, § 602(c), 36 DCR 534.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Long-term care ombudsman program, ombudsman duties, see <a href='/dccode/sections/7-702.04.html'>§ 7-702.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/7-702.04.html'>§ 7-702.04</a> and <a href='/dccode/sections/44-1003.04.html'>§ 44-1003.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 32-1433.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-108</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-108.pdf'>D.C. Law 6-108</a>, see Historical and Statutory Notes following <a href='/dccode/sections/44-1001.01.html'>§ 44-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-218</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L7-218.pdf'>D.C. Law 7-218</a>, see Historical and Statutory Notes following <a href='/dccode/sections/44-1001.01.html'>§ 44-1001.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Delegation of authority pursuant to <a href='http://openlims.org/public/L6-108.pdf'>D.C. Law 6-108</a>, see Mayor&#39;s Order 86-129, August 8, 1986.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Delegation of authority pursuant to <a href='http://openlims.org/public/L6-108.pdf'>D.C. Law 6-108</a>, &quot;Nursing Home and Community Residence Facility Residents&#39; Protection Act of 1985.&quot;, see Mayor&#39;s Order 88-230, October 19, 1988.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

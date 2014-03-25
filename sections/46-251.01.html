@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 46-251.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-46">Title 46. Domestic Relations</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-46/Chapter-2">Chapter 2. Child Support and Medical Support Enforcement</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-46/Chapter-2/Subchapter-II">Subchapter II. Medical Support Enforcement</a></li>
+                    
+                    <li>↪ § 46-251.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-46/Chapter-2/Subchapter-II">Subchapter II. Medical Support Enforcement</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/46-251.02.html">§ 46-251.02. Use of medical support notice; IV-D agency.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 46-251.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Custodian&quot; means the parent, relative, guardian, or other person with whom the dependent child resides.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Health insurance coverage&quot; means benefits consisting of amounts paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or amounts paid for the purpose of affecting any structure or function of the body (provided directly, through insurance or reimbursement, or otherwise, and includes items and services) under any hospital or medical service policy or certificate, hospital, or medical service plan contract, or health maintenance organization contract offered by a health insurer that is available to either parent, under which medical services could be provided to a dependent child.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Health insurer&quot; means any person that provides one or more health benefit plans or insurance in the District of Columbia, including a group health plan, as defined in section 607(1) of the Employee Retirement Income Security Act of 1974, approved April 7, 1986 (<a href='http://api.fdsys.gov/link?collection=statute&volume=100&page=231'>100 Stat. 231</a>; 29 U.S.C. § 1167(1)), a plan administrator as defined in section 3(16) of the Employee Retirement Income Security Act of 1974, approved September 2, 1974 (<a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=835'>88 Stat. 835</a>; 29 U.S.C. § 1002(16)), an insurer, a hospital and medical service corporation, a health maintenance organization, a multiple employer welfare arrangement, or any other person providing a plan of health insurance subject to the authority of the Commissioner of the Department of Insurance and Securities Regulation [Commissioner of Insurance, Securities, and Banking].</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;IV-D agency&quot; means the organizational unit of the District of Columbia government, its contractors or assignees, or a successor organizational unit, that is responsible for administering or supervising the administration of the District of Columbia&#39;s State Plan under Part D of Title IV of the Social Security Act, approved January 4, 1975 (<a href='http://api.fdsys.gov/link?collection=statute&volume=88&page=2351'>88 Stat. 2351</a>; 42 U.S.C. § 651 et seq.), pertaining to parent locator services, paternity establishment, and the establishment, modification, and enforcement of support orders.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Medical support notice&quot; means a notice issued by the IV-D agency that meets the requirements of a National Medical Support Notice promulgated under section 401(b) of the Child Support Performance and Incentive Act of 1998, approved July 16, 1998 (<a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=660'>112 Stat. 660</a>; 42 U.S.C. § 651 note).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Support order&quot; means a judgment, decree, or order, whether temporary or final, or subject to modification, issued by a court or an administrative agency of competent jurisdiction, for the support and maintenance of a child, including a child who has attained the age of majority under the law of the issuing state, or a child and the parent with whom the child is living, which provides for monetary support, health care, arrearages, or reimbursement, and which may include related costs and fees, interest and penalties, income withholding, attorneys&#39; fees, and other relief.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 30, 2004, <a href='http://openlims.org/public/L15-130.pdf'>D.C. Law 15-130</a>, § 101, 51 DCR 1615; Mar. 20, 2008, <a href='http://openlims.org/public/L17-128.pdf'>D.C. Law 17-128</a>, § 3(a), 55 DCR 1525.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-128.pdf'>D.C. Law 17-128</a>, in par. (2), substituted &quot;health insurer that is available to either parent, under which medical services could be provided to a dependent child&quot; for &quot;health insurer&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 101 of Medical Support Establishment and Enforcement Temporary Amendment Act of 2002 (<a href='http://openlims.org/public/L14-238.pdf'>D.C. Law 14-238</a>, March 25, 2003, law notification 50 DCR 2751).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 101 of Medical Support Establishment and Enforcement Temporary Amendment Act of 2003 (<a href='http://openlims.org/public/L15-84.pdf'>D.C. Law 15-84</a>, March 10, 2004, law notification 51 DCR 3376).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of this section, see § 101 of Medical Support Establishment and Enforcement Emergency Amendment Act of 2002 (D.C. Act 14-485, October 3, 2002, 49 DCR 9631).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of this section, see § 101 of Medical Support Establishment and Enforcement Congressional Review Emergency Amendment Act of 2002 (D.C. Act 14-600, January 7, 2003, 50 DCR 664).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of this section, see § 101 of Medical Support Establishment and Enforcement Emergency Amendment Act of 2003 (D.C. Act 15-208, October 24, 2003, 50 DCR 9856).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of this section, see § 101 of Medical Support Establishment and Enforcement Congressional Review Emergency Amendment Act of 2004 (D.C. Act 15-330, January 28, 2004, 51 DCR 1603).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-130</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-130, the &quot;Medical Support Establishment and Enforcement Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-219, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on December 2, 2003, and January 6, 2004, respectively. Signed by the Mayor on January 28, 2004, it was assigned Act No. 15-331 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-130.pdf'>D.C. Law 15-130</a> became effective on March 30, 2004.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-128</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 17-128, the &quot;Child Support Compliance Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-291 which was referred to the Committee on Public Safety and Judiciary. The Bill was adopted on first and second readings on December 11, 2007, and January 8, 2008, respectively. Signed by the Mayor on January 29, 2008, it was assigned Act No. 17-277 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L17-128.pdf'>D.C. Law 17-128</a> became effective on March 20, 2008.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

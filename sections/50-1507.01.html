@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 50-1507.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50">Title 50. Motor and Non-Motor Vehicles and Traffic</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-15">Chapter 15. Registration of Motor Vehicles</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-15/Subchapter-IV">Subchapter IV. International Registration Plan Agreements</a></li>
+                    
+                    <li>↪ § 50-1507.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-50/Chapter-15/Subchapter-IV">Subchapter IV. International Registration Plan Agreements</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/50-1507.02.html">§ 50-1507.02. Reciprocal agreements.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 50-1507.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Apportioned operator&quot; means registrant of a fleet of apportioned vehicles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Apportionment&quot; means registration based on a proportional payment of registration fees, whether determined by a quotient of miles traveled, revenue received, average presence, or any other similar method.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Apportionable vehicle&quot; means any vehicle, except recreational vehicles, vehicles displaying restricted plates, buses used in transportation of chartered parties and government-owned vehicles, used or intended for use in two or more member jurisdictions that allocate or proportionally register vehicles and are used for the transportation of persons for hire or designed, used, or maintained primarily for the transportation of property and:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is a power unit having two axles and a gross vehicle weight or registered gross vehicle weight in excess of 26,000 pounds;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is a power unit having three or more axles, regardless of weight; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is used in combination, when the weight of such combination exceeds 26,000 pounds gross vehicle weight.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Base jurisdiction&quot; means, for purposes of fleet registration, the jurisdiction where the registrant has an established place of business, where mileage is accrued by the fleet, and where operational records of such fleet are maintained or can be made available in accordance with section 1602 of the International Registration Plan (&quot;IRP&quot;).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Base plate&quot; means the plate issued by the base jurisdiction and shall be the only registration identification plate issued for the vehicle by any member jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Combined Gross Vehicle Weight&quot; (&quot;CGVW&quot;) means the total unladen weight of a combination of vehicles and weight of the load carried on that combination of vehicles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Established place of business&quot; means a physical structure owned, leased, or rented by the fleet registrant and used as his or her main office. The physical structure shall be designated by a street number or road location, be open during normal business hours, and have located within it:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A telephone or telephones publicly listed in the name of the fleet registrant;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A person or persons conducting the fleet registrant&#39;s business; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The operational records of the fleet.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Fleet&quot; means one or more apportionable vehicles.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Interjurisdictional movement&quot; means vehicular movement between or through two or more jurisdictions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Intrajurisdictional movement&quot; means vehicular movement from one point within a jurisdiction to another point within the same jurisdiction.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;IRP&quot; means the abbreviation for the reciprocal agreement, the International Registration Plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;IVMR&quot; means Individual Vehicle Mileage Record which serves as the original record generated in the course of actual vehicle operation and is used as a source document to verify the registrant&#39;s application for accuracy.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Member jurisdiction&quot; means a jurisdiction which has applied for membership and has been accepted by all members of the IRP.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Motor carrier&quot; means an individual, partnership, or corporation engaged in the transportation of goods or persons.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Owner&quot; means any person, firm, or corporation other than the lienholder holding legal title to a vehicle.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Properly registered vehicle&quot; means a vehicle which has been registered in full compliance with the laws of all jurisdictions in which it is intended to operate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Reciprocity&quot; means the reciprocal granting of rights and privileges to vehicles properly registered under the IRP and to vehicles not so registered if these vehicles are subject to separate reciprocity agreements, arrangements, declarations, or understandings.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Trip permit&quot; means a temporary permit issued by a jurisdiction in lieu of regular registration reciprocity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Uniform mileage schedule&quot; means the official IRP form provided to record mileage by jurisdictions and total fleet miles derived from operational records.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 5, 1997, <a href='http://openlims.org/public/L12-14.pdf'>D.C. Law 12-14</a>, § 2, 44 DCR 3620; Apr. 20, 1999, <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, § 42, 46 DCR 2118.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 40-121.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of subchapter, see §§ 2 to 7, 9 of International Registration Plan Agreement Temporary Act of 1996 (<a href='http://openlims.org/public/L11-189.pdf'>D.C. Law 11-189</a>, April 9, 1997, law notification 43 DCR 2384).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of this subchapter, see §§ 2-7 and 9 of the International Registration Plan Agreement Emergency Act of 1996 (D.C. Act 11-291, July 9, 1996, 43 DCR 4152), §§ 2-7 and 9 of the International Registration Plan Agreement Congressional Review Emergency Act of 1996 (D.C. Act 11-465, December 30, 1996, 44 DCR 161), and §§ 2-7 and 9 of the International Registration Plan Agreement Congressional Review Emergency Act of 1997 (D.C. Act 12-17, March 3, 1997, 44 DCR 1756).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-14</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-14, the &quot;International Registration Plan Agreement Act of 1997,&quot; was introduced in Council and assigned Bill No. 12-19. The Bill was adopted on first and second readings on March 4, 1997, and May 6, 1997, respectively. Signed by the Mayor on May 23, 1997, it was assigned Act No. 12-91 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-14.pdf'>D.C. Law 12-14</a> became effective on September 5, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-264, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-804, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Signed by the Mayor on January 7, 1999, it was assigned Act No. 12-626 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The International Registration Plan, referred to in (4), is defined at 49 U.S.C. § 31701(4).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Resolutions</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Resolution 16-548, the &quot;Commercial Driver&#39;s License and International Registration Plan Enforcement Approval Resolution of 2006&quot;, was approved effective March 7, 2006.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

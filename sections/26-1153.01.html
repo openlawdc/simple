@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 26-1153.01. Violations and remedies.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-26">Title 26. Banks and Other Financial Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-26/Chapter-11A">Chapter 11A. Home Loan Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-26/Chapter-11A/Subchapter-III">Subchapter III. Violations and Remedies; Enforcement and Civil Liability</a></li>
+                    
+                    <li>↪ § 26-1153.01. Violations and remedies.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-26/Chapter-11A/Subchapter-III">Subchapter III. Violations and Remedies; Enforcement and Civil Liability</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/26-1153.02.html">§ 26-1153.02. Enforcement.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 26-1153.01. Violations and remedies.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor or any borrower under a covered loan may recover damages for a lender&#39;s violation of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Notwithstanding subsection (a) of this section, if the violation of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter was caused by the borrower, his or her employer, or a creditor providing materially incorrect information to the lender, which inaccuracy the lender did not discover prior to the covered loan funding, and if the lender reasonably attempted to verify the current and expected income and current debts of the borrowers in accordance with <a href='/dccode/sections/26-1152.02.html'>§ 26-1152.02(c)</a>, the lender shall not be liable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Damages or other relief awarded to the borrower under this section may include:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Reformation of the covered loan to correct or remove an unfair term or a term obtained in violation of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter, whichever is applicable as of the date of initial funding;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Actual damages;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Injunctive relief;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Reasonable attorneys&#39; fees and costs; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Statutory damages in an amount to be determined by the finder of fact if the finder of fact determines that the lender has engaged in a systematic pattern of practices and acted in violation of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">An action for violation of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter shall be filed no later than 3 years after the violation has been discovered or should have been discovered.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A lender making a covered loan who, when acting in good faith, fails to comply with <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter, shall not be deemed to have violated <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter if the lender establishes one of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Without regard to who discovered the error, within 120 days of the covered loan initial funding and prior to the institution of judicial process under this section, the borrower was notified of the violation, appropriate restitution was made, and whatever adjustments are necessary were made to the covered loan, at the choice of the lender, to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Conform the covered loan to the requirements of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Materially change the terms of the covered loan to benefit the borrower; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Remove the features that caused the loan to be considered a covered loan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The violation resulted from a bona fide error notwithstanding the lender&#39;s maintenance of procedures reasonably designed to avoid the error and, within 60 days after the discovery of the compliance failure and prior to the filing of an action under this section, the borrower was notified of the compliance failure, appropriate restitution was made, and whatever adjustments are necessary were made to the covered loan, at the choice of the lender, to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Conform the covered loan to the requirements of <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Materially change the terms of the covered loan to benefit the borrower; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Remove the features that caused the loan to be considered a covered loan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the lender fails to comply with <a href='/dccode/sections/26-1152.11.html'>§ 26-1152.11</a> or section 129(a) and (b) of the Truth in Lending Act in the case of a lender covered by <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a>, the lender shall not be deemed to have violated <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter, only if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The lender satisfies paragraph (1) (A) (i) or (B) (ii) of this subsection;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The lender provided the borrower with a disclosure notice prior to the closing of the covered loan; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The failure to comply with <a href='/dccode/sections/26-1152.11.html'>§ 26-1152.11</a>, or section 129(a) or (b) of the Truth in Lending Act in the case of a lender covered by <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a>, shall not have been shown to be part of a pattern or practice of such non-compliance.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">For the purposes of this subsection, a bona fide error shall include clerical error or, calculation, computer malfunction, and programming and printing errors. An error of legal judgment with respect to a lender&#39;s obligations under <a href='/dccode/sections/26-1151.02.html'>§ 26-1151.02</a> or subchapter II of this chapter shall not constitute a bona fide error.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">No provision of this chapter shall be applied or interpreted to bar a borrower from bringing an action in an appropriate court of competent jurisdiction pursuant to any District or federal law for damages, injunctive relief, or any other relief.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The remedies provided in this chapter shall be the sole and exclusive remedies for the violation of any provision of this chapter.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 7, 2002, <a href='http://openlims.org/public/L14-132.pdf'>D.C. Law 14-132</a>, § 301, 49 DCR 2551.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition of section, see § 301 of Home Loan Protection Emergency Act of 2002 (D.C. Act 14-295, March 1, 2002, 49 DCR 2534).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-132</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-132, see notes following <a href='/dccode/sections/26-1151.01.html'>§ 26-1151.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Sections 129(a) and (b) of the Truth in Lending Act, referred to in subsecs. (e)(2) and (e)(2)(C), is classified to 15 U.S.C. § 1639(a) and (b).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

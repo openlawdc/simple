@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 22-902. Trademark counterfeiting.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22">Title 22. Criminal Offenses and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-9">Chapter 9. Commercial Counterfeiting</a></li>
+                    
+                    <li>↪ § 22-902. Trademark counterfeiting.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/22-901.html">§ 22-901. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-22/Chapter-9A">Chapter 9A. Criminal Abuse and Neglect of Vulnerable Adults</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 22-902. Trademark counterfeiting.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person commits the offense of counterfeiting if such person willfully manufactures, advertises, distributes, offers for sale, sells, or possesses with intent to sell or distribute any items, or services bearing or identified by a counterfeit mark. There shall be a rebuttable presumption that a person having possession, custody, or control of more than 15 items bearing a counterfeit mark possesses said items with the intent to sell or distribute.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A person convicted of counterfeiting shall be subject to the following penalties:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">For the first conviction, except as provided in paragraphs (2) and (3) of this subsection, by a fine not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a> or by imprisonment for not more than 180 days, or both;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">For the second conviction, or if convicted under this section of an offense involving more than 100 but fewer than 1,000 items, or involving items with a total retail value greater than $1,000 but less than $10,000, by a fine not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a> or by imprisonment for not more than 3 years, or both; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">For the third or subsequent conviction, or if convicted under this section of an offense involving the manufacture or production of items bearing counterfeit marks involving 1,000 or more items, or involving items with a total retail value of $10,000 or greater, by a fine not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a> or by imprisonment for not more than 10 years, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">For the purposes of this chapter, the quantity or retail value of items or services shall include the aggregate quantity or retail value of all items bearing, or services identified by, every counterfeit mark the defendant manufactures, advertises, distributes, offers for sale, sells, or possesses.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The fines provided in subsection (b) of this section shall be no less than twice the retail value of the items bearing, or services identified by, a counterfeit mark, unless extenuating circumstances are shown by the defendant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Any items bearing a counterfeit mark and all personal property, including, but not limited to, any items, objects, tools, machines, equipment, instrumentalities, or vehicles of any kind, employed or used in connection with a violation of this chapter shall be seized by any law enforcement officer, including any designated civilian employee of the Metropolitan Police Department, in accordance with the procedures established by <a href='/dccode/sections/48-905.02.html'>§ 48-905.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">All seized personal property shall be forfeited.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Upon the request of the owner of the intellectual property, all seized items bearing a counterfeit mark shall be released to the intellectual property owner for destruction or disposition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">If the owner of the intellectual property does not request release of seized items bearing a counterfeit mark, such items shall be destroyed unless the owner of the intellectual property consents to another disposition.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">Any state or federal certificate of registration of any intellectual property shall be prima facie evidence of the facts stated therein.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">The remedies provided for herein shall be cumulative to the other civil and criminal remedies provided by law.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(June 3, 1997, <a href='http://openlims.org/public/L11-271.pdf'>D.C. Law 11-271</a>, § 3, 43 DCR 4585; June 12, 1999, <a href='http://openlims.org/public/L12-284.pdf'>D.C. Law 12-284</a>, § 3, 46 DCR 1328; June 11, 2013, <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>, §§ 111(b), 207, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/16-801.html'>§ 16-801</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 22-752.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2013 amendment by <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>, in (b), substituted &quot;not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a>&quot; for &quot;not exceeding $1,000&quot; in (b)(1), for &quot;not exceeding $3,000&quot; in (b)(2), and for &quot;not exceeding $10,000&quot; in (b)(3); and substituted &quot;twice&quot; for &quot;3 times&quot; in (d).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3 of <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> inserted &quot;including any designated civilian employee of the Metropolitan Police Department&quot; in the introductory language of (e).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 13(b) of <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3 of the Metropolitan Police Department Civilianization and Street Solicitation for Prostitution Emergency Amendment Act of 1998 (D.C. Act 12-428, August 6, 1998, 45 DCR 5884).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 3 of the Metropolitan Police Department Civilianization Legislative Review Emergency Amendment Act of 1998 (D.C. Act 12-506, November 10, 1998, 45 DCR 45 8139), and § 3 of the Metropolitan Police Department Civilianization Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-13, February 8, 1999, 46 DCR 2333).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 days) amendment of this section, see §§ 111(b) and 207 of the Criminal Fine Proportionality Emergency Act of 2013 (D.C. Act 20-45, April 1, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 5400</a>, 20 DCSTAT 1300).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-271</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L11-271.pdf'>D.C. Law 11-271</a>, see Historical and Statutory Notes following <a href='/dccode/sections/22-901.html'>§ 22-901</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-282</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-282, the &quot;Metropolitan Police Department Civilianization Temporary Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-709. The Bill was adopted on first and second readings on July 7, 1998, and September 22, 1998, respectively. Signed by the Mayor, it was assigned Act No. 12-492 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> became effective on May 28, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-284</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-284, the &quot;Metropolitan Police Department Civilianization Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-710, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on December 1, 1998, and December 15, 1998, respectively. Signed by the Mayor, it was assigned Act No. 12-613 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-284.pdf'>D.C. Law 12-284</a> became effective on June 12, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-317, the &quot;Criminal Fine Proportionality Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-214. The Bill was adopted on first and second readings on Oct. 16, 2012, and Nov. 1, 2012, respectively. Signed by the Mayor on Jan. 23, 2013, it was assigned Act No. 19-641 and transmitted to Congress for its review. <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> became effective on June 11, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Applicability of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>: Section 401 of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> provided that the act shall apply only to offenses committed on or after June 11, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

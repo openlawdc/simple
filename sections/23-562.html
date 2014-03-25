@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 23-562. Execution and return.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23">Title 23. Criminal Procedure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/Chapter-5">Chapter 5. Warrants and Arrests</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-23/Chapter-5/Subchapter-IV">Subchapter IV. Arrest Warrant and Summons</a></li>
+                    
+                    <li>↪ § 23-562. Execution and return.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/23-561.html">§ 23-561. Issuance, form, and contents.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/23-563.html">§ 23-563. Territorial and other limits.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 23-562. Execution and return.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A warrant issued pursuant to this subchapter shall be executed by the arrest of the person named. The officer need not have the warrant in his possession at the time of the arrest, but upon request he shall show the warrant to the person as soon as possible. If the officer does not have the warrant in his possession at the time of the arrest, he shall inform the person of the offense charged and of the fact that a warrant has been issued.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A summons shall be served upon a person by delivering a copy to him personally, by leaving it at his dwelling house or usual place of abode with some person of suitable age and discretion then residing therein, or by mailing it to the person&#39;s last known address.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The officer executing a warrant shall make return thereof to the judicial officer before whom the person is brought for preliminary examination. At the request of the appropriate prosecutor, any unexecuted and unexpired warrant shall be returned to the issuing court or judicial officer and shall be canceled.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">On or before the return day the person to whom a summons was delivered for service shall make return thereof to the court or officer before whom the summons is returnable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">At the request of the appropriate prosecutor made at any time while the complaint is pending, a warrant returned unexecuted and not canceled or expired or a summons returned unserved or a duplicate thereof may be delivered by the judicial officer to the marshal or other authorized person for execution or service.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A law enforcement officer within the District of Columbia making an arrest under a warrant issued pursuant to this subchapter, making an arrest without a warrant, or receiving a person arrested by a special policeman or other person pursuant to <a href='/dccode/sections/23-582.html'>§ 23-582</a>, or a designated civilian employee of the Metropolitan Police Department receiving a person arrested by a law enforcement officer within the District of Columbia or a special policeman or other person pursuant to <a href='/dccode/sections/23-582.html'>§ 23-582</a>, shall take the arrested person without unnecessary delay before the court or other judicial officer empowered to commit persons charged with the offense for which the arrest was made. This subsection, however, shall not be construed to conflict with or otherwise supersede section 3501 of Title 18, United States Code. When a person arrested without a warrant is brought before a judicial officer, a complaint or information shall be filed forthwith.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Before taking an arrested person to a judicial officer, a law enforcement officer or a designated civilian employee of the Metropolitan Police Department, may perform any recording, fingerprinting, photographing, or other preliminary police duties required in the particular case, and if such duties are performed with reasonable promptness, the period of time required therefor shall not constitute a delay within the meaning of this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=628'>84 Stat. 628</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title II, § 210(a); June 12, 1999, <a href='http://openlims.org/public/L12-284.pdf'>D.C. Law 12-284</a>, § 8(b), 46 DCR 1328.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Execution of warrants by police force, see <a href='/dccode/sections/5-127.05.html'>§ 5-127.05</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 23-562.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 23-562.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 8(b) of <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> inserted &quot;or a designated civilian employee of the Metropolitan Police Department receiving a person arrested by a law enforcement officer within the District of Columbia or a special policeman or other person pursuant to <a href='/dccode/sections/23-582.html'>§ 23-582</a> (1981 Ed.)&quot; in (c)(1); and in (c)(2), inserted &quot;or a designated civilian employee of the Metropolitan Police Department.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 13(b) of <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 8(b) of the Metropolitan Police Department Civilianization and Street Solicitation for Prostitution Emergency Amendment Act of 1998 (D.C. Act 12-428, August 6, 1998, 45 DCR 5884).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 8(b) of the Metropolitan Police Department Civilianization Legislative Review Emergency Amendment Act of 1998 (D.C. Act 12-506, November 10, 1998, 45 DCR 45 8139), and § 8(b) of the Metropolitan Police Department Civilianization Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-13, February 8, 1999, 46 DCR 2333).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-282</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-282, the &quot;Metropolitan Police Department Civilianization Temporary Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-709. The Bill was adopted on first and second readings on July 7, 1998, and September 22, 1998, respectively. Signed by the Mayor, it was assigned Act No. 12-492 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-282.pdf'>D.C. Law 12-282</a> became effective on May 28, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-284</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-284, the &quot;Metropolitan Police Department Civilianization Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-710, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on December 1, 1998, and December 15, 1998, respectively. Signed by the Mayor, it was assigned Act No. 12-613 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-284.pdf'>D.C. Law 12-284</a> became effective on June 12, 1999.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

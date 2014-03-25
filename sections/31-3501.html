@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3501. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-35">Chapter 35. Hospital and Medical Services Corporations Regulation</a></li>
+                    
+                    <li>↪ § 31-3501. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-35">Chapter 35. Hospital and Medical Services Corporations Regulation</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-3502.html">§ 31-3502. Exclusivity of provisions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3501. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1A) </span>
+                
+                    <span class="" style="">&quot;Community health reinvestment&quot; means expenditures that promote and safeguard the public health or that benefit current or future subscribers, including premium rate reductions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1B) </span>
+                
+                    <span class="" style="">&quot;Contractholder&quot; means a person entering into a subscriber contract with a corporation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Corporation&quot; means a nonstock, nonprofit corporation which is subject to regulation and licensing under this chapter and which offers subscriber contracts as part of a hospital service plan, a medical service plan, or both.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Domestic corporation&quot; means a corporation organized under the laws of the District, or formed or organized under an act of Congress.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3A) </span>
+                
+                    <span class="" style="">&quot;Healthy DC and Health Care Expansion Fund&quot; means the Healthy DC and Health Care Expansion Fund established by <a href='/dccode/sections/31-3514.02.html'>§ 31-3514.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Hospital service plan&quot; means a plan for providing hospital and related services by hospitals and others which entitles a subscriber to certain hospital and related services, or to benefits and indemnification for such services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Mayor&quot; means the Mayor of the District of Columbia or the Mayor&#39;s designated agent.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Medical service plan&quot; means a plan for providing medical services and related services by physicians and others which entitles a subscriber to certain medical and related services, or to benefits and indemnification for such services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Plan&quot; means a hospital service plan, a medical service plan, or a combination of the two.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7A) </span>
+                
+                    <span class="" style="">&quot;Public-private partnership&quot; means a mutually acceptable written agreement between the Mayor and a hospital and medical services corporation that is certified by the Commissioner upon the execution and delivery of the agreement by the parties and which agreement:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Shall include the following provisions:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">A $5 million annual payment to the Healthy DC Fund (or appropriate successor fund) by the hospital and medical services corporation to be used for subsidies that expand health insurance coverage for low-income District residents;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">A targeted city-wide health care initiative aimed at improving nutrition and increasing physical fitness among the District&#39;s senior citizens, or another comparable health promotion program;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">A term not to exceed 5 years, subject to extension upon the mutual written agreement of the parties;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">The maintenance and support of the existing District open enrollment program as it operated prior to the enactment of the Medical Insurance Empowerment Amendment Act of 2008, effective March 25, 2009 (<a href='http://openlims.org/public/L17-369.pdf'>D.C. Law 17-369</a>; 56 DCR 1346) (&quot;open enrollment program&quot;), which program has an estimated average premium of $357 per member per month, and the enhancement of the open enrollment program by offering a new health maintenance organization product that includes comprehensive benefits with an average initial premium currently estimated at about $300 per member per month, which average may vary based upon age and family status, and subject to other reasonable adjustments, but with no adjustments for gender or pre-existing conditions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">The annual premium rate of the existing open enrollment program shall not exceed 125% of the comparable medically underwritten product and shall be determined once every 12 months. The benefit package shall include, at a minimum, primary care services, specialist services, temporomandibular joint problems chiropractic services, mental health and addiction treatment, organ transplantation, treatment for morbid obesity, open heart surgery, and pharmaccutical benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(cc) </span>
+                
+                    <span class="" style="">The medical loss ratio to be utilized in rate filings and determinations shall not exceed 150%;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Under the open enrollment program pursuant to sub-sub-subparagraph (I) of this sub-subparagraph:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(aa) </span>
+                
+                    <span class="" style="">Current members shall be permitted to maintain the option to continue their current open enrollment program coverage or opt for the new health maintenance organization product;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(bb) </span>
+                
+                    <span class="" style="">New open enrollment members shall only be offered the new health maintenance organization product; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 9em">
+            
+                
+                    <span class="level-num" style="">(cc) </span>
+                
+                    <span class="" style="">Total enrollment under subparagraph (A)(iv)(I) of this paragraph shall be capped at 2,500;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 11.25em">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Participation in the open enrollment program (including the health maintenance organization product) may be limited to District residents, which shall be subject to periodic confirmation; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 11.25em">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">A corporation shall prominently advertise the availability of the new open enrollment health maintenance organization product continuously on the Internet and at least quarterly in a newspaper of general circulation throughout the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 13.5em">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">The content and format of the advertising shall be filed with the Commissioner no less than 30 days before its appearance in a newspaper or on the Internet;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">May include the following provisions:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Authority for the Commissioner to grant a hospital and medical services corporation reasonable relief from the requirements of the agreement, such as if federal or state health care reforms make the requirements unnecessary or redundant or if the corporation does not meet a financial performance or similar test as specified in the agreement; provided, that any relief granted shall not affect the certification of the agreement by the Commissioner or the status of the agreement as a public-private partnership for all purposes under this chapter; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Reasonable expiration and termination provisions; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Shall be effective upon the certification of the Commissioner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7B) </span>
+                
+                    <span class="" style="">&quot;RS Fund&quot; means the rate stabilization fund established by <a href='/dccode/sections/31-3514.html'>§ 31-3514(j)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Subscriber&quot; means any person entitled to benefits under the terms and conditions of a subscriber contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Subscriber contract&quot; means a written group or individual contract which is issued to a contractholder by a corporation which provides for subscriber participation in a hospital service plan, a medical service plan, or a combination of the two.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Subsidiary&quot; means an affiliate controlled by a corporation directly or indirectly through 1 or more intermediaries.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Surplus&quot; means the amount by which all admitted assets of the corporation exceed its liabilities, inclusive of the reserves required pursuant to <a href='/dccode/sections/31-3509.html'>§ 31-3509</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 9, 1997, <a href='http://openlims.org/public/L11-245.pdf'>D.C. Law 11-245</a>, § 2, 44 DCR 1158; Mar. 2, 2007, <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a>, § 5012(a), 53 DCR 6899; Mar. 25, 2009, <a href='http://openlims.org/public/L17-369.pdf'>D.C. Law 17-369</a>, § 2(a), 56 DCR 1346; Feb. 4, 2010, <a href='http://openlims.org/public/L18-104.pdf'>D.C. Law 18-104</a>, § 2(a), 56 DCR 9182; Sept. 24, 2010, <a href='http://openlims.org/public/L18-223.pdf'>D.C. Law 18-223</a>, § 5023(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6242</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-4701.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> added pars. (3A) and (7A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-369.pdf'>D.C. Law 17-369</a> redesignated former par. (1) as par. (1B); and added pars. (1) and (1A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-104.pdf'>D.C. Law 18-104</a> redesignated former par. (7A) as par. (7B); and added par. (7A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-223.pdf'>D.C. Law 18-223</a>, in par. (3A), substituted &quot;Healthy DC and Health Care Expansion Fund&quot; for &quot;Healthy DC Fund&quot; both times it appears.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2(a) of <a href='http://openlims.org/public/L18-134.pdf'>D.C. Law 18-134</a> designated par. (7A) as par. (7B); and added par. (7A) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;&#39;(7A) Public-private partnership&#39; means a mutually acceptable written agreement between the Mayor and a hospital and medical services corporation that is certified by the Commissioner upon the execution and delivery of the agreement by the parties and which agreement:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(A) Shall include the following provisions:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(i) A $5 million annual payment to the Healthy DC Fund (or appropriate successor fund) by the hospital and medical services corporation to be used for subsidies that expand health insurance coverage for low-income District residents;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(ii) A targeted city-wide health care initiative aimed at improving nutrition and increasing physical fitness among the District&#39;s senior citizens, or another comparable health promotion program;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(iii) A term not to exceed 5 years, subject to extension upon the mutual written agreement of the parties;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(iv)(I)(aa) The maintenance and support of the existing District open enrollment program as it operated prior to the enactment of the Medical Insurance Empowerment Amendment Act of 2008, effective March 25, 2009 (<a href='http://openlims.org/public/L17-369.pdf'>D.C. Law 17-369</a>; 56 DCR 1346) (&#39;open enrollment program&#39;), which program has an estimated average premium of $357 per member per month, and the enhancement of the open enrollment program by offering a new health maintenance organization product that includes comprehensive benefits with an average initial premium currently estimated at about $300 per member per month, which average may vary based upon age and family status, and subject to other reasonable adjustments, but with no adjustments for gender or pre-existing conditions.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(bb) The annual premium rate of the existing open enrollment program shall not exceed 125% of the comparable medically underwritten product and shall be determined once every 12 months. The benefit package of the health maintenance organization product shall include, at a minimum, primary care services, specialist services, temporomandibular joint problems chiropractic services, mental health and addiction treatment, organ transplantation, treatment for morbid obesity, open heart surgery, and pharmaceutical benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(cc) The medical loss ratio of the health maintenance organization product to be utilized in rate filings and determinations shall not exceed 150%;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(II) Under the open enrollment program pursuant to sub-sub-subparagraph (I) of this sub-subparagraph:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(aa) Current members shall be permitted to maintain the option to continue their current open enrollment program coverage or opt for the new health maintenance organization product;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(bb) New open enrollment members shall only be offered the new health maintenance organization product; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(cc) Total enrollment under subparagraph A)(iv)(I) of this paragraph shall be capped at 2,500;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(v) Participation in the open enrollment program (including the health maintenance organization product) may be limited to District residents, which shall be subject to periodic confirmation; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(vi)(I) A corporation shall prominently advertise the availability of the new open enrollment health maintenance organization product continuously on the Internet and at least quarterly in a newspaper of general circulation throughout the District.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(II) The content and format of the advertising shall be filed with the Commissioner no less than 30 days before its appearance in a newspaper or on the Internet;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(B) May include the following provisions:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(i) Authority for the Commissioner to grant a hospital and medical services corporation reasonable relief from the requirements of the agreement, such as if federal or state health care reforms make the requirements unnecessary or redundant or if the corporation does not meet a financial performance or similar test as specified in the agreement; provided, that any relief granted shall not affect the certification of the agreement by the Commissioner or the status of the agreement as a public-private partnership for all purposes under this act; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(ii) Reasonable expiration and termination provisions; and</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(C) Shall be effective upon the certification of the Commissioner.&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 6(b) of <a href='http://openlims.org/public/L18-134.pdf'>D.C. Law 18-134</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3(a) of <a href='http://openlims.org/public/L18-205.pdf'>D.C. Law 18-205</a>, in par. (3A), substituted &quot;Healthy DC and Health Care Expansion Fund&quot; for &quot;Healthy DC Fund&quot; both times it appears.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 7(b) of <a href='http://openlims.org/public/L18-205.pdf'>D.C. Law 18-205</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 201(a) of <a href='http://openlims.org/public/L18-271.pdf'>D.C. Law 18-271</a> amended subsec. (7A)(A)(v) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(v) Participation in the open enrollment program (including the health maintenance organization product) may be limited to District residents who are ineligible for the DC High Risk Pool Program, as defined in the DC High Risk Pool Program Establishment Temporary Act of 2010, passed on 2nd reading on September 21, 2010 (Enrolled version of Bill 18-939). Participant eligibility shall be subject to periodic confirmation; and&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 302(b) of <a href='http://openlims.org/public/L18-271.pdf'>D.C. Law 18-271</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5012(a) of Fiscal Year 2007 Budget Support Emergency Act of 2006 (D.C. Act 16-477, August 8, 2006, 53 DCR 7068).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5012(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2006 (D.C. Act 16-499, October 23, 2006, 53 DCR 8845).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5012(a) of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2007 (D.C. Act 17-1, January 16, 2007, 54 DCR 1165).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Hospital and Medical Services Corporation Regulatory Emergency Amendment Act of 2009 (D.C. Act 18-277, January 11, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 935</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 3(a) of Medicaid Resource Maximization Emergency Amendment Act of 2010 (D.C. Act 18-390, May 7, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 4339</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 201(a) of DC High Risk Pool Program Establishment Emergency Act of 2010 (D.C. Act 18-522, August 3, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 8001</a>).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5023(a) of Fiscal Year 2011 Budget Support Emergency Act of 2010 (D.C. Act 18-463, July 2, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 6542</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 11-245</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 11-245, the &quot;Hospital and Medical Services Corporation Regulatory Act of 1996,&quot; was introduced in Council and assigned Bill No. 11-780, which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on November 7, 1996, and December 3, 1996, respectively. Signed by the Mayor on December 24, 1996, it was assigned Act No. 11-505 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L11-245.pdf'>D.C. Law 11-245</a> became law on April 9, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-192, see notes following <a href='/dccode/sections/31-205.html'>§ 31-205</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-369</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 17-369, the &quot;Medical Insurance Empowerment Amendment Act of 2008&quot;, was introduced in Council and assigned Bill No. 17-934 which was referred to the Committee on Public Services and Consumer Affairs. The Bill was adopted on first and second readings on December 2, 2008, and December 16, 2008, respectively. Approved without signature of the Mayor on January 23, 2009, it was assigned Act No. 17-704 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L17-369.pdf'>D.C. Law 17-369</a> became effective on March 25,</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 5011 of <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> provided that subtitle B of title V of the act may be cited as the &quot;Hospital and Medical Services Corporation Regulatory Amendment Act of 2006&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

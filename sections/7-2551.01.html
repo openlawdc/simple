@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-2551.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-25">Chapter 25. Firearms Control</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-25/Unit-C">Unit C. Assault Weapons Manufacturing Strict Liability</a></li>
+                    
+                    <li>↪ § 7-2551.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-7/Chapter-25/Unit-C">Unit C. Assault Weapons Manufacturing Strict Liability</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/7-2551.02.html">§ 7-2551.02. Liability.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-2551.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this unit, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Assault weapon&quot; shall have the same meaning as provided in <a href='/dccode/sections/7-2501.01.html'>§ 7-2501.01(3A)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Handgun&quot; means a firearm with a barrel less than 12 inches in length at the time of manufacture.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Dealer&quot; and &quot;importer&quot; shall have the same meaning as in 18 U.S.C. § 921.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Machine gun&quot; shall have the same meaning as in paragraph (10) of <a href='/dccode/sections/7-2501.01.html'>§ 7-2501.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Manufacturer&quot; means any person in business to manufacture or assemble a firearm or ammunition for sale or distribution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Law enforcement agency&quot; means a federal, state, or local law enforcement agency, state militia, or an agency of the United States government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Law enforcement officer&quot; means any officer or agent of an agency defined in paragraph (6) of this section who is authorized to use a handgun or machine gun in the course of his or her work.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 6, 1991, <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a>, § 3, 37 DCR 8482; Mar. 31, 2009, <a href='http://openlims.org/public/L17-372.pdf'>D.C. Law 17-372</a>, § 4, 56 DCR 1365.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-2391.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-372.pdf'>D.C. Law 17-372</a> rewrote par. (1).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Repeal and revival of Law 8-263: <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a> was temporarily repealed by Emergency Act 9-1, § 2, the Assault Weapon Manufacturing Strict Liability Act of 1990 Emergency Repealer Act of 1991 (D.C. Act 9-1, February 15, 1991, 38 DCR 1457). Section 2 of <a href='http://openlims.org/public/L9-3.pdf'>D.C. Law 9-3</a> temporarily repealed <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a>. Section 3(b) of <a href='http://openlims.org/public/L9-3.pdf'>D.C. Law 9-3</a> provided that the act shall expire on the 225th day of its having taken effect or upon the effective date of the Assault Weapon Manufacturing Strict Liability Act of 1990 Repealer Act of 1991, whichever occurs first.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 4 of Firearms Registration Emergency Amendment Act of 2008 (D.C. Act 17-651, January 6, 2009, 56 DCR 911).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-263</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 8-263, the &quot;Assault Weapon Manufacturing Strict Liability Act of 1990,&quot; was introduced in Council and assigned Bill No. 8-132, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on June 27, 1989, and December 11, 1990, respectively. Signed by the Mayor on December 17, 1990, it was assigned Act No. 8-289 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a> became effective March 6, 1991.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-372</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-372, see notes following <a href='/dccode/sections/7-2501.01.html'>§ 7-2501.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effective Dates</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Pursuant to the Court&#39;s holding in Bliley v. Kelly, 23 F.3d 507 (D.C.Cir.1994), the Congressional review period for the Assault Weapon Manufacturing Strict Liability Act of 1990, began to run on November 19, 1991, and the act took effect on February 29, 1992.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Application of Law 8-263: Section 6 of <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a>, as amended by § 3(b) of <a href='http://openlims.org/public/L10-194.pdf'>D.C. Law 10-194</a>, provided that the act shall apply only to the discharge of an assault weapon that is manufactured, imported, or distributed after Mar. 6, 1991, and to the discharge of a machine gun that is manufactured, imported, or distributed after Oct. 7, 1994.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Repeal of Act 9-32: D.C. Act 9-32, the Assault Weapon Manufacturing Strict Liability Act of 1990 Repealer Act of 1991, May 17, 1991, 38 DCR 3380, was repealed by Referendum 006, certified by the Board of Elections and Ethics November 18, 1991.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Findings of Council: Section 2 of <a href='http://openlims.org/public/L8-263.pdf'>D.C. Law 8-263</a> provided findings of Council.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

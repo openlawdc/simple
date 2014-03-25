@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-2105. Program inventory.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-21">Chapter 21. Homestead Housing Preservation</a></li>
+                    
+                    <li>↪ § 42-2105. Program inventory.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/42-2104.html">§ 42-2104. Homestead Housing Preservation Program and Homestead Program Administration established.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/42-2105.01.html">§ 42-2105.01. Privatization of title services.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-2105. Program inventory.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Mayor shall identify and publish in the D.C. Register on an annual basis a list of properties, the titles to which are available for transfer under the Program. The properties shall be properties for which the statutory redemption period has lapsed. In addition to publication in the D.C. Register, the list shall be published in at least 2 major newspapers circulated in the District and through other reasonable methods determined by the Mayor and shall be transmitted to the Council, Advisory Neighborhood Commissions, Community Development Corporation, and any other organizations the Mayor deems appropriate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Along with the list of properties required to be published under subsection (a) of this section, the Mayor shall publish a RFP inviting the submission of proposals for purchase of any of the properties listed. Proposals submitted to the Mayor shall be evaluated in accordance with this chapter and rules promulgated pursuant to this chapter. Each proposal shall outline financial and structural plans for the development, repair, occupancy, maintenance, and ownership of the property and shall contain any other information required by this chapter or any rules promulgated pursuant to this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Mayor may accept unsolicited proposals for any property that has been offered for sale but that was not purchased through the RFP process. A proposal that the Mayor approves shall be submitted to the Council for approval, in whole or in part, by resolution. If the Council does not approve or disapprove the proposed resolution within 60 calendar days, excluding days of Council recess, the proposed resolution shall be deemed disapproved.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Director of the District of Columbia Department of Housing and Community Development is authorized, at his or her discretion, as deemed necessary to achieve the purposes of this chapter, and when it serves the District&#39;s interest in producing affordable housing, to transfer real property in the Program inventory to other programs administered by the District government.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Aug. 9, 1986, <a href='http://openlims.org/public/L6-135.pdf'>D.C. Law 6-135</a>, § 6, 33 DCR 3771; Feb. 24, 1987, <a href='http://openlims.org/public/L6-192.pdf'>D.C. Law 6-192</a>, § 5(c), 33 DCR 7836; June 11, 1999, <a href='http://openlims.org/public/L13-11.pdf'>D.C. Law 13-11</a>, § 2(c), 46 DCR 5487; Apr. 19, 2002, <a href='http://openlims.org/public/L14-114.pdf'>D.C. Law 14-114</a>, § 801(d), 49 DCR 1468; Oct. 19, 2002, <a href='http://openlims.org/public/L14-213.pdf'>D.C. Law 14-213</a>, § 35(c), 49 DCR 8140; Mar. 2, 2007, <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a>,§ 2112, 53 DCR 6899.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 45-2705.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-11.pdf'>D.C. Law 13-11</a> struck the phrase &quot;a semiannual&quot; and inserted the phrase &quot;an annual&quot; in its place.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-114.pdf'>D.C. Law 14-114</a>, in subsec. (a), substituted &quot;Mayor&quot; for &quot;Administrator&quot;; in subsec. (b), substituted &quot;Mayor&quot; for &quot;Administrator&quot; and substituted &quot;development, repair&quot; for &quot;repair&quot; in the third sentence; and added subsec. (c).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-213.pdf'>D.C. Law 14-213</a> made a technical change in the enacting clause of <a href='http://openlims.org/public/L14-114.pdf'>D.C. Law 14-114</a>, § 801(d)(2)(B), which resulted in no change in text.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a> attempted to make the same technical amendment as <a href='http://openlims.org/public/L14-213.pdf'>D.C. Law 14-213</a>, therefore, the amendment was ineffective.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> added subsec. (d).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(e) of Homestead Housing Preservation Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-245.pdf'>D.C. Law 12-245</a>, April 20, 1999, law notification 46 DCR 4158).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(e) of the Homestead Housing Preservation Emergency Amendment Act of 1998 (D.C. Act 12-556, January 12, 1999, 45 DCR 625).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) amendment of section, see § 2(c) of the Homestead Housing Preservation Congressional Review Emergency Amendment Act of 1999 (D.C. Act 13-62, May 10, 1999, 46 DCR 4454).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2112 of Fiscal Year 2007 Budget Support Emergency Act of 2006 (D.C. Act 16-477, August 8, 2006, 53 DCR 7068).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2112 of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2006 (D.C. Act 16-499, October 23, 2006, 53 DCR 8845).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2112 of Fiscal Year 2007 Budget Support Congressional Review Emergency Act of 2007 (D.C. Act 17-1, January 16, 2007, 54 DCR 1165).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-135</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-135.pdf'>D.C. Law 6-135</a>, see Historical and Statutory Notes following <a href='/dccode/sections/42-2101.html'>§ 42-2101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-192.pdf'>D.C. Law 6-192</a>, see Historical and Statutory Notes following <a href='/dccode/sections/42-2103.html'>§ 42-2103</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-11</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 13-11, see notes following <a href='/dccode/sections/42-2102.html'>§ 42-2102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-114</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-114, see notes following <a href='/dccode/sections/42-2102.html'>§ 42-2102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-213</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-213, see notes following <a href='/dccode/sections/47-820.html'>§ 47-820</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-105</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-105, see notes following <a href='/dccode/sections/42-407.html'>§ 42-407</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-192, see notes following <a href='/dccode/sections/42-903.html'>§ 42-903</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 2111 of <a href='http://openlims.org/public/L16-192.pdf'>D.C. Law 16-192</a> provided that subtitle I of title II of the act may be cited as the &quot;Homestead Housing Amendment Act of 2006&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

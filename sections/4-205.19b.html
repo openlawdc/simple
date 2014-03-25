@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-205.19b. Job search and job readiness requirements for TANF applicants.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-2">Chapter 2. Public Assistance</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-2/Subchapter-V">Subchapter V. Public Assistance Programs</a></li>
+                    
+                    <li>↪ § 4-205.19b. Job search and job readiness requirements for TANF applicants.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/4-205.19a.html">§ 4-205.19a. Redetermination of eligibility.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/4-205.19c.html">§ 4-205.19c. Failure to comply with job search and job readiness requirements for TANF applicants.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-205.19b. Job search and job readiness requirements for TANF applicants.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Using a standard process and mechanism, the Mayor shall make a detailed assessment of the skills, prior work experience, employability, and barriers to employment, including domestic violence, mental health, and substance abuse (&quot;assessment&quot;) of each TANF recipient.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">As a condition of eligibility, all TANF applicants shall complete the assessment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Staff responsible for administering the assessment shall receive specific training regarding the administration of the assessment and the follow-up services and programs available to eligible TANF recipients. Training shall include a focus on identifying barriers to employment, such as issues of domestic violence, mental health, and substance abuse.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a-1) </span>
+                
+                    <span class="" style="">As a condition of eligibility, all work-eligible TANF applicants shall complete an employment program orientation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Following the assessment and a positive eligibility determination, a TANF recipient in a single-parent assistance unit shall be required to sign and comply with an agreement to participate in work activities as a condition of continuing eligibility for TANF benefits when the recipient:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Has a child under 6 years of age and is not engaged in paid employment for at least 20 hours per week (or an average of 80 hours per month); or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Has a child 6 years of age and is not engaged in paid employment for at least 30 hours per week (or an average of 120 hours per month).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Mayor shall determine the nature and scope of the work activities that shall be required based on the person&#39;s assessment; provided, that the Mayor shall not require the TANF recipient to participate in work activities for more than 35 hours per week.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">This subsection shall not apply to a TANF recipient who is exempt pursuant to <a href='/dccode/sections/4-205.19g.html'>§ 4-205.19g</a> or subject to the school-attendance requirements of <a href='/dccode/sections/4-205.65.html'>§ 4-205.65</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Following the assessment, each parent in a 2-parent assistance unit who is not engaged in paid employment for at least 35 hours per week (or an average of 140 hours per month) and who is not required to meet the school attendance requirements of <a href='/dccode/sections/4-205.65.html'>§ 4-205.65</a> shall be required to sign and comply with an agreement to participate in job search or job readiness activities as a condition of eligibility for TANF benefits, unless the TANF recipient is exempt pursuant to <a href='/dccode/sections/4-205.19f.html'>§ 4-205.19f</a>, or the other parent in the family is engaged in paid employment and the 2 parents together work for at least 35 hours per week (or for at least 55 hours per week, if the family receives federally-funded child care and no adult in the family has a disability, or caring for a child disability). The Mayor shall determine the nature and scope of the activities based on the assessment. In no event shall the Mayor require the TANF recipient to participate in job search or job readiness activities for more hours than would be necessary for the combined number of hours of participation of both parents to equal 35 hours per week (or 55 hours per week, if the family receives federally-funded child care and no adult in the family has a disability, or caring for a child with a disability).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">The Mayor shall promulgate rules to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Screen and identify applicants with a history of domestic violence while maintaining the confidentiality of such persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Refer such individuals to counseling and supportive services; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Waive, pursuant to a determination of good cause, other program requirements in cases where compliance with such requirements would make it more difficult for such individuals to escape domestic violence or unfairly penalize such individuals who are or have been victimized by such violence, or individuals who are at risk of further domestic violence.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 6, 1982, <a href='http://openlims.org/public/L4-101.pdf'>D.C. Law 4-101</a>, § 519b, as added Apr. 20, 1999, <a href='http://openlims.org/public/L12-241.pdf'>D.C. Law 12-241</a>, § 2(w), 46 DCR 905; Apr. 24, 2007, <a href='http://openlims.org/public/L16-305.pdf'>D.C. Law 16-305</a>, § 14(a), 53 DCR 6198; Mar. 3, 2010, <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, § 5171(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>; Apr. 8, 2011, <a href='http://openlims.org/public/L18-366.pdf'>D.C. Law 18-366</a>, § 2(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2011'>58 DCR 981</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/4-205.19a.html'>§ 4-205.19a</a>, <a href='/dccode/sections/4-205.19c.html'>§ 4-205.19c</a>, <a href='/dccode/sections/4-205.19d.html'>§ 4-205.19d</a>, <a href='/dccode/sections/4-205.19g.html'>§ 4-205.19g</a>, and <a href='/dccode/sections/4-205.19m.html'>§ 4-205.19m</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 3-205.19b.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-305.pdf'>D.C. Law 16-305</a> substituted &quot;has a disability&quot; for &quot;is disabled&quot;, throughout the section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> rewrote subsec. (a); and added subsec. (a-1). Prior to amendment, subsec. (a) read as follows: &quot;(a) Application for public assistance shall be accepted from, or on behalf of, any person who believes himself or herself eligible for public assistance. The application shall be made in the manner and form prescribed by the Council, and shall contain such information as the Mayor shall require.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-366.pdf'>D.C. Law 18-366</a> rewrote subsecs. (a) and (b); and, in subsec. (c), substituted &quot;assessment&quot; for &quot;preliminary assessment&quot;, and substituted &quot;the TANF recipient&quot; for &quot;the applicant&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 2(i) of Public Assistance Temporary Amendment Act of 1997 (<a href='http://openlims.org/public/L12-7.pdf'>D.C. Law 12-7</a>, August 1, 1997, law notification 44 DCR 4639).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 2(i) of Public Assistance Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-130.pdf'>D.C. Law 12-130</a>, July 24, 1998, law notification 45 DCR 6501).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 2(w) of Public Assistance Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-130.pdf'>D.C. Law 12-130</a>, July 24, 1998, law notification 45 DCR 6501).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of section, see note to § 3-205.19a.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5171(a) of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 5171(a) of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-241</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-241.pdf'>D.C. Law 12-241</a>, see Historical and Statutory Notes following <a href='/dccode/sections/4-201.01.html'>§ 4-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-305, see notes following <a href='/dccode/sections/4-110.html'>§ 4-110</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-111, the &quot;Fiscal Year 2010 Budget Support Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-203, which was referred to the Committee on the Whole. The bill was adopted on first and second readings on May 12, 2009, and September 22, 2009, respectively. Signed by the Mayor on December 18, 2009, it was assigned Act No. 18-255 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> became effective on March 3, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-366</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-366, the &quot;TANF Educational Opportunities and Accountability Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-1007, which was referred to the Committee on Human Services. The Bill was adopted on first and second readings on December 7, 2010, and December 21, 2010, respectively. Signed by the Mayor on January 27, 2011, it was assigned Act No. 18-717 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-366.pdf'>D.C. Law 18-366</a> became effective on April 8, 2011.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Short title: Section 5170 of <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a> provided that subtitle R of title V of the act may be cited as the &quot;TANF Work Incentives Act of 2009&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

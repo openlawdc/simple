@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 50-703. Reports; technology assessment, development, and implementation.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50">Title 50. Motor and Non-Motor Vehicles and Traffic</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-50/Chapter-7">Chapter 7. Alternative Fuels Technology</a></li>
+                    
+                    <li>↪ § 50-703. Reports; technology assessment, development, and implementation.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/50-702.html">§ 50-702. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/50-704.html">§ 50-704. Commercial vehicle restrictions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 50-703. Reports; technology assessment, development, and implementation.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Pursuant to rules issued by the Mayor pursuant to <a href='/dccode/sections/50-705.html'>§ 50-705</a>, operators of all covered fleets shall register with the Mayor within 120 days after the effective date of the rules. In the case of fleets which become covered fleets after the effective date of the rules, the fleet operator shall register with the Mayor within 90 days of becoming a covered fleet.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Accurate records shall be maintained by covered fleet operators to verify compliance with this chapter. All records shall be maintained for the current model year and the previous model year. For purposes of enforcement of this chapter, officers and employees of the District, duly designated by the Mayor as inspectors, shall be authorized to inspect the records of a covered fleet operator. All records provided by covered fleet operators shall be treated as confidential and proprietary trade secrets.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Of the new covered fleet vehicles purchased each year by a covered fleet operator in Model Year 1998 and thereafter, at least a specified percentage of the vehicles shall be clean-fuel vehicles as provided in this subsection. These vehicles shall use a clean fuel when operating in the covered area.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Clean-fuel vehicles shall be purchased according to the following percentages in Model Year 1998:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">30% of light duty vehicles (&quot;LDVs&quot;) and light duty trucks (&quot;LDTs&quot;) under 6,000 pounds gross vehicle weight rating (GVWR);</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">30% of LDTs between 6,000 pounds and 8,500 pounds GVWR; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">50% of heavy duty vehicles (&quot;HDVs&quot;) over 8,500 pounds and less than 26,000 pounds GVWR.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Clean-fuel vehicles shall be purchased according to the following percentages in Model Year 1999:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">50% of LDTs and LDVs less than 6,000 pounds GVWR;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">50% of LDTs and LDVs between 6,000 pounds and 8,500 pounds GVWR; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">50% of HDVs more than 8,500 pounds and less than 26,000 pounds GVWR.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Clean-fuel vehicles shall be purchased according to the following percentages in Model Year 2000 and every Model Year thereafter:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">70% of LDTs and LDVs less than 6,000 pounds GVWR;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">70% of LDTs and LDVs between 6,000 pounds and 8,500 pounds GVWR; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">50% of HDVs more than 8,500 pounds and less than 26,000 pounds GVWR.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Any owner or operator of a commercial fleet may petition the Mayor, pursuant to rules issued by the Mayor, for provisional relief from compliance with this section after demonstrating or showing cause of hardship. The Mayor may, after careful and balanced review and after taking into account various factors including cost, available technology, service and repair facilities, safety, lead time, environmental impact pursuant to the public health, safety, or welfare, and any other relevant factors, grant whatever provisional relief deemed appropriate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Failure to comply with the requirements of this section shall result in a fine not to exceed $5,000 for each day of noncompliance and may result in the forfeiture of any right, license, permit, or privilege to operate a commercial vehicle in the District.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 8, 1991, <a href='http://openlims.org/public/L8-243.pdf'>D.C. Law 8-243</a>, § 4, 38 DCR 355; Mar. 17, 1994, <a href='http://openlims.org/public/L10-78.pdf'>D.C. Law 10-78</a>, § 2(b), 40 DCR 8464; Mar. 14, 1995, <a href='http://openlims.org/public/L10-201.pdf'>D.C. Law 10-201</a>, § 2(c), 41 DCR 7178.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 40-2003.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) amendment of section, see § 2(b) of Alternative Fuels of 1990 Temporary Amendment Act of 1992 (<a href='http://openlims.org/public/L9-232.pdf'>D.C. Law 9-232</a>, March 17, 2003, law notification 40 DCR ____.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see § 2(b) of the Alternative Fuels Technology Emergency Amendment Act of 1993 (D.C. Act 10-135, October 27, 1993, 40 DCR 7607), § 2(b) of the Alternative Fuels Technology Congressional Recess Emergency Amendment Act of 1994 (D.C. Act 10-175, January 25, 1994, 41 DCR 510) and § 2 of the Fuels Technology Emergency Amendment Act of 1994 (D.C. Act 10-211, March 17, 1994, 41 DCR 1652).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-243</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L8-243.pdf'>D.C. Law 8-243</a>, see Historical and Statutory Notes following <a href='/dccode/sections/50-701.html'>§ 50-701</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-78</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-78.pdf'>D.C. Law 10-78</a>, see Historical and Statutory Notes following <a href='/dccode/sections/50-702.html'>§ 50-702</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-132</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-132, the &quot;Fuels Technology Temporary Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-591. The Bill was adopted on first and second readings on March 1, 1994, and April 12, 1994, respectively. Signed by the Mayor on April 28, 1994, it was assigned Act No. 10-231 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-132.pdf'>D.C. Law 10-132</a> became effective on June 28, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-201.pdf'>D.C. Law 10-201</a>, see Historical and Statutory Notes following <a href='/dccode/sections/50-701.html'>§ 50-701</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-1002. Equal access to public accommodations and conveyances.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-10">Chapter 10. Rights of Blind and Physically Disabled Persons</a></li>
+                    
+                    <li>↪ § 7-1002. Equal access to public accommodations and conveyances.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/7-1001.html">§ 7-1001. Equal access to public places.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/7-1003~P.html">§ 7-1003. Architectural barrier-free design requirements. [Repealed]</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-1002. Equal access to public accommodations and conveyances.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Persons with physical and mental disabilities are entitled to full and equal accommodations, advantages, facilities, and privileges of all common carriers, airplanes, motor vehicles, railroad trains, motor buses, streetcars, boats, or any other public conveyances or modes of transportation in the District of Columbia, hotels, lodging places, places of public accommodation, amusement, or resort, and other places to which the general public is invited in the District of Columbia, subject only to the conditions and limitations established by law or in accordance with law applicable alike to all persons.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Persons with physical or mental disabilities shall have the right to be accompanied by a service animal in any of the places, accommodations, or conveyances listed in subsection (a) of this section without being denied access because of the service animal. Such persons shall not be required to pay an extra charge for the service animal but shall be liable for any damage done to the premises or facilities by the service animal.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Every service animal trainer who is training an animal to be a service animal shall have the same access and liability conferred upon a person with physical or mental disabilities pursuant to subsection (b) of this section when accompanied by a service animal in training.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">In making a determination that an individual qualifies under this section, a public accommodation or conveyance may make a reasonable inquiry as to an individual&#39;s need for a service animal but shall limit such inquiry to the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Whether the animal is required because of the individual&#39;s disability;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The function or purpose of the animal, including the task or work the animal has been trained to perform;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Whether the animal meets the definition of a service animal provided in <a href='/dccode/sections/7-1009.html'>§ 7-1009(5)</a>; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Whether the animal is housebroken.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 21, 1972, <a href='http://api.fdsys.gov/link?collection=statute&volume=86&page=971'>86 Stat. 971</a>, <a href='http://www.govtrack.us/search?q=public%20law%2092-515'>Pub. L. 92-515</a>, § 2; Mar. 5, 1981, <a href='http://openlims.org/public/L3-144.pdf'>D.C. Law 3-144</a>, § 2(a), 27 DCR 4659; Apr. 24, 2007, <a href='http://openlims.org/public/L16-305.pdf'>D.C. Law 16-305</a>, § 25(b), 53 DCR 6198; May 22, 2010, <a href='http://openlims.org/public/L18-146.pdf'>D.C. Law 18-146</a>, § 2(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 2549</a>; Apr. 27, 2013, <a href='http://openlims.org/public/L19-291.pdf'>D.C. Law 19-291</a>, § 2(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2351</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/7-1004.html'>§ 7-1004</a> and <a href='/dccode/sections/7-1007.html'>§ 7-1007</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-1702.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 6-1502.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-305.pdf'>D.C. Law 16-305</a>, in subsec. (a), substituted &quot;other persons with physical disabilities&quot; for &quot;the otherwise physically disabled&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-146.pdf'>D.C. Law 18-146</a> added subsec. (c).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2013 amendment by <a href='http://openlims.org/public/L19-291.pdf'>D.C. Law 19-291</a> substituted &quot;Persons with physical or mental disabilities&quot; for &quot;The blind and other persons with physical disabilities&quot; in (a); rewrote (b); substituted &quot;with physical or mental disabilities&quot; for &quot;who is blind or deaf&quot; in (c); and added (d).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-144</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 3-144, the &quot;Deaf and Audio Handicapped Amendments Act of 1980,&quot; was introduced in Council and assigned Bill No. 3-127, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on September 16, 1980 and September 30, 1980, respectively. Signed by the Mayor on October 14, 1980, it was assigned Act No. 3-265 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-305</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-305, see notes following <a href='/dccode/sections/7-531.01.html'>§ 7-531.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-146</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-146, the &quot;Service Animal Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-207, which was referred to the Committee on Public Safety and the Judiciary. The bill was adopted on first and second readings on February 2, 2010, and March 2, 2010, respectively. Signed by the Mayor on March 18, 2010, it was assigned Act No. 18-329 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-146.pdf'>D.C. Law 18-146</a> became effective on May 22, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-291</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/sections/7-1001.html'>§ 7-1001</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

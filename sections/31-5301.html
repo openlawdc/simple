@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5301. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-53">Chapter 53. Fraternal Benefit Societies</a></li>
+                    
+                    <li>↪ § 31-5301. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-53">Chapter 53. Fraternal Benefit Societies</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-5302.html">§ 31-5302. Operation for benefit of members and their beneficiaries; bylaws.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5301. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this chapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Benefit contract&quot; means the agreement for provision of benefits authorized by <a href='/dccode/sections/31-5313.html'>§ 31-5313</a>, as that agreement is described in <a href='/dccode/sections/31-5316.html'>§ 31-5316(a)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Benefit member&quot; means an adult member who is designated by the laws or rules of the society to be a benefit member under a benefit contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Certificate&quot; means the document issued as written evidence of the benefit contract.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Commissioner&quot; means the Commissioner of the Department of Insurance, Securities, and Banking.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Fraternal benefit societies&quot; means any incorporated society, order or supreme lodge, without capital stock, including one exempted under the provisions of <a href='/dccode/sections/31-5333.html'>§ 31-5333(a)(2)</a>, whether incorporated or not, conducted solely for the benefit of its members and their beneficiaries and not for profit, operated on a lodge system with ritualistic form of work, having a representative form of government, and which provides benefits in accordance with this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Laws&quot; means the society&#39;s articles of incorporation, charter, constitution and bylaws, however designated.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Lodge&quot; means subordinate member units of the society, known as camps, courts, councils, branches or by any other designation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Lodge System&quot; means a society that has a supreme governing body and subordinate lodges into which members are elected, initiated, or admitted in accordance with its laws, rules, and rituals. Subordinate lodges shall be required by the laws of the society to hold regular meetings periodically in furtherance of the purposes of the society. A society may, at its option, organize and operate lodges for children under the minimum age for adult membership, but membership and initiation in local lodges shall not be required of such children, nor shall they have a voice or vote in the management of the society.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Premiums&quot; means premiums, rates, dues, or other required contributions by whatever name known, which are payable under the certificate.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Representative form of government&quot; means a society in which:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">There is a supreme governing body constituted in one of the following ways:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">By assembly if the supreme governing body is composed of delegates elected directly by the members or at intermediate assemblies or conventions of members or their representatives, together with other delegates as may be prescribed in the society&#39;s laws. A society may provide for election of delegates by mail. The elected delegates shall constitute a majority in number and shall not have less than a majority of the votes and not less than the number of votes required to amend the society&#39;s laws. The assembly shall be elected and shall meet at least once every 4 years and shall elect a board of directors to conduct the business of the society between meetings of the assembly. Vacancies on the board of directors between elections may be filled in the manner prescribed by the society&#39;s laws; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">By direct election if the supreme governing body is a board composed of persons elected by the members, either directly or by their representatives in intermediate assemblies, and any other persons prescribed in the society&#39;s laws. A society may provide for election of the board by mail. Each term of a board member may not exceed 4 years. Vacancies on the board between elections may be filled in the manner prescribed by the society&#39;s laws. Those persons elected to the board shall constitute a majority in number and not less than the number of votes required to amend the society&#39;s laws. A person filling the unexpired term of an elected board member shall be considered to be an elected member. The board shall meet at least quarterly to conduct the business of the society;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The officers of the society are elected either by the supreme legislative or governing body or by the board by whatever name known, as provided in the society&#39;s constitution and bylaws;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">The members, officers, representatives, or delegates shall not vote by proxy; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Only benefit members are eligible for election to the supreme governing body, the board of directors or any intermediate assembly.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Rules&quot; means all rules, regulations, or resolutions adopted by the supreme governing body or board of directors which are intended to have general application to the members of the society.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Society&quot; means fraternal benefit society, unless otherwise indicated.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 29, 1998, <a href='http://openlims.org/public/L12-86.pdf'>D.C. Law 12-86</a>, § 1202, 45 DCR 1172; June 11, 2004, <a href='http://openlims.org/public/L15-166.pdf'>D.C. Law 15-166</a>, § 4(ff), 51 DCR 2817.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Authority of Council to regulate, modify, or eliminate license requirements and to promulgate regulations, see §<a href='/dccode/sections/47-2842.html'>§ 47-2842</a> and 47-2844.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Exemption of fraternal benefit associations from provision of general law governing taxes and license fees for insurance companies, see <a href='/dccode/sections/47-2611.html'>§ 47-2611</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Inspection and examination of insurance companies, see §<a href='/dccode/sections/31-208.html'>§ 31-208</a>, 31-5201, and 31-5202.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Quo warranto proceedings to question right to corporate rights and franchises, see <a href='/dccode/sections/16-3501.html'>§ 16-3501</a> et seq.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-1231.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-166.pdf'>D.C. Law 15-166</a>, in par. (4), substituted &quot;Commissioner of the Department of Insurance, Securities, and Banking&quot; for &quot;Commissioner of Insurance of the District of Columbia&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 4(ff) of Consolidation of Financial Services Emergency Amendment Act of 2004 (D.C. Act 15-381, February 27, 2004, 51 DCR 2653).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-86</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-86, the &quot;Omnibus Regulatory Reform Amendment Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-458, which was referred to the Committee on Public Works and the Environment and the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on December 19, 1997, and January 6, 1998, respectively. Signed by the Mayor on January 21, 1998, it was assigned Act No. 12-256 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-86.pdf'>D.C. Law 12-86</a> became effective on April 29, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-166</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-166, see notes following <a href='/dccode/sections/31-1004.html'>§ 31-1004</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Fraternal Benefit Societies Act of 1998: Section 1201 of <a href='http://openlims.org/public/L12-86.pdf'>D.C. Law 12-86</a> provided that title XII of the act may be cited as the &quot;Fraternal Benefit Societies Act of 1998.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

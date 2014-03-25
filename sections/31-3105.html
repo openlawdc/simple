@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-3105. Exemptions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-31">Chapter 31. Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage</a></li>
+                    
+                    <li>↪ § 31-3105. Exemptions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/31-3104.html">§ 31-3104. Mental illness benefits.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-3106.html">§ 31-3106. Certification of nonhospital residential facilities and outpatient treatment facilities.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-3105. Exemptions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Methods of determining levels of payment or reimbursement for services, or for the type of facility charge eligible for payment or reimbursement under this chapter, and shall be consistent with those for physical illnesses in general and shall take into consideration usual, customary, and reasonable charges for those services. Except as otherwise provided in <a href='/dccode/sections/31-3104.html'>§ 31-3104</a>, deductible or copayment plans, and limits on total amounts payable to an individual in a calendar year or lifetime payment limits, may be applied; provided, that the inpatient and outpatient benefits set forth in <a href='/dccode/sections/31-3104.html'>§ 31-3104</a> shall be provided for health plans issued in the individual market and small group market with a lifetime payment limit of not less than $80,000 or 1/3 of the lifetime maximum for physical illness, whichever is greater; provided further, that for health plans issued in the large group market, the inpatient and outpatient benefits set forth in <a href='/dccode/sections/31-3104.html'>§ 31-3104</a> shall be applied with the same lifetime and annual limits for medical, surgical, and mental benefits.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the cost of complying with the mental health benefits provisions of subsection (a) of this section for large group markets result in at least a 1% increase in the cost of the plan, the group health plan (or health benefit plan or certificate offered in connection with a group health plan) shall be exempt from complying with those mental health benefits parity provisions.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If a group health plan is exempt from complying with the mental health benefits parity provisions under subsection (b) of this section, it shall comply with the individual and small group market requirements.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">Nothing in this section shall be construed as requiring health maintenance organizations to provide a greater level of covered benefits than the level required of health insurers.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Feb. 28, 1987, <a href='http://openlims.org/public/L6-195.pdf'>D.C. Law 6-195</a>, § 6, 34 DCR 491; Mar. 16, 1993, <a href='http://openlims.org/public/L9-192.pdf'>D.C. Law 9-192</a>, § 2(c), 39 DCR 9007; Oct. 21, 2000, <a href='http://openlims.org/public/L13-178.pdf'>D.C. Law 13-178</a>, § 2(c), 47 DCR 6844; Mar. 8, 2007, <a href='http://openlims.org/public/L16-232.pdf'>D.C. Law 16-232</a>, § 203, 54 DCR 368; Mar. 8, 2007, <a href='http://openlims.org/public/L16-242.pdf'>D.C. Law 16-242</a>, § 2(e), 54 DCR 601.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 35-2305.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L13-178.pdf'>D.C. Law 13-178</a> rewrote this section.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-232.pdf'>D.C. Law 16-232</a>, repealed subsec. (e), which formerly read:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(e) The mental parity provisions in this section shall not apply to benefits for services furnished after September 29, 2001, unless these provisions are re-enacted.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-242.pdf'>D.C. Law 16-242</a>, in subsec. (b), substituted &quot;health benefit plan or certificate&quot; for &quot;health insurance&quot;; and, in subsec. (d), substituted &quot;health insurers&quot; for &quot;insurers&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) repeal of section, see § 2(c) of Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-108.pdf'>D.C. Law 12-108</a>, May 8, 1998, law notification 46 DCR 3259).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 2(d) of Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage Temporary Amendment Act of 1998 (<a href='http://openlims.org/public/L12-108.pdf'>D.C. Law 12-108</a>, May 8, 1998, law notification 46 DCR ).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2(d) of <a href='http://openlims.org/public/L12-108.pdf'>D.C. Law 12-108</a> was amended by <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, § 38, April 20, 1999, 46 DCR 2118.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary amendment of section, see §§ 2(c) and (d) of the Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage Emergency Amendment Act of 1998 (D.C. Act 12-274, February 19, 1998, 45 DCR 1526).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary repeal of section, see § 2(c) of the Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage Second Emergency Amendment Act of 1998 (D.C. Act 12-546, December 24, 1998, 45 DCR 497).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of § 35-2305.1 1981 Ed., see § 2(d) of the Drug Abuse, Alcohol Abuse, and Mental Illness Insurance Coverage Second Emergency Amendment Act of 1998 (D.C. Act 12-546, December 18, 1998, 46 DCR 497).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-195</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-195.pdf'>D.C. Law 6-195</a>, see Historical and Statutory Notes following <a href='/dccode/sections/31-3101.html'>§ 31-3101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-192</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L9-192.pdf'>D.C. Law 9-192</a>, see Historical and Statutory Notes following <a href='/dccode/sections/31-3102.html'>§ 31-3102</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-103</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L12-103.pdf'>D.C. Law 12-103</a>, see Historical and Statutory Notes following <a href='/dccode/sections/31-3101.html'>§ 31-3101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-264, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-804, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Signed by the Mayor on January 7, 1999, it was assigned Act No. 12-626 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-178</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 13-178, see notes following <a href='/dccode/sections/31-3101.html'>§ 31-3101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-232</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-232, see notes following <a href='/dccode/sections/31-231.html'>§ 31-231</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-242</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-242, see notes following <a href='/dccode/sections/31-3101.html'>§ 31-3101</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Because of the prior expiration of certain provisions of this section required by subsection (e) of this section, section 203(a) of <a href='http://openlims.org/public/L16-232.pdf'>D.C. Law 16-232</a> provided that &quot;subsections (a) through (d) are hereby revived.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

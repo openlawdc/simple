@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-385. Procedure for Council consent to certain grant applications and state plans.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3">Chapter 3. Budget and Financial Management; Borrowing; Deposit of Funds</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3/Subchapter-VI">Subchapter VI. Funds Control</a></li>
+                    
+                    <li>↪ § 47-385. Procedure for Council consent to certain grant applications and state plans.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/47-384.html">§ 47-384. Notice of application for grant funds.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-3/Subchapter-VI-A">Subchapter VI-A. Certification of Accumulated General Fund Balance</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-385. Procedure for Council consent to certain grant applications and state plans.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Applications and state plans requiring Council consent — </span>
+                
+                    <span class="" style="">In addition to the notice required by <a href='/dccode/sections/47-384.html'>§ 47-384</a>, the terms and conditions of each grant application or state plan which provides for or requests any of the following shall be approved by consent of the Council prior to submission to the federal grant-making agency:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Any formula grant of more than $5,000,000;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Any grant or state plan requiring the obligation of more than $100,000 in matching funds or in-kind contributions in any fiscal year; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any other grant funded program which, in the Mayor&#39;s reasonable expectation, will require future annual funding of $100,000 or more out of District revenue funds after the termination of the proposed grant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-heading" style="">Submission to and consent by Council — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Mayor, 5 days before approving any grant application or state plan meeting any of the criterion of subsection (a) of this section, shall submit a copy of such application or state plan to the Chairman of the Council, along with such information as required by <a href='/dccode/sections/47-384.html'>§ 47-384(a)</a> and including copies of any state plans which are required as a condition of a grant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Chairman of the Council shall circulate such application or state plan to the members of the Council with a notice labeling it as requiring Council consent for submission to a grant-making agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The Mayor shall cause to be published in the D.C. Register public notice of such submission. The notice shall include a statement that Council consent is required pursuant to this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The Council shall consider such application or state plan according to its rules. Should no written notice of disapproval of such application or state plan be filed by any member of the Council within 14 days of the receipt of such application from the Mayor, the consent of the Council to the application shall be deemed to be given. Should notice of disapproval be filed during such initial 14-day period, the Council shall dispose of such notice of disapproval within 30 days of the initial receipt of the application from the Mayor, or Council consent to the application shall be deemed to be given; provided, that nothing in this paragraph shall be construed to waive any requirement for affirmative Council approval by the grant-making agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">No applications or state plans may be submitted to the Chairman of the Council during such time as the Council is on recess, according to its rules, nor shall any time period provided in this section continue to run during such time as the Council is on recess.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-heading" style="">Reconsideration by Council — </span>
+                
+                    <span class="" style="">If the Council withholds its consent to a grant application, the Mayor may, on a clear showing of changed circumstances, new information, or additional administrative hardship, ask for a reconsideration of the previous action of the Council. The Council may at its discretion reconsider its previous action.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-heading" style="">Exemptions — </span>
+                
+                    <span class="" style="">The grants submitted by agencies identified in <a href='/dccode/sections/47-383.html'>§ 47-383(b)</a> are exempt from the provisions of this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 16, 1980, <a href='http://openlims.org/public/L3-104.pdf'>D.C. Law 3-104</a>, § 6, 27 DCR 3748; enacted, Apr. 9, 1997, <a href='http://openlims.org/public/L11-254.pdf'>D.C. Law 11-254</a>, § 2, 44 DCR 1575.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-385.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 3-104</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L3-104.pdf'>D.C. Law 3-104</a>, see Historical and Statutory Notes following <a href='/dccode/sections/47-381.html'>§ 47-381</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

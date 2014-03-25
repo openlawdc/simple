@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 28-3862. Security freeze.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28">Title 28. Commercial Instruments and Transactions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Chapter-38">Chapter 38. Consumer Protections</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-28/Chapter-38/Subchapter-III">Subchapter III. Consumer Security Freeze</a></li>
+                    
+                    <li>↪ § 28-3862. Security freeze.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/28-3861.html">§ 28-3861. Definitions.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/28-3863.html">§ 28-3863. Notice of rights.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 28-3862. Security freeze.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A credit reporting agency shall place a security freeze on a consumer&#39;s credit report if a consumer, providing proper identification, makes a request to the credit reporting agency by certified mail. In addition, on or before January 31, 2009, a credit reporting agency shall make available an Internet-based method of requesting a security freeze and shall accept requests by one of the following methods: telephone or regular mail.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A credit reporting agency shall place the security freeze on the consumer&#39;s credit report no later than 3 business days after receiving the request.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The credit reporting agency shall send a written confirmation of the security freeze to the consumer within 5 business days of placing the freeze and at the same time shall provide the consumer with a unique personal identification number or password to be used by the consumer when providing authorization for the release of his or her credit report to a specific party or for a specific period of time.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">A consumer may thereafter request that a credit reporting agency allow his or her credit report to be accessed by a specific party or for a specific period of time by providing the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Proper identification;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The unique personal identification number or password provided by the credit reporting agency pursuant to subsection (c) of this section; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The identity of the third party to receive the credit report or the time period for which the report shall be available to users of the credit report, if applicable.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A credit reporting agency that receives a request pursuant to subsection (d) of this section shall comply with the request no later than 3 business days after receiving the request.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">On or before September 1, 2008, the consumer reporting agency shall develop the capability, and offer the option to the consumer, of honoring a request under subsection (d) of this section, through Internet-based and telephonic methods, within 15 minutes after the consumer&#39;s request is received by the consumer reporting agency. A consumer reporting agency shall not be required to lift a security freeze within 15 minutes if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The consumer fails to meet the requirements of subsection (d) of this section; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The consumer reporting agency is unable to lift the security freeze because of:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">An act of God, including fire, earthquakes, hurricanes or storms;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Unauthorized or illegal acts by a third party, including terrorism, sabotage, riot, vandalism, labor strikes, or disputes disrupting operations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Operational interruption, including electrical failure, unanticipated delay in equipment or replacement part delivery, or computer hardware or software failures inhibiting response time;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Governmental action, including emergency orders or regulations, judicial or law enforcement action, or similar directives;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Regularly scheduled maintenance during other than normal business hours of, or updates to, the consumer reporting agency&#39;s systems; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">Commercially reasonable maintenance of, or repair to, the consumer reporting agency&#39;s systems that is unexpected or unscheduled.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="" style="">A credit reporting agency may develop procedures involving the use of telephone, fax, or, upon the consent of the consumer in the manner required by the Electronic Signatures in Global and National Commerce Act, approved June 30, 2000 (<a href='http://api.fdsys.gov/link?collection=statute&volume=114&page=464'>114 Stat. 464</a>; 15 U.S.C. § 7001 et seq.), for legally required notices, by the Internet, e-mail, or other electronic media, to receive and process a request from a consumer to temporarily lift a freeze on a credit report pursuant to subsection (d) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(g) </span>
+                
+                    <span class="" style="">A credit reporting agency may permanently remove a freeze placed on a credit report, without a request from the consumer, if the credit reporting agency placed the freeze as a result of a material misrepresentation of fact by the consumer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(h) </span>
+                
+                    <span class="" style="">A credit reporting agency shall send written notification to the consumer 5 business days prior to permanently removing a freeze on a credit report pursuant to subsection (g) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">If a third party requests access to a credit report on which a security freeze is in effect in connection with an application for credit and the consumer does not allow his or her consumer report to be accessed by that specific party or for that period of time, the third party may treat the application as incomplete.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(j) </span>
+                
+                    <span class="" style="">If a security freeze is in place, a credit report shall not be released to a third party without prior express authorization from the consumer. A credit reporting agency may advise a third party that a security freeze is in effect with respect to the credit report.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(k) </span>
+                
+                    <span class="" style="">A security freeze shall remain in place until the consumer requests its permanent removal in writing. On or before January 31, 2009, a credit reporting agency shall remove a security freeze within 3 business days of receiving a request for permanent removal from the consumer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(l) </span>
+                
+                    <span class="" style="">A credit reporting agency shall not suggest or otherwise state or imply to a third party that the consumer&#39;s security freeze reflects a negative credit score, history, report, or rating.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(m) </span>
+                
+                    <span class="" style="">Nothing in this section shall prevent the lawful use of a credit report by any of the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A person or entity (including a subsidiary, affiliate, or agent of that person or entity; an assignee of a financial obligation owing by the consumer to that person or entity; or a prospective assignee of a financial obligation owing by the consumer to that person or entity), with which the consumer has or had prior to assignment an account or contract, including a demand deposit account, or to whom the consumer issued a negotiable instrument, for the purposes of reviewing the account in conjunction with the proposed purchase of a financial obligation or collecting the financial obligation owing for the account, contract, or negotiable instrument.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">For purposes of this paragraph, the term &quot;reviewing the account&quot; includes activities related to account maintenance, monitoring, credit line increases, and account upgrades and enhancements;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A subsidiary, affiliate, agent, assignee, or prospective assignee of a person to whom access has been granted under subsection (d) of this section for purposes of facilitating the extension of credit or other permissible use;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A person or entity acting pursuant to a court order, warrant, subpoena, or other compulsory process;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">A state or local agency that administers a program for establishing and enforcing child support obligations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">A third party for the purposes of prescreening under section 604(e) of the Fair Credit Reporting Act, approved October 26, 1970 (<a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=1129'>84 Stat. 1129</a>; 15 U.S.C. § 1681b(e));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">A person or entity for the purpose of providing a consumer with a copy of his or her credit report upon the consumer&#39;s request;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">An insurance company, licensed in the District, for the purpose of setting or adjusting a rate or premium, adjusting a claim, or underwriting for property and casualty insurance purposes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">A person or entity administering a credit file monitoring subscription service to which the consumer has subscribed; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">A state, local, or federal government agency and its agents acting pursuant to a lawful investigation or to fulfill any of its other official duties.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(n) </span>
+                
+                    <span class="" style="">The following persons are not required to place a security freeze on a credit report:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A person or entity that acts only as a reseller of credit information by assembling and merging information contained in the database of another person or entity, or multiple persons or entities, and does not maintain a permanent database of credit information from which new credit reports are produced; provided, that a person or entity acting as a reseller shall honor any security freeze placed on a credit report by a credit reporting agency;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A check services or fraud prevention services company which issues reports on incidents of fraud or authorizations for the purpose of approving or processing negotiable instruments, electronic funds transfers, or similar methods of payments; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A deposit account information service company which issues reports regarding account closures due to fraud, substantial overdrafts, ATM abuse, or similar negative information regarding a consumer to inquiring banks or other financial institutions for use only in reviewing a consumer request for a deposit account at the inquiring bank or financial institution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(o) </span>
+                
+                    <span class="" style="">A consumer reporting agency may charge a consumer for a security freeze service only as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">For the initial application for the consumer&#39;s first personal identification number or password, the consumer may be charged $10.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">If the consumer fails to retain the original personal identification number or password provided by the agency, the consumer may not be charged for a one-time reissue of the same or a new personal identification number or password, but may be charged an amount not to exceed $10 for subsequent instances of loss and reissuance of a new personal identification number or password.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Notwithstanding the foregoing, a consumer who has been a victim of identity theft shall not be charged any fee, but may be charged an amount not to exceed $10 for second or subsequent instances of loss and reissuance of a new personal identification number or password, for placement of a security freeze on his or her report.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 8, 2007, <a href='http://openlims.org/public/L16-238.pdf'>D.C. Law 16-238</a>, § 2(b), 54 DCR 397.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/28-3864.html'>§ 28-3864</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-238</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-238, see notes following <a href='/dccode/sections/28-3861.html'>§ 28-3861</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

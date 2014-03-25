@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-351.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3">Chapter 3. Budget and Financial Management; Borrowing; Deposit of Funds</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-3/Subchapter-III-A">Subchapter III-A. Financial Institutions Deposits and Investments</a></li>
+                    
+                    <li>↪ § 47-351.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-47/Chapter-3/Subchapter-III-A">Subchapter III-A. Financial Institutions Deposits and Investments</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/47-351.02.html">§ 47-351.02. Powers of the Mayor.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-351.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Bank&quot; means an insured financial institution as defined in section 2 of the Federal Deposit Insurance Act, approved September 21, 1950 (64 Stat. 873; 12 U.S.C. § 1813), which:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Accepts demand deposits or deposits that the depositor may withdraw by check or similar means for payment to third parties or others; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is engaged in the business of making commercial loans.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Banking business&quot; means the deposit or investment of District funds or the use of District funds for the provision of financial services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2A) </span>
+                
+                    <span class="" style="">&quot;Collateralized mortgage obligations&quot; shall mean securities issued by a government or quasi-governmental agency and backed by a pool of underlying home mortgages packaged and sold in the secondary market.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Community Reinvestment Act&quot; means the Community Reinvestment Act of 1977, approved October 12, 1977 (<a href='http://api.fdsys.gov/link?collection=statute&volume=91&page=1147'>91 Stat. 1147</a>; 12 U.S.C. §§ 2901-2907).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Compensating balances&quot; means collected balances held by the depository to compensate the depository for the cost of financial services rendered.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Credit union&quot; means an institution insured by the National Credit Union Administration, and either serving designated geographical areas within the District of Columbia or serving the employees of the District.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Deposit&quot; means District funds which are held by a financial institution subject to withdrawal upon demand by the District or upon a check or warrant of the District or the act of entrusting District funds into a financial institution.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;District&quot; means the government of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;District funds&quot; means money, currency, notes, or drafts belonging to or under the control of the District, including, but not limited to, the federal payment, federal grants, taxes, fees, special assessments, all other funds received from the federal government, and funds paid to or received by a board, agency, commission, institution, committee, or office of the District or from any other source. This does not include any assets of a pension, assets held by the District of Columbia Financial Responsibility and Management Assistance Authority, an employee deferred compensation program of the District, or an irrevocable trust established pursuant to <a href='/dccode/sections/1-626.11.html'>§ 1-626.11</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Eligible financial institution&quot; means any bank or any brokerage firm registered with the United States Securities and Exchange Commission (&quot;SEC&quot;) or any savings and loan association, savings bank, credit union, or any subsidiary or affiliate thereof meeting the requirements to become eligible to submit a bid pursuant to <a href='/dccode/sections/47-351.04.html'>§ 47-351.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Financial services&quot; means those services performed by a financial institution in connection with the retention of deposits, including check payment, check clearing, reconciliation of accounts, check printing, the collection and transfer of taxes and fees, night depository services, custodial services, and other services that may be necessary for the efficient management of District funds.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Home Mortgage Disclosure Act&quot; means the Home Mortgage Disclosure Act of 1975, approved December 31, 1975 (<a href='http://api.fdsys.gov/link?collection=statute&volume=89&page=1124'>89 Stat. 1124</a>; 12 U.S.C. § 2801 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Insured financial institution&quot; or &quot;insured institution&quot; means a bank, savings and loan association, savings bank, credit union, or any subsidiary or affiliate thereof.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Invest&quot; means to commit District funds in order to gain profit or interest.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Investment&quot; means property acquired with District funds for future profit or interest.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Investment grade obligation&quot; means securities that have a minimum rating of BBB, Baa, or BBB- from Standard and Poor&#39;s, Moody&#39;s Investor Service, or Fitch Investor Service rating agencies that rate the securities.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Linked deposit&quot; means limited deposits in an insured financial institution made pursuant to an authorization from the Mayor, or CFO pursuant to <a href='/dccode/sections/47-351.02.html'>§ 47-351.02(c)</a>, to waive the competitive bidding requirements of the act in order to make a deposit in return for that institution&#39;s commitment to make community development loans in low-to-moderate income areas.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Low-to-moderate income area&quot; means a census tract in which more than 50% of the households have a median household income of less than 100% of the District&#39;s median household income based on the most recent decennial census.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Mayor&quot; means the Mayor of the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Mortgage loan&quot; means a loan that is secured by residential real property.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Noninsured financial institution&quot; means an investment advisor, investment banker, investment company, investment trust, or any other company, subsidiary, or affiliate thereof designated by the Mayor, or the CFO during a control year.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Quasi-governmental corporation&quot; means United States government-sponsored enterprises that issue investment-grade obligations. This includes, but is not limited to, banks for cooperatives, federal land banks, federal intermediate credit banks, federal farm credit banks, federal home loan banks, the Federal Home Loan Bank Board, the Tennessee Valley District, the Small Business Administration, or any such agency or enterprise that may be created.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Savings and loan association&quot; means an institution organized as a savings and loan association under the laws of the United States, a state, or the District, the deposits of which are insured by the Federal Deposit Insurance Corporation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;Savings bank&quot; means an institution organized as a savings bank under the laws of the United States, a state, or the District, the deposits of which are insured by the Federal Deposit Insurance Corporation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Small business&quot; means a business with annual gross sales or revenues of $5 million or less.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 18, 1998, <a href='http://openlims.org/public/L12-56.pdf'>D.C. Law 12-56</a>, § 2(c), 44 DCR 6933; Apr. 20, 1999, <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, § 52(a), 46 DCR 2118; June 16, 2006, <a href='http://openlims.org/public/L16-125.pdf'>D.C. Law 16-125</a>, § 2(a), 53 DCR 4707; Mar. 25, 2009, <a href='http://openlims.org/public/L17-353.pdf'>D.C. Law 17-353</a>, § 116, 56 DCR 1117.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/2-1210.02.html'>§ 2-1210.02</a>, <a href='/dccode/sections/2-1217.105.html'>§ 2-1217.105</a>, and <a href='/dccode/sections/8-1778.25.html'>§ 8-1778.25</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-351.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-125.pdf'>D.C. Law 16-125</a> added par. (2A).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-353.pdf'>D.C. Law 17-353</a> validated a previously made technical correction in the redesignation of par. (25) as par. (2A).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter III-A, see § 2(c) of the Financial Institutions Deposit and Investment Emergency Amendment Act of 1997 (D.C. act 12-175, October 30, 1997, 44 DCR 6918), and see § 2(c) of the Financial Institutions Deposit and Investment Congressional Recess Emergency Amendment Act of 1998 (D.C. Act 12-281, February 25, 1998, 45 DCR 1707).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-56</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-56, the &quot;Financial Institutions Deposit and Investment Amendment Act of 1997,&quot; was introduced in Council and assigned Bill No. 12-264, which was referred to the Committee on Economic Development. The Bill was adopted on first and second readings on September 22, 1997, and October 7, 1997, respectively. Signed by the Mayor on October 17, 1997, it was assigned Act No. 12-177 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-56.pdf'>D.C. Law 12-56</a> became effective on March 18, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-264, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-804, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Signed by the Mayor on January 7, 1999, it was assigned Act No. 12-626 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-125</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 16-125, the &quot;Financial Institutions Deposit and Investment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-135 which was referred to the Committee on Consumer and Regulatory Affairs. The Bill was adopted on first and second readings on March 7, 2006, and April 4, 2006, respectively. Signed by the Mayor on April 21, 2006, it was assigned Act No. 16-343 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L16-125.pdf'>D.C. Law 16-125</a> became effective on June 16, 2006.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-353</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-353, see notes following <a href='/dccode/sections/47-308.html'>§ 47-308</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

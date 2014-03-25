@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 22-2402. Perjury.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22">Title 22. Criminal Offenses and Penalties</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-22/Chapter-24">Chapter 24. Perjury; Related Offenses</a></li>
+                    
+                    <li>↪ § 22-2402. Perjury.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/22-2401~P.html">§ 22-2401. Perjury; subornation of perjury. [Repealed]</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/22-2403.html">§ 22-2403. Subornation of perjury.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 22-2402. Perjury.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A person commits the offense of perjury if:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Having taken an oath or affirmation before a competent tribunal, officer, or person, in a case in which the law authorized such oath or affirmation to be administered, that he or she will testify, declare, depose, or certify truly, or that any written testimony, declaration, deposition, or certificate by that person subscribed is true, wilfully and contrary to an oath or affirmation states or subscribes any material matter which he or she does not believe to be true and which in fact is not true;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">As a notary public or other officer authorized to take proof of certification, wilfully certifies falsely that an instrument was acknowledged by any party thereto or wilfully certifies falsely as to another material matter in an acknowledgement; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">In any declaration, certificate, verification, or statement made under penalty of perjury in the form specified in <a href='/dccode/sections/16-5306.html'>§ 16-5306</a> or 28 U.S.C. § 1746(2), the person willfully states or subscribes as true any material matter that the person does not believe to be true and that in fact is not true.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any person convicted of perjury shall be fined not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a> or imprisoned for not more than 10 years, or both.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 1, 1982, <a href='http://openlims.org/public/L4-164.pdf'>D.C. Law 4-164</a>, § 401, 29 DCR 3976; July 23, 2010, <a href='http://openlims.org/public/L18-191.pdf'>D.C. Law 18-191</a>, § 3, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 3400</a>; June 11, 2013, <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>, § 205(x), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2064</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Alcoholic beverage license, false statement in application, see <a href='/dccode/sections/25-401.html'>§ 25-401</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Allowance authorized for decedent&#39;s family, false affidavit concerning, see <a href='/dccode/sections/19-101~P.html'>§ 19-101</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Closing-out sale license, false statement in application for, see <a href='/dccode/sections/47-2102~P.html'>§ 47-2102</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">District of Columbia Civilian Complaint Review Board, willful false swearing before, see <a href='/dccode/sections/5-1135~P.html'>§ 5-1135</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Firearms control law, use of information as evidence in criminal proceedings, see §<a href='/dccode/sections/7-2502.11.html'>§ 7-2502.11</a> and 7-2504.09.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Homestead deduction application, false statements in, see <a href='/dccode/sections/47-850.html'>§ 47-850</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Hospitalization of mentally ill, offenses and penalties, see <a href='/dccode/sections/21-591.html'>§ 21-591</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Interrogatories to garnishee, willful false statement, see <a href='/dccode/sections/16-552.html'>§ 16-552</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Life insurance companies or agents, false statement by, see <a href='/dccode/sections/31-4308~P.html'>§ 31-4308</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Medicaid provider fraud prosecutions, false swearing, see <a href='/dccode/sections/4-804.html'>§ 4-804</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Metropolitan Police or Fire Department trial boards, willful false swearing before, see <a href='/dccode/sections/5-1002.html'>§ 5-1002</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Nonprofit housing development water and sewer rate deductions, false statements concerning eligibility, see §<a href='/dccode/sections/34-2413.05~P.html'>§ 34-2413.05</a> and 34-2105.04.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/2-1831.13.html'>§ 2-1831.13</a>, <a href='/dccode/sections/4-804.html'>§ 4-804</a>, <a href='/dccode/sections/7-2502.05.html'>§ 7-2502.05</a>, <a href='/dccode/sections/7-2502.11.html'>§ 7-2502.11</a>, and <a href='/dccode/sections/7-2504.09.html'>§ 7-2504.09</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 22-2511.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-191.pdf'>D.C. Law 18-191</a>, in subsec. (a), deleted &quot;or&quot; from the end of par. (1); substituted &quot;; or&quot; for a period at the end of par. (2), and added par. (3).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2013 amendment by <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> substituted &quot;not more than the amount set forth in <a href='/dccode/sections/22-3571.01.html'>§ 22-3571.01</a>&quot; for &quot;not more than $5,000&quot; in (b).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 days) amendment of this section, see § 205(x) of the Criminal Fine Proportionality Emergency Act of 2013 (D.C. Act 20-45, April 1, 2013, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 5400</a>, 20 DCSTAT 1300).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-164</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L4-164.pdf'>D.C. Law 4-164</a>, see Historical and Statutory Notes following <a href='/dccode/sections/22-2401~P.html'>§ 22-2401</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-191</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-191, the &quot;Uniform Unsworn Foreign Declarations Amendment Act of 2010&quot;, was introduced in Council and assigned Bill No. 18-427, which was referred to the Committee on Public Safety and the Judiciary. The Bill was adopted on first and second readings on March 2, 2010, and March 16, 2010, respectively. Signed by the Mayor on April 7, 2010, it was assigned Act No. 18-380 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-191.pdf'>D.C. Law 18-191</a> became effective on July 23, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-317</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-317, the &quot;Criminal Fine Proportionality Amendment Act of 2012,&quot; was introduced in Council and assigned Bill No. 19-214. The Bill was adopted on first and second readings on Oct. 16, 2012, and Nov. 1, 2012, respectively. Signed by the Mayor on Jan. 23, 2013, it was assigned Act No. 19-641 and transmitted to Congress for its review. <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> became effective on June 11, 2013.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Applicability of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a>: Section 401 of <a href='http://openlims.org/public/L19-317.pdf'>D.C. Law 19-317</a> provided that the act shall apply only to offenses committed on or after June 11, 2013.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

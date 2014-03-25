@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-505. Inspections.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-5">Chapter 5. Health-Care and Community Residence Facility, Hospice and Home Care Licensure</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-5/Subchapter-I">Subchapter I. Licensure</a></li>
+                    
+                    <li>↪ § 44-505. Inspections.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/44-504.html">§ 44-504. Rules.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/44-506.html">§ 44-506. Provisional and restricted licenses.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-505. Inspections.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">To ensure that each new facility and agency will be in compliance with the provisions of this subchapter, rules adopted pursuant to this subchapter, and all other applicable laws and rules, the Mayor shall conduct an on-site inspection prior to a facility&#39;s or agency&#39;s initial licensure. Instead of issuing a full-year license to a new facility or agency, the Mayor may issue a provisional license under <a href='/dccode/sections/44-506.html'>§ 44-506</a> pending satisfactory completion of additional, follow-up inspections.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">After initial licensure the Mayor shall conduct an on-site inspection as a precondition to licensure renewal, except that the Mayor may accept accreditation by a private accrediting body, federal certification for participation in a health-insurance or medical assistance program, or federal qualification of a health maintenance organization as evidence of, and in lieu of inspecting for, compliance with any or all of the provisions of this subchapter and rules adopted pursuant to this subchapter that incorporate or are substantially similar to applicable standards or conditions of participation established by that body or the federal government. Acceptance of private accreditation by the Mayor shall be contingent on the facility&#39;s or agency&#39;s:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Notifying the Mayor of all survey and resurvey dates no later than 5 days after it receives notice of these dates;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Permitting authorized government officials to accompany the survey team; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Submitting to the Mayor a copy of the certificate of accreditation, all survey findings, recommendations, and reports, plans of correction, interim self-survey reports, notices of noncompliance, progress reports on correction of noncompliances, preliminary decisions to deny or limit accreditation, and all other similar documents relevant to the accreditation process, no later than 5 days after their receipt by the facility or agency or submission to the accrediting body.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">An authorized government official may enter the premises of a facility or agency during operating hours for the purpose of conducting an announced or unannounced inspection to check for compliance with any provision of this subchapter, rule adopted pursuant to this subchapter, or other provision of District of Columbia law. In conducting an inspection, the official shall make every effort not to disrupt the normal operations of the facility or agency and its staff.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">If a facility or agency loses private accreditation or federal certification, it shall give the Mayor written notice of the loss within 5 calendar days. If in such a case accreditation or certification was accepted in lieu of an inspection under subsection (b) of this section, the Mayor shall immediately upon notification:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Convert the facility&#39;s or agency&#39;s license to a provisional or restricted license under <a href='/dccode/sections/44-506.html'>§ 44-506</a> pending satisfactory completion of an inspection conducted by the Mayor; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Suspend the facility&#39;s or agency&#39;s license based upon a finding that loss of accreditation or certification was prompted by existing deficiencies that constitute an immediate or serious and continuing danger to the health, safety, or welfare of its patients/clients/residents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Mayor may, prior to a hearing, suspend the license of any facility or agency or convert its license to a provisional or restricted license if he or she determines that existing deficiencies constitute an immediate or serious and continuing danger to the health, safety, or welfare of its patients/clients/residents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Upon the suspension or conversion of a license pursuant to this subsection, the Mayor shall immediately give the facility or agency written notice of the action, including a copy of the order of suspension or conversion, a statement of the grounds for the action, and notification that the facility or agency has 7 days (excluding Saturdays, Sundays, and legal holidays) from the day written notice is received to request an expedited, preliminary review hearing. If the facility or agency fails to communicate, either orally or in writing, a timely request for a preliminary review hearing, the order of suspension or conversion shall remain in effect until terminated by the Mayor or an unexpedited hearing is held pursuant to procedures adopted under <a href='/dccode/sections/44-504.html'>§ 44-504</a>. Upon receipt of a timely request for an expedited, preliminary review hearing, the Mayor shall within 72 hours (excluding Saturdays, Sundays, and legal holidays) provide a hearing to review the reasonableness of the suspension or conversion order. At this hearing, the Mayor shall have the burden of establishing a prima facie case of immediate or serious and continuing endangerment. The suspension or conversion order shall be either affirmed or vacated at the hearing. In the event an order is affirmed, it shall, unless extended, remain in effect for no longer than 30 calendar days, during which time a final hearing shall be scheduled to consider the appropriateness of revocation or continuing restrictions on licensure. Before expiration of a suspension or conversion order, an extension may be granted for a period not to exceed an additional 30 calendar days upon agreement of all the parties or for good cause shown.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="" style="">The Mayor shall have the authority, upon a showing of undue hardship and if not inconsistent with other provisions of this chapter or deleterious to the public health and safety, to grant variances with respect to the standards to be established under <a href='/dccode/sections/44-504.html'>§ 44-504(a)(3)</a> and (h-1). The Mayor shall maintain a public record listing all variances granted under this subsection and containing a complete written explanation of the basis for each variance.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Feb. 24, 1984, <a href='http://openlims.org/public/L5-48.pdf'>D.C. Law 5-48</a>, § 6, 30 DCR 5778; Sept. 5, 1985, <a href='http://openlims.org/public/L6-26.pdf'>D.C. Law 6-26</a>, § 2(e), (f), 32 DCR 3615; Apr. 29, 2010, <a href='http://openlims.org/public/L18-145.pdf'>D.C. Law 18-145</a>, § 3(b), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 1834</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/44-103.06.html'>§ 44-103.06</a>, <a href='/dccode/sections/44-104.04.html'>§ 44-104.04</a>, <a href='/dccode/sections/44-112.01.html'>§ 44-112.01</a>, <a href='/dccode/sections/44-501.html'>§ 44-501</a>, <a href='/dccode/sections/44-504.html'>§ 44-504</a>, and <a href='/dccode/sections/44-506.html'>§ 44-506</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 32-1305.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-145.pdf'>D.C. Law 18-145</a>, in subsec. (e), substituted &quot;<a href='/dccode/sections/44-504.html'>§ 44-504(a)(3)</a> and (h-1)&quot; for &quot;<a href='/dccode/sections/44-504.html'>§ 44-504(a)(3)</a>&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-48</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L5-48.pdf'>D.C. Law 5-48</a>, see Historical and Statutory Notes following <a href='/dccode/sections/44-501.html'>§ 44-501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 5-154</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L5-154.pdf'>D.C. Law 5-154</a>, see Historical and Statutory Notes following <a href='/dccode/sections/44-501.html'>§ 44-501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-26</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-26.pdf'>D.C. Law 6-26</a>, see Historical and Statutory Notes following <a href='/dccode/sections/44-501.html'>§ 44-501</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-145</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 18-145, see notes following <a href='/dccode/sections/44-504.html'>§ 44-504</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Because of the enactment of subchapter II of this chapter by <a href='http://openlims.org/public/L12-238.pdf'>D.C. Law 12-238</a> and the designation of the preexisting text of Chapter 5 as subchapter I, &quot;subchapter&quot; has been substituted for &quot;act&quot; twice in the first sentence of (a)-(c).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

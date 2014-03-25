@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 3-1206.21. Scope of practice.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3">Title 3. District of Columbia Boards and Commissions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/Chapter-12">Chapter 12. Health Occupations Boards</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/Chapter-12/Subchapter-VI-A">Subchapter VI-A. Naturopathic Medicine; Scope of Practice; Required Disclosures</a></li>
+                    
+                    <li>↪ § 3-1206.21. Scope of practice.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-3/Chapter-12/Subchapter-VI-A">Subchapter VI-A. Naturopathic Medicine; Scope of Practice; Required Disclosures</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/3-1206.22.html">§ 3-1206.22. Required disclosures.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 3-1206.21. Scope of practice.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">In connection with the system of health care defined in <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02(7A)</a>, an individual licensed to practice naturopathic medicine under this subchapter may:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Administer or provide for preventive and therapeutic purposes natural medicines by their appropriate route of administration, natural therapies, topical medicines, counseling, hypnotherapy, dietary therapy, naturopathic physical medicine, therapeutic devices, and barrier devices for contraception. For the purposes of this paragraph, the term &quot;naturopathic physical medicine&quot; means the use of the physical agents of air, water, heat, cold, sound, and light, and the physical modalities of electrotherapy, biofeedback, diathermy, ultraviolet light, ultrasound, hydrotherapy, and exercise, and includes naturopathic manipulation and mobilization therapy; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Review and interpret the results of diagnostic procedures commonly used by physicians in general practice, including physical and orificial examinations, electrocardiograms, diagnostic imaging techniques, phlebotomy, clinical laboratory tests and examinations, and physiological function tests.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">An individual licensed to practice naturopathic medicine under this chapter shall not:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Prescribe, dispense, or administer any controlled substances, except those natural medicines authorized by this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Perform surgical procedures, except for minor office procedures, as defined by rule;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Use for therapeutic purposes, any device regulated by the United States Food and Drug Administration (&quot;FDA&quot;) that has not been approved by the FDA.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Participate in naturopathic childbirth, unless the naturopathic physician:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Passes a specialty examination in obstetrics or natural childbirth approved by the Advisory Committee on Naturopathic Medicine, Board of Medicine, or the Mayor, such as the American College of Nurse Midwives Written Examination or an equivalent national examination;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Has a minimum of 100 hours of course work, internship, or preceptorship in obstetrics of natural childbirth approved by the Advisory Committee on Naturopathic Medicine;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Files with the Department of Health and maintains a written collaboration agreement with a licensed obstetrician who is qualified to perform obstetrical surgery; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Has assisted in a minimum of 50 supervised births, including prenatal and postnatal care, under the direct supervision of a licensed naturopathic, medical, or osteopathic physician with specialty training in obstetrics or natural childbirth, at least 25 of which document the naturopathic physician as the primary birth attendant.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Nothing in this section shall be construed to prohibit the use, practice, or administration of nutritional supplements, iridology, herbs, vitamins, foods, food extracts, homeopathic preparations, natural therapies and remedies, and such physical forces as heat, cold, touch, and light, as permitted by law, by persons not licensed to practice naturopathic medicine under this chapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="" style="">An individual licensed to practice naturopathic medicine under this chapter may use the titles &quot;Doctor of Naturopathic Medicine&quot;, &quot;Naturopathic Physician&quot;, &quot;Licensed Naturopath&quot;, &quot;Naturopathic Doctor&quot;, &quot;Doctor of Naturopathy&quot;, &quot;Naturopath&quot;, or the initials &quot;ND&quot; or an &quot;NMD&quot;.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 25, 1986, <a href='http://openlims.org/public/L6-99.pdf'>D.C. Law 6-99</a>, § 621, as added July 8, 2004, <a href='http://openlims.org/public/L15-172.pdf'>D.C. Law 15-172</a>, § 2(g), 51 DCR 4938.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-172</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-172, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

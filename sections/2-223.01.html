@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 2-223.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2">Title 2. Government Administration</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-2">Chapter 2. Contracts</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-2/Chapter-2/Subchapter-XII">Subchapter XII. Employees of District Contractors and Instrumentality Whistleblower Protection</a></li>
+                    
+                    <li>↪ § 2-223.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-2/Chapter-2/Subchapter-XII">Subchapter XII. Employees of District Contractors and Instrumentality Whistleblower Protection</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/2-223.02.html">§ 2-223.02. Prohibitions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 2-223.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Contract&quot; means any contract for goods or services between the District government and another entity but excludes any collective bargaining agreement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Contributing factor&quot; means any factor which, alone or in connection with other factors, tends to affect in any way the outcome of the decision.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Employee&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Any person who is [a] former or current employee of or an applicant for employment by an instrumentality of the District government not covered by Chapter 6 of Title 1;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Any person who is a former or current employee of any entity that has a contract with the District government to supply goods or services and who is engaged in performing such contract; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Any person who is a security officer and is or was employed in that capacity by a person who or entity that provides security services.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Illegal order&quot; means a directive to violate or to assist in violating a federal, state, or local law, rule, or regulation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Instrumentality&quot; means a quasi-governmental entity that operates in part with District funds, including, but not limited to, the District of Columbia Water and Sewer Authority, established by <a href='/dccode/sections/34-2202.02.html'>§ 34-2202.02(a)</a>; the Health and Hospitals Public Benefits Corporation, established by Chapter 11 of Title 44; the Public Service Commission, established by <a href='/dccode/sections/34-801.html'>§ 34-801</a>; the Washington Convention and Sports Authority established by <a href='/dccode/sections/10-1202.04.html'>§ 10-1202.04</a>; the Committee to Promote the District of Columbia; the National Capital Revitalization Corporation, established by <a href='/dccode/sections/2-1219.02~P.html'>§ 2-1219.02</a> [repealed]; and the Washington Metropolitan Area Transit Authority, established by subchapter IV of Chapter 11 of Title 9.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Prohibited personnel action&quot; includes but is not limited to: recommended, threatened, or actual termination, demotion, suspension, or reprimand; involuntary transfer, reassignment or detail; referral for psychiatric or psychological counseling; failure to hire or promote or take other favorable personnel action; or in any other manner retaliating against an employee because that employee has made a protected disclosure or refuses to comply with an illegal order, as those terms are defined in this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6A) </span>
+                
+                    <span class="" style="">&quot;Prohibited procurement action&quot; includes any recommended, threatened, or actual proceeding, based wholly or in part on a protected disclosure made by an employee, officer, or owner of a contractor:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Terminate a contract by default or convenience without adequate and documented justification;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Unreasonably delay or withhold payment on legitimate vouchers or claims of a contractor;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Impose conditions or requirements on the contractor not required by the contract;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Take any action designed to or having the effect of impeding a contractor&#39;s performance; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Take any other action designed to or having the effect of injuring the business or reputation of a contractor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Protected disclosure&quot; means any disclosure of information, not specifically prohibited by statute, by an employee to a supervisor or to a public body that the employee reasonably believes evidences:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Gross mismanagement in connection with the administration of a public program or the execution of a public contract;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Gross misuse or waste of public resources or funds;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Abuse of authority in connection with the administration of a public program or the execution of a public contract;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">A violation of a federal, state, or local law, rule, or regulation, or of a term of a contract between the District government and a District government contractor which is not of a merely technical or minimal nature; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">A substantial and specific danger to the public health and safety.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Public body&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The United States Congress, the Council, any state legislature, the District of Columbia Office of the Inspector General, the Office of the District of Columbia Auditor, the District of Columbia Financial Responsibility and Management Assistance Authority, or any member or employee of one of these bodies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The federal, the District of Columbia, or any state or local judiciary, any member or employee of these judicial branches, or any grand or petit jury;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Any federal, District of Columbia, state, or local regulatory, administrative, or public agency or authority or instrumentality of one of these agencies or authorities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Any federal, District of Columbia, state, or local law enforcement agency, prosecutorial office, or police or peace officer;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Any federal, District of Columbia, state, or local department of an executive branch of government; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Any division, board, bureau, office, committee, commission or independent agency of any of the public bodies described in subparagraphs (A) through (E) of this paragraph.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8A) </span>
+                
+                    <span class="" style="">&quot;Security officer&quot; means an individual appointed under <a href='/dccode/sections/5-129.02.html'>§ 5-129.02</a>, and shall have the same meaning as provided in section 2100 of Title 17 of the District of Columbia Municipal Regulations.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Supervisor&quot; means any individual employed by a District instrumentality, a District government contractor, or a person who or entity that employs security officers who has authority to do the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">To hire, transfer, suspend, lay off, recall, promote, discharge, assign, reward, or discipline other employees, or responsibility to direct them, or to evaluate their performance, or to adjust their grievances, or effectively to recommend such action, if in connection with the foregoing the exercise of authority is not of a merely routine or clerical nature, but requires the use of independent judgment; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">To effectively recommend or to take remedial or corrective action for the violation of a law, rule, regulation or contract term that an employee may allege or report pursuant to this subchapter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Whistleblower&quot; means an employee or contractor who makes or is perceived to have made a protected disclosure as that term is defined in this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 7, 1998, <a href='http://openlims.org/public/L12-160.pdf'>D.C. Law 12-160</a>, § 202, 45 DCR 5147; Nov. 16, 2006, <a href='http://openlims.org/public/L16-187.pdf'>D.C. Law 16-187</a>, § 201(a), 53 DCR 6722; Mar. 3, 2010, <a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, § 2082(c), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 181</a>; Mar. 11, 2010, <a href='http://openlims.org/public/L18-117.pdf'>D.C. Law 18-117</a>, § 3(a), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 896</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/1-1162.13.html'>§ 1-1162.13</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-1177.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-187.pdf'>D.C. Law 16-187</a>, in par. (3), deleted &quot;or&quot; from the end of subpar. (A), substituted &quot;&#39;; or&quot; for a period at the end of subpar. (B), and added subpar. (C); added par. (8A); and, in par. (9), substituted &quot;District instrumentality, a District government contractor, or a person who or entity that employs security officers&quot; for &quot;District instrumentality or by a District government contractor&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-111.pdf'>D.C. Law 18-111</a>, in par. (5), substituted &quot;Washington Convention and Sports Authority&quot; for &quot;Washington Convention Center Authority&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-117.pdf'>D.C. Law 18-117</a> added par. (6A); and, in par. (10), substituted &quot;an employee or contractor&quot; for &quot;an employee&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary addition of subchapter V 1981 Ed., see §§ 202-208 of the Whistleblower Reinforcement Emergency Amendment Act of 1998 (D.C. Act 12-400, July 13, 1998, 45 DCR 5158), and see §§ 202-208 of the Whistleblower Reinforcement Congressional Review Emergency Amendment Act of 1998 (D.C. Act 12-464, October 28, 1998, 45 DCR 7821).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2082(c) of Fiscal Year 2010 Budget Support Second Emergency Act of 2009 (D.C. Act 18-207, October 15, 2009, 56 DCR 8234).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2082(c) of Fiscal Year Budget Support Congressional Review Emergency Amendment Act of 2009 (D.C. Act 18-260, January 4, 2010, <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2010'>57 DCR 345</a>).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-160</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-160, the &quot;Whistleblower Reinforcement Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-191, which was referred to the Committee on Government Operations. The Bill was adopted on first and second readings on May 5, 1998, and June 2, 1998, respectively. Signed by the Mayor on June 23, 1998, it was assigned Act No. 12-398 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-160.pdf'>D.C. Law 12-160</a> became effective on October 7, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-187</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 16-187, the &quot;Enhanced Professional Security Amendment Act of 2006&quot;, was introduced in Council and assigned Bill No. 16-102, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on June 6, 2006, and July 11, 2006, respectively. Signed by the Mayor on July 25, 2006, it was assigned Act No. 16-465 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L16-187.pdf'>D.C. Law 16-187</a> became effective on November 16, 2006.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-111</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 18-111, see notes following <a href='/dccode/sections/2-218.50.html'>§ 2-218.50</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-117</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-117, the &quot;Whistleblower Protection Amendment Act of 2009&quot;, was introduced in Council and assigned Bill No. 18-233, which was referred to the Committee on Government Operations and the Environment. The bill was adopted on first and second readings on December 1, 2009, and December 15, 2009, respectively. Signed by the Mayor on January 11, 2010, it was assigned Act No. 18-265 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-117.pdf'>D.C. Law 18-117</a> became effective on March 11, 2010.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Short Title</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Employees of District Contractors and Instrumentality Whistleblower Protection Act of 1998: Section 201 of Title II of <a href='http://openlims.org/public/L12-160.pdf'>D.C. Law 12-160</a> provided that Title II may be cited as the &quot;Employees of District Contractors and Instrumentality Whistleblower Protection Act of 1998.&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For whistleblower protection for employees of contracts and instrumentalities, see <a href='/dccode/sections/2-223.01.html'>§ 2-223.01</a> et seq.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

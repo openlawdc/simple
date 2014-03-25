@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 3-1205.01. License, registration, or certification required.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3">Title 3. District of Columbia Boards and Commissions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/Chapter-12">Chapter 12. Health Occupations Boards</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-3/Chapter-12/Subchapter-V">Subchapter V. Licensing, Registration, or Certification of Health Professionals</a></li>
+                    
+                    <li>↪ § 3-1205.01. License, registration, or certification required.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-3/Chapter-12/Subchapter-V">Subchapter V. Licensing, Registration, or Certification of Health Professionals</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/3-1205.02.html">§ 3-1205.02. Exemptions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 3-1205.01. License, registration, or certification required.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">A license issued pursuant to this chapter is required to practice medicine, acupuncture, chiropractic, registered nursing, practical nursing, dentistry, dental hygiene, dietetics, marriage and family therapy, massage therapy, naturopathic medicine, nutrition, nursing home administration, occupational therapy, optometry, pharmaceutical detailing, pharmacy, physical therapy, podiatry, psychology, social work, professional counseling, audiology, speech-language pathology, respiratory care, advanced practice addiction counseling, or to practice as an anesthesiologist assistant, physician assistant, physical therapy assistant, polysomnographic technologist, occupational therapy assistant, or surgical assistant in the District, except as otherwise provided in this chapter. Registration is required to practice as nursing assistive personnel, or as a psychology associate, polysomnographic technician or trainee, dental assistant, or pharmacy technician or trainee. Certification is required to practice as an addiction counselor I, or an addiction counselor II, and to practice advanced practice registered nursing.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">A license, registration, or certification is the property of the District of Columbia and shall be surrendered on demand of the licensor.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 25, 1986, <a href='http://openlims.org/public/L6-99.pdf'>D.C. Law 6-99</a>, § 501, 33 DCR 729; July 22, 1992, <a href='http://openlims.org/public/L9-126.pdf'>D.C. Law 9-126</a>, § 2(f), 39 DCR 3824; Mar. 14, 1995, <a href='http://openlims.org/public/L10-203.pdf'>D.C. Law 10-203</a>, § 2(e), 41 DCR 7707; Mar. 14, 1995, <a href='http://openlims.org/public/L10-205.pdf'>D.C. Law 10-205</a>, § 2(d), 41 DCR 7712; Mar. 23, 1995, <a href='http://openlims.org/public/L10-247.pdf'>D.C. Law 10-247</a>, § 2(h), 42 DCR 457; Mar. 10, 2004, <a href='http://openlims.org/public/L15-88.pdf'>D.C. Law 15-88</a>, § 2(g), 50 DCR 10999; July 8, 2004, <a href='http://openlims.org/public/L15-172.pdf'>D.C. Law 15-172</a>, § 2(e), 51 DCR 4938; Mar. 16, 2005, <a href='http://openlims.org/public/L15-237.pdf'>D.C. Law 15-237</a>, § 2(f), 51 DCR 10593; Mar. 6, 2007, <a href='http://openlims.org/public/L16-219.pdf'>D.C. Law 16-219</a>, § 2(f), 53 DCR 10211; Mar. 6, 2007, <a href='http://openlims.org/public/L16-220.pdf'>D.C. Law 16-220</a>, § 2(c), 53 DCR 10216; Mar. 6, 2007, <a href='http://openlims.org/public/L16-228.pdf'>D.C. Law 16-228</a>, § 2(f), 53 DCR 10244; Mar. 26, 2008, <a href='http://openlims.org/public/L17-131.pdf'>D.C. Law 17-131</a>, § 102(e), 55 DCR 1659; July 18, 2009, <a href='http://openlims.org/public/L18-26.pdf'>D.C. Law 18-26</a>,§ 2(e)(2), 56 DCR 4043; May 1, 2013, <a href='http://openlims.org/public/L19-303.pdf'>D.C. Law 19-303</a>, § 2(c), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2013'>60 DCR 2711</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/16-2301.html'>§ 16-2301</a>, <a href='/dccode/sections/21-501.html'>§ 21-501</a>, and <a href='/dccode/sections/21-2202.html'>§ 21-2202</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 2-3305.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-88.pdf'>D.C. Law 15-88</a> inserted &quot;marriage and family therapy,&quot; after &quot;dietetics,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-172.pdf'>D.C. Law 15-172</a> substituted &quot;massage therapy, naturopathic medicine,&quot; for &quot;massage therapy,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-237.pdf'>D.C. Law 15-237</a> substituted &quot;an anesthesiologist assistant, physician assistant, or occupational therapy assistant&quot; for &quot;a physician assistant or occupational therapy assistant&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-219.pdf'>D.C. Law 16-219</a> inserted &quot;audiology, speech-language pathology,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-220.pdf'>D.C. Law 16-220</a>, inserted &quot;physical therapy assistant,&quot; following &quot;physician assistant,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-228.pdf'>D.C. Law 16-228</a>, inserted &quot;or surgical assistant&quot; following &quot;occupational therapy assistant,&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-131.pdf'>D.C. Law 17-131</a> substituted &quot;pharmaceutical detailing, pharmacy&quot; for &quot;pharmacy&quot;.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-26.pdf'>D.C. Law 18-26</a> rewrote the section, which had read as follows: &quot;A license issued pursuant to this chapter is required to practice medicine, acupuncture, chiropractic, registered nursing, practical nursing, dentistry, dental hygiene, dietetics, marriage and family therapy, massage therapy, naturopathic medicine, nutrition, nursing home administration, occupational therapy, optometry, pharmaceutical detailing, pharmacy, physical therapy, podiatry, psychology, social work, professional counseling, audiology, speech-language pathology, and respiratory care or to practice as an anesthesiologist assistant, physician assistant, physical therapy assistant, occupational therapy assistant, or surgical assistant in the District, except as provided in this chapter. A certification issued pursuant to this chapter is required to practice advanced practice registered nursing.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2013 amendment by <a href='http://openlims.org/public/L19-303.pdf'>D.C. Law 19-303</a> substituted &quot;dental assistant, or pharmacy technician or trainee&quot; for &quot;or dental assistant&quot; in (a).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(e)(2) of Health Occupations Revision General Amendment Emergency Act of 2009 (D.C. Act 18-146, July 28, 2009, 56 DCR 6308).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-99</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-99.pdf'>D.C. Law 6-99</a>, see Historical and Statutory Notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 9-126</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L9-126.pdf'>D.C. Law 9-126</a>, see Historical and Statutory Notes following <a href='/dccode/sections/3-1202.13.html'>§ 3-1202.13</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-203</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-203.pdf'>D.C. Law 10-203</a>, see Historical and Statutory Notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-205</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-205.pdf'>D.C. Law 10-205</a>, see Historical and Statutory Notes following <a href='/dccode/sections/3-1207.31~P.html'>§ 3-1207.31</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-247</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L10-247.pdf'>D.C. Law 10-247</a>, see Historical and Statutory Notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-88</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-88, see notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-172</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-172, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-237</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-237, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-219</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-219, see notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-220</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-220, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-228</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-228, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-131</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-131, see notes following <a href='/dccode/sections/3-1201.02.html'>§ 3-1201.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-26</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 18-26, see notes following <a href='/dccode/sections/3-1201.01.html'>§ 3-1201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-303</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/sections/3-1202.08.html'>§ 3-1202.08</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

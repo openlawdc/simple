@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 5-113.31. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-1">Chapter 1. Metropolitan Police</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-1/Subchapter-VII">Subchapter VII. Records</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-5/Chapter-1/Subchapter-VII/Part-B">Part B. Preservation of Crime Investigation Records - Law Enforcement Agencies</a></li>
+                    
+                    <li>↪ § 5-113.31. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-5/Chapter-1/Subchapter-VII/Part-B">Part B. Preservation of Crime Investigation Records - Law Enforcement Agencies</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/5-113.32.html">§ 5-113.32. Retention of records and preservation of evidence from open homicide, sexual assault, and violent crime investigations.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 5-113.31. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this part, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Biological material&quot; means a sexual assault forensic examination kit, semen, vaginal fluid, blood, saliva, observable skin tissue, or hair which apparently derived from the perpetrator of a crime or, under circumstances that may be probative of the perpetrator&#39;s identity, apparently derived from the victim of a crime.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Case jacket&quot; means the primary file for an investigation of a crime which contains all of the investigative reports, papers, and documents specific to the investigation, including notes, transcripts of interviews, witness statements, photos, and audio and video tapes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">&quot;Closed investigation&quot; means the investigation of a crime:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">In which the suspect or, in a case with multiple suspects, each of the suspects:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(I) </span>
+                
+                    <span class="" style="">Has been found or pled guilty and judgment has been entered;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(II) </span>
+                
+                    <span class="" style="">Has been found not guilty by reason of insanity;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(III) </span>
+                
+                    <span class="" style="">Has been found incompetent to stand trial and is not likely to regain competency before the expiration of the statute of limitations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(IV) </span>
+                
+                    <span class="" style="">Is incarcerated and serving a sentence of either life without release or a term of years that is equivalent to life without release for a crime other than the crime being investigated; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(V) </span>
+                
+                    <span class="" style="">Has died; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">In which the United States Attorney for the District of Columbia or the Corporation Counsel for the District of Columbia has declined prosecution on grounds that permanently eliminate all possibility of prosecution and has authorized the return of evidence to the rightful owner.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A law enforcement agency shall consider a crime closed under subparagraph (A)(i)(IV) or (V) of this paragraph only if the United States Attorney for the District of Columbia or the Corporation Counsel for the District of Columbia has certified, for investigations under the prosecutorial jurisdiction of each, that there would be sufficient evidence to prosecute the suspect or suspects if the suspect or suspects were alive or not incarcerated, and declines prosecution on the grounds that the suspect or suspects are dead or incarcerated.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Crime scene examination case file&quot; means the primary file for an investigation&#39;s crime scene which contains investigative documents and reports; toxicology, DNA testing, and other forensic examination results; evidence reports; photographs; and other documents pertaining to the investigation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;DNA&quot; means deoxyribonucleic acid.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;DNA testing&quot; means forensic DNA analysis of biological material.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Domestic partner&quot; has the same meaning as contained in <a href='/dccode/sections/32-701.html'>§ 32-701(3)</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Family&quot; means:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A homicide victim&#39;s spouse, spouse&#39;s parents, domestic partner, children, including biological, step, and adopted, grandchildren, parents, grandparents, stepparents, nieces, nephews, siblings, or half siblings;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A person who is a survivor of a homicide victim and who was primarily dependent upon the victim for care and support at the time of the commission of the homicide, including a child of the victim born after the victim&#39;s death; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A person who is a survivor of a homicide victim and upon whom the victim was primarily dependent for care and support at the time of the commission of the homicide.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Law enforcement agencies&quot; means the Metropolitan Police Department, the Corporation Counsel for the District of Columbia, prosecutors, or any other governmental agency, with the exception of the Office of the Chief Medical Examiner, that has the authority to investigate, make arrests for, or prosecute or adjudicate District of Columbia criminal or delinquency offenses. The term &quot;law enforcement agencies&quot; shall include law enforcement agencies that have entered into cooperative agreements with the Metropolitan Police Department pursuant to <a href='/dccode/sections/5-133.17.html'>§ 5-133.17</a>, to the extent the law enforcement agency is acting pursuant to such a cooperative agreement.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Open investigation&quot; means the investigation of a crime other than those considered to be closed investigations as described in paragraph (3) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Records retention schedule&quot; means a document listing all of the records originating in the Metropolitan Police Department, specifying series of records to be retained permanently, and authorizing on a continued basis the destruction of other series of records after a specified time period has elapsed.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Statute of limitations&quot; means the time limitations imposed on actions for criminal violations pursuant to <a href='/dccode/sections/23-113.html'>§ 23-113</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 15, 2004, <a href='http://openlims.org/public/L15-174.pdf'>D.C. Law 15-174</a>, § 101, 51 DCR 3677.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/5-1412.html'>§ 5-1412</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-174</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-174, the &quot;Millicent Allewelt Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-34, which was referred to the Committee on the Judiciary. The Bill was adopted on first and second readings on January 6, 2004, and March 2, 2004, respectively. Signed by the Mayor on March 23, 2004, it was assigned Act No. 15-408 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-174.pdf'>D.C. Law 15-174</a> became effective on July 15, 2004.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 7-1305.06a. Informed consent.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7">Title 7. Human Health Care and Safety</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-13">Chapter 13. Citizens with Intellectual Disabilities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-7/Chapter-13/Subchapter-V">Subchapter V. Rights of Persons with Intellectual Disabilities</a></li>
+                    
+                    <li>↪ § 7-1305.06a. Informed consent.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/7-1305.06.html">§ 7-1305.06. Prohibited psychological therapies.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/7-1305.06b.html">§ 7-1305.06b. Review panel for administration of psychotropic medications.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 7-1305.06a. Informed consent.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Except in accordance with the procedures described in subsections (b) and (c) of this section, in <a href='/dccode/sections/21-2212.html'>§ 21-2212</a>, or as otherwise provided by law, no DDS individual shall be given services pursuant to this chapter absent the individual&#39;s informed consent. In seeking informed consent, the provider or DDS shall present the individual with available options and all material information necessary to make the decision, including information about the proposed service, potential benefits and risks of the proposed service, potential benefits and risks of no service, side effects, and information about feasible alternative services, if any.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">If the provider or DDS reasonably believes that the individual lacks the capacity to provide informed consent for the proposed service, the provider or DDS promptly shall seek a determination of the individual&#39;s capacity in accordance with <a href='/dccode/sections/21-2204.html'>§ 21-2204</a>. If the individual is certified as incapacitated for health-care decisions in accordance with <a href='/dccode/sections/21-2204.html'>§ 21-2204</a>, DDS or the provider shall promptly seek the provision of substituted consent from the individual&#39;s attorney-in-fact pursuant to <a href='/dccode/sections/21-2206.html'>§ 21-2206</a> or, if no attorney-in-fact has been authorized pursuant to <a href='/dccode/sections/21-2205.html'>§ 21-2205</a> or is reasonably available, mentally capable, and willing to act, from an individual authorized to provide substituted consent pursuant to <a href='/dccode/sections/21-2210.html'>§ 21-2210</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">If the individual is certified as incapacitated and unable to consent to the proposed service in accordance with <a href='/dccode/sections/21-2204.html'>§ 21-2204</a>, and no attorney-in-fact or person listed in <a href='/dccode/sections/21-2210.html'>§ 21-2210(a)</a> is reasonably available, mentally capable, and willing to act:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">For any proposed services except psychotropic medications, the District shall petition the Court for appointment of a guardian pursuant to Chapter 20 of Title 21. The District&#39;s petition shall request the form of guardianship which is least restrictive to the incapacitated individual in duration and scope, taking into account the incapacitated individual&#39;s current mental and adaptive limitations or other conditions warranting the procedure. This subsection does not preclude any other party from petitioning the Court for appointment of a guardian.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">For all proposed psychotropic medications, except as described under paragraph (3) of this subsection, the provider may administer medication only when the administration of medication is accompanied by a behavioral plan and only after receiving approval from an independent panel appointed by the DDS Administrator pursuant to <a href='/dccode/sections/7-1305.06b.html'>§ 7-1305.06b</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">In an emergency in which an individual is experiencing a mental health crisis and in which the immediate provision of mental health treatment, including medication, is, in the written opinion of the attending physician, necessary to prevent serious injury to the individual or others, the provider may administer medication without seeking the individual&#39;s prior informed consent only to the extent necessary to terminate the emergency.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 3, 1979, <a href='http://openlims.org/public/L2-137.pdf'>D.C. Law 2-137</a>, § 506a, as added Oct. 22, 2008, <a href='http://openlims.org/public/L17-249.pdf'>D.C. Law 17-249</a>, § 5(d), 55 DCR 9206; Sept. 26, 2012, <a href='http://openlims.org/public/L19-169.pdf'>D.C. Law 19-169</a>, § 17(ii), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 5567</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/7-1305.06b.html'>§ 7-1305.06b</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">The 2012 amendment by <a href='http://openlims.org/public/L19-169.pdf'>D.C. Law 19-169</a> substituted &quot;individual&quot; for &quot;customer&quot; or variants throughout the section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 4(d) of Health-Care Decisions for Persons with Mental Retardation and Developmental Disabilities Temporary Amendment Act of 2006 (<a href='http://openlims.org/public/L16-194.pdf'>D.C. Law 16-194</a>, March 2, 2007, law notification 54 DCR 2492).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 4(d) of Health-Care Decisions for Persons with Mental Retardation and Developmental Disabilities Temporary Amendment Act of 2007 (<a href='http://openlims.org/public/L17-100.pdf'>D.C. Law 17-100</a>, February 2, 2008, law notification 55 DCR 3407).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 4(d) of Health-Care Decisions for Persons with Developmental Disabilities Emergency Amendment Act of 2006 (D.C. Act 16-480, September 25, 2006, 53 DCR 7940).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 4(d) of Health-Care Decisions for Persons with Developmental Disabilities Congressional Review Emergency Amendment Act of 2006 (D.C. Act 16-566, December 19, 2006, 53 DCR 10272).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 4(d) of Health-Care Decisions for Persons with Developmental Disabilities Emergency Act of 2007 (D.C. Act 17-161, October 18, 2007, 54 DCR 10932).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 4(d) of Health-Care Decisions for Persons with Developmental Disabilities Congressional Review Emergency Amendment Act of 2008 (D.C. Act 17-245, January 23, 2008, 55 DCR 1230).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) addition, see § 5(d) of Health-Care Decisions for Persons with Developmental Disabilities Emergency Act of 2008 (D.C. Act 17-492, August 4, 2008, 55 DCR 9167).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-249</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-249, see notes following <a href='/dccode/sections/7-1203.03.html'>§ 7-1203.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-169</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">See note to <a href='/dccode/sections/7-1305.01.html'>§ 7-1305.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 35 of <a href='http://openlims.org/public/L19-169.pdf'>D.C. Law 19-169</a> provided that no provision of the act shall impair any right or obligation existing under law.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

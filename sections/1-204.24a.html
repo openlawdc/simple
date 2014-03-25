@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-204.24a. In general.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2">Chapter 2. District of Columbia Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV">Subchapter IV. The District Charter</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B-i">Part B-i. Chief Financial Officer</a></li>
+                    
+                    <li>↪ § 1-204.24a. In general.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-B-i">Part B-i. Chief Financial Officer</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-204.24b.html">§ 1-204.24b. Appointment of the Chief Financial Officer.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-204.24a. In general.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Establishment — </span>
+                
+                    <span class="" style="">There is hereby established within the executive branch of the government of the District of Columbia an Office of the Chief Financial Officer of the District of Columbia (hereafter referred to as the &quot;Office&quot;), which shall be headed by the Chief Financial Officer of the District of Columbia (hereafter referred to as the &quot;Chief Financial Officer&quot;).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-heading" style="">Organizational analysis — </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-heading" style="">Office of Budget and Planning — </span>
+                
+                    <span class="" style="">The name of the Office of Budget and Management, established by Commissioner&#39;s Order 69-96, issued March 7, 1969, is changed to the Office of Budget and Planning.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-heading" style="">Office of Tax and Revenue — </span>
+                
+                    <span class="" style="">The name of the Department of Finance and Revenue, established by Commissioner&#39;s Order 69-96, issued March 7, 1969, is changed to the Office of Tax and Revenue.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-heading" style="">Office of Finance and Treasury — </span>
+                
+                    <span class="" style="">The name of the Office of Treasurer, established by Mayor&#39;s Order 89-244, dated October 23, 1989, is changed to the Office of Finance and Treasury.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="level-heading" style="">Office of Financial Operations and Systems — </span>
+                
+                    <span class="" style="">The Office of the Controller, established by Mayor&#39;s Order 89-243, dated October 23, 1989, and the Office of Financial Information Services, established by Mayor&#39;s Order 89-244, dated October 23, 1989, are consolidated into the Office of Financial Operations and Systems.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="level-heading" style="">Transfers — </span>
+                
+                    <span class="" style="">Effective with the appointment of the first Chief Financial Officer under <a href='/dccode/sections/1-204.24b.html'>§ 1-204.24b</a>, the functions and personnel of the following offices are established as subordinate offices within the Office:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Office of Budget and Planning, headed by the Deputy Chief Financial Officer for the Office of Budget and Planning.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Office of Tax and Revenue, headed by the Deputy Chief Financial Officer for the Office of Tax and Revenue.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The Office of Research and Analysis, headed by the Deputy Chief Financial Officer for the Office of Research and Analysis.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The Office of Financial Operations and Systems, headed by the Deputy Chief Financial Officer for the Office of Financial Operations and Systems.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The Office of Finance and Treasury, headed by the District of Columbia Treasurer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The Lottery and Charitable Games Control Board, established by Chapter 13 of Title 3.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-heading" style="">Supervisor — </span>
+                
+                    <span class="" style="">The heads of the offices listed in subsection (c) of this section shall serve at the pleasure of the Chief Financial Officer.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(e) </span>
+                
+                    <span class="level-heading" style="">Appointment and removal of office employees — </span>
+                
+                    <span class="" style="">The Chief Financial Officer shall appoint the heads of the subordinate offices designated in subsection (c) of this section, after consultation with the Mayor and the Council. The Chief Financial Officer may remove the heads of the offices designated in subsection (c) of this section, after consultation with the Mayor and the Council.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(f) </span>
+                
+                    <span class="level-heading" style="">Annual budget submission — </span>
+                
+                    <span class="" style="">The Chief Financial Officer shall prepare and annually submit to the Mayor of the District of Columbia, for inclusion in the annual budget of the District of Columbia government for a fiscal year, annual estimates of the expenditures and appropriations necessary for the year for the operation of the Office and all other District of Columbia accounting, budget, and financial management personnel (including personnel of executive branch independent agencies) that report to the Office pursuant to this chapter.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=774'>87 Stat. 774</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, § 424(a), as added Apr. 17, 1995, <a href='http://api.fdsys.gov/link?collection=statute&volume=109&page=142'>109 Stat. 142</a>, <a href='http://www.govtrack.us/search?q=public%20law%20104-8'>Pub. L. 104-8</a>, § 302(a); Oct. 16, 2006, <a href='http://api.fdsys.gov/link?collection=statute&volume=120&page=2029'>120 Stat. 2029</a>, <a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a>, § 201(a).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Real property tax assignment, sale and transfers, see <a href='/dccode/sections/47-1303.04.html'>§ 47-1303.04</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/1-204.24b.html'>§ 1-204.24b</a>, <a href='/dccode/sections/1-204.25.html'>§ 1-204.25</a>, <a href='/dccode/sections/2-1208.01.html'>§ 2-1208.01</a>, <a href='/dccode/sections/2-1217.01.html'>§ 2-1217.01</a>, <a href='/dccode/sections/6-201.html'>§ 6-201</a>, <a href='/dccode/sections/10-1202.01.html'>§ 10-1202.01</a>, <a href='/dccode/sections/10-1221.01.html'>§ 10-1221.01</a>, <a href='/dccode/sections/10-1801.html'>§ 10-1801</a>, <a href='/dccode/sections/42-2812.01.html'>§ 42-2812.01</a>, <a href='/dccode/sections/44-951.18.html'>§ 44-951.18</a>, <a href='/dccode/sections/47-340.26.html'>§ 47-340.26</a>, <a href='/dccode/sections/47-391.01.html'>§ 47-391.01</a>, <a href='/dccode/sections/47-881.html'>§ 47-881</a>, <a href='/dccode/sections/47-891.html'>§ 47-891</a>, <a href='/dccode/sections/47-895.01.html'>§ 47-895.01</a>, <a href='/dccode/sections/47-1303.04.html'>§ 47-1303.04</a>, and <a href='/dccode/sections/47-1807.51.html'>§ 47-1807.51</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-317.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%20109-356'>Pub. L. 109-356</a> rewrote the section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-81</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-81, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-408, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 4, 1997, and December 4, 1997, respectively. Signed by the Mayor on December 22, 1997, it was assigned Act No. 12-246 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-81.pdf'>D.C. Law 12-81</a> became effective on March 24, 1998.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Pursuant to the Office of the Chief Financial Officer&#39;s &quot;Notice of Public Interest&quot; published in the April 18, 1997, issue of the District of Columbia Register (44 DCR 2345) the Office of Tax and Revenue assumed all of the duties and functions previously performed by the Department of Finance and Revenue, as set forth in Commissioner&#39;s Order 69-96, dated March 7, 1969. This action was made effective January 22, 1997, nunc pro tunc.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

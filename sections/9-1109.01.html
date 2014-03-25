@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 9-1109.01. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9">Title 9. Transportation Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-11">Chapter 11. National Capital Region Transportation</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-11/Subchapter-V">Subchapter V. Washington Metropolitan Area Transit Authority Safety Regulation</a></li>
+                    
+                    <li>↪ § 9-1109.01. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-9/Chapter-11/Subchapter-V">Subchapter V. Washington Metropolitan Area Transit Authority Safety Regulation</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/9-1109.02.html">§ 9-1109.02. Authorization for interstate agreement.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 9-1109.01. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Act&quot; means the Federal Transit Act, approved July 9, 1964 (<a href='http://api.fdsys.gov/link?collection=statute&volume=78&page=302'>78 Stat. 302</a>; 49 U.S.C. 5301 et seq.).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Agreement&quot; means the agreement executed by the Mayor, on behalf of the District of Columbia, with the Commonwealth of Virginia and the State of Maryland for the creation and operation of a joint state oversight agency.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;APTA Manual&quot; means the American Public Transit Association Manual for the Development of Rail Transit System Safety Program Plans as that is referenced in 49 C.F.R. § 659.5.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Federal Transit Administration&quot; means the Federal Transit Administration of the U.S. Department of Transportation.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Joint state oversight agency&quot; means the agency for the regulation of the safety of WMATA&#39;s rail fixed guideway system that the District of Columbia, Commonwealth of Virginia, and State of Maryland are required to create and operate under section 28 of the Act, as a condition for the continuation of federal grant-in-aid assistance under that Act.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Plan&quot; means the system safety program plan referenced in 49 C.F.R. § 659.5, including the security portion of that plan.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Public Works&quot; means the District of Columbia Department of Public Works.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Rail fixed guideway system&quot; means a rail mass transportation system as defined in 49 C.F.R. § 659.5.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Standard&quot; means the system safety program standard referenced in 49 C.F.R. § 659.5, including the security portion of that standard.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Unacceptable hazardous condition&quot; means the condition referenced in 49 C.F.R. § 659.5.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;WMATA&quot; means the Washington Metropolitan Area Transit Authority created pursuant to the Washington Metropolitan Area Transit Regulation Compact, approved November 6, 1966 (<a href='http://api.fdsys.gov/link?collection=statute&volume=80&page=1324'>80 Stat. 1324</a>; <a href='/dccode/sections/9-1107.01.html'>§ 9-1107.01</a>).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 23, 1997, <a href='http://openlims.org/public/L12-20.pdf'>D.C. Law 12-20</a>, § 2, 44 DCR 4023; Apr. 20, 1999, <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a>, § 13, 46 DCR 2118.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 1-2445.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) additions, see §§ 2 to 8 of Washington Metropolitan Area Transit Authority Safety Regulation Temporary Act of 1996 (<a href='http://openlims.org/public/L11-261.pdf'>D.C. Law 11-261</a>, April 25, 1997, law notification 44 DCR 2859).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary creation of a joint entity among the District of Columbia, Commonwealth of Virginia, and State of Maryland to regulate the safety and security of the rail fixed guideway system operated by the Washington Metropolitan Area Transit Authority, see §§ 2-8 of the Washington Metropolitan Area Transit Authority Safety Regulation Legislative Review Emergency Act of 1997 (D.C. Act 12-58, March 31, 1997, 44 DCR 2230).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 10 of D.C. Act 12-58 provided for the application of the act.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-20</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-20, the &quot;Washington Metropolitan Area Transit Authority Safety Regulation Act of 1997,&quot; was introduced in Council and assigned Bill No. 12-30, which was referred to the Committee on Local, Regional, and Federal Affairs. The Bill was adopted on first and second readings on May 6, 1997, and June 3, 1997, respectively. Signed by the Mayor on June 18, 1997, it was assigned Act No. 12-97 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-20.pdf'>D.C. Law 12-20</a> became effective on September 23, 1997.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 12-264</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 12-264, the &quot;Technical Amendments Act of 1998,&quot; was introduced in Council and assigned Bill No. 12-804, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on November 10, 1998, and December 1, 1998, respectively. Signed by the Mayor on January 7, 1999, it was assigned Act No. 12-626 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L12-264.pdf'>D.C. Law 12-264</a> became effective on April 20, 1999.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">References in Text</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 28 of the Federal Transit Act, referred to in paragraph (5) of this section, was formerly codified at 49 U.S.C. Appx. § 1624 prior to repeal by Act July 5, 1994, <a href='http://www.govtrack.us/search?q=public%20law%20103-272'>P.L. 103-272</a>, § 7(b), <a href='http://api.fdsys.gov/link?collection=statute&volume=108&page=1379'>108 Stat. 1379</a>. For the present similar provision, see 49 U.S.C. § 5330.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

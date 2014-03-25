@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 31-5604.01. Exempt securities.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31">Title 31. Insurance and Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-56">Chapter 56. Securities</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-31/Chapter-56/Subchapter-IV">Subchapter IV. Exemption from Registration</a></li>
+                    
+                    <li>↪ § 31-5604.01. Exempt securities.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-31/Chapter-56/Subchapter-IV">Subchapter IV. Exemption from Registration</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/31-5604.02.html">§ 31-5604.02. Exempt transactions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 31-5604.01. Exempt securities.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">The following securities shall be exempt from the requirements of §<a href='/dccode/sections/31-5603.01.html'>§ 31-5603.01</a>, 31-5603.07, and 31-5604.05:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A security, including a revenue obligation, issued or guaranteed by the United States; an international agency or corporate or other instrumentality of which the United States and one or more foreign governments are members; a state; a political subdivision of a state; or any agency or corporate or other instrumentality of one or more of the foregoing; or a certificate of deposit for any of the foregoing;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A security issued, insured, or guaranteed by Canada; a Canadian province; a political subdivision of an agency or other instrumentality of one or more of the foregoing; or an foreign government with which the United States currently maintains diplomatic relations, if the security is recognized as a valid obligation by the issuer, insurer, or guarantor.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A security issued by and representing an interest in, or a direct obligation of, or guaranteed by, a depository institution or credit union organized under the laws of the United States or a depository institution or credit union organized and supervised under the laws of any state if the deposit or share accounts of the depository institution or credit union are insured by the Federal Deposit Insurance Corporation, the Federal Savings and Loan Insurance Corporation, the National Credit Union Share Insurance Fund, or a successor to one of the foregoing;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">A security issued by and representing an interest in, or a direct obligation of, or insured or guaranteed by, an insurance company organized under the laws of any state or the District and authorized to do business in the District; provided, that this exemption shall not apply to an annuity contract, investment contract, or similar security under which the promised payments or rate of return are not fixed in dollars but are substantially dependent upon the investment results of a segregated fund or account invested in securities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">A security issued or guaranteed by a railroad, other common carrier, public utility, or holding company that is:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Subject to the jurisdiction of the Interstate Commerce Commission or a successor agency;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A registered holding company under the Public Utility Holding Company Act of 1935 or a subsidiary of such a company within the meaning of that Act;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Regulated with respect to its rates and charges by a governmental authority of the United States or any state; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Regulated with respect to the issuance or guarantee of the security by a governmental authority of the United States, any state, the District, Canada, or a Canadian province;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A security which is listed or approved for listing upon notice of issuance on the New York Stock Exchange, the American Stock Exchange, the Philadelphia Stock Exchange, the Midwest Stock Exchange, the Pacific stock exchange, or any other exchange which the Commissioner designates by rule to have substantially the same standards for listing as these exchanges, or designated for trading on the National Association of Securities Dealers Automated Quotation System or any other electronic trading system which the Commissioner designates by rule to have substantially the same standards for listing or trading;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Any other security of the same issuer which is of senior or substantially equal rank;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A security called for by subscription rights or warrants so listed or approved; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">A warrant or right to purchase or subscribe to any of the foregoing;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">An option issued by a clearing agency registered under the Securities Exchange Act of 1934, other than an off-exchange futures contract or substantially similar arrangement, if the security, currency, commodity, or other interest underlying the option:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Is registered under <a href='/dccode/sections/31-5603.02.html'>§ 31-5603.02</a>, <a href='/dccode/sections/31-5603.03.html'>§ 31-5603.03</a>, or <a href='/dccode/sections/31-5603.04.html'>§ 31-5603.04</a>;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Is exempt under this section; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Is not otherwise required to be registered under this chapter;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">A security issued by a person organized and operated not for private profit but exclusively for a religious, educational, benevolent, charitable, fraternal, social, athletic, or reformatory purpose or as a chamber of commerce or trade or professional association, and no part of the net earnings of the issuer inures to the benefit of any private shareholder or individual; provided, that at least 10 calendar days before a sale of the security, the person has filed with the Commissioner a notice setting forth the material terms of the proposed sale and copies of any sales and advertising literature to be used and the Commissioner, by order, does not disallow the exemption within the next 5 calendar days;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A promissory note, draft, bill of exchange, or bankers&#39; acceptance that evidences an obligation to pay cash within 9 months after the date of issuance, exclusive of days of grace, that is issued in denominations of at least $50,000, and that receives a rating in one of the 3 highest rating categories from a nationally recognized statistical rating organization;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A renewal of such an obligation that is likewise limited; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">A guarantee of such an obligation or of a renewal;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">A security issued in connection with:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">A written compensatory benefit plan, including a stock purchase, savings, option, bonus, stock appreciation, profit sharing, thrift, incentive, pension, or similar employees&#39; benefit plan, and interests in such plans established by one or more of the issuers thereof or its parents or affiliates or controlled subsidiaries, for the participation of their employees, directors, general partners, or trustees if the issuer is a business trust, officers, or consultants or advisers of such issuers or their parents or controlled subsidiaries; provided, that bona fide services are rendered by consultants or advisers and the services are not in connection with the offer and sale of securities in a capital-raising transaction; or</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A written contract relating to the compensation of such participating persons;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">Equipment trust certificates for equipment leased or conditionally sold to a person if securities issued by the person would be exempt under this section; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">A membership or equity interest in, or a retention certificate or like security given in lieu of a cash patronage dividend issued by, a cooperative organized and operated as a nonprofit membership cooperative under the cooperative laws of the District or any state if not traded to the public.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">Repealed.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Oct. 26, 2000, <a href='http://openlims.org/public/L13-203.pdf'>D.C. Law 13-203</a>, § 401, 47 DCR 7837; Oct. 26, 2001, <a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a>, § 29(a), 48 DCR 7612; June 25, 2002, <a href='http://openlims.org/public/L14-150.pdf'>D.C. Law 14-150</a>, § 2(i), 49 DCR 4238.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/31-5601.01.html'>§ 31-5601.01</a>, <a href='/dccode/sections/31-5603.01.html'>§ 31-5603.01</a>, <a href='/dccode/sections/31-5603.08.html'>§ 31-5603.08</a>, <a href='/dccode/sections/31-5604.04.html'>§ 31-5604.04</a>, <a href='/dccode/sections/31-5604.05.html'>§ 31-5604.05</a>, <a href='/dccode/sections/31-5604.06.html'>§ 31-5604.06</a>, and <a href='/dccode/sections/31-5605.02.html'>§ 31-5605.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a> repealed par. (13).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L14-150.pdf'>D.C. Law 14-150</a>, in par. (10)(A), substituted &quot;general partners, or&quot; for &quot;general partners&quot;; made nonsubstantive changes in pars. (11) and (12); and repealed par. (13) which was previously repealed by <a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Temporary Repeal of Section For temporary (225 day) repeal of section, see § 2 of Securities Temporary Amendment Act of 2001 (<a href='http://openlims.org/public/L14-62.pdf'>D.C. Law 14-62</a>, February 6, 2002, law notification 49 DCR 2272).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Securities Emergency Amendment Act of 2001 (D.C. Act 14-81, July 9, 2001, 48 DCR 6351).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Securities Legislative Review Emergency Amendment Act of 2001 (D.C. Act 14-180, November 19, 2001, 48 DCR 11066).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2 of Securities Congressional Review Emergency Amendment Act of 2001 (D.C. Act 14-217, December 21, 2001, 49 DCR 390).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 13-203</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 13-203, see notes following <a href='/dccode/sections/31-5601.01.html'>§ 31-5601.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-42</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 14-42, the &quot;Technical Correction Amendment Act of 2001&quot;, was introduced in Council and assigned Bill No. 14-216, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 5, 2001, and June 26, 2001, respectively. Signed by the Mayor on July 24, 2001, it was assigned Act No. 14-107 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L14-42.pdf'>D.C. Law 14-42</a> became effective on October 26, 2001.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-150</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-150, see notes following <a href='/dccode/sections/31-5601.01.html'>§ 31-5601.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 806 of <a href='http://openlims.org/public/L13-203.pdf'>D.C. Law 13-203</a> provided: &quot;Titles III and IV shall apply as of June 1, 2001.&quot;</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 29(b) of D.C. 14-42 provided: &quot;Subsection (a) of this section repealing par. (13) shall apply as of May 31,</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

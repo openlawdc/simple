@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 8-1003. Definitions.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8">Title 8. Environmental and Animal Control and Protection</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10">Chapter 10. Solid Waste Management and Multi-Material Recycling</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-8/Chapter-10/Subchapter-I">Subchapter I. General Provisions</a></li>
+                    
+                    <li>↪ § 8-1003. Definitions.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/8-1002.html">§ 8-1002. Purposes.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/8-1004.html">§ 8-1004. Solid waste management policy for the District.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 8-1003. Definitions.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">For the purposes of this subchapter, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Commercial solid waste stream&quot; means that part of the solid waste stream that is not collected by the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Commercial property&quot; means any property that does not receive solid waste collection services from the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;Compost&quot; means the substance produced through the decomposition of organic materials, including wood, paper, mulch, yard, and food waste, that is capable of being used as a soil amendment.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Composting&quot; means the decomposition of organic materials to form compost.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">&quot;Construction and demolition wastes&quot; means the waste building materials and rubble resulting from construction, remodeling, repair, and demolition operation on houses, commercial buildings, pavements, and other structures.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">&quot;Disposition&quot; means the transport, placement, reuse, sale, donation, transfer, or temporary storage, for a period not exceeding 6 months, of recyclable materials for all possible uses except disposal as solid waste.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">&quot;Intermediate processing facility&quot; means a facility where commingled solid waste can be separated, processed, stored, assembled, and prepared for sale or other disposition, except incineration or burial.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">&quot;Market&quot; means the disposition of recyclable materials that are source separated in the District and exchanged for fair market value.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(9) </span>
+                
+                    <span class="" style="">&quot;Multi-material recycling buy-back center&quot; means any publicly or privately operated facility that pays the public for recyclable materials.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(10) </span>
+                
+                    <span class="" style="">&quot;Office building&quot; means any commercial property where the primary functions are the transaction of administrative, business, civic, or professional services including any library, museum, university, or other facility where handling goods, wares, or merchandise, in limited quantities, is accessory to the primary occupancy or use.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(11) </span>
+                
+                    <span class="" style="">&quot;Paper&quot; means all newspaper, high-grade office paper, fine paper, bond paper, offset paper, xerographic paper, memo paper, duplicator paper, continuous form paper, envelopes, printed material, or related cellulosic material containing not more than 10% by weight or volume of non-cellulosic material such as laminates, binders, coatings, or saturants.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(12) </span>
+                
+                    <span class="" style="">&quot;Paper product&quot; means any paper item or commodity, including paper napkins, towels, corrugated and other cardboard, construction material, toilet tissue, and related cellulosic products containing not more than 10% by weight or volume of non-cellulosic materials such as laminates, binders, coatings, or saturants.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(13) </span>
+                
+                    <span class="" style="">&quot;Recycling&quot; means a resource recovery method that involves the collection and treatment of waste material that can be reprocessed and returned to the economic mainstream as raw material or products.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(14) </span>
+                
+                    <span class="" style="">&quot;Recyclable material&quot; means material that would otherwise become municipal solid waste, and that may be collected, separated, or processed and returned to the economic mainstream as a raw material or product.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(15) </span>
+                
+                    <span class="" style="">&quot;Recycled paper&quot; means any paper the total weight of which is not less than 40% secondary waste paper material.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(16) </span>
+                
+                    <span class="" style="">&quot;Recycled paper product&quot; means any paper product consisting of not less than 40% secondary waste paper material.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(17) </span>
+                
+                    <span class="" style="">&quot;Recycling service&quot; means the service provided by a person engaged in the business of recycling, including the collection, processing, storage, purchase, sale, or disposition of recyclable materials.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(18) </span>
+                
+                    <span class="" style="">&quot;Residential solid waste stream&quot; means that part of the solid waste stream that is collected by the District government.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(19) </span>
+                
+                    <span class="" style="">&quot;Residential property&quot; means property that receives solid waste collection services from the District government including single family dwellings and any building or structure containing 3 or fewer dwelling units used exclusively for residential purposes.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(20) </span>
+                
+                    <span class="" style="">&quot;Source separated recyclable material&quot; means a recyclable material, including paper, metal, glass, yard waste, office paper, or plastic that is stored separately from residential and commercial solid waste for the purposes of collection, disposition, and recycling.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(21) </span>
+                
+                    <span class="" style="">&quot;Solid waste&quot; means garbage, refuse, or any other waste product including solid, liquid, semisolid, or contained gaseous material resulting from an industrial, commercial, or government operation or a community activity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(22) </span>
+                
+                    <span class="" style="">&quot;Solid waste stream&quot; means all residential and commercial garbage or refuse generated within the District that, unless recycled, would be disposed of by landfilling or incineration.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(23) </span>
+                
+                    <span class="" style="">&quot;White goods&quot; means refrigerators, stoves, ice freezers or appliances that may contain chlorofluorocarbons.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(24) </span>
+                
+                    <span class="" style="">&quot;Yard waste&quot; means any organic material, except food, and includes wood, mulch, leaves, or plants.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 16, 1989, <a href='http://openlims.org/public/L7-226.pdf'>D.C. Law 7-226</a>, § 4, 36 DCR 595; Mar. 15, 1990, <a href='http://openlims.org/public/L8-93.pdf'>D.C. Law 8-93</a>, § 2(a), 37 DCR 780; Sept. 8, 1990, <a href='http://openlims.org/public/L8-154.pdf'>D.C. Law 8-154</a>, § 2(a), 37 DCR 4045; Feb. 5, 1994, <a href='http://openlims.org/public/L10-68.pdf'>D.C. Law 10-68</a>, § 19(a), 40 DCR 6311; Sept. 24, 1994, <a href='http://openlims.org/public/L10-178.pdf'>D.C. Law 10-178</a>, § 3(a), 41 DCR 5205.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 6-3403.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 7-226</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L7-226.pdf'>D.C. Law 7-226</a>, see Historical and Statutory Notes following <a href='/dccode/sections/8-1001.html'>§ 8-1001</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-93</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 8-93, the &quot;District of Columbia Solid Waste Management and Multi-Material Recycling Act of 1988 Amendment Temporary Act of 1989,&quot; was introduced in Council and assigned Bill No. 8-484. The Bill was adopted on first and second readings on December 5, 1989, and December 19, 1989, respectively. Signed by the Mayor on January 11, 1990, it was assigned Act No. 8-144 and transmitted to both Houses of Congress for its review. Law 8-93 became effective on March 15, 1990.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 8-154</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 8-154, the &quot;Recycling Clarification Amendment Act of 1990,&quot; was introduced in Council and assigned Bill No. 8-408, which was referred to the Committee on Public Works. The Bill was adopted on first and second readings on May 15, 1990, and May 29, 1990, respectively. Signed by the Mayor on June 14, 1990, it was assigned Act No. 8-215 and transmitted to both Houses of Congress for its review.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-68</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L10-68.pdf'>D.C. Law 10-68</a>, the &quot;Technical Amendments Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-166, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 29, 1993, and July 13, 1993, respectively. Signed by the Mayor on August 23, 1993, it was assigned Act No. 10-107 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-68.pdf'>D.C. Law 10-68</a> became effective on February 5, 1994.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-178</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-178, the &quot;District of Columbia Solid Waste Management and Multi-Material Recycling Act of 1988 Amendment Act of 1994,&quot; was introduced in Council and assigned Bill No. 10-10, which was referred to the Committee on Public Works and the Environment. The Bill was adopted on first and second readings on June 7, 1994, and July 5, 1994, respectively. Signed by the Mayor on July 26, 1994, it was assigned Act No. 10-303 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-178.pdf'>D.C. Law 10-178</a> became effective on September 24, 1994.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 42-3502.12. Hardship petition.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42">Title 42. Real Property</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-35">Chapter 35. Rental Housing Generally</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-42/Chapter-35/Subchapter-II">Subchapter II. Rent Stabilization Program</a></li>
+                    
+                    <li>↪ § 42-3502.12. Hardship petition.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/42-3502.11.html">§ 42-3502.11. Services and facilities.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/42-3502.13.html">§ 42-3502.13. Vacant accommodation.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 42-3502.12. Hardship petition.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Where an election has been made under <a href='/dccode/sections/42-3502.06.html'>§ 42-3502.06(c)</a> to seek a rent adjustment through a hardship petition, the Rent Administrator shall, after review of the figures and computations set forth in the housing provider&#39;s petition, allow additional increases in rent which would generate no more than a 12% rate of return computed according to subsection (b) of this section.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">In determining the rate of return for each housing accommodation, the following formula, computed over a base period of the 12 consecutive months within 15 months preceding the filing of a petition under this chapter, shall be used to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Obtain the net income by subtracting from the sum of maximum possible rental income which can be derived from a housing accommodation to which this section applies and the maximum amount of all other income which can be derived from the housing accommodation the following:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The operating expenses, but the following items shall not be allowed as operating expenses:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">Membership fees in organizations established to influence legislation and regulations;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">Contributions to lobbying efforts;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(iii) </span>
+                
+                    <span class="" style="">Contributions for legal fees in the prosecution of class action cases;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(iv) </span>
+                
+                    <span class="" style="">Political contributions to candidates for office;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(v) </span>
+                
+                    <span class="" style="">Mortgage principal payments;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(vi) </span>
+                
+                    <span class="" style="">Maintenance expenses for which the housing provider has been reimbursed by any security deposit, insurance settlement, judgment for damages, agreed upon payments, or any other method;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(vii) </span>
+                
+                    <span class="" style="">Attorney&#39;s fees charged for services connected with counseling or litigation related to actions brought by the District government due to the housing provider&#39;s repeated failure to comply with applicable housing regulations as evidenced by violation notices issued by the Department of Consumer and Regulatory Affairs; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(viii) </span>
+                
+                    <span class="" style="">Any expenses for which the tenant has lawfully paid directly;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The management fee, where applicable, of not more than 6% of the maximum rental income of the housing accommodation unless an additional amount is approved by the Rent Administrator as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(i) </span>
+                
+                    <span class="" style="">The housing provider shall first file with the Rent Administrator a petition which contains information the Rent Administrator may require, including, but not limited to, the name of the payee; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 6.75em">
+            
+                
+                    <span class="level-num" style="">(ii) </span>
+                
+                    <span class="" style="">If the Rent Administrator determines, based on the petition and other information the Rent Administrator may require, that the excess over 6% of maximum possible income or part of income is reasonable, the Rent Administrator may permit the same excess or so much of the excess as is reasonable;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Property taxes;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Depreciation expenses to the extent reflected in decreased real property tax assessments;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">Vacancy losses for the housing accommodation of not more than 6% of the maximum rental housing income of the housing accommodation unless an additional amount is approved by the Rent Administrator;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Uncollected rents; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">Interest payments;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">Then, divide the net income by the housing provider&#39;s equity in the housing accommodation to determine the rate of return.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Rent Administrator shall accord an expedited review process for a petition filed under this section and shall issue and publish a final decision within 90 days after the petition has been filed. If the Rent Administrator does not render a final decision within 90 days from the date the petition is filed, the rent charged adjustment requested in the petition may be conditionally implemented by the housing provider. The conditional rent charged adjustment shall be subject to subsequent modification by the final decision of the Rent Administrator on the petition. If a hearing has been held on the petition, and the Rent Administrator, by order served upon the parties at least 10 days prior to the expiration of 90 days, makes a provisional finding as to the rent charged adjustment justified by the petition, the housing provider may implement only the amount of the rent charged adjustment authorized by the order. Except to the extent modified by this subsection, the provisions of <a href='/dccode/sections/42-3502.16.html'>§ 42-3502.16</a> shall apply to any adjustment under this section.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(July 17, 1985, <a href='http://openlims.org/public/L6-10.pdf'>D.C. Law 6-10</a>, § 212, 32 DCR 3089; Aug. 5, 2006, <a href='http://openlims.org/public/L16-145.pdf'>D.C. Law 16-145</a>, § 2(a), 53 DCR 4889.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/42-3502.05.html'>§ 42-3502.05</a>, <a href='/dccode/sections/42-3502.06.html'>§ 42-3502.06</a>, <a href='/dccode/sections/42-3502.08.html'>§ 42-3502.08</a>, <a href='/dccode/sections/42-3502.13.html'>§ 42-3502.13</a>, and <a href='/dccode/sections/42-3502.16.html'>§ 42-3502.16</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 45-2522.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-145.pdf'>D.C. Law 16-145</a>, in subsec. (c), substituted &quot;rent charged&quot; for &quot;rent ceiling&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 2(a) of Rent Control Reform Emergency Amendment Act of 2006 (D.C. Act 16-470, July 31, 2006, 53 DCR 6772).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 6-10</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L6-10.pdf'>D.C. Law 6-10</a>, see Historical and Statutory Notes following <a href='/dccode/sections/42-3501.01.html'>§ 42-3501.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-145</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-145, see notes following <a href='/dccode/sections/42-3502.02.html'>§ 42-3502.02</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Termination of law Termination of Law 6-10</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">See Historical and Statutory Notes following <a href='/dccode/sections/42-3502.01.html'>§ 42-3502.01</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

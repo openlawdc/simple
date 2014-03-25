@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 9-203.04. Minor streets.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9">Title 9. Transportation Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2">Chapter 2. Street and Alley Closing and Acquisition Procedures</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2/Unit-A">Unit A. Street and Alley Closings</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-9/Chapter-2/Unit-A/Subchapter-III">Subchapter III. New Streets or Alleys</a></li>
+                    
+                    <li>↪ § 9-203.04. Minor streets.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/9-203.03.html">§ 9-203.03. Council acceptance of land dedication.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/9-203.05.html">§ 9-203.05. Area between property line and building restriction line.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 9-203.04. Minor streets.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">Except as provided in <a href='/dccode/sections/9-203.03.html'>§ 9-203.03(b)</a> and (c), and any regulations issued pursuant to <a href='/dccode/sections/9-203.03.html'>§ 9-203.03(b)</a> or (c), in any 1 block length, a minor street shall be 75 feet wide, though land may be acquired at a width of 55 feet with building restriction lines set 10 feet back on both sides of the street lines.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 10, 1983, <a href='http://openlims.org/public/L4-201.pdf'>D.C. Law 4-201</a>, § 304, 30 DCR 148; Oct. 22, 2008, <a href='http://openlims.org/public/L17-246.pdf'>D.C. Law 17-246</a>, § 2(c), 55 DCR 9010.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/9-203.03.html'>§ 9-203.03</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 7-444.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L17-246.pdf'>D.C. Law 17-246</a> substituted &quot;Except as provided in <a href='/dccode/sections/9-203.03.html'>§ 9-203.03(b)</a> and (c), and any regulations issued pursuant to <a href='/dccode/sections/9-203.03.html'>§ 9-203.03(b)</a> or (c), in any&quot; for &quot;In any&quot;.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 4-201</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For legislative history of <a href='http://openlims.org/public/L4-201.pdf'>D.C. Law 4-201</a>, see Historical and Statutory Notes following <a href='/dccode/sections/9-201.01.html'>§ 9-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 17-246</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 17-246, see notes following <a href='/dccode/sections/9-201.01.html'>§ 9-201.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Approval of new streets or alleys: Section 2 of <a href='http://openlims.org/public/L8-178.pdf'>D.C. Law 8-178</a> provided that the Council accepts the dedication of land and approves the establishment of building restriction lines necessary to create minor streets within Lot 2 in Square 5957, as shown on the Surveyor&#39;s plat filed under S.O. 89-276, upon the filing of certain covenants in the Recorder of Deeds Division. Section 4(b) of <a href='http://openlims.org/public/L8-178.pdf'>D.C. Law 8-178</a> provided that if the covenant required by § 2 of the act is not filed within 2 years of October 2, 1990, the act shall expire.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Creation of street: Section 2 of <a href='http://openlims.org/public/L7-102.pdf'>D.C. Law 7-102</a> provided that pursuant to <a href='/dccode/sections/9-203.04.html'>§ 9-203.04</a> the Council of the District of Columbia accepts the dedication of land and approves the establishment of building restriction lines necessary to create a minor street in Square 4325 connecting 31st Place, N.E., and Fort Lincoln Drive, N.E., in Fort Lincoln New Town, as shown in the Surveyor&#39;s plat filed under S.O. 85-189.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Approval of new streets or alleys: Section 3 of <a href='http://openlims.org/public/L8-81.pdf'>D.C. Law 8-81</a> provided that the Council accepted the dedication of land for minor streets in Squares 5041 and 5056; approved the set-aside of portions of public alleys for minor streets in Squares 5041 and 5056, as shown on the Surveyor&#39;s plat filed under S.O. 88-212; approved the set-aside of a portion of Grant Street, N.E., for Parkside Place, N.E., as shown on the Surveyor&#39;s plat filed under S.O. 88-212; and approved the establishment of building restriction lines for minor streets in Squares 5041 and 5056, as shown on the Surveyor&#39;s plat filed under S.O. 88-212.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 2 of <a href='http://openlims.org/public/L10-197.pdf'>D.C. Law 10-197</a> provided that the Council accepts the dedication of land and approves the establishment of building restriction lines necessary to create a minor street in Square 5969 near Mississippi Avenue, S.E., and 4th Street, S.E., as shown on the Surveyor&#39;s plat filed under S.O. 92-124.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

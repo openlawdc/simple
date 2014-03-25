@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 10-835. Evaluation criteria of a request for proposals.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10">Title 10. Parks, Public Buildings, Grounds, and Space</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-8">Chapter 8. Sale of Public Lands</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-10/Chapter-8/Subchapter-II">Subchapter II. Special Disposal Procedures for Certain Properties</a></li>
+                    
+                    <li>↪ § 10-835. Evaluation criteria of a request for proposals.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/10-834.html">§ 10-834. Subsidies.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/10-836.html">§ 10-836. Disposition of properties.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 10-835. Evaluation criteria of a request for proposals.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" " style="padding-left: 0em">
+            
+                
+                    <span class="" style="">An RFP to dispose of property pursuant to this subchapter shall use the following evaluation criteria and point system:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="level-heading" style="">Offering price — </span>
+                
+                    <span class="" style="">More points shall be awarded for a higher proposed offering price. If a subsidy is offered under <a href='/dccode/sections/10-834.html'>§ 10-834</a> and is requested by the proposer, the subsidy shall be considered in conjunction with the offering price. (10 points).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="level-heading" style="">Quality of rehabilitation — </span>
+                
+                    <span class="" style="">More points shall be awarded for proposing higher-quality rehabilitation. (20 points).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="level-heading" style="">Affordability — </span>
+                
+                    <span class="" style="">The minimum affordability level shall be determined pursuant to <a href='/dccode/sections/10-832.html'>§ 10-832(c)</a>, and shall remain in effect for not less than 10 years for property offered for sale to the public and not less than 40 years for property offered for rental to the public. More points shall be awarded for proposing to develop additional affordable single-household dwelling units (that is units not counted toward the minimum affordability level); greater levels of affordability (that is affordable to a household earning 60% or less of the area median income); or for longer periods of affordability (that is for longer than the minimum period of affordability). (20 points).</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="level-heading" style="">Level of LSDBE involvement — </span>
+                
+                    <span class="" style="">Pursuant to <a href='/dccode/sections/10-833.html'>§ 10-833(a)(2)</a>, a person submitting a winning proposal will be required to enter into an LSDBE MOU. More points shall be awarded for proposing, and evidencing the commitment and ability to achieve, greater involvement by, an LSDBE. (10 points). An additional 5 points shall be awarded to a person submitting a proposal that is an LSDBE whose primary place of business is in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="level-heading" style="">Feasibility — </span>
+                
+                    <span class="" style="">More points shall be awarded to a proposal that is deemed more feasible. Feasibility shall be based on the consideration of whether the property will be likely to be developed and sold or rented in the time-line proposed, with the quality of construction proposed, and at the sales or rental prices proposed. (35 points).</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Apr. 2, 2003, <a href='http://openlims.org/public/L14-267.pdf'>D.C. Law 14-267</a>, § 6, 50 DCR 420; Mar. 13, 2004, <a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a>, § 8(1), 51 DCR 881; June 8, 2006, <a href='http://openlims.org/public/L16-119.pdf'>D.C. Law 16-119</a>, § 3(e), 53 DCR 2609.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L15-105.pdf'>D.C. Law 15-105</a> deleted subsection designation &quot;(a)&quot;; in par. (4), substituted &quot;proposal that&quot; for &quot;proposal who&quot;, and also validated a previously made technical correction.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L16-119.pdf'>D.C. Law 16-119</a>, in the lead-in language, substituted &quot;An RFP to dispose of property&quot; for &quot;An RFP to dispose of properties&quot;; in par. (5), substituted &quot;Feasibility shall be based on the consideration of whether the property will be likely to be developed and sold or rented in the time-line proposed, with the quality of construction proposed, and at the sales or rental prices proposed.&quot; for &quot;Feasibility shall be based on the consideration of whether the properties will be likely to be developed and sold in the time-line proposed, with the quality of construction proposed, and at the sales prices proposed.&quot;; and rewrote par. (3), which had read as follows: &quot;(3) Affordability. The minimum affordability level shall be determined pursuant to <a href='/dccode/sections/10-833.html'>§ 10-833(a)(4)</a>. More points shall be awarded for proposing to develop additional properties (that is properties not counted toward the minimum affordability level) as workforce housing. (20 points).&quot;</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition, see § 6 of Abandoned and Vacant Properties Community Development Disposition, and Disapproval of Disposition of Certain Scattered Vacant and Abandoned Properties Temporary of 2002 (<a href='http://openlims.org/public/L14-203.pdf'>D.C. Law 14-203</a>, October 17, 2002, law notification 49 DCR 10021).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 14-267</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 14-267, see notes following <a href='/dccode/sections/10-831.html'>§ 10-831</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-105</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 15-105, see notes following <a href='/dccode/sections/10-801.01.html'>§ 10-801.01</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 16-119</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For Law 16-119, see notes following <a href='/dccode/sections/10-831.html'>§ 10-831</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

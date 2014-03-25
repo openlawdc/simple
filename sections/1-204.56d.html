@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 1-204.56d. Quarterly financial reports.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1">Title 1. Government Organization</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2">Chapter 2. District of Columbia Home Rule</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV">Subchapter IV. The District Charter</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D">Part D. District Budget and Financial Management</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-1/Chapter-2/Subchapter-IV/Part-D/Subpart-2">Subpart 2. Audits and Accountability Requirements</a></li>
+                    
+                    <li>↪ § 1-204.56d. Quarterly financial reports.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/1-204.56c.html">§ 1-204.56c. Financial plan and report.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/1-204.56e.html">§ 1-204.56e. Submission of Reports to District of Columbia Financial Responsibility and Assistance Authority.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 1-204.56d. Quarterly financial reports.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="level-heading" style="">Submission of quarterly financial reports — </span>
+                
+                    <span class="" style="">Not later than fifteen days after the end of every calendar quarter (beginning with a report for the quarter beginning October 1, 1997), the Chief Financial Officer shall submit to the Committee on Government Reform and Oversight of the House of Representatives, the Committee on Governmental Affairs of the Senate, and the Subcommittees on the District of Columbia of the Committees on Appropriations of the House of Representatives and the Senate, a report on the financial and budgetary status of the government of the District of Columbia for the previous quarter.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-heading" style="">Contents of report — </span>
+                
+                    <span class="" style="">Each quarterly financial report submitted under subsection (a) of this section shall include the following information:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">A comparison of actual to forecasted cash receipts and disbursements for each month of the quarter, as presented in the District&#39;s fiscal year consolidated cash forecast which shall be supported and accompanied by cash forecasts for the general fund and each of the District government&#39;s other funds other than the capital projects fund and trust and agency funds;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A projection of the remaining months cash forecast for that fiscal year;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Explanations of (i) the differences between actual and forecasted cash amounts for each of the months in the quarter, and (ii) any changes in the remaining months forecast as compared to the original forecast for such months of that fiscal year;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The effect of such changes, actual and projected, on the total cash balance of the remaining months and for the fiscal year;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">Explanations of the impact on meeting the budget, how the results may be reflected in a supplemental budget request, or how other policy decisions may be necessary which may require the agencies to reduce expenditures in other areas;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">An aging of the outstanding receivables and payables, with an explanation of how they are reflected in the forecast of cash receipts and disbursements; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">For each department or agency, the actual number of full-time equivalent positions, the actual number of full-time employees, the actual number of part-time employees, and the actual number of temporary employees, together with the source of funding for each such category of positions and employees.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">A statement of the balance of each account held by the District of Columbia Financial Responsibility and Management Assistance Authority as of the end of the quarter, together with a description of the activities within each such account during the quarter based on information supplied by the Authority.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Dec. 24, 1973, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=774'>87 Stat. 774</a>, <a href='http://www.govtrack.us/search?q=public%20law%2093-198'>Pub. L. 93-198</a>, § 456(d), as added Oct. 19, 1994, <a href='http://api.fdsys.gov/link?collection=statute&volume=108&page=3488'>108 Stat. 3488</a>, <a href='http://www.govtrack.us/search?q=public%20law%20103-373'>Pub. L. 103-373</a>, § 3(a)(2); Nov. 19, 1997, <a href='http://api.fdsys.gov/link?collection=statute&volume=111&page=2174'>111 Stat. 2174</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-100'>Pub. L. 105-100</a>, § 130; Oct. 21, 1998, <a href='http://api.fdsys.gov/link?collection=statute&volume=112&page=2681'>112 Stat. 2681</a>, <a href='http://www.govtrack.us/search?q=public%20law%20105-277'>Pub. L. 105-277</a>, § 165.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-234.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

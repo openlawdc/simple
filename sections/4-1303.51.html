@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 4-1303.51. Establishment of the Citizen Review Panel; purposes; duties.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4">Title 4. Public Care Systems</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13">Chapter 13. Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I">Subchapter I. Prevention of Child Abuse and Neglect</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-C-ii">Part C-ii. Citizen Review Panel</a></li>
+                    
+                    <li>↪ § 4-1303.51. Establishment of the Citizen Review Panel; purposes; duties.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-4/Chapter-13/Subchapter-I/Part-C-ii">Part C-ii. Citizen Review Panel</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/4-1303.52.html">§ 4-1303.52. Panel membership.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 4-1303.51. Establishment of the Citizen Review Panel; purposes; duties.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">There is hereby established the Citizen Review Panel, whose purpose is to serve as an external, independent oversight body for the District&#39;s child welfare system, evaluating the strengths and weaknesses of District government agencies involved in child protection as well as neighborhood-based services provided by vendors.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">The Panel shall examine the policies, practices, and procedures of the Agency and any other District government agency that provides services to children at risk of abuse and neglect, or to children under the care of the Agency, including, as appropriate, the review of specific child cases. Based on this examination, the Panel shall evaluate the extent to which agencies serving children at risk of abuse or neglect, or children under the care of the Agency, are effectively discharging their child protection responsibilities in accordance with:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The State plan required by section 106(b) of the Child Abuse Prevention and Treatment Act, approved April 25, 1988 (<a href='http://api.fdsys.gov/link?collection=statute&volume=102&page=110'>102 Stat. 110</a>; 42 U.S.C. § 5106A(b));</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The child protection standards set forth in section 106(b) of the Child Abuse Prevention and Treatment Act, approved April 25, 1988 (<a href='http://api.fdsys.gov/link?collection=statute&volume=102&page=110'>102 Stat. 110</a>; 42 U.S.C. § 5106A(b)); and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Any other criteria that the Panel deems important to ensure the protection of children.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">The Panel shall solicit public outreach and comment in order to assess the impact of current policies, practices, and procedures of the child welfare system on children and families in the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The Panel shall submit a report, no later than April 30th of each year, to the Mayor, Council, and Agency, summarizing the Panel&#39;s activities and findings during the prior calendar year, containing recommendations on how to improve child welfare services and outcomes in the District of Columbia, and providing information on the progress the District government is making in implementing the recommendations of the Panel.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Agency shall make the annual report available to the public by providing access to it on its Internet site.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">Not later than 6 months after the Panel publishes the annual report, the Agency shall provide a written response that describes whether or how the Agency, in coordination with other government agencies, will implement the Panel&#39;s recommendations in order to make measurable progress in improving the child welfare system.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Sept. 23, 1977, <a href='http://openlims.org/public/L2-22.pdf'>D.C. Law 2-22</a>, title IIIB, § 351, as added Apr. 12, 2005, <a href='http://openlims.org/public/L15-341.pdf'>D.C. Law 15-341</a>, § 2(m), 52 DCR 2315.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 15-341</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 15-341, the &quot;Child in Need of Protection Amendment Act of 2004&quot;, was introduced in Council and assigned Bill No. 15-389 which was referred to the Committee on Judiciary and the Committee on Human Services. The Bill was adopted on first and second readings on December 7, 2004, and December 21, 2004, respectively. Signed by the Mayor on January 19, 2005, it was assigned Act No. 15-758 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L15-341.pdf'>D.C. Law 15-341</a> became effective on April 12, 2005.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

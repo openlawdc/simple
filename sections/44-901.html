@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 44-901. Findings and purposes.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44">Title 44. Charitable and Curative Institutions</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-9">Chapter 9. Mental Health Services</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-44/Chapter-9/Subchapter-I">Subchapter I. District of Columbia Mental Health Services</a></li>
+                    
+                    <li>↪ § 44-901. Findings and purposes.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/Title-44/Chapter-9/Subchapter-I">Subchapter I. District of Columbia Mental Health Services</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/44-902.html">§ 44-902. Definitions.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 44-901. Findings and purposes.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">The Congress makes the following findings:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Governmentally administered mental health services in the District of Columbia are currently provided through 2 separate public entities, the federally administered Saint Elizabeths Hospital and the Mental Health Services Administration of the District of Columbia Department of Human Resources.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The District of Columbia has a continuing responsibility to provide mental health services to its residents.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The federal government, through its operation of a national mental health program at Saint Elizabeths Hospital, has for over 100 years assisted the District of Columbia in carrying out that responsibility.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">Since its establishment by Congress in 1855, Saint Elizabeths Hospital has developed into a respected national mental health hospital and study, training, and treatment center, providing a range of quality mental health and related services, including:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">Acute and chronic inpatient psychiatric care;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">Outpatient psychiatric and substance abuse clinical and related services;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Federal court system forensic psychiatry referral, evaluation, and patient treatment services for prisoners, and for individuals awaiting trial or requiring post-trial or post-sentence psychiatric evaluation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(D) </span>
+                
+                    <span class="" style="">Patient care and related services for designated classes of individuals entitled to mental health benefits under federal law, such as certain members and employees of the United States Armed Forces and the Foreign Service, and residents of American overseas dependencies;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(E) </span>
+                
+                    <span class="" style="">District of Columbia court system forensic psychiatry referral, evaluation, and patient treatment services for prisoners, and for individuals awaiting trial or requiring post-trial or post-sentence psychiatric evaluation;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(F) </span>
+                
+                    <span class="" style="">Programs for special populations such as the mentally ill deaf;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(G) </span>
+                
+                    <span class="" style="">Support for basic and applied clinical psychiatric research and related patient services conducted by the National Institute of Mental Health and other institutions; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(H) </span>
+                
+                    <span class="" style="">Professional and paraprofessional training in the major mental health disciplines.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The continuation of the range of services currently provided by federally administered Saint Elizabeths Hospital must be assured, as these services are integrally related to:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">The availability of adequate mental health services to District of Columbia residents, nonresidents who require mental health services while in the District of Columbia, individuals entitled to mental health services under federal law, and individuals referred by both federal and local court systems; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">The Nation&#39;s capacity to increase our knowledge and understanding about mental illness and to facilitate and continue the development and broad availability of sound and modern methods and approaches for the treatment of mental illness.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The assumption of all or selected functions, programs, and resources of Saint Elizabeths Hospital from the federal government by the District of Columbia, and the integration of those functions, resources, and programs into a comprehensive mental health care system administered solely by the District of Columbia, will improve the efficiency and effectiveness of the services currently provided through those 2 separate entities by shifting the primary focus of care to an integrated community-based system.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">Such assumption of all or selected functions, programs, and resources of Saint Elizabeths Hospital by the District of Columbia would further the principle of home rule for the District of Columbia.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">It is the intent of Congress that:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">The District of Columbia have in operation no later than October 1, 1991, an integrated coordinated mental health system in the District which provides:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(A) </span>
+                
+                    <span class="" style="">High quality, cost-effective, and community-based programs and facilities;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(B) </span>
+                
+                    <span class="" style="">A continuum of inpatient and outpatient mental health care, residential treatment, and support services through an appropriate balance of public and private resources; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 4.5em">
+            
+                
+                    <span class="level-num" style="">(C) </span>
+                
+                    <span class="" style="">Assurances that patient rights and medical needs are protected;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The comprehensive District mental health care system be in full compliance with the federal court consent decree in Dixon v. Heckler;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">The District and federal governments bear equitable shares of the costs of a transition from the present system to a comprehensive District mental health system;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">The transition to a comprehensive District mental health system provided for by this subchapter be carried out with maximum consideration for the interests of employees of the Hospital and provide a right-of-first-refusal to such employees for employment at comparable levels in positions created under the system implementation plan;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(5) </span>
+                
+                    <span class="" style="">The federal government have the responsibility for the retraining of Hospital employees to prepare such employees for the requirements of employment in a comprehensive District mental health system;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(6) </span>
+                
+                    <span class="" style="">The federal government continue high quality mental health research, training, and demonstration programs at Saint Elizabeths Hospital;</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(7) </span>
+                
+                    <span class="" style="">The District government establish and maintain accreditation and licensing standards for all services provided in District mental health facilities which assure quality care consistent with appropriate federal regulations and comparable with standards of the Joint Commission on Accreditation of Hospitals; and</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(8) </span>
+                
+                    <span class="" style="">The comprehensive mental health system plan include a component for direct services for the homeless mentally ill.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Nov. 8, 1984, <a href='http://api.fdsys.gov/link?collection=statute&volume=98&page=3369'>98 Stat. 3369</a>, <a href='http://www.govtrack.us/search?q=public%20law%2098-621'>Pub. L. 98-621</a>, § 2; Oct. 31, 1991, <a href='http://api.fdsys.gov/link?collection=statute&volume=105&page=980'>105 Stat. 980</a>, <a href='http://www.govtrack.us/search?q=public%20law%20102-150'>Pub. L. 102-150</a>, § 3(a).)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/44-904.html'>§ 44-904</a> and <a href='/dccode/sections/44-907.html'>§ 44-907</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 32-621.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effective Dates</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://www.govtrack.us/search?q=public%20law%2098-621'>Section 11(a) of Pub. L. 98-621</a> provided that this subchapter is effective on October 1, 1985.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Delegation of Authority</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Delegation of Authority to Make Grants to Implement the Saint Elizabeths Hospital and District of Columbia Mental Health Services Act, <a href='http://www.govtrack.us/search?q=public%20law%2098-621'>Public Law 98-621</a>, see Mayor&#39;s Order 92-64, May 19, 1992.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Transitional payment authorized: <a href='http://www.govtrack.us/search?q=public%20law%20101-518'>Public Law 101-518</a>, <a href='http://api.fdsys.gov/link?collection=statute&volume=104&page=2224'>104 Stat. 2224</a>, the District of Columbia Appropriations Act, 1991, provided for a federal contribution to the District of Columbia, as authorized by the Saint Elizabeth&#39;s Hospital and District of Columbia Mental Health Services Act, approved November 8, 1984 (<a href='http://api.fdsys.gov/link?collection=statute&volume=98&page=3369'>98 Stat. 3369</a>; <a href='http://www.govtrack.us/search?q=public%20law%2098-621'>Public Law 98-621</a>), $15,000,000. Inpatient rate and operating costs: <a href='http://www.govtrack.us/search?q=public%20law%2099-591'>Section 101(d) of Pub. L. 99-591</a>, the D.C. Appropriations Act, 1987, provided that the inpatient rate (excluding the proportionate share for repairs and construction) for services rendered by Saint Elizabeths Hospital for patient care shall be at the per diem rate established pursuant to § 2 of an Act to authorize certain expenditures from the appropriation of Saint Elizabeths Hospital, and for other purposes, approved August 4, 1947 (61 Stat. 751, <a href='http://www.govtrack.us/search?q=public%20law%2080-353'>Pub. L. 80-353</a>; 24 U.S.C. § 168(a)); and provided further, that total funds paid by the District of Columbia as reimbursements for operating costs of Saint Elizabeths Hospital, including any District of Columbia payments (but excluding the federal matching share of payments) associated with title XIX of the Social Security Act, approved July 30, 1965 (<a href='http://api.fdsys.gov/link?collection=statute&volume=79&page=343'>79 Stat. 343</a>; <a href='http://www.govtrack.us/search?q=public%20law%2089-97'>Pub. L. 89-97</a>; 42 U.S.C. § 1396 et seq.), shall not exceed $71,200,000. Preferred Alternative Use and Transfer of the Saint Elizabeths West Campus Emergency Resolution of 1993: Pursuant to Resolution 10-129, effective July 21, 1993, the Council concurred, on an emergency basis, with the Mayor&#39;s recommendation of the use and proposed transfer of the West Campus of Saint Elizabeths Hospital to the District of Columbia pursuant to the Saint Elizabeths Hospital and District of Columbia Mental Health Services Act.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-2002.01. Street vendors; minimum sales tax.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-20">Chapter 20. Gross Sales Tax</a></li>
+                    
+                    <li>↪ § 47-2002.01. Street vendors; minimum sales tax.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/47-2002.html">§ 47-2002. Imposition of tax.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/47-2002.02.html">§ 47-2002.02. Tax on gross receipts for transient lodgings or accommodations; food or drink for immediate consumption; spirits sold for consumption on premises; rental vehicles.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-2002.01. Street vendors; minimum sales tax.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">For the purposes of this section, the term:</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">&quot;Business Beneficial License Holder&quot; means a corporation, limited liability company, partnership, or other business entity that is the beneficial owner of the vending license held by an Employee License Holder.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">&quot;Employee License Holder&quot; means an individual street vendor who holds a vending license as an employee, agent, or representative, or for the ultimate benefit, of a corporation, limited liability company, partnership, or other business entity.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">&quot;MST&quot; means the minimum sales tax that a street vendor is obligated to pay.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(4) </span>
+                
+                    <span class="" style="">&quot;Street vendor&quot; means a person licensed to vend from a sidewalk, roadway, or other public space under Chapter 1A of Title 37.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Except as provided in subsection (c) or (d) of this section, a street vendor who holds a license, including a temporary license, authorizing the vending of merchandise, food, or services from public space or from door to door who has collected less than $375 in sales tax for the quarter shall file a return pursuant to <a href='/dccode/sections/47-2002.html'>§ 47-2002</a> and as required by the Office of the Chief Financial Officer&#39;s Office of Tax and Revenue and remit a $375 MST payment for the quarter being reported.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">A MST payment shall be made in a manner prescribed by the Office of the Chief Financial Officer&#39;s Office of Tax and Revenue.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">If a MST payment is not timely remitted, the unpaid MST payment shall be considered unpaid sales tax and all sections of this chapter applicable to the collection and assessment of unpaid sales tax and the imposition of interest and penalties shall apply.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(c) </span>
+                
+                    <span class="" style="">Except as provided in subsection (d) of this section, if a street vendor has collected sales tax in excess of $375 for the quarter being reported, subsection (b) of this section shall not apply and the street vendor shall file a return pursuant to <a href='/dccode/sections/47-2002.html'>§ 47-2002</a> and as required by the Office of the Chief Financial Officer&#39;s Office of Tax and Revenue and remit the full amount of the sales tax collected for the quarter being reported.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(d) </span>
+                
+                    <span class="level-num" style="">(1) </span>
+                
+                    <span class="" style="">Notwithstanding any other provision of this section, if an individual street vendor holds a vending license as an Employee License Holder for a Business Beneficial License Holder, the Employee License Holder shall not be individually responsible for filing a return or remitting an MST under this section. If the Business Beneficial License Holder files a single, consolidated return pursuant to <a href='/dccode/sections/47-2002.html'>§ 47-2002</a>, reporting all sales tax collected by all Employee License Holders who are employed by or otherwise affiliated with the Business Beneficial License Holder, and remitting the full amount of the sales tax due by all such Employee License Holders for the quarter being reported, the return shall report the vending license number of each vending license held by an Employee License Holder for which information is included in the return.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(2) </span>
+                
+                    <span class="" style="">The Business Beneficial License Holder shall be responsible for maintaining all books and records of the sales made by its employee street vendors pursuant to <a href='/dccode/sections/47-4311.html'>§ 47-4311</a>.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-num" style="">(3) </span>
+                
+                    <span class="" style="">A consolidated sales tax filing shall be filed electronically in the manner prescribed by the Office of Tax and Revenue.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(May 27, 1949, 63 Stat. 112, ch. 146, title I, § 125, as Sept. 30, 1993, <a href='http://openlims.org/public/L10-25.pdf'>D.C. Law 10-25</a>, § 111(f), 40 DCR 5489; enacted, Apr. 9, 1997, <a href='http://openlims.org/public/L11-254.pdf'>D.C. Law 11-254</a>, § 2, 44 DCR 1575; Oct. 22, 2009, <a href='http://openlims.org/public/L18-71.pdf'>D.C. Law 18-71</a>, § 12(c)(1), 56 DCR 6619; July 13, 2012, <a href='http://openlims.org/public/L19-149.pdf'>D.C. Law 19-149</a>, § 2(a)(2), <a href='http://www.dcregs.dc.gov/Gateway/IssueList.aspx?IssueYear=2012'>59 DCR 5129</a>.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/47-2762.html'>§ 47-2762</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-2002.1.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Effect of Amendments</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L18-71.pdf'>D.C. Law 18-71</a> rewrote subsec. (a); in subsec. (b)(2), substituted &quot;license authorizing the vending of merchandise, food, or services from public space or from door to door, including a temporary license&quot; for &quot;Class A license, Class B license, Class C nonfood license, Class C food license, or any combination of these licenses&quot;; and repealed subsec. (b)(4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style=""><a href='http://openlims.org/public/L19-149.pdf'>D.C. Law 19-149</a> rewrote the section.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Amendment of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 11(c)(1) of <a href='http://openlims.org/public/L17-172.pdf'>D.C. Law 17-172</a> rewrote subsec. (a) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(a) For the purposes of this section, the term &#39;street vendor&#39; means a person licensed to vend from a sidewalk, roadway, or other public space under the Vending Regulation Temporary Act of 2008, passed on 2nd reading on April 1, 2008 (Enrolled version of Bill 17-653).&quot;; and, in subsec. (b), substituted &quot;license authorizing the vending of merchandise, food, or services from public space or from door to door, including a temporary license,&quot; for &quot;Class A license, Class B license, Class C nonfood license, Class C food license, or any combination of these licenses&quot; in par. (2), and repealed par. (4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 13(b) of <a href='http://openlims.org/public/L17-172.pdf'>D.C. Law 17-172</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 10(c)(1) of <a href='http://openlims.org/public/L18-4.pdf'>D.C. Law 18-4</a> rewrote subsec. (a) to read as follows:</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">&quot;(a) For the purposes of this section, the term &#39;street vendor&#39; means a person licensed to vend from a sidewalk, roadway, or other public space on or after March 19, 2008.&quot;.; and, in subsec. (b), substituted &quot;license authorizing the vending of merchandise, food, or services from public space or from door to door, including a temporary license,&quot; for &quot;Class A license, Class B license, Class C nonfood license, Class C food license, or any combination of these licenses&quot; in par. (2), and repealed par. (4).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 12(b) of <a href='http://openlims.org/public/L18-4.pdf'>D.C. Law 18-4</a> provided that the act shall expire after 225 days of its having taken effect.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Temporary Addition of Section</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) continuation of non-food open air retailing at Eastern Market, see § 2 of Eastern Market Open Air Retailing Temporary Act of 1998 (<a href='http://openlims.org/public/L12-133.pdf'>D.C. Law 12-133</a>, July 24, 1998, law notification 45 DCR 6504).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) continuation of non-food open air retailing at Eastern Market, see § 2 of Eastern Market Open Air Retailing Second Temporary Act of 1998 (<a href='http://openlims.org/public/L12-150.pdf'>D.C. Law 12-150</a>, September 18, 1998, law notification 45 DCR 6947).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (225 day) addition of section, see § 111(f) of Omnibus Budget Support Temporary Act of 1993 (<a href='http://openlims.org/public/L10-11.pdf'>D.C. Law 10-11</a>, August 6, 1993, law notification 40 DCR 6213).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Emergency Legislation</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary permission, on an emergency basis, for the interim continuation of non-food open air retailing in the exterior space at Eastern Market, see §§ 2 and 3 of the Eastern Market Open Air Retailing Emergency Act of 1998 (D.C. Act 12-320, April 6, 1998, 45 DCR 2296), §§ 2 and 3 of the Eastern Market Open Air Retailing Second Emergency Act of 1998 (D.C. Act 12-352, May 12, 1998, 45 DCR 3104), and §§ 2 and 3 of the Eastern Market Open Air Retailing Congressional Review Emergency Act of 1998 (D.C. Act 12-435, August 7, 1998, 45 DCR 5951).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary repeal of the Eastern Market Open Air Retailing Emergency Act of 1998 (D.C. Act 12-320), see § 4(a) of the Eastern Market Open Air Retailing Second Emergency Act of 1998 (D.C. Act 12-352, May 12, 1998, 45 DCR 3104).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary repeal of the Eastern Market Open Air Retailing Temporary Act of 1998 (Bill 12-513), see § 4(b) of the Eastern Market Open Air Retailing Second Emergency Act of 1998 (D.C. Act 12-352, May 12, 1998, 45 DCR 3104).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90-day) authorization of open air retailing, see §§ 2 and 3 of the Eastern Market Open Air Retailing Emergency Act of 1999 (D.C. Act 13-54, April 6, 1999, 46 DCR 3648).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 10(c)(1) of Vending Regulation Emergency Act of 2008 (D.C. Act 17-322, March 19, 2008, 55 DCR 3445).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 10(c)(1) of Vending Regulation Emergency Act of 2009 (D.C. Act 18-9, January 29, 2009, 56 DCR 1638).</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">For temporary (90 day) amendment of section, see § 10(c)(1) of Vending Regulation Congressional Review Emergency Act of 2009 (D.C. Act 18-47, April 27, 2009, 56 DCR 3574).</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 10-25</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 10-25, the &quot;Omnibus Budget Support Act of 1993,&quot; was introduced in Council and assigned Bill No. 10-165, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on June 1, 1993, and June 29, 1993, respectively. Signed by the Mayor on July 16, 1993, it was assigned Act No. 10-57 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L10-25.pdf'>D.C. Law 10-25</a> became effective on September 30, 1993.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 18-71</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 18-71, the &quot;Vending Regulation Act of 2009&quot;, as introduced in Council and assigned Bill No. 18-257, which was referred to the Committee on Public Services and Consumer Affairs. The bill was adopted on first and second readings on June 30, 2009, and July 14, 2009, respectively. Signed by the Mayor on July 28, 2009, it was assigned Act No. 18-167 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L18-71.pdf'>D.C. Law 18-71</a> became effective on October 22, 2009.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Legislative History of Law 19-149</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Law 19-149, the &quot;Vendor Sales Tax Collection and Remittance Act of 2012&quot;, was introduced in Council and assigned Bill No. 19-163, which was referred to the Committee of the Whole. The Bill was adopted on first and second readings on April 17, 2012, and May 1, 2012, respectively. Signed by the Mayor on May 11, 2012, it was assigned Act No. 19-355 and transmitted to both Houses of Congress for its review. <a href='http://openlims.org/public/L19-149.pdf'>D.C. Law 19-149</a> became effective on July 13, 2012.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Section 3 of <a href='http://openlims.org/public/L19-149.pdf'>D.C. Law 19-149</a> provided: &quot;Sec. 3. Applicability. This act shall apply as of October 1, 2012.&quot;</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DC Code - § 47-834. Reassessment or redistribution - Subdivisions; notice and appeal; validity.</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+
+        <script>
+            function search_box_submit() {
+                event.preventDefault();
+                var elem = document.getElementById("search-box")
+                var val = elem.value;
+                if (val.length == 0) return false;
+
+                val = val.replace("§", "").replace(" ", "");
+                var p = val.indexOf("-");
+                if (p == -1) {
+                    alert("Search by citation, such as §50-102.");
+                    return false;
+                }
+
+                title = val.substring(0, p);
+                sec = val.substring(p+1);
+
+                var oReq = new XMLHttpRequest();
+                oReq.onload = function() {
+                    var title_shard = JSON.parse(this.responseText);
+                    if (!(sec in title_shard["sec"])) {
+                        alert("Citation not found.")
+                        return false;
+                    }
+                    window.location = "/dccode/" + title_shard["sec"][sec].replace(".xml", ".html");
+                };
+                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.send();
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <div class='right'>
+                    <form onsubmit="return search_box_submit()">
+                        <input id="search-box" type="text" placeholder="15-101" style="width: 100px"/>
+                        <button style="height: 30px; font-size: 22px;" onclick="search_box_submit()"><span class="icon-search"/></button>
+                    </form>
+                </div>
+                <p id="sitename">Code of the District of Columbia (Unofficial)</p>
+            </header>
+
+            <div class="clearfix" style="width: 100%;">
+
+            <div id="sidebar" class="col4">
+                
+                    <h2>You Are Here</h2>
+                    <ul class="ancestors">
+                    
+                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47">Title 47. Taxation, Licensing, Permits, Assessments, and Fees</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-8">Chapter 8. Real Property Assessment and Tax</a></li>
+                    
+                        <li>↪ <a href="/dccode/Title-47/Chapter-8/Subchapter-II">Subchapter II. Authority and Procedure to Establish Real Property Tax Rates</a></li>
+                    
+                    <li>↪ § 47-834. Reassessment or redistribution - Subdivisions; notice and appeal; validity.</a></li>
+                    </ul>
+                
+
+                
+                    <h2>Previous Section</h2>
+                    <p><a href="/dccode/sections/47-833.html">§ 47-833. Unsubdivided tracts.</a>
+                
+
+                
+                    <h2>Next Section</h2>
+                    <p><a href="/dccode/sections/47-835.html">§ 47-835. Reassessment or redistribution - Powers and duties of Department of Finance and Revenue and Assessor.</a>
+                
+
+                <h2>Current as of...</h2>
+                <p class="recency">December 13, 2013 and through D.C. Act 20-210 (except D.C. Acts 20-130, 20-157, and 20-204)</p>
+
+            </div>
+
+            <div class="col8">
+                <div id="content">
+                    <h1>§ 47-834. Reassessment or redistribution - Subdivisions; notice and appeal; validity.</h1>
+
+
+     
+
+    
+
+    
+
+    <div class="primary-content"> 
+
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(a) </span>
+                
+                    <span class="" style="">Whenever application is made according to law for the reassessment or redistribution of taxes by reason of the subdivision of any tract of land in the District, the department charged with the assessment of real estate in the District is hereby authorized and directed to reassess and redistribute any general or special assessment or tax levied or due and unpaid in accordance with provisions of laws for the assessment and equalizations of valuations of real estate in the District for taxation. The Assessor shall promptly notify the owners of record of the land, the taxes of which shall be reassessed or redistributed. Notices in such case shall be served upon each lot or parcel owner if he or she be a resident of the District and his or her residence known, and if he or she be a nonresident of the District, or his or her residence unknown, such notice shall be served on his or her tenant or agent, as the case may be, and if there be no tenant or agent known to the Mayor of the District of Columbia, then he shall give notice of such assessment by advertisement twice a week for 2 weeks in some newspaper published in said District. The service of such notice, where the owner or his tenant or agent resides in the District, shall be either personal or by leaving the same with some person of suitable age at the residence or place of business of such owner, agent, or tenant; and return of such service, stating the manner thereof, shall be made in writing and filed in the office of the Mayor. Any person aggrieved by such reassessment or redistribution may, within 6 months after notice of such reassessment or redistribution, appeal from such reassessment or redistribution in the same manner and to the same extent as provided in §<a href='/dccode/sections/47-3303.html'>§ 47-3303</a> and 47-3304.</span>
+                
+            
+        </p>
+    
+        <p class=" has-level-num " style="padding-left: 0em">
+            
+                
+                    <span class="level-num" style="">(b) </span>
+                
+                    <span class="" style="">Any reassessment or redistribution made under §<a href='/dccode/sections/47-832.html'>§ 47-832</a> to 47-835 shall be as valid and effectual upon the various parts of the property, in the same manner and to the same extent as if the tax or assessment so reassessed or redistributed had been laid originally thereon under the various laws appertaining thereto. No payment or failure to pay a tax or assessment upon any such part shall change or affect the liability of the other parts of such property for any tax or assessment so reassessed or redistributed.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+    <div class="annotations"> 
+
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">History</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">(Mar. 1, 1921, 41 Stat. 1196, ch. 95, § 4; Aug. 17, 1937, 50 Stat. 693, ch. 690, title IX, § 5(e); May 16, 1938, 52 Stat. 374, ch. 223, § 8; July 29, 1970, <a href='http://api.fdsys.gov/link?collection=statute&volume=84&page=580'>84 Stat. 580</a>, <a href='http://www.govtrack.us/search?q=public%20law%2091-358'>Pub. L. 91-358</a>, title I, § 161(a)(5); enacted, Apr. 9, 1997, <a href='http://openlims.org/public/L11-254.pdf'>D.C. Law 11-254</a>, § 2, 44 DCR 1575.)</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Cross References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Superior Court Tax Division, appeals of real estate assessments, see <a href='/dccode/sections/47-3305.html'>§ 47-3305</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Section References</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">This section is referenced in <a href='/dccode/sections/47-3305.html'>§ 47-3305</a>.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Prior Codifications</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1981 Ed., § 47-834.</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">1973 Ed., § 47-716.</span>
+                
+            
+        </p>
+    
+        <p class="subheading " style="padding-left: 2.25em">
+            
+                
+                    <span class="level-heading" style="">Editor's Notes</span>
+                
+            
+        </p>
+    
+        <p class=" " style="padding-left: 2.25em">
+            
+                
+                    <span class="" style="">Office of Assessor abolished: See Historical and Statutory Notes following <a href='/dccode/sections/47-413~P.html'>§ 47-413</a>.</span>
+                
+            
+        </p>
+    
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>This is a fast, unofficial interface to the <a href='http://dccouncil.us/UnofficialDCCode'>Unofficial DC Code</a> by <a href='https://github.com/openlawdc'>openlawdc</a>. Please <a href='https://github.com/openlawdc/simple-2/issues'>report issues</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>
