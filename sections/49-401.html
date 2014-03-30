@@ -13,15 +13,14 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/icons/style.css' media='screen' />
 
         <script>
             function search_box_submit() {
-                event.preventDefault();
                 var elem = document.getElementById("search-box")
                 var val = elem.value;
                 if (val.length == 0) return false;
@@ -43,9 +42,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/dccode/" + title_shard["sec"][sec];
+                    window.location = "/simple/" + title_shard["sec"][sec];
                 };
-                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.open("get", "/simple/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
@@ -72,13 +71,13 @@
                     <h2>You Are Here</h2>
                     <ul class="ancestors">
                     
-                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                        <li><a href="/simple">Code of the District of Columbia</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-49">Title 49. Military</a></li>
+                        <li>↪ <a href="/simple/Title-49">Title 49. Military</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-49/Chapter-4">Chapter 4. Composition, Organization, and Control</a></li>
+                        <li>↪ <a href="/simple/Title-49/Chapter-4">Chapter 4. Composition, Organization, and Control</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-49/Chapter-4/Subchapter-I">Subchapter I. General</a></li>
+                        <li>↪ <a href="/simple/Title-49/Chapter-4/Subchapter-I">Subchapter I. General</a></li>
                     
                     <li>↪ § 49-401. Militia; persons to be enrolled.</a></li>
                     </ul>
@@ -86,12 +85,12 @@
 
                 
                     <h2>Previous Section</h2>
-                    <p><a href="/dccode/Title-49/Chapter-4/Subchapter-I">Subchapter I. General</a>
+                    <p><a href="/simple/Title-49/Chapter-4/Subchapter-I">Subchapter I. General</a>
                 
 
                 
                     <h2>Next Section</h2>
-                    <p><a href="/dccode/sections/49-402.html">§ 49-402. Exemptions from service.</a>
+                    <p><a href="/simple/sections/49-402.html">§ 49-402. Exemptions from service.</a>
                 
 
                 <h2>Current as of...</h2>
@@ -116,7 +115,7 @@
         <p class=" " style="padding-left: 0em">
             
                 
-                    <span class="" style="">Every able-bodied male citizen resident within the District of Columbia, of the age of 18 years and under the age of 45 years, excepting persons exempted by <a href='/dccode/sections/49-402.html'>§ 49-402</a>, and idiots, lunatics, common drunkards, vagabonds, paupers, and persons convicted of any infamous crime, shall be enrolled in the militia. Persons so convicted after enrollment shall forthwith be disenrolled; and in all cases of doubt respecting the age of a person enrolled, the burden of proof shall be upon him.</span>
+                    <span class="" style="">Every able-bodied male citizen resident within the District of Columbia, of the age of 18 years and under the age of 45 years, excepting persons exempted by <a href='/simple/sections/49-402.html'>§ 49-402</a>, and idiots, lunatics, common drunkards, vagabonds, paupers, and persons convicted of any infamous crime, shall be enrolled in the militia. Persons so convicted after enrollment shall forthwith be disenrolled; and in all cases of doubt respecting the age of a person enrolled, the burden of proof shall be upon him.</span>
                 
             
         </p>

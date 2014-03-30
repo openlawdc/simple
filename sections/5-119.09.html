@@ -13,15 +13,14 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/icons/style.css' media='screen' />
 
         <script>
             function search_box_submit() {
-                event.preventDefault();
                 var elem = document.getElementById("search-box")
                 var val = elem.value;
                 if (val.length == 0) return false;
@@ -43,9 +42,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/dccode/" + title_shard["sec"][sec];
+                    window.location = "/simple/" + title_shard["sec"][sec];
                 };
-                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.open("get", "/simple/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
@@ -72,13 +71,13 @@
                     <h2>You Are Here</h2>
                     <ul class="ancestors">
                     
-                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                        <li><a href="/simple">Code of the District of Columbia</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-5">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
+                        <li>↪ <a href="/simple/Title-5">Title 5. Police, Firefighters, Medical Examiner, and Forensic Sciences</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-5/Chapter-1">Chapter 1. Metropolitan Police</a></li>
+                        <li>↪ <a href="/simple/Title-5/Chapter-1">Chapter 1. Metropolitan Police</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-5/Chapter-1/Subchapter-X">Subchapter X. Property</a></li>
+                        <li>↪ <a href="/simple/Title-5/Chapter-1/Subchapter-X">Subchapter X. Property</a></li>
                     
                     <li>↪ § 5-119.09. Property transmitted; deceased and incompetent persons; storage; fees; sale.</a></li>
                     </ul>
@@ -86,12 +85,12 @@
 
                 
                     <h2>Previous Section</h2>
-                    <p><a href="/dccode/sections/5-119.08.html">§ 5-119.08. Ownership claim by other than person arrested.</a>
+                    <p><a href="/simple/sections/5-119.08.html">§ 5-119.08. Ownership claim by other than person arrested.</a>
                 
 
                 
                     <h2>Next Section</h2>
-                    <p><a href="/dccode/sections/5-119.10.html">§ 5-119.10. Sale at public auction; motor vehicle with lien of record; disposition of proceeds from sale.</a>
+                    <p><a href="/simple/sections/5-119.10.html">§ 5-119.10. Sale at public auction; motor vehicle with lien of record; disposition of proceeds from sale.</a>
                 
 
                 <h2>Current as of...</h2>
@@ -130,7 +129,7 @@
                 
                     <span class="level-num" style="">(1) </span>
                 
-                    <span class="" style="">Whenever any money or property of a deceased person of a value of less than $1,000 coming into the custody of the Property Clerk shall remain in his custody for a period of 6 months or more without being claimed and repossessed by the next of kin or the legal representative of such deceased person, such money or property shall be disposed of as lost or abandoned property as provided in <a href='/dccode/sections/5-119.10.html'>§ 5-119.10</a>; provided, that prior to the disposition of such property of a deceased person it shall be the duty of the Property Clerk to ascertain whether there is pending in the court having probate jurisdiction any petition seeking the appointment of a legal representative of such deceased person, and, if such a petition is pending in such court, the Property Clerk shall not dispose of such property until final disposition by the court of such petition; provided further, that in any case where the Property Clerk acquires actual knowledge that a petition for the appointment of a legal representative of such deceased person has been filed or is pending in a court outside of the District of Columbia, the Property Clerk shall not dispose of such property until final disposition by the court of such petition.</span>
+                    <span class="" style="">Whenever any money or property of a deceased person of a value of less than $1,000 coming into the custody of the Property Clerk shall remain in his custody for a period of 6 months or more without being claimed and repossessed by the next of kin or the legal representative of such deceased person, such money or property shall be disposed of as lost or abandoned property as provided in <a href='/simple/sections/5-119.10.html'>§ 5-119.10</a>; provided, that prior to the disposition of such property of a deceased person it shall be the duty of the Property Clerk to ascertain whether there is pending in the court having probate jurisdiction any petition seeking the appointment of a legal representative of such deceased person, and, if such a petition is pending in such court, the Property Clerk shall not dispose of such property until final disposition by the court of such petition; provided further, that in any case where the Property Clerk acquires actual knowledge that a petition for the appointment of a legal representative of such deceased person has been filed or is pending in a court outside of the District of Columbia, the Property Clerk shall not dispose of such property until final disposition by the court of such petition.</span>
                 
             
         </p>
@@ -172,7 +171,7 @@
                 
                     <span class="level-num" style="">(2) </span>
                 
-                    <span class="" style="">The Mayor is authorized to fix, by regulation, the fees to be charged to reimburse the District of Columbia for the cost of services rendered by the Metropolitan Police force in taking custody of and protecting such property and for the cost of storing such property in any commercial warehouse or garage, and whenever any such property is stored in or on any facility under the jurisdiction of the District of Columbia, the Mayor shall fix the storage fee in an amount reasonably estimated by him to be the value of the storage service rendered for each day during which such property is so stored, and to collect all such fees due and owing for such property before releasing such property to its owner or his legal representative; provided, that the Mayor is authorized, in his discretion, to waive the charging and collecting of such fees for property taken into custody as evidence, the proceeds of crime, or from persons supposed to be insane; provided further, that the Property Clerk is authorized to sell at public auction pursuant to subsection (b) of <a href='/dccode/sections/5-119.10.html'>§ 5-119.10</a> any property stored in a commercial garage or warehouse, when the storage charges for such property exceed 75% of its value as determined by the Property Clerk, regardless of the amount of time for which such property is required by other sections of this chapter to be held by the Property Clerk.</span>
+                    <span class="" style="">The Mayor is authorized to fix, by regulation, the fees to be charged to reimburse the District of Columbia for the cost of services rendered by the Metropolitan Police force in taking custody of and protecting such property and for the cost of storing such property in any commercial warehouse or garage, and whenever any such property is stored in or on any facility under the jurisdiction of the District of Columbia, the Mayor shall fix the storage fee in an amount reasonably estimated by him to be the value of the storage service rendered for each day during which such property is so stored, and to collect all such fees due and owing for such property before releasing such property to its owner or his legal representative; provided, that the Mayor is authorized, in his discretion, to waive the charging and collecting of such fees for property taken into custody as evidence, the proceeds of crime, or from persons supposed to be insane; provided further, that the Property Clerk is authorized to sell at public auction pursuant to subsection (b) of <a href='/simple/sections/5-119.10.html'>§ 5-119.10</a> any property stored in a commercial garage or warehouse, when the storage charges for such property exceed 75% of its value as determined by the Property Clerk, regardless of the amount of time for which such property is required by other sections of this chapter to be held by the Property Clerk.</span>
                 
             
         </p>
@@ -220,7 +219,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">This section is referenced in <a href='/dccode/sections/5-119.10.html'>§ 5-119.10</a>.</span>
+                    <span class="" style="">This section is referenced in <a href='/simple/sections/5-119.10.html'>§ 5-119.10</a>.</span>
                 
             
         </p>
@@ -260,7 +259,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">This section originated at a time when local government powers were delegated to a Board of Commissioners of the District of Columbia (see Acts Relating to the Establishment of the District of Columbia and its Various Forms of Governmental Organization in Volume 1). Section 402(103) of Reorganization Plan No. 3 of 1967 (see Reorganization Plans in Volume 1) transferred all of the functions of the Board of Commissioners under this section to the District of Columbia Council, subject to the right of the Commissioner as provided in § 406 of the Plan. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/dccode/sections/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/dccode/sections/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made in this section.</span>
+                    <span class="" style="">This section originated at a time when local government powers were delegated to a Board of Commissioners of the District of Columbia (see Acts Relating to the Establishment of the District of Columbia and its Various Forms of Governmental Organization in Volume 1). Section 402(103) of Reorganization Plan No. 3 of 1967 (see Reorganization Plans in Volume 1) transferred all of the functions of the Board of Commissioners under this section to the District of Columbia Council, subject to the right of the Commissioner as provided in § 406 of the Plan. The District of Columbia Self-Government and Governmental Reorganization Act, <a href='http://api.fdsys.gov/link?collection=statute&volume=87&page=818'>87 Stat. 818</a>, § 711 (D.C. Code, <a href='/simple/sections/1-207.11.html'>§ 1-207.11</a>), abolished the District of Columbia Council and the Office of Commissioner of the District of Columbia. These branches of government were replaced by the Council of the District of Columbia and the Office of Mayor of the District of Columbia, respectively. Accordingly, and also pursuant to § 714(a) of such Act (D.C. Code, <a href='/simple/sections/1-207.14.html'>§ 1-207.14(a)</a>), appropriate changes in terminology were made in this section.</span>
                 
             
         </p>

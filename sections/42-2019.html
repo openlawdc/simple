@@ -13,15 +13,14 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/icons/style.css' media='screen' />
 
         <script>
             function search_box_submit() {
-                event.preventDefault();
                 var elem = document.getElementById("search-box")
                 var val = elem.value;
                 if (val.length == 0) return false;
@@ -43,9 +42,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/dccode/" + title_shard["sec"][sec];
+                    window.location = "/simple/" + title_shard["sec"][sec];
                 };
-                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.open("get", "/simple/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
@@ -72,13 +71,13 @@
                     <h2>You Are Here</h2>
                     <ul class="ancestors">
                     
-                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                        <li><a href="/simple">Code of the District of Columbia</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-42">Title 42. Real Property</a></li>
+                        <li>↪ <a href="/simple/Title-42">Title 42. Real Property</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-42/Chapter-20">Chapter 20. Horizontal Property Regimes</a></li>
+                        <li>↪ <a href="/simple/Title-42/Chapter-20">Chapter 20. Horizontal Property Regimes</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-42/Chapter-20/Subchapter-I">Subchapter I. General</a></li>
+                        <li>↪ <a href="/simple/Title-42/Chapter-20/Subchapter-I">Subchapter I. General</a></li>
                     
                     <li>↪ § 42-2019. Supplemental method of enforcement of lien; rights and duties of subsequent purchaser; priority of lien, bond and trust; written statement of payments due under lien.</a></li>
                     </ul>
@@ -86,12 +85,12 @@
 
                 
                     <h2>Previous Section</h2>
-                    <p><a href="/dccode/sections/42-2018.html">§ 42-2018. Joint and several liability of purchaser and seller of unit for amounts owing under § 42-2016; purchaser&#39;s right of indemnity; right to statement of amount of unpaid assessments.</a>
+                    <p><a href="/simple/sections/42-2018.html">§ 42-2018. Joint and several liability of purchaser and seller of unit for amounts owing under § 42-2016; purchaser&#39;s right of indemnity; right to statement of amount of unpaid assessments.</a>
                 
 
                 
                     <h2>Next Section</h2>
-                    <p><a href="/dccode/sections/42-2020.html">§ 42-2020. Authority to obtain hazard insurance; held in trust; no effect on right to insure individual unit.</a>
+                    <p><a href="/simple/sections/42-2020.html">§ 42-2020. Authority to obtain hazard insurance; held in trust; no effect on right to insure individual unit.</a>
                 
 
                 <h2>Current as of...</h2>
@@ -118,7 +117,7 @@
                 
                     <span class="level-num" style="">(a) </span>
                 
-                    <span class="" style="">In addition to proceedings available at law or equity for the enforcement of the lien established by <a href='/dccode/sections/42-2016.html'>§ 42-2016</a>, all the owners of property constituted into a horizontal property regime may execute bonds conditioned upon the faithful performance and payment of the installments of the lien permitted by <a href='/dccode/sections/42-2016.html'>§ 42-2016</a> and may secure the payment of such obligations by a declaration in trust recorded among the land records of the District of Columbia, granting unto a trustee or trustees appropriate powers to the end that upon default in the performance of such bond, said declaration in trust may be foreclosed by said trustee or trustees, acting at the direction of the manager, board of directors, or of management, as is proper practice in the District of Columbia in foreclosing a deed of trust.</span>
+                    <span class="" style="">In addition to proceedings available at law or equity for the enforcement of the lien established by <a href='/simple/sections/42-2016.html'>§ 42-2016</a>, all the owners of property constituted into a horizontal property regime may execute bonds conditioned upon the faithful performance and payment of the installments of the lien permitted by <a href='/simple/sections/42-2016.html'>§ 42-2016</a> and may secure the payment of such obligations by a declaration in trust recorded among the land records of the District of Columbia, granting unto a trustee or trustees appropriate powers to the end that upon default in the performance of such bond, said declaration in trust may be foreclosed by said trustee or trustees, acting at the direction of the manager, board of directors, or of management, as is proper practice in the District of Columbia in foreclosing a deed of trust.</span>
                 
             
         </p>
@@ -128,7 +127,7 @@
                 
                     <span class="level-num" style="">(b) </span>
                 
-                    <span class="" style="">And the bylaws may require in the event such bonds have been executed and such declaration in trust is recorded that any subsequent purchaser of a condominium unit in said horizontal property regime shall take title subject thereto and shall assume such obligations; provided, that the said lien, bond, and declaration in trust shall be subordinate to and a junior lien to liens for real estate taxes and other taxes arising out of or resulting from the ownership, use, or operation of the common areas, liens for special assessments, including, but not limited to, special assessments for sewer mains, water mains, curbs, gutters, sidewalks, alleys, paving of streets, roads, and avenues, removal or abatement of nuisances, and special assessments levied in connection with condemnation proceedings instituted by the District of Columbia, and liens for water charges and sanitary sewer service charges levied on the condominium unit, and to judgments, liens, preferences, and priorities for any tax assessed against a co-owner by the United States or the District of Columbia or due from or payable by a co-owner to the United States or the District of Columbia, and to judgments, liens, preferences, and priorities in favor of the District of Columbia for assessments or charges referred to in this section then or thereafter accruing against the unit and to the lien of any duly recorded deeds of trust, mortgages, or encumbrances previously placed upon the unit and said lien, bond, and declaration in trust shall be and become subordinate to any subsequently recorded deeds of trust, mortgages, or encumbrances; provided, that the lender thereunder shall first obtain from the manager, board of directors, or of administration a written statement as provided in <a href='/dccode/sections/42-2018.html'>§ 42-2018</a> reflecting that payments due under this lien are current as of the date of recordation of such subsequent deed of trust, mortgage, or encumbrance.</span>
+                    <span class="" style="">And the bylaws may require in the event such bonds have been executed and such declaration in trust is recorded that any subsequent purchaser of a condominium unit in said horizontal property regime shall take title subject thereto and shall assume such obligations; provided, that the said lien, bond, and declaration in trust shall be subordinate to and a junior lien to liens for real estate taxes and other taxes arising out of or resulting from the ownership, use, or operation of the common areas, liens for special assessments, including, but not limited to, special assessments for sewer mains, water mains, curbs, gutters, sidewalks, alleys, paving of streets, roads, and avenues, removal or abatement of nuisances, and special assessments levied in connection with condemnation proceedings instituted by the District of Columbia, and liens for water charges and sanitary sewer service charges levied on the condominium unit, and to judgments, liens, preferences, and priorities for any tax assessed against a co-owner by the United States or the District of Columbia or due from or payable by a co-owner to the United States or the District of Columbia, and to judgments, liens, preferences, and priorities in favor of the District of Columbia for assessments or charges referred to in this section then or thereafter accruing against the unit and to the lien of any duly recorded deeds of trust, mortgages, or encumbrances previously placed upon the unit and said lien, bond, and declaration in trust shall be and become subordinate to any subsequently recorded deeds of trust, mortgages, or encumbrances; provided, that the lender thereunder shall first obtain from the manager, board of directors, or of administration a written statement as provided in <a href='/simple/sections/42-2018.html'>§ 42-2018</a> reflecting that payments due under this lien are current as of the date of recordation of such subsequent deed of trust, mortgage, or encumbrance.</span>
                 
             
         </p>
@@ -166,7 +165,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">This section is referenced in <a href='/dccode/sections/42-2014.html'>§ 42-2014</a>.</span>
+                    <span class="" style="">This section is referenced in <a href='/simple/sections/42-2014.html'>§ 42-2014</a>.</span>
                 
             
         </p>
@@ -206,7 +205,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">Supersedure of chapter: See Historical and Statutory Notes following <a href='/dccode/sections/42-2001.html'>§ 42-2001</a>.</span>
+                    <span class="" style="">Supersedure of chapter: See Historical and Statutory Notes following <a href='/simple/sections/42-2001.html'>§ 42-2001</a>.</span>
                 
             
         </p>

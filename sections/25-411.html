@@ -13,15 +13,14 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/icons/style.css' media='screen' />
 
         <script>
             function search_box_submit() {
-                event.preventDefault();
                 var elem = document.getElementById("search-box")
                 var val = elem.value;
                 if (val.length == 0) return false;
@@ -43,9 +42,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/dccode/" + title_shard["sec"][sec];
+                    window.location = "/simple/" + title_shard["sec"][sec];
                 };
-                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.open("get", "/simple/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
@@ -72,13 +71,13 @@
                     <h2>You Are Here</h2>
                     <ul class="ancestors">
                     
-                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                        <li><a href="/simple">Code of the District of Columbia</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-25">Title 25. Alcoholic Beverages</a></li>
+                        <li>↪ <a href="/simple/Title-25">Title 25. Alcoholic Beverages</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-25/Chapter-4">Chapter 4. Application and Review Processes</a></li>
+                        <li>↪ <a href="/simple/Title-25/Chapter-4">Chapter 4. Application and Review Processes</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-25/Chapter-4/Subchapter-I">Subchapter I. Application Requirements</a></li>
+                        <li>↪ <a href="/simple/Title-25/Chapter-4/Subchapter-I">Subchapter I. Application Requirements</a></li>
                     
                     <li>↪ § 25-411. Application and responsibilities of pool buying retail agent.</a></li>
                     </ul>
@@ -86,12 +85,12 @@
 
                 
                     <h2>Previous Section</h2>
-                    <p><a href="/dccode/sections/25-410.html">§ 25-410. Application for manager&#39;s license.</a>
+                    <p><a href="/simple/sections/25-410.html">§ 25-410. Application for manager&#39;s license.</a>
                 
 
                 
                     <h2>Next Section</h2>
-                    <p><a href="/dccode/Title-25/Chapter-4/Subchapter-II">Subchapter II. Notice of Application Proceedings</a>
+                    <p><a href="/simple/Title-25/Chapter-4/Subchapter-II">Subchapter II. Notice of Application Proceedings</a>
                 
 
                 <h2>Current as of...</h2>
@@ -308,7 +307,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">For Law 15-187, see notes following <a href='/dccode/sections/25-101.html'>§ 25-101</a>.</span>
+                    <span class="" style="">For Law 15-187, see notes following <a href='/simple/sections/25-101.html'>§ 25-101</a>.</span>
                 
             
         </p>

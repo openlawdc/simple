@@ -13,15 +13,14 @@
         <meta name="viewport" content="width=device-width">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='/dccode/css/reset.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/site.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/body.css' media='screen' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/print.css' media='print' />
-        <link rel='stylesheet' type='text/css' href='/dccode/css/icons/style.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/reset.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/site.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/body.css' media='screen' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/print.css' media='print' />
+        <link rel='stylesheet' type='text/css' href='/simple/css/icons/style.css' media='screen' />
 
         <script>
             function search_box_submit() {
-                event.preventDefault();
                 var elem = document.getElementById("search-box")
                 var val = elem.value;
                 if (val.length == 0) return false;
@@ -43,9 +42,9 @@
                         alert("Citation not found.")
                         return false;
                     }
-                    window.location = "/dccode/" + title_shard["sec"][sec];
+                    window.location = "/simple/" + title_shard["sec"][sec];
                 };
-                oReq.open("get", "/dccode/by_title/" + title + ".json", true);
+                oReq.open("get", "/simple/by_title/" + title + ".json", true);
                 oReq.send();
 
                 return false;
@@ -72,11 +71,11 @@
                     <h2>You Are Here</h2>
                     <ul class="ancestors">
                     
-                        <li><a href="/dccode">Code of the District of Columbia</a></li>
+                        <li><a href="/simple">Code of the District of Columbia</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-34">Title 34. Public Utilities</a></li>
+                        <li>↪ <a href="/simple/Title-34">Title 34. Public Utilities</a></li>
                     
-                        <li>↪ <a href="/dccode/Title-34/Chapter-11">Chapter 11. Service, Valuation, Accounts</a></li>
+                        <li>↪ <a href="/simple/Title-34/Chapter-11">Chapter 11. Service, Valuation, Accounts</a></li>
                     
                     <li>↪ § 34-1129. Utility not to receive greater or less compensation than fixed in schedule.</a></li>
                     </ul>
@@ -84,12 +83,12 @@
 
                 
                     <h2>Previous Section</h2>
-                    <p><a href="/dccode/sections/34-1128.html">§ 34-1128. New schedules to be filed; summaries of rates to be provided upon request.</a>
+                    <p><a href="/simple/sections/34-1128.html">§ 34-1128. New schedules to be filed; summaries of rates to be provided upon request.</a>
                 
 
                 
                     <h2>Next Section</h2>
-                    <p><a href="/dccode/sections/34-1130.html">§ 34-1130. Commission may prescribe changes in form of schedule.</a>
+                    <p><a href="/simple/sections/34-1130.html">§ 34-1130. Commission may prescribe changes in form of schedule.</a>
                 
 
                 <h2>Current as of...</h2>
@@ -152,7 +151,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">Rate change procedures, appeal and review, see <a href='/dccode/sections/34-901.html'>§ 34-901</a>.</span>
+                    <span class="" style="">Rate change procedures, appeal and review, see <a href='/simple/sections/34-901.html'>§ 34-901</a>.</span>
                 
             
         </p>
@@ -160,7 +159,7 @@
         <p class=" " style="padding-left: 2.25em">
             
                 
-                    <span class="" style="">Rate discrimination, punishment, see §<a href='/dccode/sections/34-702.html'>§ 34-702</a> and 34-704.</span>
+                    <span class="" style="">Rate discrimination, punishment, see §<a href='/simple/sections/34-702.html'>§ 34-702</a> and 34-704.</span>
                 
             
         </p>
