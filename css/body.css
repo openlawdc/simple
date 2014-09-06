@@ -1,41 +1,31 @@
     #content h1 {
-        margin: 20px 0 30px 0;
-        padding-bottom: 15px;
+        margin: 20px 0; /* same as paragraph spacing */
+        padding-bottom: 10px;
         border-bottom: 1px solid #ddd;
+        line-height: 1.25em;
     }
 
-    #content p {
-        /* right padding is added here and not at #content so that the gray
-           background on .annotations stretches the full width */
-        padding-right: 1.5em;
+    #content .line-group {
+        /* Especially inside the .annotations group where there is background color,
+           we need padding to keep the text away from the horizontal edges. Also
+           repeated in #content h1.
+           Also add additional vertical spacing between groups. */
+        padding: 5px 1.5em;
     }
 
-    #content div.line {
+        #content .line-group.sep {
+            border-top: 2px solid black;
+            margin-top: 40px;
+            padding-top: 40px;
+        }
+
+    #content .line {
+        /* Paragraph spacing. */
         margin: 0 0 20px;
     }
 
-    #content div.line.has-level-num {
-        margin-left: 2.25em;
-    }
-
-    #content .level-num {
-        font-weight: bold;
-        color: #666;
-    }
-
-    /* paragraphs can have multiple numbers when there are nested levels without intermediate
-       text, e.g. (3) (A) Blah blah. Only reverse-indent the first, otherwise the floats land
-       on top of each other. */
-    #content .level-num:first-child {
-        display: block;
-        float: left;
-        width: 100px;
-        margin-left: -100px;
-        padding-right: .5em;
-        text-align: right;
-    }
-
-    #content .level-heading {
+    #content .level-num, #content .level-heading {
+        /* Bold numbering and headings. */
         font-weight: bold;
         color: #666;
     }
@@ -46,31 +36,31 @@
         width: auto;
     }
 
-    #content table th, #content table td {
-        padding-right: 1.5em;
-        padding-bottom: .25em;
+    #content table caption {
+        border-bottom: 1px solid #d5d5d5;
+        font-weight: bold;
     }
 
-.primary-content {
-    padding: 0;
-}
+    #content table th, #content table td {
+        text-indent: 0; /* override */
+        padding-right: 1.5em;
+        padding-bottom: .25em;
+        font-size: 14px; /* tables tend to be very wide */
+    }
 
-.annotations {
-    margin: 1em 0;
-    padding: 1em 0;
+#content .annotations {
     border-top: 1px solid #ccc;
+    padding-top: 20px; /* same as paragraph spacing */
+    padding-bottom: 20px; /* same as paragraph spacing */
+    margin-bottom: 20px; /* same as paragraph spacing, in case content follows such as deeply rendered chapters */
     background: #eee;
     color: #666;
 }
 
-.annotations .subheading {
+.subheading {
     margin-bottom: 0;
     line-height: 1.67em;
     font-weight: bold
-}
-
-.annotations p {
-    margin-bottom: .5em;
 }
 
 .form {
@@ -118,3 +108,17 @@
     color: #444;
     margin-bottom: 5px;
 }
+
+#content .heading {
+    font-weight: bold;
+    line-height: 130%;
+}
+    #content .heading-1 {
+        font-size: 25px;
+    }
+    #content .heading-2 {
+        font-size: 22px;
+    }
+    #content .heading-3 {
+        font-size: 19px;
+    }
